@@ -1,0 +1,19 @@
+# CE210289_CapSense_P4_Linear_Slider01
+# 2017-04-03 20:58:21Z
+
+# IO_0@[IOP=(6)][IoId=(0)] is reserved: KhzXtalEnabled
+dont_use_io iocell 6 0
+# IO_1@[IOP=(6)][IoId=(1)] is reserved: KhzXtalEnabled
+dont_use_io iocell 6 1
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "\CapSense:Cmod(0)\" iocell 4 0
+set_io "\CapSense:Sns(0)\" iocell 2 1
+set_io "\CapSense:Sns(1)\" iocell 2 2
+set_io "\CapSense:Sns(2)\" iocell 2 3
+set_io "\CapSense:Sns(3)\" iocell 2 4
+set_io "\CapSense:Sns(4)\" iocell 2 5
+set_io "\EZI2C:sda(0)\" iocell 3 4
+set_io "\EZI2C:scl(0)\" iocell 3 5
+set_location "\CapSense:IDACComp:cy_psoc4_idac\" p4csidac7cell -1 -1 0
+set_location "\CapSense:CSD\" p4csdcell -1 -1 0
+set_location "\CapSense:IDACMod:cy_psoc4_idac\" p4csidac8cell -1 -1 0

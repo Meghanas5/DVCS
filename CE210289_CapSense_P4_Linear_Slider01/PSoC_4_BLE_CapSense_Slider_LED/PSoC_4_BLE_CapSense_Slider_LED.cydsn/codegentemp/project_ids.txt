@@ -1,0 +1,6 @@
+C:\Users\Sarah\Documents\PSoC Creator\CE210289_CapSense_P4_Linear_Slider01\PSoC_4_BLE_CapSense_Slider_LED\PSoC_4_BLE_CapSense_Slider_LED.cydsn\PSoC_4_BLE_CapSense_Slider_LED.cyprj|dfdae83e-b904-4c55-b6c4-69cab31f08b8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|dd3c5043-a869-432a-ad23-71b74e9439da
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1f8cb4fc-6cd9-442f-9579-292a0e60b5b3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|eb2643d3-249d-4669-87b9-8526e4584c24
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|31e8d269-6d75-49d5-9582-4931b47dbe6d
+C:\Users\Sarah\Documents\PSoC Creator\CE210289_CapSense_P4_Linear_Slider01\PSoC_4_BLE_CapSense_Slider_LED\BLE_Capsense_LED_modified.cydsn\BLE_Capsense_LED_modified.cyprj|33fea194-19e9-45a3-a385-a0e1a73fa9b1

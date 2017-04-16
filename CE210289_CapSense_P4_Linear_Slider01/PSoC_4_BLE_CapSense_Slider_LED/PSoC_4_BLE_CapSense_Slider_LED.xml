@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="PSoC_4_BLE_CapSense_Slider_LED" WorkspaceName="PSoC_4_BLE_CapSense_Slider_LED.cywrk">
+  <Version>1.0</Version>  
+  <Keyword>PSoC 4 BLE</Keyword>
+  <Keyword>BLE</Keyword>  
+  <Keyword>CapSense</Keyword>       
+  <Keyword>Slider</Keyword>  
+  <Keyword Hidden="true">CY8CKIT-042-BLE</Keyword>
+  <Keyword Hidden="true">CY8CKIT-042-BLE-A</Keyword>
+  <Description>This example demonstrates CapSense Slider and RGB LED control over BLE using the BLE Pioneer Kit.
+  </Description>  
+  <DeviceFilter MpnDefault="CY8C4248LQI-BL583">PSoC 4200 BLE</DeviceFilter>  
+  <MinToolVersion>3.3.0.7343</MinToolVersion>
+</Project>

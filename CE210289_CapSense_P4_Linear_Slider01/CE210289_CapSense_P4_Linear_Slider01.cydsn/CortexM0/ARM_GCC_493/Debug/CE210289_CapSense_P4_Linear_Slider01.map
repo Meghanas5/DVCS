@@ -1,0 +1,1474 @@
+Archive member included because of file (symbol)
+
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+                              .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o (cyfitter_cfg)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+                              .\CortexM0\ARM_GCC_493\Debug\main.o (CapSense_Start)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o) (CapSense_DpInitialize)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o) (CapSense_DsInitialize)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o) (CapSense_TuInitialize)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o) (CapSense_FtInitialize)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                              .\CortexM0\ARM_GCC_493\Debug\main.o (CapSense_IsBusy)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o) (CapSense_SsCSDInitialize)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o) (CapSense_DpFindLocalMaxSd)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+                              .\CortexM0\ARM_GCC_493\Debug\main.o (EZI2C_Start)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o) (EZI2C_EzI2CInit)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o) (EZI2C_EZI2C_STRETCH_ISR)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o) (CapSense_ISR_StartEx)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o) (CyIntEnable)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o) (CySysPmSleep)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o) (CySysClkWcoStart)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyBootAsmGnu.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o) (CyDelayCycles)
+.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o) (CapSense_CSDPostSingleScan)
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o) (SmartSense_TunePrescalers)
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o) (SmartSense_UpdateThresholds)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o) (__aeabi_uidiv)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o) (__aeabi_idiv)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+                              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o) (memcpy)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+EZI2C_offsetBuf1    0x2               .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+EZI2C_indexBuf1     0x2               .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+EZI2C_fsmState      0x1               .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+EZI2C_protectBuf1   0x2               .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+EZI2C_curStatus     0x1               .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+CapSense_dsRam      0x68              .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+CapSense_curRamSnsPtr
+                    0x4               .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+EZI2C_dataBuffer1   0x4               .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+EZI2C_bufSizeBuf1   0x2               .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+CapSense_curSnsIOPtr
+                    0x4               .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .text          0x00000000       0x78 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .data          0x00000000        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .text._exit    0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .text._sbrk    0x00000000       0x30 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .text.CapSense_Stop
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .text.CapSense_Resume
+                0x00000000       0x24 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .text.CapSense_ProcessWidget
+                0x00000000       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .text.CapSense_ProcessWidgetExt
+                0x00000000       0x60 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .text.CapSense_ProcessSensorExt
+                0x00000000       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .text.CapSense_Sleep
+                0x00000000        0x4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .text.CapSense_Wakeup
+                0x00000000        0x4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .text.CapSense_DpProcessCsdSensorRawCountsExt
+                0x00000000       0x50 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .text.DsParseParamId
+                0x00000000       0x74 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .text.CapSense_GetParam
+                0x00000000       0x60 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .text.CapSense_SetParam
+                0x00000000       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .text.CapSense_IsWidgetActive
+                0x00000000       0x24 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .text.CapSense_IsSensorActive
+                0x00000000       0x34 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .text.CapSense_GetCentroidPos
+                0x00000000       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .text.CapSense_FtInitializeBaseline
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .text.CapSense_RunNoiseEnvelope
+                0x00000000       0x34 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .text.CapSense_InitializeNoiseEnvelope
+                0x00000000       0x34 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .text.CapSense_UpdateSensorBaseline
+                0x00000000       0x2c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .text.CapSense_UpdateWidgetBaseline
+                0x00000000       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .text.CapSense_UpdateAllBaselines
+                0x00000000       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text.CapSense_SetPinState
+                0x00000000       0x90 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text.CapSense_SsIsrInitialize
+                0x00000000        0x8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text.CapSense_SsSetClockDividers
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text.CapSense_CalibrateWidget
+                0x00000000       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text.CapSense_CalibrateAllWidgets
+                0x00000000       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .text.CapSense_SsCSDDisconnectSnsExt
+                0x00000000       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .text.EZI2C_ScbModeStop
+                0x00000000        0x8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .text.EZI2C_Stop
+                0x00000000       0x2c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .text.EZI2C_SetRxFifoLevel
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .text.EZI2C_SetTxFifoLevel
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .text.EZI2C_SetCustomInterruptHandler
+                0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .text.EZI2C_EzI2CStop
+                0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .text.EZI2C_EzI2CGetActivity
+                0x00000000       0x24 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .text.EZI2C_EzI2CSetAddress1
+                0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .text.EZI2C_EzI2CGetAddress1
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .text.EZI2C_EzI2CSetReadBoundaryBuffer1
+                0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .text.CapSense_ISR_Interrupt
+                0x00000000        0x4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .text.CapSense_ISR_GetVector
+                0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .text.CapSense_ISR_GetPriority
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .text.CapSense_ISR_GetState
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .text.CapSense_ISR_Start
+                0x00000000       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .text.CapSense_ISR_Stop
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .text.CapSense_ISR_SetPending
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .text.CapSense_ISR_ClearPending
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .bss           0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysClkImoStart
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysClkImoStop
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysClkWriteHfclkDirect
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysEnablePumpClock
+                0x00000000       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysClkGetSysclkSource
+                0x00000000       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysClkWriteSysclkDiv
+                0x00000000       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysClkEcoStop
+                0x00000000       0x24 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysLvdDisable
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysLvdGetInterruptSource
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysLvdClearInterrupt
+                0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysGetResetReason
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyIntSetPending
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyIntClearPending
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysClkWriteEcoDiv
+                0x00000000       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x2c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyDelay  0x00000000       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysLvdEnable
+                0x00000000       0x44 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickGetClockSource
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x4c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CyGetUniqueId
+                0x00000000       0x70 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysSetRamAccessArbPriority
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysSetFlashAccessArbPriority
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysSetDmacAccessArbPriority
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text.CySysSetPeripheralAccessArbPriority
+                0x00000000       0x68 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .text.CySysPmDeepSleep
+                0x00000000       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .text.CySysPmHibernate
+                0x00000000       0xb4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .text.CySysPmSetWakeupPolarity
+                0x00000000       0x34 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .text.CySysPmGetResetReason
+                0x00000000       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .text.CySysPmFreezeIo
+                0x00000000       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .text.CySysPmStop
+                0x00000000       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .text.CySysPmUnfreezeIo
+                0x00000000       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkIloEnabled
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkGetLfclkSource
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkIloStart
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkIloStartMeasurement
+                0x00000000       0x5c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkIloStopMeasurement
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkIloCompensate
+                0x00000000      0x108 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkIloUpdateTrimReg
+                0x00000000       0xa4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkIloTrim
+                0x00000000       0xd8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkIloRestoreFactoryTrim
+                0x00000000       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkWcoEnabled
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkWcoClockOutSelect
+                0x00000000       0x2c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtGetEnabledStatus
+                0x00000000       0x24 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtSetMode
+                0x00000000       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkLfclkPosedgeRestore
+                0x00000000       0x2c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtGetMode
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtSetClearOnMatch
+                0x00000000       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtGetClearOnMatch
+                0x00000000       0x24 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtEnable
+                0x00000000       0x3c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtDisable
+                0x00000000       0x44 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtSetCascade
+                0x00000000       0x34 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtGetCascade
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtSetMatch
+                0x00000000       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtSetToggleBit
+                0x00000000       0x2c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtGetToggleBit
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtGetMatch
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtGetCount
+                0x00000000       0x3c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkLfclkPosedgeCatch
+                0x00000000       0x74 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkIloStop
+                0x00000000       0x4c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkSetLfclkSource
+                0x00000000       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkWcoStop
+                0x00000000       0x48 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtGetInterruptSource
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtResetCounters
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtSetInterruptCallback
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtGetInterruptCallback
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtEnableCounterIsr
+                0x00000000       0x34 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWdtDisableCounterIsr
+                0x00000000       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysWatchdogFeed
+                0x00000000       0x60 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysTimerDelayUntilMatch
+                0x00000000       0x6c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysTimerDelay
+                0x00000000       0x3c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .rodata        0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .text          0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .data          0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .bss           0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .text          0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+ .data          0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+ .bss           0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x20000000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+START GROUP
+LOAD .\CortexM0\ARM_GCC_493\Debug\main.o
+LOAD .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+LOAD .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+LOAD .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM0\ARM_GCC_493\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                0x00000000                CY_APP_FOR_STACK_AND_COPIER = 0x0
+                0x20000290                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x8000))
+                0x20007c00                PROVIDE (__cy_heap_end, (__cy_stack - 0x400))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((0x40000 - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000001                cy_project_type_bootloader = (appl_start == 0x0)?0x1:0x0
+                0x00000000                cy_project_type_app_for_stack_and_copier = (CY_APP_FOR_STACK_AND_COPIER == 0x1)?0x1:0x0
+
+.text           0x00000000     0x24ce
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010        0x8 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.psocinit)
+ .psocinit      0x00000018      0x1ec .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+                0x00000118                cyfitter_cfg
+                0x00000204                . = MAX (., 0x100)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000204       0x60 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .text.main     0x00000264       0x38 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000264                main
+ .text.IntDefaultHandler
+                0x0000029c       0x10 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x0000029c                IntDefaultHandler
+ .text.Start_c  0x000002ac       0x48 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x000002ac                Start_c
+ .text.initialize_psoc
+                0x000002f4       0x54 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x000002f4                initialize_psoc
+ .text.cfg_write_bytes32
+                0x00000348       0x34 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .text.CYMEMZERO
+                0x0000037c        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .text.SetAnalogRoutingPumps
+                0x00000388       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+                0x00000388                SetAnalogRoutingPumps
+ .text.AnalogSetDefault
+                0x000003c8       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .text.CapSense_Initialize
+                0x000003f0       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+                0x000003f0                CapSense_Initialize
+ .text.CapSense_Start
+                0x00000418       0x50 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+                0x00000418                CapSense_Start
+ .text.CapSense_ProcessAllWidgets
+                0x00000468       0x48 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+                0x00000468                CapSense_ProcessAllWidgets
+ .text.CapSense_DpInitialize
+                0x000004b0       0x74 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+                0x000004b0                CapSense_DpInitialize
+ .text.CapSense_DpUpdateThresholds
+                0x00000524       0x34 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+                0x00000524                CapSense_DpUpdateThresholds
+ .text.CapSense_DpUpdateDifferences
+                0x00000558       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+                0x00000558                CapSense_DpUpdateDifferences
+ .text.CapSense_DpProcessCsdWidgetRawCounts
+                0x0000056c       0x5c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+                0x0000056c                CapSense_DpProcessCsdWidgetRawCounts
+ .text.CapSense_DpProcessSlider
+                0x000005c8       0xdc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+                0x000005c8                CapSense_DpProcessSlider
+ .text.CapSense_DpProcessCsdWidgetStatus
+                0x000006a4       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+                0x000006a4                CapSense_DpProcessCsdWidgetStatus
+ .text.CapSense_DsInitialize
+                0x000006fc       0x60 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+                0x000006fc                CapSense_DsInitialize
+ .text.CapSense_IsAnyWidgetActive
+                0x0000075c       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+                0x0000075c                CapSense_IsAnyWidgetActive
+ .text.CapSense_TuInitialize
+                0x0000077c       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+                0x0000077c                CapSense_TuInitialize
+ .text.CapSense_RunTuner
+                0x00000790       0xe8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+                0x00000790                CapSense_RunTuner
+ .text.CapSense_FtInitialize
+                0x00000878       0x50 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+                0x00000878                CapSense_FtInitialize
+ .text.CapSense_FtInitializeBaselineChannel
+                0x000008c8       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+                0x000008c8                CapSense_FtInitializeBaselineChannel
+ .text.CapSense_InitializeSensorBaseline
+                0x000008e4       0x3c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+                0x000008e4                CapSense_InitializeSensorBaseline
+ .text.CapSense_InitializeWidgetBaseline
+                0x00000920       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+                0x00000920                CapSense_InitializeWidgetBaseline
+ .text.CapSense_InitializeAllBaselines
+                0x00000948       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+                0x00000948                CapSense_InitializeAllBaselines
+ .text.CapSense_FtIIR1stOrder
+                0x00000960       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+                0x00000960                CapSense_FtIIR1stOrder
+ .text.CapSense_FtUpdateBaseline
+                0x00000974       0x94 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+                0x00000974                CapSense_FtUpdateBaseline
+ .text.CapSense_SsSetDirectClockMode
+                0x00000a08       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text.CapSense_SsTrimIdacsSourcing
+                0x00000a18       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text.CapSense_SsTrimIdacs
+                0x00000a48        0x8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text.CapSense_IsBusy
+                0x00000a50       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000a50                CapSense_IsBusy
+ .text.CapSense_SetupWidget
+                0x00000a60       0x44 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000a60                CapSense_SetupWidget
+ .text.CapSense_Scan
+                0x00000aa4       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000aa4                CapSense_Scan
+ .text.CapSense_ScanAllWidgets
+                0x00000ac0       0x3c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000ac0                CapSense_ScanAllWidgets
+ .text.CapSense_SsPostAllWidgetsScan
+                0x00000afc        0x4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000afc                CapSense_SsPostAllWidgetsScan
+ .text.CapSense_SsSetModClkClockDivider
+                0x00000b00       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000b00                CapSense_SsSetModClkClockDivider
+ .text.CapSense_SsSetSnsClockDivider
+                0x00000b30       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000b30                CapSense_SsSetSnsClockDivider
+ .text.CapSense_SsClearCSDSensors
+                0x00000b60       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000b60                CapSense_SsClearCSDSensors
+ .text.CapSense_SsCSDGetColSnsClkDivider
+                0x00000ba0       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000ba0                CapSense_SsCSDGetColSnsClkDivider
+ .text.CapSense_SsCSDCalcPrsSize
+                0x00000bb4       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000bb4                CapSense_SsCSDCalcPrsSize
+ .text.CapSense_SsSetWidgetSenseClkSrc
+                0x00000be4       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .text.CapSense_SsAutoTune
+                0x00000bf8      0x118 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000bf8                CapSense_SsAutoTune
+ .text.CapSense_SsInitializeSourceSenseClk
+                0x00000d10       0x24 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000d10                CapSense_SsInitializeSourceSenseClk
+ .text.CapSense_SsInitialize
+                0x00000d34       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x00000d34                CapSense_SsInitialize
+ .text.CapSense_SsCSDConfigIDACs
+                0x00000d48       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .text.CapSense_SsCSDRestoreIdacMode
+                0x00000d58       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .text.CapSense_SsCSDCalibrateCheck
+                0x00000d68       0x44 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .text.CapSense_SsCSDSetModeSnsClockDivider
+                0x00000dac       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00000dac                CapSense_SsCSDSetModeSnsClockDivider
+ .text.CapSense_SsCSDInitialize
+                0x00000dc8       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00000dc8                CapSense_SsCSDInitialize
+ .text.CapSense_SsCSDSetUpIdacs
+                0x00000e00       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00000e00                CapSense_SsCSDSetUpIdacs
+ .text.CapSense_SsCSDConfigClock
+                0x00000e40       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00000e40                CapSense_SsCSDConfigClock
+ .text.CapSense_SsCSDCalculateScanDuration
+                0x00000e78       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00000e78                CapSense_SsCSDCalculateScanDuration
+ .text.CapSense_SsCSDStartSample
+                0x00000e8c       0xac .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00000e8c                CapSense_SsCSDStartSample
+ .text.CapSense_CSDScanExt
+                0x00000f38       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00000f38                CapSense_CSDScanExt
+ .text.CapSense_CSDConnectSns
+                0x00000f54       0x34 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00000f54                CapSense_CSDConnectSns
+ .text.CapSense_CSDScan
+                0x00000f88       0x78 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00000f88                CapSense_CSDScan
+ .text.CapSense_SsCSDConnectSensorExt
+                0x00001000       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00001000                CapSense_SsCSDConnectSensorExt
+ .text.CapSense_CSDDisconnectSns
+                0x00001028       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00001028                CapSense_CSDDisconnectSns
+ .text.CapSense_SsCSDElectrodeCheck
+                0x00001068       0x24 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00001068                CapSense_SsCSDElectrodeCheck
+ .text.CapSense_CSDSetupWidget
+                0x0000108c       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x0000108c                CapSense_CSDSetupWidget
+ .text.CapSense_CSDSetupWidgetExt
+                0x000010e4       0x6c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x000010e4                CapSense_CSDSetupWidgetExt
+ .text.CapSense_SsCSDSetSingleIdacMode
+                0x00001150       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00001150                CapSense_SsCSDSetSingleIdacMode
+ .text.CapSense_SsCSDCalibrateOneSensor
+                0x0000116c       0xe8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .text.CapSense_CSDCalibrateWidget
+                0x00001254      0x108 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x00001254                CapSense_CSDCalibrateWidget
+ .text.CapSense_DpFindLocalMaxSd
+                0x0000135c       0x9c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+                0x0000135c                CapSense_DpFindLocalMaxSd
+ .text.CapSense_DpCalcLinearCentroid
+                0x000013f8       0x80 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+                0x000013f8                CapSense_DpCalcLinearCentroid
+ .text.EZI2C_ScbEnableIntr
+                0x00001478        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .text.EZI2C_Init
+                0x00001484        0x8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+                0x00001484                EZI2C_Init
+ .text.EZI2C_Enable
+                0x0000148c       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+                0x0000148c                EZI2C_Enable
+ .text.EZI2C_Start
+                0x000014a4       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+                0x000014a4                EZI2C_Start
+ .text.EZI2C_EzI2CInit
+                0x000014c4       0xc4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+                0x000014c4                EZI2C_EzI2CInit
+ .text.EZI2C_EzI2CSetBuffer1
+                0x00001588       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+                0x00001588                EZI2C_EzI2CSetBuffer1
+ .text.EZI2C_EZI2C_STRETCH_ISR
+                0x000015b8      0x348 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+                0x000015b8                EZI2C_EZI2C_STRETCH_ISR
+ .text.CapSense_ISR_SetVector
+                0x00001900        0xc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+                0x00001900                CapSense_ISR_SetVector
+ .text.CapSense_ISR_SetPriority
+                0x0000190c       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+                0x0000190c                CapSense_ISR_SetPriority
+ .text.CapSense_ISR_Enable
+                0x0000192c       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+                0x0000192c                CapSense_ISR_Enable
+ .text.CapSense_ISR_Disable
+                0x0000193c       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+                0x0000193c                CapSense_ISR_Disable
+ .text.CapSense_ISR_StartEx
+                0x0000194c       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+                0x0000194c                CapSense_ISR_StartEx
+ .text.CySysClkEcoReadStatus
+                0x00001968       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x00001968                CySysClkEcoReadStatus
+ .text.CyIntEnable
+                0x00001978       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x00001978                CyIntEnable
+ .text.CyIntDisable
+                0x0000198c       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x0000198c                CyIntDisable
+ .text.CyHalt   0x000019a0        0x4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x000019a0                CyHalt
+ .text.CyIntSetVector
+                0x000019a4       0x24 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x000019a4                CyIntSetVector
+ .text.CyIntSetPriority
+                0x000019c8       0x4c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x000019c8                CyIntSetPriority
+ .text.CyDelayUs
+                0x00001a14       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x00001a14                CyDelayUs
+ .text.CySysClkWriteImoFreq
+                0x00001a28      0x164 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x00001a28                CySysClkWriteImoFreq
+ .text.CySysClkEcoStart
+                0x00001b8c       0x54 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x00001b8c                CySysClkEcoStart
+ .text.CySysPmSleep
+                0x00001be0       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+                0x00001be0                CySysPmSleep
+ .text.CySysWdtLocked
+                0x00001bfc       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .text.CySysClkWcoStart
+                0x00001c10       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+                0x00001c10                CySysClkWcoStart
+ .text.CySysClkWcoSetPowerMode
+                0x00001c50       0x80 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+                0x00001c50                CySysClkWcoSetPowerMode
+ .text.CySysWdtLock
+                0x00001cd0       0x1c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+                0x00001cd0                CySysWdtLock
+ .text.CySysWdtUnlock
+                0x00001cec       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+                0x00001cec                CySysWdtUnlock
+ .text.CySysWdtClearInterrupt
+                0x00001d1c       0x4c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+                0x00001d1c                CySysWdtClearInterrupt
+ .text.CySysWdtIsr
+                0x00001d68       0xa4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+                0x00001d68                CySysWdtIsr
+ *fill*         0x00001e0c        0x4 
+ .text          0x00001e10       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyBootAsmGnu.o)
+                0x00001e10                CyDelayCycles
+                0x00001e22                CyEnterCriticalSection
+                0x00001e2a                CyExitCriticalSection
+ .text.CapSense_CSDPostSingleScan
+                0x00001e30       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+                0x00001e30                CapSense_CSDPostSingleScan
+ .text.CapSense_CSDPostMultiScan
+                0x00001e88      0x104 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+                0x00001e88                CapSense_CSDPostMultiScan
+ .text.SmartSense_TunePrescalers
+                0x00001f8c       0x68 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+                0x00001f8c                SmartSense_TunePrescalers
+ .text.SmartSense_TuneSensitivity
+                0x00001ff4       0x74 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+                0x00001ff4                SmartSense_TuneSensitivity
+ .text.SmartSense_UpdateThresholds
+                0x00002068       0x40 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+                0x00002068                SmartSense_UpdateThresholds
+ .text.SmartSense_InitializeNoiseEnvelope
+                0x000020a8       0x18 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+                0x000020a8                SmartSense_InitializeNoiseEnvelope
+ .text.SmartSense_RunNoiseEnvelope
+                0x000020c0       0x8e C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+                0x000020c0                SmartSense_RunNoiseEnvelope
+ *fill*         0x0000214e        0x2 
+ .text          0x00002150      0x120 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+                0x00002150                __aeabi_uidiv
+                0x00002150                __udivsi3
+                0x0000225c                __aeabi_uidivmod
+ .text          0x00002270      0x1e0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+                0x00002270                __divsi3
+                0x00002270                __aeabi_idiv
+                0x0000243c                __aeabi_idivmod
+ .text          0x00002450        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x00002450                __aeabi_idiv0
+                0x00002450                __aeabi_ldiv0
+ .text.__errno  0x00002454        0xc c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                0x00002454                __errno
+ .text.__libc_init_array
+                0x00002460       0x4c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                0x00002460                __libc_init_array
+ .text.memcpy   0x000024ac       0x12 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+                0x000024ac                memcpy
+ .text.memset   0x000024be       0x10 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                0x000024be                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x000024d0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x000024d0        0x0
+ .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x000024d0        0x4
+ *(.eh_frame)
+ .eh_frame      0x000024d0        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .eh_frame      0x000024d0        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+                0x000024d4                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000024d4                __exidx_end = .
+
+.rodata         0x000024d4      0x194
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000024d4       0x3c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .rodata        0x00002510       0xd0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+                0x00002518                CapSense_dsFlash
+                0x00002554                CapSense_ioList
+ .rodata        0x000025e0       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .rodata        0x000025f8        0x1 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x000025f8                CapSense_scanFreqIndex
+ *fill*         0x000025f9        0x3 
+ .rodata        0x000025fc       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x000025fc                cyImoFreqMhz2Reg
+ .rodata.str1.1
+                0x0000262c        0x2 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x00002630                . = ALIGN (0x4)
+ *fill*         0x0000262e        0x2 
+ *(.init)
+ .init          0x00002630        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x00002630                _init
+ .init          0x00002634        0x8 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+                0x0000263c                . = ALIGN (0x4)
+                0x0000263c                __preinit_array_start = .
+ *(.preinit_array)
+                0x0000263c                __preinit_array_end = .
+                0x0000263c                . = ALIGN (0x4)
+                0x0000263c                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x0000263c        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .init_array    0x00002640        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x00002644                __init_array_end = .
+                0x00002644                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00002644        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x00002644                _fini
+ .fini          0x00002648        0x8 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+                0x00002650                . = ALIGN (0x4)
+                0x00002650                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00002650        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00002654                __fini_array_end = .
+                0x00002654                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00002654                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00002654                . = ALIGN (0x4)
+                0x00002654                __cy_regions = .
+                0x00002654        0x4 LONG 0x2668 __cy_region_init_ram
+                0x00002658        0x4 LONG 0x200000c8 __cy_region_start_data
+                0x0000265c        0x4 LONG 0x90 __cy_region_init_size_ram
+                0x00002660        0x4 LONG 0x138 __cy_region_zero_size_ram
+                0x00002664                __cy_regions_end = .
+                0x00002668                . = ALIGN (0x8)
+ *fill*         0x00002664        0x4 
+                0x00002668                _etext = .
+
+.cy_checksum_exclude
+                0x00002668        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x20000000       0xc0
+                0x20000000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x20000000       0xc0 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x20000000                CyRamVectors
+
+.noinit         0x200000c0        0x4
+ *(.noinit)
+ .noinit        0x200000c0        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+
+.data           0x200000c8       0x90 load address 0x00002668
+                0x200000c8                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x200000c8        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .jcr           0x200000c8        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x200000cc        0x8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                0x200000cc                CapSense_configCsd
+ .data          0x200000d4       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                0x200000d4                CySysClkPumpConfig
+                0x200000d8                cydelay32kMs
+                0x200000dc                cydelayFreqKhz
+                0x200000e0                cydelayFreqMhz
+                0x200000e4                cydelayFreqHz
+ .data          0x200000e8        0x8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .data.impure_data
+                0x200000f0       0x60 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x20000150        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x20000150                _impure_ptr
+                0x20000158                . = ALIGN (0x8)
+ *fill*         0x20000154        0x4 
+ *(.ram)
+                0x20000158                _edata = .
+
+.igot.plt       0x20000158        0x0 load address 0x000026f8
+ .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+
+.bss            0x20000158      0x138 load address 0x000026f8
+                0x20000158                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x20000158       0x1c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .bss           0x20000174        0x1 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ *fill*         0x20000175        0x3 
+ .bss           0x20000178       0x44 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .bss           0x200001bc        0x4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .bss           0x200001c0        0x4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x200001c0                CapSense_requestScanAllWidget
+                0x200001c1                CapSense_prescalersTuningDone
+                0x200001c2                CapSense_sensorIndex
+                0x200001c3                CapSense_widgetIndex
+ .bss           0x200001c4        0x1 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ *fill*         0x200001c5        0x3 
+ .bss           0x200001c8       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .bss           0x200001d8        0x8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+                0x200001d8                EZI2C_initVar
+                0x200001dc                EZI2C_customIntrHandler
+ .bss           0x200001e0        0x2 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ *fill*         0x200001e2        0x2 
+ .bss           0x200001e4       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ *(COMMON)
+ COMMON         0x2000020c       0x68 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+                0x2000020c                CapSense_dsRam
+ COMMON         0x20000274        0x8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                0x20000274                CapSense_curRamSnsPtr
+                0x20000278                CapSense_curSnsIOPtr
+ COMMON         0x2000027c       0x12 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+                0x2000027c                EZI2C_offsetBuf1
+                0x2000027e                EZI2C_indexBuf1
+                0x20000280                EZI2C_fsmState
+                0x20000282                EZI2C_protectBuf1
+                0x20000284                EZI2C_curStatus
+                0x20000288                EZI2C_dataBuffer1
+                0x2000028c                EZI2C_bufSizeBuf1
+                0x20000290                . = ALIGN (0x8)
+ *fill*         0x2000028e        0x2 
+ *(.ram.b)
+                0x20000290                _end = .
+                0x20000290                __end = .
+                0x20000290                PROVIDE (end, .)
+                0x20000290                PROVIDE (__bss_end__, .)
+                0x00002668                __cy_region_init_ram = LOADADDR (.data)
+                0x00000090                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000138                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x20000290       0x80 load address 0x000026f8
+                0x20000290                . = _end
+                0x20000310                . = (. + 0x80)
+ *fill*         0x20000290       0x80 
+                0x20000310                __cy_heap_limit = .
+
+.stack          0x20007c00      0x400
+                0x20007c00                __cy_stack_limit = .
+                0x20008000                . = (. + 0x400)
+ *fill*         0x20007c00      0x400 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+                0x0003ffc0                cyloadermeta_start = (cy_project_type_bootloader || cy_project_type_app_for_stack_and_copier)?(0x40000 - CY_METADATA_SIZE):0xf0000000
+
+.cyloadermeta
+ *(.cyloadermeta)
+                0x0003ffc0                cyloadablemeta_start = cy_project_type_app_for_stack_and_copier?((0x40000 - CY_FLASH_ROW_SIZE) - CY_METADATA_SIZE):((0x40000 - (CY_FLASH_ROW_SIZE * (CY_APPL_NUM - 0x1))) - CY_METADATA_SIZE)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyflashprotect
+                0x90400000       0x80
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000       0x80 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.cychipprotect  0x90600000        0x4
+ *(.cychipprotect)
+ .cychipprotect
+                0x90600000        0x4 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+                0x90600000                cy_meta_chipprotect
+
+.rel.dyn        0x000026f8        0x0 load address 0x90600004
+ .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x9d0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_aranges
+                0x00000020       0x18 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_aranges
+                0x00000038       0x48 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_aranges
+                0x00000080       0x48 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .debug_aranges
+                0x000000c8       0x68 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .debug_aranges
+                0x00000130       0x50 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .debug_aranges
+                0x00000180       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .debug_aranges
+                0x000001d8       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .debug_aranges
+                0x00000200       0x80 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .debug_aranges
+                0x00000280       0xc8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .debug_aranges
+                0x00000348       0xc0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .debug_aranges
+                0x00000408       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .debug_aranges
+                0x00000430       0x60 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .debug_aranges
+                0x00000490       0x50 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .debug_aranges
+                0x000004e0       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .debug_aranges
+                0x00000500       0x80 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .debug_aranges
+                0x00000580      0x1d0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .debug_aranges
+                0x00000750       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .debug_aranges
+                0x000007a8      0x188 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .debug_aranges
+                0x00000930       0x20 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000950       0x28 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .debug_aranges
+                0x00000978       0x28 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .debug_aranges
+                0x000009a0       0x30 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x9c7e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x468 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_info    0x00000468       0xfe .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_info    0x00000566      0x39a .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_info    0x00000900      0x4b5 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .debug_info    0x00000db5      0xad6 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .debug_info    0x0000188b      0xd42 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .debug_info    0x000025cd      0xb84 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .debug_info    0x00003151      0x660 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .debug_info    0x000037b1      0xb01 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .debug_info    0x000042b2      0xf4c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .debug_info    0x000051fe      0xf4e .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .debug_info    0x0000614c      0x2a4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .debug_info    0x000063f0      0x297 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .debug_info    0x00006687      0x347 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .debug_info    0x000069ce      0x1df .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .debug_info    0x00006bad      0x300 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .debug_info    0x00006ead      0xd46 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .debug_info    0x00007bf3      0x2e6 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .debug_info    0x00007ed9     0x106f .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .debug_info    0x00008f48       0xc4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyBootAsmGnu.o)
+ .debug_info    0x0000900c      0x7cd .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .debug_info    0x000097d9      0x24c C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .debug_info    0x00009a25      0x259 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+
+.debug_abbrev   0x00000000     0x25a4
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x14d .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_abbrev  0x0000014d       0x5d .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_abbrev  0x000001aa      0x1e6 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_abbrev  0x00000390      0x21c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000005ac      0x264 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .debug_abbrev  0x00000810      0x27b .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .debug_abbrev  0x00000a8b      0x20a .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .debug_abbrev  0x00000c95      0x17e .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .debug_abbrev  0x00000e13      0x2bb .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .debug_abbrev  0x000010ce      0x2a0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .debug_abbrev  0x0000136e      0x291 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .debug_abbrev  0x000015ff      0x11c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .debug_abbrev  0x0000171b      0x143 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .debug_abbrev  0x0000185e      0x170 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .debug_abbrev  0x000019ce       0xc6 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .debug_abbrev  0x00001a94      0x1b4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .debug_abbrev  0x00001c48      0x20d .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .debug_abbrev  0x00001e55      0x155 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .debug_abbrev  0x00001faa      0x273 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .debug_abbrev  0x0000221d       0x14 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00002231      0x1b1 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .debug_abbrev  0x000023e2      0x112 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .debug_abbrev  0x000024f4       0xb0 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+
+.debug_line     0x00000000     0x2c0d
+ *(.debug_line)
+ .debug_line    0x00000000       0xf4 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_line    0x000000f4       0x51 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x00000145      0x24f .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_line    0x00000394      0x1b0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .debug_line    0x00000544      0x23d .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .debug_line    0x00000781      0x280 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .debug_line    0x00000a01      0x1fc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .debug_line    0x00000bfd      0x12f .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .debug_line    0x00000d2c      0x231 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .debug_line    0x00000f5d      0x3b8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .debug_line    0x00001315      0x37a .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .debug_line    0x0000168f      0x121 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .debug_line    0x000017b0      0x128 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .debug_line    0x000018d8      0x103 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .debug_line    0x000019db      0x13a .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .debug_line    0x00001b15      0x158 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .debug_line    0x00001c6d      0x553 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .debug_line    0x000021c0      0x143 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .debug_line    0x00002303      0x5dc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .debug_line    0x000028df       0x68 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyBootAsmGnu.o)
+ .debug_line    0x00002947      0x130 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .debug_line    0x00002a77       0xb2 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .debug_line    0x00002b29       0xe4 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+
+.debug_frame    0x00000000     0x1a64
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x2c .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_frame   0x0000002c       0xbc .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_frame   0x000000e8       0xb8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .debug_frame   0x000001a0      0x124 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .debug_frame   0x000002c4       0xf8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .debug_frame   0x000003bc       0xcc .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .debug_frame   0x00000488       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .debug_frame   0x000004c8      0x19c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .debug_frame   0x00000664      0x24c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .debug_frame   0x000008b0      0x26c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .debug_frame   0x00000b1c       0x60 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .debug_frame   0x00000b7c       0xe8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .debug_frame   0x00000c64       0xa8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .debug_frame   0x00000d0c       0x30 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .debug_frame   0x00000d3c      0x110 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .debug_frame   0x00000e4c      0x4a4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .debug_frame   0x000012f0       0xe8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .debug_frame   0x000013d8      0x4a8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .debug_frame   0x00001880       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .debug_frame   0x000018c0       0x50 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .debug_frame   0x00001910       0x58 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+ .debug_frame   0x00001968       0x20 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001988       0x20 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x000019a8       0x20 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000019c8       0x28 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x000019f0       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00001a1c       0x28 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00001a44       0x20 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x3130
+ *(.debug_str)
+ .debug_str     0x00000000      0x466 .\CortexM0\ARM_GCC_493\Debug\main.o
+                                0x4a6 (size before relaxing)
+ .debug_str     0x00000466       0x59 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+                                0x202 (size before relaxing)
+ .debug_str     0x000004bf      0x15a .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                                0x329 (size before relaxing)
+ .debug_str     0x00000619      0x16f .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+                                0x37f (size before relaxing)
+ .debug_str     0x00000788      0x56c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+                                0x9b7 (size before relaxing)
+ .debug_str     0x00000cf4      0x25e .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+                                0x98b (size before relaxing)
+ .debug_str     0x00000f52      0x24c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+                                0x8d6 (size before relaxing)
+ .debug_str     0x0000119e      0x111 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+                                0x6d3 (size before relaxing)
+ .debug_str     0x000012af      0x207 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+                                0x854 (size before relaxing)
+ .debug_str     0x000014b6      0x510 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+                                0xbf1 (size before relaxing)
+ .debug_str     0x000019c6      0x311 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+                                0xb35 (size before relaxing)
+ .debug_str     0x00001cd7       0x96 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+                                0x321 (size before relaxing)
+ .debug_str     0x00001d6d      0x138 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+                                0x306 (size before relaxing)
+ .debug_str     0x00001ea5      0x136 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+                                0x36d (size before relaxing)
+ .debug_str     0x00001fdb       0x97 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+                                0x2f6 (size before relaxing)
+ .debug_str     0x00002072      0x14b .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+                                0x374 (size before relaxing)
+ .debug_str     0x000021bd      0x555 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+                                0x82e (size before relaxing)
+ .debug_str     0x00002712       0xd7 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+                                0x2fb (size before relaxing)
+ .debug_str     0x000027e9      0x6de .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+                                0x960 (size before relaxing)
+ .debug_str     0x00002ec7       0x8d .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+                                0x76d (size before relaxing)
+ .debug_str     0x00002f54      0x169 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+                                0x2ae (size before relaxing)
+ .debug_str     0x000030bd       0x73 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+                                0x30a (size before relaxing)
+
+.debug_loc      0x00000000     0x483c
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x14f .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_loc     0x0000014f      0x14d .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .debug_loc     0x0000029c      0x421 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .debug_loc     0x000006bd      0x74e .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .debug_loc     0x00000e0b      0x465 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .debug_loc     0x00001270      0x13d .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .debug_loc     0x000013ad      0x873 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .debug_loc     0x00001c20      0x5c6 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .debug_loc     0x000021e6      0x6d0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .debug_loc     0x000028b6      0x1f1 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .debug_loc     0x00002aa7       0x7e .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .debug_loc     0x00002b25       0xe1 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .debug_loc     0x00002c06      0x132 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .debug_loc     0x00002d38       0x82 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .debug_loc     0x00002dba      0x834 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .debug_loc     0x000035ee       0xe1 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .debug_loc     0x000036cf      0xdb4 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .debug_loc     0x00004483       0x3c .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .debug_loc     0x000044bf      0x229 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .debug_loc     0x000046e8      0x154 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0x848
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_ranges  0x00000010       0x38 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_ranges  0x00000048       0x38 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .debug_ranges  0x00000080       0x58 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .debug_ranges  0x000000d8       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .debug_ranges  0x00000118       0x48 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .debug_ranges  0x00000160       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .debug_ranges  0x00000178       0x70 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .debug_ranges  0x000001e8       0xb8 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .debug_ranges  0x000002a0       0xb0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .debug_ranges  0x00000350       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .debug_ranges  0x00000368       0x50 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .debug_ranges  0x000003b8       0x40 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .debug_ranges  0x000003f8       0x10 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .debug_ranges  0x00000408       0x70 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .debug_ranges  0x00000478      0x1c0 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .debug_ranges  0x00000638       0x48 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .debug_ranges  0x00000680      0x178 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .debug_ranges  0x000007f8       0x18 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .debug_ranges  0x00000810       0x18 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .debug_ranges  0x00000828       0x20 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 .\CortexM0\ARM_GCC_493\Debug\main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .comment       0x00000000       0x71 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .comment       0x00000000       0x71 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x28
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1e c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x31 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .ARM.attributes
+                0x00000096       0x31 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .ARM.attributes
+                0x000000c7       0x31 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .ARM.attributes
+                0x000000f8       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyfitter_cfg.o)
+ .ARM.attributes
+                0x00000129       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Control.o)
+ .ARM.attributes
+                0x0000015a       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Processing.o)
+ .ARM.attributes
+                0x0000018b       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Structure.o)
+ .ARM.attributes
+                0x000001bc       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Tuner.o)
+ .ARM.attributes
+                0x000001ed       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Filter.o)
+ .ARM.attributes
+                0x0000021e       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Sensing.o)
+ .ARM.attributes
+                0x0000024f       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_SensingCSD_LL.o)
+ .ARM.attributes
+                0x00000280       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_Centroid_LL.o)
+ .ARM.attributes
+                0x000002b1       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C.o)
+ .ARM.attributes
+                0x000002e2       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C.o)
+ .ARM.attributes
+                0x00000313       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(EZI2C_EZI2C_INT.o)
+ .ARM.attributes
+                0x00000344       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_ISR.o)
+ .ARM.attributes
+                0x00000375       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLib.o)
+ .ARM.attributes
+                0x000003a6       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(cyPm.o)
+ .ARM.attributes
+                0x000003d7       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyLFClk.o)
+ .ARM.attributes
+                0x00000408       0x21 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x00000429       0x31 .\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.a(CapSense_INT.o)
+ .ARM.attributes
+                0x0000045a       0x31 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_LL_v3_10.o)
+ .ARM.attributes
+                0x0000048b       0x31 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_10\PSoC4\Library\Capsense_P4Library_GCC.a(CapSense_SmartSense_SL_v3_10.o)
+ .ARM.attributes
+                0x000004bc       0x1e c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000004da       0x1e c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x000004f8       0x1e c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000516       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000542       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000056e       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000059a       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x000005c6       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000005f2       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000061e       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .ARM.attributes
+                0x0000064a       0x1e c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(.\CortexM0\ARM_GCC_493\Debug\CE210289_CapSense_P4_Linear_Slider01.elf elf32-littlearm)

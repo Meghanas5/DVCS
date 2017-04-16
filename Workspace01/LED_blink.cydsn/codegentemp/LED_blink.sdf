@@ -1,0 +1,28 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2017-04-16T20:19:59Z")
+ (DESIGN "LED_blink")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.0 Update 1")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "LED_blink")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.hfclk Timer_Int.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.hfclk \\BLE_1\:bless_isr\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.ff_div_7 \\PWM\:cy_m0s8_tcpwm_1\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM\:cy_m0s8_tcpwm_1\\.line_out Servo\(0\).pin_input (2.649:2.649:2.649))
+    (INTERCONNECT \\Timer\:cy_m0s8_tcpwm_1\\.interrupt Timer_Int.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT ClockBlock.ff_div_8 \\Timer\:cy_m0s8_tcpwm_1\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT Servo\(0\).pad_out Servo\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT \\BLE_1\:cy_m0s8_ble\\.interrupt \\BLE_1\:bless_isr\\.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT Servo\(0\).pad_out Servo\(0\)_PAD (0.000:0.000:0.000))
+    (INTERCONNECT Servo\(0\)_PAD Servo\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

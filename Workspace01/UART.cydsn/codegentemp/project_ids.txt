@@ -1,0 +1,6 @@
+C:\Users\Sarah\Documents\PSoC Creator\Workspace01\UART.cydsn\UART.cyprj|28dda9bb-84fc-4d4f-ae48-2a78a3013da3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|fad0fd51-9fa9-468e-ba92-d936ec9318fd
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c87d388c-e0bc-4684-8c2d-59312df2c4d2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|8c714ab0-a925-4181-9092-bb989af42b60
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|d17e912f-06e4-4f5b-926a-03e458a1caf2
+C:\Users\Sarah\Documents\PSoC Creator\Workspace01\LED_blink.cydsn\LED_blink.cyprj|bf370884-f28d-4d95-b045-060714050bcd

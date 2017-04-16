@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|22087aa3-8d22-4057-a24d-9355f18fb6f9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|462b9963-4487-4a10-b8b9-279b815e8878
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b5ed06c3-48eb-48ee-b500-5f8cb97adcb0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|cb1380e6-9fa3-4c41-afbb-ab67d153810e
+C:\Users\Sarah\Documents\PSoC Creator\CE210289_CapSense_P4_Linear_Slider01\CE210289_CapSense_P4_Linear_Slider01.cydsn\CE210289_CapSense_P4_Linear_Slider01.cyprj|d3ca5190-9276-483d-9cdd-ca6ff828e3d4

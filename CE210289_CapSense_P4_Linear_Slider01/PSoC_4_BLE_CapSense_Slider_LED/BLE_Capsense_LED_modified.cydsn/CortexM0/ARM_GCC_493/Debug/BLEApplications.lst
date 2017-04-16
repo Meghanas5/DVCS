@@ -1,0 +1,4525 @@
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"BLEApplications.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.comm	connectionHandle,2,4
+  18              		.comm	rgbHandle,12,4
+  19              		.global	sendCapSenseSliderNotifications
+  20              		.bss
+  21              		.type	sendCapSenseSliderNotifications, %object
+  22              		.size	sendCapSenseSliderNotifications, 1
+  23              	sendCapSenseSliderNotifications:
+  24 0000 00       		.space	1
+  25              		.global	rgbledNotifications
+  26              		.type	rgbledNotifications, %object
+  27              		.size	rgbledNotifications, 1
+  28              	rgbledNotifications:
+  29 0001 00       		.space	1
+  30              		.comm	RGBledData,4,4
+  31              		.global	deviceConnected
+  32              		.type	deviceConnected, %object
+  33              		.size	deviceConnected, 1
+  34              	deviceConnected:
+  35 0002 00       		.space	1
+  36              		.global	restartAdvertisement
+  37              		.type	restartAdvertisement, %object
+  38              		.size	restartAdvertisement, 1
+  39              	restartAdvertisement:
+  40 0003 00       		.space	1
+  41              		.global	enableCapSenseData
+  42              		.type	enableCapSenseData, %object
+  43              		.size	enableCapSenseData, 1
+  44              	enableCapSenseData:
+  45 0004 00       		.space	1
+  46              		.data
+  47              		.type	isConnectionUpdateRequested, %object
+  48              		.size	isConnectionUpdateRequested, 1
+  49              	isConnectionUpdateRequested:
+  50 0000 01       		.byte	1
+  51 0001 000000   		.align	2
+  52              		.type	ConnectionParam, %object
+  53              		.size	ConnectionParam, 8
+  54              	ConnectionParam:
+  55 0004 3200     		.short	50
+  56 0006 3400     		.short	52
+  57 0008 0400     		.short	4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 2
+
+
+  58 000a C800     		.short	200
+  59              		.global	shut_down_led
+  60              		.type	shut_down_led, %object
+  61              		.size	shut_down_led, 1
+  62              	shut_down_led:
+  63 000c 01       		.byte	1
+  64              		.global	led_timer
+  65              		.bss
+  66              		.type	led_timer, %object
+  67              		.size	led_timer, 1
+  68              	led_timer:
+  69 0005 00       		.space	1
+  70              		.global	timer_tick
+  71              		.type	timer_tick, %object
+  72              		.size	timer_tick, 1
+  73              	timer_tick:
+  74 0006 00       		.space	1
+  75              		.global	switch_off_status_led
+  76              		.type	switch_off_status_led, %object
+  77              		.size	switch_off_status_led, 1
+  78              	switch_off_status_led:
+  79 0007 00       		.space	1
+  80              		.global	busyStatus
+  81              		.type	busyStatus, %object
+  82              		.size	busyStatus, 1
+  83              	busyStatus:
+  84 0008 00       		.space	1
+  85              		.comm	CapSenseCCCDvalue,2,4
+  86              		.comm	RGBCCCDvalue,2,4
+  87              		.comm	CapSenseNotificationCCCDhandle,12,4
+  88              		.comm	RGBNotificationCCCDhandle,12,4
+  89              		.section	.text.CustomEventHandler,"ax",%progbits
+  90              		.align	2
+  91              		.global	CustomEventHandler
+  92              		.code	16
+  93              		.thumb_func
+  94              		.type	CustomEventHandler, %function
+  95              	CustomEventHandler:
+  96              	.LFB37:
+  97              		.file 1 "BLEApplications.c"
+   1:BLEApplications.c **** /******************************************************************************
+   2:BLEApplications.c **** * Project Name		: PSoC_4_BLE_CapSense_Slider_LED
+   3:BLEApplications.c **** * File Name			: BLEApplications.c
+   4:BLEApplications.c **** * Version 			: 1.0
+   5:BLEApplications.c **** * Device Used		: CY8C4248LQI-BL583
+   6:BLEApplications.c **** * Software Used		: PSoC Creator 3.3 CP2
+   7:BLEApplications.c **** * Compiler    		: ARM GCC 4.9.3, ARM MDK Generic
+   8:BLEApplications.c **** * Related Hardware	: CY8CKIT-042-BLE-A Bluetooth Low Energy Pioneer Kit 
+   9:BLEApplications.c **** * Owner             : ROIT
+  10:BLEApplications.c **** *
+  11:BLEApplications.c **** ********************************************************************************
+  12:BLEApplications.c **** * Copyright (2015-16), Cypress Semiconductor Corporation. All Rights Reserved.
+  13:BLEApplications.c **** ********************************************************************************
+  14:BLEApplications.c **** * This software is owned by Cypress Semiconductor Corporation (Cypress)
+  15:BLEApplications.c **** * and is protected by and subject to worldwide patent protection (United
+  16:BLEApplications.c **** * States and foreign), United States copyright laws and international treaty
+  17:BLEApplications.c **** * provisions. Cypress hereby grants to licensee a personal, non-exclusive,
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 3
+
+
+  18:BLEApplications.c **** * non-transferable license to copy, use, modify, create derivative works of,
+  19:BLEApplications.c **** * and compile the Cypress Source Code and derivative works for the sole
+  20:BLEApplications.c **** * purpose of creating custom software in support of licensee product to be
+  21:BLEApplications.c **** * used only in conjunction with a Cypress integrated circuit as specified in
+  22:BLEApplications.c **** * the applicable agreement. Any reproduction, modification, translation,
+  23:BLEApplications.c **** * compilation, or representation of this software except as specified above 
+  24:BLEApplications.c **** * is prohibited without the express written permission of Cypress.
+  25:BLEApplications.c **** *
+  26:BLEApplications.c **** * Disclaimer: CYPRESS MAKES NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH 
+  27:BLEApplications.c **** * REGARD TO THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+  28:BLEApplications.c **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  29:BLEApplications.c **** * Cypress reserves the right to make changes without further notice to the 
+  30:BLEApplications.c **** * materials described herein. Cypress does not assume any liability arising out 
+  31:BLEApplications.c **** * of the application or use of any product or circuit described herein. Cypress 
+  32:BLEApplications.c **** * does not authorize its products for use as critical components in life-support 
+  33:BLEApplications.c **** * systems where a malfunction or failure may reasonably be expected to result in 
+  34:BLEApplications.c **** * significant injury to the user. The inclusion of Cypress' product in a life-
+  35:BLEApplications.c **** * support systems application implies that the manufacturer assumes all risk of 
+  36:BLEApplications.c **** * such use and in doing so indemnifies Cypress against all charges. 
+  37:BLEApplications.c **** *
+  38:BLEApplications.c **** * Use of this Software may be limited by and subject to the applicable Cypress
+  39:BLEApplications.c **** * software license agreement. 
+  40:BLEApplications.c **** *******************************************************************************/
+  41:BLEApplications.c **** #include <main.h>
+  42:BLEApplications.c **** 
+  43:BLEApplications.c **** /**************************Variable Declarations*****************************/
+  44:BLEApplications.c **** /* 'connectionHandle' stores connection parameters */
+  45:BLEApplications.c **** CYBLE_CONN_HANDLE_T  connectionHandle;
+  46:BLEApplications.c **** 
+  47:BLEApplications.c **** /* 'rgbHandle' stores RGB control data parameters */
+  48:BLEApplications.c **** CYBLE_GATT_HANDLE_VALUE_PAIR_T		rgbHandle;	
+  49:BLEApplications.c **** 
+  50:BLEApplications.c **** /*This flag is set when the Central device writes to CCCD (Client Characteristic 
+  51:BLEApplications.c **** * Configuration Descriptor) of the CapSense slider Characteristic to enable 
+  52:BLEApplications.c **** * notifications */
+  53:BLEApplications.c **** uint8 sendCapSenseSliderNotifications = FALSE;	
+  54:BLEApplications.c **** 
+  55:BLEApplications.c **** /*This flag is set when the Central device writes to CCCD of the 
+  56:BLEApplications.c **** * RGB LED Characteristic to enable notifications */
+  57:BLEApplications.c **** uint8 rgbledNotifications = FALSE;
+  58:BLEApplications.c **** 
+  59:BLEApplications.c **** /* Array to store the present RGB LED control data. The 4 bytes 
+  60:BLEApplications.c **** * of the array represents {R,G,B,Intensity} */
+  61:BLEApplications.c **** uint8 RGBledData[RGB_CHAR_DATA_LEN];
+  62:BLEApplications.c **** 
+  63:BLEApplications.c **** /* This flag is used by application to know whether a Central 
+  64:BLEApplications.c **** * device has been connected. This is updated in BLE event callback 
+  65:BLEApplications.c **** * function*/
+  66:BLEApplications.c **** uint8 deviceConnected = FALSE;
+  67:BLEApplications.c **** 
+  68:BLEApplications.c **** /* 'restartAdvertisement' flag provided the present state of power mode in firmware */
+  69:BLEApplications.c **** uint8 restartAdvertisement = FALSE;
+  70:BLEApplications.c **** 
+  71:BLEApplications.c **** /*'enableCapSenseData' flag is set after the Connection LED off status is received.
+  72:BLEApplications.c ****   This flag ensures that the CapSense related scanning does not increase the loop 
+  73:BLEApplications.c ****   time of firmware, causing the LED to be always ON.*/
+  74:BLEApplications.c **** uint8 enableCapSenseData = FALSE;	
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 4
+
+
+  75:BLEApplications.c **** 
+  76:BLEApplications.c **** /* This flag is used to let application send a L2CAP connection update request
+  77:BLEApplications.c **** * to Central device */
+  78:BLEApplications.c **** static uint8 isConnectionUpdateRequested = TRUE;
+  79:BLEApplications.c **** 
+  80:BLEApplications.c **** /* Connection Parameter update values. This values are used by the BLE component
+  81:BLEApplications.c **** * to update the connector parameter, including connection interval, to desired 
+  82:BLEApplications.c **** * value */
+  83:BLEApplications.c **** static CYBLE_GAP_CONN_UPDATE_PARAM_T ConnectionParam =
+  84:BLEApplications.c **** {
+  85:BLEApplications.c ****     CONN_PARAM_UPDATE_MIN_CONN_INTERVAL,  		      
+  86:BLEApplications.c ****     CONN_PARAM_UPDATE_MAX_CONN_INTERVAL,		       
+  87:BLEApplications.c ****     CONN_PARAM_UPDATE_SLAVE_LATENCY,			    
+  88:BLEApplications.c ****     CONN_PARAM_UPDATE_SUPRV_TIMEOUT 			         	
+  89:BLEApplications.c **** };
+  90:BLEApplications.c **** 
+  91:BLEApplications.c **** /* This flag is used to switch between CPU Deep Sleep and Sleep, depending on
+  92:BLEApplications.c **** * the status of RGB LED color values received. This method allows to conserve 
+  93:BLEApplications.c **** * more power while LED usage */
+  94:BLEApplications.c **** uint8 shut_down_led = TRUE;
+  95:BLEApplications.c **** 
+  96:BLEApplications.c **** /* Counter to keep the LED ON for a selected period before shuting the LEDs down */
+  97:BLEApplications.c **** uint8 led_timer = FALSE;
+  98:BLEApplications.c **** 
+  99:BLEApplications.c **** /* Counter to allow an initial 3 second Status LED ON for indicating connection */
+ 100:BLEApplications.c **** uint8 timer_tick = FALSE;
+ 101:BLEApplications.c **** 
+ 102:BLEApplications.c **** /* Flag to switch of the LED after connection */
+ 103:BLEApplications.c **** uint8 switch_off_status_led = FALSE;
+ 104:BLEApplications.c **** 
+ 105:BLEApplications.c **** /* Status flag for the Stack Busy state. This flag is used to notify the application 
+ 106:BLEApplications.c **** * whether there is stack buffer free to push more data or not */
+ 107:BLEApplications.c **** uint8 busyStatus = 0;
+ 108:BLEApplications.c **** 
+ 109:BLEApplications.c **** /* Local variable to store the current CCCD value */
+ 110:BLEApplications.c **** uint8 CapSenseCCCDvalue[2];
+ 111:BLEApplications.c **** uint8 RGBCCCDvalue[2];
+ 112:BLEApplications.c **** 
+ 113:BLEApplications.c **** /* Handle value to update the CCCD */
+ 114:BLEApplications.c **** CYBLE_GATT_HANDLE_VALUE_PAIR_T CapSenseNotificationCCCDhandle;
+ 115:BLEApplications.c **** 
+ 116:BLEApplications.c **** /* Handle value to update the CCCD */
+ 117:BLEApplications.c **** CYBLE_GATT_HANDLE_VALUE_PAIR_T RGBNotificationCCCDhandle;
+ 118:BLEApplications.c **** 
+ 119:BLEApplications.c **** 
+ 120:BLEApplications.c **** /****************************************************************************/
+ 121:BLEApplications.c **** 
+ 122:BLEApplications.c **** /*******************************************************************************
+ 123:BLEApplications.c **** * Function Name: CustomEventHandler
+ 124:BLEApplications.c **** ********************************************************************************
+ 125:BLEApplications.c **** * Summary:
+ 126:BLEApplications.c **** *        Call back event function to handle various events from BLE stack
+ 127:BLEApplications.c **** *
+ 128:BLEApplications.c **** * Parameters:
+ 129:BLEApplications.c **** *  event:		event returned
+ 130:BLEApplications.c **** *  eventParam:	link to value of the events returned
+ 131:BLEApplications.c **** *
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 5
+
+
+ 132:BLEApplications.c **** * Return:
+ 133:BLEApplications.c **** *  void
+ 134:BLEApplications.c **** *
+ 135:BLEApplications.c **** *******************************************************************************/
+ 136:BLEApplications.c **** void CustomEventHandler(uint32 event, void * eventParam)
+ 137:BLEApplications.c **** {
+  98              		.loc 1 137 0
+  99              		.cfi_startproc
+ 100 0000 80B5     		push	{r7, lr}
+ 101              		.cfi_def_cfa_offset 8
+ 102              		.cfi_offset 7, -8
+ 103              		.cfi_offset 14, -4
+ 104 0002 84B0     		sub	sp, sp, #16
+ 105              		.cfi_def_cfa_offset 24
+ 106 0004 00AF     		add	r7, sp, #0
+ 107              		.cfi_def_cfa_register 7
+ 108 0006 7860     		str	r0, [r7, #4]
+ 109 0008 3960     		str	r1, [r7]
+ 138:BLEApplications.c **** 	/* Local variable to store the data received as part of the Write request 
+ 139:BLEApplications.c **** 	* events */
+ 140:BLEApplications.c **** 	CYBLE_GATTS_WRITE_REQ_PARAM_T *wrReqParam;
+ 141:BLEApplications.c **** 
+ 142:BLEApplications.c ****     switch(event)
+ 110              		.loc 1 142 0
+ 111 000a 7B68     		ldr	r3, [r7, #4]
+ 112 000c 272B     		cmp	r3, #39
+ 113 000e 00D1     		bne	.LCB16
+ 114 0010 1EE1     		b	.L25	@long jump
+ 115              	.LCB16:
+ 116 0012 0CD8     		bhi	.L4
+ 117 0014 022B     		cmp	r3, #2
+ 118 0016 00D1     		bne	.LCB20
+ 119 0018 1CE1     		b	.L26	@long jump
+ 120              	.LCB20:
+ 121 001a 02D8     		bhi	.L6
+ 122 001c 012B     		cmp	r3, #1
+ 123 001e 14D0     		beq	.L7
+ 143:BLEApplications.c ****     {
+ 144:BLEApplications.c ****         case CYBLE_EVT_STACK_ON:
+ 145:BLEApplications.c **** 			/* This event is received when component is Started */
+ 146:BLEApplications.c **** 			
+ 147:BLEApplications.c **** 			/* Set restartAdvertisement flag to allow calling Advertisement 
+ 148:BLEApplications.c **** 			* API from main function */
+ 149:BLEApplications.c **** 			restartAdvertisement = TRUE;
+ 150:BLEApplications.c **** 			
+ 151:BLEApplications.c **** 			break;
+ 152:BLEApplications.c **** 			
+ 153:BLEApplications.c **** 		case CYBLE_EVT_TIMEOUT:
+ 154:BLEApplications.c **** 			/* Event Handling for Timeout  */
+ 155:BLEApplications.c **** 	
+ 156:BLEApplications.c **** 			break;
+ 157:BLEApplications.c ****         
+ 158:BLEApplications.c **** 		/**********************************************************
+ 159:BLEApplications.c ****         *                       GAP Events
+ 160:BLEApplications.c ****         ***********************************************************/
+ 161:BLEApplications.c **** 		case CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP:
+ 162:BLEApplications.c **** 			
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 6
+
+
+ 163:BLEApplications.c **** 			/* If the current BLE state is Disconnected, then the Advertisement
+ 164:BLEApplications.c **** 			* Start Stop event implies that advertisement has stopped */
+ 165:BLEApplications.c **** 			if(CyBle_GetState() == CYBLE_STATE_DISCONNECTED)
+ 166:BLEApplications.c **** 			{
+ 167:BLEApplications.c **** 				/* Set restartAdvertisement flag to allow calling Advertisement 
+ 168:BLEApplications.c **** 				* API from main function */
+ 169:BLEApplications.c **** 				restartAdvertisement = TRUE;
+ 170:BLEApplications.c **** 			}
+ 171:BLEApplications.c **** 			break;
+ 172:BLEApplications.c **** 			
+ 173:BLEApplications.c **** 		case CYBLE_EVT_GAP_DEVICE_CONNECTED: 					
+ 174:BLEApplications.c **** 			/* This event is received when device is connected over GAP layer */
+ 175:BLEApplications.c **** 			break;
+ 176:BLEApplications.c **** 
+ 177:BLEApplications.c **** 			
+ 178:BLEApplications.c ****         case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:
+ 179:BLEApplications.c **** 			/* This event is received when device is disconnected */
+ 180:BLEApplications.c **** 			
+ 181:BLEApplications.c **** 			/* Set restartAdvertisement flag to allow calling Advertisement 
+ 182:BLEApplications.c **** 			* API from main function */
+ 183:BLEApplications.c **** 			restartAdvertisement = TRUE;
+ 184:BLEApplications.c **** 			
+ 185:BLEApplications.c **** 			/* Set flag to allow system to go to Deep Sleep */
+ 186:BLEApplications.c **** 			shut_down_led = TRUE;
+ 187:BLEApplications.c **** 			break;
+ 188:BLEApplications.c ****         
+ 189:BLEApplications.c **** 		/**********************************************************
+ 190:BLEApplications.c ****         *                       GATT Events
+ 191:BLEApplications.c ****         ***********************************************************/
+ 192:BLEApplications.c ****         case CYBLE_EVT_GATT_CONNECT_IND:
+ 193:BLEApplications.c **** 			/* This event is received when device is connected over GATT level */
+ 194:BLEApplications.c **** 			
+ 195:BLEApplications.c **** 			/* Update attribute handle on GATT Connection*/
+ 196:BLEApplications.c ****             connectionHandle = *(CYBLE_CONN_HANDLE_T  *)eventParam;
+ 197:BLEApplications.c **** 			
+ 198:BLEApplications.c **** 			/* This flag is used in application to check connection status */
+ 199:BLEApplications.c **** 			deviceConnected = TRUE;
+ 200:BLEApplications.c **** 			break;
+ 201:BLEApplications.c ****         
+ 202:BLEApplications.c ****         case CYBLE_EVT_GATT_DISCONNECT_IND:
+ 203:BLEApplications.c **** 			/* This event is received when device is disconnected */
+ 204:BLEApplications.c **** 			
+ 205:BLEApplications.c **** 			/* Update deviceConnected flag*/
+ 206:BLEApplications.c **** 			deviceConnected = FALSE;
+ 207:BLEApplications.c **** 			
+ 208:BLEApplications.c **** 			/* Reset CapSense notification flag to prevent further notifications
+ 209:BLEApplications.c **** 			 * being sent to Central device after next connection. */
+ 210:BLEApplications.c **** 			sendCapSenseSliderNotifications = FALSE;
+ 211:BLEApplications.c **** 			
+ 212:BLEApplications.c **** 			/* Reset RGB notification flag to prevent further notifications
+ 213:BLEApplications.c **** 			 * being sent to Central device after next connection. */
+ 214:BLEApplications.c **** 			rgbledNotifications = FALSE;
+ 215:BLEApplications.c **** 			
+ 216:BLEApplications.c **** 			/* Reset the CCCD value to disable notifications */
+ 217:BLEApplications.c ****     		/* Write the present CapSense notification status to the local variable */
+ 218:BLEApplications.c ****     		CapSenseCCCDvalue[0] = sendCapSenseSliderNotifications;
+ 219:BLEApplications.c ****     		CapSenseCCCDvalue[1] = 0x00;
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 7
+
+
+ 220:BLEApplications.c ****     		
+ 221:BLEApplications.c ****     		/* Update CCCD handle with notification status data*/
+ 222:BLEApplications.c ****     		CapSenseNotificationCCCDhandle.attrHandle = CYBLE_CAPSENSE_CAPSENSE_SLIDER_CLIENT_CHARACTERIS
+ 223:BLEApplications.c ****     		CapSenseNotificationCCCDhandle.value.val = CapSenseCCCDvalue;
+ 224:BLEApplications.c ****     		CapSenseNotificationCCCDhandle.value.len = CCCD_DATA_LEN;
+ 225:BLEApplications.c ****     		
+ 226:BLEApplications.c ****     		/* Report data to BLE component for sending data when read by Central device */
+ 227:BLEApplications.c ****     		CyBle_GattsWriteAttributeValue(&CapSenseNotificationCCCDhandle, ZERO, &connectionHandle, CYBL
+ 228:BLEApplications.c **** 		
+ 229:BLEApplications.c ****     		/* Write the present RGB notification status to the local variable */
+ 230:BLEApplications.c ****     		RGBCCCDvalue[0] = rgbledNotifications;
+ 231:BLEApplications.c ****     		RGBCCCDvalue[1] = 0x00;
+ 232:BLEApplications.c ****     		
+ 233:BLEApplications.c ****     		/* Update CCCD handle with notification status data*/
+ 234:BLEApplications.c ****     		RGBNotificationCCCDhandle.attrHandle = CYBLE_RGB_LED_RGB_LED_CONTROL_CLIENT_CHARACTERISTIC_CO
+ 235:BLEApplications.c ****     		RGBNotificationCCCDhandle.value.val = RGBCCCDvalue;
+ 236:BLEApplications.c ****     		RGBNotificationCCCDhandle.value.len = CCCD_DATA_LEN;
+ 237:BLEApplications.c ****     		
+ 238:BLEApplications.c ****     		/* Report data to BLE component for sending data when read by Central device */
+ 239:BLEApplications.c ****     		CyBle_GattsWriteAttributeValue(&RGBNotificationCCCDhandle, ZERO, &connectionHandle, CYBLE_GAT
+ 240:BLEApplications.c **** 			
+ 241:BLEApplications.c **** 			/* Reset the color coordinates */
+ 242:BLEApplications.c **** 			RGBledData[RED_INDEX] = ZERO;
+ 243:BLEApplications.c ****             RGBledData[GREEN_INDEX] = ZERO;
+ 244:BLEApplications.c ****             RGBledData[BLUE_INDEX] = ZERO;
+ 245:BLEApplications.c ****             RGBledData[INTENSITY_INDEX] = ZERO;
+ 246:BLEApplications.c **** 			UpdateRGBled();
+ 247:BLEApplications.c ****             
+ 248:BLEApplications.c **** 			/* Reset the isConnectionUpdateRequested flag to allow sending
+ 249:BLEApplications.c **** 			* connection parameter update request in next connection */
+ 250:BLEApplications.c **** 			isConnectionUpdateRequested = TRUE;
+ 251:BLEApplications.c **** 			
+ 252:BLEApplications.c **** 			/* Set the flag to allow system to go to Deep Sleep */
+ 253:BLEApplications.c **** 			shut_down_led = TRUE;
+ 254:BLEApplications.c **** 			
+ 255:BLEApplications.c **** 			break;
+ 256:BLEApplications.c ****             
+ 257:BLEApplications.c ****         case CYBLE_EVT_GATTS_WRITE_REQ:
+ 258:BLEApplications.c **** 			/* This event is received when Central device sends a Write command on an Attribute */
+ 259:BLEApplications.c ****             wrReqParam = (CYBLE_GATTS_WRITE_REQ_PARAM_T *) eventParam;
+ 260:BLEApplications.c ****             
+ 261:BLEApplications.c **** 			/* When this event is triggered, the peripheral has received a write command on the custom chara
+ 262:BLEApplications.c **** 			/* Check if command is for correct attribute and update the flag for sending Notifications */
+ 263:BLEApplications.c ****             if(CYBLE_CAPSENSE_CAPSENSE_SLIDER_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE == wr
+ 264:BLEApplications.c **** 			{
+ 265:BLEApplications.c **** 				/* Extract the Write value sent by the Client for CapSense Slider CCCD */
+ 266:BLEApplications.c ****                 if(wrReqParam->handleValPair.value.val[CYBLE_CAPSENSE_CAPSENSE_SLIDER_CLIENT_CHARAC
+ 267:BLEApplications.c ****                 {
+ 268:BLEApplications.c ****                     sendCapSenseSliderNotifications = TRUE;
+ 269:BLEApplications.c ****                 }
+ 270:BLEApplications.c ****                 else if(wrReqParam->handleValPair.value.val[CYBLE_CAPSENSE_CAPSENSE_SLIDER_CLIENT_C
+ 271:BLEApplications.c ****                 {
+ 272:BLEApplications.c ****                     sendCapSenseSliderNotifications = FALSE;
+ 273:BLEApplications.c ****                 }
+ 274:BLEApplications.c **** 				
+ 275:BLEApplications.c ****         		/* Write the present CapSense notification status to the local variable */
+ 276:BLEApplications.c ****         		CapSenseCCCDvalue[0] = sendCapSenseSliderNotifications;
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 8
+
+
+ 277:BLEApplications.c ****         		CapSenseCCCDvalue[1] = 0x00;
+ 278:BLEApplications.c ****         		
+ 279:BLEApplications.c ****         		/* Update CCCD handle with notification status data*/
+ 280:BLEApplications.c ****         		CapSenseNotificationCCCDhandle.attrHandle = CYBLE_CAPSENSE_CAPSENSE_SLIDER_CLIENT_CHARACT
+ 281:BLEApplications.c ****         		CapSenseNotificationCCCDhandle.value.val = CapSenseCCCDvalue;
+ 282:BLEApplications.c ****         		CapSenseNotificationCCCDhandle.value.len = CCCD_DATA_LEN;
+ 283:BLEApplications.c ****         		
+ 284:BLEApplications.c ****         		/* Report data to BLE component for sending data when read by Central device */
+ 285:BLEApplications.c ****         		CyBle_GattsWriteAttributeValue(&CapSenseNotificationCCCDhandle, ZERO, &connectionHandle, 
+ 286:BLEApplications.c ****             }
+ 287:BLEApplications.c **** 			
+ 288:BLEApplications.c **** 			if(CYBLE_RGB_LED_RGB_LED_CONTROL_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE == wrReqParam->
+ 289:BLEApplications.c ****             {
+ 290:BLEApplications.c **** 				/* Extract the Write value sent by the Client for RGB LED CCCD */
+ 291:BLEApplications.c ****                 if(wrReqParam->handleValPair.value.val[CYBLE_RGB_LED_RGB_LED_CONTROL_CLIENT_CHARACT
+ 292:BLEApplications.c ****                 {
+ 293:BLEApplications.c ****                     rgbledNotifications = TRUE;
+ 294:BLEApplications.c ****                 }
+ 295:BLEApplications.c ****                 else if(wrReqParam->handleValPair.value.val[CYBLE_RGB_LED_RGB_LED_CONTROL_CLIENT_CH
+ 296:BLEApplications.c ****                 {
+ 297:BLEApplications.c ****                     rgbledNotifications = FALSE;
+ 298:BLEApplications.c ****                 }
+ 299:BLEApplications.c **** 				
+ 300:BLEApplications.c ****         		/* Write the present RGB notification status to the local variable */
+ 301:BLEApplications.c ****         		RGBCCCDvalue[0] = rgbledNotifications;
+ 302:BLEApplications.c ****         		RGBCCCDvalue[1] = 0x00;
+ 303:BLEApplications.c ****         		
+ 304:BLEApplications.c ****         		/* Update CCCD handle with notification status data*/
+ 305:BLEApplications.c ****         		RGBNotificationCCCDhandle.attrHandle = CYBLE_RGB_LED_RGB_LED_CONTROL_CLIENT_CHARACTERISTI
+ 306:BLEApplications.c ****         		RGBNotificationCCCDhandle.value.val = RGBCCCDvalue;
+ 307:BLEApplications.c ****         		RGBNotificationCCCDhandle.value.len = CCCD_DATA_LEN;
+ 308:BLEApplications.c ****         		
+ 309:BLEApplications.c ****         		/* Report data to BLE component for sending data when read by Central device */
+ 310:BLEApplications.c ****         		CyBle_GattsWriteAttributeValue(&RGBNotificationCCCDhandle, ZERO, &connectionHandle, CYBLE
+ 311:BLEApplications.c **** 				
+ 312:BLEApplications.c **** 				/* Update the RGB LED Notification attribute with new color coordinates */
+ 313:BLEApplications.c **** 				SendDataOverRGBledNotification(RGBledData, RGB_CHAR_DATA_LEN);
+ 314:BLEApplications.c ****             }
+ 315:BLEApplications.c **** 			
+ 316:BLEApplications.c **** 			/* Check if the returned handle is matching to RGB LED Control Write Attribute and extract the R
+ 317:BLEApplications.c ****             if(CYBLE_RGB_LED_RGB_LED_CONTROL_CHAR_HANDLE == wrReqParam->handleValPair.attrHandle)
+ 318:BLEApplications.c ****             {
+ 319:BLEApplications.c **** 				/* Extract the Write value sent by the Client for RGB LED Color characteristic */
+ 320:BLEApplications.c ****                 RGBledData[RED_INDEX] = wrReqParam->handleValPair.value.val[RED_INDEX];
+ 321:BLEApplications.c ****                 RGBledData[GREEN_INDEX] = wrReqParam->handleValPair.value.val[GREEN_INDEX];
+ 322:BLEApplications.c ****                 RGBledData[BLUE_INDEX] = wrReqParam->handleValPair.value.val[BLUE_INDEX];
+ 323:BLEApplications.c ****                 RGBledData[INTENSITY_INDEX] = wrReqParam->handleValPair.value.val[INTENSITY_INDEX];
+ 324:BLEApplications.c ****                 
+ 325:BLEApplications.c **** 				/* Update the PrISM components and the attribute for RGB LED read characteristics*/
+ 326:BLEApplications.c ****                 UpdateRGBled();
+ 327:BLEApplications.c ****             }
+ 328:BLEApplications.c **** 			
+ 329:BLEApplications.c **** 			/* Send the response to the write request received. */
+ 330:BLEApplications.c **** 			CyBle_GattsWriteRsp(connectionHandle);
+ 331:BLEApplications.c **** 			
+ 332:BLEApplications.c **** 			break;
+ 333:BLEApplications.c **** 			
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 9
+
+
+ 334:BLEApplications.c **** 		case CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP:
+ 335:BLEApplications.c **** 				/* If L2CAP connection parameter update response received, reset application flag */
+ 336:BLEApplications.c ****             	isConnectionUpdateRequested = FALSE;
+ 337:BLEApplications.c ****             break;
+ 338:BLEApplications.c **** 			
+ 339:BLEApplications.c **** 		case CYBLE_EVT_STACK_BUSY_STATUS:
+ 340:BLEApplications.c **** 			/* This event is generated when the internal stack buffer is full and no more
+ 341:BLEApplications.c **** 			* data can be accepted or the stack has buffer available and can accept data.
+ 342:BLEApplications.c **** 			* This event is used by application to prevent pushing lot of data to stack. */
+ 343:BLEApplications.c **** 			
+ 344:BLEApplications.c **** 			/* Extract the present stack status */
+ 345:BLEApplications.c ****             busyStatus = * (uint8*)eventParam;
+ 346:BLEApplications.c ****             break;
+ 347:BLEApplications.c **** 			
+ 348:BLEApplications.c ****         default:
+ 349:BLEApplications.c **** 
+ 350:BLEApplications.c ****        	 	break;
+ 124              		.loc 1 350 0
+ 125 0020 19E1     		b	.L1
+ 126              	.L6:
+ 142:BLEApplications.c ****     {
+ 127              		.loc 1 142 0
+ 128 0022 052B     		cmp	r3, #5
+ 129 0024 00D1     		bne	.LCB30
+ 130 0026 0EE1     		b	.L8	@long jump
+ 131              	.LCB30:
+ 132 0028 262B     		cmp	r3, #38
+ 133 002a 12D0     		beq	.L9
+ 134              		.loc 1 350 0
+ 135 002c 13E1     		b	.L1
+ 136              	.L4:
+ 142:BLEApplications.c ****     {
+ 137              		.loc 1 142 0
+ 138 002e 422B     		cmp	r3, #66
+ 139 0030 2DD0     		beq	.L10
+ 140 0032 04D8     		bhi	.L11
+ 141 0034 282B     		cmp	r3, #40
+ 142 0036 15D0     		beq	.L12
+ 143 0038 412B     		cmp	r3, #65
+ 144 003a 1AD0     		beq	.L13
+ 145              		.loc 1 350 0
+ 146 003c 0BE1     		b	.L1
+ 147              	.L11:
+ 142:BLEApplications.c ****     {
+ 148              		.loc 1 142 0
+ 149 003e 4C2B     		cmp	r3, #76
+ 150 0040 73D0     		beq	.L14
+ 151 0042 712B     		cmp	r3, #113
+ 152 0044 00D1     		bne	.LCB52
+ 153 0046 FAE0     		b	.L15	@long jump
+ 154              	.LCB52:
+ 155              		.loc 1 350 0
+ 156 0048 05E1     		b	.L1
+ 157              	.L7:
+ 149:BLEApplications.c **** 			
+ 158              		.loc 1 149 0
+ 159 004a 844B     		ldr	r3, .L27
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 10
+
+
+ 160 004c 0122     		mov	r2, #1
+ 161 004e 1A70     		strb	r2, [r3]
+ 151:BLEApplications.c **** 			
+ 162              		.loc 1 151 0
+ 163 0050 01E1     		b	.L1
+ 164              	.L9:
+ 165:BLEApplications.c **** 			{
+ 165              		.loc 1 165 0
+ 166 0052 834B     		ldr	r3, .L27+4
+ 167 0054 1B78     		ldrb	r3, [r3]
+ 168 0056 042B     		cmp	r3, #4
+ 169 0058 03D1     		bne	.L17
+ 169:BLEApplications.c **** 			}
+ 170              		.loc 1 169 0
+ 171 005a 804B     		ldr	r3, .L27
+ 172 005c 0122     		mov	r2, #1
+ 173 005e 1A70     		strb	r2, [r3]
+ 171:BLEApplications.c **** 			
+ 174              		.loc 1 171 0
+ 175 0060 F9E0     		b	.L1
+ 176              	.L17:
+ 177 0062 F8E0     		b	.L1
+ 178              	.L12:
+ 183:BLEApplications.c **** 			
+ 179              		.loc 1 183 0
+ 180 0064 7D4B     		ldr	r3, .L27
+ 181 0066 0122     		mov	r2, #1
+ 182 0068 1A70     		strb	r2, [r3]
+ 186:BLEApplications.c **** 			break;
+ 183              		.loc 1 186 0
+ 184 006a 7E4B     		ldr	r3, .L27+8
+ 185 006c 0122     		mov	r2, #1
+ 186 006e 1A70     		strb	r2, [r3]
+ 187:BLEApplications.c ****         
+ 187              		.loc 1 187 0
+ 188 0070 F1E0     		b	.L1
+ 189              	.L13:
+ 196:BLEApplications.c **** 			
+ 190              		.loc 1 196 0
+ 191 0072 7D4A     		ldr	r2, .L27+12
+ 192 0074 3B68     		ldr	r3, [r7]
+ 193 0076 111C     		mov	r1, r2
+ 194 0078 1A1C     		mov	r2, r3
+ 195 007a 0223     		mov	r3, #2
+ 196 007c 081C     		mov	r0, r1
+ 197 007e 111C     		mov	r1, r2
+ 198 0080 1A1C     		mov	r2, r3
+ 199 0082 FFF7FEFF 		bl	memcpy
+ 199:BLEApplications.c **** 			break;
+ 200              		.loc 1 199 0
+ 201 0086 794B     		ldr	r3, .L27+16
+ 202 0088 0122     		mov	r2, #1
+ 203 008a 1A70     		strb	r2, [r3]
+ 200:BLEApplications.c ****         
+ 204              		.loc 1 200 0
+ 205 008c E3E0     		b	.L1
+ 206              	.L10:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 11
+
+
+ 206:BLEApplications.c **** 			
+ 207              		.loc 1 206 0
+ 208 008e 774B     		ldr	r3, .L27+16
+ 209 0090 0022     		mov	r2, #0
+ 210 0092 1A70     		strb	r2, [r3]
+ 210:BLEApplications.c **** 			
+ 211              		.loc 1 210 0
+ 212 0094 764B     		ldr	r3, .L27+20
+ 213 0096 0022     		mov	r2, #0
+ 214 0098 1A70     		strb	r2, [r3]
+ 214:BLEApplications.c **** 			
+ 215              		.loc 1 214 0
+ 216 009a 764B     		ldr	r3, .L27+24
+ 217 009c 0022     		mov	r2, #0
+ 218 009e 1A70     		strb	r2, [r3]
+ 218:BLEApplications.c ****     		CapSenseCCCDvalue[1] = 0x00;
+ 219              		.loc 1 218 0
+ 220 00a0 734B     		ldr	r3, .L27+20
+ 221 00a2 1A78     		ldrb	r2, [r3]
+ 222 00a4 744B     		ldr	r3, .L27+28
+ 223 00a6 1A70     		strb	r2, [r3]
+ 219:BLEApplications.c ****     		
+ 224              		.loc 1 219 0
+ 225 00a8 734B     		ldr	r3, .L27+28
+ 226 00aa 0022     		mov	r2, #0
+ 227 00ac 5A70     		strb	r2, [r3, #1]
+ 222:BLEApplications.c ****     		CapSenseNotificationCCCDhandle.value.val = CapSenseCCCDvalue;
+ 228              		.loc 1 222 0
+ 229 00ae 734B     		ldr	r3, .L27+32
+ 230 00b0 0F22     		mov	r2, #15
+ 231 00b2 1A81     		strh	r2, [r3, #8]
+ 223:BLEApplications.c ****     		CapSenseNotificationCCCDhandle.value.len = CCCD_DATA_LEN;
+ 232              		.loc 1 223 0
+ 233 00b4 714B     		ldr	r3, .L27+32
+ 234 00b6 704A     		ldr	r2, .L27+28
+ 235 00b8 1A60     		str	r2, [r3]
+ 224:BLEApplications.c ****     		
+ 236              		.loc 1 224 0
+ 237 00ba 704B     		ldr	r3, .L27+32
+ 238 00bc 0222     		mov	r2, #2
+ 239 00be 9A80     		strh	r2, [r3, #4]
+ 227:BLEApplications.c **** 		
+ 240              		.loc 1 227 0
+ 241 00c0 6E4A     		ldr	r2, .L27+32
+ 242 00c2 694B     		ldr	r3, .L27+12
+ 243 00c4 101C     		mov	r0, r2
+ 244 00c6 0021     		mov	r1, #0
+ 245 00c8 1A1C     		mov	r2, r3
+ 246 00ca 4023     		mov	r3, #64
+ 247 00cc FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
+ 230:BLEApplications.c ****     		RGBCCCDvalue[1] = 0x00;
+ 248              		.loc 1 230 0
+ 249 00d0 684B     		ldr	r3, .L27+24
+ 250 00d2 1A78     		ldrb	r2, [r3]
+ 251 00d4 6A4B     		ldr	r3, .L27+36
+ 252 00d6 1A70     		strb	r2, [r3]
+ 231:BLEApplications.c ****     		
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 12
+
+
+ 253              		.loc 1 231 0
+ 254 00d8 694B     		ldr	r3, .L27+36
+ 255 00da 0022     		mov	r2, #0
+ 256 00dc 5A70     		strb	r2, [r3, #1]
+ 234:BLEApplications.c ****     		RGBNotificationCCCDhandle.value.val = RGBCCCDvalue;
+ 257              		.loc 1 234 0
+ 258 00de 694B     		ldr	r3, .L27+40
+ 259 00e0 1422     		mov	r2, #20
+ 260 00e2 1A81     		strh	r2, [r3, #8]
+ 235:BLEApplications.c ****     		RGBNotificationCCCDhandle.value.len = CCCD_DATA_LEN;
+ 261              		.loc 1 235 0
+ 262 00e4 674B     		ldr	r3, .L27+40
+ 263 00e6 664A     		ldr	r2, .L27+36
+ 264 00e8 1A60     		str	r2, [r3]
+ 236:BLEApplications.c ****     		
+ 265              		.loc 1 236 0
+ 266 00ea 664B     		ldr	r3, .L27+40
+ 267 00ec 0222     		mov	r2, #2
+ 268 00ee 9A80     		strh	r2, [r3, #4]
+ 239:BLEApplications.c **** 			
+ 269              		.loc 1 239 0
+ 270 00f0 644A     		ldr	r2, .L27+40
+ 271 00f2 5D4B     		ldr	r3, .L27+12
+ 272 00f4 101C     		mov	r0, r2
+ 273 00f6 0021     		mov	r1, #0
+ 274 00f8 1A1C     		mov	r2, r3
+ 275 00fa 4023     		mov	r3, #64
+ 276 00fc FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
+ 242:BLEApplications.c ****             RGBledData[GREEN_INDEX] = ZERO;
+ 277              		.loc 1 242 0
+ 278 0100 614B     		ldr	r3, .L27+44
+ 279 0102 0022     		mov	r2, #0
+ 280 0104 1A70     		strb	r2, [r3]
+ 243:BLEApplications.c ****             RGBledData[BLUE_INDEX] = ZERO;
+ 281              		.loc 1 243 0
+ 282 0106 604B     		ldr	r3, .L27+44
+ 283 0108 0022     		mov	r2, #0
+ 284 010a 5A70     		strb	r2, [r3, #1]
+ 244:BLEApplications.c ****             RGBledData[INTENSITY_INDEX] = ZERO;
+ 285              		.loc 1 244 0
+ 286 010c 5E4B     		ldr	r3, .L27+44
+ 287 010e 0022     		mov	r2, #0
+ 288 0110 9A70     		strb	r2, [r3, #2]
+ 245:BLEApplications.c **** 			UpdateRGBled();
+ 289              		.loc 1 245 0
+ 290 0112 5D4B     		ldr	r3, .L27+44
+ 291 0114 0022     		mov	r2, #0
+ 292 0116 DA70     		strb	r2, [r3, #3]
+ 246:BLEApplications.c ****             
+ 293              		.loc 1 246 0
+ 294 0118 FFF7FEFF 		bl	UpdateRGBled
+ 250:BLEApplications.c **** 			
+ 295              		.loc 1 250 0
+ 296 011c 5B4B     		ldr	r3, .L27+48
+ 297 011e 0122     		mov	r2, #1
+ 298 0120 1A70     		strb	r2, [r3]
+ 253:BLEApplications.c **** 			
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 13
+
+
+ 299              		.loc 1 253 0
+ 300 0122 504B     		ldr	r3, .L27+8
+ 301 0124 0122     		mov	r2, #1
+ 302 0126 1A70     		strb	r2, [r3]
+ 255:BLEApplications.c ****             
+ 303              		.loc 1 255 0
+ 304 0128 95E0     		b	.L1
+ 305              	.L14:
+ 259:BLEApplications.c ****             
+ 306              		.loc 1 259 0
+ 307 012a 3B68     		ldr	r3, [r7]
+ 308 012c FB60     		str	r3, [r7, #12]
+ 263:BLEApplications.c **** 			{
+ 309              		.loc 1 263 0
+ 310 012e FB68     		ldr	r3, [r7, #12]
+ 311 0130 9B89     		ldrh	r3, [r3, #12]
+ 312 0132 0F2B     		cmp	r3, #15
+ 313 0134 28D1     		bne	.L18
+ 266:BLEApplications.c ****                 {
+ 314              		.loc 1 266 0
+ 315 0136 FB68     		ldr	r3, [r7, #12]
+ 316 0138 5B68     		ldr	r3, [r3, #4]
+ 317 013a 1B78     		ldrb	r3, [r3]
+ 318 013c 012B     		cmp	r3, #1
+ 319 013e 03D1     		bne	.L19
+ 268:BLEApplications.c ****                 }
+ 320              		.loc 1 268 0
+ 321 0140 4B4B     		ldr	r3, .L27+20
+ 322 0142 0122     		mov	r2, #1
+ 323 0144 1A70     		strb	r2, [r3]
+ 324 0146 07E0     		b	.L20
+ 325              	.L19:
+ 270:BLEApplications.c ****                 {
+ 326              		.loc 1 270 0
+ 327 0148 FB68     		ldr	r3, [r7, #12]
+ 328 014a 5B68     		ldr	r3, [r3, #4]
+ 329 014c 1B78     		ldrb	r3, [r3]
+ 330 014e 002B     		cmp	r3, #0
+ 331 0150 02D1     		bne	.L20
+ 272:BLEApplications.c ****                 }
+ 332              		.loc 1 272 0
+ 333 0152 474B     		ldr	r3, .L27+20
+ 334 0154 0022     		mov	r2, #0
+ 335 0156 1A70     		strb	r2, [r3]
+ 336              	.L20:
+ 276:BLEApplications.c ****         		CapSenseCCCDvalue[1] = 0x00;
+ 337              		.loc 1 276 0
+ 338 0158 454B     		ldr	r3, .L27+20
+ 339 015a 1A78     		ldrb	r2, [r3]
+ 340 015c 464B     		ldr	r3, .L27+28
+ 341 015e 1A70     		strb	r2, [r3]
+ 277:BLEApplications.c ****         		
+ 342              		.loc 1 277 0
+ 343 0160 454B     		ldr	r3, .L27+28
+ 344 0162 0022     		mov	r2, #0
+ 345 0164 5A70     		strb	r2, [r3, #1]
+ 280:BLEApplications.c ****         		CapSenseNotificationCCCDhandle.value.val = CapSenseCCCDvalue;
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 14
+
+
+ 346              		.loc 1 280 0
+ 347 0166 454B     		ldr	r3, .L27+32
+ 348 0168 0F22     		mov	r2, #15
+ 349 016a 1A81     		strh	r2, [r3, #8]
+ 281:BLEApplications.c ****         		CapSenseNotificationCCCDhandle.value.len = CCCD_DATA_LEN;
+ 350              		.loc 1 281 0
+ 351 016c 434B     		ldr	r3, .L27+32
+ 352 016e 424A     		ldr	r2, .L27+28
+ 353 0170 1A60     		str	r2, [r3]
+ 282:BLEApplications.c ****         		
+ 354              		.loc 1 282 0
+ 355 0172 424B     		ldr	r3, .L27+32
+ 356 0174 0222     		mov	r2, #2
+ 357 0176 9A80     		strh	r2, [r3, #4]
+ 285:BLEApplications.c ****             }
+ 358              		.loc 1 285 0
+ 359 0178 404A     		ldr	r2, .L27+32
+ 360 017a 3B4B     		ldr	r3, .L27+12
+ 361 017c 101C     		mov	r0, r2
+ 362 017e 0021     		mov	r1, #0
+ 363 0180 1A1C     		mov	r2, r3
+ 364 0182 4023     		mov	r3, #64
+ 365 0184 FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
+ 366              	.L18:
+ 288:BLEApplications.c ****             {
+ 367              		.loc 1 288 0
+ 368 0188 FB68     		ldr	r3, [r7, #12]
+ 369 018a 9B89     		ldrh	r3, [r3, #12]
+ 370 018c 142B     		cmp	r3, #20
+ 371 018e 2DD1     		bne	.L21
+ 291:BLEApplications.c ****                 {
+ 372              		.loc 1 291 0
+ 373 0190 FB68     		ldr	r3, [r7, #12]
+ 374 0192 5B68     		ldr	r3, [r3, #4]
+ 375 0194 1B78     		ldrb	r3, [r3]
+ 376 0196 012B     		cmp	r3, #1
+ 377 0198 03D1     		bne	.L22
+ 293:BLEApplications.c ****                 }
+ 378              		.loc 1 293 0
+ 379 019a 364B     		ldr	r3, .L27+24
+ 380 019c 0122     		mov	r2, #1
+ 381 019e 1A70     		strb	r2, [r3]
+ 382 01a0 07E0     		b	.L23
+ 383              	.L22:
+ 295:BLEApplications.c ****                 {
+ 384              		.loc 1 295 0
+ 385 01a2 FB68     		ldr	r3, [r7, #12]
+ 386 01a4 5B68     		ldr	r3, [r3, #4]
+ 387 01a6 1B78     		ldrb	r3, [r3]
+ 388 01a8 002B     		cmp	r3, #0
+ 389 01aa 02D1     		bne	.L23
+ 297:BLEApplications.c ****                 }
+ 390              		.loc 1 297 0
+ 391 01ac 314B     		ldr	r3, .L27+24
+ 392 01ae 0022     		mov	r2, #0
+ 393 01b0 1A70     		strb	r2, [r3]
+ 394              	.L23:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 15
+
+
+ 301:BLEApplications.c ****         		RGBCCCDvalue[1] = 0x00;
+ 395              		.loc 1 301 0
+ 396 01b2 304B     		ldr	r3, .L27+24
+ 397 01b4 1A78     		ldrb	r2, [r3]
+ 398 01b6 324B     		ldr	r3, .L27+36
+ 399 01b8 1A70     		strb	r2, [r3]
+ 302:BLEApplications.c ****         		
+ 400              		.loc 1 302 0
+ 401 01ba 314B     		ldr	r3, .L27+36
+ 402 01bc 0022     		mov	r2, #0
+ 403 01be 5A70     		strb	r2, [r3, #1]
+ 305:BLEApplications.c ****         		RGBNotificationCCCDhandle.value.val = RGBCCCDvalue;
+ 404              		.loc 1 305 0
+ 405 01c0 304B     		ldr	r3, .L27+40
+ 406 01c2 1422     		mov	r2, #20
+ 407 01c4 1A81     		strh	r2, [r3, #8]
+ 306:BLEApplications.c ****         		RGBNotificationCCCDhandle.value.len = CCCD_DATA_LEN;
+ 408              		.loc 1 306 0
+ 409 01c6 2F4B     		ldr	r3, .L27+40
+ 410 01c8 2D4A     		ldr	r2, .L27+36
+ 411 01ca 1A60     		str	r2, [r3]
+ 307:BLEApplications.c ****         		
+ 412              		.loc 1 307 0
+ 413 01cc 2D4B     		ldr	r3, .L27+40
+ 414 01ce 0222     		mov	r2, #2
+ 415 01d0 9A80     		strh	r2, [r3, #4]
+ 310:BLEApplications.c **** 				
+ 416              		.loc 1 310 0
+ 417 01d2 2C4A     		ldr	r2, .L27+40
+ 418 01d4 244B     		ldr	r3, .L27+12
+ 419 01d6 101C     		mov	r0, r2
+ 420 01d8 0021     		mov	r1, #0
+ 421 01da 1A1C     		mov	r2, r3
+ 422 01dc 4023     		mov	r3, #64
+ 423 01de FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
+ 313:BLEApplications.c ****             }
+ 424              		.loc 1 313 0
+ 425 01e2 294B     		ldr	r3, .L27+44
+ 426 01e4 181C     		mov	r0, r3
+ 427 01e6 0421     		mov	r1, #4
+ 428 01e8 FFF7FEFF 		bl	SendDataOverRGBledNotification
+ 429              	.L21:
+ 317:BLEApplications.c ****             {
+ 430              		.loc 1 317 0
+ 431 01ec FB68     		ldr	r3, [r7, #12]
+ 432 01ee 9B89     		ldrh	r3, [r3, #12]
+ 433 01f0 132B     		cmp	r3, #19
+ 434 01f2 15D1     		bne	.L24
+ 320:BLEApplications.c ****                 RGBledData[GREEN_INDEX] = wrReqParam->handleValPair.value.val[GREEN_INDEX];
+ 435              		.loc 1 320 0
+ 436 01f4 FB68     		ldr	r3, [r7, #12]
+ 437 01f6 5B68     		ldr	r3, [r3, #4]
+ 438 01f8 1A78     		ldrb	r2, [r3]
+ 439 01fa 234B     		ldr	r3, .L27+44
+ 440 01fc 1A70     		strb	r2, [r3]
+ 321:BLEApplications.c ****                 RGBledData[BLUE_INDEX] = wrReqParam->handleValPair.value.val[BLUE_INDEX];
+ 441              		.loc 1 321 0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 16
+
+
+ 442 01fe FB68     		ldr	r3, [r7, #12]
+ 443 0200 5B68     		ldr	r3, [r3, #4]
+ 444 0202 5A78     		ldrb	r2, [r3, #1]
+ 445 0204 204B     		ldr	r3, .L27+44
+ 446 0206 5A70     		strb	r2, [r3, #1]
+ 322:BLEApplications.c ****                 RGBledData[INTENSITY_INDEX] = wrReqParam->handleValPair.value.val[INTENSITY_INDEX];
+ 447              		.loc 1 322 0
+ 448 0208 FB68     		ldr	r3, [r7, #12]
+ 449 020a 5B68     		ldr	r3, [r3, #4]
+ 450 020c 9A78     		ldrb	r2, [r3, #2]
+ 451 020e 1E4B     		ldr	r3, .L27+44
+ 452 0210 9A70     		strb	r2, [r3, #2]
+ 323:BLEApplications.c ****                 
+ 453              		.loc 1 323 0
+ 454 0212 FB68     		ldr	r3, [r7, #12]
+ 455 0214 5B68     		ldr	r3, [r3, #4]
+ 456 0216 DA78     		ldrb	r2, [r3, #3]
+ 457 0218 1B4B     		ldr	r3, .L27+44
+ 458 021a DA70     		strb	r2, [r3, #3]
+ 326:BLEApplications.c ****             }
+ 459              		.loc 1 326 0
+ 460 021c FFF7FEFF 		bl	UpdateRGBled
+ 461              	.L24:
+ 330:BLEApplications.c **** 			
+ 462              		.loc 1 330 0
+ 463 0220 114B     		ldr	r3, .L27+12
+ 464 0222 1A78     		ldrb	r2, [r3]
+ 465 0224 5B78     		ldrb	r3, [r3, #1]
+ 466 0226 1B02     		lsl	r3, r3, #8
+ 467 0228 1A43     		orr	r2, r3
+ 468 022a 0023     		mov	r3, #0
+ 469 022c 1204     		lsl	r2, r2, #16
+ 470 022e 120C     		lsr	r2, r2, #16
+ 471 0230 1B0C     		lsr	r3, r3, #16
+ 472 0232 1B04     		lsl	r3, r3, #16
+ 473 0234 1343     		orr	r3, r2
+ 474 0236 181C     		mov	r0, r3
+ 475 0238 FFF7FEFF 		bl	CyBle_GattsWriteRsp
+ 332:BLEApplications.c **** 			
+ 476              		.loc 1 332 0
+ 477 023c 0BE0     		b	.L1
+ 478              	.L15:
+ 336:BLEApplications.c ****             break;
+ 479              		.loc 1 336 0
+ 480 023e 134B     		ldr	r3, .L27+48
+ 481 0240 0022     		mov	r2, #0
+ 482 0242 1A70     		strb	r2, [r3]
+ 337:BLEApplications.c **** 			
+ 483              		.loc 1 337 0
+ 484 0244 07E0     		b	.L1
+ 485              	.L8:
+ 345:BLEApplications.c ****             break;
+ 486              		.loc 1 345 0
+ 487 0246 3B68     		ldr	r3, [r7]
+ 488 0248 1A78     		ldrb	r2, [r3]
+ 489 024a 114B     		ldr	r3, .L27+52
+ 490 024c 1A70     		strb	r2, [r3]
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 17
+
+
+ 346:BLEApplications.c **** 			
+ 491              		.loc 1 346 0
+ 492 024e 02E0     		b	.L1
+ 493              	.L25:
+ 175:BLEApplications.c **** 
+ 494              		.loc 1 175 0
+ 495 0250 C046     		mov	r8, r8
+ 496 0252 00E0     		b	.L1
+ 497              	.L26:
+ 156:BLEApplications.c ****         
+ 498              		.loc 1 156 0
+ 499 0254 C046     		mov	r8, r8
+ 500              	.L1:
+ 351:BLEApplications.c ****     }   	/* switch(event) */
+ 352:BLEApplications.c **** }
+ 501              		.loc 1 352 0
+ 502 0256 BD46     		mov	sp, r7
+ 503 0258 04B0     		add	sp, sp, #16
+ 504              		@ sp needed
+ 505 025a 80BD     		pop	{r7, pc}
+ 506              	.L28:
+ 507              		.align	2
+ 508              	.L27:
+ 509 025c 00000000 		.word	restartAdvertisement
+ 510 0260 00000000 		.word	cyBle_state
+ 511 0264 00000000 		.word	shut_down_led
+ 512 0268 00000000 		.word	connectionHandle
+ 513 026c 00000000 		.word	deviceConnected
+ 514 0270 00000000 		.word	sendCapSenseSliderNotifications
+ 515 0274 00000000 		.word	rgbledNotifications
+ 516 0278 00000000 		.word	CapSenseCCCDvalue
+ 517 027c 00000000 		.word	CapSenseNotificationCCCDhandle
+ 518 0280 00000000 		.word	RGBCCCDvalue
+ 519 0284 00000000 		.word	RGBNotificationCCCDhandle
+ 520 0288 00000000 		.word	RGBledData
+ 521 028c 00000000 		.word	isConnectionUpdateRequested
+ 522 0290 00000000 		.word	busyStatus
+ 523              		.cfi_endproc
+ 524              	.LFE37:
+ 525              		.size	CustomEventHandler, .-CustomEventHandler
+ 526              		.section	.text.SendDataOverCapSenseNotification,"ax",%progbits
+ 527              		.align	2
+ 528              		.global	SendDataOverCapSenseNotification
+ 529              		.code	16
+ 530              		.thumb_func
+ 531              		.type	SendDataOverCapSenseNotification, %function
+ 532              	SendDataOverCapSenseNotification:
+ 533              	.LFB38:
+ 353:BLEApplications.c **** 
+ 354:BLEApplications.c **** /*******************************************************************************
+ 355:BLEApplications.c **** * Function Name: SendDataOverCapSenseNotification
+ 356:BLEApplications.c **** ********************************************************************************
+ 357:BLEApplications.c **** * Summary:
+ 358:BLEApplications.c **** *        Send CapSense Slider data as BLE Notifications. This function updates
+ 359:BLEApplications.c **** * the notification handle with data and triggers the BLE component to send 
+ 360:BLEApplications.c **** * notification
+ 361:BLEApplications.c **** *
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 18
+
+
+ 362:BLEApplications.c **** * Parameters:
+ 363:BLEApplications.c **** *  CapSenseSliderData:	CapSense slider value	
+ 364:BLEApplications.c **** *
+ 365:BLEApplications.c **** * Return:
+ 366:BLEApplications.c **** *  void
+ 367:BLEApplications.c **** *
+ 368:BLEApplications.c **** *******************************************************************************/
+ 369:BLEApplications.c **** void SendDataOverCapSenseNotification(uint8 CapSenseSliderData)
+ 370:BLEApplications.c **** {
+ 534              		.loc 1 370 0
+ 535              		.cfi_startproc
+ 536 0000 80B5     		push	{r7, lr}
+ 537              		.cfi_def_cfa_offset 8
+ 538              		.cfi_offset 7, -8
+ 539              		.cfi_offset 14, -4
+ 540 0002 86B0     		sub	sp, sp, #24
+ 541              		.cfi_def_cfa_offset 32
+ 542 0004 00AF     		add	r7, sp, #0
+ 543              		.cfi_def_cfa_register 7
+ 544 0006 021C     		mov	r2, r0
+ 545 0008 FB1D     		add	r3, r7, #7
+ 546 000a 1A70     		strb	r2, [r3]
+ 371:BLEApplications.c **** 	/* 'CapSensenotificationHandle' stores CapSense notification data parameters */
+ 372:BLEApplications.c **** 	CYBLE_GATTS_HANDLE_VALUE_NTF_T		CapSensenotificationHandle;	
+ 373:BLEApplications.c **** 	
+ 374:BLEApplications.c **** 	/* If stack is not busy, then send the notification */
+ 375:BLEApplications.c **** 	if(busyStatus == CYBLE_STACK_STATE_FREE)
+ 547              		.loc 1 375 0
+ 548 000c 114B     		ldr	r3, .L31
+ 549 000e 1B78     		ldrb	r3, [r3]
+ 550 0010 002B     		cmp	r3, #0
+ 551 0012 1BD1     		bne	.L29
+ 376:BLEApplications.c **** 	{
+ 377:BLEApplications.c **** 		/* Update notification handle with CapSense slider data*/
+ 378:BLEApplications.c **** 		CapSensenotificationHandle.attrHandle = CYBLE_CAPSENSE_CAPSENSE_SLIDER_CHAR_HANDLE;				
+ 552              		.loc 1 378 0
+ 553 0014 0C23     		mov	r3, #12
+ 554 0016 FB18     		add	r3, r7, r3
+ 555 0018 0E22     		mov	r2, #14
+ 556 001a 1A81     		strh	r2, [r3, #8]
+ 379:BLEApplications.c **** 		CapSensenotificationHandle.value.val = &CapSenseSliderData;
+ 557              		.loc 1 379 0
+ 558 001c 0C23     		mov	r3, #12
+ 559 001e FB18     		add	r3, r7, r3
+ 560 0020 FA1D     		add	r2, r7, #7
+ 561 0022 1A60     		str	r2, [r3]
+ 380:BLEApplications.c **** 		CapSensenotificationHandle.value.len = CAPSENSE_SLIDER_NTF_DATA_LEN;
+ 562              		.loc 1 380 0
+ 563 0024 0C23     		mov	r3, #12
+ 564 0026 FB18     		add	r3, r7, r3
+ 565 0028 0122     		mov	r2, #1
+ 566 002a 9A80     		strh	r2, [r3, #4]
+ 381:BLEApplications.c **** 		
+ 382:BLEApplications.c **** 		/* Send the updated handle as part of attribute for notifications */
+ 383:BLEApplications.c **** 		CyBle_GattsNotification(connectionHandle,&CapSensenotificationHandle);
+ 567              		.loc 1 383 0
+ 568 002c 0A4B     		ldr	r3, .L31+4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 19
+
+
+ 569 002e 0C22     		mov	r2, #12
+ 570 0030 B918     		add	r1, r7, r2
+ 571 0032 1A78     		ldrb	r2, [r3]
+ 572 0034 5B78     		ldrb	r3, [r3, #1]
+ 573 0036 1B02     		lsl	r3, r3, #8
+ 574 0038 1A43     		orr	r2, r3
+ 575 003a 0023     		mov	r3, #0
+ 576 003c 1204     		lsl	r2, r2, #16
+ 577 003e 120C     		lsr	r2, r2, #16
+ 578 0040 1B0C     		lsr	r3, r3, #16
+ 579 0042 1B04     		lsl	r3, r3, #16
+ 580 0044 1343     		orr	r3, r2
+ 581 0046 181C     		mov	r0, r3
+ 582 0048 FFF7FEFF 		bl	CyBle_GattsNotification
+ 583              	.L29:
+ 384:BLEApplications.c **** 	}
+ 385:BLEApplications.c **** }
+ 584              		.loc 1 385 0
+ 585 004c BD46     		mov	sp, r7
+ 586 004e 06B0     		add	sp, sp, #24
+ 587              		@ sp needed
+ 588 0050 80BD     		pop	{r7, pc}
+ 589              	.L32:
+ 590 0052 C046     		.align	2
+ 591              	.L31:
+ 592 0054 00000000 		.word	busyStatus
+ 593 0058 00000000 		.word	connectionHandle
+ 594              		.cfi_endproc
+ 595              	.LFE38:
+ 596              		.size	SendDataOverCapSenseNotification, .-SendDataOverCapSenseNotification
+ 597              		.section	.text.SendDataOverRGBledNotification,"ax",%progbits
+ 598              		.align	2
+ 599              		.global	SendDataOverRGBledNotification
+ 600              		.code	16
+ 601              		.thumb_func
+ 602              		.type	SendDataOverRGBledNotification, %function
+ 603              	SendDataOverRGBledNotification:
+ 604              	.LFB39:
+ 386:BLEApplications.c **** 
+ 387:BLEApplications.c **** /*******************************************************************************
+ 388:BLEApplications.c **** * Function Name: SendDataOverRGBledNotification
+ 389:BLEApplications.c **** ********************************************************************************
+ 390:BLEApplications.c **** * Summary:
+ 391:BLEApplications.c **** *        Send RGB LED data as BLE Notifications. This function updates
+ 392:BLEApplications.c **** * the notification handle with data and triggers the BLE component to send 
+ 393:BLEApplications.c **** * notification
+ 394:BLEApplications.c **** *
+ 395:BLEApplications.c **** * Parameters:
+ 396:BLEApplications.c **** *  rgbLedData:	pointer to an array containing RGB color and Intensity values
+ 397:BLEApplications.c **** *  len: length of the array
+ 398:BLEApplications.c **** *
+ 399:BLEApplications.c **** * Return:
+ 400:BLEApplications.c **** *  void
+ 401:BLEApplications.c **** *
+ 402:BLEApplications.c **** *******************************************************************************/
+ 403:BLEApplications.c **** void SendDataOverRGBledNotification(uint8 *rgbLedData, uint8 len)
+ 404:BLEApplications.c **** {
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 20
+
+
+ 605              		.loc 1 404 0
+ 606              		.cfi_startproc
+ 607 0000 80B5     		push	{r7, lr}
+ 608              		.cfi_def_cfa_offset 8
+ 609              		.cfi_offset 7, -8
+ 610              		.cfi_offset 14, -4
+ 611 0002 86B0     		sub	sp, sp, #24
+ 612              		.cfi_def_cfa_offset 32
+ 613 0004 00AF     		add	r7, sp, #0
+ 614              		.cfi_def_cfa_register 7
+ 615 0006 7860     		str	r0, [r7, #4]
+ 616 0008 0A1C     		mov	r2, r1
+ 617 000a FB1C     		add	r3, r7, #3
+ 618 000c 1A70     		strb	r2, [r3]
+ 405:BLEApplications.c **** 	/* 'rgbLednotificationHandle' stores RGB LED notification data parameters */
+ 406:BLEApplications.c **** 	CYBLE_GATTS_HANDLE_VALUE_NTF_T 	rgbLednotificationHandle;
+ 407:BLEApplications.c **** 	
+ 408:BLEApplications.c **** 	/* If stack is not busy, then send the notification */
+ 409:BLEApplications.c **** 	if(busyStatus == CYBLE_STACK_STATE_FREE)
+ 619              		.loc 1 409 0
+ 620 000e 124B     		ldr	r3, .L35
+ 621 0010 1B78     		ldrb	r3, [r3]
+ 622 0012 002B     		cmp	r3, #0
+ 623 0014 1DD1     		bne	.L33
+ 410:BLEApplications.c **** 	{
+ 411:BLEApplications.c **** 		/* Update notification handle will CapSense slider data*/
+ 412:BLEApplications.c **** 		rgbLednotificationHandle.attrHandle = CYBLE_RGB_LED_RGB_LED_CONTROL_CHAR_HANDLE;				
+ 624              		.loc 1 412 0
+ 625 0016 0C23     		mov	r3, #12
+ 626 0018 FB18     		add	r3, r7, r3
+ 627 001a 1322     		mov	r2, #19
+ 628 001c 1A81     		strh	r2, [r3, #8]
+ 413:BLEApplications.c **** 		rgbLednotificationHandle.value.val = rgbLedData;
+ 629              		.loc 1 413 0
+ 630 001e 0C23     		mov	r3, #12
+ 631 0020 FB18     		add	r3, r7, r3
+ 632 0022 7A68     		ldr	r2, [r7, #4]
+ 633 0024 1A60     		str	r2, [r3]
+ 414:BLEApplications.c **** 		rgbLednotificationHandle.value.len = len;
+ 634              		.loc 1 414 0
+ 635 0026 FB1C     		add	r3, r7, #3
+ 636 0028 1B78     		ldrb	r3, [r3]
+ 637 002a 9AB2     		uxth	r2, r3
+ 638 002c 0C23     		mov	r3, #12
+ 639 002e FB18     		add	r3, r7, r3
+ 640 0030 9A80     		strh	r2, [r3, #4]
+ 415:BLEApplications.c **** 		
+ 416:BLEApplications.c **** 		/* Send the updated handle as part of attribute for notifications */
+ 417:BLEApplications.c **** 		CyBle_GattsNotification(connectionHandle,&rgbLednotificationHandle);
+ 641              		.loc 1 417 0
+ 642 0032 0A4B     		ldr	r3, .L35+4
+ 643 0034 0C22     		mov	r2, #12
+ 644 0036 B918     		add	r1, r7, r2
+ 645 0038 1A78     		ldrb	r2, [r3]
+ 646 003a 5B78     		ldrb	r3, [r3, #1]
+ 647 003c 1B02     		lsl	r3, r3, #8
+ 648 003e 1A43     		orr	r2, r3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 21
+
+
+ 649 0040 0023     		mov	r3, #0
+ 650 0042 1204     		lsl	r2, r2, #16
+ 651 0044 120C     		lsr	r2, r2, #16
+ 652 0046 1B0C     		lsr	r3, r3, #16
+ 653 0048 1B04     		lsl	r3, r3, #16
+ 654 004a 1343     		orr	r3, r2
+ 655 004c 181C     		mov	r0, r3
+ 656 004e FFF7FEFF 		bl	CyBle_GattsNotification
+ 657              	.L33:
+ 418:BLEApplications.c **** 	}
+ 419:BLEApplications.c **** }
+ 658              		.loc 1 419 0
+ 659 0052 BD46     		mov	sp, r7
+ 660 0054 06B0     		add	sp, sp, #24
+ 661              		@ sp needed
+ 662 0056 80BD     		pop	{r7, pc}
+ 663              	.L36:
+ 664              		.align	2
+ 665              	.L35:
+ 666 0058 00000000 		.word	busyStatus
+ 667 005c 00000000 		.word	connectionHandle
+ 668              		.cfi_endproc
+ 669              	.LFE39:
+ 670              		.size	SendDataOverRGBledNotification, .-SendDataOverRGBledNotification
+ 671              		.section	.text.UpdateConnectionParam,"ax",%progbits
+ 672              		.align	2
+ 673              		.global	UpdateConnectionParam
+ 674              		.code	16
+ 675              		.thumb_func
+ 676              		.type	UpdateConnectionParam, %function
+ 677              	UpdateConnectionParam:
+ 678              	.LFB40:
+ 420:BLEApplications.c **** 
+ 421:BLEApplications.c **** /*******************************************************************************
+ 422:BLEApplications.c **** * Function Name: UpdateConnectionParam
+ 423:BLEApplications.c **** ********************************************************************************
+ 424:BLEApplications.c **** * Summary:
+ 425:BLEApplications.c **** *        Send the Connection Update Request to Client device after connection 
+ 426:BLEApplications.c **** * and modify theconnection interval for low power operation.
+ 427:BLEApplications.c **** *
+ 428:BLEApplications.c **** * Parameters:
+ 429:BLEApplications.c **** *	void
+ 430:BLEApplications.c **** *
+ 431:BLEApplications.c **** * Return:
+ 432:BLEApplications.c **** *  void
+ 433:BLEApplications.c **** *
+ 434:BLEApplications.c **** *******************************************************************************/
+ 435:BLEApplications.c **** void UpdateConnectionParam(void)
+ 436:BLEApplications.c **** {
+ 679              		.loc 1 436 0
+ 680              		.cfi_startproc
+ 681 0000 80B5     		push	{r7, lr}
+ 682              		.cfi_def_cfa_offset 8
+ 683              		.cfi_offset 7, -8
+ 684              		.cfi_offset 14, -4
+ 685 0002 00AF     		add	r7, sp, #0
+ 686              		.cfi_def_cfa_register 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 22
+
+
+ 437:BLEApplications.c **** 	/* If device is connected and Update connection parameter not updated yet,
+ 438:BLEApplications.c **** 	* then send the Connection Parameter Update request to Client. */
+ 439:BLEApplications.c ****     if(deviceConnected && isConnectionUpdateRequested)
+ 687              		.loc 1 439 0
+ 688 0004 094B     		ldr	r3, .L39
+ 689 0006 1B78     		ldrb	r3, [r3]
+ 690 0008 002B     		cmp	r3, #0
+ 691 000a 0DD0     		beq	.L37
+ 692              		.loc 1 439 0 is_stmt 0 discriminator 1
+ 693 000c 084B     		ldr	r3, .L39+4
+ 694 000e 1B78     		ldrb	r3, [r3]
+ 695 0010 002B     		cmp	r3, #0
+ 696 0012 09D0     		beq	.L37
+ 440:BLEApplications.c **** 	{
+ 441:BLEApplications.c **** 		/* Reset the flag to indicate that connection Update request has been sent */
+ 442:BLEApplications.c **** 		isConnectionUpdateRequested = FALSE;
+ 697              		.loc 1 442 0 is_stmt 1
+ 698 0014 064B     		ldr	r3, .L39+4
+ 699 0016 0022     		mov	r2, #0
+ 700 0018 1A70     		strb	r2, [r3]
+ 443:BLEApplications.c **** 		
+ 444:BLEApplications.c **** 		/* Send Connection Update request with set Parameter */
+ 445:BLEApplications.c **** 		CyBle_L2capLeConnectionParamUpdateRequest(connectionHandle.bdHandle, &ConnectionParam);
+ 701              		.loc 1 445 0
+ 702 001a 064B     		ldr	r3, .L39+8
+ 703 001c 1A78     		ldrb	r2, [r3]
+ 704 001e 064B     		ldr	r3, .L39+12
+ 705 0020 101C     		mov	r0, r2
+ 706 0022 191C     		mov	r1, r3
+ 707 0024 FFF7FEFF 		bl	CyBle_L2capLeConnectionParamUpdateRequest
+ 708              	.L37:
+ 446:BLEApplications.c **** 	}
+ 447:BLEApplications.c **** }
+ 709              		.loc 1 447 0
+ 710 0028 BD46     		mov	sp, r7
+ 711              		@ sp needed
+ 712 002a 80BD     		pop	{r7, pc}
+ 713              	.L40:
+ 714              		.align	2
+ 715              	.L39:
+ 716 002c 00000000 		.word	deviceConnected
+ 717 0030 00000000 		.word	isConnectionUpdateRequested
+ 718 0034 00000000 		.word	connectionHandle
+ 719 0038 04000000 		.word	ConnectionParam
+ 720              		.cfi_endproc
+ 721              	.LFE40:
+ 722              		.size	UpdateConnectionParam, .-UpdateConnectionParam
+ 723              		.global	__aeabi_idiv
+ 724              		.section	.text.UpdateRGBled,"ax",%progbits
+ 725              		.align	2
+ 726              		.global	UpdateRGBled
+ 727              		.code	16
+ 728              		.thumb_func
+ 729              		.type	UpdateRGBled, %function
+ 730              	UpdateRGBled:
+ 731              	.LFB41:
+ 448:BLEApplications.c **** 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 23
+
+
+ 449:BLEApplications.c **** /*******************************************************************************
+ 450:BLEApplications.c **** * Function Name: UpdateRGBled
+ 451:BLEApplications.c **** ********************************************************************************
+ 452:BLEApplications.c **** * Summary:
+ 453:BLEApplications.c **** *        Receive the new RGB data and modify PrISM parameters. Also, update the
+ 454:BLEApplications.c **** * read characteristic handle so that the next read from the BLE central device
+ 455:BLEApplications.c **** * gives present RGB color and intensity data.
+ 456:BLEApplications.c **** *
+ 457:BLEApplications.c **** * Parameters:
+ 458:BLEApplications.c **** *  void
+ 459:BLEApplications.c **** *
+ 460:BLEApplications.c **** * Return:
+ 461:BLEApplications.c **** *  void
+ 462:BLEApplications.c **** *
+ 463:BLEApplications.c **** *******************************************************************************/
+ 464:BLEApplications.c **** void UpdateRGBled(void)
+ 465:BLEApplications.c **** {
+ 732              		.loc 1 465 0
+ 733              		.cfi_startproc
+ 734 0000 80B5     		push	{r7, lr}
+ 735              		.cfi_def_cfa_offset 8
+ 736              		.cfi_offset 7, -8
+ 737              		.cfi_offset 14, -4
+ 738 0002 82B0     		sub	sp, sp, #8
+ 739              		.cfi_def_cfa_offset 16
+ 740 0004 00AF     		add	r7, sp, #0
+ 741              		.cfi_def_cfa_register 7
+ 466:BLEApplications.c **** 	/* Local variables to calculate the color components from RGB received data*/
+ 467:BLEApplications.c **** 	uint8 debug_red;
+ 468:BLEApplications.c **** 	uint8 debug_green;
+ 469:BLEApplications.c **** 	uint8 debug_blue;
+ 470:BLEApplications.c **** 	uint8 intensity_divide_value = RGBledData[INTENSITY_INDEX];
+ 742              		.loc 1 470 0
+ 743 0006 FB1D     		add	r3, r7, #7
+ 744 0008 484A     		ldr	r2, .L45
+ 745 000a D278     		ldrb	r2, [r2, #3]
+ 746 000c 1A70     		strb	r2, [r3]
+ 471:BLEApplications.c **** 	
+ 472:BLEApplications.c **** 	/* Calculate the intensity of each of the Red, Green and Blue component from the
+ 473:BLEApplications.c **** 	* received 4-byte data */
+ 474:BLEApplications.c **** 	debug_red = (uint8)(((uint16)RGBledData[RED_INDEX]*intensity_divide_value)/255);
+ 747              		.loc 1 474 0
+ 748 000e 474B     		ldr	r3, .L45
+ 749 0010 1B78     		ldrb	r3, [r3]
+ 750 0012 1A1C     		mov	r2, r3
+ 751 0014 FB1D     		add	r3, r7, #7
+ 752 0016 1B78     		ldrb	r3, [r3]
+ 753 0018 5343     		mul	r3, r2
+ 754 001a 181C     		mov	r0, r3
+ 755 001c FF21     		mov	r1, #255
+ 756 001e FFF7FEFF 		bl	__aeabi_idiv
+ 757 0022 031C     		mov	r3, r0
+ 758 0024 1A1C     		mov	r2, r3
+ 759 0026 BB1D     		add	r3, r7, #6
+ 760 0028 1A70     		strb	r2, [r3]
+ 475:BLEApplications.c **** 	debug_green = (uint8)(((uint16)RGBledData[GREEN_INDEX]*intensity_divide_value)/255);
+ 761              		.loc 1 475 0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 24
+
+
+ 762 002a 404B     		ldr	r3, .L45
+ 763 002c 5B78     		ldrb	r3, [r3, #1]
+ 764 002e 1A1C     		mov	r2, r3
+ 765 0030 FB1D     		add	r3, r7, #7
+ 766 0032 1B78     		ldrb	r3, [r3]
+ 767 0034 5343     		mul	r3, r2
+ 768 0036 181C     		mov	r0, r3
+ 769 0038 FF21     		mov	r1, #255
+ 770 003a FFF7FEFF 		bl	__aeabi_idiv
+ 771 003e 031C     		mov	r3, r0
+ 772 0040 1A1C     		mov	r2, r3
+ 773 0042 7B1D     		add	r3, r7, #5
+ 774 0044 1A70     		strb	r2, [r3]
+ 476:BLEApplications.c **** 	debug_blue = (uint8)(((uint16)RGBledData[BLUE_INDEX]*intensity_divide_value)/255);
+ 775              		.loc 1 476 0
+ 776 0046 394B     		ldr	r3, .L45
+ 777 0048 9B78     		ldrb	r3, [r3, #2]
+ 778 004a 1A1C     		mov	r2, r3
+ 779 004c FB1D     		add	r3, r7, #7
+ 780 004e 1B78     		ldrb	r3, [r3]
+ 781 0050 5343     		mul	r3, r2
+ 782 0052 181C     		mov	r0, r3
+ 783 0054 FF21     		mov	r1, #255
+ 784 0056 FFF7FEFF 		bl	__aeabi_idiv
+ 785 005a 031C     		mov	r3, r0
+ 786 005c 1A1C     		mov	r2, r3
+ 787 005e 3B1D     		add	r3, r7, #4
+ 788 0060 1A70     		strb	r2, [r3]
+ 477:BLEApplications.c **** 	LED_Write(1);
+ 789              		.loc 1 477 0
+ 790 0062 0120     		mov	r0, #1
+ 791 0064 FFF7FEFF 		bl	LED_Write
+ 478:BLEApplications.c **** 	/*If the Intensity value sent by client is below a set threshold, assume no intensity
+ 479:BLEApplications.c **** 	* and switch of the RGB colors on LED. Also, set the appropriate flag to allow the system 
+ 480:BLEApplications.c **** 	* to go to Deep Sleep */
+ 481:BLEApplications.c **** 	if(RGBledData[INTENSITY_INDEX] < LED_NO_COLOR_THRESHOLD)
+ 792              		.loc 1 481 0
+ 793 0068 304B     		ldr	r3, .L45
+ 794 006a DB78     		ldrb	r3, [r3, #3]
+ 795 006c 032B     		cmp	r3, #3
+ 796 006e 0CD8     		bhi	.L42
+ 482:BLEApplications.c **** 	{
+ 483:BLEApplications.c **** 		/* Set the flag to allow the system to go to Deep Sleep */
+ 484:BLEApplications.c **** 		shut_down_led = TRUE;
+ 797              		.loc 1 484 0
+ 798 0070 2F4B     		ldr	r3, .L45+4
+ 799 0072 0122     		mov	r2, #1
+ 800 0074 1A70     		strb	r2, [r3]
+ 485:BLEApplications.c **** 		
+ 486:BLEApplications.c **** 		/* Set the RGB LED pin drive mode to HiZ to prevent leakage of current */
+ 487:BLEApplications.c **** 		RED_SetDriveMode(RED_DM_ALG_HIZ);
+ 801              		.loc 1 487 0
+ 802 0076 0020     		mov	r0, #0
+ 803 0078 FFF7FEFF 		bl	RED_SetDriveMode
+ 488:BLEApplications.c **** 		GREEN_SetDriveMode(GREEN_DM_ALG_HIZ);
+ 804              		.loc 1 488 0
+ 805 007c 0020     		mov	r0, #0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 25
+
+
+ 806 007e FFF7FEFF 		bl	GREEN_SetDriveMode
+ 489:BLEApplications.c **** 		BLUE_SetDriveMode(BLUE_DM_ALG_HIZ);
+ 807              		.loc 1 489 0
+ 808 0082 0020     		mov	r0, #0
+ 809 0084 FFF7FEFF 		bl	BLUE_SetDriveMode
+ 810 0088 3CE0     		b	.L43
+ 811              	.L42:
+ 490:BLEApplications.c **** 	}
+ 491:BLEApplications.c **** 	else
+ 492:BLEApplications.c **** 	{
+ 493:BLEApplications.c **** 		/* If the individual color value of Red, Green and Blue component is less than
+ 494:BLEApplications.c **** 		*  set threshold, then assume no color and shut down the LEDs. Also,set the 
+ 495:BLEApplications.c **** 		* appropriate flag to allow system to go to Deep Sleep */
+ 496:BLEApplications.c **** 		if((debug_red < LED_NO_COLOR_THRESHOLD) && \
+ 812              		.loc 1 496 0
+ 813 008a BB1D     		add	r3, r7, #6
+ 814 008c 1B78     		ldrb	r3, [r3]
+ 815 008e 032B     		cmp	r3, #3
+ 816 0090 14D8     		bhi	.L44
+ 817              		.loc 1 496 0 is_stmt 0 discriminator 1
+ 818 0092 7B1D     		add	r3, r7, #5
+ 819 0094 1B78     		ldrb	r3, [r3]
+ 820 0096 032B     		cmp	r3, #3
+ 821 0098 10D8     		bhi	.L44
+ 497:BLEApplications.c **** 			(debug_green < LED_NO_COLOR_THRESHOLD) && \
+ 822              		.loc 1 497 0 is_stmt 1
+ 823 009a 3B1D     		add	r3, r7, #4
+ 824 009c 1B78     		ldrb	r3, [r3]
+ 825 009e 032B     		cmp	r3, #3
+ 826 00a0 0CD8     		bhi	.L44
+ 498:BLEApplications.c **** 			(debug_blue < LED_NO_COLOR_THRESHOLD))
+ 499:BLEApplications.c **** 		{
+ 500:BLEApplications.c **** 			/* Set the flag to allow the system to go to Deep Sleep */
+ 501:BLEApplications.c **** 			shut_down_led = TRUE;
+ 827              		.loc 1 501 0
+ 828 00a2 234B     		ldr	r3, .L45+4
+ 829 00a4 0122     		mov	r2, #1
+ 830 00a6 1A70     		strb	r2, [r3]
+ 502:BLEApplications.c **** 			
+ 503:BLEApplications.c **** 			/* Set the RGB LED pin drive mode to HiZ to prevent leakage of current */
+ 504:BLEApplications.c **** 			RED_SetDriveMode(RED_DM_ALG_HIZ);
+ 831              		.loc 1 504 0
+ 832 00a8 0020     		mov	r0, #0
+ 833 00aa FFF7FEFF 		bl	RED_SetDriveMode
+ 505:BLEApplications.c **** 			GREEN_SetDriveMode(GREEN_DM_ALG_HIZ);
+ 834              		.loc 1 505 0
+ 835 00ae 0020     		mov	r0, #0
+ 836 00b0 FFF7FEFF 		bl	GREEN_SetDriveMode
+ 506:BLEApplications.c **** 			BLUE_SetDriveMode(BLUE_DM_ALG_HIZ);
+ 837              		.loc 1 506 0
+ 838 00b4 0020     		mov	r0, #0
+ 839 00b6 FFF7FEFF 		bl	BLUE_SetDriveMode
+ 840 00ba 23E0     		b	.L43
+ 841              	.L44:
+ 507:BLEApplications.c **** 		}
+ 508:BLEApplications.c **** 		else
+ 509:BLEApplications.c **** 		{
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 26
+
+
+ 510:BLEApplications.c **** 			/* If the color and intensity values received are within the acceptable 
+ 511:BLEApplications.c **** 			* range, then PrISM has to be enabled and written with correct density 
+ 512:BLEApplications.c **** 			* value to present the right color. For this, reset the shut_down_led 
+ 513:BLEApplications.c **** 			* flag to allow CPU to go to only Sleep, and not Deep Sleep. This is 
+ 514:BLEApplications.c **** 			* because CPU cannot be in Deep Sleep while PrISM is active */
+ 515:BLEApplications.c **** 			shut_down_led = FALSE;
+ 842              		.loc 1 515 0
+ 843 00bc 1C4B     		ldr	r3, .L45+4
+ 844 00be 0022     		mov	r2, #0
+ 845 00c0 1A70     		strb	r2, [r3]
+ 516:BLEApplications.c **** 			
+ 517:BLEApplications.c **** 			/* Set the time for RGB LED on Period. After this time (in seconds), the 
+ 518:BLEApplications.c **** 			* LED will be shutdown to prevent current usage */
+ 519:BLEApplications.c **** 			led_timer = LED_OFF_TIME_PERIOD;
+ 846              		.loc 1 519 0
+ 847 00c2 1C4B     		ldr	r3, .L45+8
+ 848 00c4 0222     		mov	r2, #2
+ 849 00c6 1A70     		strb	r2, [r3]
+ 520:BLEApplications.c **** 			
+ 521:BLEApplications.c **** 			/* Set the drive mode for LED pins to Strong mode */
+ 522:BLEApplications.c **** 			RED_SetDriveMode(RED_DM_STRONG);
+ 850              		.loc 1 522 0
+ 851 00c8 0620     		mov	r0, #6
+ 852 00ca FFF7FEFF 		bl	RED_SetDriveMode
+ 523:BLEApplications.c **** 			GREEN_SetDriveMode(GREEN_DM_STRONG);
+ 853              		.loc 1 523 0
+ 854 00ce 0620     		mov	r0, #6
+ 855 00d0 FFF7FEFF 		bl	GREEN_SetDriveMode
+ 524:BLEApplications.c **** 			BLUE_SetDriveMode(BLUE_DM_STRONG);
+ 856              		.loc 1 524 0
+ 857 00d4 0620     		mov	r0, #6
+ 858 00d6 FFF7FEFF 		bl	BLUE_SetDriveMode
+ 525:BLEApplications.c **** 			
+ 526:BLEApplications.c **** 			/* Update the density value of the PrISM module for color control*/
+ 527:BLEApplications.c **** 			PrISM_1_WritePulse0(RGB_LED_MAX_VAL - debug_red);
+ 859              		.loc 1 527 0
+ 860 00da BB1D     		add	r3, r7, #6
+ 861 00dc 1B78     		ldrb	r3, [r3]
+ 862 00de DB43     		mvn	r3, r3
+ 863 00e0 DBB2     		uxtb	r3, r3
+ 864 00e2 181C     		mov	r0, r3
+ 865 00e4 FFF7FEFF 		bl	PrISM_1_WritePulse0
+ 528:BLEApplications.c **** 		    PrISM_1_WritePulse1(RGB_LED_MAX_VAL - debug_green);
+ 866              		.loc 1 528 0
+ 867 00e8 7B1D     		add	r3, r7, #5
+ 868 00ea 1B78     		ldrb	r3, [r3]
+ 869 00ec DB43     		mvn	r3, r3
+ 870 00ee DBB2     		uxtb	r3, r3
+ 871 00f0 181C     		mov	r0, r3
+ 872 00f2 FFF7FEFF 		bl	PrISM_1_WritePulse1
+ 529:BLEApplications.c **** 		    PrISM_2_WritePulse0(RGB_LED_MAX_VAL - debug_blue);
+ 873              		.loc 1 529 0
+ 874 00f6 3B1D     		add	r3, r7, #4
+ 875 00f8 1B78     		ldrb	r3, [r3]
+ 876 00fa DB43     		mvn	r3, r3
+ 877 00fc DBB2     		uxtb	r3, r3
+ 878 00fe 181C     		mov	r0, r3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 27
+
+
+ 879 0100 FFF7FEFF 		bl	PrISM_2_WritePulse0
+ 880              	.L43:
+ 530:BLEApplications.c **** 		}
+ 531:BLEApplications.c **** 	}
+ 532:BLEApplications.c **** 	
+ 533:BLEApplications.c **** 	/* Update RGB control handle with new values */
+ 534:BLEApplications.c **** 	rgbHandle.attrHandle = CYBLE_RGB_LED_RGB_LED_CONTROL_CHAR_HANDLE;
+ 881              		.loc 1 534 0
+ 882 0104 0C4B     		ldr	r3, .L45+12
+ 883 0106 1322     		mov	r2, #19
+ 884 0108 1A81     		strh	r2, [r3, #8]
+ 535:BLEApplications.c **** 	rgbHandle.value.val = RGBledData;
+ 885              		.loc 1 535 0
+ 886 010a 0B4B     		ldr	r3, .L45+12
+ 887 010c 074A     		ldr	r2, .L45
+ 888 010e 1A60     		str	r2, [r3]
+ 536:BLEApplications.c **** 	rgbHandle.value.len = RGB_CHAR_DATA_LEN;
+ 889              		.loc 1 536 0
+ 890 0110 094B     		ldr	r3, .L45+12
+ 891 0112 0422     		mov	r2, #4
+ 892 0114 9A80     		strh	r2, [r3, #4]
+ 537:BLEApplications.c **** 	
+ 538:BLEApplications.c **** 	/* Send updated RGB control handle as attribute for read by central device, so that
+ 539:BLEApplications.c **** 	* Client reads the new RGB color data */
+ 540:BLEApplications.c **** 	CyBle_GattsWriteAttributeValue(&rgbHandle,FALSE,&connectionHandle,FALSE);
+ 893              		.loc 1 540 0
+ 894 0116 084A     		ldr	r2, .L45+12
+ 895 0118 084B     		ldr	r3, .L45+16
+ 896 011a 101C     		mov	r0, r2
+ 897 011c 0021     		mov	r1, #0
+ 898 011e 1A1C     		mov	r2, r3
+ 899 0120 0023     		mov	r3, #0
+ 900 0122 FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
+ 541:BLEApplications.c **** }
+ 901              		.loc 1 541 0
+ 902 0126 BD46     		mov	sp, r7
+ 903 0128 02B0     		add	sp, sp, #8
+ 904              		@ sp needed
+ 905 012a 80BD     		pop	{r7, pc}
+ 906              	.L46:
+ 907              		.align	2
+ 908              	.L45:
+ 909 012c 00000000 		.word	RGBledData
+ 910 0130 00000000 		.word	shut_down_led
+ 911 0134 00000000 		.word	led_timer
+ 912 0138 00000000 		.word	rgbHandle
+ 913 013c 00000000 		.word	connectionHandle
+ 914              		.cfi_endproc
+ 915              	.LFE41:
+ 916              		.size	UpdateRGBled, .-UpdateRGBled
+ 917              		.section	.text.HandleStatusLED,"ax",%progbits
+ 918              		.align	2
+ 919              		.global	HandleStatusLED
+ 920              		.code	16
+ 921              		.thumb_func
+ 922              		.type	HandleStatusLED, %function
+ 923              	HandleStatusLED:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 28
+
+
+ 924              	.LFB42:
+ 542:BLEApplications.c **** 
+ 543:BLEApplications.c **** 
+ 544:BLEApplications.c **** /*******************************************************************************
+ 545:BLEApplications.c **** * Function Name: HandleStatusLED
+ 546:BLEApplications.c **** ********************************************************************************
+ 547:BLEApplications.c **** * Summary:
+ 548:BLEApplications.c **** *        Handle LED status, such as blinking, ON or OFF depending on BLE state.
+ 549:BLEApplications.c **** *
+ 550:BLEApplications.c **** * Parameters:
+ 551:BLEApplications.c **** *  void
+ 552:BLEApplications.c **** *
+ 553:BLEApplications.c **** * Return:
+ 554:BLEApplications.c **** *  void
+ 555:BLEApplications.c **** *
+ 556:BLEApplications.c **** *******************************************************************************/
+ 557:BLEApplications.c **** void HandleStatusLED(void)
+ 558:BLEApplications.c **** {
+ 925              		.loc 1 558 0
+ 926              		.cfi_startproc
+ 927 0000 80B5     		push	{r7, lr}
+ 928              		.cfi_def_cfa_offset 8
+ 929              		.cfi_offset 7, -8
+ 930              		.cfi_offset 14, -4
+ 931 0002 82B0     		sub	sp, sp, #8
+ 932              		.cfi_def_cfa_offset 16
+ 933 0004 00AF     		add	r7, sp, #0
+ 934              		.cfi_def_cfa_register 7
+ 559:BLEApplications.c **** 	/* Local static counter to handle the periodic toggling of LED or keeping LED ON
+ 560:BLEApplications.c **** 	* for some time. */
+ 561:BLEApplications.c **** 	static uint32 led_counter = TRUE;
+ 562:BLEApplications.c **** 	
+ 563:BLEApplications.c **** 	/* Local static variable that stores the last BLE state in which firmware was */
+ 564:BLEApplications.c **** 	static uint8 state = 0xFF;
+ 565:BLEApplications.c **** 	
+ 566:BLEApplications.c **** 	/* Flag to indicate that the state of BLE has changed from the last known value */
+ 567:BLEApplications.c **** 	uint8 state_changed = FALSE;
+ 935              		.loc 1 567 0
+ 936 0006 FB1D     		add	r3, r7, #7
+ 937 0008 0022     		mov	r2, #0
+ 938 000a 1A70     		strb	r2, [r3]
+ 568:BLEApplications.c **** 	
+ 569:BLEApplications.c **** 	if(state != CyBle_GetState())
+ 939              		.loc 1 569 0
+ 940 000c 3C4B     		ldr	r3, .L57
+ 941 000e 1A78     		ldrb	r2, [r3]
+ 942 0010 3C4B     		ldr	r3, .L57+4
+ 943 0012 1B78     		ldrb	r3, [r3]
+ 944 0014 9A42     		cmp	r2, r3
+ 945 0016 09D0     		beq	.L48
+ 570:BLEApplications.c **** 	{
+ 571:BLEApplications.c **** 		/* If the present BLE state is different from the new BLE state, set the 
+ 572:BLEApplications.c **** 		* state_changed flag and reset the local counter */
+ 573:BLEApplications.c **** 		state_changed = TRUE;
+ 946              		.loc 1 573 0
+ 947 0018 FB1D     		add	r3, r7, #7
+ 948 001a 0122     		mov	r2, #1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 29
+
+
+ 949 001c 1A70     		strb	r2, [r3]
+ 574:BLEApplications.c **** 				
+ 575:BLEApplications.c **** 		if(CyBle_GetState() == CYBLE_STATE_ADVERTISING)
+ 950              		.loc 1 575 0
+ 951 001e 394B     		ldr	r3, .L57+4
+ 952 0020 1B78     		ldrb	r3, [r3]
+ 953 0022 032B     		cmp	r3, #3
+ 954 0024 02D1     		bne	.L48
+ 576:BLEApplications.c **** 		{
+ 577:BLEApplications.c **** 			led_counter = TRUE;
+ 955              		.loc 1 577 0
+ 956 0026 384B     		ldr	r3, .L57+8
+ 957 0028 0122     		mov	r2, #1
+ 958 002a 1A60     		str	r2, [r3]
+ 959              	.L48:
+ 578:BLEApplications.c **** 		}
+ 579:BLEApplications.c **** 	}
+ 580:BLEApplications.c **** 	
+ 581:BLEApplications.c **** 	/* Store the new BLE state into the present state variable */
+ 582:BLEApplications.c **** 	state = CyBle_GetState();
+ 960              		.loc 1 582 0
+ 961 002c 354B     		ldr	r3, .L57+4
+ 962 002e 1A78     		ldrb	r2, [r3]
+ 963 0030 334B     		ldr	r3, .L57
+ 964 0032 1A70     		strb	r2, [r3]
+ 583:BLEApplications.c **** 		
+ 584:BLEApplications.c **** 	switch(state)
+ 965              		.loc 1 584 0
+ 966 0034 324B     		ldr	r3, .L57
+ 967 0036 1B78     		ldrb	r3, [r3]
+ 968 0038 032B     		cmp	r3, #3
+ 969 003a 1ED0     		beq	.L50
+ 970 003c 042B     		cmp	r3, #4
+ 971 003e 45D0     		beq	.L51
+ 972 0040 022B     		cmp	r3, #2
+ 973 0042 00D0     		beq	.L52
+ 585:BLEApplications.c **** 	{
+ 586:BLEApplications.c **** 		case CYBLE_STATE_CONNECTED:
+ 587:BLEApplications.c **** 			/* If the present BLE state is connected, keep the LED ON for
+ 588:BLEApplications.c **** 			* pre-determined time and then switch it OFF in WDT ISR */
+ 589:BLEApplications.c **** 			if(state_changed)
+ 590:BLEApplications.c **** 			{
+ 591:BLEApplications.c **** 				/* Reset the flag for state change */
+ 592:BLEApplications.c **** 				state_changed = FALSE;
+ 593:BLEApplications.c **** 				
+ 594:BLEApplications.c **** 				/* Set the drive mode of LED to Strong to allow driving the LED */
+ 595:BLEApplications.c **** 				RED_SetDriveMode(RED_DM_STRONG);
+ 596:BLEApplications.c **** 
+ 597:BLEApplications.c **** 				/* Put the Status LED to ON state */
+ 598:BLEApplications.c **** 				PrISM_1_WritePulse0(RGB_LED_ON);
+ 599:BLEApplications.c **** 				
+ 600:BLEApplications.c **** 				/* Set flag and counter for Connection indication on LED */
+ 601:BLEApplications.c **** 				switch_off_status_led = TRUE;
+ 602:BLEApplications.c **** 				timer_tick = LED_CONN_ON_TIME;
+ 603:BLEApplications.c ****                 
+ 604:BLEApplications.c ****                 //CHANGE HERE FOR LED
+ 605:BLEApplications.c ****                 LED_Write(1);
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 30
+
+
+ 606:BLEApplications.c **** 				
+ 607:BLEApplications.c **** 				/* Initialize the Watchdog for 1 second timing events. The watcdog 
+ 608:BLEApplications.c **** 				* is initialized after connection and disabled after disconnection.
+ 609:BLEApplications.c **** 				* This is done to ensure that Watchdog provided periodic wakeup only
+ 610:BLEApplications.c **** 				* when the system is connected and RGB LED control is required. During 
+ 611:BLEApplications.c **** 				* other times, it should not wakeup the syste, causing increase in power
+ 612:BLEApplications.c **** 				* consumption */
+ 613:BLEApplications.c **** 				InitializeWatchdog();
+ 614:BLEApplications.c **** 			}
+ 615:BLEApplications.c **** 		break;
+ 616:BLEApplications.c **** 		
+ 617:BLEApplications.c **** 		case CYBLE_STATE_ADVERTISING:
+ 618:BLEApplications.c **** 			/* If the present BLE state is advertising, toggle the LED
+ 619:BLEApplications.c **** 			* at pre-determined period to indicate advertising. */
+ 620:BLEApplications.c **** 			if((--led_counter) == FALSE)
+ 621:BLEApplications.c **** 			{
+ 622:BLEApplications.c **** 				/* Toggle Status LED for indicating Advertisement */
+ 623:BLEApplications.c **** 				if(PrISM_1_ReadPulse0() == RGB_LED_OFF)
+ 624:BLEApplications.c **** 				{
+ 625:BLEApplications.c **** 					PrISM_1_WritePulse0(RGB_LED_ON);
+ 626:BLEApplications.c **** 					RED_SetDriveMode(RED_DM_STRONG);
+ 627:BLEApplications.c ****                     LED_Status_Write(1);
+ 628:BLEApplications.c **** 					
+ 629:BLEApplications.c **** 					led_counter	= LED_ADV_BLINK_PERIOD_ON;
+ 630:BLEApplications.c **** 				}
+ 631:BLEApplications.c **** 				else
+ 632:BLEApplications.c **** 				{
+ 633:BLEApplications.c **** 					PrISM_1_WritePulse0(RGB_LED_OFF);
+ 634:BLEApplications.c **** 					RED_SetDriveMode(RED_DM_ALG_HIZ);
+ 635:BLEApplications.c **** 					LED_Status_Write(0);
+ 636:BLEApplications.c **** 					led_counter	= LED_ADV_BLINK_PERIOD_OFF;
+ 637:BLEApplications.c **** 				}
+ 638:BLEApplications.c **** 			}
+ 639:BLEApplications.c **** 		break;
+ 640:BLEApplications.c **** 		
+ 641:BLEApplications.c **** 		case CYBLE_STATE_DISCONNECTED:
+ 642:BLEApplications.c **** 			/* If the present BLE state is disconnected, switch off LED
+ 643:BLEApplications.c **** 			* and set the drive mode of LED to Hi-Z (Analog)*/
+ 644:BLEApplications.c **** 			PrISM_1_WritePulse0(RGB_LED_OFF);
+ 645:BLEApplications.c **** 			RED_SetDriveMode(RED_DM_ALG_HIZ);
+ 646:BLEApplications.c **** 			GREEN_SetDriveMode(GREEN_DM_ALG_HIZ);
+ 647:BLEApplications.c **** 			BLUE_SetDriveMode(BLUE_DM_ALG_HIZ);
+ 648:BLEApplications.c **** 			
+ 649:BLEApplications.c ****             LED_Write(0);
+ 650:BLEApplications.c **** 			/* Disable Watchdog to prevent Watchdog waking system after
+ 651:BLEApplications.c **** 			*  disconnection */
+ 652:BLEApplications.c **** 			CyIntDisable(WATCHDOG_INT_VEC_NUM);
+ 653:BLEApplications.c **** 		break;
+ 654:BLEApplications.c **** 		
+ 655:BLEApplications.c **** 		default:
+ 656:BLEApplications.c **** 
+ 657:BLEApplications.c **** 		break;
+ 974              		.loc 1 657 0
+ 975 0044 55E0     		b	.L54
+ 976              	.L52:
+ 589:BLEApplications.c **** 			{
+ 977              		.loc 1 589 0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 31
+
+
+ 978 0046 FB1D     		add	r3, r7, #7
+ 979 0048 1B78     		ldrb	r3, [r3]
+ 980 004a 002B     		cmp	r3, #0
+ 981 004c 14D0     		beq	.L53
+ 592:BLEApplications.c **** 				
+ 982              		.loc 1 592 0
+ 983 004e FB1D     		add	r3, r7, #7
+ 984 0050 0022     		mov	r2, #0
+ 985 0052 1A70     		strb	r2, [r3]
+ 595:BLEApplications.c **** 
+ 986              		.loc 1 595 0
+ 987 0054 0620     		mov	r0, #6
+ 988 0056 FFF7FEFF 		bl	RED_SetDriveMode
+ 598:BLEApplications.c **** 				
+ 989              		.loc 1 598 0
+ 990 005a 0020     		mov	r0, #0
+ 991 005c FFF7FEFF 		bl	PrISM_1_WritePulse0
+ 601:BLEApplications.c **** 				timer_tick = LED_CONN_ON_TIME;
+ 992              		.loc 1 601 0
+ 993 0060 2A4B     		ldr	r3, .L57+12
+ 994 0062 0122     		mov	r2, #1
+ 995 0064 1A70     		strb	r2, [r3]
+ 602:BLEApplications.c ****                 
+ 996              		.loc 1 602 0
+ 997 0066 2A4B     		ldr	r3, .L57+16
+ 998 0068 0222     		mov	r2, #2
+ 999 006a 1A70     		strb	r2, [r3]
+ 605:BLEApplications.c **** 				
+ 1000              		.loc 1 605 0
+ 1001 006c 0120     		mov	r0, #1
+ 1002 006e FFF7FEFF 		bl	LED_Write
+ 613:BLEApplications.c **** 			}
+ 1003              		.loc 1 613 0
+ 1004 0072 FFF7FEFF 		bl	InitializeWatchdog
+ 615:BLEApplications.c **** 		
+ 1005              		.loc 1 615 0
+ 1006 0076 3CE0     		b	.L54
+ 1007              	.L53:
+ 1008 0078 3BE0     		b	.L54
+ 1009              	.L50:
+ 620:BLEApplications.c **** 			{
+ 1010              		.loc 1 620 0
+ 1011 007a 234B     		ldr	r3, .L57+8
+ 1012 007c 1B68     		ldr	r3, [r3]
+ 1013 007e 5A1E     		sub	r2, r3, #1
+ 1014 0080 214B     		ldr	r3, .L57+8
+ 1015 0082 1A60     		str	r2, [r3]
+ 1016 0084 204B     		ldr	r3, .L57+8
+ 1017 0086 1B68     		ldr	r3, [r3]
+ 1018 0088 002B     		cmp	r3, #0
+ 1019 008a 1ED1     		bne	.L55
+ 623:BLEApplications.c **** 				{
+ 1020              		.loc 1 623 0
+ 1021 008c FFF7FEFF 		bl	PrISM_1_ReadPulse0
+ 1022 0090 031E     		sub	r3, r0, #0
+ 1023 0092 FF2B     		cmp	r3, #255
+ 1024 0094 0CD1     		bne	.L56
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 32
+
+
+ 625:BLEApplications.c **** 					RED_SetDriveMode(RED_DM_STRONG);
+ 1025              		.loc 1 625 0
+ 1026 0096 0020     		mov	r0, #0
+ 1027 0098 FFF7FEFF 		bl	PrISM_1_WritePulse0
+ 626:BLEApplications.c ****                     LED_Status_Write(1);
+ 1028              		.loc 1 626 0
+ 1029 009c 0620     		mov	r0, #6
+ 1030 009e FFF7FEFF 		bl	RED_SetDriveMode
+ 627:BLEApplications.c **** 					
+ 1031              		.loc 1 627 0
+ 1032 00a2 0120     		mov	r0, #1
+ 1033 00a4 FFF7FEFF 		bl	LED_Status_Write
+ 629:BLEApplications.c **** 				}
+ 1034              		.loc 1 629 0
+ 1035 00a8 174B     		ldr	r3, .L57+8
+ 1036 00aa 1A4A     		ldr	r2, .L57+20
+ 1037 00ac 1A60     		str	r2, [r3]
+ 1038 00ae 0CE0     		b	.L55
+ 1039              	.L56:
+ 633:BLEApplications.c **** 					RED_SetDriveMode(RED_DM_ALG_HIZ);
+ 1040              		.loc 1 633 0
+ 1041 00b0 FF20     		mov	r0, #255
+ 1042 00b2 FFF7FEFF 		bl	PrISM_1_WritePulse0
+ 634:BLEApplications.c **** 					LED_Status_Write(0);
+ 1043              		.loc 1 634 0
+ 1044 00b6 0020     		mov	r0, #0
+ 1045 00b8 FFF7FEFF 		bl	RED_SetDriveMode
+ 635:BLEApplications.c **** 					led_counter	= LED_ADV_BLINK_PERIOD_OFF;
+ 1046              		.loc 1 635 0
+ 1047 00bc 0020     		mov	r0, #0
+ 1048 00be FFF7FEFF 		bl	LED_Status_Write
+ 636:BLEApplications.c **** 				}
+ 1049              		.loc 1 636 0
+ 1050 00c2 114B     		ldr	r3, .L57+8
+ 1051 00c4 144A     		ldr	r2, .L57+24
+ 1052 00c6 1A60     		str	r2, [r3]
+ 639:BLEApplications.c **** 		
+ 1053              		.loc 1 639 0
+ 1054 00c8 13E0     		b	.L54
+ 1055              	.L55:
+ 1056 00ca 12E0     		b	.L54
+ 1057              	.L51:
+ 644:BLEApplications.c **** 			RED_SetDriveMode(RED_DM_ALG_HIZ);
+ 1058              		.loc 1 644 0
+ 1059 00cc FF20     		mov	r0, #255
+ 1060 00ce FFF7FEFF 		bl	PrISM_1_WritePulse0
+ 645:BLEApplications.c **** 			GREEN_SetDriveMode(GREEN_DM_ALG_HIZ);
+ 1061              		.loc 1 645 0
+ 1062 00d2 0020     		mov	r0, #0
+ 1063 00d4 FFF7FEFF 		bl	RED_SetDriveMode
+ 646:BLEApplications.c **** 			BLUE_SetDriveMode(BLUE_DM_ALG_HIZ);
+ 1064              		.loc 1 646 0
+ 1065 00d8 0020     		mov	r0, #0
+ 1066 00da FFF7FEFF 		bl	GREEN_SetDriveMode
+ 647:BLEApplications.c **** 			
+ 1067              		.loc 1 647 0
+ 1068 00de 0020     		mov	r0, #0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 33
+
+
+ 1069 00e0 FFF7FEFF 		bl	BLUE_SetDriveMode
+ 649:BLEApplications.c **** 			/* Disable Watchdog to prevent Watchdog waking system after
+ 1070              		.loc 1 649 0
+ 1071 00e4 0020     		mov	r0, #0
+ 1072 00e6 FFF7FEFF 		bl	LED_Write
+ 652:BLEApplications.c **** 		break;
+ 1073              		.loc 1 652 0
+ 1074 00ea 0820     		mov	r0, #8
+ 1075 00ec FFF7FEFF 		bl	CyIntDisable
+ 653:BLEApplications.c **** 		
+ 1076              		.loc 1 653 0
+ 1077 00f0 C046     		mov	r8, r8
+ 1078              	.L54:
+ 658:BLEApplications.c **** 	}
+ 659:BLEApplications.c **** 	
+ 660:BLEApplications.c **** 	/* Reset the state changed flag. */
+ 661:BLEApplications.c **** 	state_changed = FALSE;
+ 1079              		.loc 1 661 0
+ 1080 00f2 FB1D     		add	r3, r7, #7
+ 1081 00f4 0022     		mov	r2, #0
+ 1082 00f6 1A70     		strb	r2, [r3]
+ 662:BLEApplications.c **** }
+ 1083              		.loc 1 662 0
+ 1084 00f8 BD46     		mov	sp, r7
+ 1085 00fa 02B0     		add	sp, sp, #8
+ 1086              		@ sp needed
+ 1087 00fc 80BD     		pop	{r7, pc}
+ 1088              	.L58:
+ 1089 00fe C046     		.align	2
+ 1090              	.L57:
+ 1091 0100 0D000000 		.word	state.7477
+ 1092 0104 00000000 		.word	cyBle_state
+ 1093 0108 10000000 		.word	led_counter.7476
+ 1094 010c 00000000 		.word	switch_off_status_led
+ 1095 0110 00000000 		.word	timer_tick
+ 1096 0114 10270000 		.word	10000
+ 1097 0118 983A0000 		.word	15000
+ 1098              		.cfi_endproc
+ 1099              	.LFE42:
+ 1100              		.size	HandleStatusLED, .-HandleStatusLED
+ 1101              		.section	.text.WDT_INT_Handler,"ax",%progbits
+ 1102              		.align	2
+ 1103              		.global	WDT_INT_Handler
+ 1104              		.code	16
+ 1105              		.thumb_func
+ 1106              		.type	WDT_INT_Handler, %function
+ 1107              	WDT_INT_Handler:
+ 1108              	.LFB43:
+ 663:BLEApplications.c **** 
+ 664:BLEApplications.c **** /*******************************************************************************
+ 665:BLEApplications.c **** * Function Name: WDT_INT_Handler
+ 666:BLEApplications.c **** ********************************************************************************
+ 667:BLEApplications.c **** * Summary:
+ 668:BLEApplications.c **** *        Watchdog interrupt routine for controlling LED status in connected state
+ 669:BLEApplications.c **** *
+ 670:BLEApplications.c **** * Parameters:
+ 671:BLEApplications.c **** *  void
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 34
+
+
+ 672:BLEApplications.c **** *
+ 673:BLEApplications.c **** * Return:
+ 674:BLEApplications.c **** *  void
+ 675:BLEApplications.c **** *
+ 676:BLEApplications.c **** *******************************************************************************/
+ 677:BLEApplications.c **** void WDT_INT_Handler(void)
+ 678:BLEApplications.c **** {
+ 1109              		.loc 1 678 0
+ 1110              		.cfi_startproc
+ 1111 0000 80B5     		push	{r7, lr}
+ 1112              		.cfi_def_cfa_offset 8
+ 1113              		.cfi_offset 7, -8
+ 1114              		.cfi_offset 14, -4
+ 1115 0002 00AF     		add	r7, sp, #0
+ 1116              		.cfi_def_cfa_register 7
+ 679:BLEApplications.c **** 	/* If the Interrupt source is Counter 0 match, then process */
+ 680:BLEApplications.c **** 	if(CySysWdtGetInterruptSource() & CY_SYS_WDT_COUNTER0_INT)
+ 1117              		.loc 1 680 0
+ 1118 0004 FFF7FEFF 		bl	CySysWdtGetInterruptSource
+ 1119 0008 021C     		mov	r2, r0
+ 1120 000a 0423     		mov	r3, #4
+ 1121 000c 1340     		and	r3, r2
+ 1122 000e 4ED0     		beq	.L59
+ 681:BLEApplications.c **** 	{
+ 682:BLEApplications.c **** 		/* Clear Watchdog Interrupt from Counter 0 */
+ 683:BLEApplications.c **** 		CySysWdtClearInterrupt(CY_SYS_WDT_COUNTER0_INT);
+ 1123              		.loc 1 683 0
+ 1124 0010 0420     		mov	r0, #4
+ 1125 0012 FFF7FEFF 		bl	CySysWdtClearInterrupt
+ 684:BLEApplications.c **** 		
+ 685:BLEApplications.c **** 		/* If switch_off_status_led is TRUE, then the Connection status LED 
+ 686:BLEApplications.c **** 		* is ON and it is required to shut it down after 3 seconds */
+ 687:BLEApplications.c **** 		if(switch_off_status_led)
+ 1126              		.loc 1 687 0
+ 1127 0016 274B     		ldr	r3, .L66
+ 1128 0018 1B78     		ldrb	r3, [r3]
+ 1129 001a 002B     		cmp	r3, #0
+ 1130 001c 14D0     		beq	.L61
+ 688:BLEApplications.c **** 		{
+ 689:BLEApplications.c **** 			/* If timer ticks for Connection ON LED period has expired, then switch
+ 690:BLEApplications.c **** 			* off LED */
+ 691:BLEApplications.c **** 			if(timer_tick == FALSE)
+ 1131              		.loc 1 691 0
+ 1132 001e 264B     		ldr	r3, .L66+4
+ 1133 0020 1B78     		ldrb	r3, [r3]
+ 1134 0022 002B     		cmp	r3, #0
+ 1135 0024 09D1     		bne	.L62
+ 692:BLEApplications.c **** 			{
+ 693:BLEApplications.c **** 				/* Switch of Status LED */
+ 694:BLEApplications.c **** 				PrISM_1_WritePulse0(RGB_LED_OFF);
+ 1136              		.loc 1 694 0
+ 1137 0026 FF20     		mov	r0, #255
+ 1138 0028 FFF7FEFF 		bl	PrISM_1_WritePulse0
+ 695:BLEApplications.c **** 				
+ 696:BLEApplications.c **** 				/* Set the drive mode of LED to Analog HiZ to prevent leakage current */
+ 697:BLEApplications.c **** 				RED_SetDriveMode(RED_DM_ALG_HIZ);
+ 1139              		.loc 1 697 0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 35
+
+
+ 1140 002c 0020     		mov	r0, #0
+ 1141 002e FFF7FEFF 		bl	RED_SetDriveMode
+ 698:BLEApplications.c **** 				
+ 699:BLEApplications.c **** 				/* Reset the Flag */
+ 700:BLEApplications.c **** 				switch_off_status_led = FALSE;
+ 1142              		.loc 1 700 0
+ 1143 0032 204B     		ldr	r3, .L66
+ 1144 0034 0022     		mov	r2, #0
+ 1145 0036 1A70     		strb	r2, [r3]
+ 1146 0038 20E0     		b	.L64
+ 1147              	.L62:
+ 701:BLEApplications.c **** 				
+ 702:BLEApplications.c **** 			}
+ 703:BLEApplications.c **** 			else
+ 704:BLEApplications.c **** 			{
+ 705:BLEApplications.c **** 				/* Decrement timer_tick as counting method */
+ 706:BLEApplications.c **** 				timer_tick--;
+ 1148              		.loc 1 706 0
+ 1149 003a 1F4B     		ldr	r3, .L66+4
+ 1150 003c 1B78     		ldrb	r3, [r3]
+ 1151 003e 013B     		sub	r3, r3, #1
+ 1152 0040 DAB2     		uxtb	r2, r3
+ 1153 0042 1D4B     		ldr	r3, .L66+4
+ 1154 0044 1A70     		strb	r2, [r3]
+ 1155 0046 19E0     		b	.L64
+ 1156              	.L61:
+ 707:BLEApplications.c **** 			}
+ 708:BLEApplications.c **** 		}
+ 709:BLEApplications.c **** 		/* If the LED activity for Connection LED ON is completed, then firmware is 
+ 710:BLEApplications.c **** 		* allowed to do timing for RGB LED Control operation after connection. This 
+ 711:BLEApplications.c **** 		* operation keeps the RGB LED ON for determined time (default 3 seconds) from
+ 712:BLEApplications.c **** 		* the last time RGB LED data was sent. This ensures that continuous usage of 
+ 713:BLEApplications.c **** 		* the kit in RGB mode does not consume too much power */
+ 714:BLEApplications.c **** 		else
+ 715:BLEApplications.c **** 		{
+ 716:BLEApplications.c **** 			/* After displaying color for predetermined time, switch off 
+ 717:BLEApplications.c **** 			* the LEDs to save power */
+ 718:BLEApplications.c **** 			if(FALSE == led_timer)
+ 1157              		.loc 1 718 0
+ 1158 0048 1C4B     		ldr	r3, .L66+8
+ 1159 004a 1B78     		ldrb	r3, [r3]
+ 1160 004c 002B     		cmp	r3, #0
+ 1161 004e 0FD1     		bne	.L65
+ 719:BLEApplications.c **** 			{
+ 720:BLEApplications.c **** 				/* Set the flag to indicate to the Low power mode function that system 
+ 721:BLEApplications.c **** 				* can be put to Deep Sleep as no LED operation is required */
+ 722:BLEApplications.c **** 				shut_down_led= TRUE;
+ 1162              		.loc 1 722 0
+ 1163 0050 1B4B     		ldr	r3, .L66+12
+ 1164 0052 0122     		mov	r2, #1
+ 1165 0054 1A70     		strb	r2, [r3]
+ 723:BLEApplications.c **** 				
+ 724:BLEApplications.c **** 				/* Shut down LEDs*/
+ 725:BLEApplications.c **** 				RED_SetDriveMode(RED_DM_ALG_HIZ);
+ 1166              		.loc 1 725 0
+ 1167 0056 0020     		mov	r0, #0
+ 1168 0058 FFF7FEFF 		bl	RED_SetDriveMode
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 36
+
+
+ 726:BLEApplications.c **** 				GREEN_SetDriveMode(GREEN_DM_ALG_HIZ);
+ 1169              		.loc 1 726 0
+ 1170 005c 0020     		mov	r0, #0
+ 1171 005e FFF7FEFF 		bl	GREEN_SetDriveMode
+ 727:BLEApplications.c **** 				BLUE_SetDriveMode(BLUE_DM_ALG_HIZ);
+ 1172              		.loc 1 727 0
+ 1173 0062 0020     		mov	r0, #0
+ 1174 0064 FFF7FEFF 		bl	BLUE_SetDriveMode
+ 728:BLEApplications.c ****                 
+ 729:BLEApplications.c ****                 LED_Write(0);
+ 1175              		.loc 1 729 0
+ 1176 0068 0020     		mov	r0, #0
+ 1177 006a FFF7FEFF 		bl	LED_Write
+ 1178 006e 05E0     		b	.L64
+ 1179              	.L65:
+ 730:BLEApplications.c **** 			}
+ 731:BLEApplications.c **** 			else
+ 732:BLEApplications.c **** 			{	
+ 733:BLEApplications.c **** 				/* Decrement the led_timer as counting method for RGB LED Control. During
+ 734:BLEApplications.c **** 				* this period, the PrISM is active and drives the signal to display the 
+ 735:BLEApplications.c **** 				* appropriate color */
+ 736:BLEApplications.c **** 				led_timer--;
+ 1180              		.loc 1 736 0
+ 1181 0070 124B     		ldr	r3, .L66+8
+ 1182 0072 1B78     		ldrb	r3, [r3]
+ 1183 0074 013B     		sub	r3, r3, #1
+ 1184 0076 DAB2     		uxtb	r2, r3
+ 1185 0078 104B     		ldr	r3, .L66+8
+ 1186 007a 1A70     		strb	r2, [r3]
+ 1187              	.L64:
+ 737:BLEApplications.c **** 			}
+ 738:BLEApplications.c **** 		}
+ 739:BLEApplications.c **** 		
+ 740:BLEApplications.c **** 		/* Unlock the WDT registers for modification */
+ 741:BLEApplications.c **** 		CySysWdtUnlock();
+ 1188              		.loc 1 741 0
+ 1189 007c FFF7FEFF 		bl	CySysWdtUnlock
+ 742:BLEApplications.c **** 		
+ 743:BLEApplications.c **** 		/* Disable Counter 0 to allow modifications */
+ 744:BLEApplications.c **** 		CySysWdtDisable(CY_SYS_WDT_COUNTER0_MASK);
+ 1190              		.loc 1 744 0
+ 1191 0080 0120     		mov	r0, #1
+ 1192 0082 FFF7FEFF 		bl	CySysWdtDisable
+ 745:BLEApplications.c **** 		
+ 746:BLEApplications.c **** 		/* Reset Counter 0 and give ~3 LFCLK cycles to take effect */
+ 747:BLEApplications.c **** 		CySysWdtResetCounters(CY_SYS_WDT_COUNTER0_RESET);
+ 1193              		.loc 1 747 0
+ 1194 0086 0820     		mov	r0, #8
+ 1195 0088 FFF7FEFF 		bl	CySysWdtResetCounters
+ 748:BLEApplications.c **** 		CyDelayUs(WATCHDOG_REG_UPDATE_WAIT_TIME);
+ 1196              		.loc 1 748 0
+ 1197 008c 6420     		mov	r0, #100
+ 1198 008e FFF7FEFF 		bl	CyDelayUs
+ 749:BLEApplications.c **** 		
+ 750:BLEApplications.c **** 		/* Write the Counter 0 match value for 1 second and give ~3 LFCLK
+ 751:BLEApplications.c **** 		* cycles to take effect */
+ 752:BLEApplications.c **** 		CySysWdtWriteMatch(CY_SYS_WDT_COUNTER0, WATCHDOG_ONE_SEC_COUNT_VAL);
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 37
+
+
+ 1199              		.loc 1 752 0
+ 1200 0092 8023     		mov	r3, #128
+ 1201 0094 1B02     		lsl	r3, r3, #8
+ 1202 0096 0020     		mov	r0, #0
+ 1203 0098 191C     		mov	r1, r3
+ 1204 009a FFF7FEFF 		bl	CySysWdtSetMatch
+ 753:BLEApplications.c **** 		CyDelayUs(WATCHDOG_REG_UPDATE_WAIT_TIME);
+ 1205              		.loc 1 753 0
+ 1206 009e 6420     		mov	r0, #100
+ 1207 00a0 FFF7FEFF 		bl	CyDelayUs
+ 754:BLEApplications.c **** 		
+ 755:BLEApplications.c **** 		/* Enable Watchdog Counter 0 */
+ 756:BLEApplications.c **** 		CySysWdtEnable(CY_SYS_WDT_COUNTER0_MASK);
+ 1208              		.loc 1 756 0
+ 1209 00a4 0120     		mov	r0, #1
+ 1210 00a6 FFF7FEFF 		bl	CySysWdtEnable
+ 757:BLEApplications.c **** 		
+ 758:BLEApplications.c **** 		/* Lock Watchdog to prevent any further change */
+ 759:BLEApplications.c **** 	    CySysWdtLock();
+ 1211              		.loc 1 759 0
+ 1212 00aa FFF7FEFF 		bl	CySysWdtLock
+ 1213              	.L59:
+ 760:BLEApplications.c **** 	}
+ 761:BLEApplications.c **** }
+ 1214              		.loc 1 761 0
+ 1215 00ae BD46     		mov	sp, r7
+ 1216              		@ sp needed
+ 1217 00b0 80BD     		pop	{r7, pc}
+ 1218              	.L67:
+ 1219 00b2 C046     		.align	2
+ 1220              	.L66:
+ 1221 00b4 00000000 		.word	switch_off_status_led
+ 1222 00b8 00000000 		.word	timer_tick
+ 1223 00bc 00000000 		.word	led_timer
+ 1224 00c0 00000000 		.word	shut_down_led
+ 1225              		.cfi_endproc
+ 1226              	.LFE43:
+ 1227              		.size	WDT_INT_Handler, .-WDT_INT_Handler
+ 1228              		.section	.text.InitializeWatchdog,"ax",%progbits
+ 1229              		.align	2
+ 1230              		.global	InitializeWatchdog
+ 1231              		.code	16
+ 1232              		.thumb_func
+ 1233              		.type	InitializeWatchdog, %function
+ 1234              	InitializeWatchdog:
+ 1235              	.LFB44:
+ 762:BLEApplications.c **** 
+ 763:BLEApplications.c **** /*******************************************************************************
+ 764:BLEApplications.c **** * Function Name: InitializeWatchdog
+ 765:BLEApplications.c **** ********************************************************************************
+ 766:BLEApplications.c **** * Summary:
+ 767:BLEApplications.c **** *        Reset watchdog timer
+ 768:BLEApplications.c **** *
+ 769:BLEApplications.c **** * Parameters:
+ 770:BLEApplications.c **** *  void
+ 771:BLEApplications.c **** *
+ 772:BLEApplications.c **** * Return:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 38
+
+
+ 773:BLEApplications.c **** *  void
+ 774:BLEApplications.c **** *
+ 775:BLEApplications.c **** *******************************************************************************/
+ 776:BLEApplications.c **** void InitializeWatchdog(void)
+ 777:BLEApplications.c **** {
+ 1236              		.loc 1 777 0
+ 1237              		.cfi_startproc
+ 1238 0000 80B5     		push	{r7, lr}
+ 1239              		.cfi_def_cfa_offset 8
+ 1240              		.cfi_offset 7, -8
+ 1241              		.cfi_offset 14, -4
+ 1242 0002 00AF     		add	r7, sp, #0
+ 1243              		.cfi_def_cfa_register 7
+ 778:BLEApplications.c **** 	/* Unlock the WDT registers for modification */
+ 779:BLEApplications.c **** 	CySysWdtUnlock(); 
+ 1244              		.loc 1 779 0
+ 1245 0004 FFF7FEFF 		bl	CySysWdtUnlock
+ 780:BLEApplications.c **** 	
+ 781:BLEApplications.c **** 	/* Write Mode for Counter 0 as Interrupt on Match */
+ 782:BLEApplications.c ****     CySysWdtWriteMode(CY_SYS_WDT_COUNTER0, CY_SYS_WDT_MODE_INT);
+ 1246              		.loc 1 782 0
+ 1247 0008 0020     		mov	r0, #0
+ 1248 000a 0121     		mov	r1, #1
+ 1249 000c FFF7FEFF 		bl	CySysWdtSetMode
+ 783:BLEApplications.c **** 	
+ 784:BLEApplications.c **** 	/* Set Clear on Match for Counter 0*/
+ 785:BLEApplications.c **** 	CySysWdtWriteClearOnMatch(CY_SYS_WDT_COUNTER0, TRUE);
+ 1250              		.loc 1 785 0
+ 1251 0010 0020     		mov	r0, #0
+ 1252 0012 0121     		mov	r1, #1
+ 1253 0014 FFF7FEFF 		bl	CySysWdtSetClearOnMatch
+ 786:BLEApplications.c ****     
+ 787:BLEApplications.c **** 	/* Set Watchdog interrupt to lower priority */
+ 788:BLEApplications.c **** 	CyIntSetPriority(WATCHDOG_INT_VEC_NUM, WATCHDOG_INT_VEC_PRIORITY);
+ 1254              		.loc 1 788 0
+ 1255 0018 0820     		mov	r0, #8
+ 1256 001a 0321     		mov	r1, #3
+ 1257 001c FFF7FEFF 		bl	CyIntSetPriority
+ 789:BLEApplications.c **** 	
+ 790:BLEApplications.c **** 	/* Enable Watchdog Interrupt using Interrupt number */
+ 791:BLEApplications.c ****     CyIntEnable(WATCHDOG_INT_VEC_NUM);
+ 1258              		.loc 1 791 0
+ 1259 0020 0820     		mov	r0, #8
+ 1260 0022 FFF7FEFF 		bl	CyIntEnable
+ 792:BLEApplications.c **** 	
+ 793:BLEApplications.c **** 	/* Write the match value equal to 1 second in Counter 0 */
+ 794:BLEApplications.c **** 	CySysWdtWriteMatch(CY_SYS_WDT_COUNTER0, WATCHDOG_ONE_SEC_COUNT_VAL);
+ 1261              		.loc 1 794 0
+ 1262 0026 8023     		mov	r3, #128
+ 1263 0028 1B02     		lsl	r3, r3, #8
+ 1264 002a 0020     		mov	r0, #0
+ 1265 002c 191C     		mov	r1, r3
+ 1266 002e FFF7FEFF 		bl	CySysWdtSetMatch
+ 795:BLEApplications.c ****     
+ 796:BLEApplications.c **** 	/* Enable Counter 0 */
+ 797:BLEApplications.c ****     CySysWdtEnable(CY_SYS_WDT_COUNTER0_MASK);
+ 1267              		.loc 1 797 0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 39
+
+
+ 1268 0032 0120     		mov	r0, #1
+ 1269 0034 FFF7FEFF 		bl	CySysWdtEnable
+ 798:BLEApplications.c **** 	
+ 799:BLEApplications.c **** 	/* Lock Watchdog to prevent further changes */
+ 800:BLEApplications.c ****     CySysWdtLock();
+ 1270              		.loc 1 800 0
+ 1271 0038 FFF7FEFF 		bl	CySysWdtLock
+ 801:BLEApplications.c **** }
+ 1272              		.loc 1 801 0
+ 1273 003c BD46     		mov	sp, r7
+ 1274              		@ sp needed
+ 1275 003e 80BD     		pop	{r7, pc}
+ 1276              		.cfi_endproc
+ 1277              	.LFE44:
+ 1278              		.size	InitializeWatchdog, .-InitializeWatchdog
+ 1279              		.data
+ 1280              		.type	state.7477, %object
+ 1281              		.size	state.7477, 1
+ 1282              	state.7477:
+ 1283 000d FF       		.byte	-1
+ 1284 000e 0000     		.align	2
+ 1285              		.type	led_counter.7476, %object
+ 1286              		.size	led_counter.7476, 4
+ 1287              	led_counter.7476:
+ 1288 0010 01000000 		.word	1
+ 1289              		.text
+ 1290              	.Letext0:
+ 1291              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 1292              		.file 3 "Generated_Source\\PSoC4/BLE_StackGap.h"
+ 1293              		.file 4 "Generated_Source\\PSoC4/BLE_StackGatt.h"
+ 1294              		.file 5 "Generated_Source\\PSoC4/BLE_StackGattServer.h"
+ 1295              		.file 6 "Generated_Source\\PSoC4/BLE_Stack.h"
+ 1296              		.file 7 "Generated_Source\\PSoC4/BLE_eventHandler.h"
+ 1297              		.section	.debug_info,"",%progbits
+ 1298              	.Ldebug_info0:
+ 1299 0000 CC060000 		.4byte	0x6cc
+ 1300 0004 0400     		.2byte	0x4
+ 1301 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1302 000a 04       		.byte	0x4
+ 1303 000b 01       		.uleb128 0x1
+ 1304 000c 130D0000 		.4byte	.LASF148
+ 1305 0010 01       		.byte	0x1
+ 1306 0011 100C0000 		.4byte	.LASF149
+ 1307 0015 EB0A0000 		.4byte	.LASF150
+ 1308 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 1309 001d 00000000 		.4byte	0
+ 1310 0021 00000000 		.4byte	.Ldebug_line0
+ 1311 0025 02       		.uleb128 0x2
+ 1312 0026 01       		.byte	0x1
+ 1313 0027 06       		.byte	0x6
+ 1314 0028 B3020000 		.4byte	.LASF0
+ 1315 002c 02       		.uleb128 0x2
+ 1316 002d 01       		.byte	0x1
+ 1317 002e 08       		.byte	0x8
+ 1318 002f B7090000 		.4byte	.LASF1
+ 1319 0033 02       		.uleb128 0x2
+ 1320 0034 02       		.byte	0x2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 40
+
+
+ 1321 0035 05       		.byte	0x5
+ 1322 0036 030A0000 		.4byte	.LASF2
+ 1323 003a 02       		.uleb128 0x2
+ 1324 003b 02       		.byte	0x2
+ 1325 003c 07       		.byte	0x7
+ 1326 003d 08060000 		.4byte	.LASF3
+ 1327 0041 02       		.uleb128 0x2
+ 1328 0042 04       		.byte	0x4
+ 1329 0043 05       		.byte	0x5
+ 1330 0044 AA010000 		.4byte	.LASF4
+ 1331 0048 02       		.uleb128 0x2
+ 1332 0049 04       		.byte	0x4
+ 1333 004a 07       		.byte	0x7
+ 1334 004b 0C050000 		.4byte	.LASF5
+ 1335 004f 02       		.uleb128 0x2
+ 1336 0050 08       		.byte	0x8
+ 1337 0051 05       		.byte	0x5
+ 1338 0052 A5020000 		.4byte	.LASF6
+ 1339 0056 02       		.uleb128 0x2
+ 1340 0057 08       		.byte	0x8
+ 1341 0058 07       		.byte	0x7
+ 1342 0059 B3010000 		.4byte	.LASF7
+ 1343 005d 03       		.uleb128 0x3
+ 1344 005e 04       		.byte	0x4
+ 1345 005f 05       		.byte	0x5
+ 1346 0060 696E7400 		.ascii	"int\000"
+ 1347 0064 02       		.uleb128 0x2
+ 1348 0065 04       		.byte	0x4
+ 1349 0066 07       		.byte	0x7
+ 1350 0067 E0040000 		.4byte	.LASF8
+ 1351 006b 04       		.uleb128 0x4
+ 1352 006c ED030000 		.4byte	.LASF9
+ 1353 0070 02       		.byte	0x2
+ 1354 0071 3801     		.2byte	0x138
+ 1355 0073 2C000000 		.4byte	0x2c
+ 1356 0077 04       		.uleb128 0x4
+ 1357 0078 C5090000 		.4byte	.LASF10
+ 1358 007c 02       		.byte	0x2
+ 1359 007d 3901     		.2byte	0x139
+ 1360 007f 3A000000 		.4byte	0x3a
+ 1361 0083 04       		.uleb128 0x4
+ 1362 0084 48040000 		.4byte	.LASF11
+ 1363 0088 02       		.byte	0x2
+ 1364 0089 3A01     		.2byte	0x13a
+ 1365 008b 48000000 		.4byte	0x48
+ 1366 008f 02       		.uleb128 0x2
+ 1367 0090 04       		.byte	0x4
+ 1368 0091 04       		.byte	0x4
+ 1369 0092 69090000 		.4byte	.LASF12
+ 1370 0096 02       		.uleb128 0x2
+ 1371 0097 08       		.byte	0x8
+ 1372 0098 04       		.byte	0x4
+ 1373 0099 12040000 		.4byte	.LASF13
+ 1374 009d 02       		.uleb128 0x2
+ 1375 009e 01       		.byte	0x1
+ 1376 009f 08       		.byte	0x8
+ 1377 00a0 A00B0000 		.4byte	.LASF14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 41
+
+
+ 1378 00a4 02       		.uleb128 0x2
+ 1379 00a5 04       		.byte	0x4
+ 1380 00a6 07       		.byte	0x7
+ 1381 00a7 BF070000 		.4byte	.LASF15
+ 1382 00ab 05       		.uleb128 0x5
+ 1383 00ac 04       		.byte	0x4
+ 1384 00ad 06       		.uleb128 0x6
+ 1385 00ae 04       		.byte	0x4
+ 1386 00af 6B000000 		.4byte	0x6b
+ 1387 00b3 07       		.uleb128 0x7
+ 1388 00b4 01       		.byte	0x1
+ 1389 00b5 06       		.byte	0x6
+ 1390 00b6 4201     		.2byte	0x142
+ 1391 00b8 70020000 		.4byte	0x270
+ 1392 00bc 08       		.uleb128 0x8
+ 1393 00bd 1B060000 		.4byte	.LASF16
+ 1394 00c1 00       		.sleb128 0
+ 1395 00c2 08       		.uleb128 0x8
+ 1396 00c3 BF020000 		.4byte	.LASF17
+ 1397 00c7 01       		.sleb128 1
+ 1398 00c8 08       		.uleb128 0x8
+ 1399 00c9 98010000 		.4byte	.LASF18
+ 1400 00cd 02       		.sleb128 2
+ 1401 00ce 08       		.uleb128 0x8
+ 1402 00cf 510C0000 		.4byte	.LASF19
+ 1403 00d3 03       		.sleb128 3
+ 1404 00d4 08       		.uleb128 0x8
+ 1405 00d5 DD010000 		.4byte	.LASF20
+ 1406 00d9 04       		.sleb128 4
+ 1407 00da 08       		.uleb128 0x8
+ 1408 00db 23000000 		.4byte	.LASF21
+ 1409 00df 05       		.sleb128 5
+ 1410 00e0 08       		.uleb128 0x8
+ 1411 00e1 D2020000 		.4byte	.LASF22
+ 1412 00e5 06       		.sleb128 6
+ 1413 00e6 08       		.uleb128 0x8
+ 1414 00e7 45070000 		.4byte	.LASF23
+ 1415 00eb 20       		.sleb128 32
+ 1416 00ec 08       		.uleb128 0x8
+ 1417 00ed 1F030000 		.4byte	.LASF24
+ 1418 00f1 21       		.sleb128 33
+ 1419 00f2 08       		.uleb128 0x8
+ 1420 00f3 72060000 		.4byte	.LASF25
+ 1421 00f7 22       		.sleb128 34
+ 1422 00f8 08       		.uleb128 0x8
+ 1423 00f9 E2060000 		.4byte	.LASF26
+ 1424 00fd 23       		.sleb128 35
+ 1425 00fe 08       		.uleb128 0x8
+ 1426 00ff CD080000 		.4byte	.LASF27
+ 1427 0103 24       		.sleb128 36
+ 1428 0104 08       		.uleb128 0x8
+ 1429 0105 1E080000 		.4byte	.LASF28
+ 1430 0109 25       		.sleb128 37
+ 1431 010a 08       		.uleb128 0x8
+ 1432 010b C5030000 		.4byte	.LASF29
+ 1433 010f 26       		.sleb128 38
+ 1434 0110 08       		.uleb128 0x8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 42
+
+
+ 1435 0111 96060000 		.4byte	.LASF30
+ 1436 0115 27       		.sleb128 39
+ 1437 0116 08       		.uleb128 0x8
+ 1438 0117 A50B0000 		.4byte	.LASF31
+ 1439 011b 28       		.sleb128 40
+ 1440 011c 08       		.uleb128 0x8
+ 1441 011d 6C0A0000 		.4byte	.LASF32
+ 1442 0121 29       		.sleb128 41
+ 1443 0122 08       		.uleb128 0x8
+ 1444 0123 A2000000 		.4byte	.LASF33
+ 1445 0127 2A       		.sleb128 42
+ 1446 0128 08       		.uleb128 0x8
+ 1447 0129 F6020000 		.4byte	.LASF34
+ 1448 012d 2B       		.sleb128 43
+ 1449 012e 08       		.uleb128 0x8
+ 1450 012f C80D0000 		.4byte	.LASF35
+ 1451 0133 2C       		.sleb128 44
+ 1452 0134 08       		.uleb128 0x8
+ 1453 0135 49020000 		.4byte	.LASF36
+ 1454 0139 2D       		.sleb128 45
+ 1455 013a 08       		.uleb128 0x8
+ 1456 013b CC090000 		.4byte	.LASF37
+ 1457 013f 2E       		.sleb128 46
+ 1458 0140 08       		.uleb128 0x8
+ 1459 0141 EC000000 		.4byte	.LASF38
+ 1460 0145 2F       		.sleb128 47
+ 1461 0146 08       		.uleb128 0x8
+ 1462 0147 89080000 		.4byte	.LASF39
+ 1463 014b 30       		.sleb128 48
+ 1464 014c 08       		.uleb128 0x8
+ 1465 014d 1B0E0000 		.4byte	.LASF40
+ 1466 0151 31       		.sleb128 49
+ 1467 0152 08       		.uleb128 0x8
+ 1468 0153 68080000 		.4byte	.LASF41
+ 1469 0157 32       		.sleb128 50
+ 1470 0158 08       		.uleb128 0x8
+ 1471 0159 C40A0000 		.4byte	.LASF42
+ 1472 015d 33       		.sleb128 51
+ 1473 015e 08       		.uleb128 0x8
+ 1474 015f AA0A0000 		.4byte	.LASF43
+ 1475 0163 C000     		.sleb128 64
+ 1476 0165 08       		.uleb128 0x8
+ 1477 0166 08070000 		.4byte	.LASF44
+ 1478 016a C100     		.sleb128 65
+ 1479 016c 08       		.uleb128 0x8
+ 1480 016d 670E0000 		.4byte	.LASF45
+ 1481 0171 C200     		.sleb128 66
+ 1482 0173 08       		.uleb128 0x8
+ 1483 0174 6A0C0000 		.4byte	.LASF46
+ 1484 0178 C300     		.sleb128 67
+ 1485 017a 08       		.uleb128 0x8
+ 1486 017b 56050000 		.4byte	.LASF47
+ 1487 017f C400     		.sleb128 68
+ 1488 0181 08       		.uleb128 0x8
+ 1489 0182 53010000 		.4byte	.LASF48
+ 1490 0186 C500     		.sleb128 69
+ 1491 0188 08       		.uleb128 0x8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 43
+
+
+ 1492 0189 B5060000 		.4byte	.LASF49
+ 1493 018d C600     		.sleb128 70
+ 1494 018f 08       		.uleb128 0x8
+ 1495 0190 32060000 		.4byte	.LASF50
+ 1496 0194 C700     		.sleb128 71
+ 1497 0196 08       		.uleb128 0x8
+ 1498 0197 A10D0000 		.4byte	.LASF51
+ 1499 019b C800     		.sleb128 72
+ 1500 019d 08       		.uleb128 0x8
+ 1501 019e 36030000 		.4byte	.LASF52
+ 1502 01a2 C900     		.sleb128 73
+ 1503 01a4 08       		.uleb128 0x8
+ 1504 01a5 DF0C0000 		.4byte	.LASF53
+ 1505 01a9 CA00     		.sleb128 74
+ 1506 01ab 08       		.uleb128 0x8
+ 1507 01ac 15010000 		.4byte	.LASF54
+ 1508 01b0 CB00     		.sleb128 75
+ 1509 01b2 08       		.uleb128 0x8
+ 1510 01b3 3C050000 		.4byte	.LASF55
+ 1511 01b7 CC00     		.sleb128 76
+ 1512 01b9 08       		.uleb128 0x8
+ 1513 01ba 4E080000 		.4byte	.LASF56
+ 1514 01be CD00     		.sleb128 77
+ 1515 01c0 08       		.uleb128 0x8
+ 1516 01c1 65030000 		.4byte	.LASF57
+ 1517 01c5 CE00     		.sleb128 78
+ 1518 01c7 08       		.uleb128 0x8
+ 1519 01c8 4D0A0000 		.4byte	.LASF58
+ 1520 01cc CF00     		.sleb128 79
+ 1521 01ce 08       		.uleb128 0x8
+ 1522 01cf 34010000 		.4byte	.LASF59
+ 1523 01d3 D000     		.sleb128 80
+ 1524 01d5 08       		.uleb128 0x8
+ 1525 01d6 F3030000 		.4byte	.LASF60
+ 1526 01da D100     		.sleb128 81
+ 1527 01dc 08       		.uleb128 0x8
+ 1528 01dd FF080000 		.4byte	.LASF61
+ 1529 01e1 D200     		.sleb128 82
+ 1530 01e3 08       		.uleb128 0x8
+ 1531 01e4 0D0A0000 		.4byte	.LASF62
+ 1532 01e8 D300     		.sleb128 83
+ 1533 01ea 08       		.uleb128 0x8
+ 1534 01eb 890A0000 		.4byte	.LASF63
+ 1535 01ef D400     		.sleb128 84
+ 1536 01f1 08       		.uleb128 0x8
+ 1537 01f2 74050000 		.4byte	.LASF64
+ 1538 01f6 D500     		.sleb128 85
+ 1539 01f8 08       		.uleb128 0x8
+ 1540 01f9 BE040000 		.4byte	.LASF65
+ 1541 01fd D600     		.sleb128 86
+ 1542 01ff 08       		.uleb128 0x8
+ 1543 0200 C70B0000 		.4byte	.LASF66
+ 1544 0204 D700     		.sleb128 87
+ 1545 0206 08       		.uleb128 0x8
+ 1546 0207 B7050000 		.4byte	.LASF67
+ 1547 020b D800     		.sleb128 88
+ 1548 020d 08       		.uleb128 0x8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 44
+
+
+ 1549 020e 23020000 		.4byte	.LASF68
+ 1550 0212 F000     		.sleb128 112
+ 1551 0214 08       		.uleb128 0x8
+ 1552 0215 F50D0000 		.4byte	.LASF69
+ 1553 0219 F100     		.sleb128 113
+ 1554 021b 08       		.uleb128 0x8
+ 1555 021c 29070000 		.4byte	.LASF70
+ 1556 0220 F200     		.sleb128 114
+ 1557 0222 08       		.uleb128 0x8
+ 1558 0223 83070000 		.4byte	.LASF71
+ 1559 0227 F300     		.sleb128 115
+ 1560 0229 08       		.uleb128 0x8
+ 1561 022a 3F090000 		.4byte	.LASF72
+ 1562 022e F400     		.sleb128 116
+ 1563 0230 08       		.uleb128 0x8
+ 1564 0231 19040000 		.4byte	.LASF73
+ 1565 0235 F500     		.sleb128 117
+ 1566 0237 08       		.uleb128 0x8
+ 1567 0238 CB000000 		.4byte	.LASF74
+ 1568 023c F600     		.sleb128 118
+ 1569 023e 08       		.uleb128 0x8
+ 1570 023f 53000000 		.4byte	.LASF75
+ 1571 0243 F700     		.sleb128 119
+ 1572 0245 08       		.uleb128 0x8
+ 1573 0246 00000000 		.4byte	.LASF76
+ 1574 024a F800     		.sleb128 120
+ 1575 024c 08       		.uleb128 0x8
+ 1576 024d 220C0000 		.4byte	.LASF77
+ 1577 0251 F900     		.sleb128 121
+ 1578 0253 08       		.uleb128 0x8
+ 1579 0254 7E040000 		.4byte	.LASF78
+ 1580 0258 FA00     		.sleb128 122
+ 1581 025a 08       		.uleb128 0x8
+ 1582 025b F2010000 		.4byte	.LASF79
+ 1583 025f FA01     		.sleb128 250
+ 1584 0261 08       		.uleb128 0x8
+ 1585 0262 ED040000 		.4byte	.LASF80
+ 1586 0266 FB01     		.sleb128 251
+ 1587 0268 08       		.uleb128 0x8
+ 1588 0269 65040000 		.4byte	.LASF81
+ 1589 026d FF01     		.sleb128 255
+ 1590 026f 00       		.byte	0
+ 1591 0270 09       		.uleb128 0x9
+ 1592 0271 08       		.byte	0x8
+ 1593 0272 03       		.byte	0x3
+ 1594 0273 3C03     		.2byte	0x33c
+ 1595 0275 AE020000 		.4byte	0x2ae
+ 1596 0279 0A       		.uleb128 0xa
+ 1597 027a 5D090000 		.4byte	.LASF82
+ 1598 027e 03       		.byte	0x3
+ 1599 027f 4303     		.2byte	0x343
+ 1600 0281 77000000 		.4byte	0x77
+ 1601 0285 00       		.byte	0
+ 1602 0286 0A       		.uleb128 0xa
+ 1603 0287 E9080000 		.4byte	.LASF83
+ 1604 028b 03       		.byte	0x3
+ 1605 028c 4A03     		.2byte	0x34a
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 45
+
+
+ 1606 028e 77000000 		.4byte	0x77
+ 1607 0292 02       		.byte	0x2
+ 1608 0293 0A       		.uleb128 0xa
+ 1609 0294 77070000 		.4byte	.LASF84
+ 1610 0298 03       		.byte	0x3
+ 1611 0299 4F03     		.2byte	0x34f
+ 1612 029b 77000000 		.4byte	0x77
+ 1613 029f 04       		.byte	0x4
+ 1614 02a0 0A       		.uleb128 0xa
+ 1615 02a1 DA050000 		.4byte	.LASF85
+ 1616 02a5 03       		.byte	0x3
+ 1617 02a6 5503     		.2byte	0x355
+ 1618 02a8 77000000 		.4byte	0x77
+ 1619 02ac 06       		.byte	0x6
+ 1620 02ad 00       		.byte	0
+ 1621 02ae 04       		.uleb128 0x4
+ 1622 02af 1E050000 		.4byte	.LASF86
+ 1623 02b3 03       		.byte	0x3
+ 1624 02b4 5703     		.2byte	0x357
+ 1625 02b6 70020000 		.4byte	0x270
+ 1626 02ba 04       		.uleb128 0x4
+ 1627 02bb 3F0E0000 		.4byte	.LASF87
+ 1628 02bf 04       		.byte	0x4
+ 1629 02c0 9201     		.2byte	0x192
+ 1630 02c2 77000000 		.4byte	0x77
+ 1631 02c6 09       		.uleb128 0x9
+ 1632 02c7 02       		.byte	0x2
+ 1633 02c8 04       		.byte	0x4
+ 1634 02c9 9C01     		.2byte	0x19c
+ 1635 02cb EA020000 		.4byte	0x2ea
+ 1636 02cf 0A       		.uleb128 0xa
+ 1637 02d0 EC0D0000 		.4byte	.LASF88
+ 1638 02d4 04       		.byte	0x4
+ 1639 02d5 A301     		.2byte	0x1a3
+ 1640 02d7 6B000000 		.4byte	0x6b
+ 1641 02db 00       		.byte	0
+ 1642 02dc 0A       		.uleb128 0xa
+ 1643 02dd 23070000 		.4byte	.LASF89
+ 1644 02e1 04       		.byte	0x4
+ 1645 02e2 A901     		.2byte	0x1a9
+ 1646 02e4 6B000000 		.4byte	0x6b
+ 1647 02e8 01       		.byte	0x1
+ 1648 02e9 00       		.byte	0
+ 1649 02ea 04       		.uleb128 0x4
+ 1650 02eb 72000000 		.4byte	.LASF90
+ 1651 02ef 04       		.byte	0x4
+ 1652 02f0 AB01     		.2byte	0x1ab
+ 1653 02f2 C6020000 		.4byte	0x2c6
+ 1654 02f6 09       		.uleb128 0x9
+ 1655 02f7 08       		.byte	0x8
+ 1656 02f8 04       		.byte	0x4
+ 1657 02f9 C701     		.2byte	0x1c7
+ 1658 02fb 27030000 		.4byte	0x327
+ 1659 02ff 0B       		.uleb128 0xb
+ 1660 0300 76616C00 		.ascii	"val\000"
+ 1661 0304 04       		.byte	0x4
+ 1662 0305 CA01     		.2byte	0x1ca
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 46
+
+
+ 1663 0307 AD000000 		.4byte	0xad
+ 1664 030b 00       		.byte	0
+ 1665 030c 0B       		.uleb128 0xb
+ 1666 030d 6C656E00 		.ascii	"len\000"
+ 1667 0311 04       		.byte	0x4
+ 1668 0312 CD01     		.2byte	0x1cd
+ 1669 0314 77000000 		.4byte	0x77
+ 1670 0318 04       		.byte	0x4
+ 1671 0319 0A       		.uleb128 0xa
+ 1672 031a 15030000 		.4byte	.LASF91
+ 1673 031e 04       		.byte	0x4
+ 1674 031f D401     		.2byte	0x1d4
+ 1675 0321 77000000 		.4byte	0x77
+ 1676 0325 06       		.byte	0x6
+ 1677 0326 00       		.byte	0
+ 1678 0327 04       		.uleb128 0x4
+ 1679 0328 CA010000 		.4byte	.LASF92
+ 1680 032c 04       		.byte	0x4
+ 1681 032d D601     		.2byte	0x1d6
+ 1682 032f F6020000 		.4byte	0x2f6
+ 1683 0333 09       		.uleb128 0x9
+ 1684 0334 0C       		.byte	0xc
+ 1685 0335 04       		.byte	0x4
+ 1686 0336 D901     		.2byte	0x1d9
+ 1687 0338 57030000 		.4byte	0x357
+ 1688 033c 0A       		.uleb128 0xa
+ 1689 033d AD040000 		.4byte	.LASF93
+ 1690 0341 04       		.byte	0x4
+ 1691 0342 DC01     		.2byte	0x1dc
+ 1692 0344 27030000 		.4byte	0x327
+ 1693 0348 00       		.byte	0
+ 1694 0349 0A       		.uleb128 0xa
+ 1695 034a A2040000 		.4byte	.LASF94
+ 1696 034e 04       		.byte	0x4
+ 1697 034f DF01     		.2byte	0x1df
+ 1698 0351 BA020000 		.4byte	0x2ba
+ 1699 0355 08       		.byte	0x8
+ 1700 0356 00       		.byte	0
+ 1701 0357 04       		.uleb128 0x4
+ 1702 0358 20090000 		.4byte	.LASF95
+ 1703 035c 04       		.byte	0x4
+ 1704 035d E101     		.2byte	0x1e1
+ 1705 035f 33030000 		.4byte	0x333
+ 1706 0363 0C       		.uleb128 0xc
+ 1707 0364 E6070000 		.4byte	.LASF96
+ 1708 0368 05       		.byte	0x5
+ 1709 0369 34       		.byte	0x34
+ 1710 036a 57030000 		.4byte	0x357
+ 1711 036e 0D       		.uleb128 0xd
+ 1712 036f 10       		.byte	0x10
+ 1713 0370 05       		.byte	0x5
+ 1714 0371 8A       		.byte	0x8a
+ 1715 0372 8F030000 		.4byte	0x38f
+ 1716 0376 0E       		.uleb128 0xe
+ 1717 0377 86000000 		.4byte	.LASF97
+ 1718 037b 05       		.byte	0x5
+ 1719 037c 8D       		.byte	0x8d
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 47
+
+
+ 1720 037d EA020000 		.4byte	0x2ea
+ 1721 0381 00       		.byte	0
+ 1722 0382 0E       		.uleb128 0xe
+ 1723 0383 69070000 		.4byte	.LASF98
+ 1724 0387 05       		.byte	0x5
+ 1725 0388 90       		.byte	0x90
+ 1726 0389 57030000 		.4byte	0x357
+ 1727 038d 04       		.byte	0x4
+ 1728 038e 00       		.byte	0
+ 1729 038f 0C       		.uleb128 0xc
+ 1730 0390 C8070000 		.4byte	.LASF99
+ 1731 0394 05       		.byte	0x5
+ 1732 0395 92       		.byte	0x92
+ 1733 0396 6E030000 		.4byte	0x36e
+ 1734 039a 07       		.uleb128 0x7
+ 1735 039b 01       		.byte	0x1
+ 1736 039c 07       		.byte	0x7
+ 1737 039d BF07     		.2byte	0x7bf
+ 1738 039f C2030000 		.4byte	0x3c2
+ 1739 03a3 08       		.uleb128 0x8
+ 1740 03a4 3F000000 		.4byte	.LASF100
+ 1741 03a8 00       		.sleb128 0
+ 1742 03a9 08       		.uleb128 0x8
+ 1743 03aa 05080000 		.4byte	.LASF101
+ 1744 03ae 01       		.sleb128 1
+ 1745 03af 08       		.uleb128 0x8
+ 1746 03b0 FD0C0000 		.4byte	.LASF102
+ 1747 03b4 02       		.sleb128 2
+ 1748 03b5 08       		.uleb128 0x8
+ 1749 03b6 8D020000 		.4byte	.LASF103
+ 1750 03ba 03       		.sleb128 3
+ 1751 03bb 08       		.uleb128 0x8
+ 1752 03bc AC030000 		.4byte	.LASF104
+ 1753 03c0 04       		.sleb128 4
+ 1754 03c1 00       		.byte	0
+ 1755 03c2 04       		.uleb128 0x4
+ 1756 03c3 A00C0000 		.4byte	.LASF105
+ 1757 03c7 07       		.byte	0x7
+ 1758 03c8 CD07     		.2byte	0x7cd
+ 1759 03ca 9A030000 		.4byte	0x39a
+ 1760 03ce 0F       		.uleb128 0xf
+ 1761 03cf AA080000 		.4byte	.LASF108
+ 1762 03d3 01       		.byte	0x1
+ 1763 03d4 88       		.byte	0x88
+ 1764 03d5 00000000 		.4byte	.LFB37
+ 1765 03d9 94020000 		.4byte	.LFE37-.LFB37
+ 1766 03dd 01       		.uleb128 0x1
+ 1767 03de 9C       		.byte	0x9c
+ 1768 03df 0E040000 		.4byte	0x40e
+ 1769 03e3 10       		.uleb128 0x10
+ 1770 03e4 02060000 		.4byte	.LASF106
+ 1771 03e8 01       		.byte	0x1
+ 1772 03e9 88       		.byte	0x88
+ 1773 03ea 83000000 		.4byte	0x83
+ 1774 03ee 02       		.uleb128 0x2
+ 1775 03ef 91       		.byte	0x91
+ 1776 03f0 6C       		.sleb128 -20
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 48
+
+
+ 1777 03f1 10       		.uleb128 0x10
+ 1778 03f2 880C0000 		.4byte	.LASF107
+ 1779 03f6 01       		.byte	0x1
+ 1780 03f7 88       		.byte	0x88
+ 1781 03f8 AB000000 		.4byte	0xab
+ 1782 03fc 02       		.uleb128 0x2
+ 1783 03fd 91       		.byte	0x91
+ 1784 03fe 68       		.sleb128 -24
+ 1785 03ff 11       		.uleb128 0x11
+ 1786 0400 73040000 		.4byte	.LASF111
+ 1787 0404 01       		.byte	0x1
+ 1788 0405 8C       		.byte	0x8c
+ 1789 0406 0E040000 		.4byte	0x40e
+ 1790 040a 02       		.uleb128 0x2
+ 1791 040b 91       		.byte	0x91
+ 1792 040c 74       		.sleb128 -12
+ 1793 040d 00       		.byte	0
+ 1794 040e 06       		.uleb128 0x6
+ 1795 040f 04       		.byte	0x4
+ 1796 0410 8F030000 		.4byte	0x38f
+ 1797 0414 12       		.uleb128 0x12
+ 1798 0415 750B0000 		.4byte	.LASF109
+ 1799 0419 01       		.byte	0x1
+ 1800 041a 7101     		.2byte	0x171
+ 1801 041c 00000000 		.4byte	.LFB38
+ 1802 0420 5C000000 		.4byte	.LFE38-.LFB38
+ 1803 0424 01       		.uleb128 0x1
+ 1804 0425 9C       		.byte	0x9c
+ 1805 0426 49040000 		.4byte	0x449
+ 1806 042a 13       		.uleb128 0x13
+ 1807 042b F0090000 		.4byte	.LASF110
+ 1808 042f 01       		.byte	0x1
+ 1809 0430 7101     		.2byte	0x171
+ 1810 0432 6B000000 		.4byte	0x6b
+ 1811 0436 02       		.uleb128 0x2
+ 1812 0437 91       		.byte	0x91
+ 1813 0438 67       		.sleb128 -25
+ 1814 0439 14       		.uleb128 0x14
+ 1815 043a 72020000 		.4byte	.LASF112
+ 1816 043e 01       		.byte	0x1
+ 1817 043f 7401     		.2byte	0x174
+ 1818 0441 63030000 		.4byte	0x363
+ 1819 0445 02       		.uleb128 0x2
+ 1820 0446 91       		.byte	0x91
+ 1821 0447 6C       		.sleb128 -20
+ 1822 0448 00       		.byte	0
+ 1823 0449 12       		.uleb128 0x12
+ 1824 044a 7A090000 		.4byte	.LASF113
+ 1825 044e 01       		.byte	0x1
+ 1826 044f 9301     		.2byte	0x193
+ 1827 0451 00000000 		.4byte	.LFB39
+ 1828 0455 60000000 		.4byte	.LFE39-.LFB39
+ 1829 0459 01       		.uleb128 0x1
+ 1830 045a 9C       		.byte	0x9c
+ 1831 045b 8D040000 		.4byte	0x48d
+ 1832 045f 13       		.uleb128 0x13
+ 1833 0460 EB020000 		.4byte	.LASF114
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 49
+
+
+ 1834 0464 01       		.byte	0x1
+ 1835 0465 9301     		.2byte	0x193
+ 1836 0467 AD000000 		.4byte	0xad
+ 1837 046b 02       		.uleb128 0x2
+ 1838 046c 91       		.byte	0x91
+ 1839 046d 64       		.sleb128 -28
+ 1840 046e 15       		.uleb128 0x15
+ 1841 046f 6C656E00 		.ascii	"len\000"
+ 1842 0473 01       		.byte	0x1
+ 1843 0474 9301     		.2byte	0x193
+ 1844 0476 6B000000 		.4byte	0x6b
+ 1845 047a 02       		.uleb128 0x2
+ 1846 047b 91       		.byte	0x91
+ 1847 047c 63       		.sleb128 -29
+ 1848 047d 14       		.uleb128 0x14
+ 1849 047e 83030000 		.4byte	.LASF115
+ 1850 0482 01       		.byte	0x1
+ 1851 0483 9601     		.2byte	0x196
+ 1852 0485 63030000 		.4byte	0x363
+ 1853 0489 02       		.uleb128 0x2
+ 1854 048a 91       		.byte	0x91
+ 1855 048b 6C       		.sleb128 -20
+ 1856 048c 00       		.byte	0
+ 1857 048d 16       		.uleb128 0x16
+ 1858 048e 38080000 		.4byte	.LASF125
+ 1859 0492 01       		.byte	0x1
+ 1860 0493 B301     		.2byte	0x1b3
+ 1861 0495 00000000 		.4byte	.LFB40
+ 1862 0499 3C000000 		.4byte	.LFE40-.LFB40
+ 1863 049d 01       		.uleb128 0x1
+ 1864 049e 9C       		.byte	0x9c
+ 1865 049f 12       		.uleb128 0x12
+ 1866 04a0 930C0000 		.4byte	.LASF116
+ 1867 04a4 01       		.byte	0x1
+ 1868 04a5 D001     		.2byte	0x1d0
+ 1869 04a7 00000000 		.4byte	.LFB41
+ 1870 04ab 40010000 		.4byte	.LFE41-.LFB41
+ 1871 04af 01       		.uleb128 0x1
+ 1872 04b0 9C       		.byte	0x9c
+ 1873 04b1 F2040000 		.4byte	0x4f2
+ 1874 04b5 14       		.uleb128 0x14
+ 1875 04b6 960B0000 		.4byte	.LASF117
+ 1876 04ba 01       		.byte	0x1
+ 1877 04bb D301     		.2byte	0x1d3
+ 1878 04bd 6B000000 		.4byte	0x6b
+ 1879 04c1 02       		.uleb128 0x2
+ 1880 04c2 91       		.byte	0x91
+ 1881 04c3 76       		.sleb128 -10
+ 1882 04c4 14       		.uleb128 0x14
+ 1883 04c5 450C0000 		.4byte	.LASF118
+ 1884 04c9 01       		.byte	0x1
+ 1885 04ca D401     		.2byte	0x1d4
+ 1886 04cc 6B000000 		.4byte	0x6b
+ 1887 04d0 02       		.uleb128 0x2
+ 1888 04d1 91       		.byte	0x91
+ 1889 04d2 75       		.sleb128 -11
+ 1890 04d3 14       		.uleb128 0x14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 50
+
+
+ 1891 04d4 7A010000 		.4byte	.LASF119
+ 1892 04d8 01       		.byte	0x1
+ 1893 04d9 D501     		.2byte	0x1d5
+ 1894 04db 6B000000 		.4byte	0x6b
+ 1895 04df 02       		.uleb128 0x2
+ 1896 04e0 91       		.byte	0x91
+ 1897 04e1 74       		.sleb128 -12
+ 1898 04e2 14       		.uleb128 0x14
+ 1899 04e3 50060000 		.4byte	.LASF120
+ 1900 04e7 01       		.byte	0x1
+ 1901 04e8 D601     		.2byte	0x1d6
+ 1902 04ea 6B000000 		.4byte	0x6b
+ 1903 04ee 02       		.uleb128 0x2
+ 1904 04ef 91       		.byte	0x91
+ 1905 04f0 77       		.sleb128 -9
+ 1906 04f1 00       		.byte	0
+ 1907 04f2 12       		.uleb128 0x12
+ 1908 04f3 9C030000 		.4byte	.LASF121
+ 1909 04f7 01       		.byte	0x1
+ 1910 04f8 2D02     		.2byte	0x22d
+ 1911 04fa 00000000 		.4byte	.LFB42
+ 1912 04fe 1C010000 		.4byte	.LFE42-.LFB42
+ 1913 0502 01       		.uleb128 0x1
+ 1914 0503 9C       		.byte	0x9c
+ 1915 0504 3C050000 		.4byte	0x53c
+ 1916 0508 14       		.uleb128 0x14
+ 1917 0509 5B0E0000 		.4byte	.LASF122
+ 1918 050d 01       		.byte	0x1
+ 1919 050e 3102     		.2byte	0x231
+ 1920 0510 83000000 		.4byte	0x83
+ 1921 0514 05       		.uleb128 0x5
+ 1922 0515 03       		.byte	0x3
+ 1923 0516 10000000 		.4byte	led_counter.7476
+ 1924 051a 14       		.uleb128 0x14
+ 1925 051b 5F030000 		.4byte	.LASF123
+ 1926 051f 01       		.byte	0x1
+ 1927 0520 3402     		.2byte	0x234
+ 1928 0522 6B000000 		.4byte	0x6b
+ 1929 0526 05       		.uleb128 0x5
+ 1930 0527 03       		.byte	0x3
+ 1931 0528 0D000000 		.4byte	state.7477
+ 1932 052c 14       		.uleb128 0x14
+ 1933 052d A9090000 		.4byte	.LASF124
+ 1934 0531 01       		.byte	0x1
+ 1935 0532 3702     		.2byte	0x237
+ 1936 0534 6B000000 		.4byte	0x6b
+ 1937 0538 02       		.uleb128 0x2
+ 1938 0539 91       		.byte	0x91
+ 1939 053a 77       		.sleb128 -9
+ 1940 053b 00       		.byte	0
+ 1941 053c 16       		.uleb128 0x16
+ 1942 053d 99090000 		.4byte	.LASF126
+ 1943 0541 01       		.byte	0x1
+ 1944 0542 A502     		.2byte	0x2a5
+ 1945 0544 00000000 		.4byte	.LFB43
+ 1946 0548 C4000000 		.4byte	.LFE43-.LFB43
+ 1947 054c 01       		.uleb128 0x1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 51
+
+
+ 1948 054d 9C       		.byte	0x9c
+ 1949 054e 16       		.uleb128 0x16
+ 1950 054f 10020000 		.4byte	.LASF127
+ 1951 0553 01       		.byte	0x1
+ 1952 0554 0803     		.2byte	0x308
+ 1953 0556 00000000 		.4byte	.LFB44
+ 1954 055a 40000000 		.4byte	.LFE44-.LFB44
+ 1955 055e 01       		.uleb128 0x1
+ 1956 055f 9C       		.byte	0x9c
+ 1957 0560 11       		.uleb128 0x11
+ 1958 0561 AE0C0000 		.4byte	.LASF128
+ 1959 0565 01       		.byte	0x1
+ 1960 0566 4E       		.byte	0x4e
+ 1961 0567 6B000000 		.4byte	0x6b
+ 1962 056b 05       		.uleb128 0x5
+ 1963 056c 03       		.byte	0x3
+ 1964 056d 00000000 		.4byte	isConnectionUpdateRequested
+ 1965 0571 11       		.uleb128 0x11
+ 1966 0572 4F030000 		.4byte	.LASF129
+ 1967 0576 01       		.byte	0x1
+ 1968 0577 53       		.byte	0x53
+ 1969 0578 AE020000 		.4byte	0x2ae
+ 1970 057c 05       		.uleb128 0x5
+ 1971 057d 03       		.byte	0x3
+ 1972 057e 04000000 		.4byte	ConnectionParam
+ 1973 0582 17       		.uleb128 0x17
+ 1974 0583 D6060000 		.4byte	.LASF130
+ 1975 0587 07       		.byte	0x7
+ 1976 0588 DA09     		.2byte	0x9da
+ 1977 058a C2030000 		.4byte	0x3c2
+ 1978 058e 18       		.uleb128 0x18
+ 1979 058f 91000000 		.4byte	.LASF131
+ 1980 0593 01       		.byte	0x1
+ 1981 0594 2D       		.byte	0x2d
+ 1982 0595 EA020000 		.4byte	0x2ea
+ 1983 0599 05       		.uleb128 0x5
+ 1984 059a 03       		.byte	0x3
+ 1985 059b 00000000 		.4byte	connectionHandle
+ 1986 059f 18       		.uleb128 0x18
+ 1987 05a0 F5080000 		.4byte	.LASF132
+ 1988 05a4 01       		.byte	0x1
+ 1989 05a5 30       		.byte	0x30
+ 1990 05a6 57030000 		.4byte	0x357
+ 1991 05aa 05       		.uleb128 0x5
+ 1992 05ab 03       		.byte	0x3
+ 1993 05ac 00000000 		.4byte	rgbHandle
+ 1994 05b0 18       		.uleb128 0x18
+ 1995 05b1 F00B0000 		.4byte	.LASF133
+ 1996 05b5 01       		.byte	0x1
+ 1997 05b6 35       		.byte	0x35
+ 1998 05b7 6B000000 		.4byte	0x6b
+ 1999 05bb 05       		.uleb128 0x5
+ 2000 05bc 03       		.byte	0x3
+ 2001 05bd 00000000 		.4byte	sendCapSenseSliderNotifications
+ 2002 05c1 18       		.uleb128 0x18
+ 2003 05c2 AB070000 		.4byte	.LASF134
+ 2004 05c6 01       		.byte	0x1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 52
+
+
+ 2005 05c7 39       		.byte	0x39
+ 2006 05c8 6B000000 		.4byte	0x6b
+ 2007 05cc 05       		.uleb128 0x5
+ 2008 05cd 03       		.byte	0x3
+ 2009 05ce 00000000 		.4byte	rgbledNotifications
+ 2010 05d2 19       		.uleb128 0x19
+ 2011 05d3 6B000000 		.4byte	0x6b
+ 2012 05d7 E2050000 		.4byte	0x5e2
+ 2013 05db 1A       		.uleb128 0x1a
+ 2014 05dc A4000000 		.4byte	0xa4
+ 2015 05e0 03       		.byte	0x3
+ 2016 05e1 00       		.byte	0
+ 2017 05e2 18       		.uleb128 0x18
+ 2018 05e3 67060000 		.4byte	.LASF135
+ 2019 05e7 01       		.byte	0x1
+ 2020 05e8 3D       		.byte	0x3d
+ 2021 05e9 D2050000 		.4byte	0x5d2
+ 2022 05ed 05       		.uleb128 0x5
+ 2023 05ee 03       		.byte	0x3
+ 2024 05ef 00000000 		.4byte	RGBledData
+ 2025 05f3 18       		.uleb128 0x18
+ 2026 05f4 BD080000 		.4byte	.LASF136
+ 2027 05f8 01       		.byte	0x1
+ 2028 05f9 42       		.byte	0x42
+ 2029 05fa 6B000000 		.4byte	0x6b
+ 2030 05fe 05       		.uleb128 0x5
+ 2031 05ff 03       		.byte	0x3
+ 2032 0600 00000000 		.4byte	deviceConnected
+ 2033 0604 18       		.uleb128 0x18
+ 2034 0605 CA0C0000 		.4byte	.LASF137
+ 2035 0609 01       		.byte	0x1
+ 2036 060a 45       		.byte	0x45
+ 2037 060b 6B000000 		.4byte	0x6b
+ 2038 060f 05       		.uleb128 0x5
+ 2039 0610 03       		.byte	0x3
+ 2040 0611 00000000 		.4byte	restartAdvertisement
+ 2041 0615 18       		.uleb128 0x18
+ 2042 0616 85010000 		.4byte	.LASF138
+ 2043 061a 01       		.byte	0x1
+ 2044 061b 4A       		.byte	0x4a
+ 2045 061c 6B000000 		.4byte	0x6b
+ 2046 0620 05       		.uleb128 0x5
+ 2047 0621 03       		.byte	0x3
+ 2048 0622 00000000 		.4byte	enableCapSenseData
+ 2049 0626 18       		.uleb128 0x18
+ 2050 0627 3A040000 		.4byte	.LASF139
+ 2051 062b 01       		.byte	0x1
+ 2052 062c 5E       		.byte	0x5e
+ 2053 062d 6B000000 		.4byte	0x6b
+ 2054 0631 05       		.uleb128 0x5
+ 2055 0632 03       		.byte	0x3
+ 2056 0633 00000000 		.4byte	shut_down_led
+ 2057 0637 18       		.uleb128 0x18
+ 2058 0638 A1070000 		.4byte	.LASF140
+ 2059 063c 01       		.byte	0x1
+ 2060 063d 61       		.byte	0x61
+ 2061 063e 6B000000 		.4byte	0x6b
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 53
+
+
+ 2062 0642 05       		.uleb128 0x5
+ 2063 0643 03       		.byte	0x3
+ 2064 0644 00000000 		.4byte	led_timer
+ 2065 0648 18       		.uleb128 0x18
+ 2066 0649 B3040000 		.4byte	.LASF141
+ 2067 064d 01       		.byte	0x1
+ 2068 064e 64       		.byte	0x64
+ 2069 064f 6B000000 		.4byte	0x6b
+ 2070 0653 05       		.uleb128 0x5
+ 2071 0654 03       		.byte	0x3
+ 2072 0655 00000000 		.4byte	timer_tick
+ 2073 0659 18       		.uleb128 0x18
+ 2074 065a 4F040000 		.4byte	.LASF142
+ 2075 065e 01       		.byte	0x1
+ 2076 065f 67       		.byte	0x67
+ 2077 0660 6B000000 		.4byte	0x6b
+ 2078 0664 05       		.uleb128 0x5
+ 2079 0665 03       		.byte	0x3
+ 2080 0666 00000000 		.4byte	switch_off_status_led
+ 2081 066a 18       		.uleb128 0x18
+ 2082 066b 6F090000 		.4byte	.LASF143
+ 2083 066f 01       		.byte	0x1
+ 2084 0670 6B       		.byte	0x6b
+ 2085 0671 6B000000 		.4byte	0x6b
+ 2086 0675 05       		.uleb128 0x5
+ 2087 0676 03       		.byte	0x3
+ 2088 0677 00000000 		.4byte	busyStatus
+ 2089 067b 19       		.uleb128 0x19
+ 2090 067c 6B000000 		.4byte	0x6b
+ 2091 0680 8B060000 		.4byte	0x68b
+ 2092 0684 1A       		.uleb128 0x1a
+ 2093 0685 A4000000 		.4byte	0xa4
+ 2094 0689 01       		.byte	0x1
+ 2095 068a 00       		.byte	0
+ 2096 068b 18       		.uleb128 0x18
+ 2097 068c 3B0A0000 		.4byte	.LASF144
+ 2098 0690 01       		.byte	0x1
+ 2099 0691 6E       		.byte	0x6e
+ 2100 0692 7B060000 		.4byte	0x67b
+ 2101 0696 05       		.uleb128 0x5
+ 2102 0697 03       		.byte	0x3
+ 2103 0698 00000000 		.4byte	CapSenseCCCDvalue
+ 2104 069c 18       		.uleb128 0x18
+ 2105 069d 2E0A0000 		.4byte	.LASF145
+ 2106 06a1 01       		.byte	0x1
+ 2107 06a2 6F       		.byte	0x6f
+ 2108 06a3 7B060000 		.4byte	0x67b
+ 2109 06a7 05       		.uleb128 0x5
+ 2110 06a8 03       		.byte	0x3
+ 2111 06a9 00000000 		.4byte	RGBCCCDvalue
+ 2112 06ad 18       		.uleb128 0x18
+ 2113 06ae 98050000 		.4byte	.LASF146
+ 2114 06b2 01       		.byte	0x1
+ 2115 06b3 72       		.byte	0x72
+ 2116 06b4 57030000 		.4byte	0x357
+ 2117 06b8 05       		.uleb128 0x5
+ 2118 06b9 03       		.byte	0x3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 54
+
+
+ 2119 06ba 00000000 		.4byte	CapSenseNotificationCCCDhandle
+ 2120 06be 18       		.uleb128 0x18
+ 2121 06bf E8050000 		.4byte	.LASF147
+ 2122 06c3 01       		.byte	0x1
+ 2123 06c4 75       		.byte	0x75
+ 2124 06c5 57030000 		.4byte	0x357
+ 2125 06c9 05       		.uleb128 0x5
+ 2126 06ca 03       		.byte	0x3
+ 2127 06cb 00000000 		.4byte	RGBNotificationCCCDhandle
+ 2128 06cf 00       		.byte	0
+ 2129              		.section	.debug_abbrev,"",%progbits
+ 2130              	.Ldebug_abbrev0:
+ 2131 0000 01       		.uleb128 0x1
+ 2132 0001 11       		.uleb128 0x11
+ 2133 0002 01       		.byte	0x1
+ 2134 0003 25       		.uleb128 0x25
+ 2135 0004 0E       		.uleb128 0xe
+ 2136 0005 13       		.uleb128 0x13
+ 2137 0006 0B       		.uleb128 0xb
+ 2138 0007 03       		.uleb128 0x3
+ 2139 0008 0E       		.uleb128 0xe
+ 2140 0009 1B       		.uleb128 0x1b
+ 2141 000a 0E       		.uleb128 0xe
+ 2142 000b 55       		.uleb128 0x55
+ 2143 000c 17       		.uleb128 0x17
+ 2144 000d 11       		.uleb128 0x11
+ 2145 000e 01       		.uleb128 0x1
+ 2146 000f 10       		.uleb128 0x10
+ 2147 0010 17       		.uleb128 0x17
+ 2148 0011 00       		.byte	0
+ 2149 0012 00       		.byte	0
+ 2150 0013 02       		.uleb128 0x2
+ 2151 0014 24       		.uleb128 0x24
+ 2152 0015 00       		.byte	0
+ 2153 0016 0B       		.uleb128 0xb
+ 2154 0017 0B       		.uleb128 0xb
+ 2155 0018 3E       		.uleb128 0x3e
+ 2156 0019 0B       		.uleb128 0xb
+ 2157 001a 03       		.uleb128 0x3
+ 2158 001b 0E       		.uleb128 0xe
+ 2159 001c 00       		.byte	0
+ 2160 001d 00       		.byte	0
+ 2161 001e 03       		.uleb128 0x3
+ 2162 001f 24       		.uleb128 0x24
+ 2163 0020 00       		.byte	0
+ 2164 0021 0B       		.uleb128 0xb
+ 2165 0022 0B       		.uleb128 0xb
+ 2166 0023 3E       		.uleb128 0x3e
+ 2167 0024 0B       		.uleb128 0xb
+ 2168 0025 03       		.uleb128 0x3
+ 2169 0026 08       		.uleb128 0x8
+ 2170 0027 00       		.byte	0
+ 2171 0028 00       		.byte	0
+ 2172 0029 04       		.uleb128 0x4
+ 2173 002a 16       		.uleb128 0x16
+ 2174 002b 00       		.byte	0
+ 2175 002c 03       		.uleb128 0x3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 55
+
+
+ 2176 002d 0E       		.uleb128 0xe
+ 2177 002e 3A       		.uleb128 0x3a
+ 2178 002f 0B       		.uleb128 0xb
+ 2179 0030 3B       		.uleb128 0x3b
+ 2180 0031 05       		.uleb128 0x5
+ 2181 0032 49       		.uleb128 0x49
+ 2182 0033 13       		.uleb128 0x13
+ 2183 0034 00       		.byte	0
+ 2184 0035 00       		.byte	0
+ 2185 0036 05       		.uleb128 0x5
+ 2186 0037 0F       		.uleb128 0xf
+ 2187 0038 00       		.byte	0
+ 2188 0039 0B       		.uleb128 0xb
+ 2189 003a 0B       		.uleb128 0xb
+ 2190 003b 00       		.byte	0
+ 2191 003c 00       		.byte	0
+ 2192 003d 06       		.uleb128 0x6
+ 2193 003e 0F       		.uleb128 0xf
+ 2194 003f 00       		.byte	0
+ 2195 0040 0B       		.uleb128 0xb
+ 2196 0041 0B       		.uleb128 0xb
+ 2197 0042 49       		.uleb128 0x49
+ 2198 0043 13       		.uleb128 0x13
+ 2199 0044 00       		.byte	0
+ 2200 0045 00       		.byte	0
+ 2201 0046 07       		.uleb128 0x7
+ 2202 0047 04       		.uleb128 0x4
+ 2203 0048 01       		.byte	0x1
+ 2204 0049 0B       		.uleb128 0xb
+ 2205 004a 0B       		.uleb128 0xb
+ 2206 004b 3A       		.uleb128 0x3a
+ 2207 004c 0B       		.uleb128 0xb
+ 2208 004d 3B       		.uleb128 0x3b
+ 2209 004e 05       		.uleb128 0x5
+ 2210 004f 01       		.uleb128 0x1
+ 2211 0050 13       		.uleb128 0x13
+ 2212 0051 00       		.byte	0
+ 2213 0052 00       		.byte	0
+ 2214 0053 08       		.uleb128 0x8
+ 2215 0054 28       		.uleb128 0x28
+ 2216 0055 00       		.byte	0
+ 2217 0056 03       		.uleb128 0x3
+ 2218 0057 0E       		.uleb128 0xe
+ 2219 0058 1C       		.uleb128 0x1c
+ 2220 0059 0D       		.uleb128 0xd
+ 2221 005a 00       		.byte	0
+ 2222 005b 00       		.byte	0
+ 2223 005c 09       		.uleb128 0x9
+ 2224 005d 13       		.uleb128 0x13
+ 2225 005e 01       		.byte	0x1
+ 2226 005f 0B       		.uleb128 0xb
+ 2227 0060 0B       		.uleb128 0xb
+ 2228 0061 3A       		.uleb128 0x3a
+ 2229 0062 0B       		.uleb128 0xb
+ 2230 0063 3B       		.uleb128 0x3b
+ 2231 0064 05       		.uleb128 0x5
+ 2232 0065 01       		.uleb128 0x1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 56
+
+
+ 2233 0066 13       		.uleb128 0x13
+ 2234 0067 00       		.byte	0
+ 2235 0068 00       		.byte	0
+ 2236 0069 0A       		.uleb128 0xa
+ 2237 006a 0D       		.uleb128 0xd
+ 2238 006b 00       		.byte	0
+ 2239 006c 03       		.uleb128 0x3
+ 2240 006d 0E       		.uleb128 0xe
+ 2241 006e 3A       		.uleb128 0x3a
+ 2242 006f 0B       		.uleb128 0xb
+ 2243 0070 3B       		.uleb128 0x3b
+ 2244 0071 05       		.uleb128 0x5
+ 2245 0072 49       		.uleb128 0x49
+ 2246 0073 13       		.uleb128 0x13
+ 2247 0074 38       		.uleb128 0x38
+ 2248 0075 0B       		.uleb128 0xb
+ 2249 0076 00       		.byte	0
+ 2250 0077 00       		.byte	0
+ 2251 0078 0B       		.uleb128 0xb
+ 2252 0079 0D       		.uleb128 0xd
+ 2253 007a 00       		.byte	0
+ 2254 007b 03       		.uleb128 0x3
+ 2255 007c 08       		.uleb128 0x8
+ 2256 007d 3A       		.uleb128 0x3a
+ 2257 007e 0B       		.uleb128 0xb
+ 2258 007f 3B       		.uleb128 0x3b
+ 2259 0080 05       		.uleb128 0x5
+ 2260 0081 49       		.uleb128 0x49
+ 2261 0082 13       		.uleb128 0x13
+ 2262 0083 38       		.uleb128 0x38
+ 2263 0084 0B       		.uleb128 0xb
+ 2264 0085 00       		.byte	0
+ 2265 0086 00       		.byte	0
+ 2266 0087 0C       		.uleb128 0xc
+ 2267 0088 16       		.uleb128 0x16
+ 2268 0089 00       		.byte	0
+ 2269 008a 03       		.uleb128 0x3
+ 2270 008b 0E       		.uleb128 0xe
+ 2271 008c 3A       		.uleb128 0x3a
+ 2272 008d 0B       		.uleb128 0xb
+ 2273 008e 3B       		.uleb128 0x3b
+ 2274 008f 0B       		.uleb128 0xb
+ 2275 0090 49       		.uleb128 0x49
+ 2276 0091 13       		.uleb128 0x13
+ 2277 0092 00       		.byte	0
+ 2278 0093 00       		.byte	0
+ 2279 0094 0D       		.uleb128 0xd
+ 2280 0095 13       		.uleb128 0x13
+ 2281 0096 01       		.byte	0x1
+ 2282 0097 0B       		.uleb128 0xb
+ 2283 0098 0B       		.uleb128 0xb
+ 2284 0099 3A       		.uleb128 0x3a
+ 2285 009a 0B       		.uleb128 0xb
+ 2286 009b 3B       		.uleb128 0x3b
+ 2287 009c 0B       		.uleb128 0xb
+ 2288 009d 01       		.uleb128 0x1
+ 2289 009e 13       		.uleb128 0x13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 57
+
+
+ 2290 009f 00       		.byte	0
+ 2291 00a0 00       		.byte	0
+ 2292 00a1 0E       		.uleb128 0xe
+ 2293 00a2 0D       		.uleb128 0xd
+ 2294 00a3 00       		.byte	0
+ 2295 00a4 03       		.uleb128 0x3
+ 2296 00a5 0E       		.uleb128 0xe
+ 2297 00a6 3A       		.uleb128 0x3a
+ 2298 00a7 0B       		.uleb128 0xb
+ 2299 00a8 3B       		.uleb128 0x3b
+ 2300 00a9 0B       		.uleb128 0xb
+ 2301 00aa 49       		.uleb128 0x49
+ 2302 00ab 13       		.uleb128 0x13
+ 2303 00ac 38       		.uleb128 0x38
+ 2304 00ad 0B       		.uleb128 0xb
+ 2305 00ae 00       		.byte	0
+ 2306 00af 00       		.byte	0
+ 2307 00b0 0F       		.uleb128 0xf
+ 2308 00b1 2E       		.uleb128 0x2e
+ 2309 00b2 01       		.byte	0x1
+ 2310 00b3 3F       		.uleb128 0x3f
+ 2311 00b4 19       		.uleb128 0x19
+ 2312 00b5 03       		.uleb128 0x3
+ 2313 00b6 0E       		.uleb128 0xe
+ 2314 00b7 3A       		.uleb128 0x3a
+ 2315 00b8 0B       		.uleb128 0xb
+ 2316 00b9 3B       		.uleb128 0x3b
+ 2317 00ba 0B       		.uleb128 0xb
+ 2318 00bb 27       		.uleb128 0x27
+ 2319 00bc 19       		.uleb128 0x19
+ 2320 00bd 11       		.uleb128 0x11
+ 2321 00be 01       		.uleb128 0x1
+ 2322 00bf 12       		.uleb128 0x12
+ 2323 00c0 06       		.uleb128 0x6
+ 2324 00c1 40       		.uleb128 0x40
+ 2325 00c2 18       		.uleb128 0x18
+ 2326 00c3 9642     		.uleb128 0x2116
+ 2327 00c5 19       		.uleb128 0x19
+ 2328 00c6 01       		.uleb128 0x1
+ 2329 00c7 13       		.uleb128 0x13
+ 2330 00c8 00       		.byte	0
+ 2331 00c9 00       		.byte	0
+ 2332 00ca 10       		.uleb128 0x10
+ 2333 00cb 05       		.uleb128 0x5
+ 2334 00cc 00       		.byte	0
+ 2335 00cd 03       		.uleb128 0x3
+ 2336 00ce 0E       		.uleb128 0xe
+ 2337 00cf 3A       		.uleb128 0x3a
+ 2338 00d0 0B       		.uleb128 0xb
+ 2339 00d1 3B       		.uleb128 0x3b
+ 2340 00d2 0B       		.uleb128 0xb
+ 2341 00d3 49       		.uleb128 0x49
+ 2342 00d4 13       		.uleb128 0x13
+ 2343 00d5 02       		.uleb128 0x2
+ 2344 00d6 18       		.uleb128 0x18
+ 2345 00d7 00       		.byte	0
+ 2346 00d8 00       		.byte	0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 58
+
+
+ 2347 00d9 11       		.uleb128 0x11
+ 2348 00da 34       		.uleb128 0x34
+ 2349 00db 00       		.byte	0
+ 2350 00dc 03       		.uleb128 0x3
+ 2351 00dd 0E       		.uleb128 0xe
+ 2352 00de 3A       		.uleb128 0x3a
+ 2353 00df 0B       		.uleb128 0xb
+ 2354 00e0 3B       		.uleb128 0x3b
+ 2355 00e1 0B       		.uleb128 0xb
+ 2356 00e2 49       		.uleb128 0x49
+ 2357 00e3 13       		.uleb128 0x13
+ 2358 00e4 02       		.uleb128 0x2
+ 2359 00e5 18       		.uleb128 0x18
+ 2360 00e6 00       		.byte	0
+ 2361 00e7 00       		.byte	0
+ 2362 00e8 12       		.uleb128 0x12
+ 2363 00e9 2E       		.uleb128 0x2e
+ 2364 00ea 01       		.byte	0x1
+ 2365 00eb 3F       		.uleb128 0x3f
+ 2366 00ec 19       		.uleb128 0x19
+ 2367 00ed 03       		.uleb128 0x3
+ 2368 00ee 0E       		.uleb128 0xe
+ 2369 00ef 3A       		.uleb128 0x3a
+ 2370 00f0 0B       		.uleb128 0xb
+ 2371 00f1 3B       		.uleb128 0x3b
+ 2372 00f2 05       		.uleb128 0x5
+ 2373 00f3 27       		.uleb128 0x27
+ 2374 00f4 19       		.uleb128 0x19
+ 2375 00f5 11       		.uleb128 0x11
+ 2376 00f6 01       		.uleb128 0x1
+ 2377 00f7 12       		.uleb128 0x12
+ 2378 00f8 06       		.uleb128 0x6
+ 2379 00f9 40       		.uleb128 0x40
+ 2380 00fa 18       		.uleb128 0x18
+ 2381 00fb 9642     		.uleb128 0x2116
+ 2382 00fd 19       		.uleb128 0x19
+ 2383 00fe 01       		.uleb128 0x1
+ 2384 00ff 13       		.uleb128 0x13
+ 2385 0100 00       		.byte	0
+ 2386 0101 00       		.byte	0
+ 2387 0102 13       		.uleb128 0x13
+ 2388 0103 05       		.uleb128 0x5
+ 2389 0104 00       		.byte	0
+ 2390 0105 03       		.uleb128 0x3
+ 2391 0106 0E       		.uleb128 0xe
+ 2392 0107 3A       		.uleb128 0x3a
+ 2393 0108 0B       		.uleb128 0xb
+ 2394 0109 3B       		.uleb128 0x3b
+ 2395 010a 05       		.uleb128 0x5
+ 2396 010b 49       		.uleb128 0x49
+ 2397 010c 13       		.uleb128 0x13
+ 2398 010d 02       		.uleb128 0x2
+ 2399 010e 18       		.uleb128 0x18
+ 2400 010f 00       		.byte	0
+ 2401 0110 00       		.byte	0
+ 2402 0111 14       		.uleb128 0x14
+ 2403 0112 34       		.uleb128 0x34
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 59
+
+
+ 2404 0113 00       		.byte	0
+ 2405 0114 03       		.uleb128 0x3
+ 2406 0115 0E       		.uleb128 0xe
+ 2407 0116 3A       		.uleb128 0x3a
+ 2408 0117 0B       		.uleb128 0xb
+ 2409 0118 3B       		.uleb128 0x3b
+ 2410 0119 05       		.uleb128 0x5
+ 2411 011a 49       		.uleb128 0x49
+ 2412 011b 13       		.uleb128 0x13
+ 2413 011c 02       		.uleb128 0x2
+ 2414 011d 18       		.uleb128 0x18
+ 2415 011e 00       		.byte	0
+ 2416 011f 00       		.byte	0
+ 2417 0120 15       		.uleb128 0x15
+ 2418 0121 05       		.uleb128 0x5
+ 2419 0122 00       		.byte	0
+ 2420 0123 03       		.uleb128 0x3
+ 2421 0124 08       		.uleb128 0x8
+ 2422 0125 3A       		.uleb128 0x3a
+ 2423 0126 0B       		.uleb128 0xb
+ 2424 0127 3B       		.uleb128 0x3b
+ 2425 0128 05       		.uleb128 0x5
+ 2426 0129 49       		.uleb128 0x49
+ 2427 012a 13       		.uleb128 0x13
+ 2428 012b 02       		.uleb128 0x2
+ 2429 012c 18       		.uleb128 0x18
+ 2430 012d 00       		.byte	0
+ 2431 012e 00       		.byte	0
+ 2432 012f 16       		.uleb128 0x16
+ 2433 0130 2E       		.uleb128 0x2e
+ 2434 0131 00       		.byte	0
+ 2435 0132 3F       		.uleb128 0x3f
+ 2436 0133 19       		.uleb128 0x19
+ 2437 0134 03       		.uleb128 0x3
+ 2438 0135 0E       		.uleb128 0xe
+ 2439 0136 3A       		.uleb128 0x3a
+ 2440 0137 0B       		.uleb128 0xb
+ 2441 0138 3B       		.uleb128 0x3b
+ 2442 0139 05       		.uleb128 0x5
+ 2443 013a 27       		.uleb128 0x27
+ 2444 013b 19       		.uleb128 0x19
+ 2445 013c 11       		.uleb128 0x11
+ 2446 013d 01       		.uleb128 0x1
+ 2447 013e 12       		.uleb128 0x12
+ 2448 013f 06       		.uleb128 0x6
+ 2449 0140 40       		.uleb128 0x40
+ 2450 0141 18       		.uleb128 0x18
+ 2451 0142 9642     		.uleb128 0x2116
+ 2452 0144 19       		.uleb128 0x19
+ 2453 0145 00       		.byte	0
+ 2454 0146 00       		.byte	0
+ 2455 0147 17       		.uleb128 0x17
+ 2456 0148 34       		.uleb128 0x34
+ 2457 0149 00       		.byte	0
+ 2458 014a 03       		.uleb128 0x3
+ 2459 014b 0E       		.uleb128 0xe
+ 2460 014c 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 60
+
+
+ 2461 014d 0B       		.uleb128 0xb
+ 2462 014e 3B       		.uleb128 0x3b
+ 2463 014f 05       		.uleb128 0x5
+ 2464 0150 49       		.uleb128 0x49
+ 2465 0151 13       		.uleb128 0x13
+ 2466 0152 3F       		.uleb128 0x3f
+ 2467 0153 19       		.uleb128 0x19
+ 2468 0154 3C       		.uleb128 0x3c
+ 2469 0155 19       		.uleb128 0x19
+ 2470 0156 00       		.byte	0
+ 2471 0157 00       		.byte	0
+ 2472 0158 18       		.uleb128 0x18
+ 2473 0159 34       		.uleb128 0x34
+ 2474 015a 00       		.byte	0
+ 2475 015b 03       		.uleb128 0x3
+ 2476 015c 0E       		.uleb128 0xe
+ 2477 015d 3A       		.uleb128 0x3a
+ 2478 015e 0B       		.uleb128 0xb
+ 2479 015f 3B       		.uleb128 0x3b
+ 2480 0160 0B       		.uleb128 0xb
+ 2481 0161 49       		.uleb128 0x49
+ 2482 0162 13       		.uleb128 0x13
+ 2483 0163 3F       		.uleb128 0x3f
+ 2484 0164 19       		.uleb128 0x19
+ 2485 0165 02       		.uleb128 0x2
+ 2486 0166 18       		.uleb128 0x18
+ 2487 0167 00       		.byte	0
+ 2488 0168 00       		.byte	0
+ 2489 0169 19       		.uleb128 0x19
+ 2490 016a 01       		.uleb128 0x1
+ 2491 016b 01       		.byte	0x1
+ 2492 016c 49       		.uleb128 0x49
+ 2493 016d 13       		.uleb128 0x13
+ 2494 016e 01       		.uleb128 0x1
+ 2495 016f 13       		.uleb128 0x13
+ 2496 0170 00       		.byte	0
+ 2497 0171 00       		.byte	0
+ 2498 0172 1A       		.uleb128 0x1a
+ 2499 0173 21       		.uleb128 0x21
+ 2500 0174 00       		.byte	0
+ 2501 0175 49       		.uleb128 0x49
+ 2502 0176 13       		.uleb128 0x13
+ 2503 0177 2F       		.uleb128 0x2f
+ 2504 0178 0B       		.uleb128 0xb
+ 2505 0179 00       		.byte	0
+ 2506 017a 00       		.byte	0
+ 2507 017b 00       		.byte	0
+ 2508              		.section	.debug_aranges,"",%progbits
+ 2509 0000 54000000 		.4byte	0x54
+ 2510 0004 0200     		.2byte	0x2
+ 2511 0006 00000000 		.4byte	.Ldebug_info0
+ 2512 000a 04       		.byte	0x4
+ 2513 000b 00       		.byte	0
+ 2514 000c 0000     		.2byte	0
+ 2515 000e 0000     		.2byte	0
+ 2516 0010 00000000 		.4byte	.LFB37
+ 2517 0014 94020000 		.4byte	.LFE37-.LFB37
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 61
+
+
+ 2518 0018 00000000 		.4byte	.LFB38
+ 2519 001c 5C000000 		.4byte	.LFE38-.LFB38
+ 2520 0020 00000000 		.4byte	.LFB39
+ 2521 0024 60000000 		.4byte	.LFE39-.LFB39
+ 2522 0028 00000000 		.4byte	.LFB40
+ 2523 002c 3C000000 		.4byte	.LFE40-.LFB40
+ 2524 0030 00000000 		.4byte	.LFB41
+ 2525 0034 40010000 		.4byte	.LFE41-.LFB41
+ 2526 0038 00000000 		.4byte	.LFB42
+ 2527 003c 1C010000 		.4byte	.LFE42-.LFB42
+ 2528 0040 00000000 		.4byte	.LFB43
+ 2529 0044 C4000000 		.4byte	.LFE43-.LFB43
+ 2530 0048 00000000 		.4byte	.LFB44
+ 2531 004c 40000000 		.4byte	.LFE44-.LFB44
+ 2532 0050 00000000 		.4byte	0
+ 2533 0054 00000000 		.4byte	0
+ 2534              		.section	.debug_ranges,"",%progbits
+ 2535              	.Ldebug_ranges0:
+ 2536 0000 00000000 		.4byte	.LFB37
+ 2537 0004 94020000 		.4byte	.LFE37
+ 2538 0008 00000000 		.4byte	.LFB38
+ 2539 000c 5C000000 		.4byte	.LFE38
+ 2540 0010 00000000 		.4byte	.LFB39
+ 2541 0014 60000000 		.4byte	.LFE39
+ 2542 0018 00000000 		.4byte	.LFB40
+ 2543 001c 3C000000 		.4byte	.LFE40
+ 2544 0020 00000000 		.4byte	.LFB41
+ 2545 0024 40010000 		.4byte	.LFE41
+ 2546 0028 00000000 		.4byte	.LFB42
+ 2547 002c 1C010000 		.4byte	.LFE42
+ 2548 0030 00000000 		.4byte	.LFB43
+ 2549 0034 C4000000 		.4byte	.LFE43
+ 2550 0038 00000000 		.4byte	.LFB44
+ 2551 003c 40000000 		.4byte	.LFE44
+ 2552 0040 00000000 		.4byte	0
+ 2553 0044 00000000 		.4byte	0
+ 2554              		.section	.debug_line,"",%progbits
+ 2555              	.Ldebug_line0:
+ 2556 0000 39020000 		.section	.debug_str,"MS",%progbits,1
+ 2556      0200AF00 
+ 2556      00000201 
+ 2556      FB0E0D00 
+ 2556      01010101 
+ 2557              	.LASF76:
+ 2558 0000 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
+ 2558      455F4556 
+ 2558      545F4C32 
+ 2558      4341505F 
+ 2558      43424643 
+ 2559              	.LASF21:
+ 2560 0023 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
+ 2560      455F4556 
+ 2560      545F5354 
+ 2560      41434B5F 
+ 2560      42555359 
+ 2561              	.LASF100:
+ 2562 003f 4359424C 		.ascii	"CYBLE_STATE_STOPPED\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 62
+
+
+ 2562      455F5354 
+ 2562      4154455F 
+ 2562      53544F50 
+ 2562      50454400 
+ 2563              	.LASF75:
+ 2564 0053 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
+ 2564      455F4556 
+ 2564      545F4C32 
+ 2564      4341505F 
+ 2564      43424643 
+ 2565              	.LASF90:
+ 2566 0072 4359424C 		.ascii	"CYBLE_CONN_HANDLE_T\000"
+ 2566      455F434F 
+ 2566      4E4E5F48 
+ 2566      414E444C 
+ 2566      455F5400 
+ 2567              	.LASF97:
+ 2568 0086 636F6E6E 		.ascii	"connHandle\000"
+ 2568      48616E64 
+ 2568      6C6500
+ 2569              	.LASF131:
+ 2570 0091 636F6E6E 		.ascii	"connectionHandle\000"
+ 2570      65637469 
+ 2570      6F6E4861 
+ 2570      6E646C65 
+ 2570      00
+ 2571              	.LASF33:
+ 2572 00a2 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 2572      455F4556 
+ 2572      545F4741 
+ 2572      505F434F 
+ 2572      4E4E4543 
+ 2573              	.LASF74:
+ 2574 00cb 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+ 2574      455F4556 
+ 2574      545F4C32 
+ 2574      4341505F 
+ 2574      43424643 
+ 2575              	.LASF38:
+ 2576 00ec 4359424C 		.ascii	"CYBLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
+ 2576      455F4556 
+ 2576      545F4741 
+ 2576      505F4F4F 
+ 2576      425F4745 
+ 2577              	.LASF54:
+ 2578 0115 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
+ 2578      455F4556 
+ 2578      545F4741 
+ 2578      5454435F 
+ 2578      52454144 
+ 2579              	.LASF59:
+ 2580 0134 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 2580      455F4556 
+ 2580      545F4741 
+ 2580      5454535F 
+ 2580      45584543 
+ 2581              	.LASF48:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 63
+
+
+ 2582 0153 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
+ 2582      455F4556 
+ 2582      545F4741 
+ 2582      5454435F 
+ 2582      52454144 
+ 2583              	.LASF119:
+ 2584 017a 64656275 		.ascii	"debug_blue\000"
+ 2584      675F626C 
+ 2584      756500
+ 2585              	.LASF138:
+ 2586 0185 656E6162 		.ascii	"enableCapSenseData\000"
+ 2586      6C654361 
+ 2586      7053656E 
+ 2586      73654461 
+ 2586      746100
+ 2587              	.LASF18:
+ 2588 0198 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
+ 2588      455F4556 
+ 2588      545F5449 
+ 2588      4D454F55 
+ 2588      5400
+ 2589              	.LASF4:
+ 2590 01aa 6C6F6E67 		.ascii	"long int\000"
+ 2590      20696E74 
+ 2590      00
+ 2591              	.LASF7:
+ 2592 01b3 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2592      206C6F6E 
+ 2592      6720756E 
+ 2592      7369676E 
+ 2592      65642069 
+ 2593              	.LASF92:
+ 2594 01ca 4359424C 		.ascii	"CYBLE_GATT_VALUE_T\000"
+ 2594      455F4741 
+ 2594      54545F56 
+ 2594      414C5545 
+ 2594      5F5400
+ 2595              	.LASF20:
+ 2596 01dd 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
+ 2596      455F4556 
+ 2596      545F4843 
+ 2596      495F5354 
+ 2596      41545553 
+ 2597              	.LASF79:
+ 2598 01f2 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
+ 2598      455F4556 
+ 2598      545F5045 
+ 2598      4E44494E 
+ 2598      475F464C 
+ 2599              	.LASF127:
+ 2600 0210 496E6974 		.ascii	"InitializeWatchdog\000"
+ 2600      69616C69 
+ 2600      7A655761 
+ 2600      74636864 
+ 2600      6F6700
+ 2601              	.LASF68:
+ 2602 0223 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 64
+
+
+ 2602      455F4556 
+ 2602      545F4C32 
+ 2602      4341505F 
+ 2602      434F4E4E 
+ 2603              	.LASF36:
+ 2604 0249 4359424C 		.ascii	"CYBLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
+ 2604      455F4556 
+ 2604      545F4741 
+ 2604      505F4E55 
+ 2604      4D455249 
+ 2605              	.LASF112:
+ 2606 0272 43617053 		.ascii	"CapSensenotificationHandle\000"
+ 2606      656E7365 
+ 2606      6E6F7469 
+ 2606      66696361 
+ 2606      74696F6E 
+ 2607              	.LASF103:
+ 2608 028d 4359424C 		.ascii	"CYBLE_STATE_ADVERTISING\000"
+ 2608      455F5354 
+ 2608      4154455F 
+ 2608      41445645 
+ 2608      52544953 
+ 2609              	.LASF6:
+ 2610 02a5 6C6F6E67 		.ascii	"long long int\000"
+ 2610      206C6F6E 
+ 2610      6720696E 
+ 2610      7400
+ 2611              	.LASF0:
+ 2612 02b3 7369676E 		.ascii	"signed char\000"
+ 2612      65642063 
+ 2612      68617200 
+ 2613              	.LASF17:
+ 2614 02bf 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
+ 2614      455F4556 
+ 2614      545F5354 
+ 2614      41434B5F 
+ 2614      4F4E00
+ 2615              	.LASF22:
+ 2616 02d2 4359424C 		.ascii	"CYBLE_EVT_MEMORY_REQUEST\000"
+ 2616      455F4556 
+ 2616      545F4D45 
+ 2616      4D4F5259 
+ 2616      5F524551 
+ 2617              	.LASF114:
+ 2618 02eb 7267624C 		.ascii	"rgbLedData\000"
+ 2618      65644461 
+ 2618      746100
+ 2619              	.LASF34:
+ 2620 02f6 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
+ 2620      455F4556 
+ 2620      545F4741 
+ 2620      50435F53 
+ 2620      43414E5F 
+ 2621              	.LASF91:
+ 2622 0315 61637475 		.ascii	"actualLen\000"
+ 2622      616C4C65 
+ 2622      6E00
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 65
+
+
+ 2623              	.LASF24:
+ 2624 031f 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
+ 2624      455F4556 
+ 2624      545F4741 
+ 2624      505F4155 
+ 2624      54485F52 
+ 2625              	.LASF52:
+ 2626 0336 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
+ 2626      455F4556 
+ 2626      545F4741 
+ 2626      5454435F 
+ 2626      52454144 
+ 2627              	.LASF129:
+ 2628 034f 436F6E6E 		.ascii	"ConnectionParam\000"
+ 2628      65637469 
+ 2628      6F6E5061 
+ 2628      72616D00 
+ 2629              	.LASF123:
+ 2630 035f 73746174 		.ascii	"state\000"
+ 2630      6500
+ 2631              	.LASF57:
+ 2632 0365 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
+ 2632      455F4556 
+ 2632      545F4741 
+ 2632      5454535F 
+ 2632      57524954 
+ 2633              	.LASF115:
+ 2634 0383 7267624C 		.ascii	"rgbLednotificationHandle\000"
+ 2634      65646E6F 
+ 2634      74696669 
+ 2634      63617469 
+ 2634      6F6E4861 
+ 2635              	.LASF121:
+ 2636 039c 48616E64 		.ascii	"HandleStatusLED\000"
+ 2636      6C655374 
+ 2636      61747573 
+ 2636      4C454400 
+ 2637              	.LASF104:
+ 2638 03ac 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
+ 2638      455F5354 
+ 2638      4154455F 
+ 2638      44495343 
+ 2638      4F4E4E45 
+ 2639              	.LASF29:
+ 2640 03c5 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
+ 2640      455F4556 
+ 2640      545F4741 
+ 2640      50505F41 
+ 2640      44564552 
+ 2641              	.LASF9:
+ 2642 03ed 75696E74 		.ascii	"uint8\000"
+ 2642      3800
+ 2643              	.LASF60:
+ 2644 03f3 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
+ 2644      455F4556 
+ 2644      545F4741 
+ 2644      5454435F 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 66
+
+
+ 2644      45584543 
+ 2645              	.LASF13:
+ 2646 0412 646F7562 		.ascii	"double\000"
+ 2646      6C6500
+ 2647              	.LASF73:
+ 2648 0419 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ 2648      455F4556 
+ 2648      545F4C32 
+ 2648      4341505F 
+ 2648      43424643 
+ 2649              	.LASF139:
+ 2650 043a 73687574 		.ascii	"shut_down_led\000"
+ 2650      5F646F77 
+ 2650      6E5F6C65 
+ 2650      6400
+ 2651              	.LASF11:
+ 2652 0448 75696E74 		.ascii	"uint32\000"
+ 2652      333200
+ 2653              	.LASF142:
+ 2654 044f 73776974 		.ascii	"switch_off_status_led\000"
+ 2654      63685F6F 
+ 2654      66665F73 
+ 2654      74617475 
+ 2654      735F6C65 
+ 2655              	.LASF81:
+ 2656 0465 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
+ 2656      455F4556 
+ 2656      545F4D41 
+ 2656      5800
+ 2657              	.LASF111:
+ 2658 0473 77725265 		.ascii	"wrReqParam\000"
+ 2658      71506172 
+ 2658      616D00
+ 2659              	.LASF78:
+ 2660 047e 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ 2660      455F4556 
+ 2660      545F4C32 
+ 2660      4341505F 
+ 2660      43424643 
+ 2661              	.LASF94:
+ 2662 04a2 61747472 		.ascii	"attrHandle\000"
+ 2662      48616E64 
+ 2662      6C6500
+ 2663              	.LASF93:
+ 2664 04ad 76616C75 		.ascii	"value\000"
+ 2664      6500
+ 2665              	.LASF141:
+ 2666 04b3 74696D65 		.ascii	"timer_tick\000"
+ 2666      725F7469 
+ 2666      636B00
+ 2667              	.LASF65:
+ 2668 04be 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
+ 2668      455F4556 
+ 2668      545F4741 
+ 2668      5454435F 
+ 2668      53544F50 
+ 2669              	.LASF8:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 67
+
+
+ 2670 04e0 756E7369 		.ascii	"unsigned int\000"
+ 2670      676E6564 
+ 2670      20696E74 
+ 2670      00
+ 2671              	.LASF80:
+ 2672 04ed 4359424C 		.ascii	"CYBLE_EVT_LE_PING_AUTH_TIMEOUT\000"
+ 2672      455F4556 
+ 2672      545F4C45 
+ 2672      5F50494E 
+ 2672      475F4155 
+ 2673              	.LASF5:
+ 2674 050c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2674      20756E73 
+ 2674      69676E65 
+ 2674      6420696E 
+ 2674      7400
+ 2675              	.LASF86:
+ 2676 051e 4359424C 		.ascii	"CYBLE_GAP_CONN_UPDATE_PARAM_T\000"
+ 2676      455F4741 
+ 2676      505F434F 
+ 2676      4E4E5F55 
+ 2676      50444154 
+ 2677              	.LASF55:
+ 2678 053c 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
+ 2678      455F4556 
+ 2678      545F4741 
+ 2678      5454535F 
+ 2678      57524954 
+ 2679              	.LASF47:
+ 2680 0556 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
+ 2680      455F4556 
+ 2680      545F4741 
+ 2680      5454435F 
+ 2680      5843484E 
+ 2681              	.LASF64:
+ 2682 0574 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 2682      455F4556 
+ 2682      545F4741 
+ 2682      5454535F 
+ 2682      44415441 
+ 2683              	.LASF146:
+ 2684 0598 43617053 		.ascii	"CapSenseNotificationCCCDhandle\000"
+ 2684      656E7365 
+ 2684      4E6F7469 
+ 2684      66696361 
+ 2684      74696F6E 
+ 2685              	.LASF67:
+ 2686 05b7 4359424C 		.ascii	"CYBLE_EVT_GATTC_LONG_PROCEDURE_END\000"
+ 2686      455F4556 
+ 2686      545F4741 
+ 2686      5454435F 
+ 2686      4C4F4E47 
+ 2687              	.LASF85:
+ 2688 05da 73757065 		.ascii	"supervisionTO\000"
+ 2688      72766973 
+ 2688      696F6E54 
+ 2688      4F00
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 68
+
+
+ 2689              	.LASF147:
+ 2690 05e8 5247424E 		.ascii	"RGBNotificationCCCDhandle\000"
+ 2690      6F746966 
+ 2690      69636174 
+ 2690      696F6E43 
+ 2690      43434468 
+ 2691              	.LASF106:
+ 2692 0602 6576656E 		.ascii	"event\000"
+ 2692      7400
+ 2693              	.LASF3:
+ 2694 0608 73686F72 		.ascii	"short unsigned int\000"
+ 2694      7420756E 
+ 2694      7369676E 
+ 2694      65642069 
+ 2694      6E7400
+ 2695              	.LASF16:
+ 2696 061b 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
+ 2696      455F4556 
+ 2696      545F484F 
+ 2696      53545F49 
+ 2696      4E56414C 
+ 2697              	.LASF50:
+ 2698 0632 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
+ 2698      455F4556 
+ 2698      545F4741 
+ 2698      5454435F 
+ 2698      46494E44 
+ 2699              	.LASF120:
+ 2700 0650 696E7465 		.ascii	"intensity_divide_value\000"
+ 2700      6E736974 
+ 2700      795F6469 
+ 2700      76696465 
+ 2700      5F76616C 
+ 2701              	.LASF135:
+ 2702 0667 5247426C 		.ascii	"RGBledData\000"
+ 2702      65644461 
+ 2702      746100
+ 2703              	.LASF25:
+ 2704 0672 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
+ 2704      455F4556 
+ 2704      545F4741 
+ 2704      505F5041 
+ 2704      53534B45 
+ 2705              	.LASF30:
+ 2706 0696 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
+ 2706      455F4556 
+ 2706      545F4741 
+ 2706      505F4445 
+ 2706      56494345 
+ 2707              	.LASF49:
+ 2708 06b5 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 2708      455F4556 
+ 2708      545F4741 
+ 2708      5454435F 
+ 2708      52454144 
+ 2709              	.LASF130:
+ 2710 06d6 6379426C 		.ascii	"cyBle_state\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 69
+
+
+ 2710      655F7374 
+ 2710      61746500 
+ 2711              	.LASF26:
+ 2712 06e2 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ 2712      455F4556 
+ 2712      545F4741 
+ 2712      505F5041 
+ 2712      53534B45 
+ 2713              	.LASF44:
+ 2714 0708 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
+ 2714      455F4556 
+ 2714      545F4741 
+ 2714      54545F43 
+ 2714      4F4E4E45 
+ 2715              	.LASF89:
+ 2716 0723 61747449 		.ascii	"attId\000"
+ 2716      6400
+ 2717              	.LASF70:
+ 2718 0729 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
+ 2718      455F4556 
+ 2718      545F4C32 
+ 2718      4341505F 
+ 2718      434F4D4D 
+ 2719              	.LASF23:
+ 2720 0745 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 2720      455F4556 
+ 2720      545F4741 
+ 2720      50435F53 
+ 2720      43414E5F 
+ 2721              	.LASF98:
+ 2722 0769 68616E64 		.ascii	"handleValPair\000"
+ 2722      6C655661 
+ 2722      6C506169 
+ 2722      7200
+ 2723              	.LASF84:
+ 2724 0777 636F6E6E 		.ascii	"connLatency\000"
+ 2724      4C617465 
+ 2724      6E637900 
+ 2725              	.LASF71:
+ 2726 0783 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 2726      455F4556 
+ 2726      545F4C32 
+ 2726      4341505F 
+ 2726      43424643 
+ 2727              	.LASF140:
+ 2728 07a1 6C65645F 		.ascii	"led_timer\000"
+ 2728      74696D65 
+ 2728      7200
+ 2729              	.LASF134:
+ 2730 07ab 7267626C 		.ascii	"rgbledNotifications\000"
+ 2730      65644E6F 
+ 2730      74696669 
+ 2730      63617469 
+ 2730      6F6E7300 
+ 2731              	.LASF15:
+ 2732 07bf 73697A65 		.ascii	"sizetype\000"
+ 2732      74797065 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 70
+
+
+ 2732      00
+ 2733              	.LASF99:
+ 2734 07c8 4359424C 		.ascii	"CYBLE_GATTS_WRITE_REQ_PARAM_T\000"
+ 2734      455F4741 
+ 2734      5454535F 
+ 2734      57524954 
+ 2734      455F5245 
+ 2735              	.LASF96:
+ 2736 07e6 4359424C 		.ascii	"CYBLE_GATTS_HANDLE_VALUE_NTF_T\000"
+ 2736      455F4741 
+ 2736      5454535F 
+ 2736      48414E44 
+ 2736      4C455F56 
+ 2737              	.LASF101:
+ 2738 0805 4359424C 		.ascii	"CYBLE_STATE_INITIALIZING\000"
+ 2738      455F5354 
+ 2738      4154455F 
+ 2738      494E4954 
+ 2738      49414C49 
+ 2739              	.LASF28:
+ 2740 081e 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
+ 2740      455F4556 
+ 2740      545F4741 
+ 2740      505F4155 
+ 2740      54485F46 
+ 2741              	.LASF125:
+ 2742 0838 55706461 		.ascii	"UpdateConnectionParam\000"
+ 2742      7465436F 
+ 2742      6E6E6563 
+ 2742      74696F6E 
+ 2742      50617261 
+ 2743              	.LASF56:
+ 2744 084e 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
+ 2744      455F4556 
+ 2744      545F4741 
+ 2744      5454435F 
+ 2744      57524954 
+ 2745              	.LASF41:
+ 2746 0868 4359424C 		.ascii	"CYBLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
+ 2746      455F4556 
+ 2746      545F4741 
+ 2746      50435F44 
+ 2746      49524543 
+ 2747              	.LASF39:
+ 2748 0889 4359424C 		.ascii	"CYBLE_EVT_GAP_DATA_LENGTH_CHANGE\000"
+ 2748      455F4556 
+ 2748      545F4741 
+ 2748      505F4441 
+ 2748      54415F4C 
+ 2749              	.LASF108:
+ 2750 08aa 43757374 		.ascii	"CustomEventHandler\000"
+ 2750      6F6D4576 
+ 2750      656E7448 
+ 2750      616E646C 
+ 2750      657200
+ 2751              	.LASF136:
+ 2752 08bd 64657669 		.ascii	"deviceConnected\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 71
+
+
+ 2752      6365436F 
+ 2752      6E6E6563 
+ 2752      74656400 
+ 2753              	.LASF27:
+ 2754 08cd 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ 2754      455F4556 
+ 2754      545F4741 
+ 2754      505F4155 
+ 2754      54485F43 
+ 2755              	.LASF83:
+ 2756 08e9 636F6E6E 		.ascii	"connIntvMax\000"
+ 2756      496E7476 
+ 2756      4D617800 
+ 2757              	.LASF132:
+ 2758 08f5 72676248 		.ascii	"rgbHandle\000"
+ 2758      616E646C 
+ 2758      6500
+ 2759              	.LASF61:
+ 2760 08ff 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
+ 2760      455F4556 
+ 2760      545F4741 
+ 2760      5454435F 
+ 2760      48414E44 
+ 2761              	.LASF95:
+ 2762 0920 4359424C 		.ascii	"CYBLE_GATT_HANDLE_VALUE_PAIR_T\000"
+ 2762      455F4741 
+ 2762      54545F48 
+ 2762      414E444C 
+ 2762      455F5641 
+ 2763              	.LASF72:
+ 2764 093f 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 2764      455F4556 
+ 2764      545F4C32 
+ 2764      4341505F 
+ 2764      43424643 
+ 2765              	.LASF82:
+ 2766 095d 636F6E6E 		.ascii	"connIntvMin\000"
+ 2766      496E7476 
+ 2766      4D696E00 
+ 2767              	.LASF12:
+ 2768 0969 666C6F61 		.ascii	"float\000"
+ 2768      7400
+ 2769              	.LASF143:
+ 2770 096f 62757379 		.ascii	"busyStatus\000"
+ 2770      53746174 
+ 2770      757300
+ 2771              	.LASF113:
+ 2772 097a 53656E64 		.ascii	"SendDataOverRGBledNotification\000"
+ 2772      44617461 
+ 2772      4F766572 
+ 2772      5247426C 
+ 2772      65644E6F 
+ 2773              	.LASF126:
+ 2774 0999 5744545F 		.ascii	"WDT_INT_Handler\000"
+ 2774      494E545F 
+ 2774      48616E64 
+ 2774      6C657200 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 72
+
+
+ 2775              	.LASF124:
+ 2776 09a9 73746174 		.ascii	"state_changed\000"
+ 2776      655F6368 
+ 2776      616E6765 
+ 2776      6400
+ 2777              	.LASF1:
+ 2778 09b7 756E7369 		.ascii	"unsigned char\000"
+ 2778      676E6564 
+ 2778      20636861 
+ 2778      7200
+ 2779              	.LASF10:
+ 2780 09c5 75696E74 		.ascii	"uint16\000"
+ 2780      313600
+ 2781              	.LASF37:
+ 2782 09cc 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
+ 2782      455F4556 
+ 2782      545F4741 
+ 2782      505F4B45 
+ 2782      59505245 
+ 2783              	.LASF110:
+ 2784 09f0 43617053 		.ascii	"CapSenseSliderData\000"
+ 2784      656E7365 
+ 2784      536C6964 
+ 2784      65724461 
+ 2784      746100
+ 2785              	.LASF2:
+ 2786 0a03 73686F72 		.ascii	"short int\000"
+ 2786      7420696E 
+ 2786      7400
+ 2787              	.LASF62:
+ 2788 0a0d 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ 2788      455F4556 
+ 2788      545F4741 
+ 2788      5454435F 
+ 2788      48414E44 
+ 2789              	.LASF145:
+ 2790 0a2e 52474243 		.ascii	"RGBCCCDvalue\000"
+ 2790      43434476 
+ 2790      616C7565 
+ 2790      00
+ 2791              	.LASF144:
+ 2792 0a3b 43617053 		.ascii	"CapSenseCCCDvalue\000"
+ 2792      656E7365 
+ 2792      43434344 
+ 2792      76616C75 
+ 2792      6500
+ 2793              	.LASF58:
+ 2794 0a4d 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 2794      455F4556 
+ 2794      545F4741 
+ 2794      5454535F 
+ 2794      50524550 
+ 2795              	.LASF32:
+ 2796 0a6c 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 2796      455F4556 
+ 2796      545F4741 
+ 2796      505F454E 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 73
+
+
+ 2796      43525950 
+ 2797              	.LASF63:
+ 2798 0a89 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
+ 2798      455F4556 
+ 2798      545F4741 
+ 2798      5454535F 
+ 2798      48414E44 
+ 2799              	.LASF43:
+ 2800 0aaa 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
+ 2800      455F4556 
+ 2800      545F4741 
+ 2800      5454435F 
+ 2800      4552524F 
+ 2801              	.LASF42:
+ 2802 0ac4 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
+ 2802      455F4556 
+ 2802      545F4741 
+ 2802      505F534D 
+ 2802      505F4E45 
+ 2803              	.LASF150:
+ 2804 0aeb 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\PSoC Creator\\CE210289"
+ 2804      73657273 
+ 2804      5C536172 
+ 2804      61685C44 
+ 2804      6F63756D 
+ 2805 0b19 5F436170 		.ascii	"_CapSense_P4_Linear_Slider01\\PSoC_4_BLE_CapSense_S"
+ 2805      53656E73 
+ 2805      655F5034 
+ 2805      5F4C696E 
+ 2805      6561725F 
+ 2806 0b4b 6C696465 		.ascii	"lider_LED\\BLE_Capsense_LED_modified.cydsn\000"
+ 2806      725F4C45 
+ 2806      445C424C 
+ 2806      455F4361 
+ 2806      7073656E 
+ 2807              	.LASF109:
+ 2808 0b75 53656E64 		.ascii	"SendDataOverCapSenseNotification\000"
+ 2808      44617461 
+ 2808      4F766572 
+ 2808      43617053 
+ 2808      656E7365 
+ 2809              	.LASF117:
+ 2810 0b96 64656275 		.ascii	"debug_red\000"
+ 2810      675F7265 
+ 2810      6400
+ 2811              	.LASF14:
+ 2812 0ba0 63686172 		.ascii	"char\000"
+ 2812      00
+ 2813              	.LASF31:
+ 2814 0ba5 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
+ 2814      455F4556 
+ 2814      545F4741 
+ 2814      505F4445 
+ 2814      56494345 
+ 2815              	.LASF66:
+ 2816 0bc7 4359424C 		.ascii	"CYBLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
+ 2816      455F4556 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 74
+
+
+ 2816      545F4741 
+ 2816      5454535F 
+ 2816      52454144 
+ 2817              	.LASF133:
+ 2818 0bf0 73656E64 		.ascii	"sendCapSenseSliderNotifications\000"
+ 2818      43617053 
+ 2818      656E7365 
+ 2818      536C6964 
+ 2818      65724E6F 
+ 2819              	.LASF149:
+ 2820 0c10 424C4541 		.ascii	"BLEApplications.c\000"
+ 2820      70706C69 
+ 2820      63617469 
+ 2820      6F6E732E 
+ 2820      6300
+ 2821              	.LASF77:
+ 2822 0c22 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
+ 2822      455F4556 
+ 2822      545F4C32 
+ 2822      4341505F 
+ 2822      43424643 
+ 2823              	.LASF118:
+ 2824 0c45 64656275 		.ascii	"debug_green\000"
+ 2824      675F6772 
+ 2824      65656E00 
+ 2825              	.LASF19:
+ 2826 0c51 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
+ 2826      455F4556 
+ 2826      545F4841 
+ 2826      52445741 
+ 2826      52455F45 
+ 2827              	.LASF46:
+ 2828 0c6a 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 2828      455F4556 
+ 2828      545F4741 
+ 2828      5454535F 
+ 2828      58434E48 
+ 2829              	.LASF107:
+ 2830 0c88 6576656E 		.ascii	"eventParam\000"
+ 2830      74506172 
+ 2830      616D00
+ 2831              	.LASF116:
+ 2832 0c93 55706461 		.ascii	"UpdateRGBled\000"
+ 2832      74655247 
+ 2832      426C6564 
+ 2832      00
+ 2833              	.LASF105:
+ 2834 0ca0 4359424C 		.ascii	"CYBLE_STATE_T\000"
+ 2834      455F5354 
+ 2834      4154455F 
+ 2834      5400
+ 2835              	.LASF128:
+ 2836 0cae 6973436F 		.ascii	"isConnectionUpdateRequested\000"
+ 2836      6E6E6563 
+ 2836      74696F6E 
+ 2836      55706461 
+ 2836      74655265 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 75
+
+
+ 2837              	.LASF137:
+ 2838 0cca 72657374 		.ascii	"restartAdvertisement\000"
+ 2838      61727441 
+ 2838      64766572 
+ 2838      74697365 
+ 2838      6D656E74 
+ 2839              	.LASF53:
+ 2840 0cdf 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
+ 2840      455F4556 
+ 2840      545F4741 
+ 2840      5454435F 
+ 2840      52454144 
+ 2841              	.LASF102:
+ 2842 0cfd 4359424C 		.ascii	"CYBLE_STATE_CONNECTED\000"
+ 2842      455F5354 
+ 2842      4154455F 
+ 2842      434F4E4E 
+ 2842      45435445 
+ 2843              	.LASF148:
+ 2844 0d13 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 2844      4320342E 
+ 2844      392E3320 
+ 2844      32303135 
+ 2844      30333033 
+ 2845 0d46 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 2845      20726576 
+ 2845      6973696F 
+ 2845      6E203232 
+ 2845      31323230 
+ 2846 0d79 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 2846      66756E63 
+ 2846      74696F6E 
+ 2846      2D736563 
+ 2846      74696F6E 
+ 2847              	.LASF51:
+ 2848 0da1 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
+ 2848      455F4556 
+ 2848      545F4741 
+ 2848      5454435F 
+ 2848      46494E44 
+ 2849              	.LASF35:
+ 2850 0dc8 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+ 2850      455F4556 
+ 2850      545F4741 
+ 2850      505F4B45 
+ 2850      59494E46 
+ 2851              	.LASF88:
+ 2852 0dec 62644861 		.ascii	"bdHandle\000"
+ 2852      6E646C65 
+ 2852      00
+ 2853              	.LASF69:
+ 2854 0df5 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 2854      455F4556 
+ 2854      545F4C32 
+ 2854      4341505F 
+ 2854      434F4E4E 
+ 2855              	.LASF40:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccrcKzcd.s 			page 76
+
+
+ 2856 0e1b 4359424C 		.ascii	"CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
+ 2856      455F4556 
+ 2856      545F4741 
+ 2856      505F454E 
+ 2856      48414E43 
+ 2857              	.LASF87:
+ 2858 0e3f 4359424C 		.ascii	"CYBLE_GATT_DB_ATTR_HANDLE_T\000"
+ 2858      455F4741 
+ 2858      54545F44 
+ 2858      425F4154 
+ 2858      54525F48 
+ 2859              	.LASF122:
+ 2860 0e5b 6C65645F 		.ascii	"led_counter\000"
+ 2860      636F756E 
+ 2860      74657200 
+ 2861              	.LASF45:
+ 2862 0e67 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
+ 2862      455F4556 
+ 2862      545F4741 
+ 2862      54545F44 
+ 2862      4953434F 
+ 2863              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

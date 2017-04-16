@@ -1,0 +1,565 @@
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"HandleLowPower.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.HandleLowPowerMode,"ax",%progbits
+  18              		.align	2
+  19              		.global	HandleLowPowerMode
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	HandleLowPowerMode, %function
+  23              	HandleLowPowerMode:
+  24              	.LFB37:
+  25              		.file 1 "HandleLowPower.c"
+   1:HandleLowPower.c **** /******************************************************************************
+   2:HandleLowPower.c **** * Project Name		: PSoC_4_BLE_CapSense_Slider_LED
+   3:HandleLowPower.c **** * File Name			: HandleLowPower.c
+   4:HandleLowPower.c **** * Version 			: 1.0
+   5:HandleLowPower.c **** * Device Used		: CY8C4248LQI-BL583
+   6:HandleLowPower.c **** * Software Used		: PSoC Creator 3.3 CP2
+   7:HandleLowPower.c **** * Compiler    		: ARM GCC 4.9.3, ARM MDK Generic
+   8:HandleLowPower.c **** * Related Hardware	: CY8CKIT-042-BLE-A Bluetooth Low Energy Pioneer Kit 
+   9:HandleLowPower.c **** * Owner             : ROIT
+  10:HandleLowPower.c **** *
+  11:HandleLowPower.c **** ********************************************************************************
+  12:HandleLowPower.c **** * Copyright (2015-16), Cypress Semiconductor Corporation. All Rights Reserved.
+  13:HandleLowPower.c **** ********************************************************************************
+  14:HandleLowPower.c **** * This software is owned by Cypress Semiconductor Corporation (Cypress)
+  15:HandleLowPower.c **** * and is protected by and subject to worldwide patent protection (United
+  16:HandleLowPower.c **** * States and foreign), United States copyright laws and international treaty
+  17:HandleLowPower.c **** * provisions. Cypress hereby grants to licensee a personal, non-exclusive,
+  18:HandleLowPower.c **** * non-transferable license to copy, use, modify, create derivative works of,
+  19:HandleLowPower.c **** * and compile the Cypress Source Code and derivative works for the sole
+  20:HandleLowPower.c **** * purpose of creating custom software in support of licensee product to be
+  21:HandleLowPower.c **** * used only in conjunction with a Cypress integrated circuit as specified in
+  22:HandleLowPower.c **** * the applicable agreement. Any reproduction, modification, translation,
+  23:HandleLowPower.c **** * compilation, or representation of this software except as specified above 
+  24:HandleLowPower.c **** * is prohibited without the express written permission of Cypress.
+  25:HandleLowPower.c **** *
+  26:HandleLowPower.c **** * Disclaimer: CYPRESS MAKES NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH 
+  27:HandleLowPower.c **** * REGARD TO THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+  28:HandleLowPower.c **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  29:HandleLowPower.c **** * Cypress reserves the right to make changes without further notice to the 
+  30:HandleLowPower.c **** * materials described herein. Cypress does not assume any liability arising out 
+  31:HandleLowPower.c **** * of the application or use of any product or circuit described herein. Cypress 
+  32:HandleLowPower.c **** * does not authorize its products for use as critical components in life-support 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 2
+
+
+  33:HandleLowPower.c **** * systems where a malfunction or failure may reasonably be expected to result in 
+  34:HandleLowPower.c **** * significant injury to the user. The inclusion of Cypress' product in a life-
+  35:HandleLowPower.c **** * support systems application implies that the manufacturer assumes all risk of 
+  36:HandleLowPower.c **** * such use and in doing so indemnifies Cypress against all charges. 
+  37:HandleLowPower.c **** *
+  38:HandleLowPower.c **** * Use of this Software may be limited by and subject to the applicable Cypress
+  39:HandleLowPower.c **** * software license agreement. 
+  40:HandleLowPower.c **** *******************************************************************************/
+  41:HandleLowPower.c **** #include <main.h>
+  42:HandleLowPower.c **** 
+  43:HandleLowPower.c **** extern uint8 shut_down_led;
+  44:HandleLowPower.c **** /*******************************************************************************
+  45:HandleLowPower.c **** * Function Name: HandleLowPowerMode
+  46:HandleLowPower.c **** ********************************************************************************
+  47:HandleLowPower.c **** * Summary:
+  48:HandleLowPower.c **** *        This function puts the BLESS in deep sleep mode and CPU to sleep mode. 
+  49:HandleLowPower.c **** * System will resume from here when it wakes from user button press.
+  50:HandleLowPower.c **** *
+  51:HandleLowPower.c **** * Parameters:
+  52:HandleLowPower.c **** *  void
+  53:HandleLowPower.c **** *
+  54:HandleLowPower.c **** * Return:
+  55:HandleLowPower.c **** *  void
+  56:HandleLowPower.c **** *
+  57:HandleLowPower.c **** *******************************************************************************/
+  58:HandleLowPower.c **** void HandleLowPowerMode(void)
+  59:HandleLowPower.c **** {
+  26              		.loc 1 59 0
+  27              		.cfi_startproc
+  28 0000 80B5     		push	{r7, lr}
+  29              		.cfi_def_cfa_offset 8
+  30              		.cfi_offset 7, -8
+  31              		.cfi_offset 14, -4
+  32 0002 00AF     		add	r7, sp, #0
+  33              		.cfi_def_cfa_register 7
+  60:HandleLowPower.c **** 	#ifdef ENABLE_LOW_POWER_MODE
+  61:HandleLowPower.c **** 		/* Local variable to store the status of BLESS Hardware block */
+  62:HandleLowPower.c **** 		CYBLE_LP_MODE_T sleepMode;
+  63:HandleLowPower.c **** 		CYBLE_BLESS_STATE_T blessState;
+  64:HandleLowPower.c **** 		
+  65:HandleLowPower.c **** 		#ifdef CAPSENSE_ENABLED
+  66:HandleLowPower.c **** 		/* Put CapSense to Sleep*/
+  67:HandleLowPower.c **** 		CapSense_Sleep();
+  68:HandleLowPower.c **** 		#endif
+  69:HandleLowPower.c **** 		
+  70:HandleLowPower.c **** 		/* Put BLESS into Deep Sleep and check the return status */
+  71:HandleLowPower.c **** 		sleepMode = CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);
+  72:HandleLowPower.c **** 		
+  73:HandleLowPower.c **** 		/* Disable global interrupt to prevent changes from any other interrupt ISR */
+  74:HandleLowPower.c **** 		CyGlobalIntDisable;
+  75:HandleLowPower.c **** 	
+  76:HandleLowPower.c **** 		/* Check the Status of BLESS */
+  77:HandleLowPower.c **** 		blessState = CyBle_GetBleSsState();
+  78:HandleLowPower.c **** 
+  79:HandleLowPower.c **** 		if(sleepMode == CYBLE_BLESS_DEEPSLEEP)
+  80:HandleLowPower.c **** 		{
+  81:HandleLowPower.c **** 		    /* If the ECO has started or the BLESS can go to Deep Sleep, then place CPU 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 3
+
+
+  82:HandleLowPower.c **** 			* to Deep Sleep */
+  83:HandleLowPower.c **** 			if(blessState == CYBLE_BLESS_STATE_ECO_ON || blessState == CYBLE_BLESS_STATE_DEEPSLEEP)
+  84:HandleLowPower.c **** 		    {
+  85:HandleLowPower.c **** 				if(shut_down_led)
+  86:HandleLowPower.c **** 				{
+  87:HandleLowPower.c **** 					/* Put PrISM modules to sleep */
+  88:HandleLowPower.c **** 					PrISM_1_Sleep();
+  89:HandleLowPower.c **** 					PrISM_2_Sleep();
+  90:HandleLowPower.c **** 					
+  91:HandleLowPower.c **** 					/* Place CPU to Deep sleep only when the RGB PrISM module is not 
+  92:HandleLowPower.c **** 					* active (indicated by flag 'shut_down_led'). 
+  93:HandleLowPower.c **** 					* If RGB PrISM is active, then the CPU should only be placed in 
+  94:HandleLowPower.c **** 					* Sleep to allow the PrISM to function and control the color 
+  95:HandleLowPower.c **** 					* and Intensity */
+  96:HandleLowPower.c **** 			        CySysPmDeepSleep();
+  97:HandleLowPower.c **** 					
+  98:HandleLowPower.c **** 					/* After system wakes up, wake up the PrISM modules*/
+  99:HandleLowPower.c **** 					PrISM_1_Wakeup();
+ 100:HandleLowPower.c **** 					PrISM_2_Wakeup();
+ 101:HandleLowPower.c **** 				}
+ 102:HandleLowPower.c **** 				else
+ 103:HandleLowPower.c **** 				{
+ 104:HandleLowPower.c **** 					/* If the system is controlling RGB LED, then PrISM needs to be running. 
+ 105:HandleLowPower.c **** 					* Put CPU to sleep only */
+ 106:HandleLowPower.c **** 					CySysClkWriteImoFreq(IMO_FREQUENCY_3MHZ);
+ 107:HandleLowPower.c **** 					CySysPmSleep();
+ 108:HandleLowPower.c **** 					CySysClkWriteImoFreq(IMO_FREQUENCY_12MHZ);
+ 109:HandleLowPower.c **** 
+ 110:HandleLowPower.c **** 				}
+ 111:HandleLowPower.c **** 		 	}
+ 112:HandleLowPower.c **** 		}
+ 113:HandleLowPower.c **** 		else
+ 114:HandleLowPower.c **** 		{
+ 115:HandleLowPower.c **** 		    if(blessState != CYBLE_BLESS_STATE_EVENT_CLOSE)
+ 116:HandleLowPower.c **** 		    {
+ 117:HandleLowPower.c **** 				/* If the BLESS hardware block cannot go to Deep Sleep and BLE Event has not 
+ 118:HandleLowPower.c **** 				* closed yet, then place CPU to Sleep */
+ 119:HandleLowPower.c **** 		        CySysPmSleep();
+ 120:HandleLowPower.c **** 		    }
+ 121:HandleLowPower.c **** 		}
+ 122:HandleLowPower.c **** 		
+ 123:HandleLowPower.c **** 		/* Re-enable global interrupt mask after wakeup */
+ 124:HandleLowPower.c **** 		CyGlobalIntEnable;
+ 125:HandleLowPower.c **** 		
+ 126:HandleLowPower.c **** 		#ifdef CAPSENSE_ENABLED
+ 127:HandleLowPower.c **** 		/* Wakeup CapSense Block */
+ 128:HandleLowPower.c **** 		CapSense_Wakeup();
+ 129:HandleLowPower.c **** 		#endif
+ 130:HandleLowPower.c **** 		
+ 131:HandleLowPower.c **** 	#endif
+ 132:HandleLowPower.c **** }
+  34              		.loc 1 132 0
+  35 0004 BD46     		mov	sp, r7
+  36              		@ sp needed
+  37 0006 80BD     		pop	{r7, pc}
+  38              		.cfi_endproc
+  39              	.LFE37:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 4
+
+
+  40              		.size	HandleLowPowerMode, .-HandleLowPowerMode
+  41              		.section	.text.MyISR,"ax",%progbits
+  42              		.align	2
+  43              		.global	MyISR
+  44              		.code	16
+  45              		.thumb_func
+  46              		.type	MyISR, %function
+  47              	MyISR:
+  48              	.LFB38:
+ 133:HandleLowPower.c **** 
+ 134:HandleLowPower.c **** /*******************************************************************************
+ 135:HandleLowPower.c **** * Function Name: MyISR
+ 136:HandleLowPower.c **** ********************************************************************************
+ 137:HandleLowPower.c **** * Summary:
+ 138:HandleLowPower.c **** *        ISR routine for isr_button. System enters here after CPU wakeup.
+ 139:HandleLowPower.c **** * Clears pending interrupt.
+ 140:HandleLowPower.c **** *
+ 141:HandleLowPower.c **** * Parameters:
+ 142:HandleLowPower.c **** *  void
+ 143:HandleLowPower.c **** *
+ 144:HandleLowPower.c **** * Return:
+ 145:HandleLowPower.c **** *  void
+ 146:HandleLowPower.c **** *
+ 147:HandleLowPower.c **** *******************************************************************************/
+ 148:HandleLowPower.c **** CY_ISR(MyISR)
+ 149:HandleLowPower.c **** {
+  49              		.loc 1 149 0
+  50              		.cfi_startproc
+  51 0000 80B5     		push	{r7, lr}
+  52              		.cfi_def_cfa_offset 8
+  53              		.cfi_offset 7, -8
+  54              		.cfi_offset 14, -4
+  55 0002 00AF     		add	r7, sp, #0
+  56              		.cfi_def_cfa_register 7
+ 150:HandleLowPower.c **** 	/* Clear Pending interrupts */
+ 151:HandleLowPower.c **** 	isr_button_ClearPending();
+  57              		.loc 1 151 0
+  58 0004 FFF7FEFF 		bl	isr_button_ClearPending
+ 152:HandleLowPower.c **** 	
+ 153:HandleLowPower.c **** 	User_Button_ClearInterrupt();
+  59              		.loc 1 153 0
+  60 0008 FFF7FEFF 		bl	User_Button_ClearInterrupt
+ 154:HandleLowPower.c **** }
+  61              		.loc 1 154 0
+  62 000c BD46     		mov	sp, r7
+  63              		@ sp needed
+  64 000e 80BD     		pop	{r7, pc}
+  65              		.cfi_endproc
+  66              	.LFE38:
+  67              		.size	MyISR, .-MyISR
+  68              		.text
+  69              	.Letext0:
+  70              		.section	.debug_info,"",%progbits
+  71              	.Ldebug_info0:
+  72 0000 A6000000 		.4byte	0xa6
+  73 0004 0400     		.2byte	0x4
+  74 0006 00000000 		.4byte	.Ldebug_abbrev0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 5
+
+
+  75 000a 04       		.byte	0x4
+  76 000b 01       		.uleb128 0x1
+  77 000c 0E000000 		.4byte	.LASF15
+  78 0010 01       		.byte	0x1
+  79 0011 A9000000 		.4byte	.LASF16
+  80 0015 05010000 		.4byte	.LASF17
+  81 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  82 001d 00000000 		.4byte	0
+  83 0021 00000000 		.4byte	.Ldebug_line0
+  84 0025 02       		.uleb128 0x2
+  85 0026 01       		.byte	0x1
+  86 0027 06       		.byte	0x6
+  87 0028 A9010000 		.4byte	.LASF0
+  88 002c 02       		.uleb128 0x2
+  89 002d 01       		.byte	0x1
+  90 002e 08       		.byte	0x8
+  91 002f E9000000 		.4byte	.LASF1
+  92 0033 02       		.uleb128 0x2
+  93 0034 02       		.byte	0x2
+  94 0035 05       		.byte	0x5
+  95 0036 BB010000 		.4byte	.LASF2
+  96 003a 02       		.uleb128 0x2
+  97 003b 02       		.byte	0x2
+  98 003c 07       		.byte	0x7
+  99 003d 96010000 		.4byte	.LASF3
+ 100 0041 02       		.uleb128 0x2
+ 101 0042 04       		.byte	0x4
+ 102 0043 05       		.byte	0x5
+ 103 0044 FC000000 		.4byte	.LASF4
+ 104 0048 02       		.uleb128 0x2
+ 105 0049 04       		.byte	0x4
+ 106 004a 07       		.byte	0x7
+ 107 004b BA000000 		.4byte	.LASF5
+ 108 004f 02       		.uleb128 0x2
+ 109 0050 08       		.byte	0x8
+ 110 0051 05       		.byte	0x5
+ 111 0052 00000000 		.4byte	.LASF6
+ 112 0056 02       		.uleb128 0x2
+ 113 0057 08       		.byte	0x8
+ 114 0058 07       		.byte	0x7
+ 115 0059 CC000000 		.4byte	.LASF7
+ 116 005d 03       		.uleb128 0x3
+ 117 005e 04       		.byte	0x4
+ 118 005f 05       		.byte	0x5
+ 119 0060 696E7400 		.ascii	"int\000"
+ 120 0064 02       		.uleb128 0x2
+ 121 0065 04       		.byte	0x4
+ 122 0066 07       		.byte	0x7
+ 123 0067 9C000000 		.4byte	.LASF8
+ 124 006b 02       		.uleb128 0x2
+ 125 006c 04       		.byte	0x4
+ 126 006d 04       		.byte	0x4
+ 127 006e B5010000 		.4byte	.LASF9
+ 128 0072 02       		.uleb128 0x2
+ 129 0073 08       		.byte	0x8
+ 130 0074 04       		.byte	0x4
+ 131 0075 8F010000 		.4byte	.LASF10
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 6
+
+
+ 132 0079 02       		.uleb128 0x2
+ 133 007a 01       		.byte	0x1
+ 134 007b 08       		.byte	0x8
+ 135 007c F7000000 		.4byte	.LASF11
+ 136 0080 02       		.uleb128 0x2
+ 137 0081 04       		.byte	0x4
+ 138 0082 07       		.byte	0x7
+ 139 0083 D8010000 		.4byte	.LASF12
+ 140 0087 04       		.uleb128 0x4
+ 141 0088 C5010000 		.4byte	.LASF13
+ 142 008c 01       		.byte	0x1
+ 143 008d 3A       		.byte	0x3a
+ 144 008e 00000000 		.4byte	.LFB37
+ 145 0092 08000000 		.4byte	.LFE37-.LFB37
+ 146 0096 01       		.uleb128 0x1
+ 147 0097 9C       		.byte	0x9c
+ 148 0098 05       		.uleb128 0x5
+ 149 0099 E3000000 		.4byte	.LASF14
+ 150 009d 01       		.byte	0x1
+ 151 009e 94       		.byte	0x94
+ 152 009f 00000000 		.4byte	.LFB38
+ 153 00a3 10000000 		.4byte	.LFE38-.LFB38
+ 154 00a7 01       		.uleb128 0x1
+ 155 00a8 9C       		.byte	0x9c
+ 156 00a9 00       		.byte	0
+ 157              		.section	.debug_abbrev,"",%progbits
+ 158              	.Ldebug_abbrev0:
+ 159 0000 01       		.uleb128 0x1
+ 160 0001 11       		.uleb128 0x11
+ 161 0002 01       		.byte	0x1
+ 162 0003 25       		.uleb128 0x25
+ 163 0004 0E       		.uleb128 0xe
+ 164 0005 13       		.uleb128 0x13
+ 165 0006 0B       		.uleb128 0xb
+ 166 0007 03       		.uleb128 0x3
+ 167 0008 0E       		.uleb128 0xe
+ 168 0009 1B       		.uleb128 0x1b
+ 169 000a 0E       		.uleb128 0xe
+ 170 000b 55       		.uleb128 0x55
+ 171 000c 17       		.uleb128 0x17
+ 172 000d 11       		.uleb128 0x11
+ 173 000e 01       		.uleb128 0x1
+ 174 000f 10       		.uleb128 0x10
+ 175 0010 17       		.uleb128 0x17
+ 176 0011 00       		.byte	0
+ 177 0012 00       		.byte	0
+ 178 0013 02       		.uleb128 0x2
+ 179 0014 24       		.uleb128 0x24
+ 180 0015 00       		.byte	0
+ 181 0016 0B       		.uleb128 0xb
+ 182 0017 0B       		.uleb128 0xb
+ 183 0018 3E       		.uleb128 0x3e
+ 184 0019 0B       		.uleb128 0xb
+ 185 001a 03       		.uleb128 0x3
+ 186 001b 0E       		.uleb128 0xe
+ 187 001c 00       		.byte	0
+ 188 001d 00       		.byte	0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 7
+
+
+ 189 001e 03       		.uleb128 0x3
+ 190 001f 24       		.uleb128 0x24
+ 191 0020 00       		.byte	0
+ 192 0021 0B       		.uleb128 0xb
+ 193 0022 0B       		.uleb128 0xb
+ 194 0023 3E       		.uleb128 0x3e
+ 195 0024 0B       		.uleb128 0xb
+ 196 0025 03       		.uleb128 0x3
+ 197 0026 08       		.uleb128 0x8
+ 198 0027 00       		.byte	0
+ 199 0028 00       		.byte	0
+ 200 0029 04       		.uleb128 0x4
+ 201 002a 2E       		.uleb128 0x2e
+ 202 002b 00       		.byte	0
+ 203 002c 3F       		.uleb128 0x3f
+ 204 002d 19       		.uleb128 0x19
+ 205 002e 03       		.uleb128 0x3
+ 206 002f 0E       		.uleb128 0xe
+ 207 0030 3A       		.uleb128 0x3a
+ 208 0031 0B       		.uleb128 0xb
+ 209 0032 3B       		.uleb128 0x3b
+ 210 0033 0B       		.uleb128 0xb
+ 211 0034 27       		.uleb128 0x27
+ 212 0035 19       		.uleb128 0x19
+ 213 0036 11       		.uleb128 0x11
+ 214 0037 01       		.uleb128 0x1
+ 215 0038 12       		.uleb128 0x12
+ 216 0039 06       		.uleb128 0x6
+ 217 003a 40       		.uleb128 0x40
+ 218 003b 18       		.uleb128 0x18
+ 219 003c 9742     		.uleb128 0x2117
+ 220 003e 19       		.uleb128 0x19
+ 221 003f 00       		.byte	0
+ 222 0040 00       		.byte	0
+ 223 0041 05       		.uleb128 0x5
+ 224 0042 2E       		.uleb128 0x2e
+ 225 0043 00       		.byte	0
+ 226 0044 3F       		.uleb128 0x3f
+ 227 0045 19       		.uleb128 0x19
+ 228 0046 03       		.uleb128 0x3
+ 229 0047 0E       		.uleb128 0xe
+ 230 0048 3A       		.uleb128 0x3a
+ 231 0049 0B       		.uleb128 0xb
+ 232 004a 3B       		.uleb128 0x3b
+ 233 004b 0B       		.uleb128 0xb
+ 234 004c 27       		.uleb128 0x27
+ 235 004d 19       		.uleb128 0x19
+ 236 004e 11       		.uleb128 0x11
+ 237 004f 01       		.uleb128 0x1
+ 238 0050 12       		.uleb128 0x12
+ 239 0051 06       		.uleb128 0x6
+ 240 0052 40       		.uleb128 0x40
+ 241 0053 18       		.uleb128 0x18
+ 242 0054 9642     		.uleb128 0x2116
+ 243 0056 19       		.uleb128 0x19
+ 244 0057 00       		.byte	0
+ 245 0058 00       		.byte	0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 8
+
+
+ 246 0059 00       		.byte	0
+ 247              		.section	.debug_aranges,"",%progbits
+ 248 0000 24000000 		.4byte	0x24
+ 249 0004 0200     		.2byte	0x2
+ 250 0006 00000000 		.4byte	.Ldebug_info0
+ 251 000a 04       		.byte	0x4
+ 252 000b 00       		.byte	0
+ 253 000c 0000     		.2byte	0
+ 254 000e 0000     		.2byte	0
+ 255 0010 00000000 		.4byte	.LFB37
+ 256 0014 08000000 		.4byte	.LFE37-.LFB37
+ 257 0018 00000000 		.4byte	.LFB38
+ 258 001c 10000000 		.4byte	.LFE38-.LFB38
+ 259 0020 00000000 		.4byte	0
+ 260 0024 00000000 		.4byte	0
+ 261              		.section	.debug_ranges,"",%progbits
+ 262              	.Ldebug_ranges0:
+ 263 0000 00000000 		.4byte	.LFB37
+ 264 0004 08000000 		.4byte	.LFE37
+ 265 0008 00000000 		.4byte	.LFB38
+ 266 000c 10000000 		.4byte	.LFE38
+ 267 0010 00000000 		.4byte	0
+ 268 0014 00000000 		.4byte	0
+ 269              		.section	.debug_line,"",%progbits
+ 270              	.Ldebug_line0:
+ 271 0000 53000000 		.section	.debug_str,"MS",%progbits,1
+ 271      02002700 
+ 271      00000201 
+ 271      FB0E0D00 
+ 271      01010101 
+ 272              	.LASF6:
+ 273 0000 6C6F6E67 		.ascii	"long long int\000"
+ 273      206C6F6E 
+ 273      6720696E 
+ 273      7400
+ 274              	.LASF15:
+ 275 000e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 275      4320342E 
+ 275      392E3320 
+ 275      32303135 
+ 275      30333033 
+ 276 0041 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 276      20726576 
+ 276      6973696F 
+ 276      6E203232 
+ 276      31323230 
+ 277 0074 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 277      66756E63 
+ 277      74696F6E 
+ 277      2D736563 
+ 277      74696F6E 
+ 278              	.LASF8:
+ 279 009c 756E7369 		.ascii	"unsigned int\000"
+ 279      676E6564 
+ 279      20696E74 
+ 279      00
+ 280              	.LASF16:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 9
+
+
+ 281 00a9 48616E64 		.ascii	"HandleLowPower.c\000"
+ 281      6C654C6F 
+ 281      77506F77 
+ 281      65722E63 
+ 281      00
+ 282              	.LASF5:
+ 283 00ba 6C6F6E67 		.ascii	"long unsigned int\000"
+ 283      20756E73 
+ 283      69676E65 
+ 283      6420696E 
+ 283      7400
+ 284              	.LASF7:
+ 285 00cc 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 285      206C6F6E 
+ 285      6720756E 
+ 285      7369676E 
+ 285      65642069 
+ 286              	.LASF14:
+ 287 00e3 4D794953 		.ascii	"MyISR\000"
+ 287      5200
+ 288              	.LASF1:
+ 289 00e9 756E7369 		.ascii	"unsigned char\000"
+ 289      676E6564 
+ 289      20636861 
+ 289      7200
+ 290              	.LASF11:
+ 291 00f7 63686172 		.ascii	"char\000"
+ 291      00
+ 292              	.LASF4:
+ 293 00fc 6C6F6E67 		.ascii	"long int\000"
+ 293      20696E74 
+ 293      00
+ 294              	.LASF17:
+ 295 0105 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\PSoC Creator\\CE210289"
+ 295      73657273 
+ 295      5C536172 
+ 295      61685C44 
+ 295      6F63756D 
+ 296 0133 5F436170 		.ascii	"_CapSense_P4_Linear_Slider01\\PSoC_4_BLE_CapSense_S"
+ 296      53656E73 
+ 296      655F5034 
+ 296      5F4C696E 
+ 296      6561725F 
+ 297 0165 6C696465 		.ascii	"lider_LED\\BLE_Capsense_LED_modified.cydsn\000"
+ 297      725F4C45 
+ 297      445C424C 
+ 297      455F4361 
+ 297      7073656E 
+ 298              	.LASF10:
+ 299 018f 646F7562 		.ascii	"double\000"
+ 299      6C6500
+ 300              	.LASF3:
+ 301 0196 73686F72 		.ascii	"short unsigned int\000"
+ 301      7420756E 
+ 301      7369676E 
+ 301      65642069 
+ 301      6E7400
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnLXmIt.s 			page 10
+
+
+ 302              	.LASF0:
+ 303 01a9 7369676E 		.ascii	"signed char\000"
+ 303      65642063 
+ 303      68617200 
+ 304              	.LASF9:
+ 305 01b5 666C6F61 		.ascii	"float\000"
+ 305      7400
+ 306              	.LASF2:
+ 307 01bb 73686F72 		.ascii	"short int\000"
+ 307      7420696E 
+ 307      7400
+ 308              	.LASF13:
+ 309 01c5 48616E64 		.ascii	"HandleLowPowerMode\000"
+ 309      6C654C6F 
+ 309      77506F77 
+ 309      65724D6F 
+ 309      646500
+ 310              	.LASF12:
+ 311 01d8 73697A65 		.ascii	"sizetype\000"
+ 311      74797065 
+ 311      00
+ 312              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
