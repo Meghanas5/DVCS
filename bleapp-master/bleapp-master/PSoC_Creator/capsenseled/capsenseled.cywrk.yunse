@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="capsenseled\capsenseled\Generated_Source\PSoC4\capsense">
+<ExpandedNodeIds>
+<v>capsenseled</v>
+<v>capsenseled\capsenseled</v>
+<v>capsenseled\capsenseled\TopDesign</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Pins</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Analog</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\DMA</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Clocks</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Interrupts</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\System</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Directives</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Flash Security</v>
+<v>capsenseled\capsenseled\Header Files</v>
+<v>capsenseled\capsenseled\Source Files</v>
+<v>capsenseled\capsenseled\Source Files\main.c</v>
+<v>capsenseled\capsenseled\Generated_Source</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_custom.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_custom.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_eventHandler.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_eventHandler.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_gatt.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_gatt.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_HAL_INT.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_HAL_PVT.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_HAL_PVT.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_Stack.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_STACK_PVT.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_StackGap.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_StackGatt.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_StackGattClient.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_StackGattDb.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_StackGattServer.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_StackHostMain.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_StackL2cap.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble_bless_isr\ble_bless_isr.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble_bless_isr\ble_bless_isr.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue\blue.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue\blue.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue\blue_aliases.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue\blue_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_CSHL.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_CSHL.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_INT.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_IP.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_PVT.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_SMS.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_SMS.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_TunerHelper.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense\capsense_TunerHelper.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SampleClk</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SampleClk\capsense_SampleClk.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SampleClk\capsense_SampleClk.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SenseClk</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SenseClk\capsense_SenseClk.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SenseClk\capsense_SenseClk.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_Sns</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_Sns\capsense_Sns_aliases.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_1</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_1\Clock_1.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_1\Clock_1.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_2</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_2\Clock_2.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_2\Clock_2.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_3</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_3\Clock_3.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_3\Clock_3.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\Cm0Start.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\cmsis_armcc.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\cmsis_gcc.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\core_cm0.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\core_cm0_psoc4.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\CyBootAsmGnu.s</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\CyBootAsmIar.s</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\CyBootAsmRv.s</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\CyFlash.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\CyFlash.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\CyLib.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\CyLib.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\cypins.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\cyPm.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_dmac</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_dmac\CyDMA.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_dmac\CyDMA.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_lfclk</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_lfclk\CyLFClk.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cy_lfclk\CyLFClk.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\pwm</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\pwm\pwm.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\pwm\pwm.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\pwm\pwm_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\PWM_Servo</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\PWM_Servo\PWM_Servo.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\PWM_Servo\PWM_Servo.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\PWM_Servo\PWM_Servo_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\red</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\red\red.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\red\red.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\red\red_aliases.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\red\red_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Servo</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Servo\Servo.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Servo\Servo.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Servo\Servo_aliases.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Servo\Servo_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Timer</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Timer\Timer.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Timer\Timer.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Timer\Timer_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\timer_int</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\timer_int\timer_int.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\timer_int\timer_int.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cycodeshareexport.ld</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cycodeshareimport.ld</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cycodeshareimport.scat</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cydevice_trm.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cydevicegnu_trm.inc</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cydevicerv_trm.inc</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cydisabledsheets.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cyfitter.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cyfitter_cfg.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cyfitter_cfg.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cyfittergnu.inc</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cyfitteriar.inc</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cyfitterrv.inc</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\cymetadata.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\project.h</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>capsenseled\capsenseled</v>
+<v>capsenseled\capsenseled\TopDesign</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Pins</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Analog</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\DMA</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Clocks</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Interrupts</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\System</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Directives</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Flash Security</v>
+<v>capsenseled\capsenseled\Header Files</v>
+<v>capsenseled\capsenseled\Source Files</v>
+<v>capsenseled\capsenseled\Source Files\main.c</v>
+<v>capsenseled\capsenseled\Generated_Source</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble_bless_isr</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue\blue.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue\blue.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue\blue_aliases.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\blue\blue_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SampleClk</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SampleClk\capsense_SampleClk.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SampleClk\capsense_SampleClk.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SenseClk</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SenseClk\capsense_SenseClk.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_SenseClk\capsense_SenseClk.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_Sns</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\capsense_Sns\capsense_Sns_aliases.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_1</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_1\Clock_1.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_1\Clock_1.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\Clock_2</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>capsenseled</v>
+<v>capsenseled\capsenseled</v>
+<v>capsenseled\capsenseled\TopDesign</v>
+<v>capsenseled\capsenseled\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>capsenseled</v>
+<v>capsenseled\capsenseled</v>
+<v>capsenseled\capsenseled\TopDesign</v>
+<v>capsenseled\capsenseled\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>capsenseled</v>
+<v>capsenseled\capsenseled</v>
+<v>capsenseled\capsenseled\CortexM0</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_bless_isr.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_custom.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_eventHandler.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_gatt.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_HAL_INT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_HAL_PVT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\blue.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\blue_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_CSHL.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_INT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_SampleClk.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_SenseClk.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_SMS.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_TunerHelper.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_2.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_3.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Cm0Start.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyDMA.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLFClk.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\pwm.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\pwm_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_Servo.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_Servo_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\red.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\red_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Servo.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Servo_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Timer.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\timer_int.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Timer_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\capsenseled.elf</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\capsenseled.hex</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\capsenseled.map</v>
+<v>capsenseled\capsenseled\capsenseled.gpdsc</v>
+<v>capsenseled\capsenseled\capsenseled.rpt</v>
+<v>capsenseled\capsenseled\capsenseled_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>capsenseled</v>
+<v>capsenseled\capsenseled</v>
+<v>capsenseled\capsenseled\CortexM0</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_bless_isr.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_custom.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_eventHandler.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_gatt.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_HAL_INT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\ble_HAL_PVT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\blue.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\blue_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_CSHL.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_INT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_SampleClk.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_SenseClk.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_SMS.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\capsense_TunerHelper.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_2.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_3.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Cm0Start.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyDMA.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLFClk.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>capsenseled</v>
+<v>capsenseled\capsenseled</v>
+<v>capsenseled\capsenseled\PSoC 4 Architecture TRM</v>
+<v>capsenseled\capsenseled\PSoC 4200 BLE Family Datasheet</v>
+<v>capsenseled\capsenseled\System Reference Guides</v>
+<v>capsenseled\capsenseled\System Reference Guides\cy_boot_v5_50</v>
+<v>capsenseled\capsenseled\System Reference Guides\cy_dmac_v1_10</v>
+<v>capsenseled\capsenseled\System Reference Guides\cy_lfclk_v1_10</v>
+<v>capsenseled\capsenseled\BLE_v3_30.pdf</v>
+<v>capsenseled\capsenseled\CapSense_CSD_P4_v2_60.pdf</v>
+<v>capsenseled\capsenseled\cy_clock_v2_20</v>
+<v>capsenseled\capsenseled\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>capsenseled\capsenseled\cy_constant_v1_0.pdf</v>
+<v>capsenseled\capsenseled\cy_isr_v1_70.pdf</v>
+<v>capsenseled\capsenseled\cy_pins_v2_20</v>
+<v>capsenseled\capsenseled\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>capsenseled\capsenseled\LED_v1_0</v>
+<v>capsenseled\capsenseled\LED_v1_0\LED_v1_0.pdf</v>
+<v>capsenseled\capsenseled\not_v1_0.pdf</v>
+<v>capsenseled\capsenseled\Power_v1_0</v>
+<v>capsenseled\capsenseled\Power_v1_0\Power_v1_0.pdf</v>
+<v>capsenseled\capsenseled\PWM_v3_30.pdf</v>
+<v>capsenseled\capsenseled\Resistor_v1_0</v>
+<v>capsenseled\capsenseled\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>capsenseled\capsenseled\TCPWM_P4_v2_10</v>
+<v>capsenseled\capsenseled\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>capsenseled</v>
+<v>capsenseled\capsenseled</v>
+<v>capsenseled\capsenseled\PSoC 4 Architecture TRM</v>
+<v>capsenseled\capsenseled\PSoC 4200 BLE Family Datasheet</v>
+<v>capsenseled\capsenseled\System Reference Guides</v>
+<v>capsenseled\capsenseled\System Reference Guides\cy_boot_v5_50</v>
+<v>capsenseled\capsenseled\System Reference Guides\cy_dmac_v1_10</v>
+<v>capsenseled\capsenseled\System Reference Guides\cy_lfclk_v1_10</v>
+<v>capsenseled\capsenseled\BLE_v3_30.pdf</v>
+<v>capsenseled\capsenseled\CapSense_CSD_P4_v2_60.pdf</v>
+<v>capsenseled\capsenseled\cy_clock_v2_20</v>
+<v>capsenseled\capsenseled\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>capsenseled\capsenseled\cy_constant_v1_0.pdf</v>
+<v>capsenseled\capsenseled\cy_isr_v1_70.pdf</v>
+<v>capsenseled\capsenseled\cy_pins_v2_20</v>
+<v>capsenseled\capsenseled\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>capsenseled\capsenseled\LED_v1_0</v>
+<v>capsenseled\capsenseled\LED_v1_0\LED_v1_0.pdf</v>
+<v>capsenseled\capsenseled\not_v1_0.pdf</v>
+<v>capsenseled\capsenseled\Power_v1_0</v>
+<v>capsenseled\capsenseled\Power_v1_0\Power_v1_0.pdf</v>
+<v>capsenseled\capsenseled\PWM_v3_30.pdf</v>
+<v>capsenseled\capsenseled\Resistor_v1_0</v>
+<v>capsenseled\capsenseled\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>capsenseled\capsenseled\TCPWM_P4_v2_10</v>
+<v>capsenseled\capsenseled\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\capsenseled.cydsn\main.c" />
+<name v=".\capsenseled.cydsn\capsenseled.cydwr" />
+<name v=".\capsenseled.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\capsenseled.cydsn\Generated_Source\PSoC4\ble_custom.h" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1051, 495" SelectedTabbedMdiWindow="d98aa891-e0f1-478d-832b-79e3026afe7a"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a6e9c60e-1bf3-4ebc-b0b8-ef1b660d25b7" /><DocumentWindow Key="1ba16a2f-07c6-4685-8e1e-07a1bcf586c5" Guid="d88e14eb-237f-4596-8970-08e952c204ff" /><DocumentWindow Key="b995c9e7-98b0-46ec-b0e1-dbbff9488863" Guid="15a80530-138e-4adc-9733-1593276c9d3d" /><DocumentWindow Key="6facdb31-a5db-4ffd-a826-461ea26929e9" Guid="d98aa891-e0f1-478d-832b-79e3026afe7a" /><DocumentWindow Key="cf391d50-2bd4-4f1c-a59c-f6c99148897c" Guid="64c43f32-9514-4149-838f-25ac1bc00111" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
