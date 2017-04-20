@@ -1,0 +1,9 @@
+C:\Users\Sarah\Documents\DVCS\Workspace01\UART.cydsn\UART.cyprj|683666ad-7e1c-4c14-a6d9-71f7bae67d01
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|2801fdbc-fffe-4f91-ab78-2908483ac018
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|7fddbc21-6ea8-4ccb-a165-f0feddab6bb1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|54c74fe3-5143-4aa9-940e-bd13e094b2a8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|4f8e7b65-5fb2-41d6-9d69-5bf411ee77fe
+C:\Users\Sarah\Documents\DVCS\Workspace01\TempSensor.cydsn\TempSensor.cyprj|29f38dbe-3341-43b6-b083-9e51e355bf14
+C:\Users\Sarah\Documents\DVCS\Workspace01\LED_blink.cydsn\LED_blink.cyprj|8fbe7f49-b6af-4620-b080-4f6ddc74d500
+C:\Users\Sarah\Documents\DVCS\Workspace01\TimerTest.cydsn\TimerTest.cyprj|bda40749-e019-4a04-9236-ac9312af35e7
+C:\Users\Sarah\Documents\DVCS\Workspace01\SegmentDisplay.cydsn\SegmentDisplay.cyprj|c5eb378c-08aa-4e3e-8258-7561e3d2f957

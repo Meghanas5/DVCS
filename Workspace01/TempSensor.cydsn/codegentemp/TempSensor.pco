@@ -1,5 +1,5 @@
 # TempSensor
-# 2017-04-04 17:45:00Z
+# 2017-04-16 21:19:57Z
 
 # IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
 dont_use_io iocell 0 6
@@ -20,6 +20,8 @@ set_io "Pin_6(0)" iocell 0 2
 set_io "Pin_5(0)" iocell 0 0
 set_io "Pin_7(0)" iocell 0 5
 set_io "Pin_8(0)" iocell 0 3
+set_io "\UART:tx(0)\" iocell 1 5
+set_io "\UART:rx(0)\" iocell 1 4
 set_location "\OneWire:TimerDelay:TimerUDB:status_tc\" 1 0 1 1
 set_location "\OneWire:TimerDelay:TimerUDB:trig_reg\" 1 0 0 0
 set_location "\OneWire:ControlReg_DRV:Sync:ctrl_reg\" 0 1 6
@@ -32,6 +34,7 @@ set_location "\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\" 0 0 2
 set_location "\OneWire:ControlReg_SEL:Sync:ctrl_reg\" 0 0 6
 set_location "\OneWire:Trigger:Sync:ctrl_reg\" 1 1 6
 set_location "\OneWire:isr_DataReady\" interrupt -1 -1 1
+set_location "\UART:SCB\" m0s8scbcell -1 -1 0
 set_location "\OneWire:TimerDelay:TimerUDB:run_mode\" 1 0 1 2
 set_location "Net_60" 1 0 1 0
 set_location "\OneWire:TimerDelay:TimerUDB:timer_enable\" 1 0 0 1

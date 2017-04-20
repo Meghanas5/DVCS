@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
   30:Generated_Source\PSoC4/Pin_2.c ****         #define Pin_2_SetP4PinDriveMode(shift, mode)  \
   31:Generated_Source\PSoC4/Pin_2.c ****         do { \
   32:Generated_Source\PSoC4/Pin_2.c ****             Pin_2_USBIO_CTRL_REG = (Pin_2_USBIO_CTRL_REG & \
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 2
 
 
   33:Generated_Source\PSoC4/Pin_2.c ****                                     (uint32)(~(uint32)(Pin_2_DRIVE_MODE_IND_MASK << \
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
   75:Generated_Source\PSoC4/Pin_2.c ****     }
   38              		.loc 1 75 0
   39              		@ sp needed
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 3
 
 
   40 000e 7047     		bx	lr
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
   57              		.cfi_startproc
   58              	.LVL2:
  113:Generated_Source\PSoC4/Pin_2.c ****     uint8 drVal = (uint8)(Pin_2_DR & (uint8)(~Pin_2_MASK));
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 4
 
 
   59              		.loc 1 113 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  135:Generated_Source\PSoC4/Pin_2.c **** *******************************************************************************/
  136:Generated_Source\PSoC4/Pin_2.c **** uint8 Pin_2_Read(void)
  137:Generated_Source\PSoC4/Pin_2.c **** {
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 5
 
 
   92              		.loc 1 137 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  118              		.cfi_startproc
  166:Generated_Source\PSoC4/Pin_2.c ****     return (uint8)((Pin_2_DR & Pin_2_MASK) >> Pin_2_SHIFT);
  119              		.loc 1 166 0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 6
 
 
  120 0000 024B     		ldr	r3, .L11
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  199:Generated_Source\PSoC4/Pin_2.c **** *  It is recommended that the interrupt be disabled before calling this 
  200:Generated_Source\PSoC4/Pin_2.c **** *  function to avoid unintended interrupt requests. Note that the interrupt
  201:Generated_Source\PSoC4/Pin_2.c **** *  type is port wide, and therefore will trigger for any enabled pin on the 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 7
 
 
  202:Generated_Source\PSoC4/Pin_2.c **** *  port.
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  225:Generated_Source\PSoC4/Pin_2.c **** *  The right-shifted current value of the interrupt status register. Each pin 
  226:Generated_Source\PSoC4/Pin_2.c **** *  has one bit set if it generated an interrupt event. For example, bit 0 is 
  227:Generated_Source\PSoC4/Pin_2.c **** *  for pin 0 and bit 1 is for pin 1 of the Pins component.
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 8
 
 
  228:Generated_Source\PSoC4/Pin_2.c **** *  
@@ -469,48 +469,48 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  204 0006 00000000 		.4byte	.Ldebug_abbrev0
  205 000a 04       		.byte	0x4
  206 000b 01       		.uleb128 0x1
- 207 000c 6D010000 		.4byte	.LASF28
+ 207 000c 65010000 		.4byte	.LASF28
  208 0010 01       		.byte	0x1
- 209 0011 8E000000 		.4byte	.LASF29
- 210 0015 1D000000 		.4byte	.LASF30
+ 209 0011 4B000000 		.4byte	.LASF29
+ 210 0015 0A010000 		.4byte	.LASF30
  211 0019 00000000 		.4byte	.Ldebug_ranges0+0
  212 001d 00000000 		.4byte	0
  213 0021 00000000 		.4byte	.Ldebug_line0
  214 0025 02       		.uleb128 0x2
  215 0026 01       		.byte	0x1
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 9
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 9
 
 
  216 0027 06       		.byte	0x6
- 217 0028 14020000 		.4byte	.LASF0
+ 217 0028 0C020000 		.4byte	.LASF0
  218 002c 02       		.uleb128 0x2
  219 002d 01       		.byte	0x1
  220 002e 08       		.byte	0x8
- 221 002f B3000000 		.4byte	.LASF1
+ 221 002f 70000000 		.4byte	.LASF1
  222 0033 02       		.uleb128 0x2
  223 0034 02       		.byte	0x2
  224 0035 05       		.byte	0x5
- 225 0036 FB010000 		.4byte	.LASF2
+ 225 0036 F3010000 		.4byte	.LASF2
  226 003a 02       		.uleb128 0x2
  227 003b 02       		.byte	0x2
  228 003c 07       		.byte	0x7
- 229 003d D9000000 		.4byte	.LASF3
+ 229 003d 96000000 		.4byte	.LASF3
  230 0041 02       		.uleb128 0x2
  231 0042 04       		.byte	0x4
  232 0043 05       		.byte	0x5
- 233 0044 0B020000 		.4byte	.LASF4
+ 233 0044 03020000 		.4byte	.LASF4
  234 0048 02       		.uleb128 0x2
  235 0049 04       		.byte	0x4
  236 004a 07       		.byte	0x7
- 237 004b C7000000 		.4byte	.LASF5
+ 237 004b 84000000 		.4byte	.LASF5
  238 004f 02       		.uleb128 0x2
  239 0050 08       		.byte	0x8
  240 0051 05       		.byte	0x5
- 241 0052 4D010000 		.4byte	.LASF6
+ 241 0052 45010000 		.4byte	.LASF6
  242 0056 02       		.uleb128 0x2
  243 0057 08       		.byte	0x8
  244 0058 07       		.byte	0x7
- 245 0059 31010000 		.4byte	.LASF7
+ 245 0059 EE000000 		.4byte	.LASF7
  246 005d 03       		.uleb128 0x3
  247 005e 04       		.byte	0x4
  248 005f 05       		.byte	0x5
@@ -518,37 +518,37 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  250 0064 02       		.uleb128 0x2
  251 0065 04       		.byte	0x4
  252 0066 07       		.byte	0x7
- 253 0067 12010000 		.4byte	.LASF8
+ 253 0067 CF000000 		.4byte	.LASF8
  254 006b 04       		.uleb128 0x4
- 255 006c 05020000 		.4byte	.LASF9
+ 255 006c FD010000 		.4byte	.LASF9
  256 0070 02       		.byte	0x2
  257 0071 B901     		.2byte	0x1b9
  258 0073 2C000000 		.4byte	0x2c
  259 0077 04       		.uleb128 0x4
- 260 0078 F3000000 		.4byte	.LASF10
+ 260 0078 B0000000 		.4byte	.LASF10
  261 007c 02       		.byte	0x2
  262 007d BA01     		.2byte	0x1ba
  263 007f 3A000000 		.4byte	0x3a
  264 0083 04       		.uleb128 0x4
- 265 0084 03010000 		.4byte	.LASF11
+ 265 0084 C0000000 		.4byte	.LASF11
  266 0088 02       		.byte	0x2
  267 0089 BB01     		.2byte	0x1bb
  268 008b 48000000 		.4byte	0x48
  269 008f 02       		.uleb128 0x2
  270 0090 04       		.byte	0x4
  271 0091 04       		.byte	0x4
- 272 0092 AD000000 		.4byte	.LASF12
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 10
+ 272 0092 6A000000 		.4byte	.LASF12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 10
 
 
  273 0096 02       		.uleb128 0x2
  274 0097 08       		.byte	0x8
  275 0098 04       		.byte	0x4
- 276 0099 EC000000 		.4byte	.LASF13
+ 276 0099 A9000000 		.4byte	.LASF13
  277 009d 02       		.uleb128 0x2
  278 009e 01       		.byte	0x1
  279 009f 08       		.byte	0x8
- 280 00a0 68010000 		.4byte	.LASF14
+ 280 00a0 60010000 		.4byte	.LASF14
  281 00a4 04       		.uleb128 0x4
  282 00a5 0C000000 		.4byte	.LASF15
  283 00a9 02       		.byte	0x2
@@ -557,7 +557,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  286 00b0 05       		.uleb128 0x5
  287 00b1 83000000 		.4byte	0x83
  288 00b5 06       		.uleb128 0x6
- 289 00b6 7B000000 		.4byte	.LASF16
+ 289 00b6 38000000 		.4byte	.LASF16
  290 00ba 01       		.byte	0x1
  291 00bb 48       		.byte	0x48
  292 00bc 00000000 		.4byte	.LFB0
@@ -566,7 +566,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  295 00c5 9C       		.byte	0x9c
  296 00c6 DA000000 		.4byte	0xda
  297 00ca 07       		.uleb128 0x7
- 298 00cb 48010000 		.4byte	.LASF18
+ 298 00cb 05010000 		.4byte	.LASF18
  299 00cf 01       		.byte	0x1
  300 00d0 48       		.byte	0x48
  301 00d1 6B000000 		.4byte	0x6b
@@ -582,13 +582,13 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  311 00ea 9C       		.byte	0x9c
  312 00eb 0E010000 		.4byte	0x10e
  313 00ef 07       		.uleb128 0x7
- 314 00f0 60000000 		.4byte	.LASF19
+ 314 00f0 1D000000 		.4byte	.LASF19
  315 00f4 01       		.byte	0x1
  316 00f5 6F       		.byte	0x6f
  317 00f6 6B000000 		.4byte	0x6b
  318 00fa 21000000 		.4byte	.LLST1
  319 00fe 08       		.uleb128 0x8
- 320 00ff C1000000 		.4byte	.LASF24
+ 320 00ff 7E000000 		.4byte	.LASF24
  321 0103 01       		.byte	0x1
  322 0104 71       		.byte	0x71
  323 0105 6B000000 		.4byte	0x6b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  327 010f 12000000 		.4byte	.LASF20
  328 0113 01       		.byte	0x1
  329 0114 88       		.byte	0x88
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 11
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 11
 
 
  330 0115 6B000000 		.4byte	0x6b
@@ -607,7 +607,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  333 0121 01       		.uleb128 0x1
  334 0122 9C       		.byte	0x9c
  335 0123 09       		.uleb128 0x9
- 336 0124 1F010000 		.4byte	.LASF21
+ 336 0124 DC000000 		.4byte	.LASF21
  337 0128 01       		.byte	0x1
  338 0129 A4       		.byte	0xa4
  339 012a 6B000000 		.4byte	0x6b
@@ -616,7 +616,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  342 0136 01       		.uleb128 0x1
  343 0137 9C       		.byte	0x9c
  344 0138 06       		.uleb128 0x6
- 345 0139 20020000 		.4byte	.LASF22
+ 345 0139 18020000 		.4byte	.LASF22
  346 013d 01       		.byte	0x1
  347 013e CF       		.byte	0xcf
  348 013f 00000000 		.4byte	.LFB4
@@ -625,20 +625,20 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  351 0148 9C       		.byte	0x9c
  352 0149 77010000 		.4byte	0x177
  353 014d 0A       		.uleb128 0xa
- 354 014e FA000000 		.4byte	.LASF23
+ 354 014e B7000000 		.4byte	.LASF23
  355 0152 01       		.byte	0x1
  356 0153 CF       		.byte	0xcf
  357 0154 77000000 		.4byte	0x77
  358 0158 01       		.uleb128 0x1
  359 0159 50       		.byte	0x50
  360 015a 07       		.uleb128 0x7
- 361 015b 48010000 		.4byte	.LASF18
+ 361 015b 05010000 		.4byte	.LASF18
  362 015f 01       		.byte	0x1
  363 0160 CF       		.byte	0xcf
  364 0161 77000000 		.4byte	0x77
  365 0165 60000000 		.4byte	.LLST3
  366 0169 0B       		.uleb128 0xb
- 367 016a 0A010000 		.4byte	.LASF25
+ 367 016a C7000000 		.4byte	.LASF25
  368 016e 01       		.byte	0x1
  369 016f D1       		.byte	0xd1
  370 0170 83000000 		.4byte	0x83
@@ -646,7 +646,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  372 0175 53       		.byte	0x53
  373 0176 00       		.byte	0
  374 0177 0C       		.uleb128 0xc
- 375 0178 66000000 		.4byte	.LASF26
+ 375 0178 23000000 		.4byte	.LASF26
  376 017c 01       		.byte	0x1
  377 017d EC       		.byte	0xec
  378 017e 6B000000 		.4byte	0x6b
@@ -655,10 +655,10 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  381 018a 01       		.uleb128 0x1
  382 018b 9C       		.byte	0x9c
  383 018c 08       		.uleb128 0x8
- 384 018d 5B010000 		.4byte	.LASF27
+ 384 018d 53010000 		.4byte	.LASF27
  385 0191 01       		.byte	0x1
  386 0192 EE       		.byte	0xee
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 12
 
 
  387 0193 6B000000 		.4byte	0x6b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  441 0030 3B       		.uleb128 0x3b
  442 0031 05       		.uleb128 0x5
  443 0032 49       		.uleb128 0x49
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 13
 
 
  444 0033 13       		.uleb128 0x13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  498 006a 0E       		.uleb128 0xe
  499 006b 3A       		.uleb128 0x3a
  500 006c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 14
 
 
  501 006d 3B       		.uleb128 0x3b
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  555 00a4 0B       		.uleb128 0xb
  556 00a5 3B       		.uleb128 0x3b
  557 00a6 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 15
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 15
 
 
  558 00a7 49       		.uleb128 0x49
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  612 0030 18000000 		.4byte	.LFE1
  613 0034 0400     		.2byte	0x4
  614 0036 F3       		.byte	0xf3
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 16
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 16
 
 
  615 0037 01       		.uleb128 0x1
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  669 0018 00000000 		.4byte	.LFB1
  670 001c 18000000 		.4byte	.LFE1-.LFB1
  671 0020 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 17
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 17
 
 
  672 0024 10000000 		.4byte	.LFE2-.LFB2
@@ -1004,152 +1004,151 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 1
  705 0012 50696E5F 		.ascii	"Pin_2_Read\000"
  705      325F5265 
  705      616400
- 706              	.LASF30:
- 707 001d 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\PSoC Creator\\Workspac"
- 707      73657273 
- 707      5C536172 
- 707      61685C44 
- 707      6F63756D 
- 708 004b 6530315C 		.ascii	"e01\\TempSensor.cydsn\000"
- 708      54656D70 
- 708      53656E73 
- 708      6F722E63 
- 708      7964736E 
- 709              	.LASF19:
- 710 0060 76616C75 		.ascii	"value\000"
- 710      6500
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 18
+ 706              	.LASF19:
+ 707 001d 76616C75 		.ascii	"value\000"
+ 707      6500
+ 708              	.LASF26:
+ 709 0023 50696E5F 		.ascii	"Pin_2_ClearInterrupt\000"
+ 709      325F436C 
+ 709      65617249 
+ 709      6E746572 
+ 709      72757074 
+ 710              	.LASF16:
+ 711 0038 50696E5F 		.ascii	"Pin_2_SetDriveMode\000"
+ 711      325F5365 
+ 711      74447269 
+ 711      76654D6F 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 18
 
 
- 711              	.LASF26:
- 712 0066 50696E5F 		.ascii	"Pin_2_ClearInterrupt\000"
- 712      325F436C 
- 712      65617249 
- 712      6E746572 
- 712      72757074 
- 713              	.LASF16:
- 714 007b 50696E5F 		.ascii	"Pin_2_SetDriveMode\000"
- 714      325F5365 
- 714      74447269 
- 714      76654D6F 
- 714      646500
- 715              	.LASF29:
- 716 008e 47656E65 		.ascii	"Generated_Source\\PSoC4\\Pin_2.c\000"
- 716      72617465 
- 716      645F536F 
- 716      75726365 
- 716      5C50536F 
- 717              	.LASF12:
- 718 00ad 666C6F61 		.ascii	"float\000"
- 718      7400
- 719              	.LASF1:
- 720 00b3 756E7369 		.ascii	"unsigned char\000"
- 720      676E6564 
- 720      20636861 
- 720      7200
- 721              	.LASF24:
- 722 00c1 64725661 		.ascii	"drVal\000"
- 722      6C00
- 723              	.LASF5:
- 724 00c7 6C6F6E67 		.ascii	"long unsigned int\000"
- 724      20756E73 
- 724      69676E65 
- 724      6420696E 
- 724      7400
- 725              	.LASF3:
- 726 00d9 73686F72 		.ascii	"short unsigned int\000"
- 726      7420756E 
- 726      7369676E 
- 726      65642069 
- 726      6E7400
- 727              	.LASF13:
- 728 00ec 646F7562 		.ascii	"double\000"
- 728      6C6500
- 729              	.LASF10:
- 730 00f3 75696E74 		.ascii	"uint16\000"
- 730      313600
- 731              	.LASF23:
- 732 00fa 706F7369 		.ascii	"position\000"
- 732      74696F6E 
- 732      00
- 733              	.LASF11:
- 734 0103 75696E74 		.ascii	"uint32\000"
- 734      333200
- 735              	.LASF25:
- 736 010a 696E7472 		.ascii	"intrCfg\000"
- 736      43666700 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 19
+ 711      646500
+ 712              	.LASF29:
+ 713 004b 47656E65 		.ascii	"Generated_Source\\PSoC4\\Pin_2.c\000"
+ 713      72617465 
+ 713      645F536F 
+ 713      75726365 
+ 713      5C50536F 
+ 714              	.LASF12:
+ 715 006a 666C6F61 		.ascii	"float\000"
+ 715      7400
+ 716              	.LASF1:
+ 717 0070 756E7369 		.ascii	"unsigned char\000"
+ 717      676E6564 
+ 717      20636861 
+ 717      7200
+ 718              	.LASF24:
+ 719 007e 64725661 		.ascii	"drVal\000"
+ 719      6C00
+ 720              	.LASF5:
+ 721 0084 6C6F6E67 		.ascii	"long unsigned int\000"
+ 721      20756E73 
+ 721      69676E65 
+ 721      6420696E 
+ 721      7400
+ 722              	.LASF3:
+ 723 0096 73686F72 		.ascii	"short unsigned int\000"
+ 723      7420756E 
+ 723      7369676E 
+ 723      65642069 
+ 723      6E7400
+ 724              	.LASF13:
+ 725 00a9 646F7562 		.ascii	"double\000"
+ 725      6C6500
+ 726              	.LASF10:
+ 727 00b0 75696E74 		.ascii	"uint16\000"
+ 727      313600
+ 728              	.LASF23:
+ 729 00b7 706F7369 		.ascii	"position\000"
+ 729      74696F6E 
+ 729      00
+ 730              	.LASF11:
+ 731 00c0 75696E74 		.ascii	"uint32\000"
+ 731      333200
+ 732              	.LASF25:
+ 733 00c7 696E7472 		.ascii	"intrCfg\000"
+ 733      43666700 
+ 734              	.LASF8:
+ 735 00cf 756E7369 		.ascii	"unsigned int\000"
+ 735      676E6564 
+ 735      20696E74 
+ 735      00
+ 736              	.LASF21:
+ 737 00dc 50696E5F 		.ascii	"Pin_2_ReadDataReg\000"
+ 737      325F5265 
+ 737      61644461 
+ 737      74615265 
+ 737      6700
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 19
 
 
- 737              	.LASF8:
- 738 0112 756E7369 		.ascii	"unsigned int\000"
- 738      676E6564 
- 738      20696E74 
- 738      00
- 739              	.LASF21:
- 740 011f 50696E5F 		.ascii	"Pin_2_ReadDataReg\000"
- 740      325F5265 
- 740      61644461 
- 740      74615265 
- 740      6700
- 741              	.LASF7:
- 742 0131 6C6F6E67 		.ascii	"long long unsigned int\000"
- 742      206C6F6E 
- 742      6720756E 
- 742      7369676E 
- 742      65642069 
- 743              	.LASF18:
- 744 0148 6D6F6465 		.ascii	"mode\000"
- 744      00
+ 738              	.LASF7:
+ 739 00ee 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 739      206C6F6E 
+ 739      6720756E 
+ 739      7369676E 
+ 739      65642069 
+ 740              	.LASF18:
+ 741 0105 6D6F6465 		.ascii	"mode\000"
+ 741      00
+ 742              	.LASF30:
+ 743 010a 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\Workspace01\\Tem"
+ 743      73657273 
+ 743      5C536172 
+ 743      61685C44 
+ 743      6F63756D 
+ 744 0137 7053656E 		.ascii	"pSensor.cydsn\000"
+ 744      736F722E 
+ 744      63796473 
+ 744      6E00
  745              	.LASF6:
- 746 014d 6C6F6E67 		.ascii	"long long int\000"
+ 746 0145 6C6F6E67 		.ascii	"long long int\000"
  746      206C6F6E 
  746      6720696E 
  746      7400
  747              	.LASF27:
- 748 015b 6D61736B 		.ascii	"maskedStatus\000"
+ 748 0153 6D61736B 		.ascii	"maskedStatus\000"
  748      65645374 
  748      61747573 
  748      00
  749              	.LASF14:
- 750 0168 63686172 		.ascii	"char\000"
+ 750 0160 63686172 		.ascii	"char\000"
  750      00
  751              	.LASF28:
- 752 016d 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 752 0165 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  752      4320342E 
  752      392E3320 
  752      32303135 
  752      30333033 
- 753 01a0 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 753 0198 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  753      20726576 
  753      6973696F 
  753      6E203232 
  753      31323230 
- 754 01d3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 754 01cb 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  754      66756E63 
  754      74696F6E 
  754      2D736563 
  754      74696F6E 
  755              	.LASF2:
- 756 01fb 73686F72 		.ascii	"short int\000"
+ 756 01f3 73686F72 		.ascii	"short int\000"
  756      7420696E 
  756      7400
  757              	.LASF9:
- 758 0205 75696E74 		.ascii	"uint8\000"
+ 758 01fd 75696E74 		.ascii	"uint8\000"
  758      3800
  759              	.LASF4:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccTSaiyS.s 			page 20
+ 760 0203 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccnfKGCE.s 			page 20
 
 
- 760 020b 6C6F6E67 		.ascii	"long int\000"
  760      20696E74 
  760      00
  761              	.LASF0:
- 762 0214 7369676E 		.ascii	"signed char\000"
+ 762 020c 7369676E 		.ascii	"signed char\000"
  762      65642063 
  762      68617200 
  763              	.LASF22:
- 764 0220 50696E5F 		.ascii	"Pin_2_SetInterruptMode\000"
+ 764 0218 50696E5F 		.ascii	"Pin_2_SetInterruptMode\000"
  764      325F5365 
  764      74496E74 
  764      65727275 

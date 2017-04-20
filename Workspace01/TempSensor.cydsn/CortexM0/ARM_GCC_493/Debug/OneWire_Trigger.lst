@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccf6ynM2.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
   30:Generated_Source\PSoC4/OneWire_Trigger.c **** *
   31:Generated_Source\PSoC4/OneWire_Trigger.c **** * Return:
   32:Generated_Source\PSoC4/OneWire_Trigger.c **** *  None.
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccf6ynM2.s 			page 2
 
 
   33:Generated_Source\PSoC4/OneWire_Trigger.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
   55 0004 C0B2     		uxtb	r0, r0
   58:Generated_Source\PSoC4/OneWire_Trigger.c **** }
   56              		.loc 1 58 0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccf6ynM2.s 			page 3
 
 
   57              		@ sp needed
@@ -140,48 +140,48 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
   73 0006 00000000 		.4byte	.Ldebug_abbrev0
   74 000a 04       		.byte	0x4
   75 000b 01       		.uleb128 0x1
-  76 000c 1B010000 		.4byte	.LASF14
+  76 000c 13010000 		.4byte	.LASF14
   77 0010 01       		.byte	0x1
-  78 0011 43000000 		.4byte	.LASF15
-  79 0015 00000000 		.4byte	.LASF16
+  78 0011 00000000 		.4byte	.LASF15
+  79 0015 9A000000 		.4byte	.LASF16
   80 0019 00000000 		.4byte	.Ldebug_ranges0+0
   81 001d 00000000 		.4byte	0
   82 0021 00000000 		.4byte	.Ldebug_line0
   83 0025 02       		.uleb128 0x2
   84 0026 01       		.byte	0x1
   85 0027 06       		.byte	0x6
-  86 0028 C2010000 		.4byte	.LASF0
+  86 0028 BA010000 		.4byte	.LASF0
   87 002c 02       		.uleb128 0x2
   88 002d 01       		.byte	0x1
   89 002e 08       		.byte	0x8
-  90 002f 72000000 		.4byte	.LASF1
+  90 002f 2F000000 		.4byte	.LASF1
   91 0033 02       		.uleb128 0x2
   92 0034 02       		.byte	0x2
   93 0035 05       		.byte	0x5
-  94 0036 A9010000 		.4byte	.LASF2
+  94 0036 A1010000 		.4byte	.LASF2
   95 003a 02       		.uleb128 0x2
   96 003b 02       		.byte	0x2
   97 003c 07       		.byte	0x7
-  98 003d 97000000 		.4byte	.LASF3
+  98 003d 54000000 		.4byte	.LASF3
   99 0041 02       		.uleb128 0x2
  100 0042 04       		.byte	0x4
  101 0043 05       		.byte	0x5
- 102 0044 B9010000 		.4byte	.LASF4
+ 102 0044 B1010000 		.4byte	.LASF4
  103 0048 02       		.uleb128 0x2
  104 0049 04       		.byte	0x4
  105 004a 07       		.byte	0x7
- 106 004b 85000000 		.4byte	.LASF5
+ 106 004b 42000000 		.4byte	.LASF5
  107 004f 02       		.uleb128 0x2
  108 0050 08       		.byte	0x8
  109 0051 05       		.byte	0x5
- 110 0052 F2000000 		.4byte	.LASF6
+ 110 0052 EA000000 		.4byte	.LASF6
  111 0056 02       		.uleb128 0x2
  112 0057 08       		.byte	0x8
  113 0058 07       		.byte	0x7
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccf6ynM2.s 			page 4
 
 
- 114 0059 C6000000 		.4byte	.LASF7
+ 114 0059 83000000 		.4byte	.LASF7
  115 005d 03       		.uleb128 0x3
  116 005e 04       		.byte	0x4
  117 005f 05       		.byte	0x5
@@ -189,33 +189,33 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
  119 0064 02       		.uleb128 0x2
  120 0065 04       		.byte	0x4
  121 0066 07       		.byte	0x7
- 122 0067 B9000000 		.4byte	.LASF8
+ 122 0067 76000000 		.4byte	.LASF8
  123 006b 04       		.uleb128 0x4
- 124 006c B3010000 		.4byte	.LASF12
+ 124 006c AB010000 		.4byte	.LASF12
  125 0070 02       		.byte	0x2
  126 0071 B901     		.2byte	0x1b9
  127 0073 2C000000 		.4byte	0x2c
  128 0077 02       		.uleb128 0x2
  129 0078 04       		.byte	0x4
  130 0079 04       		.byte	0x4
- 131 007a 6C000000 		.4byte	.LASF9
+ 131 007a 29000000 		.4byte	.LASF9
  132 007e 02       		.uleb128 0x2
  133 007f 08       		.byte	0x8
  134 0080 04       		.byte	0x4
- 135 0081 B2000000 		.4byte	.LASF10
+ 135 0081 6F000000 		.4byte	.LASF10
  136 0085 02       		.uleb128 0x2
  137 0086 01       		.byte	0x1
  138 0087 08       		.byte	0x8
- 139 0088 16010000 		.4byte	.LASF11
+ 139 0088 0E010000 		.4byte	.LASF11
  140 008c 04       		.uleb128 0x4
- 141 008d 80000000 		.4byte	.LASF13
+ 141 008d 3D000000 		.4byte	.LASF13
  142 0091 02       		.byte	0x2
  143 0092 6302     		.2byte	0x263
  144 0094 98000000 		.4byte	0x98
  145 0098 05       		.uleb128 0x5
  146 0099 6B000000 		.4byte	0x6b
  147 009d 06       		.uleb128 0x6
- 148 009e 00010000 		.4byte	.LASF17
+ 148 009e F8000000 		.4byte	.LASF17
  149 00a2 01       		.byte	0x1
  150 00a3 23       		.byte	0x23
  151 00a4 00000000 		.4byte	.LFB0
@@ -224,7 +224,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
  154 00ad 9C       		.byte	0x9c
  155 00ae C0000000 		.4byte	0xc0
  156 00b2 07       		.uleb128 0x7
- 157 00b3 AA000000 		.4byte	.LASF18
+ 157 00b3 67000000 		.4byte	.LASF18
  158 00b7 01       		.byte	0x1
  159 00b8 23       		.byte	0x23
  160 00b9 6B000000 		.4byte	0x6b
@@ -232,13 +232,13 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
  162 00be 50       		.byte	0x50
  163 00bf 00       		.byte	0
  164 00c0 08       		.uleb128 0x8
- 165 00c1 DD000000 		.4byte	.LASF19
+ 165 00c1 D5000000 		.4byte	.LASF19
  166 00c5 01       		.byte	0x1
  167 00c6 37       		.byte	0x37
  168 00c7 6B000000 		.4byte	0x6b
  169 00cb 00000000 		.4byte	.LFB1
  170 00cf 0C000000 		.4byte	.LFE1-.LFB1
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccf6ynM2.s 			page 5
 
 
  171 00d3 01       		.uleb128 0x1
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
  225 0031 05       		.uleb128 0x5
  226 0032 49       		.uleb128 0x49
  227 0033 13       		.uleb128 0x13
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccf6ynM2.s 			page 6
 
 
  228 0034 00       		.byte	0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
  282 006b 03       		.uleb128 0x3
  283 006c 0E       		.uleb128 0xe
  284 006d 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccf6ynM2.s 			page 7
 
 
  285 006e 0B       		.uleb128 0xb
@@ -408,118 +408,117 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 1
  327      00000201 
  327      FB0E0D00 
  327      01010101 
- 328              	.LASF16:
- 329 0000 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\PSoC Creator\\Workspac"
- 329      73657273 
- 329      5C536172 
- 329      61685C44 
- 329      6F63756D 
- 330 002e 6530315C 		.ascii	"e01\\TempSensor.cydsn\000"
- 330      54656D70 
- 330      53656E73 
- 330      6F722E63 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 8
+ 328              	.LASF15:
+ 329 0000 47656E65 		.ascii	"Generated_Source\\PSoC4\\OneWire_Trigger.c\000"
+ 329      72617465 
+ 329      645F536F 
+ 329      75726365 
+ 329      5C50536F 
+ 330              	.LASF9:
+ 331 0029 666C6F61 		.ascii	"float\000"
+ 331      7400
+ 332              	.LASF1:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccf6ynM2.s 			page 8
 
 
- 330      7964736E 
- 331              	.LASF15:
- 332 0043 47656E65 		.ascii	"Generated_Source\\PSoC4\\OneWire_Trigger.c\000"
- 332      72617465 
- 332      645F536F 
- 332      75726365 
- 332      5C50536F 
- 333              	.LASF9:
- 334 006c 666C6F61 		.ascii	"float\000"
- 334      7400
- 335              	.LASF1:
- 336 0072 756E7369 		.ascii	"unsigned char\000"
- 336      676E6564 
- 336      20636861 
- 336      7200
- 337              	.LASF13:
- 338 0080 72656738 		.ascii	"reg8\000"
- 338      00
- 339              	.LASF5:
- 340 0085 6C6F6E67 		.ascii	"long unsigned int\000"
- 340      20756E73 
- 340      69676E65 
- 340      6420696E 
- 340      7400
- 341              	.LASF3:
- 342 0097 73686F72 		.ascii	"short unsigned int\000"
- 342      7420756E 
- 342      7369676E 
- 342      65642069 
- 342      6E7400
- 343              	.LASF18:
- 344 00aa 636F6E74 		.ascii	"control\000"
- 344      726F6C00 
- 345              	.LASF10:
- 346 00b2 646F7562 		.ascii	"double\000"
- 346      6C6500
- 347              	.LASF8:
- 348 00b9 756E7369 		.ascii	"unsigned int\000"
- 348      676E6564 
- 348      20696E74 
- 348      00
- 349              	.LASF7:
- 350 00c6 6C6F6E67 		.ascii	"long long unsigned int\000"
- 350      206C6F6E 
- 350      6720756E 
- 350      7369676E 
- 350      65642069 
+ 333 002f 756E7369 		.ascii	"unsigned char\000"
+ 333      676E6564 
+ 333      20636861 
+ 333      7200
+ 334              	.LASF13:
+ 335 003d 72656738 		.ascii	"reg8\000"
+ 335      00
+ 336              	.LASF5:
+ 337 0042 6C6F6E67 		.ascii	"long unsigned int\000"
+ 337      20756E73 
+ 337      69676E65 
+ 337      6420696E 
+ 337      7400
+ 338              	.LASF3:
+ 339 0054 73686F72 		.ascii	"short unsigned int\000"
+ 339      7420756E 
+ 339      7369676E 
+ 339      65642069 
+ 339      6E7400
+ 340              	.LASF18:
+ 341 0067 636F6E74 		.ascii	"control\000"
+ 341      726F6C00 
+ 342              	.LASF10:
+ 343 006f 646F7562 		.ascii	"double\000"
+ 343      6C6500
+ 344              	.LASF8:
+ 345 0076 756E7369 		.ascii	"unsigned int\000"
+ 345      676E6564 
+ 345      20696E74 
+ 345      00
+ 346              	.LASF7:
+ 347 0083 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 347      206C6F6E 
+ 347      6720756E 
+ 347      7369676E 
+ 347      65642069 
+ 348              	.LASF16:
+ 349 009a 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\Workspace01\\Tem"
+ 349      73657273 
+ 349      5C536172 
+ 349      61685C44 
+ 349      6F63756D 
+ 350 00c7 7053656E 		.ascii	"pSensor.cydsn\000"
+ 350      736F722E 
+ 350      63796473 
+ 350      6E00
  351              	.LASF19:
- 352 00dd 4F6E6557 		.ascii	"OneWire_Trigger_Read\000"
+ 352 00d5 4F6E6557 		.ascii	"OneWire_Trigger_Read\000"
  352      6972655F 
  352      54726967 
  352      6765725F 
  352      52656164 
  353              	.LASF6:
- 354 00f2 6C6F6E67 		.ascii	"long long int\000"
+ 354 00ea 6C6F6E67 		.ascii	"long long int\000"
  354      206C6F6E 
  354      6720696E 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccXdshbL.s 			page 9
-
-
  354      7400
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccf6ynM2.s 			page 9
+
+
  355              	.LASF17:
- 356 0100 4F6E6557 		.ascii	"OneWire_Trigger_Write\000"
+ 356 00f8 4F6E6557 		.ascii	"OneWire_Trigger_Write\000"
  356      6972655F 
  356      54726967 
  356      6765725F 
  356      57726974 
  357              	.LASF11:
- 358 0116 63686172 		.ascii	"char\000"
+ 358 010e 63686172 		.ascii	"char\000"
  358      00
  359              	.LASF14:
- 360 011b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 360 0113 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  360      4320342E 
  360      392E3320 
  360      32303135 
  360      30333033 
- 361 014e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 361 0146 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  361      20726576 
  361      6973696F 
  361      6E203232 
  361      31323230 
- 362 0181 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 362 0179 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  362      66756E63 
  362      74696F6E 
  362      2D736563 
  362      74696F6E 
  363              	.LASF2:
- 364 01a9 73686F72 		.ascii	"short int\000"
+ 364 01a1 73686F72 		.ascii	"short int\000"
  364      7420696E 
  364      7400
  365              	.LASF12:
- 366 01b3 75696E74 		.ascii	"uint8\000"
+ 366 01ab 75696E74 		.ascii	"uint8\000"
  366      3800
  367              	.LASF4:
- 368 01b9 6C6F6E67 		.ascii	"long int\000"
+ 368 01b1 6C6F6E67 		.ascii	"long int\000"
  368      20696E74 
  368      00
  369              	.LASF0:
- 370 01c2 7369676E 		.ascii	"signed char\000"
+ 370 01ba 7369676E 		.ascii	"signed char\000"
  370      65642063 
  370      68617200 
  371              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

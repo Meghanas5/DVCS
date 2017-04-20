@@ -20,6 +20,8 @@ int main(void)
 
 	OneWire_Start();
     
+    UART_Start();
+    
     int flag = 1;
     
     for(;;)
@@ -29,7 +31,6 @@ int main(void)
         {
             flag = 0;
             LED_Write(1);
-            CyDelay(3000);
             OneWire_SendTemperatureRequest();
         }
         
@@ -37,12 +38,16 @@ int main(void)
         {
             OneWire_ReadTemperature();
             LED_Write(0);
-            char strMsg[80]={};
+            char* strMsg;
+            strMsg = OneWire_GetTemperatureAsString(0);
+            /*
             sprintf(strMsg,"%.2f\r\n", 
-                    OneWire_GetTemperatureAsFloat(0)   
+                    OneWire_GetTemperatureAsString(0)   
                     //25675 ticks
             );
-            CyDelay(3000);
+            */
+            UART_UartPutString(strMsg);
+            UART_UartPutString("\r\n");
             flag = 1;
         }
         /* Place your application code here. */

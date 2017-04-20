@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
   30:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c **** *
   31:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c **** * Parameters:
   32:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c **** *  void
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 2
 
 
   33:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
   56              		.section	.text.OneWire_TimerDelay_RestoreConfig,"ax",%progbits
   57              		.align	2
   58              		.global	OneWire_TimerDelay_RestoreConfig
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 3
 
 
   59              		.code	16
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
   81 0012 FFF7FEFF 		bl	OneWire_TimerDelay_WriteControlRegister
   82              	.LVL3:
   89:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c ****         #endif /* Restore the enable state of the Timer component */
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 4
 
 
   90:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c ****     #endif /* Restore non retention registers in the UDB implementation only */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  110 0004 1B78     		ldrb	r3, [r3]
  111 0006 5BB2     		sxtb	r3, r3
  112 0008 002B     		cmp	r3, #0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 5
 
 
  113 000a 03DA     		bge	.L8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  134:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c **** ********************************************************************************
  135:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c **** *
  136:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c **** * Summary:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 6
 
 
  137:Generated_Source\PSoC4/OneWire_TimerDelay_PM.c **** *  Restores and enables the user configuration
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  181              		.type	OneWire_TimerDelay_backup, %object
  182              		.size	OneWire_TimerDelay_backup, 6
  183              	OneWire_TimerDelay_backup:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 7
 
 
  184 0000 00000000 		.space	6
@@ -374,80 +374,80 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  193 0006 00000000 		.4byte	.Ldebug_abbrev0
  194 000a 04       		.byte	0x4
  195 000b 01       		.uleb128 0x1
- 196 000c D0010000 		.4byte	.LASF31
+ 196 000c C8010000 		.4byte	.LASF31
  197 0010 01       		.byte	0x1
- 198 0011 30030000 		.4byte	.LASF32
- 199 0015 11000000 		.4byte	.LASF33
+ 198 0011 28030000 		.4byte	.LASF32
+ 199 0015 51010000 		.4byte	.LASF33
  200 0019 00000000 		.4byte	.Ldebug_ranges0+0
  201 001d 00000000 		.4byte	0
  202 0021 00000000 		.4byte	.Ldebug_line0
  203 0025 02       		.uleb128 0x2
  204 0026 01       		.byte	0x1
  205 0027 06       		.byte	0x6
- 206 0028 C9020000 		.4byte	.LASF0
+ 206 0028 C1020000 		.4byte	.LASF0
  207 002c 02       		.uleb128 0x2
  208 002d 01       		.byte	0x1
  209 002e 08       		.byte	0x8
- 210 002f CE000000 		.4byte	.LASF1
+ 210 002f 8B000000 		.4byte	.LASF1
  211 0033 02       		.uleb128 0x2
  212 0034 02       		.byte	0x2
  213 0035 05       		.byte	0x5
- 214 0036 5E020000 		.4byte	.LASF2
+ 214 0036 56020000 		.4byte	.LASF2
  215 003a 02       		.uleb128 0x2
  216 003b 02       		.byte	0x2
  217 003c 07       		.byte	0x7
- 218 003d 54000000 		.4byte	.LASF3
+ 218 003d 11000000 		.4byte	.LASF3
  219 0041 02       		.uleb128 0x2
  220 0042 04       		.byte	0x4
  221 0043 05       		.byte	0x5
- 222 0044 80020000 		.4byte	.LASF4
+ 222 0044 78020000 		.4byte	.LASF4
  223 0048 02       		.uleb128 0x2
  224 0049 04       		.byte	0x4
  225 004a 07       		.byte	0x7
- 226 004b E1000000 		.4byte	.LASF5
+ 226 004b 9E000000 		.4byte	.LASF5
  227 004f 02       		.uleb128 0x2
  228 0050 08       		.byte	0x8
  229 0051 05       		.byte	0x5
- 230 0052 9D010000 		.4byte	.LASF6
+ 230 0052 95010000 		.4byte	.LASF6
  231 0056 02       		.uleb128 0x2
  232 0057 08       		.byte	0x8
  233 0058 07       		.byte	0x7
- 234 0059 7D010000 		.4byte	.LASF7
+ 234 0059 3A010000 		.4byte	.LASF7
  235 005d 03       		.uleb128 0x3
  236 005e 04       		.byte	0x4
  237 005f 05       		.byte	0x5
  238 0060 696E7400 		.ascii	"int\000"
  239 0064 02       		.uleb128 0x2
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 8
 
 
  240 0065 04       		.byte	0x4
  241 0066 07       		.byte	0x7
- 242 0067 48010000 		.4byte	.LASF8
+ 242 0067 05010000 		.4byte	.LASF8
  243 006b 04       		.uleb128 0x4
- 244 006c F3000000 		.4byte	.LASF9
+ 244 006c B0000000 		.4byte	.LASF9
  245 0070 02       		.byte	0x2
  246 0071 B901     		.2byte	0x1b9
  247 0073 2C000000 		.4byte	0x2c
  248 0077 04       		.uleb128 0x4
- 249 0078 27010000 		.4byte	.LASF10
+ 249 0078 E4000000 		.4byte	.LASF10
  250 007c 02       		.byte	0x2
  251 007d BA01     		.2byte	0x1ba
  252 007f 3A000000 		.4byte	0x3a
  253 0083 02       		.uleb128 0x2
  254 0084 04       		.byte	0x4
  255 0085 04       		.byte	0x4
- 256 0086 90000000 		.4byte	.LASF11
+ 256 0086 4D000000 		.4byte	.LASF11
  257 008a 02       		.uleb128 0x2
  258 008b 08       		.byte	0x8
  259 008c 04       		.byte	0x4
- 260 008d 20010000 		.4byte	.LASF12
+ 260 008d DD000000 		.4byte	.LASF12
  261 0091 02       		.uleb128 0x2
  262 0092 01       		.byte	0x1
  263 0093 08       		.byte	0x8
- 264 0094 AB010000 		.4byte	.LASF13
+ 264 0094 A3010000 		.4byte	.LASF13
  265 0098 04       		.uleb128 0x4
- 266 0099 DC000000 		.4byte	.LASF14
+ 266 0099 99000000 		.4byte	.LASF14
  267 009d 02       		.byte	0x2
  268 009e 6302     		.2byte	0x263
  269 00a0 A4000000 		.4byte	0xa4
@@ -456,7 +456,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  272 00a9 02       		.uleb128 0x2
  273 00aa 04       		.byte	0x4
  274 00ab 07       		.byte	0x7
- 275 00ac 94010000 		.4byte	.LASF15
+ 275 00ac 8C010000 		.4byte	.LASF15
  276 00b0 06       		.uleb128 0x6
  277 00b1 06       		.byte	0x6
  278 00b2 03       		.byte	0x3
@@ -469,34 +469,34 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  285 00bf 6B000000 		.4byte	0x6b
  286 00c3 00       		.byte	0
  287 00c4 07       		.uleb128 0x7
- 288 00c5 87000000 		.4byte	.LASF17
+ 288 00c5 44000000 		.4byte	.LASF17
  289 00c9 03       		.byte	0x3
  290 00ca 48       		.byte	0x48
  291 00cb 77000000 		.4byte	0x77
  292 00cf 02       		.byte	0x2
  293 00d0 07       		.uleb128 0x7
- 294 00d1 08030000 		.4byte	.LASF18
+ 294 00d1 00030000 		.4byte	.LASF18
  295 00d5 03       		.byte	0x3
  296 00d6 49       		.byte	0x49
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 9
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 9
 
 
  297 00d7 6B000000 		.4byte	0x6b
  298 00db 04       		.byte	0x4
  299 00dc 07       		.uleb128 0x7
- 300 00dd 1B030000 		.4byte	.LASF19
+ 300 00dd 13030000 		.4byte	.LASF19
  301 00e1 03       		.byte	0x3
  302 00e2 4F       		.byte	0x4f
  303 00e3 6B000000 		.4byte	0x6b
  304 00e7 05       		.byte	0x5
  305 00e8 00       		.byte	0
  306 00e9 08       		.uleb128 0x8
- 307 00ea 67000000 		.4byte	.LASF20
+ 307 00ea 24000000 		.4byte	.LASF20
  308 00ee 03       		.byte	0x3
  309 00ef 53       		.byte	0x53
  310 00f0 B0000000 		.4byte	0xb0
  311 00f4 09       		.uleb128 0x9
- 312 00f5 96000000 		.4byte	.LASF21
+ 312 00f5 53000000 		.4byte	.LASF21
  313 00f9 01       		.byte	0x1
  314 00fa 2B       		.byte	0x2b
  315 00fb 00000000 		.4byte	.LFB2
@@ -512,7 +512,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  325 0117 B0010000 		.4byte	0x1b0
  326 011b 00       		.byte	0
  327 011c 09       		.uleb128 0x9
- 328 011d 89020000 		.4byte	.LASF22
+ 328 011d 81020000 		.4byte	.LASF22
  329 0121 01       		.byte	0x1
  330 0122 4D       		.byte	0x4d
  331 0123 00000000 		.4byte	.LFB3
@@ -528,7 +528,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  341 013f CC010000 		.4byte	0x1cc
  342 0143 00       		.byte	0
  343 0144 09       		.uleb128 0x9
- 344 0145 D5020000 		.4byte	.LASF23
+ 344 0145 CD020000 		.4byte	.LASF23
  345 0149 01       		.byte	0x1
  346 014a 70       		.byte	0x70
  347 014b 00000000 		.4byte	.LFB4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  351 0155 6C010000 		.4byte	0x16c
  352 0159 0A       		.uleb128 0xa
  353 015a 1E000000 		.4byte	.LVL4
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 10
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 10
 
 
  354 015e DD010000 		.4byte	0x1dd
@@ -547,7 +547,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  357 0167 F4000000 		.4byte	0xf4
  358 016b 00       		.byte	0
  359 016c 09       		.uleb128 0x9
- 360 016d 2E010000 		.4byte	.LASF24
+ 360 016d EB000000 		.4byte	.LASF24
  361 0171 01       		.byte	0x1
  362 0172 96       		.byte	0x96
  363 0173 00000000 		.4byte	.LFB5
@@ -563,7 +563,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  373 018f E4010000 		.4byte	0x1e4
  374 0193 00       		.byte	0
  375 0194 0B       		.uleb128 0xb
- 376 0195 B4000000 		.4byte	.LASF34
+ 376 0195 71000000 		.4byte	.LASF34
  377 0199 01       		.byte	0x1
  378 019a 15       		.byte	0x15
  379 019b E9000000 		.4byte	0xe9
@@ -571,17 +571,17 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  381 01a0 03       		.byte	0x3
  382 01a1 00000000 		.4byte	OneWire_TimerDelay_backup
  383 01a5 0C       		.uleb128 0xc
- 384 01a6 AA020000 		.4byte	.LASF25
+ 384 01a6 A2020000 		.4byte	.LASF25
  385 01aa 03       		.byte	0x3
  386 01ab 69       		.byte	0x69
  387 01ac 77000000 		.4byte	0x77
  388 01b0 0C       		.uleb128 0xc
- 389 01b1 F9000000 		.4byte	.LASF26
+ 389 01b1 B6000000 		.4byte	.LASF26
  390 01b5 03       		.byte	0x3
  391 01b6 63       		.byte	0x63
  392 01b7 6B000000 		.4byte	0x6b
  393 01bb 0D       		.uleb128 0xd
- 394 01bc B0010000 		.4byte	.LASF27
+ 394 01bc A8010000 		.4byte	.LASF27
  395 01c0 03       		.byte	0x3
  396 01c1 6A       		.byte	0x6a
  397 01c2 CC010000 		.4byte	0x1cc
@@ -589,7 +589,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  399 01c7 77000000 		.4byte	0x77
  400 01cb 00       		.byte	0
  401 01cc 0D       		.uleb128 0xd
- 402 01cd 55010000 		.4byte	.LASF28
+ 402 01cd 12010000 		.4byte	.LASF28
  403 01d1 03       		.byte	0x3
  404 01d2 64       		.byte	0x64
  405 01d3 DD010000 		.4byte	0x1dd
@@ -597,14 +597,14 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  407 01d8 6B000000 		.4byte	0x6b
  408 01dc 00       		.byte	0
  409 01dd 0F       		.uleb128 0xf
- 410 01de 68020000 		.4byte	.LASF29
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 11
+ 410 01de 60020000 		.4byte	.LASF29
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 11
 
 
  411 01e2 03       		.byte	0x3
  412 01e3 5B       		.byte	0x5b
  413 01e4 0F       		.uleb128 0xf
- 414 01e5 EE020000 		.4byte	.LASF30
+ 414 01e5 E6020000 		.4byte	.LASF30
  415 01e9 03       		.byte	0x3
  416 01ea 8B       		.byte	0x8b
  417 01eb 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  465 002d 0E       		.uleb128 0xe
  466 002e 3A       		.uleb128 0x3a
  467 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 12
 
 
  468 0030 3B       		.uleb128 0x3b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  522 0066 09       		.uleb128 0x9
  523 0067 2E       		.uleb128 0x2e
  524 0068 01       		.byte	0x1
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 13
 
 
  525 0069 3F       		.uleb128 0x3f
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  579 00a2 0B       		.uleb128 0xb
  580 00a3 3B       		.uleb128 0x3b
  581 00a4 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 14
 
 
  582 00a5 27       		.uleb128 0x27
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  636 0004 0200     		.2byte	0x2
  637 0006 00000000 		.4byte	.Ldebug_info0
  638 000a 04       		.byte	0x4
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 15
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 15
 
 
  639 000b 00       		.byte	0
@@ -879,199 +879,198 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 1
  668      626C6553 
  668      74617465 
  668      00
- 669              	.LASF33:
- 670 0011 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\PSoC Creator\\Workspac"
- 670      73657273 
- 670      5C536172 
- 670      61685C44 
- 670      6F63756D 
- 671 003f 6530315C 		.ascii	"e01\\TempSensor.cydsn\000"
- 671      54656D70 
- 671      53656E73 
- 671      6F722E63 
- 671      7964736E 
- 672              	.LASF3:
- 673 0054 73686F72 		.ascii	"short unsigned int\000"
- 673      7420756E 
- 673      7369676E 
- 673      65642069 
- 673      6E7400
- 674              	.LASF20:
- 675 0067 4F6E6557 		.ascii	"OneWire_TimerDelay_backupStruct\000"
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 16
+ 669              	.LASF3:
+ 670 0011 73686F72 		.ascii	"short unsigned int\000"
+ 670      7420756E 
+ 670      7369676E 
+ 670      65642069 
+ 670      6E7400
+ 671              	.LASF20:
+ 672 0024 4F6E6557 		.ascii	"OneWire_TimerDelay_backupStruct\000"
+ 672      6972655F 
+ 672      54696D65 
+ 672      7244656C 
+ 672      61795F62 
+ 673              	.LASF17:
+ 674 0044 54696D65 		.ascii	"TimerUdb\000"
+ 674      72556462 
+ 674      00
+ 675              	.LASF11:
+ 676 004d 666C6F61 		.ascii	"float\000"
+ 676      7400
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 16
 
 
- 675      6972655F 
- 675      54696D65 
- 675      7244656C 
- 675      61795F62 
- 676              	.LASF17:
- 677 0087 54696D65 		.ascii	"TimerUdb\000"
- 677      72556462 
- 677      00
- 678              	.LASF11:
- 679 0090 666C6F61 		.ascii	"float\000"
- 679      7400
- 680              	.LASF21:
- 681 0096 4F6E6557 		.ascii	"OneWire_TimerDelay_SaveConfig\000"
- 681      6972655F 
- 681      54696D65 
- 681      7244656C 
- 681      61795F53 
- 682              	.LASF34:
- 683 00b4 4F6E6557 		.ascii	"OneWire_TimerDelay_backup\000"
- 683      6972655F 
- 683      54696D65 
- 683      7244656C 
- 683      61795F62 
- 684              	.LASF1:
- 685 00ce 756E7369 		.ascii	"unsigned char\000"
- 685      676E6564 
- 685      20636861 
- 685      7200
- 686              	.LASF14:
- 687 00dc 72656738 		.ascii	"reg8\000"
- 687      00
- 688              	.LASF5:
- 689 00e1 6C6F6E67 		.ascii	"long unsigned int\000"
- 689      20756E73 
- 689      69676E65 
- 689      6420696E 
- 689      7400
- 690              	.LASF9:
- 691 00f3 75696E74 		.ascii	"uint8\000"
- 691      3800
- 692              	.LASF26:
- 693 00f9 4F6E6557 		.ascii	"OneWire_TimerDelay_ReadControlRegister\000"
- 693      6972655F 
- 693      54696D65 
- 693      7244656C 
- 693      61795F52 
- 694              	.LASF12:
- 695 0120 646F7562 		.ascii	"double\000"
- 695      6C6500
- 696              	.LASF10:
- 697 0127 75696E74 		.ascii	"uint16\000"
- 697      313600
- 698              	.LASF24:
- 699 012e 4F6E6557 		.ascii	"OneWire_TimerDelay_Wakeup\000"
- 699      6972655F 
- 699      54696D65 
- 699      7244656C 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 17
+ 677              	.LASF21:
+ 678 0053 4F6E6557 		.ascii	"OneWire_TimerDelay_SaveConfig\000"
+ 678      6972655F 
+ 678      54696D65 
+ 678      7244656C 
+ 678      61795F53 
+ 679              	.LASF34:
+ 680 0071 4F6E6557 		.ascii	"OneWire_TimerDelay_backup\000"
+ 680      6972655F 
+ 680      54696D65 
+ 680      7244656C 
+ 680      61795F62 
+ 681              	.LASF1:
+ 682 008b 756E7369 		.ascii	"unsigned char\000"
+ 682      676E6564 
+ 682      20636861 
+ 682      7200
+ 683              	.LASF14:
+ 684 0099 72656738 		.ascii	"reg8\000"
+ 684      00
+ 685              	.LASF5:
+ 686 009e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 686      20756E73 
+ 686      69676E65 
+ 686      6420696E 
+ 686      7400
+ 687              	.LASF9:
+ 688 00b0 75696E74 		.ascii	"uint8\000"
+ 688      3800
+ 689              	.LASF26:
+ 690 00b6 4F6E6557 		.ascii	"OneWire_TimerDelay_ReadControlRegister\000"
+ 690      6972655F 
+ 690      54696D65 
+ 690      7244656C 
+ 690      61795F52 
+ 691              	.LASF12:
+ 692 00dd 646F7562 		.ascii	"double\000"
+ 692      6C6500
+ 693              	.LASF10:
+ 694 00e4 75696E74 		.ascii	"uint16\000"
+ 694      313600
+ 695              	.LASF24:
+ 696 00eb 4F6E6557 		.ascii	"OneWire_TimerDelay_Wakeup\000"
+ 696      6972655F 
+ 696      54696D65 
+ 696      7244656C 
+ 696      61795F57 
+ 697              	.LASF8:
+ 698 0105 756E7369 		.ascii	"unsigned int\000"
+ 698      676E6564 
+ 698      20696E74 
+ 698      00
+ 699              	.LASF28:
+ 700 0112 4F6E6557 		.ascii	"OneWire_TimerDelay_WriteControlRegister\000"
+ 700      6972655F 
+ 700      54696D65 
+ 700      7244656C 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 17
 
 
- 699      61795F57 
- 700              	.LASF8:
- 701 0148 756E7369 		.ascii	"unsigned int\000"
- 701      676E6564 
- 701      20696E74 
- 701      00
- 702              	.LASF28:
- 703 0155 4F6E6557 		.ascii	"OneWire_TimerDelay_WriteControlRegister\000"
- 703      6972655F 
- 703      54696D65 
- 703      7244656C 
- 703      61795F57 
- 704              	.LASF7:
- 705 017d 6C6F6E67 		.ascii	"long long unsigned int\000"
- 705      206C6F6E 
- 705      6720756E 
- 705      7369676E 
- 705      65642069 
+ 700      61795F57 
+ 701              	.LASF7:
+ 702 013a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 702      206C6F6E 
+ 702      6720756E 
+ 702      7369676E 
+ 702      65642069 
+ 703              	.LASF33:
+ 704 0151 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\Workspace01\\Tem"
+ 704      73657273 
+ 704      5C536172 
+ 704      61685C44 
+ 704      6F63756D 
+ 705 017e 7053656E 		.ascii	"pSensor.cydsn\000"
+ 705      736F722E 
+ 705      63796473 
+ 705      6E00
  706              	.LASF15:
- 707 0194 73697A65 		.ascii	"sizetype\000"
+ 707 018c 73697A65 		.ascii	"sizetype\000"
  707      74797065 
  707      00
  708              	.LASF6:
- 709 019d 6C6F6E67 		.ascii	"long long int\000"
+ 709 0195 6C6F6E67 		.ascii	"long long int\000"
  709      206C6F6E 
  709      6720696E 
  709      7400
  710              	.LASF13:
- 711 01ab 63686172 		.ascii	"char\000"
+ 711 01a3 63686172 		.ascii	"char\000"
  711      00
  712              	.LASF27:
- 713 01b0 4F6E6557 		.ascii	"OneWire_TimerDelay_WriteCounter\000"
+ 713 01a8 4F6E6557 		.ascii	"OneWire_TimerDelay_WriteCounter\000"
  713      6972655F 
  713      54696D65 
  713      7244656C 
  713      61795F57 
  714              	.LASF31:
- 715 01d0 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 715 01c8 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  715      4320342E 
  715      392E3320 
  715      32303135 
  715      30333033 
- 716 0203 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 716 01fb 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  716      20726576 
  716      6973696F 
  716      6E203232 
  716      31323230 
- 717 0236 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 717 022e 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  717      66756E63 
  717      74696F6E 
  717      2D736563 
  717      74696F6E 
  718              	.LASF2:
- 719 025e 73686F72 		.ascii	"short int\000"
+ 719 0256 73686F72 		.ascii	"short int\000"
  719      7420696E 
  719      7400
  720              	.LASF29:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccX9sDNm.s 			page 18
+ 721 0260 4F6E6557 		.ascii	"OneWire_TimerDelay_Stop\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccvUBpbE.s 			page 18
 
 
- 721 0268 4F6E6557 		.ascii	"OneWire_TimerDelay_Stop\000"
  721      6972655F 
  721      54696D65 
  721      7244656C 
  721      61795F53 
  722              	.LASF4:
- 723 0280 6C6F6E67 		.ascii	"long int\000"
+ 723 0278 6C6F6E67 		.ascii	"long int\000"
  723      20696E74 
  723      00
  724              	.LASF22:
- 725 0289 4F6E6557 		.ascii	"OneWire_TimerDelay_RestoreConfig\000"
+ 725 0281 4F6E6557 		.ascii	"OneWire_TimerDelay_RestoreConfig\000"
  725      6972655F 
  725      54696D65 
  725      7244656C 
  725      61795F52 
  726              	.LASF25:
- 727 02aa 4F6E6557 		.ascii	"OneWire_TimerDelay_ReadCounter\000"
+ 727 02a2 4F6E6557 		.ascii	"OneWire_TimerDelay_ReadCounter\000"
  727      6972655F 
  727      54696D65 
  727      7244656C 
  727      61795F52 
  728              	.LASF0:
- 729 02c9 7369676E 		.ascii	"signed char\000"
+ 729 02c1 7369676E 		.ascii	"signed char\000"
  729      65642063 
  729      68617200 
  730              	.LASF23:
- 731 02d5 4F6E6557 		.ascii	"OneWire_TimerDelay_Sleep\000"
+ 731 02cd 4F6E6557 		.ascii	"OneWire_TimerDelay_Sleep\000"
  731      6972655F 
  731      54696D65 
  731      7244656C 
  731      61795F53 
  732              	.LASF30:
- 733 02ee 4F6E6557 		.ascii	"OneWire_TimerDelay_Enable\000"
+ 733 02e6 4F6E6557 		.ascii	"OneWire_TimerDelay_Enable\000"
  733      6972655F 
  733      54696D65 
  733      7244656C 
  733      61795F45 
  734              	.LASF18:
- 735 0308 496E7465 		.ascii	"InterruptMaskValue\000"
+ 735 0300 496E7465 		.ascii	"InterruptMaskValue\000"
  735      72727570 
  735      744D6173 
  735      6B56616C 
  735      756500
  736              	.LASF19:
- 737 031b 54696D65 		.ascii	"TimerControlRegister\000"
+ 737 0313 54696D65 		.ascii	"TimerControlRegister\000"
  737      72436F6E 
  737      74726F6C 
  737      52656769 
  737      73746572 
  738              	.LASF32:
- 739 0330 47656E65 		.ascii	"Generated_Source\\PSoC4\\OneWire_TimerDelay_PM.c\000"
+ 739 0328 47656E65 		.ascii	"Generated_Source\\PSoC4\\OneWire_TimerDelay_PM.c\000"
  739      72617465 
  739      645F536F 
  739      75726365 

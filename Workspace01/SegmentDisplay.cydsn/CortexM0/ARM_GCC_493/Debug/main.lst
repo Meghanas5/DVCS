@@ -1,0 +1,667 @@
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.main,"ax",%progbits
+  18              		.align	2
+  19              		.global	main
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	main, %function
+  23              	main:
+  24              	.LFB37:
+  25              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** 
+  14:main.c        **** int main(void)
+  15:main.c        **** {
+  26              		.loc 1 15 0
+  27              		.cfi_startproc
+  28 0000 10B5     		push	{r4, lr}
+  29              		.cfi_def_cfa_offset 8
+  30              		.cfi_offset 4, -8
+  31              		.cfi_offset 14, -4
+  16:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  32              		.loc 1 16 0
+  33              	@ 16 "main.c" 1
+  34 0002 62B6     		CPSIE   i
+  35              	@ 0 "" 2
+  17:main.c        ****     
+  18:main.c        ****     LCD_Seg_1_Start();
+  36              		.loc 1 18 0
+  37              		.code	16
+  38 0004 FFF7FEFF 		bl	LCD_Seg_1_Start
+  39              	.LVL0:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 2
+
+
+  19:main.c        ****     LCD_Seg_1_ClearDisplay();
+  40              		.loc 1 19 0
+  41 0008 FFF7FEFF 		bl	LCD_Seg_1_ClearDisplay
+  42              	.LVL1:
+  20:main.c        ****     
+  21:main.c        **** 
+  22:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  23:main.c        ****     int i = 0;
+  43              		.loc 1 23 0
+  44 000c 0024     		mov	r4, #0
+  45              	.LVL2:
+  46              	.L3:
+  24:main.c        ****     for(;;)
+  25:main.c        ****     {
+  26:main.c        ****         if (++i == 10)
+  47              		.loc 1 26 0
+  48 000e 0134     		add	r4, r4, #1
+  49              	.LVL3:
+  50 0010 0A2C     		cmp	r4, #10
+  51 0012 00D1     		bne	.L2
+  27:main.c        ****             i = 0;
+  52              		.loc 1 27 0
+  53 0014 0024     		mov	r4, #0
+  54              	.LVL4:
+  55              	.L2:
+  28:main.c        ****         LCD_Seg_1_Write7SegDigit_0(i, 0);
+  56              		.loc 1 28 0
+  57 0016 201C     		mov	r0, r4
+  58 0018 0021     		mov	r1, #0
+  59 001a FFF7FEFF 		bl	LCD_Seg_1_Write7SegDigit_0
+  60              	.LVL5:
+  29:main.c        ****         CyDelay(1000);
+  61              		.loc 1 29 0
+  62 001e FA20     		mov	r0, #250
+  63 0020 8000     		lsl	r0, r0, #2
+  64 0022 FFF7FEFF 		bl	CyDelay
+  65              	.LVL6:
+  30:main.c        ****         LCD_Seg_1_ClearDisplay();
+  66              		.loc 1 30 0
+  67 0026 FFF7FEFF 		bl	LCD_Seg_1_ClearDisplay
+  68              	.LVL7:
+  31:main.c        ****         CyDelay(300);
+  69              		.loc 1 31 0
+  70 002a 9620     		mov	r0, #150
+  71 002c 4000     		lsl	r0, r0, #1
+  72 002e FFF7FEFF 		bl	CyDelay
+  73              	.LVL8:
+  32:main.c        ****         /* Place your application code here. */
+  33:main.c        ****     }
+  74              		.loc 1 33 0
+  75 0032 ECE7     		b	.L3
+  76              		.cfi_endproc
+  77              	.LFE37:
+  78              		.size	main, .-main
+  79              		.text
+  80              	.Letext0:
+  81              		.file 2 "Generated_Source\\PSoC4/LCD_Seg_1.h"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 3
+
+
+  82              		.file 3 "Generated_Source\\PSoC4/cytypes.h"
+  83              		.file 4 "Generated_Source\\PSoC4/CyLib.h"
+  84              		.section	.debug_info,"",%progbits
+  85              	.Ldebug_info0:
+  86 0000 42010000 		.4byte	0x142
+  87 0004 0400     		.2byte	0x4
+  88 0006 00000000 		.4byte	.Ldebug_abbrev0
+  89 000a 04       		.byte	0x4
+  90 000b 01       		.uleb128 0x1
+  91 000c 11010000 		.4byte	.LASF15
+  92 0010 01       		.byte	0x1
+  93 0011 22000000 		.4byte	.LASF16
+  94 0015 65000000 		.4byte	.LASF17
+  95 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  96 001d 00000000 		.4byte	0
+  97 0021 00000000 		.4byte	.Ldebug_line0
+  98 0025 02       		.uleb128 0x2
+  99 0026 01       		.byte	0x1
+ 100 0027 06       		.byte	0x6
+ 101 0028 05010000 		.4byte	.LASF0
+ 102 002c 02       		.uleb128 0x2
+ 103 002d 01       		.byte	0x1
+ 104 002e 08       		.byte	0x8
+ 105 002f A9000000 		.4byte	.LASF1
+ 106 0033 02       		.uleb128 0x2
+ 107 0034 02       		.byte	0x2
+ 108 0035 05       		.byte	0x5
+ 109 0036 9F010000 		.4byte	.LASF2
+ 110 003a 02       		.uleb128 0x2
+ 111 003b 02       		.byte	0x2
+ 112 003c 07       		.byte	0x7
+ 113 003d F2000000 		.4byte	.LASF3
+ 114 0041 02       		.uleb128 0x2
+ 115 0042 04       		.byte	0x4
+ 116 0043 05       		.byte	0x5
+ 117 0044 C7000000 		.4byte	.LASF4
+ 118 0048 02       		.uleb128 0x2
+ 119 0049 04       		.byte	0x4
+ 120 004a 07       		.byte	0x7
+ 121 004b 36000000 		.4byte	.LASF5
+ 122 004f 02       		.uleb128 0x2
+ 123 0050 08       		.byte	0x8
+ 124 0051 05       		.byte	0x5
+ 125 0052 00000000 		.4byte	.LASF6
+ 126 0056 02       		.uleb128 0x2
+ 127 0057 08       		.byte	0x8
+ 128 0058 07       		.byte	0x7
+ 129 0059 48000000 		.4byte	.LASF7
+ 130 005d 03       		.uleb128 0x3
+ 131 005e 04       		.byte	0x4
+ 132 005f 05       		.byte	0x5
+ 133 0060 696E7400 		.ascii	"int\000"
+ 134 0064 02       		.uleb128 0x2
+ 135 0065 04       		.byte	0x4
+ 136 0066 07       		.byte	0x7
+ 137 0067 15000000 		.4byte	.LASF8
+ 138 006b 04       		.uleb128 0x4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 4
+
+
+ 139 006c 0E000000 		.4byte	.LASF18
+ 140 0070 03       		.byte	0x3
+ 141 0071 BB01     		.2byte	0x1bb
+ 142 0073 48000000 		.4byte	0x48
+ 143 0077 02       		.uleb128 0x2
+ 144 0078 04       		.byte	0x4
+ 145 0079 04       		.byte	0x4
+ 146 007a 5F000000 		.4byte	.LASF9
+ 147 007e 02       		.uleb128 0x2
+ 148 007f 08       		.byte	0x8
+ 149 0080 04       		.byte	0x4
+ 150 0081 EB000000 		.4byte	.LASF10
+ 151 0085 02       		.uleb128 0x2
+ 152 0086 01       		.byte	0x1
+ 153 0087 08       		.byte	0x8
+ 154 0088 A4000000 		.4byte	.LASF11
+ 155 008c 02       		.uleb128 0x2
+ 156 008d 04       		.byte	0x4
+ 157 008e 07       		.byte	0x7
+ 158 008f C0010000 		.4byte	.LASF12
+ 159 0093 05       		.uleb128 0x5
+ 160 0094 29000000 		.4byte	.LASF19
+ 161 0098 01       		.byte	0x1
+ 162 0099 0E       		.byte	0xe
+ 163 009a 5D000000 		.4byte	0x5d
+ 164 009e 00000000 		.4byte	.LFB37
+ 165 00a2 34000000 		.4byte	.LFE37-.LFB37
+ 166 00a6 01       		.uleb128 0x1
+ 167 00a7 9C       		.byte	0x9c
+ 168 00a8 14010000 		.4byte	0x114
+ 169 00ac 06       		.uleb128 0x6
+ 170 00ad 6900     		.ascii	"i\000"
+ 171 00af 01       		.byte	0x1
+ 172 00b0 17       		.byte	0x17
+ 173 00b1 5D000000 		.4byte	0x5d
+ 174 00b5 00000000 		.4byte	.LLST0
+ 175 00b9 07       		.uleb128 0x7
+ 176 00ba 08000000 		.4byte	.LVL0
+ 177 00be 14010000 		.4byte	0x114
+ 178 00c2 07       		.uleb128 0x7
+ 179 00c3 0C000000 		.4byte	.LVL1
+ 180 00c7 1B010000 		.4byte	0x11b
+ 181 00cb 08       		.uleb128 0x8
+ 182 00cc 1E000000 		.4byte	.LVL5
+ 183 00d0 22010000 		.4byte	0x122
+ 184 00d4 E4000000 		.4byte	0xe4
+ 185 00d8 09       		.uleb128 0x9
+ 186 00d9 01       		.uleb128 0x1
+ 187 00da 51       		.byte	0x51
+ 188 00db 01       		.uleb128 0x1
+ 189 00dc 30       		.byte	0x30
+ 190 00dd 09       		.uleb128 0x9
+ 191 00de 01       		.uleb128 0x1
+ 192 00df 50       		.byte	0x50
+ 193 00e0 02       		.uleb128 0x2
+ 194 00e1 74       		.byte	0x74
+ 195 00e2 00       		.sleb128 0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 5
+
+
+ 196 00e3 00       		.byte	0
+ 197 00e4 08       		.uleb128 0x8
+ 198 00e5 26000000 		.4byte	.LVL6
+ 199 00e9 38010000 		.4byte	0x138
+ 200 00ed F9000000 		.4byte	0xf9
+ 201 00f1 09       		.uleb128 0x9
+ 202 00f2 01       		.uleb128 0x1
+ 203 00f3 50       		.byte	0x50
+ 204 00f4 03       		.uleb128 0x3
+ 205 00f5 0A       		.byte	0xa
+ 206 00f6 E803     		.2byte	0x3e8
+ 207 00f8 00       		.byte	0
+ 208 00f9 07       		.uleb128 0x7
+ 209 00fa 2A000000 		.4byte	.LVL7
+ 210 00fe 1B010000 		.4byte	0x11b
+ 211 0102 0A       		.uleb128 0xa
+ 212 0103 32000000 		.4byte	.LVL8
+ 213 0107 38010000 		.4byte	0x138
+ 214 010b 09       		.uleb128 0x9
+ 215 010c 01       		.uleb128 0x1
+ 216 010d 50       		.byte	0x50
+ 217 010e 03       		.uleb128 0x3
+ 218 010f 0A       		.byte	0xa
+ 219 0110 2C01     		.2byte	0x12c
+ 220 0112 00       		.byte	0
+ 221 0113 00       		.byte	0
+ 222 0114 0B       		.uleb128 0xb
+ 223 0115 B7000000 		.4byte	.LASF13
+ 224 0119 02       		.byte	0x2
+ 225 011a 31       		.byte	0x31
+ 226 011b 0B       		.uleb128 0xb
+ 227 011c A9010000 		.4byte	.LASF14
+ 228 0120 02       		.byte	0x2
+ 229 0121 3A       		.byte	0x3a
+ 230 0122 0C       		.uleb128 0xc
+ 231 0123 D0000000 		.4byte	.LASF20
+ 232 0127 02       		.byte	0x2
+ 233 0128 42       		.byte	0x42
+ 234 0129 38010000 		.4byte	0x138
+ 235 012d 0D       		.uleb128 0xd
+ 236 012e 6B000000 		.4byte	0x6b
+ 237 0132 0D       		.uleb128 0xd
+ 238 0133 6B000000 		.4byte	0x6b
+ 239 0137 00       		.byte	0
+ 240 0138 0E       		.uleb128 0xe
+ 241 0139 2E000000 		.4byte	.LASF21
+ 242 013d 04       		.byte	0x4
+ 243 013e D9       		.byte	0xd9
+ 244 013f 0D       		.uleb128 0xd
+ 245 0140 6B000000 		.4byte	0x6b
+ 246 0144 00       		.byte	0
+ 247 0145 00       		.byte	0
+ 248              		.section	.debug_abbrev,"",%progbits
+ 249              	.Ldebug_abbrev0:
+ 250 0000 01       		.uleb128 0x1
+ 251 0001 11       		.uleb128 0x11
+ 252 0002 01       		.byte	0x1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 6
+
+
+ 253 0003 25       		.uleb128 0x25
+ 254 0004 0E       		.uleb128 0xe
+ 255 0005 13       		.uleb128 0x13
+ 256 0006 0B       		.uleb128 0xb
+ 257 0007 03       		.uleb128 0x3
+ 258 0008 0E       		.uleb128 0xe
+ 259 0009 1B       		.uleb128 0x1b
+ 260 000a 0E       		.uleb128 0xe
+ 261 000b 55       		.uleb128 0x55
+ 262 000c 17       		.uleb128 0x17
+ 263 000d 11       		.uleb128 0x11
+ 264 000e 01       		.uleb128 0x1
+ 265 000f 10       		.uleb128 0x10
+ 266 0010 17       		.uleb128 0x17
+ 267 0011 00       		.byte	0
+ 268 0012 00       		.byte	0
+ 269 0013 02       		.uleb128 0x2
+ 270 0014 24       		.uleb128 0x24
+ 271 0015 00       		.byte	0
+ 272 0016 0B       		.uleb128 0xb
+ 273 0017 0B       		.uleb128 0xb
+ 274 0018 3E       		.uleb128 0x3e
+ 275 0019 0B       		.uleb128 0xb
+ 276 001a 03       		.uleb128 0x3
+ 277 001b 0E       		.uleb128 0xe
+ 278 001c 00       		.byte	0
+ 279 001d 00       		.byte	0
+ 280 001e 03       		.uleb128 0x3
+ 281 001f 24       		.uleb128 0x24
+ 282 0020 00       		.byte	0
+ 283 0021 0B       		.uleb128 0xb
+ 284 0022 0B       		.uleb128 0xb
+ 285 0023 3E       		.uleb128 0x3e
+ 286 0024 0B       		.uleb128 0xb
+ 287 0025 03       		.uleb128 0x3
+ 288 0026 08       		.uleb128 0x8
+ 289 0027 00       		.byte	0
+ 290 0028 00       		.byte	0
+ 291 0029 04       		.uleb128 0x4
+ 292 002a 16       		.uleb128 0x16
+ 293 002b 00       		.byte	0
+ 294 002c 03       		.uleb128 0x3
+ 295 002d 0E       		.uleb128 0xe
+ 296 002e 3A       		.uleb128 0x3a
+ 297 002f 0B       		.uleb128 0xb
+ 298 0030 3B       		.uleb128 0x3b
+ 299 0031 05       		.uleb128 0x5
+ 300 0032 49       		.uleb128 0x49
+ 301 0033 13       		.uleb128 0x13
+ 302 0034 00       		.byte	0
+ 303 0035 00       		.byte	0
+ 304 0036 05       		.uleb128 0x5
+ 305 0037 2E       		.uleb128 0x2e
+ 306 0038 01       		.byte	0x1
+ 307 0039 3F       		.uleb128 0x3f
+ 308 003a 19       		.uleb128 0x19
+ 309 003b 03       		.uleb128 0x3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 7
+
+
+ 310 003c 0E       		.uleb128 0xe
+ 311 003d 3A       		.uleb128 0x3a
+ 312 003e 0B       		.uleb128 0xb
+ 313 003f 3B       		.uleb128 0x3b
+ 314 0040 0B       		.uleb128 0xb
+ 315 0041 27       		.uleb128 0x27
+ 316 0042 19       		.uleb128 0x19
+ 317 0043 49       		.uleb128 0x49
+ 318 0044 13       		.uleb128 0x13
+ 319 0045 11       		.uleb128 0x11
+ 320 0046 01       		.uleb128 0x1
+ 321 0047 12       		.uleb128 0x12
+ 322 0048 06       		.uleb128 0x6
+ 323 0049 40       		.uleb128 0x40
+ 324 004a 18       		.uleb128 0x18
+ 325 004b 9742     		.uleb128 0x2117
+ 326 004d 19       		.uleb128 0x19
+ 327 004e 01       		.uleb128 0x1
+ 328 004f 13       		.uleb128 0x13
+ 329 0050 00       		.byte	0
+ 330 0051 00       		.byte	0
+ 331 0052 06       		.uleb128 0x6
+ 332 0053 34       		.uleb128 0x34
+ 333 0054 00       		.byte	0
+ 334 0055 03       		.uleb128 0x3
+ 335 0056 08       		.uleb128 0x8
+ 336 0057 3A       		.uleb128 0x3a
+ 337 0058 0B       		.uleb128 0xb
+ 338 0059 3B       		.uleb128 0x3b
+ 339 005a 0B       		.uleb128 0xb
+ 340 005b 49       		.uleb128 0x49
+ 341 005c 13       		.uleb128 0x13
+ 342 005d 02       		.uleb128 0x2
+ 343 005e 17       		.uleb128 0x17
+ 344 005f 00       		.byte	0
+ 345 0060 00       		.byte	0
+ 346 0061 07       		.uleb128 0x7
+ 347 0062 898201   		.uleb128 0x4109
+ 348 0065 00       		.byte	0
+ 349 0066 11       		.uleb128 0x11
+ 350 0067 01       		.uleb128 0x1
+ 351 0068 31       		.uleb128 0x31
+ 352 0069 13       		.uleb128 0x13
+ 353 006a 00       		.byte	0
+ 354 006b 00       		.byte	0
+ 355 006c 08       		.uleb128 0x8
+ 356 006d 898201   		.uleb128 0x4109
+ 357 0070 01       		.byte	0x1
+ 358 0071 11       		.uleb128 0x11
+ 359 0072 01       		.uleb128 0x1
+ 360 0073 31       		.uleb128 0x31
+ 361 0074 13       		.uleb128 0x13
+ 362 0075 01       		.uleb128 0x1
+ 363 0076 13       		.uleb128 0x13
+ 364 0077 00       		.byte	0
+ 365 0078 00       		.byte	0
+ 366 0079 09       		.uleb128 0x9
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 8
+
+
+ 367 007a 8A8201   		.uleb128 0x410a
+ 368 007d 00       		.byte	0
+ 369 007e 02       		.uleb128 0x2
+ 370 007f 18       		.uleb128 0x18
+ 371 0080 9142     		.uleb128 0x2111
+ 372 0082 18       		.uleb128 0x18
+ 373 0083 00       		.byte	0
+ 374 0084 00       		.byte	0
+ 375 0085 0A       		.uleb128 0xa
+ 376 0086 898201   		.uleb128 0x4109
+ 377 0089 01       		.byte	0x1
+ 378 008a 11       		.uleb128 0x11
+ 379 008b 01       		.uleb128 0x1
+ 380 008c 31       		.uleb128 0x31
+ 381 008d 13       		.uleb128 0x13
+ 382 008e 00       		.byte	0
+ 383 008f 00       		.byte	0
+ 384 0090 0B       		.uleb128 0xb
+ 385 0091 2E       		.uleb128 0x2e
+ 386 0092 00       		.byte	0
+ 387 0093 3F       		.uleb128 0x3f
+ 388 0094 19       		.uleb128 0x19
+ 389 0095 03       		.uleb128 0x3
+ 390 0096 0E       		.uleb128 0xe
+ 391 0097 3A       		.uleb128 0x3a
+ 392 0098 0B       		.uleb128 0xb
+ 393 0099 3B       		.uleb128 0x3b
+ 394 009a 0B       		.uleb128 0xb
+ 395 009b 27       		.uleb128 0x27
+ 396 009c 19       		.uleb128 0x19
+ 397 009d 3C       		.uleb128 0x3c
+ 398 009e 19       		.uleb128 0x19
+ 399 009f 00       		.byte	0
+ 400 00a0 00       		.byte	0
+ 401 00a1 0C       		.uleb128 0xc
+ 402 00a2 2E       		.uleb128 0x2e
+ 403 00a3 01       		.byte	0x1
+ 404 00a4 3F       		.uleb128 0x3f
+ 405 00a5 19       		.uleb128 0x19
+ 406 00a6 03       		.uleb128 0x3
+ 407 00a7 0E       		.uleb128 0xe
+ 408 00a8 3A       		.uleb128 0x3a
+ 409 00a9 0B       		.uleb128 0xb
+ 410 00aa 3B       		.uleb128 0x3b
+ 411 00ab 0B       		.uleb128 0xb
+ 412 00ac 27       		.uleb128 0x27
+ 413 00ad 19       		.uleb128 0x19
+ 414 00ae 3C       		.uleb128 0x3c
+ 415 00af 19       		.uleb128 0x19
+ 416 00b0 01       		.uleb128 0x1
+ 417 00b1 13       		.uleb128 0x13
+ 418 00b2 00       		.byte	0
+ 419 00b3 00       		.byte	0
+ 420 00b4 0D       		.uleb128 0xd
+ 421 00b5 05       		.uleb128 0x5
+ 422 00b6 00       		.byte	0
+ 423 00b7 49       		.uleb128 0x49
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 9
+
+
+ 424 00b8 13       		.uleb128 0x13
+ 425 00b9 00       		.byte	0
+ 426 00ba 00       		.byte	0
+ 427 00bb 0E       		.uleb128 0xe
+ 428 00bc 2E       		.uleb128 0x2e
+ 429 00bd 01       		.byte	0x1
+ 430 00be 3F       		.uleb128 0x3f
+ 431 00bf 19       		.uleb128 0x19
+ 432 00c0 03       		.uleb128 0x3
+ 433 00c1 0E       		.uleb128 0xe
+ 434 00c2 3A       		.uleb128 0x3a
+ 435 00c3 0B       		.uleb128 0xb
+ 436 00c4 3B       		.uleb128 0x3b
+ 437 00c5 0B       		.uleb128 0xb
+ 438 00c6 27       		.uleb128 0x27
+ 439 00c7 19       		.uleb128 0x19
+ 440 00c8 3C       		.uleb128 0x3c
+ 441 00c9 19       		.uleb128 0x19
+ 442 00ca 00       		.byte	0
+ 443 00cb 00       		.byte	0
+ 444 00cc 00       		.byte	0
+ 445              		.section	.debug_loc,"",%progbits
+ 446              	.Ldebug_loc0:
+ 447              	.LLST0:
+ 448 0000 0C000000 		.4byte	.LVL1
+ 449 0004 0E000000 		.4byte	.LVL2
+ 450 0008 0200     		.2byte	0x2
+ 451 000a 30       		.byte	0x30
+ 452 000b 9F       		.byte	0x9f
+ 453 000c 0E000000 		.4byte	.LVL2
+ 454 0010 34000000 		.4byte	.LFE37
+ 455 0014 0100     		.2byte	0x1
+ 456 0016 54       		.byte	0x54
+ 457 0017 00000000 		.4byte	0
+ 458 001b 00000000 		.4byte	0
+ 459              		.section	.debug_aranges,"",%progbits
+ 460 0000 1C000000 		.4byte	0x1c
+ 461 0004 0200     		.2byte	0x2
+ 462 0006 00000000 		.4byte	.Ldebug_info0
+ 463 000a 04       		.byte	0x4
+ 464 000b 00       		.byte	0
+ 465 000c 0000     		.2byte	0
+ 466 000e 0000     		.2byte	0
+ 467 0010 00000000 		.4byte	.LFB37
+ 468 0014 34000000 		.4byte	.LFE37-.LFB37
+ 469 0018 00000000 		.4byte	0
+ 470 001c 00000000 		.4byte	0
+ 471              		.section	.debug_ranges,"",%progbits
+ 472              	.Ldebug_ranges0:
+ 473 0000 00000000 		.4byte	.LFB37
+ 474 0004 34000000 		.4byte	.LFE37
+ 475 0008 00000000 		.4byte	0
+ 476 000c 00000000 		.4byte	0
+ 477              		.section	.debug_line,"",%progbits
+ 478              	.Ldebug_line0:
+ 479 0000 7B000000 		.section	.debug_str,"MS",%progbits,1
+ 479      02005B00 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 10
+
+
+ 479      00000201 
+ 479      FB0E0D00 
+ 479      01010101 
+ 480              	.LASF6:
+ 481 0000 6C6F6E67 		.ascii	"long long int\000"
+ 481      206C6F6E 
+ 481      6720696E 
+ 481      7400
+ 482              	.LASF18:
+ 483 000e 75696E74 		.ascii	"uint32\000"
+ 483      333200
+ 484              	.LASF8:
+ 485 0015 756E7369 		.ascii	"unsigned int\000"
+ 485      676E6564 
+ 485      20696E74 
+ 485      00
+ 486              	.LASF16:
+ 487 0022 6D61696E 		.ascii	"main.c\000"
+ 487      2E6300
+ 488              	.LASF19:
+ 489 0029 6D61696E 		.ascii	"main\000"
+ 489      00
+ 490              	.LASF21:
+ 491 002e 43794465 		.ascii	"CyDelay\000"
+ 491      6C617900 
+ 492              	.LASF5:
+ 493 0036 6C6F6E67 		.ascii	"long unsigned int\000"
+ 493      20756E73 
+ 493      69676E65 
+ 493      6420696E 
+ 493      7400
+ 494              	.LASF7:
+ 495 0048 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 495      206C6F6E 
+ 495      6720756E 
+ 495      7369676E 
+ 495      65642069 
+ 496              	.LASF9:
+ 497 005f 666C6F61 		.ascii	"float\000"
+ 497      7400
+ 498              	.LASF17:
+ 499 0065 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\Workspace01\\Seg"
+ 499      73657273 
+ 499      5C536172 
+ 499      61685C44 
+ 499      6F63756D 
+ 500 0092 6D656E74 		.ascii	"mentDisplay.cydsn\000"
+ 500      44697370 
+ 500      6C61792E 
+ 500      63796473 
+ 500      6E00
+ 501              	.LASF11:
+ 502 00a4 63686172 		.ascii	"char\000"
+ 502      00
+ 503              	.LASF1:
+ 504 00a9 756E7369 		.ascii	"unsigned char\000"
+ 504      676E6564 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 11
+
+
+ 504      20636861 
+ 504      7200
+ 505              	.LASF13:
+ 506 00b7 4C43445F 		.ascii	"LCD_Seg_1_Start\000"
+ 506      5365675F 
+ 506      315F5374 
+ 506      61727400 
+ 507              	.LASF4:
+ 508 00c7 6C6F6E67 		.ascii	"long int\000"
+ 508      20696E74 
+ 508      00
+ 509              	.LASF20:
+ 510 00d0 4C43445F 		.ascii	"LCD_Seg_1_Write7SegDigit_0\000"
+ 510      5365675F 
+ 510      315F5772 
+ 510      69746537 
+ 510      53656744 
+ 511              	.LASF10:
+ 512 00eb 646F7562 		.ascii	"double\000"
+ 512      6C6500
+ 513              	.LASF3:
+ 514 00f2 73686F72 		.ascii	"short unsigned int\000"
+ 514      7420756E 
+ 514      7369676E 
+ 514      65642069 
+ 514      6E7400
+ 515              	.LASF0:
+ 516 0105 7369676E 		.ascii	"signed char\000"
+ 516      65642063 
+ 516      68617200 
+ 517              	.LASF15:
+ 518 0111 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 518      4320342E 
+ 518      392E3320 
+ 518      32303135 
+ 518      30333033 
+ 519 0144 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 519      20726576 
+ 519      6973696F 
+ 519      6E203232 
+ 519      31323230 
+ 520 0177 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 520      66756E63 
+ 520      74696F6E 
+ 520      2D736563 
+ 520      74696F6E 
+ 521              	.LASF2:
+ 522 019f 73686F72 		.ascii	"short int\000"
+ 522      7420696E 
+ 522      7400
+ 523              	.LASF14:
+ 524 01a9 4C43445F 		.ascii	"LCD_Seg_1_ClearDisplay\000"
+ 524      5365675F 
+ 524      315F436C 
+ 524      65617244 
+ 524      6973706C 
+ 525              	.LASF12:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccfxCiC0.s 			page 12
+
+
+ 526 01c0 73697A65 		.ascii	"sizetype\000"
+ 526      74797065 
+ 526      00
+ 527              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

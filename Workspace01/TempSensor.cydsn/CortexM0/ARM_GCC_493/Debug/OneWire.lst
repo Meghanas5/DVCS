@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
   30:Generated_Source\PSoC4/OneWire.c **** CY_ISR(OneWire_IRQDataReady) // ISR Timer data ready to read
   31:Generated_Source\PSoC4/OneWire.c **** {
   26              		.loc 1 31 0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 2
 
 
   27              		.cfi_startproc
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
   67              	.LVL2:
   46:Generated_Source\PSoC4/OneWire.c **** 
   47:Generated_Source\PSoC4/OneWire.c ****     CyDelayUs(TMtr1);   // read 1us, write 1-15us
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 3
 
 
   68              		.loc 1 47 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
   65:Generated_Source\PSoC4/OneWire.c **** {
  105              		.loc 1 65 0
  106              		.cfi_startproc
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 4
 
 
  107              	.LVL9:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  153              	.LFB40:
   74:Generated_Source\PSoC4/OneWire.c ****  
   75:Generated_Source\PSoC4/OneWire.c **** //==============================================================================
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 5
 
 
   76:Generated_Source\PSoC4/OneWire.c **** //                              Write a byte
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
   90:Generated_Source\PSoC4/OneWire.c **** }  
  192              		.loc 1 90 0 is_stmt 1
  193              		@ sp needed
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 6
 
 
  194              	.LVL24:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  235              	.LVL30:
  104:Generated_Source\PSoC4/OneWire.c ****     
  105:Generated_Source\PSoC4/OneWire.c ****     
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 7
 
 
  106:Generated_Source\PSoC4/OneWire.c ****     uint8 BusPin=0;    //bus state
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  272 0052 041C     		mov	r4, r0
  273              	.LVL40:
  124:Generated_Source\PSoC4/OneWire.c ****     
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 8
 
 
  125:Generated_Source\PSoC4/OneWire.c ****     CyDelayUs(200);     // wait for DS18 to transmit PRESENCE  (60-240 usec) 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  313              		.loc 1 139 0
  314 000c 03D1     		bne	.L17
  140:Generated_Source\PSoC4/OneWire.c ****         OneWire_DataReady = 1; //proceed directly to reporting
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 9
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 9
 
 
  315              		.loc 1 140 0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  152:Generated_Source\PSoC4/OneWire.c **** 
  153:Generated_Source\PSoC4/OneWire.c **** 
  154:Generated_Source\PSoC4/OneWire.c **** //==============================================================================
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 10
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 10
 
 
  155:Generated_Source\PSoC4/OneWire.c **** // Read sensor Temperature
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  393 002c FFF7FEFF 		bl	BusReset
  394              	.LVL47:
  395 0030 051E     		sub	r5, r0, #0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 11
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 11
 
 
  396 0032 2E4B     		ldr	r3, .L34+4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  434 0062 FFF7FEFF 		bl	R_BitBus
  435              	.LVL54:
  190:Generated_Source\PSoC4/OneWire.c ****         
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 12
 
 
  191:Generated_Source\PSoC4/OneWire.c ****         for (i=0; i<OneWire_NumSensors; i++) //
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  482              	.L33:
  195:Generated_Source\PSoC4/OneWire.c ****         }
  196:Generated_Source\PSoC4/OneWire.c ****     }
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 13
 
 
  197:Generated_Source\PSoC4/OneWire.c ****     
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  526              		.loc 1 198 0 is_stmt 0 discriminator 1
  527 00de 072C     		cmp	r4, #7
  528 00e0 DDD9     		bls	.L33
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 14
 
 
  529              	.LVL65:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  569 0006 185E     		ldrsh	r0, [r3, r0]
  570              	.LVL68:
  571 0008 FFF7FEFF 		bl	__aeabi_i2f
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 15
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 15
 
 
  572              	.LVL69:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  613 0010 7047     		bx	lr
  614              	.L41:
  615 0012 C046     		.align	2
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 16
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 16
 
 
  616              	.L40:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  649              		.loc 1 251 0
  650 000c 041C     		mov	r4, r0
  651              	.LVL78:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 17
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 17
 
 
  652              	.L43:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  260:Generated_Source\PSoC4/OneWire.c **** 		*ptr--= *ptr1;
  697              		.loc 1 260 0
  698 0044 1878     		ldrb	r0, [r3]
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 18
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 18
 
 
  699 0046 1070     		strb	r0, [r2]
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  737              		.cfi_def_cfa_offset 8
  738              		.cfi_offset 4, -8
  739              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 19
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 19
 
 
  740 0002 86B0     		sub	sp, sp, #24
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  778              	.L53:
  291:Generated_Source\PSoC4/OneWire.c ****     frac = grad & 15;                       //index for fractional part
  779              		.loc 1 291 0 is_stmt 1
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 20
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 20
 
 
  780 002c 0F24     		mov	r4, #15
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  826 0066 00E0     		b	.L51
  827              	.LVL114:
  828              	.L56:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 21
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 21
 
 
  285:Generated_Source\PSoC4/OneWire.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  869 000e FFF7FEFF 		bl	OneWire_TimerDelay_Start
  870              	.LVL118:
  313:Generated_Source\PSoC4/OneWire.c ****     
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 22
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 22
 
 
  314:Generated_Source\PSoC4/OneWire.c ****     OneWire_DataReady = 0;                     // semaphor flag
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  914              		.thumb_func
  915              		.type	OneWire_BusState, %function
  916              	OneWire_BusState:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 23
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 23
 
 
  917              	.LFB50:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  344:Generated_Source\PSoC4/OneWire.c **** }
  952              		.loc 1 344 0
  953              		@ sp needed
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 24
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 24
 
 
  954 000a 08BD     		pop	{r3, pc}
@@ -1395,15 +1395,15 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  965              		.section	.rodata
  966              		.align	2
  967              		.set	.LANCHOR0,. + 0
- 968              		.type	Sensor_off.5458, %object
- 969              		.size	Sensor_off.5458, 4
- 970              	Sensor_off.5458:
+ 968              		.type	Sensor_off.5646, %object
+ 969              		.size	Sensor_off.5646, 4
+ 970              	Sensor_off.5646:
  971 0000 00F0     		.short	-4096
  972 0002 00       		.byte	0
  973 0003 00       		.space	1
- 974              		.type	str.5516, %object
- 975              		.size	str.5516, 64
- 976              	str.5516:
+ 974              		.type	str.5704, %object
+ 975              		.size	str.5704, 64
+ 976              	str.5704:
  977 0004 18000000 		.word	.LC20
  978 0008 1C000000 		.word	.LC21
  979 000c 20000000 		.word	.LC22
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1004              	.LC22:
  1005 0020 2E313300 		.ascii	".13\000"
  1006              	.LC23:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 25
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 25
 
 
  1007 0024 2E313900 		.ascii	".19\000"
@@ -1485,48 +1485,48 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1048 0006 00000000 		.4byte	.Ldebug_abbrev0
  1049 000a 04       		.byte	0x4
  1050 000b 01       		.uleb128 0x1
- 1051 000c 23020000 		.4byte	.LASF62
+ 1051 000c E6010000 		.4byte	.LASF62
  1052 0010 01       		.byte	0x1
- 1053 0011 DE020000 		.4byte	.LASF63
- 1054 0015 92000000 		.4byte	.LASF64
+ 1053 0011 C2030000 		.4byte	.LASF63
+ 1054 0015 1D040000 		.4byte	.LASF64
  1055 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1056 001d 00000000 		.4byte	0
  1057 0021 00000000 		.4byte	.Ldebug_line0
  1058 0025 02       		.uleb128 0x2
  1059 0026 01       		.byte	0x1
  1060 0027 06       		.byte	0x6
- 1061 0028 5D000000 		.4byte	.LASF0
+ 1061 0028 D6020000 		.4byte	.LASF0
  1062 002c 02       		.uleb128 0x2
  1063 002d 01       		.byte	0x1
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 26
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 26
 
 
  1064 002e 08       		.byte	0x8
- 1065 002f 07030000 		.4byte	.LASF1
+ 1065 002f 9C020000 		.4byte	.LASF1
  1066 0033 02       		.uleb128 0x2
  1067 0034 02       		.byte	0x2
  1068 0035 05       		.byte	0x5
- 1069 0036 15030000 		.4byte	.LASF2
+ 1069 0036 B9000000 		.4byte	.LASF2
  1070 003a 02       		.uleb128 0x2
  1071 003b 02       		.byte	0x2
  1072 003c 07       		.byte	0x7
- 1073 003d 7C010000 		.4byte	.LASF3
+ 1073 003d 32030000 		.4byte	.LASF3
  1074 0041 02       		.uleb128 0x2
  1075 0042 04       		.byte	0x4
  1076 0043 05       		.byte	0x5
- 1077 0044 89000000 		.4byte	.LASF4
+ 1077 0044 9B010000 		.4byte	.LASF4
  1078 0048 02       		.uleb128 0x2
  1079 0049 04       		.byte	0x4
  1080 004a 07       		.byte	0x7
- 1081 004b 5A010000 		.4byte	.LASF5
+ 1081 004b 8D030000 		.4byte	.LASF5
  1082 004f 02       		.uleb128 0x2
  1083 0050 08       		.byte	0x8
  1084 0051 05       		.byte	0x5
- 1085 0052 4F000000 		.4byte	.LASF6
+ 1085 0052 76010000 		.4byte	.LASF6
  1086 0056 02       		.uleb128 0x2
  1087 0057 08       		.byte	0x8
  1088 0058 07       		.byte	0x7
- 1089 0059 38000000 		.4byte	.LASF7
+ 1089 0059 84010000 		.4byte	.LASF7
  1090 005d 03       		.uleb128 0x3
  1091 005e 04       		.byte	0x4
  1092 005f 05       		.byte	0x5
@@ -1534,41 +1534,41 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1094 0064 02       		.uleb128 0x2
  1095 0065 04       		.byte	0x4
  1096 0066 07       		.byte	0x7
- 1097 0067 2F010000 		.4byte	.LASF8
+ 1097 0067 F8020000 		.4byte	.LASF8
  1098 006b 04       		.uleb128 0x4
- 1099 006c FC000000 		.4byte	.LASF9
+ 1099 006c 39010000 		.4byte	.LASF9
  1100 0070 02       		.byte	0x2
  1101 0071 B901     		.2byte	0x1b9
  1102 0073 2C000000 		.4byte	0x2c
  1103 0077 04       		.uleb128 0x4
- 1104 0078 09000000 		.4byte	.LASF10
+ 1104 0078 E7000000 		.4byte	.LASF10
  1105 007c 02       		.byte	0x2
  1106 007d BA01     		.2byte	0x1ba
  1107 007f 3A000000 		.4byte	0x3a
  1108 0083 04       		.uleb128 0x4
- 1109 0084 22040000 		.4byte	.LASF11
+ 1109 0084 33010000 		.4byte	.LASF11
  1110 0088 02       		.byte	0x2
  1111 0089 BD01     		.2byte	0x1bd
  1112 008b 33000000 		.4byte	0x33
  1113 008f 02       		.uleb128 0x2
  1114 0090 04       		.byte	0x4
  1115 0091 04       		.byte	0x4
- 1116 0092 D8020000 		.4byte	.LASF12
+ 1116 0092 69010000 		.4byte	.LASF12
  1117 0096 02       		.uleb128 0x2
  1118 0097 08       		.byte	0x8
  1119 0098 04       		.byte	0x4
- 1120 0099 0C010000 		.4byte	.LASF13
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 27
+ 1120 0099 A4030000 		.4byte	.LASF13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 27
 
 
  1121 009d 02       		.uleb128 0x2
  1122 009e 01       		.byte	0x1
  1123 009f 08       		.byte	0x8
- 1124 00a0 78030000 		.4byte	.LASF14
+ 1124 00a0 54030000 		.4byte	.LASF14
  1125 00a4 05       		.uleb128 0x5
  1126 00a5 6B000000 		.4byte	0x6b
  1127 00a9 04       		.uleb128 0x4
- 1128 00aa 7D030000 		.4byte	.LASF15
+ 1128 00aa B4020000 		.4byte	.LASF15
  1129 00ae 02       		.byte	0x2
  1130 00af 7502     		.2byte	0x275
  1131 00b1 B5000000 		.4byte	0xb5
@@ -1577,19 +1577,19 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1134 00b7 BB000000 		.4byte	0xbb
  1135 00bb 07       		.uleb128 0x7
  1136 00bc 08       		.uleb128 0x8
- 1137 00bd 5F040000 		.4byte	.LASF65
+ 1137 00bd 8C020000 		.4byte	.LASF65
  1138 00c1 04       		.byte	0x4
  1139 00c2 03       		.byte	0x3
  1140 00c3 30       		.byte	0x30
  1141 00c4 E1000000 		.4byte	0xe1
  1142 00c8 09       		.uleb128 0x9
- 1143 00c9 ED030000 		.4byte	.LASF16
+ 1143 00c9 F4030000 		.4byte	.LASF16
  1144 00cd 03       		.byte	0x3
  1145 00ce 31       		.byte	0x31
  1146 00cf 77000000 		.4byte	0x77
  1147 00d3 00       		.byte	0
  1148 00d4 09       		.uleb128 0x9
- 1149 00d5 FF020000 		.4byte	.LASF17
+ 1149 00d5 E3030000 		.4byte	.LASF17
  1150 00d9 03       		.byte	0x3
  1151 00da 32       		.byte	0x32
  1152 00db 6B000000 		.4byte	0x6b
@@ -1598,7 +1598,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1155 00e1 02       		.uleb128 0x2
  1156 00e2 04       		.byte	0x4
  1157 00e3 07       		.byte	0x7
- 1158 00e4 05020000 		.4byte	.LASF18
+ 1158 00e4 65000000 		.4byte	.LASF18
  1159 00e8 0A       		.uleb128 0xa
  1160 00e9 04       		.byte	0x4
  1161 00ea 06       		.uleb128 0x6
@@ -1617,8 +1617,8 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1174 0109 07       		.byte	0x7
  1175 010a 00       		.byte	0
  1176 010b 0E       		.uleb128 0xe
- 1177 010c B8020000 		.4byte	.LASF47
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 28
+ 1177 010c C1020000 		.4byte	.LASF47
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 28
 
 
  1178 0110 01       		.byte	0x1
@@ -1628,7 +1628,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1182 011a 01       		.uleb128 0x1
  1183 011b 9C       		.byte	0x9c
  1184 011c 0F       		.uleb128 0xf
- 1185 011d 00000000 		.4byte	.LASF30
+ 1185 011d EB030000 		.4byte	.LASF30
  1186 0121 01       		.byte	0x1
  1187 0122 28       		.byte	0x28
  1188 0123 6B000000 		.4byte	0x6b
@@ -1638,7 +1638,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1192 0130 9C       		.byte	0x9c
  1193 0131 E5010000 		.4byte	0x1e5
  1194 0135 10       		.uleb128 0x10
- 1195 0136 6F040000 		.4byte	.LASF22
+ 1195 0136 1B000000 		.4byte	.LASF22
  1196 013a 01       		.byte	0x1
  1197 013b 38       		.byte	0x38
  1198 013c 6B000000 		.4byte	0x6b
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1232 017c 11       		.uleb128 0x11
  1233 017d 1A000000 		.4byte	.LVL3
  1234 0181 2D080000 		.4byte	0x82d
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 29
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 29
 
 
  1235 0185 8F010000 		.4byte	0x18f
@@ -1733,19 +1733,19 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1284 01e0 60080000 		.4byte	0x860
  1285 01e4 00       		.byte	0
  1286 01e5 14       		.uleb128 0x14
- 1287 01e6 8A030000 		.4byte	.LASF19
+ 1287 01e6 22000000 		.4byte	.LASF19
  1288 01ea 01       		.byte	0x1
  1289 01eb 40       		.byte	0x40
  1290 01ec 00000000 		.4byte	.LFB39
  1291 01f0 2A000000 		.4byte	.LFE39-.LFB39
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 30
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 30
 
 
  1292 01f4 01       		.uleb128 0x1
  1293 01f5 9C       		.byte	0x9c
  1294 01f6 66020000 		.4byte	0x266
  1295 01fa 15       		.uleb128 0x15
- 1296 01fb 0E020000 		.4byte	.LASF21
+ 1296 01fb 65040000 		.4byte	.LASF21
  1297 01ff 01       		.byte	0x1
  1298 0200 40       		.byte	0x40
  1299 0201 6B000000 		.4byte	0x6b
@@ -1798,14 +1798,14 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1346 0260 01       		.uleb128 0x1
  1347 0261 50       		.byte	0x50
  1348 0262 01       		.uleb128 0x1
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 31
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 31
 
 
  1349 0263 31       		.byte	0x31
  1350 0264 00       		.byte	0
  1351 0265 00       		.byte	0
  1352 0266 14       		.uleb128 0x14
- 1353 0267 75010000 		.4byte	.LASF20
+ 1353 0267 B2000000 		.4byte	.LASF20
  1354 026b 01       		.byte	0x1
  1355 026c 4F       		.byte	0x4f
  1356 026d 00000000 		.4byte	.LFB40
@@ -1814,19 +1814,19 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1359 0276 9C       		.byte	0x9c
  1360 0277 D2020000 		.4byte	0x2d2
  1361 027b 15       		.uleb128 0x15
- 1362 027c 0E020000 		.4byte	.LASF21
+ 1362 027c 65040000 		.4byte	.LASF21
  1363 0280 01       		.byte	0x1
  1364 0281 4F       		.byte	0x4f
  1365 0282 6B000000 		.4byte	0x6b
  1366 0286 21000000 		.4byte	.LLST1
  1367 028a 17       		.uleb128 0x17
- 1368 028b 1F030000 		.4byte	.LASF23
+ 1368 028b 6D040000 		.4byte	.LASF23
  1369 028f 01       		.byte	0x1
  1370 0290 51       		.byte	0x51
  1371 0291 6B000000 		.4byte	0x6b
  1372 0295 42000000 		.4byte	.LLST2
  1373 0299 17       		.uleb128 0x17
- 1374 029a B4030000 		.4byte	.LASF24
+ 1374 029a 33000000 		.4byte	.LASF24
  1375 029e 01       		.byte	0x1
  1376 029f 51       		.byte	0x51
  1377 02a0 6B000000 		.4byte	0x6b
@@ -1858,11 +1858,11 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1403 02cf 1A       		.byte	0x1a
  1404 02d0 00       		.byte	0
  1405 02d1 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 32
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 32
 
 
  1406 02d2 18       		.uleb128 0x18
- 1407 02d3 19040000 		.4byte	.LASF25
+ 1407 02d3 5C000000 		.4byte	.LASF25
  1408 02d7 01       		.byte	0x1
  1409 02d8 61       		.byte	0x61
  1410 02d9 6B000000 		.4byte	0x6b
@@ -1872,13 +1872,13 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1414 02e6 9C       		.byte	0x9c
  1415 02e7 F8030000 		.4byte	0x3f8
  1416 02eb 10       		.uleb128 0x10
- 1417 02ec CD020000 		.4byte	.LASF26
+ 1417 02ec 28000000 		.4byte	.LASF26
  1418 02f0 01       		.byte	0x1
  1419 02f1 63       		.byte	0x63
  1420 02f2 F8030000 		.4byte	0x3f8
  1421 02f6 05       		.uleb128 0x5
  1422 02f7 03       		.byte	0x3
- 1423 02f8 00000000 		.4byte	Sensor_off.5458
+ 1423 02f8 00000000 		.4byte	Sensor_off.5646
  1424 02fc 19       		.uleb128 0x19
  1425 02fd 6900     		.ascii	"i\000"
  1426 02ff 01       		.byte	0x1
@@ -1886,7 +1886,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1428 0301 6B000000 		.4byte	0x6b
  1429 0305 A3000000 		.4byte	.LLST4
  1430 0309 17       		.uleb128 0x17
- 1431 030a 53040000 		.4byte	.LASF27
+ 1431 030a 6F010000 		.4byte	.LASF27
  1432 030e 01       		.byte	0x1
  1433 030f 6A       		.byte	0x6a
  1434 0310 6B000000 		.4byte	0x6b
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1460 033c 00000000 		.4byte	OneWire_Sensor
  1461 0340 22       		.byte	0x22
  1462 0341 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 33
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 33
 
 
  1463 0342 11       		.uleb128 0x11
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1517 03a9 3E080000 		.4byte	0x83e
  1518 03ad B7030000 		.4byte	0x3b7
  1519 03b1 12       		.uleb128 0x12
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 34
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 34
 
 
  1520 03b2 01       		.uleb128 0x1
@@ -2024,7 +2024,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1560 03f8 0B       		.uleb128 0xb
  1561 03f9 BC000000 		.4byte	0xbc
  1562 03fd 18       		.uleb128 0x18
- 1563 03fe 2A030000 		.4byte	.LASF28
+ 1563 03fe 69030000 		.4byte	.LASF28
  1564 0402 01       		.byte	0x1
  1565 0403 87       		.byte	0x87
  1566 0404 6B000000 		.4byte	0x6b
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1574 041b D2020000 		.4byte	0x2d2
  1575 041f 11       		.uleb128 0x11
  1576 0420 1C000000 		.4byte	.LVL44
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 35
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 35
 
 
  1577 0424 66020000 		.4byte	0x266
@@ -2072,7 +2072,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1605 0455 00       		.byte	0
  1606 0456 00       		.byte	0
  1607 0457 18       		.uleb128 0x18
- 1608 0458 C6010000 		.4byte	.LASF29
+ 1608 0458 74020000 		.4byte	.LASF29
  1609 045c 01       		.byte	0x1
  1610 045d 9F       		.byte	0x9f
  1611 045e 6B000000 		.4byte	0x6b
@@ -2088,7 +2088,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1621 0477 6B000000 		.4byte	0x6b
  1622 047b EC000000 		.4byte	.LLST6
  1623 047f 1A       		.uleb128 0x1a
- 1624 0480 18010000 		.4byte	.LASF66
+ 1624 0480 AB030000 		.4byte	.LASF66
  1625 0484 01       		.byte	0x1
  1626 0485 A2       		.byte	0xa2
  1627 0486 6B000000 		.4byte	0x6b
@@ -2098,11 +2098,11 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1631 048e A3       		.byte	0xa3
  1632 048f 6B000000 		.4byte	0x6b
  1633 0493 FF000000 		.4byte	.LLST7
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 36
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 36
 
 
  1634 0497 17       		.uleb128 0x17
- 1635 0498 B4030000 		.4byte	.LASF24
+ 1635 0498 33000000 		.4byte	.LASF24
  1636 049c 01       		.byte	0x1
  1637 049d A3       		.byte	0xa3
  1638 049e 6B000000 		.4byte	0x6b
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1688 04fe 74       		.byte	0x74
  1689 04ff 00       		.sleb128 0
  1690 0500 32       		.byte	0x32
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 37
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 37
 
 
  1691 0501 24       		.byte	0x24
@@ -2189,7 +2189,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1716 0526 07       		.byte	0x7
  1717 0527 00       		.byte	0
  1718 0528 1C       		.uleb128 0x1c
- 1719 0529 3C010000 		.4byte	.LASF31
+ 1719 0529 3E000000 		.4byte	.LASF31
  1720 052d 01       		.byte	0x1
  1721 052e D8       		.byte	0xd8
  1722 052f 8F000000 		.4byte	0x8f
@@ -2199,7 +2199,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1726 053c 9C       		.byte	0x9c
  1727 053d 60050000 		.4byte	0x560
  1728 0541 15       		.uleb128 0x15
- 1729 0542 90030000 		.4byte	.LASF32
+ 1729 0542 2D010000 		.4byte	.LASF32
  1730 0546 01       		.byte	0x1
  1731 0547 D8       		.byte	0xd8
  1732 0548 6B000000 		.4byte	0x6b
@@ -2212,20 +2212,20 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1739 055b A0010000 		.4byte	.LLST10
  1740 055f 00       		.byte	0
  1741 0560 0F       		.uleb128 0xf
- 1742 0561 CE030000 		.4byte	.LASF33
+ 1742 0561 C2010000 		.4byte	.LASF33
  1743 0565 01       		.byte	0x1
  1744 0566 E4       		.byte	0xe4
  1745 0567 83000000 		.4byte	0x83
  1746 056b 00000000 		.4byte	.LFB45
  1747 056f 18000000 		.4byte	.LFE45-.LFB45
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 38
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 38
 
 
  1748 0573 01       		.uleb128 0x1
  1749 0574 9C       		.byte	0x9c
  1750 0575 98050000 		.4byte	0x598
  1751 0579 15       		.uleb128 0x15
- 1752 057a 90030000 		.4byte	.LASF32
+ 1752 057a 2D010000 		.4byte	.LASF32
  1753 057e 01       		.byte	0x1
  1754 057f E4       		.byte	0xe4
  1755 0580 6B000000 		.4byte	0x6b
@@ -2238,7 +2238,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1762 0593 E6010000 		.4byte	.LLST12
  1763 0597 00       		.byte	0
  1764 0598 1C       		.uleb128 0x1c
- 1765 0599 B1020000 		.4byte	.LASF34
+ 1765 0599 05030000 		.4byte	.LASF34
  1766 059d 01       		.byte	0x1
  1767 059e F3       		.byte	0xf3
  1768 059f EA000000 		.4byte	0xea
@@ -2248,19 +2248,19 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1772 05ac 9C       		.byte	0x9c
  1773 05ad 18060000 		.4byte	0x618
  1774 05b1 15       		.uleb128 0x15
- 1775 05b2 1D010000 		.4byte	.LASF35
+ 1775 05b2 E1000000 		.4byte	.LASF35
  1776 05b6 01       		.byte	0x1
  1777 05b7 F3       		.byte	0xf3
  1778 05b8 5D000000 		.4byte	0x5d
  1779 05bc 0B020000 		.4byte	.LLST13
  1780 05c0 15       		.uleb128 0x15
- 1781 05c1 6F040000 		.4byte	.LASF22
+ 1781 05c1 1B000000 		.4byte	.LASF22
  1782 05c5 01       		.byte	0x1
  1783 05c6 F3       		.byte	0xf3
  1784 05c7 EA000000 		.4byte	0xea
  1785 05cb 34020000 		.4byte	.LLST14
  1786 05cf 1D       		.uleb128 0x1d
- 1787 05d0 DE010000 		.4byte	.LASF36
+ 1787 05d0 58040000 		.4byte	.LASF36
  1788 05d4 01       		.byte	0x1
  1789 05d5 F5       		.byte	0xf5
  1790 05d6 18060000 		.4byte	0x618
@@ -2272,22 +2272,22 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1796 05e2 EA000000 		.4byte	0xea
  1797 05e6 5D020000 		.4byte	.LLST15
  1798 05ea 17       		.uleb128 0x17
- 1799 05eb 13010000 		.4byte	.LASF37
+ 1799 05eb 88030000 		.4byte	.LASF37
  1800 05ef 01       		.byte	0x1
  1801 05f0 F6       		.byte	0xf6
  1802 05f1 EA000000 		.4byte	0xea
  1803 05f5 A9020000 		.4byte	.LLST16
  1804 05f9 17       		.uleb128 0x17
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 39
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 39
 
 
- 1805 05fa 6C010000 		.4byte	.LASF38
+ 1805 05fa 60030000 		.4byte	.LASF38
  1806 05fe 01       		.byte	0x1
  1807 05ff F6       		.byte	0xf6
  1808 0600 9D000000 		.4byte	0x9d
  1809 0604 EA020000 		.4byte	.LLST17
  1810 0608 17       		.uleb128 0x17
- 1811 0609 76040000 		.4byte	.LASF39
+ 1811 0609 11000000 		.4byte	.LASF39
  1812 060d 01       		.byte	0x1
  1813 060e F7       		.byte	0xf7
  1814 060f 5D000000 		.4byte	0x5d
@@ -2296,7 +2296,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1817 0618 0B       		.uleb128 0xb
  1818 0619 6B000000 		.4byte	0x6b
  1819 061d 1E       		.uleb128 0x1e
- 1820 061e A0010000 		.4byte	.LASF40
+ 1820 061e 0E010000 		.4byte	.LASF40
  1821 0622 01       		.byte	0x1
  1822 0623 1101     		.2byte	0x111
  1823 0625 EA000000 		.4byte	0xea
@@ -2306,13 +2306,13 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1827 0632 9C       		.byte	0x9c
  1828 0633 2F070000 		.4byte	0x72f
  1829 0637 1F       		.uleb128 0x1f
- 1830 0638 90030000 		.4byte	.LASF32
+ 1830 0638 2D010000 		.4byte	.LASF32
  1831 063c 01       		.byte	0x1
  1832 063d 1101     		.2byte	0x111
  1833 063f 6B000000 		.4byte	0x6b
  1834 0643 26030000 		.4byte	.LLST19
  1835 0647 20       		.uleb128 0x20
- 1836 0648 D5000000 		.4byte	.LASF41
+ 1836 0648 5D040000 		.4byte	.LASF41
  1837 064c 01       		.byte	0x1
  1838 064d 1301     		.2byte	0x113
  1839 064f 2F070000 		.4byte	0x72f
@@ -2320,7 +2320,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1841 0654 91       		.byte	0x91
  1842 0655 68       		.sleb128 -24
  1843 0656 21       		.uleb128 0x21
- 1844 0657 6F040000 		.4byte	.LASF22
+ 1844 0657 1B000000 		.4byte	.LASF22
  1845 065b 01       		.byte	0x1
  1846 065c 1401     		.2byte	0x114
  1847 065e EA000000 		.4byte	0xea
@@ -2334,22 +2334,22 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1855 0673 91       		.byte	0x91
  1856 0674 60       		.sleb128 -32
  1857 0675 21       		.uleb128 0x21
- 1858 0676 14040000 		.4byte	.LASF42
+ 1858 0676 9F030000 		.4byte	.LASF42
  1859 067a 01       		.byte	0x1
  1860 067b 1601     		.2byte	0x116
  1861 067d 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 40
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 40
 
 
  1862 0681 E0030000 		.4byte	.LLST21
  1863 0685 21       		.uleb128 0x21
- 1864 0686 E3010000 		.4byte	.LASF43
+ 1864 0686 E1010000 		.4byte	.LASF43
  1865 068a 01       		.byte	0x1
  1866 068b 1701     		.2byte	0x117
  1867 068d 5D000000 		.4byte	0x5d
  1868 0691 FE030000 		.4byte	.LLST22
  1869 0695 21       		.uleb128 0x21
- 1870 0696 5A040000 		.4byte	.LASF44
+ 1870 0696 C3000000 		.4byte	.LASF44
  1871 069a 01       		.byte	0x1
  1872 069b 1801     		.2byte	0x118
  1873 069d 6B000000 		.4byte	0x6b
@@ -2361,7 +2361,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1879 06ad 4F070000 		.4byte	0x74f
  1880 06b1 05       		.uleb128 0x5
  1881 06b2 03       		.byte	0x3
- 1882 06b3 04000000 		.4byte	str.5516
+ 1882 06b3 04000000 		.4byte	str.5704
  1883 06b7 23       		.uleb128 0x23
  1884 06b8 56616C00 		.ascii	"Val\000"
  1885 06bc 01       		.byte	0x1
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1916 06fd 01       		.uleb128 0x1
  1917 06fe 51       		.byte	0x51
  1918 06ff 02       		.uleb128 0x2
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 41
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 41
 
 
  1919 0700 7D       		.byte	0x7d
@@ -2450,7 +2450,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1965 074f 0B       		.uleb128 0xb
  1966 0750 3F070000 		.4byte	0x73f
  1967 0754 24       		.uleb128 0x24
- 1968 0755 45040000 		.4byte	.LASF45
+ 1968 0755 24030000 		.4byte	.LASF45
  1969 0759 01       		.byte	0x1
  1970 075a 3201     		.2byte	0x132
  1971 075c 00000000 		.4byte	.LFB48
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  1973 0764 01       		.uleb128 0x1
  1974 0765 9C       		.byte	0x9c
  1975 0766 A0070000 		.4byte	0x7a0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 42
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 42
 
 
  1976 076a 11       		.uleb128 0x11
@@ -2488,7 +2488,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2000 079b DC080000 		.4byte	0x8dc
  2001 079f 00       		.byte	0
  2002 07a0 24       		.uleb128 0x24
- 2003 07a1 16020000 		.4byte	.LASF46
+ 2003 07a1 5C010000 		.4byte	.LASF46
  2004 07a5 01       		.byte	0x1
  2005 07a6 4101     		.2byte	0x141
  2006 07a8 00000000 		.4byte	.LFB49
@@ -2501,7 +2501,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2013 07bb E3080000 		.4byte	0x8e3
  2014 07bf 00       		.byte	0
  2015 07c0 25       		.uleb128 0x25
- 2016 07c1 8F010000 		.4byte	.LASF48
+ 2016 07c1 00000000 		.4byte	.LASF48
  2017 07c5 01       		.byte	0x1
  2018 07c6 4A01     		.2byte	0x14a
  2019 07c8 6B000000 		.4byte	0x6b
@@ -2510,7 +2510,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2022 07d4 01       		.uleb128 0x1
  2023 07d5 9C       		.byte	0x9c
  2024 07d6 26       		.uleb128 0x26
- 2025 07d7 22000000 		.4byte	.LASF49
+ 2025 07d7 9C000000 		.4byte	.LASF49
  2026 07db 01       		.byte	0x1
  2027 07dc 5401     		.2byte	0x154
  2028 07de 6B000000 		.4byte	0x6b
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2030 07e6 10000000 		.4byte	.LFE51-.LFB51
  2031 07ea 01       		.uleb128 0x1
  2032 07eb 9C       		.byte	0x9c
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 43
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 43
 
 
  2033 07ec FA070000 		.4byte	0x7fa
@@ -2527,7 +2527,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2036 07f5 D2020000 		.4byte	0x2d2
  2037 07f9 00       		.byte	0
  2038 07fa 27       		.uleb128 0x27
- 2039 07fb BF030000 		.4byte	.LASF50
+ 2039 07fb 45030000 		.4byte	.LASF50
  2040 07ff 03       		.byte	0x3
  2041 0800 34       		.byte	0x34
  2042 0801 18050000 		.4byte	0x518
@@ -2535,7 +2535,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2044 0806 03       		.byte	0x3
  2045 0807 00000000 		.4byte	OneWire_Sensor
  2046 080b 27       		.uleb128 0x27
- 2047 080c 10000000 		.4byte	.LASF51
+ 2047 080c B0030000 		.4byte	.LASF51
  2048 0810 03       		.byte	0x3
  2049 0811 39       		.byte	0x39
  2050 0812 A4000000 		.4byte	0xa4
@@ -2543,7 +2543,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2052 0817 03       		.byte	0x3
  2053 0818 00000000 		.4byte	OneWire_DataReady
  2054 081c 27       		.uleb128 0x27
- 2055 081d 23010000 		.4byte	.LASF52
+ 2055 081d 89000000 		.4byte	.LASF52
  2056 0821 01       		.byte	0x1
  2057 0822 16       		.byte	0x16
  2058 0823 6B000000 		.4byte	0x6b
@@ -2551,7 +2551,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2060 0828 03       		.byte	0x3
  2061 0829 00000000 		.4byte	BusPresence
  2062 082d 28       		.uleb128 0x28
- 2063 082e 02010000 		.4byte	.LASF53
+ 2063 082e AA020000 		.4byte	.LASF53
  2064 0832 04       		.byte	0x4
  2065 0833 DA       		.byte	0xda
  2066 0834 3E080000 		.4byte	0x83e
@@ -2559,7 +2559,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2068 0839 77000000 		.4byte	0x77
  2069 083d 00       		.byte	0
  2070 083e 28       		.uleb128 0x28
- 2071 083f 28040000 		.4byte	.LASF54
+ 2071 083f 00040000 		.4byte	.LASF54
  2072 0843 05       		.byte	0x5
  2073 0844 1B       		.byte	0x1b
  2074 0845 4F080000 		.4byte	0x84f
@@ -2567,7 +2567,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2076 084a 6B000000 		.4byte	0x6b
  2077 084e 00       		.byte	0
  2078 084f 28       		.uleb128 0x28
- 2079 0850 E8010000 		.4byte	.LASF55
+ 2079 0850 3F010000 		.4byte	.LASF55
  2080 0854 06       		.byte	0x6
  2081 0855 1B       		.byte	0x1b
  2082 0856 60080000 		.4byte	0x860
@@ -2575,15 +2575,15 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2084 085b 6B000000 		.4byte	0x6b
  2085 085f 00       		.byte	0
  2086 0860 2A       		.uleb128 0x2a
- 2087 0861 F9030000 		.4byte	.LASF67
+ 2087 0861 6E000000 		.4byte	.LASF67
  2088 0865 0A       		.byte	0xa
  2089 0866 1C       		.byte	0x1c
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 44
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 44
 
 
  2090 0867 6B000000 		.4byte	0x6b
  2091 086b 2B       		.uleb128 0x2b
- 2092 086c F5000000 		.4byte	.LASF56
+ 2092 086c 95000000 		.4byte	.LASF56
  2093 0870 E8000000 		.4byte	0xe8
  2094 0874 88080000 		.4byte	0x888
  2095 0878 29       		.uleb128 0x29
@@ -2598,7 +2598,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2104 088a 8E080000 		.4byte	0x88e
  2105 088e 2C       		.uleb128 0x2c
  2106 088f 28       		.uleb128 0x28
- 2107 0890 49030000 		.4byte	.LASF57
+ 2107 0890 E2020000 		.4byte	.LASF57
  2108 0894 07       		.byte	0x7
  2109 0895 1B       		.byte	0x1b
  2110 0896 A0080000 		.4byte	0x8a0
@@ -2606,7 +2606,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2112 089b 6B000000 		.4byte	0x6b
  2113 089f 00       		.byte	0
  2114 08a0 2D       		.uleb128 0x2d
- 2115 08a1 BF010000 		.4byte	.LASF68
+ 2115 08a1 59030000 		.4byte	.LASF68
  2116 08a5 0B       		.byte	0xb
  2117 08a6 1A       		.byte	0x1a
  2118 08a7 EA000000 		.4byte	0xea
@@ -2617,7 +2617,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2123 08b5 F0000000 		.4byte	0xf0
  2124 08b9 00       		.byte	0
  2125 08ba 28       		.uleb128 0x28
- 2126 08bb 96030000 		.4byte	.LASF58
+ 2126 08bb A4010000 		.4byte	.LASF58
  2127 08bf 08       		.byte	0x8
  2128 08c0 18       		.byte	0x18
  2129 08c1 CB080000 		.4byte	0x8cb
@@ -2625,7 +2625,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2131 08c6 A9000000 		.4byte	0xa9
  2132 08ca 00       		.byte	0
  2133 08cb 28       		.uleb128 0x28
- 2134 08cc 69000000 		.4byte	.LASF59
+ 2134 08cc EE000000 		.4byte	.LASF59
  2135 08d0 09       		.byte	0x9
  2136 08d1 6A       		.byte	0x6a
  2137 08d2 DC080000 		.4byte	0x8dc
@@ -2633,12 +2633,12 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2139 08d7 77000000 		.4byte	0x77
  2140 08db 00       		.byte	0
  2141 08dc 2E       		.uleb128 0x2e
- 2142 08dd 5F030000 		.4byte	.LASF60
+ 2142 08dd C8000000 		.4byte	.LASF60
  2143 08e1 09       		.byte	0x9
  2144 08e2 5A       		.byte	0x5a
  2145 08e3 2E       		.uleb128 0x2e
- 2146 08e4 DD000000 		.4byte	.LASF61
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 45
+ 2146 08e4 0C030000 		.4byte	.LASF61
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 45
 
 
  2147 08e8 09       		.byte	0x9
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2201 0031 05       		.uleb128 0x5
  2202 0032 49       		.uleb128 0x49
  2203 0033 13       		.uleb128 0x13
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 46
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 46
 
 
  2204 0034 00       		.byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2258 006a 00       		.byte	0
  2259 006b 0A       		.uleb128 0xa
  2260 006c 0F       		.uleb128 0xf
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 47
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 47
 
 
  2261 006d 00       		.byte	0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2315 00a4 2E       		.uleb128 0x2e
  2316 00a5 01       		.byte	0x1
  2317 00a6 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 48
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 48
 
 
  2318 00a7 19       		.uleb128 0x19
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2372 00e2 9142     		.uleb128 0x2111
  2373 00e4 18       		.uleb128 0x18
  2374 00e5 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 49
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 49
 
 
  2375 00e6 00       		.byte	0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2429 0121 01       		.uleb128 0x1
  2430 0122 31       		.uleb128 0x31
  2431 0123 13       		.uleb128 0x13
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 50
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 50
 
 
  2432 0124 00       		.byte	0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2486 015b 17       		.uleb128 0x17
  2487 015c 00       		.byte	0
  2488 015d 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 51
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 51
 
 
  2489 015e 1A       		.uleb128 0x1a
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2543 0195 00       		.byte	0
  2544 0196 1D       		.uleb128 0x1d
  2545 0197 34       		.uleb128 0x34
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 52
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 52
 
 
  2546 0198 00       		.byte	0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2600 01cf 00       		.byte	0
  2601 01d0 20       		.uleb128 0x20
  2602 01d1 34       		.uleb128 0x34
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 53
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 53
 
 
  2603 01d2 00       		.byte	0
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2657 0208 02       		.uleb128 0x2
  2658 0209 17       		.uleb128 0x17
  2659 020a 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 54
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 54
 
 
  2660 020b 00       		.byte	0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2714 0243 3A       		.uleb128 0x3a
  2715 0244 0B       		.uleb128 0xb
  2716 0245 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 55
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 55
 
 
  2717 0246 05       		.uleb128 0x5
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2771 027d 49       		.uleb128 0x49
  2772 027e 13       		.uleb128 0x13
  2773 027f 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 56
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 56
 
 
  2774 0280 00       		.byte	0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2828 02b6 0B       		.uleb128 0xb
  2829 02b7 27       		.uleb128 0x27
  2830 02b8 19       		.uleb128 0x19
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 57
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 57
 
 
  2831 02b9 49       		.uleb128 0x49
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2885 003a 00000000 		.4byte	0
  2886 003e 00000000 		.4byte	0
  2887              	.LLST2:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 58
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 58
 
 
  2888 0042 16000000 		.4byte	.LVL20
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2942 00ba 18000000 		.4byte	.LVL29
  2943 00be 54000000 		.4byte	.LVL40
  2944 00c2 0100     		.2byte	0x1
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 59
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 59
 
 
  2945 00c4 54       		.byte	0x54
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  2999              	.LLST8:
  3000 0155 5E000000 		.4byte	.LVL52
  3001 0159 62000000 		.4byte	.LVL53
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 60
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 60
 
 
  3002 015d 0200     		.2byte	0x2
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  3056 01de 00000000 		.4byte	0
  3057 01e2 00000000 		.4byte	0
  3058              	.LLST12:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 61
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 61
 
 
  3059 01e6 02000000 		.4byte	.LVL72
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  3113 0277 3A000000 		.4byte	.LVL83
  3114 027b 0100     		.2byte	0x1
  3115 027d 51       		.byte	0x51
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 62
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 62
 
 
  3116 027e 3A000000 		.4byte	.LVL83
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  3170 030c 15000000 		.4byte	.LVL80-1
  3171 0310 0100     		.2byte	0x1
  3172 0312 50       		.byte	0x50
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 63
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 63
 
 
  3173 0313 15000000 		.4byte	.LVL80-1
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  3227 0398 0100     		.2byte	0x1
  3228 039a 50       		.byte	0x50
  3229 039b 55000000 		.4byte	.LVL109-1
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 64
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 64
 
 
  3230 039f 60000000 		.4byte	.LVL111
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  3284 0422 48000000 		.4byte	.LVL106
  3285 0426 4D000000 		.4byte	.LVL107-1
  3286 042a 0100     		.2byte	0x1
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 65
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 65
 
 
  3287 042c 50       		.byte	0x50
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  3341 0058 00000000 		.4byte	.LFB46
  3342 005c 5C000000 		.4byte	.LFE46-.LFB46
  3343 0060 00000000 		.4byte	.LFB47
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 66
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 66
 
 
  3344 0064 7C000000 		.4byte	.LFE47-.LFB47
@@ -3953,343 +3953,342 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 1
  3391      00000201 
  3391      FB0E0D00 
  3391      01010101 
- 3392              	.LASF30:
- 3393 0000 525F4269 		.ascii	"R_BitBus\000"
- 3393      74427573 
+ 3392              	.LASF48:
+ 3393 0000 4F6E6557 		.ascii	"OneWire_BusState\000"
+ 3393      6972655F 
+ 3393      42757353 
+ 3393      74617465 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 67
+
+
  3393      00
- 3394              	.LASF10:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 67
-
-
- 3395 0009 75696E74 		.ascii	"uint16\000"
- 3395      313600
- 3396              	.LASF51:
- 3397 0010 4F6E6557 		.ascii	"OneWire_DataReady\000"
- 3397      6972655F 
- 3397      44617461 
- 3397      52656164 
- 3397      7900
- 3398              	.LASF49:
- 3399 0022 4F6E6557 		.ascii	"OneWire_CheckPresence\000"
- 3399      6972655F 
- 3399      43686563 
- 3399      6B507265 
- 3399      73656E63 
- 3400              	.LASF7:
- 3401 0038 6C6F6E67 		.ascii	"long long unsigned int\000"
- 3401      206C6F6E 
- 3401      6720756E 
- 3401      7369676E 
- 3401      65642069 
- 3402              	.LASF6:
- 3403 004f 6C6F6E67 		.ascii	"long long int\000"
- 3403      206C6F6E 
- 3403      6720696E 
- 3403      7400
- 3404              	.LASF0:
- 3405 005d 7369676E 		.ascii	"signed char\000"
- 3405      65642063 
- 3405      68617200 
- 3406              	.LASF59:
- 3407 0069 4F6E6557 		.ascii	"OneWire_TimerDelay_WriteCounter\000"
- 3407      6972655F 
- 3407      54696D65 
- 3407      7244656C 
- 3407      61795F57 
- 3408              	.LASF4:
- 3409 0089 6C6F6E67 		.ascii	"long int\000"
- 3409      20696E74 
+ 3394              	.LASF39:
+ 3395 0011 746D705F 		.ascii	"tmp_value\000"
+ 3395      76616C75 
+ 3395      6500
+ 3396              	.LASF22:
+ 3397 001b 72657375 		.ascii	"result\000"
+ 3397      6C7400
+ 3398              	.LASF19:
+ 3399 0022 575F4269 		.ascii	"W_Bit\000"
+ 3399      7400
+ 3400              	.LASF26:
+ 3401 0028 53656E73 		.ascii	"Sensor_off\000"
+ 3401      6F725F6F 
+ 3401      666600
+ 3402              	.LASF24:
+ 3403 0033 73686966 		.ascii	"shiftcount\000"
+ 3403      74636F75 
+ 3403      6E7400
+ 3404              	.LASF31:
+ 3405 003e 4F6E6557 		.ascii	"OneWire_GetTemperatureAsFloat\000"
+ 3405      6972655F 
+ 3405      47657454 
+ 3405      656D7065 
+ 3405      72617475 
+ 3406              	.LASF25:
+ 3407 005c 42757352 		.ascii	"BusReset\000"
+ 3407      65736574 
+ 3407      00
+ 3408              	.LASF18:
+ 3409 0065 73697A65 		.ascii	"sizetype\000"
+ 3409      74797065 
  3409      00
- 3410              	.LASF64:
- 3411 0092 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\PSoC Creator\\Workspac"
- 3411      73657273 
- 3411      5C536172 
- 3411      61685C44 
- 3411      6F63756D 
- 3412 00c0 6530315C 		.ascii	"e01\\TempSensor.cydsn\000"
- 3412      54656D70 
- 3412      53656E73 
- 3412      6F722E63 
- 3412      7964736E 
- 3413              	.LASF41:
- 3414 00d5 54656D70 		.ascii	"TempStr\000"
- 3414      53747200 
- 3415              	.LASF61:
- 3416 00dd 4F6E6557 		.ascii	"OneWire_TimerDelay_Stop\000"
- 3416      6972655F 
- 3416      54696D65 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 68
+ 3410              	.LASF67:
+ 3411 006e 4F6E6557 		.ascii	"OneWire_StatusReg_BUS_Read\000"
+ 3411      6972655F 
+ 3411      53746174 
+ 3411      75735265 
+ 3411      675F4255 
+ 3412              	.LASF52:
+ 3413 0089 42757350 		.ascii	"BusPresence\000"
+ 3413      72657365 
+ 3413      6E636500 
+ 3414              	.LASF56:
+ 3415 0095 6D656D63 		.ascii	"memcpy\000"
+ 3415      707900
+ 3416              	.LASF49:
+ 3417 009c 4F6E6557 		.ascii	"OneWire_CheckPresence\000"
+ 3417      6972655F 
+ 3417      43686563 
+ 3417      6B507265 
+ 3417      73656E63 
+ 3418              	.LASF20:
+ 3419 00b2 57726974 		.ascii	"Write8\000"
+ 3419      653800
+ 3420              	.LASF2:
+ 3421 00b9 73686F72 		.ascii	"short int\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 68
 
 
- 3416      7244656C 
- 3416      61795F53 
- 3417              	.LASF56:
- 3418 00f5 6D656D63 		.ascii	"memcpy\000"
- 3418      707900
- 3419              	.LASF9:
- 3420 00fc 75696E74 		.ascii	"uint8\000"
- 3420      3800
- 3421              	.LASF53:
- 3422 0102 43794465 		.ascii	"CyDelayUs\000"
- 3422      6C617955 
- 3422      7300
- 3423              	.LASF13:
- 3424 010c 646F7562 		.ascii	"double\000"
- 3424      6C6500
- 3425              	.LASF37:
- 3426 0113 70747231 		.ascii	"ptr1\000"
- 3426      00
- 3427              	.LASF66:
- 3428 0118 6D61736B 		.ascii	"mask\000"
- 3428      00
- 3429              	.LASF35:
- 3430 011d 76616C75 		.ascii	"value\000"
- 3430      6500
- 3431              	.LASF52:
- 3432 0123 42757350 		.ascii	"BusPresence\000"
- 3432      72657365 
- 3432      6E636500 
- 3433              	.LASF8:
- 3434 012f 756E7369 		.ascii	"unsigned int\000"
- 3434      676E6564 
- 3434      20696E74 
- 3434      00
- 3435              	.LASF31:
- 3436 013c 4F6E6557 		.ascii	"OneWire_GetTemperatureAsFloat\000"
- 3436      6972655F 
- 3436      47657454 
- 3436      656D7065 
- 3436      72617475 
- 3437              	.LASF5:
- 3438 015a 6C6F6E67 		.ascii	"long unsigned int\000"
- 3438      20756E73 
- 3438      69676E65 
- 3438      6420696E 
- 3438      7400
- 3439              	.LASF38:
- 3440 016c 746D705F 		.ascii	"tmp_char\000"
- 3440      63686172 
- 3440      00
- 3441              	.LASF20:
- 3442 0175 57726974 		.ascii	"Write8\000"
- 3442      653800
- 3443              	.LASF3:
- 3444 017c 73686F72 		.ascii	"short unsigned int\000"
- 3444      7420756E 
- 3444      7369676E 
- 3444      65642069 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 69
+ 3421      7420696E 
+ 3421      7400
+ 3422              	.LASF44:
+ 3423 00c3 66726163 		.ascii	"frac\000"
+ 3423      00
+ 3424              	.LASF60:
+ 3425 00c8 4F6E6557 		.ascii	"OneWire_TimerDelay_Start\000"
+ 3425      6972655F 
+ 3425      54696D65 
+ 3425      7244656C 
+ 3425      61795F53 
+ 3426              	.LASF35:
+ 3427 00e1 76616C75 		.ascii	"value\000"
+ 3427      6500
+ 3428              	.LASF10:
+ 3429 00e7 75696E74 		.ascii	"uint16\000"
+ 3429      313600
+ 3430              	.LASF59:
+ 3431 00ee 4F6E6557 		.ascii	"OneWire_TimerDelay_WriteCounter\000"
+ 3431      6972655F 
+ 3431      54696D65 
+ 3431      7244656C 
+ 3431      61795F57 
+ 3432              	.LASF40:
+ 3433 010e 4F6E6557 		.ascii	"OneWire_GetTemperatureAsString\000"
+ 3433      6972655F 
+ 3433      47657454 
+ 3433      656D7065 
+ 3433      72617475 
+ 3434              	.LASF32:
+ 3435 012d 696E6465 		.ascii	"index\000"
+ 3435      7800
+ 3436              	.LASF11:
+ 3437 0133 696E7431 		.ascii	"int16\000"
+ 3437      3600
+ 3438              	.LASF9:
+ 3439 0139 75696E74 		.ascii	"uint8\000"
+ 3439      3800
+ 3440              	.LASF55:
+ 3441 013f 4F6E6557 		.ascii	"OneWire_ControlReg_DRV_Write\000"
+ 3441      6972655F 
+ 3441      436F6E74 
+ 3441      726F6C52 
+ 3441      65675F44 
+ 3442              	.LASF46:
+ 3443 015c 4F6E6557 		.ascii	"OneWire_Stop\000"
+ 3443      6972655F 
+ 3443      53746F70 
+ 3443      00
+ 3444              	.LASF12:
+ 3445 0169 666C6F61 		.ascii	"float\000"
+ 3445      7400
+ 3446              	.LASF27:
+ 3447 016f 42757350 		.ascii	"BusPin\000"
+ 3447      696E00
+ 3448              	.LASF6:
+ 3449 0176 6C6F6E67 		.ascii	"long long int\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 69
 
 
- 3444      6E7400
- 3445              	.LASF48:
- 3446 018f 4F6E6557 		.ascii	"OneWire_BusState\000"
- 3446      6972655F 
- 3446      42757353 
- 3446      74617465 
- 3446      00
- 3447              	.LASF40:
- 3448 01a0 4F6E6557 		.ascii	"OneWire_GetTemperatureAsString\000"
- 3448      6972655F 
- 3448      47657454 
- 3448      656D7065 
- 3448      72617475 
- 3449              	.LASF68:
- 3450 01bf 73747263 		.ascii	"strcat\000"
- 3450      617400
- 3451              	.LASF29:
- 3452 01c6 4F6E6557 		.ascii	"OneWire_ReadTemperature\000"
- 3452      6972655F 
- 3452      52656164 
- 3452      54656D70 
- 3452      65726174 
- 3453              	.LASF36:
- 3454 01de 62617365 		.ascii	"base\000"
- 3454      00
- 3455              	.LASF43:
- 3456 01e3 67726164 		.ascii	"grad\000"
- 3456      00
- 3457              	.LASF55:
- 3458 01e8 4F6E6557 		.ascii	"OneWire_ControlReg_DRV_Write\000"
- 3458      6972655F 
- 3458      436F6E74 
- 3458      726F6C52 
- 3458      65675F44 
- 3459              	.LASF18:
- 3460 0205 73697A65 		.ascii	"sizetype\000"
- 3460      74797065 
- 3460      00
- 3461              	.LASF21:
- 3462 020e 7061796C 		.ascii	"payload\000"
- 3462      6F616400 
- 3463              	.LASF46:
- 3464 0216 4F6E6557 		.ascii	"OneWire_Stop\000"
- 3464      6972655F 
- 3464      53746F70 
- 3464      00
- 3465              	.LASF62:
- 3466 0223 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 3466      4320342E 
- 3466      392E3320 
- 3466      32303135 
- 3466      30333033 
- 3467 0256 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 3467      20726576 
- 3467      6973696F 
- 3467      6E203232 
- 3467      31323230 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 70
+ 3449      206C6F6E 
+ 3449      6720696E 
+ 3449      7400
+ 3450              	.LASF7:
+ 3451 0184 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 3451      206C6F6E 
+ 3451      6720756E 
+ 3451      7369676E 
+ 3451      65642069 
+ 3452              	.LASF4:
+ 3453 019b 6C6F6E67 		.ascii	"long int\000"
+ 3453      20696E74 
+ 3453      00
+ 3454              	.LASF58:
+ 3455 01a4 4F6E6557 		.ascii	"OneWire_isr_DataReady_StartEx\000"
+ 3455      6972655F 
+ 3455      6973725F 
+ 3455      44617461 
+ 3455      52656164 
+ 3456              	.LASF33:
+ 3457 01c2 4F6E6557 		.ascii	"OneWire_GetTemperatureAsInt100\000"
+ 3457      6972655F 
+ 3457      47657454 
+ 3457      656D7065 
+ 3457      72617475 
+ 3458              	.LASF43:
+ 3459 01e1 67726164 		.ascii	"grad\000"
+ 3459      00
+ 3460              	.LASF62:
+ 3461 01e6 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 3461      4320342E 
+ 3461      392E3320 
+ 3461      32303135 
+ 3461      30333033 
+ 3462 0219 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 3462      20726576 
+ 3462      6973696F 
+ 3462      6E203232 
+ 3462      31323230 
+ 3463 024c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 3463      66756E63 
+ 3463      74696F6E 
+ 3463      2D736563 
+ 3463      74696F6E 
+ 3464              	.LASF29:
+ 3465 0274 4F6E6557 		.ascii	"OneWire_ReadTemperature\000"
+ 3465      6972655F 
+ 3465      52656164 
+ 3465      54656D70 
+ 3465      65726174 
+ 3466              	.LASF65:
+ 3467 028c 4F6E6557 		.ascii	"OneWire_TSensor\000"
+ 3467      6972655F 
+ 3467      5453656E 
+ 3467      736F7200 
+ 3468              	.LASF1:
+ 3469 029c 756E7369 		.ascii	"unsigned char\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 70
 
 
- 3468 0289 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 3468      66756E63 
- 3468      74696F6E 
- 3468      2D736563 
- 3468      74696F6E 
- 3469              	.LASF34:
- 3470 02b1 69746F61 		.ascii	"itoa10\000"
- 3470      313000
- 3471              	.LASF47:
- 3472 02b8 4F6E6557 		.ascii	"OneWire_IRQDataReady\000"
- 3472      6972655F 
- 3472      49525144 
- 3472      61746152 
- 3472      65616479 
- 3473              	.LASF26:
- 3474 02cd 53656E73 		.ascii	"Sensor_off\000"
- 3474      6F725F6F 
- 3474      666600
- 3475              	.LASF12:
- 3476 02d8 666C6F61 		.ascii	"float\000"
- 3476      7400
- 3477              	.LASF63:
- 3478 02de 47656E65 		.ascii	"Generated_Source\\PSoC4\\OneWire.c\000"
- 3478      72617465 
- 3478      645F536F 
- 3478      75726365 
- 3478      5C50536F 
- 3479              	.LASF17:
- 3480 02ff 70726573 		.ascii	"present\000"
- 3480      656E7400 
- 3481              	.LASF1:
- 3482 0307 756E7369 		.ascii	"unsigned char\000"
- 3482      676E6564 
- 3482      20636861 
- 3482      7200
- 3483              	.LASF2:
- 3484 0315 73686F72 		.ascii	"short int\000"
- 3484      7420696E 
- 3484      7400
- 3485              	.LASF23:
- 3486 031f 42697450 		.ascii	"BitPayload\000"
- 3486      61796C6F 
- 3486      616400
- 3487              	.LASF28:
- 3488 032a 4F6E6557 		.ascii	"OneWire_SendTemperatureRequest\000"
- 3488      6972655F 
- 3488      53656E64 
- 3488      54656D70 
- 3488      65726174 
- 3489              	.LASF57:
- 3490 0349 4F6E6557 		.ascii	"OneWire_Trigger_Write\000"
- 3490      6972655F 
- 3490      54726967 
- 3490      6765725F 
- 3490      57726974 
- 3491              	.LASF60:
- 3492 035f 4F6E6557 		.ascii	"OneWire_TimerDelay_Start\000"
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 71
+ 3469      676E6564 
+ 3469      20636861 
+ 3469      7200
+ 3470              	.LASF53:
+ 3471 02aa 43794465 		.ascii	"CyDelayUs\000"
+ 3471      6C617955 
+ 3471      7300
+ 3472              	.LASF15:
+ 3473 02b4 63796973 		.ascii	"cyisraddress\000"
+ 3473      72616464 
+ 3473      72657373 
+ 3473      00
+ 3474              	.LASF47:
+ 3475 02c1 4F6E6557 		.ascii	"OneWire_IRQDataReady\000"
+ 3475      6972655F 
+ 3475      49525144 
+ 3475      61746152 
+ 3475      65616479 
+ 3476              	.LASF0:
+ 3477 02d6 7369676E 		.ascii	"signed char\000"
+ 3477      65642063 
+ 3477      68617200 
+ 3478              	.LASF57:
+ 3479 02e2 4F6E6557 		.ascii	"OneWire_Trigger_Write\000"
+ 3479      6972655F 
+ 3479      54726967 
+ 3479      6765725F 
+ 3479      57726974 
+ 3480              	.LASF8:
+ 3481 02f8 756E7369 		.ascii	"unsigned int\000"
+ 3481      676E6564 
+ 3481      20696E74 
+ 3481      00
+ 3482              	.LASF34:
+ 3483 0305 69746F61 		.ascii	"itoa10\000"
+ 3483      313000
+ 3484              	.LASF61:
+ 3485 030c 4F6E6557 		.ascii	"OneWire_TimerDelay_Stop\000"
+ 3485      6972655F 
+ 3485      54696D65 
+ 3485      7244656C 
+ 3485      61795F53 
+ 3486              	.LASF45:
+ 3487 0324 4F6E6557 		.ascii	"OneWire_Start\000"
+ 3487      6972655F 
+ 3487      53746172 
+ 3487      7400
+ 3488              	.LASF3:
+ 3489 0332 73686F72 		.ascii	"short unsigned int\000"
+ 3489      7420756E 
+ 3489      7369676E 
+ 3489      65642069 
+ 3489      6E7400
+ 3490              	.LASF50:
+ 3491 0345 4F6E6557 		.ascii	"OneWire_Sensor\000"
+ 3491      6972655F 
+ 3491      53656E73 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 71
 
 
- 3492      6972655F 
- 3492      54696D65 
- 3492      7244656C 
- 3492      61795F53 
- 3493              	.LASF14:
- 3494 0378 63686172 		.ascii	"char\000"
- 3494      00
- 3495              	.LASF15:
- 3496 037d 63796973 		.ascii	"cyisraddress\000"
- 3496      72616464 
- 3496      72657373 
- 3496      00
- 3497              	.LASF19:
- 3498 038a 575F4269 		.ascii	"W_Bit\000"
- 3498      7400
- 3499              	.LASF32:
- 3500 0390 696E6465 		.ascii	"index\000"
- 3500      7800
- 3501              	.LASF58:
- 3502 0396 4F6E6557 		.ascii	"OneWire_isr_DataReady_StartEx\000"
- 3502      6972655F 
- 3502      6973725F 
- 3502      44617461 
- 3502      52656164 
- 3503              	.LASF24:
- 3504 03b4 73686966 		.ascii	"shiftcount\000"
- 3504      74636F75 
- 3504      6E7400
- 3505              	.LASF50:
- 3506 03bf 4F6E6557 		.ascii	"OneWire_Sensor\000"
- 3506      6972655F 
- 3506      53656E73 
- 3506      6F7200
- 3507              	.LASF33:
- 3508 03ce 4F6E6557 		.ascii	"OneWire_GetTemperatureAsInt100\000"
- 3508      6972655F 
- 3508      47657454 
- 3508      656D7065 
- 3508      72617475 
- 3509              	.LASF16:
- 3510 03ed 54656D70 		.ascii	"Temperature\000"
- 3510      65726174 
- 3510      75726500 
- 3511              	.LASF67:
- 3512 03f9 4F6E6557 		.ascii	"OneWire_StatusReg_BUS_Read\000"
- 3512      6972655F 
- 3512      53746174 
- 3512      75735265 
- 3512      675F4255 
- 3513              	.LASF42:
- 3514 0414 7369676E 		.ascii	"sign\000"
- 3514      00
- 3515              	.LASF25:
- 3516 0419 42757352 		.ascii	"BusReset\000"
- 3516      65736574 
- 3516      00
- 3517              	.LASF11:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccorCDFf.s 			page 72
+ 3491      6F7200
+ 3492              	.LASF14:
+ 3493 0354 63686172 		.ascii	"char\000"
+ 3493      00
+ 3494              	.LASF68:
+ 3495 0359 73747263 		.ascii	"strcat\000"
+ 3495      617400
+ 3496              	.LASF38:
+ 3497 0360 746D705F 		.ascii	"tmp_char\000"
+ 3497      63686172 
+ 3497      00
+ 3498              	.LASF28:
+ 3499 0369 4F6E6557 		.ascii	"OneWire_SendTemperatureRequest\000"
+ 3499      6972655F 
+ 3499      53656E64 
+ 3499      54656D70 
+ 3499      65726174 
+ 3500              	.LASF37:
+ 3501 0388 70747231 		.ascii	"ptr1\000"
+ 3501      00
+ 3502              	.LASF5:
+ 3503 038d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 3503      20756E73 
+ 3503      69676E65 
+ 3503      6420696E 
+ 3503      7400
+ 3504              	.LASF42:
+ 3505 039f 7369676E 		.ascii	"sign\000"
+ 3505      00
+ 3506              	.LASF13:
+ 3507 03a4 646F7562 		.ascii	"double\000"
+ 3507      6C6500
+ 3508              	.LASF66:
+ 3509 03ab 6D61736B 		.ascii	"mask\000"
+ 3509      00
+ 3510              	.LASF51:
+ 3511 03b0 4F6E6557 		.ascii	"OneWire_DataReady\000"
+ 3511      6972655F 
+ 3511      44617461 
+ 3511      52656164 
+ 3511      7900
+ 3512              	.LASF63:
+ 3513 03c2 47656E65 		.ascii	"Generated_Source\\PSoC4\\OneWire.c\000"
+ 3513      72617465 
+ 3513      645F536F 
+ 3513      75726365 
+ 3513      5C50536F 
+ 3514              	.LASF17:
+ 3515 03e3 70726573 		.ascii	"present\000"
+ 3515      656E7400 
+ 3516              	.LASF30:
+ 3517 03eb 525F4269 		.ascii	"R_BitBus\000"
+ 3517      74427573 
+ 3517      00
+ 3518              	.LASF16:
+ 3519 03f4 54656D70 		.ascii	"Temperature\000"
+ 3519      65726174 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc0nn16Q.s 			page 72
 
 
- 3518 0422 696E7431 		.ascii	"int16\000"
- 3518      3600
- 3519              	.LASF54:
- 3520 0428 4F6E6557 		.ascii	"OneWire_ControlReg_SEL_Write\000"
- 3520      6972655F 
- 3520      436F6E74 
- 3520      726F6C52 
- 3520      65675F53 
- 3521              	.LASF45:
- 3522 0445 4F6E6557 		.ascii	"OneWire_Start\000"
- 3522      6972655F 
- 3522      53746172 
- 3522      7400
- 3523              	.LASF27:
- 3524 0453 42757350 		.ascii	"BusPin\000"
- 3524      696E00
- 3525              	.LASF44:
- 3526 045a 66726163 		.ascii	"frac\000"
+ 3519      75726500 
+ 3520              	.LASF54:
+ 3521 0400 4F6E6557 		.ascii	"OneWire_ControlReg_SEL_Write\000"
+ 3521      6972655F 
+ 3521      436F6E74 
+ 3521      726F6C52 
+ 3521      65675F53 
+ 3522              	.LASF64:
+ 3523 041d 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\Workspace01\\Tem"
+ 3523      73657273 
+ 3523      5C536172 
+ 3523      61685C44 
+ 3523      6F63756D 
+ 3524 044a 7053656E 		.ascii	"pSensor.cydsn\000"
+ 3524      736F722E 
+ 3524      63796473 
+ 3524      6E00
+ 3525              	.LASF36:
+ 3526 0458 62617365 		.ascii	"base\000"
  3526      00
- 3527              	.LASF65:
- 3528 045f 4F6E6557 		.ascii	"OneWire_TSensor\000"
- 3528      6972655F 
- 3528      5453656E 
- 3528      736F7200 
- 3529              	.LASF22:
- 3530 046f 72657375 		.ascii	"result\000"
- 3530      6C7400
- 3531              	.LASF39:
- 3532 0476 746D705F 		.ascii	"tmp_value\000"
- 3532      76616C75 
- 3532      6500
+ 3527              	.LASF41:
+ 3528 045d 54656D70 		.ascii	"TempStr\000"
+ 3528      53747200 
+ 3529              	.LASF21:
+ 3530 0465 7061796C 		.ascii	"payload\000"
+ 3530      6F616400 
+ 3531              	.LASF23:
+ 3532 046d 42697450 		.ascii	"BitPayload\000"
+ 3532      61796C6F 
+ 3532      616400
  3533              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

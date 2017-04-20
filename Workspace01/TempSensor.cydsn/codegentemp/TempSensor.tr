@@ -18,7 +18,7 @@
 ##################################################################### 
                     1::Clock Frequency Summary
 ===================================================================== 
-Number of clocks: 9
+Number of clocks: 11
 Clock: CyECO                | N/A                   | Target: 24.00 MHz  | 
 Clock: CyHFCLK              | N/A                   | Target: 48.00 MHz  | 
 Clock: CyILO                | N/A                   | Target: 0.03 MHz   | 
@@ -28,6 +28,8 @@ Clock: CyRouted1            | N/A                   | Target: 48.00 MHz  |
 Clock: CySYSCLK             | N/A                   | Target: 48.00 MHz  | 
 Clock: CyWCO                | N/A                   | Target: 0.03 MHz   | 
 Clock: OneWire_clock_delay  | Frequency: 38.46 MHz  | Target: 0.00 MHz   | 
+Clock: UART_SCBCLK          | N/A                   | Target: 1.37 MHz   | 
+Clock: UART_SCBCLK(FFB)     | N/A                   | Target: 1.37 MHz   | 
 
  =====================================================================
                     End of Clock Frequency Summary
