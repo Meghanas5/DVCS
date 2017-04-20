@@ -1443,17 +1443,17 @@ typedef struct
  */
 typedef enum
 {
-	/** PRBS9 sequence '11111111100000111101뀙 
+	/** PRBS9 sequence '11111111100000111101…’ 
 	    (in transmission order) as described 
 	    in [Vol 6] Part F, Section 4.1.5 */
 	CYBLE_PAYLOAD_VAL_ZERO,
 
-	/** Repeated ?1110000?(in transmission order) 
+	/** Repeated ‘11110000’ (in transmission order) 
 		sequence as described
 		in [Vol 6] Part F, Section 4.1.5 */
 	CYBLE_PAYLOAD_VAL_ONE,
 
-	/** Repeated ?0101010?(in transmission order) 
+	/** Repeated ‘10101010’ (in transmission order) 
 		sequence as described
 		in [Vol 6] Part F, Section 4.1.5 */
 	CYBLE_PAYLOAD_VAL_TWO,
@@ -1462,16 +1462,16 @@ typedef enum
 		[Vol 6] Part F, Section 4.1.5 */
 	CYBLE_PAYLOAD_VAL_THREE,
 
-	/** Repeated ?1111111?(in transmission order) sequence */
+	/** Repeated ‘11111111’ (in transmission order) sequence */
 	CYBLE_PAYLOAD_VAL_FOUR,
 
-	/** Repeated ?0000000?(in transmission order) sequence */
+	/** Repeated ‘00000000’ (in transmission order) sequence */
 	CYBLE_PAYLOAD_VAL_FIVE,
 
-	/** Repeated ?0001111?(in transmission order) sequence */
+	/** Repeated ‘00001111’ (in transmission order) sequence */
 	CYBLE_PAYLOAD_VAL_SIX,
 
-	/** Repeated ?1010101?(in transmission order) sequence */
+	/** Repeated ‘01010101’ (in transmission order) sequence */
 	CYBLE_PAYLOAD_VAL_SEVEN,
 	
 }CYBLE_PKT_PAYLOAD_T;
@@ -1481,7 +1481,7 @@ typedef enum
  */
 typedef struct
 {
-	/** "N = (F ?2402) / 2 Range: 0x00 ?0x27. 
+	/** "N = (F – 2402) / 2 Range: 0x00 – 0x27. 
 		Frequency Range : 2402 MHz to 2480 MHz" */
 	uint8 tx_frequency;
 
@@ -3000,7 +3000,7 @@ CYBLE_API_RESULT_T CyBle_StartTransmitterTest
 *  This API Programs direct test mode RX test command parameters.
 *  
 *  \param RxFreq: Frequency for reception.
-*                 N = (F ?2402)/2  Range: 0x00 ?0x27. 
+*                 N = (F – 2402)/2  Range: 0x00 – 0x27. 
                   Frequency Range : 2402 MHz to 2480 MHz.
 * 
 * \return

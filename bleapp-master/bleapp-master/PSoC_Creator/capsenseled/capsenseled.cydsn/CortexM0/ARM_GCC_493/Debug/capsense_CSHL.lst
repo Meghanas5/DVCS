@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
   30:Generated_Source\PSoC4/capsense_CSHL.c ****     uint16 capsense_rawFilterData1[capsense_TOTAL_SENSOR_COUNT];
   31:Generated_Source\PSoC4/capsense_CSHL.c ****     uint16 capsense_rawFilterData2[capsense_TOTAL_SENSOR_COUNT];
   32:Generated_Source\PSoC4/capsense_CSHL.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 2
 
 
   33:Generated_Source\PSoC4/capsense_CSHL.c **** #elif ( (0u != (capsense_RAW_FILTER_MASK & capsense_IIR2_FILTER))   || \
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
   87:Generated_Source\PSoC4/capsense_CSHL.c **** };
   88:Generated_Source\PSoC4/capsense_CSHL.c **** 
   89:Generated_Source\PSoC4/capsense_CSHL.c **** const uint8 capsense_numberOfSensors[] = {
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 3
 
 
   90:Generated_Source\PSoC4/capsense_CSHL.c ****     5u, /* LinearSlider0__LS */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
   26              		.loc 1 143 0
   27              		.cfi_startproc
   28              	.LVL0:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 4
 
 
  144:Generated_Source\PSoC4/capsense_CSHL.c ****     #if ((capsense_TOTAL_BUTTONS_COUNT) || (capsense_TOTAL_MATRIX_BUTTONS_COUNT) || \
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  182:Generated_Source\PSoC4/capsense_CSHL.c ****     #endif  /* ((capsense_RAW_FILTER_MASK & capsense_MEDIAN_FILTER) || \
  183:Generated_Source\PSoC4/capsense_CSHL.c ****             *   (capsense_RAW_FILTER_MASK & capsense_AVERAGING_FILTER))
  184:Generated_Source\PSoC4/capsense_CSHL.c ****             */
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 5
 
 
  185:Generated_Source\PSoC4/capsense_CSHL.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
   65              		.loc 1 218 0
   66              		.cfi_startproc
   67              	.LVL2:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 6
 
 
   68 0000 10B5     		push	{r4, lr}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  240:Generated_Source\PSoC4/capsense_CSHL.c **** *
  241:Generated_Source\PSoC4/capsense_CSHL.c **** * Parameters:
  242:Generated_Source\PSoC4/capsense_CSHL.c **** *  None
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 7
 
 
  243:Generated_Source\PSoC4/capsense_CSHL.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  133              		.global	capsense_InitializeEnabledBaselines
  134              		.code	16
  135              		.thumb_func
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 8
 
 
  136              		.type	capsense_InitializeEnabledBaselines, %function
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  157              	.L13:
  296:Generated_Source\PSoC4/capsense_CSHL.c ****     {
  297:Generated_Source\PSoC4/capsense_CSHL.c ****         /* Wait while sensor is busy */
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 9
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 9
 
 
  298:Generated_Source\PSoC4/capsense_CSHL.c ****     }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  196              	capsense_GetBaselineData:
  197              	.LFB44:
  312:Generated_Source\PSoC4/capsense_CSHL.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 10
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 10
 
 
  313:Generated_Source\PSoC4/capsense_CSHL.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  367:Generated_Source\PSoC4/capsense_CSHL.c ****     #endif  /* capsense_TOTAL_GENERICS_COUNT */
  368:Generated_Source\PSoC4/capsense_CSHL.c **** 
  369:Generated_Source\PSoC4/capsense_CSHL.c ****     noiseThreshold = capsense_noiseThreshold[widget];
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 11
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 11
 
 
  370:Generated_Source\PSoC4/capsense_CSHL.c ****     filteredRawData = capsense_sensorRaw[sensor];
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  424:Generated_Source\PSoC4/capsense_CSHL.c ****         tempRaw = filteredRawData - capsense_sensorBaseline[sensor];
  425:Generated_Source\PSoC4/capsense_CSHL.c ****         sign = 1u;    /* Positive difference - Calculate the Signal */
  426:Generated_Source\PSoC4/capsense_CSHL.c ****     }
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 12
 
 
  427:Generated_Source\PSoC4/capsense_CSHL.c ****     else
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  481:Generated_Source\PSoC4/capsense_CSHL.c ****         #if (capsense_AUTO_RESET == capsense_AUTO_RESET_DISABLE)
  482:Generated_Source\PSoC4/capsense_CSHL.c ****             }
  483:Generated_Source\PSoC4/capsense_CSHL.c ****         #endif /* (capsense_AUTO_RESET == capsense_AUTO_RESET_DISABLE) */
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 13
 
 
  484:Generated_Source\PSoC4/capsense_CSHL.c ****     }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  538:Generated_Source\PSoC4/capsense_CSHL.c **** *
  539:Generated_Source\PSoC4/capsense_CSHL.c **** * Global Variables:
  540:Generated_Source\PSoC4/capsense_CSHL.c **** *  capsense_widgetNumber[]  - stores widget numbers.
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 14
 
 
  541:Generated_Source\PSoC4/capsense_CSHL.c **** *
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  595:Generated_Source\PSoC4/capsense_CSHL.c **** *
  596:Generated_Source\PSoC4/capsense_CSHL.c **** * Side Effects:
  597:Generated_Source\PSoC4/capsense_CSHL.c **** *  None
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 15
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 15
 
 
  598:Generated_Source\PSoC4/capsense_CSHL.c **** *
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  652:Generated_Source\PSoC4/capsense_CSHL.c **** 
  653:Generated_Source\PSoC4/capsense_CSHL.c ****     /* Get number of sensors in widget */
  654:Generated_Source\PSoC4/capsense_CSHL.c ****     sensorsPerWidget = capsense_numberOfSensors[widget];
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 16
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 16
 
 
  655:Generated_Source\PSoC4/capsense_CSHL.c **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  209              	.L18:
  210              		.align	2
  211              	.L17:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 17
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 17
 
 
  212 0008 00000000 		.word	.LANCHOR0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  239              		.cfi_endproc
  240              	.LFE45:
  241              		.size	capsense_SetBaselineData, .-capsense_SetBaselineData
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 18
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 18
 
 
  242              		.section	.text.capsense_GetDiffCountData,"ax",%progbits
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  269              		.align	2
  270              		.global	capsense_SetDiffCountData
  271              		.code	16
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 19
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 19
 
 
  272              		.thumb_func
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  299              		.type	capsense_GetFingerThreshold, %function
  300              	capsense_GetFingerThreshold:
  301              	.LFB48:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 20
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 20
 
 
  779:Generated_Source\PSoC4/capsense_CSHL.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  808:Generated_Source\PSoC4/capsense_CSHL.c **** /*******************************************************************************
  809:Generated_Source\PSoC4/capsense_CSHL.c **** * Function Name: capsense_GetNoiseThreshold
  810:Generated_Source\PSoC4/capsense_CSHL.c **** ********************************************************************************
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 21
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 21
 
 
  811:Generated_Source\PSoC4/capsense_CSHL.c **** *
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  840:Generated_Source\PSoC4/capsense_CSHL.c **** *  This function reads the Hysteresis value from the component.
  841:Generated_Source\PSoC4/capsense_CSHL.c **** *
  842:Generated_Source\PSoC4/capsense_CSHL.c **** * Parameters:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 22
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 22
 
 
  843:Generated_Source\PSoC4/capsense_CSHL.c **** *  widget:  widget number.
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  872:Generated_Source\PSoC4/capsense_CSHL.c **** *
  873:Generated_Source\PSoC4/capsense_CSHL.c **** * Return Value:
  874:Generated_Source\PSoC4/capsense_CSHL.c **** *  This API returns the negative noise threshold
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 23
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 23
 
 
  875:Generated_Source\PSoC4/capsense_CSHL.c **** *
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  904:Generated_Source\PSoC4/capsense_CSHL.c ****     *  sensorNumber:  widget index.
  905:Generated_Source\PSoC4/capsense_CSHL.c ****     *  value:  Finger threshold value for the widget.
  906:Generated_Source\PSoC4/capsense_CSHL.c ****     *
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 24
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 24
 
 
  907:Generated_Source\PSoC4/capsense_CSHL.c ****     * Return Value:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  937:Generated_Source\PSoC4/capsense_CSHL.c ****     *
  938:Generated_Source\PSoC4/capsense_CSHL.c ****     * Global Variables:
  939:Generated_Source\PSoC4/capsense_CSHL.c ****     *  capsense_noiseThreshold[] - This array contains the level of signal
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 25
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 25
 
 
  940:Generated_Source\PSoC4/capsense_CSHL.c ****     *   for each widget that determines the level of noise in the capacitive scan.
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  970:Generated_Source\PSoC4/capsense_CSHL.c ****     * Side Effects:
  971:Generated_Source\PSoC4/capsense_CSHL.c ****     *  None
  972:Generated_Source\PSoC4/capsense_CSHL.c ****     *
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 26
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 26
 
 
  973:Generated_Source\PSoC4/capsense_CSHL.c ****     *******************************************************************************/
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1003:Generated_Source\PSoC4/capsense_CSHL.c ****     void capsense_SetNegativeNoiseThreshold(uint32 widget, uint8 value)
 1004:Generated_Source\PSoC4/capsense_CSHL.c ****     {
  474              		.loc 1 1004 0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 27
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 27
 
 
  475              		.cfi_startproc
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1033:Generated_Source\PSoC4/capsense_CSHL.c ****         capsense_debounce[widget] = value;
  501              		.loc 1 1033 0
  502 0000 014B     		ldr	r3, .L53
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 28
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 28
 
 
  503 0002 1954     		strb	r1, [r3, r0]
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  529 0004 0171     		strb	r1, [r0, #4]
 1062:Generated_Source\PSoC4/capsense_CSHL.c ****     }
  530              		.loc 1 1062 0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 29
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 29
 
 
  531              		@ sp needed
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1100:Generated_Source\PSoC4/capsense_CSHL.c **** *
 1101:Generated_Source\PSoC4/capsense_CSHL.c **** * Side Effects:
 1102:Generated_Source\PSoC4/capsense_CSHL.c **** *  None
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 30
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 30
 
 
 1103:Generated_Source\PSoC4/capsense_CSHL.c **** *
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  577 0014 1F48     		ldr	r0, .L63+16
  578              	.LVL48:
  579 0016 0123     		mov	r3, #1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 31
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 31
 
 
  580              	.LVL49:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  617 004e 0DDB     		blt	.L61
 1145:Generated_Source\PSoC4/capsense_CSHL.c ****         {
 1146:Generated_Source\PSoC4/capsense_CSHL.c ****             capsense_debounceCounter[debounceIndex]--;
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 32
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 32
 
 
  618              		.loc 1 1146 0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  657 0082 C046     		.align	2
  658              	.L63:
  659 0084 00000000 		.word	capsense_widgetNumber
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 33
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 33
 
 
  660 0088 00000000 		.word	capsense_fingerThreshold
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  682              		.cfi_offset 5, -8
  683              		.cfi_offset 14, -4
  684              	.LVL61:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 34
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 34
 
 
 1194:Generated_Source\PSoC4/capsense_CSHL.c ****     uint32 rawIndex = (uint32)capsense_rawDataIndex[widget];
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  719              		.code	16
  720              		.thumb_func
  721              		.type	capsense_CheckIsAnyWidgetActive, %function
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 35
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 35
 
 
  722              	capsense_CheckIsAnyWidgetActive:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  742 000a FFF7FEFF 		bl	capsense_CheckIsWidgetActive
  743              	.LVL70:
  744 000e 0028     		cmp	r0, #0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 36
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 36
 
 
  745 0010 00D0     		beq	.L71
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1270:Generated_Source\PSoC4/capsense_CSHL.c **** *
 1271:Generated_Source\PSoC4/capsense_CSHL.c **** * Global Variables:
 1272:Generated_Source\PSoC4/capsense_CSHL.c **** *  capsense_sensorEnableMask[] - used to store the sensor scanning
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 37
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 37
 
 
 1273:Generated_Source\PSoC4/capsense_CSHL.c **** *  state.
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  802              	.LVL81:
  803 0016 10BD     		pop	{r4, pc}
  804              	.L77:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 38
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 38
 
 
  805              		.align	2
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  827              		.loc 1 1330 0
  828 0002 0024     		mov	r4, #0
  829              	.LVL84:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 39
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 39
 
 
  830              	.L79:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1351:Generated_Source\PSoC4/capsense_CSHL.c ****     *  capsense_sensorSignal[] within a defined centroid and
 1352:Generated_Source\PSoC4/capsense_CSHL.c ****     *  returns the index of the maximum element. The values below the finger threshold are
 1353:Generated_Source\PSoC4/capsense_CSHL.c ****     *  ignored.
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 40
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 40
 
 
 1354:Generated_Source\PSoC4/capsense_CSHL.c ****     *  The centroid is defined by offset of the first element and a number of elements - count.
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  877 0006 2D18     		add	r5, r5, r0
  878              	.LVL91:
 1393:Generated_Source\PSoC4/capsense_CSHL.c ****         uint8 *startOfSlider = &capsense_sensorSignal[offset];
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 41
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 41
 
 
  879              		.loc 1 1393 0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1443:Generated_Source\PSoC4/capsense_CSHL.c ****                     /* Find biggest centroid if two are same size, last one wins
 1444:Generated_Source\PSoC4/capsense_CSHL.c ****                        We are at the end of current */
 1445:Generated_Source\PSoC4/capsense_CSHL.c ****                 if (curCntrdSize >= biggestCtrdSize)
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 42
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 42
 
 
 1446:Generated_Source\PSoC4/capsense_CSHL.c ****                 {
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  889              		.loc 1 1494 0
  890 0010 EC5C     		ldrb	r4, [r5, r3]
  891 0012 9442     		cmp	r4, r2
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 43
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 43
 
 
  892 0014 03D9     		bls	.L84
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  932              	.LFB64:
 1506:Generated_Source\PSoC4/capsense_CSHL.c **** 
 1507:Generated_Source\PSoC4/capsense_CSHL.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 44
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 44
 
 
 1508:Generated_Source\PSoC4/capsense_CSHL.c ****     /*******************************************************************************
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1543:Generated_Source\PSoC4/capsense_CSHL.c ****             uint8 posNext;
 1544:Generated_Source\PSoC4/capsense_CSHL.c ****         #endif /* ((capsense_TOTAL_LINEAR_SLIDERS_COUNT>0u) || (capsense_TOTAL_TOUCH_PADS_BASIC_COU
 1545:Generated_Source\PSoC4/capsense_CSHL.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 45
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 45
 
 
 1546:Generated_Source\PSoC4/capsense_CSHL.c ****         /* Helps during centroid calculation */
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1594:Generated_Source\PSoC4/capsense_CSHL.c ****             else
 1595:Generated_Source\PSoC4/capsense_CSHL.c ****             {
 1596:Generated_Source\PSoC4/capsense_CSHL.c ****         #endif /* (capsense_ADD_SLIDER_TYPE) */
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 46
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 46
 
 
 1597:Generated_Source\PSoC4/capsense_CSHL.c **** 
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1632:Generated_Source\PSoC4/capsense_CSHL.c ****                 #else
 1633:Generated_Source\PSoC4/capsense_CSHL.c ****                     capsense_centroid[capsense_POS] = startOfSlider[maximum];
  976              		.loc 1 1633 0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 47
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 47
 
 
  977 0024 0B5D     		ldrb	r3, [r1, r4]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1647:Generated_Source\PSoC4/capsense_CSHL.c ****                 else                                /* Not first Not last */
 1648:Generated_Source\PSoC4/capsense_CSHL.c ****                 {
 1649:Generated_Source\PSoC4/capsense_CSHL.c ****                     capsense_centroid[capsense_POS_PREV] = startOfSlider[posPrev];
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 48
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 48
 
 
  1018              		.loc 1 1649 0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1052 008a 5378     		ldrb	r3, [r2, #1]
  1053 008c 1B1A     		sub	r3, r3, r0
  1054 008e DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 49
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 49
 
 
  1055 0090 5370     		strb	r3, [r2, #1]
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1690:Generated_Source\PSoC4/capsense_CSHL.c **** 
 1691:Generated_Source\PSoC4/capsense_CSHL.c ****         /* (numerator/denominator) + maximum */
 1692:Generated_Source\PSoC4/capsense_CSHL.c ****         denominator = (((int32)(uint32)((uint32)numerator << 8u)/denominator) + (int32)(uint32)((ui
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 50
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 50
 
 
  1088              		.loc 1 1692 0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1126              		.section	.text.capsense_GetRadialCentroidPos,"ax",%progbits
  1127              		.align	2
  1128              		.global	capsense_GetRadialCentroidPos
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 51
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 51
 
 
  1129              		.code	16
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1758:Generated_Source\PSoC4/capsense_CSHL.c ****         #endif /* (0u != capsense_LINEAR_SLIDERS_POS_FILTERS_MASK) */
 1759:Generated_Source\PSoC4/capsense_CSHL.c **** 
 1760:Generated_Source\PSoC4/capsense_CSHL.c ****         #if ((0u != (capsense_MEDIAN_FILTER & capsense_LINEAR_SLIDERS_POS_FILTERS_MASK)) || \
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 52
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 52
 
 
 1761:Generated_Source\PSoC4/capsense_CSHL.c ****              (0u != (capsense_AVERAGING_FILTER & capsense_LINEAR_SLIDERS_POS_FILTERS_MASK)))
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1815:Generated_Source\PSoC4/capsense_CSHL.c ****                             {
 1816:Generated_Source\PSoC4/capsense_CSHL.c ****                                 capsense_posFiltersData[posIndex + 1u] = (uint8) position;
 1817:Generated_Source\PSoC4/capsense_CSHL.c ****                             }
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 53
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 53
 
 
 1818:Generated_Source\PSoC4/capsense_CSHL.c ****                         #endif /* ((0u != (capsense_MEDIAN_FILTER & \
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1872:Generated_Source\PSoC4/capsense_CSHL.c ****                                 position = capsense_IIR4Filter(position,
 1873:Generated_Source\PSoC4/capsense_CSHL.c ****                                                                     (uint16)capsense_posFiltersData
 1874:Generated_Source\PSoC4/capsense_CSHL.c ****                                 capsense_posFiltersData[posIndex] = (uint8) position;
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 54
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 54
 
 
 1875:Generated_Source\PSoC4/capsense_CSHL.c ****                             }
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1929:Generated_Source\PSoC4/capsense_CSHL.c ****     *  #define capsense_"widget_name"__RS           5
 1930:Generated_Source\PSoC4/capsense_CSHL.c ****     *
 1931:Generated_Source\PSoC4/capsense_CSHL.c ****     * Return:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 55
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 55
 
 
 1932:Generated_Source\PSoC4/capsense_CSHL.c ****     *  Returns a position value of the radial slider.
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 1975:Generated_Source\PSoC4/capsense_CSHL.c ****             maximum = capsense_FindMaximum(offset, count, (uint8)capsense_fingerThreshold[widget]);
  1145              		.loc 1 1975 0
  1146 0006 0B4B     		ldr	r3, .L104
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 56
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 56
 
 
  1147 0008 1A5C     		ldrb	r2, [r3, r0]
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2006:Generated_Source\PSoC4/capsense_CSHL.c ****                                *           capsense_RADIAL_SLIDERS_POS_FILTERS_MASK)) || \
 2007:Generated_Source\PSoC4/capsense_CSHL.c ****                                *   (0u != (capsense_AVERAGING_FILTER & \
 2008:Generated_Source\PSoC4/capsense_CSHL.c ****                                *           capsense_RADIAL_SLIDERS_POS_FILTERS_MASK)))
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 57
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 57
 
 
 2009:Generated_Source\PSoC4/capsense_CSHL.c ****                                */
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2063:Generated_Source\PSoC4/capsense_CSHL.c ****                             }
 2064:Generated_Source\PSoC4/capsense_CSHL.c ****                         #endif /* (0u != (capsense_IIR4_FILTER &
 2065:Generated_Source\PSoC4/capsense_CSHL.c ****                                *          capsense_RADIAL_SLIDERS_POS_FILTERS_MASK))
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 58
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 58
 
 
 2066:Generated_Source\PSoC4/capsense_CSHL.c ****                                */
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1192              		.code	16
  1193              		.thumb_func
  1194              		.type	capsense_MedianFilter, %function
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 59
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 59
 
 
  1195              	capsense_MedianFilter:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2151:Generated_Source\PSoC4/capsense_CSHL.c ****                *   (0u != (capsense_AVERAGING_FILTER & capsense_TOUCH_PADS_POS_FILTERS_MASK)))
 2152:Generated_Source\PSoC4/capsense_CSHL.c ****                */
 2153:Generated_Source\PSoC4/capsense_CSHL.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 60
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 60
 
 
 2154:Generated_Source\PSoC4/capsense_CSHL.c ****         uint8 MaxX;
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2208:Generated_Source\PSoC4/capsense_CSHL.c ****                             capsense_posFiltersData[posXIndex] = posX;
 2209:Generated_Source\PSoC4/capsense_CSHL.c ****                             capsense_posFiltersData[posYIndex] = posY;
 2210:Generated_Source\PSoC4/capsense_CSHL.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 61
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 61
 
 
 2211:Generated_Source\PSoC4/capsense_CSHL.c ****                             #if((0u != (capsense_MEDIAN_FILTER & \
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2265:Generated_Source\PSoC4/capsense_CSHL.c ****                                                                              capsense_posFiltersDat
 2266:Generated_Source\PSoC4/capsense_CSHL.c ****                                     capsense_posFiltersData[posXIndex] = tempPos;
 2267:Generated_Source\PSoC4/capsense_CSHL.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 62
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 62
 
 
 2268:Generated_Source\PSoC4/capsense_CSHL.c ****                                     tempPos = posY;
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2322:Generated_Source\PSoC4/capsense_CSHL.c ****                                         capsense_posFiltersData[posYIndex] = posY;
 2323:Generated_Source\PSoC4/capsense_CSHL.c ****                                     }
 2324:Generated_Source\PSoC4/capsense_CSHL.c ****                             #endif /* (0u != (capsense_JITTER_FILTER & \
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 63
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 63
 
 
 2325:Generated_Source\PSoC4/capsense_CSHL.c ****                                    *           capsense_TOUCH_PADS_POS_FILTERS_MASK))
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2379:Generated_Source\PSoC4/capsense_CSHL.c ****     *******************************************************************************/
 2380:Generated_Source\PSoC4/capsense_CSHL.c ****     uint16 capsense_MedianFilter(uint16 x1, uint16 x2, uint16 x3)
 2381:Generated_Source\PSoC4/capsense_CSHL.c ****     {
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 64
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 64
 
 
  1197              		.loc 1 2381 0
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1234              		.global	capsense_IIR4Filter
  1235              		.code	16
  1236              		.thumb_func
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 65
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 65
 
 
  1237              		.type	capsense_IIR4Filter, %function
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2449:Generated_Source\PSoC4/capsense_CSHL.c ****     *  x1:  Current value.
 2450:Generated_Source\PSoC4/capsense_CSHL.c ****     *  x2:  Previous value.
 2451:Generated_Source\PSoC4/capsense_CSHL.c ****     *
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 66
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 66
 
 
 2452:Generated_Source\PSoC4/capsense_CSHL.c ****     * Return:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2503:Generated_Source\PSoC4/capsense_CSHL.c **** 
 2504:Generated_Source\PSoC4/capsense_CSHL.c ****         /* IIR = 1/4 Current Value + 3/4 Previous Value */
 2505:Generated_Source\PSoC4/capsense_CSHL.c ****         tmp = (uint32)x1 + (uint32)x2;
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 67
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 67
 
 
  1243              		.loc 1 2505 0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1290 000c 1E5C     		ldrb	r6, [r3, r0]
  369:Generated_Source\PSoC4/capsense_CSHL.c ****     filteredRawData = capsense_sensorRaw[sensor];
  1291              		.loc 1 369 0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 68
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 68
 
 
  1292 000e 3B4B     		ldr	r3, .L124+4
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1338 004e BD1A     		sub	r5, r7, r2
  1339 0050 ADB2     		uxth	r5, r5
  1340              	.LVL156:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 69
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 69
 
 
  425:Generated_Source\PSoC4/capsense_CSHL.c ****     }
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1386 008e 1355     		strb	r3, [r2, r4]
  1387 0090 18E0     		b	.L119
  1388              	.L117:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 70
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 70
 
 
  454:Generated_Source\PSoC4/capsense_CSHL.c ****              ((tempRaw < (uint16) capsense_negativeNoiseThreshold[widget])
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  487:Generated_Source\PSoC4/capsense_CSHL.c ****     {
  1432              		.loc 1 487 0
  1433 00c4 6B46     		mov	r3, sp
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 71
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 71
 
 
  1434 00c6 9E88     		ldrh	r6, [r3, #4]
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1482 00f8 00000000 		.word	capsense_widgetNumber
  1483 00fc 00000000 		.word	capsense_noiseThreshold
  1484 0100 00000000 		.word	capsense_sensorRaw
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 72
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 72
 
 
  1485 0104 00000000 		.word	.LANCHOR1
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1534 0000 10B5     		push	{r4, lr}
  1535              		.cfi_def_cfa_offset 8
  1536              		.cfi_offset 4, -8
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 73
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 73
 
 
  1537              		.cfi_offset 14, -4
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  646:Generated_Source\PSoC4/capsense_CSHL.c ****     uint32 sensorsPerWidget;
  1584              		.loc 1 646 0
  1585              		.cfi_startproc
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 74
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 74
 
 
  1586              	.LVL187:
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1633              		.thumb_func
  1634              		.type	capsense_GetCentroidPos, %function
  1635              	capsense_GetCentroidPos:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 75
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 75
 
 
  1636              	.LFB65:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1683 0038 5219     		add	r2, r2, r5
  1684 003a 127B     		ldrb	r2, [r2, #12]
  1685 003c 002A     		cmp	r2, #0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 76
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 76
 
 
  1686 003e 06D1     		bne	.L141
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1732 006c 00000000 		.word	.LANCHOR1
  1733 0070 00000000 		.word	capsense_fingerThreshold
  1734 0074 00000000 		.word	capsense_noiseThreshold
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 77
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 77
 
 
  1735 0078 FFFF0000 		.word	65535
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2553:Generated_Source\PSoC4/capsense_CSHL.c **** 
 2554:Generated_Source\PSoC4/capsense_CSHL.c ****         return x1;
 2555:Generated_Source\PSoC4/capsense_CSHL.c ****     }
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 78
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 78
 
 
 2556:Generated_Source\PSoC4/capsense_CSHL.c **** #endif /* ( (0u != (capsense_RAW_FILTER_MASK & capsense_JITTER_FILTER)) || \
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2610:Generated_Source\PSoC4/capsense_CSHL.c ****     *  x2:  Previous value.
 2611:Generated_Source\PSoC4/capsense_CSHL.c ****     *
 2612:Generated_Source\PSoC4/capsense_CSHL.c ****     * Return:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 79
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 79
 
 
 2613:Generated_Source\PSoC4/capsense_CSHL.c ****     *  Returns filtered value.
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2667:Generated_Source\PSoC4/capsense_CSHL.c ****     {
 2668:Generated_Source\PSoC4/capsense_CSHL.c ****         uint8 i;
 2669:Generated_Source\PSoC4/capsense_CSHL.c ****         uint32 retVal = 0u;
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 80
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 80
 
 
 2670:Generated_Source\PSoC4/capsense_CSHL.c ****         uint16 row_sig_max = 0u;
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2724:Generated_Source\PSoC4/capsense_CSHL.c **** *  This API returns the widget number for the sensor.
 2725:Generated_Source\PSoC4/capsense_CSHL.c **** *
 2726:Generated_Source\PSoC4/capsense_CSHL.c **** * Global Variables:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 81
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 81
 
 
 2727:Generated_Source\PSoC4/capsense_CSHL.c **** *  capsense_widgetNumber[]  - stores widget numbers.
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
 2756:Generated_Source\PSoC4/capsense_CSHL.c **** *  None
 2757:Generated_Source\PSoC4/capsense_CSHL.c **** *
 2758:Generated_Source\PSoC4/capsense_CSHL.c **** *******************************************************************************/
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 82
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 82
 
 
 2759:Generated_Source\PSoC4/capsense_CSHL.c **** uint8 capsense_GetLowBaselineReset(uint32 sensor)
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1798              		.loc 1 2786 0
  1799              		.cfi_startproc
  1800              	.LVL215:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 83
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 83
 
 
 2787:Generated_Source\PSoC4/capsense_CSHL.c ****     return(capsense_debounce[widget]);
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1828 0004 5A72     		strb	r2, [r3, #9]
 2814:Generated_Source\PSoC4/capsense_CSHL.c ****     }
  1829              		.loc 1 2814 0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 84
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 84
 
 
  1830              		@ sp needed
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1859 0008 00000000 		.word	.LANCHOR1
  1860              		.cfi_endproc
  1861              	.LFE73:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 85
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 85
 
 
  1862              		.size	capsense_DisableRawDataFilters, .-capsense_DisableRawDataFilters
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1916 000f 00       		.bss
  1917              		.align	2
  1918              		.set	.LANCHOR0,. + 0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 86
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 86
 
 
  1919              		.type	capsense_sensorBaseline, %object
@@ -5146,40 +5146,40 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  1957 0006 00000000 		.4byte	.Ldebug_abbrev0
  1958 000a 04       		.byte	0x4
  1959 000b 01       		.uleb128 0x1
- 1960 000c 65080000 		.4byte	.LASF148
+ 1960 000c CA080000 		.4byte	.LASF148
  1961 0010 01       		.byte	0x1
  1962 0011 3A030000 		.4byte	.LASF149
- 1963 0015 A00A0000 		.4byte	.LASF150
+ 1963 0015 50060000 		.4byte	.LASF150
  1964 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1965 001d 00000000 		.4byte	0
  1966 0021 00000000 		.4byte	.Ldebug_line0
  1967 0025 02       		.uleb128 0x2
  1968 0026 01       		.byte	0x1
  1969 0027 06       		.byte	0x6
- 1970 0028 4B0B0000 		.4byte	.LASF0
+ 1970 0028 430B0000 		.4byte	.LASF0
  1971 002c 02       		.uleb128 0x2
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 87
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 87
 
 
  1972 002d 01       		.byte	0x1
  1973 002e 08       		.byte	0x8
- 1974 002f 1D0A0000 		.4byte	.LASF1
+ 1974 002f 820A0000 		.4byte	.LASF1
  1975 0033 02       		.uleb128 0x2
  1976 0034 02       		.byte	0x2
  1977 0035 05       		.byte	0x5
- 1978 0036 E1070000 		.4byte	.LASF2
+ 1978 0036 46080000 		.4byte	.LASF2
  1979 003a 02       		.uleb128 0x2
  1980 003b 02       		.byte	0x2
  1981 003c 07       		.byte	0x7
- 1982 003d 570B0000 		.4byte	.LASF3
+ 1982 003d 4F0B0000 		.4byte	.LASF3
  1983 0041 02       		.uleb128 0x2
  1984 0042 04       		.byte	0x4
  1985 0043 05       		.byte	0x5
- 1986 0044 EB070000 		.4byte	.LASF4
+ 1986 0044 50080000 		.4byte	.LASF4
  1987 0048 02       		.uleb128 0x2
  1988 0049 04       		.byte	0x4
  1989 004a 07       		.byte	0x7
- 1990 004b 98090000 		.4byte	.LASF5
+ 1990 004b FD090000 		.4byte	.LASF5
  1991 004f 02       		.uleb128 0x2
  1992 0050 08       		.byte	0x8
  1993 0051 05       		.byte	0x5
@@ -5197,7 +5197,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2005 0066 07       		.byte	0x7
  2006 0067 DD000000 		.4byte	.LASF8
  2007 006b 04       		.uleb128 0x4
- 2008 006c 9B0B0000 		.4byte	.LASF9
+ 2008 006c 930B0000 		.4byte	.LASF9
  2009 0070 02       		.byte	0x2
  2010 0071 B901     		.2byte	0x1b9
  2011 0073 2C000000 		.4byte	0x2c
@@ -5207,7 +5207,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2015 007d BA01     		.2byte	0x1ba
  2016 007f 3A000000 		.4byte	0x3a
  2017 0083 04       		.uleb128 0x4
- 2018 0084 D3060000 		.4byte	.LASF11
+ 2018 0084 38070000 		.4byte	.LASF11
  2019 0088 02       		.byte	0x2
  2020 0089 BB01     		.2byte	0x1bb
  2021 008b 48000000 		.4byte	0x48
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2026 0097 33000000 		.4byte	0x33
  2027 009b 04       		.uleb128 0x4
  2028 009c C9020000 		.4byte	.LASF13
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 88
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 88
 
 
  2029 00a0 02       		.byte	0x2
@@ -5231,7 +5231,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2036 00ae 02       		.uleb128 0x2
  2037 00af 08       		.byte	0x8
  2038 00b0 04       		.byte	0x4
- 2039 00b1 A10B0000 		.4byte	.LASF15
+ 2039 00b1 990B0000 		.4byte	.LASF15
  2040 00b5 02       		.uleb128 0x2
  2041 00b6 01       		.byte	0x1
  2042 00b7 08       		.byte	0x8
@@ -5239,7 +5239,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2044 00bc 02       		.uleb128 0x2
  2045 00bd 04       		.byte	0x4
  2046 00be 07       		.byte	0x7
- 2047 00bf 76090000 		.4byte	.LASF17
+ 2047 00bf DB090000 		.4byte	.LASF17
  2048 00c3 05       		.uleb128 0x5
  2049 00c4 04       		.byte	0x4
  2050 00c5 06       		.uleb128 0x6
@@ -5254,34 +5254,34 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2059 00d4 E2010000 		.4byte	0x1e2
  2060 00d8 00       		.byte	0
  2061 00d9 07       		.uleb128 0x7
- 2062 00da D2070000 		.4byte	.LASF19
+ 2062 00da 37080000 		.4byte	.LASF19
  2063 00de 03       		.byte	0x3
  2064 00df 32       		.byte	0x32
  2065 00e0 E2010000 		.4byte	0x1e2
  2066 00e4 04       		.byte	0x4
  2067 00e5 07       		.uleb128 0x7
- 2068 00e6 570A0000 		.4byte	.LASF20
+ 2068 00e6 BC0A0000 		.4byte	.LASF20
  2069 00ea 03       		.byte	0x3
  2070 00eb 33       		.byte	0x33
  2071 00ec E2010000 		.4byte	0x1e2
  2072 00f0 08       		.byte	0x8
  2073 00f1 07       		.uleb128 0x7
- 2074 00f2 FA090000 		.4byte	.LASF21
+ 2074 00f2 5F0A0000 		.4byte	.LASF21
  2075 00f6 03       		.byte	0x3
  2076 00f7 34       		.byte	0x34
  2077 00f8 E2010000 		.4byte	0x1e2
  2078 00fc 0C       		.byte	0xc
  2079 00fd 07       		.uleb128 0x7
- 2080 00fe 410B0000 		.4byte	.LASF22
+ 2080 00fe 390B0000 		.4byte	.LASF22
  2081 0102 03       		.byte	0x3
  2082 0103 35       		.byte	0x35
  2083 0104 E2010000 		.4byte	0x1e2
  2084 0108 10       		.byte	0x10
  2085 0109 07       		.uleb128 0x7
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 89
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 89
 
 
- 2086 010a A8070000 		.4byte	.LASF23
+ 2086 010a 0D080000 		.4byte	.LASF23
  2087 010e 03       		.byte	0x3
  2088 010f 36       		.byte	0x36
  2089 0110 E8010000 		.4byte	0x1e8
@@ -5311,7 +5311,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2113 0140 E2010000 		.4byte	0x1e2
  2114 0144 24       		.byte	0x24
  2115 0145 07       		.uleb128 0x7
- 2116 0146 8A060000 		.4byte	.LASF28
+ 2116 0146 EF060000 		.4byte	.LASF28
  2117 014a 03       		.byte	0x3
  2118 014b 3B       		.byte	0x3b
  2119 014c F9010000 		.4byte	0x1f9
@@ -5323,13 +5323,13 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2125 0158 F9010000 		.4byte	0x1f9
  2126 015c 2C       		.byte	0x2c
  2127 015d 07       		.uleb128 0x7
- 2128 015e D8090000 		.4byte	.LASF30
+ 2128 015e 3D0A0000 		.4byte	.LASF30
  2129 0162 03       		.byte	0x3
  2130 0163 3D       		.byte	0x3d
  2131 0164 F9010000 		.4byte	0x1f9
  2132 0168 30       		.byte	0x30
  2133 0169 07       		.uleb128 0x7
- 2134 016a 11090000 		.4byte	.LASF31
+ 2134 016a 76090000 		.4byte	.LASF31
  2135 016e 03       		.byte	0x3
  2136 016f 3E       		.byte	0x3e
  2137 0170 E2010000 		.4byte	0x1e2
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2140 0176 00000000 		.4byte	.LASF32
  2141 017a 03       		.byte	0x3
  2142 017b 3F       		.byte	0x3f
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 90
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 90
 
 
  2143 017c E2010000 		.4byte	0x1e2
@@ -5362,7 +5362,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2161 01a0 E8010000 		.4byte	0x1e8
  2162 01a4 44       		.byte	0x44
  2163 01a5 07       		.uleb128 0x7
- 2164 01a6 80060000 		.4byte	.LASF36
+ 2164 01a6 E5060000 		.4byte	.LASF36
  2165 01aa 03       		.byte	0x3
  2166 01ab 43       		.byte	0x43
  2167 01ac 0E020000 		.4byte	0x20e
@@ -5386,7 +5386,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2185 01d0 39020000 		.4byte	0x239
  2186 01d4 54       		.byte	0x54
  2187 01d5 07       		.uleb128 0x7
- 2188 01d6 6A0B0000 		.4byte	.LASF40
+ 2188 01d6 620B0000 		.4byte	.LASF40
  2189 01da 03       		.byte	0x3
  2190 01db 47       		.byte	0x47
  2191 01dc 54020000 		.4byte	0x254
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2197 01e8 08       		.uleb128 0x8
  2198 01e9 04       		.byte	0x4
  2199 01ea EE010000 		.4byte	0x1ee
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 91
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 91
 
 
  2200 01ee 09       		.uleb128 0x9
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2254 0266 0C       		.byte	0xc
  2255 0267 03       		.byte	0x3
  2256 0268 4A       		.byte	0x4a
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 92
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 92
 
 
  2257 0269 B6020000 		.4byte	0x2b6
@@ -5487,13 +5487,13 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2280 0298 77000000 		.4byte	0x77
  2281 029c 04       		.byte	0x4
  2282 029d 07       		.uleb128 0x7
- 2283 029e 9A070000 		.4byte	.LASF46
+ 2283 029e FF070000 		.4byte	.LASF46
  2284 02a2 03       		.byte	0x3
  2285 02a3 50       		.byte	0x50
  2286 02a4 77000000 		.4byte	0x77
  2287 02a8 06       		.byte	0x6
  2288 02a9 07       		.uleb128 0x7
- 2289 02aa AA090000 		.4byte	.LASF47
+ 2289 02aa 0F0A0000 		.4byte	.LASF47
  2290 02ae 03       		.byte	0x3
  2291 02af 51       		.byte	0x51
  2292 02b0 B6020000 		.4byte	0x2b6
@@ -5505,12 +5505,12 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2298 02bc 09       		.uleb128 0x9
  2299 02bd 5A020000 		.4byte	0x25a
  2300 02c1 0D       		.uleb128 0xd
- 2301 02c2 390A0000 		.4byte	.LASF48
+ 2301 02c2 9E0A0000 		.4byte	.LASF48
  2302 02c6 03       		.byte	0x3
  2303 02c7 52       		.byte	0x52
  2304 02c8 65020000 		.4byte	0x265
  2305 02cc 0E       		.uleb128 0xe
- 2306 02cd FE0B0000 		.4byte	.LASF49
+ 2306 02cd F60B0000 		.4byte	.LASF49
  2307 02d1 01       		.byte	0x1
  2308 02d2 8E       		.byte	0x8e
  2309 02d3 00000000 		.4byte	.LFB36
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2311 02db 01       		.uleb128 0x1
  2312 02dc 9C       		.byte	0x9c
  2313 02dd F1020000 		.4byte	0x2f1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 93
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 93
 
 
  2314 02e1 0F       		.uleb128 0xf
@@ -5529,7 +5529,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2319 02ec 00000000 		.4byte	.LLST0
  2320 02f0 00       		.byte	0
  2321 02f1 0E       		.uleb128 0xe
- 2322 02f2 E9060000 		.4byte	.LASF50
+ 2322 02f2 4E070000 		.4byte	.LASF50
  2323 02f6 01       		.byte	0x1
  2324 02f7 D9       		.byte	0xd9
  2325 02f8 00000000 		.4byte	.LFB37
@@ -5569,7 +5569,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2359 0341 00       		.byte	0
  2360 0342 00       		.byte	0
  2361 0343 0E       		.uleb128 0xe
- 2362 0344 50060000 		.4byte	.LASF52
+ 2362 0344 B5060000 		.4byte	.LASF52
  2363 0348 01       		.byte	0x1
  2364 0349 FE       		.byte	0xfe
  2365 034a 00000000 		.4byte	.LFB38
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2368 0353 9C       		.byte	0x9c
  2369 0354 77030000 		.4byte	0x377
  2370 0358 14       		.uleb128 0x14
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 94
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 94
 
 
  2371 0359 6900     		.ascii	"i\000"
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2425 03d1 13       		.uleb128 0x13
  2426 03d2 24000000 		.4byte	.LVL17
  2427 03d6 CC020000 		.4byte	0x2cc
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 95
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 95
 
 
  2428 03da 11       		.uleb128 0x11
@@ -5690,7 +5690,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2474 0440 51       		.byte	0x51
  2475 0441 00       		.byte	0
  2476 0442 17       		.uleb128 0x17
- 2477 0443 860A0000 		.4byte	.LASF58
+ 2477 0443 EB0A0000 		.4byte	.LASF58
  2478 0447 01       		.byte	0x1
  2479 0448 EC02     		.2byte	0x2ec
  2480 044a 6B000000 		.4byte	0x6b
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2482 0452 0C000000 		.4byte	.LFE46-.LFB46
  2483 0456 01       		.uleb128 0x1
  2484 0457 9C       		.byte	0x9c
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 96
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 96
 
 
  2485 0458 6D040000 		.4byte	0x46d
@@ -5710,7 +5710,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2491 0468 D4000000 		.4byte	.LLST7
  2492 046c 00       		.byte	0
  2493 046d 15       		.uleb128 0x15
- 2494 046e 660A0000 		.4byte	.LASF59
+ 2494 046e CB0A0000 		.4byte	.LASF59
  2495 0472 01       		.byte	0x1
  2496 0473 0703     		.2byte	0x307
  2497 0475 00000000 		.4byte	.LFB47
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2539 04dd 0C000000 		.4byte	.LFE49-.LFB49
  2540 04e1 01       		.uleb128 0x1
  2541 04e2 9C       		.byte	0x9c
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 97
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 97
 
 
  2542 04e3 F8040000 		.4byte	0x4f8
@@ -5804,7 +5804,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2582 0549 79010000 		.4byte	.LLST12
  2583 054d 00       		.byte	0
  2584 054e 15       		.uleb128 0x15
- 2585 054f 44080000 		.4byte	.LASF66
+ 2585 054f A9080000 		.4byte	.LASF66
  2586 0553 01       		.byte	0x1
  2587 0554 9603     		.2byte	0x396
  2588 0556 00000000 		.4byte	.LFB52
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2596 056a 9603     		.2byte	0x396
  2597 056c 83000000 		.4byte	0x83
  2598 0570 01       		.uleb128 0x1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 98
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 98
 
 
  2599 0571 50       		.byte	0x50
@@ -5855,7 +5855,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2630 05b2 51       		.byte	0x51
  2631 05b3 00       		.byte	0
  2632 05b4 15       		.uleb128 0x15
- 2633 05b5 4F070000 		.4byte	.LASF68
+ 2633 05b5 B4070000 		.4byte	.LASF68
  2634 05b9 01       		.byte	0x1
  2635 05ba CE03     		.2byte	0x3ce
  2636 05bc 00000000 		.4byte	.LFB54
@@ -5878,11 +5878,11 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2653 05e4 01       		.uleb128 0x1
  2654 05e5 51       		.byte	0x51
  2655 05e6 00       		.byte	0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 99
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 99
 
 
  2656 05e7 15       		.uleb128 0x15
- 2657 05e8 6C070000 		.4byte	.LASF69
+ 2657 05e8 D1070000 		.4byte	.LASF69
  2658 05ec 01       		.byte	0x1
  2659 05ed EB03     		.2byte	0x3eb
  2660 05ef 00000000 		.4byte	.LFB55
@@ -5930,7 +5930,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2702 064b 51       		.byte	0x51
  2703 064c 00       		.byte	0
  2704 064d 15       		.uleb128 0x15
- 2705 064e 33090000 		.4byte	.LASF71
+ 2705 064e 98090000 		.4byte	.LASF71
  2706 0652 01       		.byte	0x1
  2707 0653 2304     		.2byte	0x423
  2708 0655 00000000 		.4byte	.LFB57
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2710 065d 01       		.uleb128 0x1
  2711 065e 9C       		.byte	0x9c
  2712 065f 82060000 		.4byte	0x682
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 100
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 100
 
 
  2713 0663 18       		.uleb128 0x18
@@ -5956,7 +5956,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2725 0680 51       		.byte	0x51
  2726 0681 00       		.byte	0
  2727 0682 17       		.uleb128 0x17
- 2728 0683 97060000 		.4byte	.LASF72
+ 2728 0683 FC060000 		.4byte	.LASF72
  2729 0687 01       		.byte	0x1
  2730 0688 5104     		.2byte	0x451
  2731 068a 83000000 		.4byte	0x83
@@ -5984,13 +5984,13 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2753 06c4 6B000000 		.4byte	0x6b
  2754 06c8 FA010000 		.4byte	.LLST16
  2755 06cc 1A       		.uleb128 0x1a
- 2756 06cd 2B0A0000 		.4byte	.LASF74
+ 2756 06cd 900A0000 		.4byte	.LASF74
  2757 06d1 01       		.byte	0x1
  2758 06d2 5504     		.2byte	0x455
  2759 06d4 6B000000 		.4byte	0x6b
  2760 06d8 00       		.byte	0
  2761 06d9 16       		.uleb128 0x16
- 2762 06da EA090000 		.4byte	.LASF75
+ 2762 06da 4F0A0000 		.4byte	.LASF75
  2763 06de 01       		.byte	0x1
  2764 06df 5704     		.2byte	0x457
  2765 06e1 6B000000 		.4byte	0x6b
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2767 06e9 16       		.uleb128 0x16
  2768 06ea 37040000 		.4byte	.LASF76
  2769 06ee 01       		.byte	0x1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 101
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 101
 
 
  2770 06ef 5804     		.2byte	0x458
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2824 0754 11       		.uleb128 0x11
  2825 0755 01       		.uleb128 0x1
  2826 0756 52       		.byte	0x52
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 102
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 102
 
 
  2827 0757 01       		.uleb128 0x1
@@ -6101,7 +6101,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2864 0791 00       		.byte	0
  2865 0792 00       		.byte	0
  2866 0793 17       		.uleb128 0x17
- 2867 0794 D80B0000 		.4byte	.LASF78
+ 2867 0794 D00B0000 		.4byte	.LASF78
  2868 0798 01       		.byte	0x1
  2869 0799 A804     		.2byte	0x4a8
  2870 079b 83000000 		.4byte	0x83
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2881 07b9 3E020000 		.4byte	.LLST19
  2882 07bd 16       		.uleb128 0x16
  2883 07be B2050000 		.4byte	.LASF79
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 103
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 103
 
 
  2884 07c2 01       		.byte	0x1
@@ -6132,7 +6132,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2892 07d5 83000000 		.4byte	0x83
  2893 07d9 05       		.byte	0x5
  2894 07da 16       		.uleb128 0x16
- 2895 07db 800A0000 		.4byte	.LASF81
+ 2895 07db E50A0000 		.4byte	.LASF81
  2896 07df 01       		.byte	0x1
  2897 07e0 AC04     		.2byte	0x4ac
  2898 07e2 83000000 		.4byte	0x83
@@ -6165,7 +6165,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2925 081b 83000000 		.4byte	0x83
  2926 081f A8020000 		.4byte	.LLST22
  2927 0823 16       		.uleb128 0x16
- 2928 0824 800A0000 		.4byte	.LASF81
+ 2928 0824 E50A0000 		.4byte	.LASF81
  2929 0828 01       		.byte	0x1
  2930 0829 DA04     		.2byte	0x4da
  2931 082b 83000000 		.4byte	0x83
@@ -6178,14 +6178,14 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2938 083e 50       		.byte	0x50
  2939 083f 02       		.uleb128 0x2
  2940 0840 74       		.byte	0x74
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 104
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 104
 
 
  2941 0841 00       		.sleb128 0
  2942 0842 00       		.byte	0
  2943 0843 00       		.byte	0
  2944 0844 15       		.uleb128 0x15
- 2945 0845 070A0000 		.4byte	.LASF83
+ 2945 0845 6C0A0000 		.4byte	.LASF83
  2946 0849 01       		.byte	0x1
  2947 084a 0505     		.2byte	0x505
  2948 084c 00000000 		.4byte	.LFB61
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  2995 08af F6080000 		.4byte	0x8f6
  2996 08b3 18       		.uleb128 0x18
  2997 08b4 61030000 		.4byte	.LASF62
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 105
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 105
 
 
  2998 08b8 01       		.byte	0x1
@@ -6274,7 +6274,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3028 08f4 00       		.byte	0
  3029 08f5 00       		.byte	0
  3030 08f6 17       		.uleb128 0x17
- 3031 08f7 C30B0000 		.4byte	.LASF85
+ 3031 08f7 BB0B0000 		.4byte	.LASF85
  3032 08fb 01       		.byte	0x1
  3033 08fc 6205     		.2byte	0x562
  3034 08fe 6B000000 		.4byte	0x6b
@@ -6297,8 +6297,8 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3051 092c 01       		.uleb128 0x1
  3052 092d 51       		.byte	0x51
  3053 092e 19       		.uleb128 0x19
- 3054 092f EA090000 		.4byte	.LASF75
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 106
+ 3054 092f 4F0A0000 		.4byte	.LASF75
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 106
 
 
  3055 0933 01       		.byte	0x1
@@ -6313,19 +6313,19 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3064 0942 6B000000 		.4byte	0x6b
  3065 0946 A8030000 		.4byte	.LLST29
  3066 094a 16       		.uleb128 0x16
- 3067 094b 50090000 		.4byte	.LASF88
+ 3067 094b B5090000 		.4byte	.LASF88
  3068 094f 01       		.byte	0x1
  3069 0950 6F05     		.2byte	0x56f
  3070 0952 6B000000 		.4byte	0x6b
  3071 0956 D2030000 		.4byte	.LLST30
  3072 095a 16       		.uleb128 0x16
- 3073 095b 60080000 		.4byte	.LASF89
+ 3073 095b C5080000 		.4byte	.LASF89
  3074 095f 01       		.byte	0x1
  3075 0960 7105     		.2byte	0x571
  3076 0962 6B000000 		.4byte	0x6b
  3077 0966 F2030000 		.4byte	.LLST31
  3078 096a 16       		.uleb128 0x16
- 3079 096b 0B070000 		.4byte	.LASF90
+ 3079 096b 70070000 		.4byte	.LASF90
  3080 096f 01       		.byte	0x1
  3081 0970 7205     		.2byte	0x572
  3082 0972 E2010000 		.4byte	0x1e2
@@ -6342,7 +6342,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3093 0990 9C       		.byte	0x9c
  3094 0991 560A0000 		.4byte	0xa56
  3095 0995 18       		.uleb128 0x18
- 3096 0996 50090000 		.4byte	.LASF88
+ 3096 0996 B5090000 		.4byte	.LASF88
  3097 099a 01       		.byte	0x1
  3098 099b 0106     		.2byte	0x601
  3099 099d 6B000000 		.4byte	0x6b
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3109 09ba 01       		.byte	0x1
  3110 09bb 0206     		.2byte	0x602
  3111 09bd 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 107
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 107
 
 
  3112 09c1 71040000 		.4byte	.LLST35
@@ -6369,7 +6369,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3117 09cd 77000000 		.4byte	0x77
  3118 09d1 92040000 		.4byte	.LLST36
  3119 09d5 18       		.uleb128 0x18
- 3120 09d6 B3090000 		.4byte	.LASF93
+ 3120 09d6 180A0000 		.4byte	.LASF93
  3121 09da 01       		.byte	0x1
  3122 09db 0206     		.2byte	0x602
  3123 09dd 6B000000 		.4byte	0x6b
@@ -6395,7 +6395,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3143 0a12 03       		.byte	0x3
  3144 0a13 24000000 		.4byte	capsense_centroid.5469
  3145 0a17 1B       		.uleb128 0x1b
- 3146 0a18 F50B0000 		.4byte	.LASF97
+ 3146 0a18 ED0B0000 		.4byte	.LASF97
  3147 0a1c 01       		.byte	0x1
  3148 0a1d 1306     		.2byte	0x613
  3149 0a1f 6B000000 		.4byte	0x6b
@@ -6408,17 +6408,17 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3156 0a2d 83000000 		.4byte	0x83
  3157 0a31 33050000 		.4byte	.LLST40
  3158 0a35 16       		.uleb128 0x16
- 3159 0a36 05090000 		.4byte	.LASF99
+ 3159 0a36 6A090000 		.4byte	.LASF99
  3160 0a3a 01       		.byte	0x1
  3161 0a3b 1506     		.2byte	0x615
  3162 0a3d 9B000000 		.4byte	0x9b
  3163 0a41 5E050000 		.4byte	.LLST41
  3164 0a45 16       		.uleb128 0x16
- 3165 0a46 0B070000 		.4byte	.LASF90
+ 3165 0a46 70070000 		.4byte	.LASF90
  3166 0a4a 01       		.byte	0x1
  3167 0a4b 1706     		.2byte	0x617
  3168 0a4d E2010000 		.4byte	0x1e2
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 108
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 108
 
 
  3169 0a51 C2050000 		.4byte	.LLST42
@@ -6447,13 +6447,13 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3192 0a88 83000000 		.4byte	0x83
  3193 0a8c E0050000 		.4byte	.LLST43
  3194 0a90 16       		.uleb128 0x16
- 3195 0a91 50090000 		.4byte	.LASF88
+ 3195 0a91 B5090000 		.4byte	.LASF88
  3196 0a95 01       		.byte	0x1
  3197 0a96 AE07     		.2byte	0x7ae
  3198 0a98 6B000000 		.4byte	0x6b
  3199 0a9c 0C060000 		.4byte	.LLST44
  3200 0aa0 16       		.uleb128 0x16
- 3201 0aa1 F50B0000 		.4byte	.LASF97
+ 3201 0aa1 ED0B0000 		.4byte	.LASF97
  3202 0aa5 01       		.byte	0x1
  3203 0aa6 AF07     		.2byte	0x7af
  3204 0aa8 77000000 		.4byte	0x77
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3223 0ad8 01       		.uleb128 0x1
  3224 0ad9 51       		.byte	0x51
  3225 0ada 01       		.uleb128 0x1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 109
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 109
 
 
  3226 0adb 35       		.byte	0x35
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3280 0b3d 77000000 		.4byte	0x77
  3281 0b41 01       		.uleb128 0x1
  3282 0b42 52       		.byte	0x52
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 110
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 110
 
 
  3283 0b43 21       		.uleb128 0x21
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3337 0bc7 83000000 		.4byte	0x83
  3338 0bcb 62070000 		.4byte	.LLST52
  3339 0bcf 16       		.uleb128 0x16
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 111
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 111
 
 
  3340 0bd0 CD030000 		.4byte	.LASF105
@@ -6607,7 +6607,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3343 0bd7 83000000 		.4byte	0x83
  3344 0bdb 80070000 		.4byte	.LLST53
  3345 0bdf 16       		.uleb128 0x16
- 3346 0be0 790B0000 		.4byte	.LASF106
+ 3346 0be0 710B0000 		.4byte	.LASF106
  3347 0be4 01       		.byte	0x1
  3348 0be5 6601     		.2byte	0x166
  3349 0be7 77000000 		.4byte	0x77
@@ -6624,7 +6624,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3360 0c05 6801     		.2byte	0x168
  3361 0c07 6B000000 		.4byte	0x6b
  3362 0c0b 1B       		.uleb128 0x1b
- 3363 0c0c B3090000 		.4byte	.LASF93
+ 3363 0c0c 180A0000 		.4byte	.LASF93
  3364 0c10 01       		.byte	0x1
  3365 0c11 6901     		.2byte	0x169
  3366 0c13 6B000000 		.4byte	0x6b
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3394 0c47 CC020000 		.4byte	0x2cc
  3395 0c4b 11       		.uleb128 0x11
  3396 0c4c 01       		.uleb128 0x1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 112
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 112
 
 
  3397 0c4d 50       		.byte	0x50
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3451 0cb7 01       		.byte	0x1
  3452 0cb8 5A02     		.2byte	0x25a
  3453 0cba 83000000 		.4byte	0x83
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 113
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 113
 
 
  3454 0cbe 4A080000 		.4byte	.LLST57
@@ -6751,7 +6751,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3481 0cf5 00       		.byte	0
  3482 0cf6 00       		.byte	0
  3483 0cf7 15       		.uleb128 0x15
- 3484 0cf8 58090000 		.4byte	.LASF110
+ 3484 0cf8 BD090000 		.4byte	.LASF110
  3485 0cfc 01       		.byte	0x1
  3486 0cfd 8502     		.2byte	0x285
  3487 0cff 00000000 		.4byte	.LFB43
@@ -6772,16 +6772,16 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3502 0d25 83000000 		.4byte	0x83
  3503 0d29 05       		.byte	0x5
  3504 0d2a 1A       		.uleb128 0x1a
- 3505 0d2b 0C080000 		.4byte	.LASF112
+ 3505 0d2b 71080000 		.4byte	.LASF112
  3506 0d2f 01       		.byte	0x1
  3507 0d30 8802     		.2byte	0x288
  3508 0d32 83000000 		.4byte	0x83
  3509 0d36 00       		.byte	0
  3510 0d37 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 114
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 114
 
 
- 3511 0d38 8F070000 		.4byte	.LASF113
+ 3511 0d38 F4070000 		.4byte	.LASF113
  3512 0d3c 01       		.byte	0x1
  3513 0d3d 8902     		.2byte	0x289
  3514 0d3f 83000000 		.4byte	0x83
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3565 0dad CF080000 		.4byte	.LLST62
  3566 0db1 16       		.uleb128 0x16
  3567 0db2 B7000000 		.4byte	.LASF115
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 115
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 115
 
 
  3568 0db6 01       		.byte	0x1
@@ -6846,7 +6846,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3570 0db9 6B000000 		.4byte	0x6b
  3571 0dbd 14090000 		.4byte	.LLST63
  3572 0dc1 16       		.uleb128 0x16
- 3573 0dc2 DA060000 		.4byte	.LASF116
+ 3573 0dc2 3F070000 		.4byte	.LASF116
  3574 0dc6 01       		.byte	0x1
  3575 0dc7 DC06     		.2byte	0x6dc
  3576 0dc9 6B000000 		.4byte	0x6b
@@ -6858,13 +6858,13 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3582 0dd9 6B000000 		.4byte	0x6b
  3583 0ddd 08       		.byte	0x8
  3584 0dde 16       		.uleb128 0x16
- 3585 0ddf 50090000 		.4byte	.LASF88
+ 3585 0ddf B5090000 		.4byte	.LASF88
  3586 0de3 01       		.byte	0x1
  3587 0de4 E706     		.2byte	0x6e7
  3588 0de6 6B000000 		.4byte	0x6b
  3589 0dea 6A090000 		.4byte	.LLST65
  3590 0dee 16       		.uleb128 0x16
- 3591 0def F50B0000 		.4byte	.LASF97
+ 3591 0def ED0B0000 		.4byte	.LASF97
  3592 0df3 01       		.byte	0x1
  3593 0df4 E806     		.2byte	0x6e8
  3594 0df6 77000000 		.4byte	0x77
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3622 0e2f 00       		.byte	0
  3623 0e30 10       		.uleb128 0x10
  3624 0e31 2E000000 		.4byte	.LVL199
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 116
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 116
 
 
  3625 0e35 7B090000 		.4byte	0x97b
@@ -6925,7 +6925,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3646 0e54 500B0000 		.4byte	0xb50
  3647 0e58 00       		.byte	0
  3648 0e59 17       		.uleb128 0x17
- 3649 0e5a 7F090000 		.4byte	.LASF118
+ 3649 0e5a E4090000 		.4byte	.LASF118
  3650 0e5e 01       		.byte	0x1
  3651 0e5f AD0A     		.2byte	0xaad
  3652 0e61 83000000 		.4byte	0x83
@@ -6942,7 +6942,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3663 0e7f BE090000 		.4byte	.LLST67
  3664 0e83 00       		.byte	0
  3665 0e84 17       		.uleb128 0x17
- 3666 0e85 32070000 		.4byte	.LASF119
+ 3666 0e85 97070000 		.4byte	.LASF119
  3667 0e89 01       		.byte	0x1
  3668 0e8a C70A     		.2byte	0xac7
  3669 0e8c 6B000000 		.4byte	0x6b
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3679 0ea6 83000000 		.4byte	0x83
  3680 0eaa DF090000 		.4byte	.LLST68
  3681 0eae 00       		.byte	0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 117
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 117
 
 
  3682 0eaf 17       		.uleb128 0x17
@@ -6987,7 +6987,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3705 0eea 01       		.uleb128 0x1
  3706 0eeb 9C       		.byte	0x9c
  3707 0eec 23       		.uleb128 0x23
- 3708 0eed B4060000 		.4byte	.LASF122
+ 3708 0eed 19070000 		.4byte	.LASF122
  3709 0ef1 01       		.byte	0x1
  3710 0ef2 140B     		.2byte	0xb14
  3711 0ef4 00000000 		.4byte	.LFB73
@@ -7012,19 +7012,19 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3730 0f1c 09       		.uleb128 0x9
  3731 0f1d FE0E0000 		.4byte	0xefe
  3732 0f21 24       		.uleb128 0x24
- 3733 0f22 0D0B0000 		.4byte	.LASF124
+ 3733 0f22 050B0000 		.4byte	.LASF124
  3734 0f26 01       		.byte	0x1
  3735 0f27 61       		.byte	0x61
  3736 0f28 2E0F0000 		.4byte	0xf2e
  3737 0f2c 01       		.byte	0x1
  3738 0f2d 08       		.byte	0x8
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 118
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 118
 
 
  3739 0f2e 09       		.uleb128 0x9
  3740 0f2f 83070000 		.4byte	0x783
  3741 0f33 25       		.uleb128 0x25
- 3742 0f34 1B090000 		.4byte	.LASF125
+ 3742 0f34 80090000 		.4byte	.LASF125
  3743 0f38 01       		.byte	0x1
  3744 0f39 65       		.byte	0x65
  3745 0f3a 560A0000 		.4byte	0xa56
@@ -7044,7 +7044,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3759 0f5a 2C       		.byte	0x2c
  3760 0f5b 440F0000 		.4byte	0xf44
  3761 0f5f 26       		.uleb128 0x26
- 3762 0f60 810B0000 		.4byte	.LASF127
+ 3762 0f60 790B0000 		.4byte	.LASF127
  3763 0f64 01       		.byte	0x1
  3764 0f65 2D       		.byte	0x2d
  3765 0f66 83070000 		.4byte	0x783
@@ -7056,7 +7056,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3771 0f78 04       		.byte	0x4
  3772 0f79 00       		.byte	0
  3773 0f7a 26       		.uleb128 0x26
- 3774 0f7b C2090000 		.4byte	.LASF128
+ 3774 0f7b 270A0000 		.4byte	.LASF128
  3775 0f7f 01       		.byte	0x1
  3776 0f80 2E       		.byte	0x2e
  3777 0f81 850F0000 		.4byte	0xf85
@@ -7071,18 +7071,18 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3786 0f96 03       		.byte	0x3
  3787 0f97 00000000 		.4byte	capsense_sensorBaseline
  3788 0f9b 27       		.uleb128 0x27
- 3789 0f9c A80B0000 		.4byte	.LASF130
+ 3789 0f9c A00B0000 		.4byte	.LASF130
  3790 0fa0 01       		.byte	0x1
  3791 0fa1 35       		.byte	0x35
  3792 0fa2 6A0F0000 		.4byte	0xf6a
  3793 0fa6 05       		.uleb128 0x5
  3794 0fa7 03       		.byte	0x3
  3795 0fa8 00000000 		.4byte	capsense_sensorBaselineLow
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 119
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 119
 
 
  3796 0fac 27       		.uleb128 0x27
- 3797 0fad 18080000 		.4byte	.LASF131
+ 3797 0fad 7D080000 		.4byte	.LASF131
  3798 0fb1 01       		.byte	0x1
  3799 0fb2 36       		.byte	0x36
  3800 0fb3 6A0F0000 		.4byte	0xf6a
@@ -7114,7 +7114,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3826 0feb 03       		.byte	0x3
  3827 0fec 00000000 		.4byte	capsense_lowBaselineReset
  3828 0ff0 27       		.uleb128 0x27
- 3829 0ff1 19070000 		.4byte	.LASF135
+ 3829 0ff1 7E070000 		.4byte	.LASF135
  3830 0ff5 01       		.byte	0x1
  3831 0ff6 49       		.byte	0x49
  3832 0ff7 83070000 		.4byte	0x783
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3850 101e 03       		.byte	0x3
  3851 101f 00000000 		.4byte	capsense_negativeNoiseThreshold
  3852 1023 27       		.uleb128 0x27
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 120
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 120
 
 
  3853 1024 85040000 		.4byte	.LASF138
@@ -7149,7 +7149,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3858 102f 03       		.byte	0x3
  3859 1030 00000000 		.4byte	capsense_hysteresis
  3860 1034 27       		.uleb128 0x27
- 3861 1035 F3080000 		.4byte	.LASF139
+ 3861 1035 58090000 		.4byte	.LASF139
  3862 1039 01       		.byte	0x1
  3863 103a 51       		.byte	0x51
  3864 103b 83070000 		.4byte	0x783
@@ -7157,7 +7157,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3866 1040 03       		.byte	0x3
  3867 1041 00000000 		.4byte	capsense_debounce
  3868 1045 27       		.uleb128 0x27
- 3869 1046 2E080000 		.4byte	.LASF140
+ 3869 1046 93080000 		.4byte	.LASF140
  3870 104a 01       		.byte	0x1
  3871 104b 55       		.byte	0x55
  3872 104c 56100000 		.4byte	0x1056
@@ -7167,7 +7167,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3876 1056 09       		.uleb128 0x9
  3877 1057 83070000 		.4byte	0x783
  3878 105b 27       		.uleb128 0x27
- 3879 105c B9070000 		.4byte	.LASF141
+ 3879 105c 1E080000 		.4byte	.LASF141
  3880 1060 01       		.byte	0x1
  3881 1061 59       		.byte	0x59
  3882 1062 6C100000 		.4byte	0x106c
@@ -7177,7 +7177,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3886 106c 09       		.uleb128 0x9
  3887 106d 83070000 		.4byte	0x783
  3888 1071 27       		.uleb128 0x27
- 3889 1072 F4070000 		.4byte	.LASF142
+ 3889 1072 59080000 		.4byte	.LASF142
  3890 1076 01       		.byte	0x1
  3891 1077 27       		.byte	0x27
  3892 1078 440F0000 		.4byte	0xf44
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3907 1099 03       		.byte	0x3
  3908 109a 00000000 		.4byte	capsense_enableRawFilters
  3909 109e 28       		.uleb128 0x28
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 121
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 121
 
 
  3910 109f 16050000 		.4byte	.LASF145
@@ -7209,12 +7209,12 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3915 10aa 83000000 		.4byte	0x83
  3916 10ae 00       		.byte	0
  3917 10af 29       		.uleb128 0x29
- 3918 10b0 70060000 		.4byte	.LASF151
+ 3918 10b0 D5060000 		.4byte	.LASF151
  3919 10b4 04       		.byte	0x4
  3920 10b5 9F       		.byte	0x9f
  3921 10b6 83000000 		.4byte	0x83
  3922 10ba 2A       		.uleb128 0x2a
- 3923 10bb 250B0000 		.4byte	.LASF152
+ 3923 10bb 1D0B0000 		.4byte	.LASF152
  3924 10bf 04       		.byte	0x4
  3925 10c0 A2       		.byte	0xa2
  3926 10c1 2B       		.uleb128 0x2b
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  3964 1117 09       		.uleb128 0x9
  3965 1118 77000000 		.4byte	0x77
  3966 111c 2C       		.uleb128 0x2c
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 122
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 122
 
 
  3967 111d DA010000 		.4byte	.LASF154
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4021 002d 0E       		.uleb128 0xe
  4022 002e 3A       		.uleb128 0x3a
  4023 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 123
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 123
 
 
  4024 0030 3B       		.uleb128 0x3b
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4078 0066 13       		.uleb128 0x13
  4079 0067 00       		.byte	0
  4080 0068 00       		.byte	0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 124
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 124
 
 
  4081 0069 0A       		.uleb128 0xa
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4135 009f 01       		.uleb128 0x1
  4136 00a0 12       		.uleb128 0x12
  4137 00a1 06       		.uleb128 0x6
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 125
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 125
 
 
  4138 00a2 40       		.uleb128 0x40
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4192 00e2 01       		.byte	0x1
  4193 00e3 11       		.uleb128 0x11
  4194 00e4 01       		.uleb128 0x1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 126
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 126
 
 
  4195 00e5 31       		.uleb128 0x31
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4249 011c 13       		.uleb128 0x13
  4250 011d 02       		.uleb128 0x2
  4251 011e 17       		.uleb128 0x17
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 127
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 127
 
 
  4252 011f 00       		.byte	0
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4306 0156 13       		.uleb128 0x13
  4307 0157 02       		.uleb128 0x2
  4308 0158 18       		.uleb128 0x18
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 128
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 128
 
 
  4309 0159 00       		.byte	0
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4363 018f 19       		.uleb128 0x19
  4364 0190 03       		.uleb128 0x3
  4365 0191 0E       		.uleb128 0xe
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 129
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 129
 
 
  4366 0192 3A       		.uleb128 0x3a
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4420 01c9 08       		.uleb128 0x8
  4421 01ca 3A       		.uleb128 0x3a
  4422 01cb 0B       		.uleb128 0xb
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 130
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 130
 
 
  4423 01cc 3B       		.uleb128 0x3b
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4477 0203 0A       		.uleb128 0xa
  4478 0204 00       		.byte	0
  4479 0205 00       		.byte	0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 131
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 131
 
 
  4480 0206 25       		.uleb128 0x25
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4534 023c 03       		.uleb128 0x3
  4535 023d 0E       		.uleb128 0xe
  4536 023e 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 132
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 132
 
 
  4537 023f 0B       		.uleb128 0xb
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4591 0275 3A       		.uleb128 0x3a
  4592 0276 0B       		.uleb128 0xb
  4593 0277 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 133
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 133
 
 
  4594 0278 0B       		.uleb128 0xb
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4648 0037 16000000 		.4byte	.LVL6
  4649 003b 18000000 		.4byte	.LFE37
  4650 003f 0400     		.2byte	0x4
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 134
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 134
 
 
  4651 0041 F3       		.byte	0xf3
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4705 00c8 F3       		.byte	0xf3
  4706 00c9 01       		.uleb128 0x1
  4707 00ca 50       		.byte	0x50
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 135
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 135
 
 
  4708 00cb 9F       		.byte	0x9f
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4762 014d 01       		.uleb128 0x1
  4763 014e 50       		.byte	0x50
  4764 014f 9F       		.byte	0x9f
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 136
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 136
 
 
  4765 0150 00000000 		.4byte	0
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4819 01d5 98000000 		.4byte	.LFE58
  4820 01d9 0400     		.2byte	0x4
  4821 01db F3       		.byte	0xf3
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 137
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 137
 
 
  4822 01dc 01       		.uleb128 0x1
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4876 0267 0200     		.2byte	0x2
  4877 0269 30       		.byte	0x30
  4878 026a 9F       		.byte	0x9f
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 138
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 138
 
 
  4879 026b 06000000 		.4byte	.LVL62
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4933 02fb 50       		.byte	0x50
  4934 02fc 04000000 		.4byte	.LVL77
  4935 0300 1C000000 		.4byte	.LFE61
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 139
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 139
 
 
  4936 0304 0400     		.2byte	0x4
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  4990 0387 00000000 		.4byte	.LVL89
  4991 038b 0C000000 		.4byte	.LVL92
  4992 038f 0100     		.2byte	0x1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 140
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 140
 
 
  4993 0391 50       		.byte	0x50
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5047 0418 00000000 		.4byte	0
  5048              	.LLST32:
  5049 041c 08000000 		.4byte	.LVL91
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 141
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 141
 
 
  5050 0420 26000000 		.4byte	.LVL98
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5104 04a5 0400     		.2byte	0x4
  5105 04a7 F3       		.byte	0xf3
  5106 04a8 01       		.uleb128 0x1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 142
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 142
 
 
  5107 04a9 53       		.byte	0x53
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5161              	.LLST40:
  5162 0533 B8000000 		.4byte	.LVL116
  5163 0537 BE000000 		.4byte	.LVL118
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 143
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 143
 
 
  5164 053b 0100     		.2byte	0x1
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5218 05ac 0C00     		.2byte	0xc
  5219 05ae 91       		.byte	0x91
  5220 05af 60       		.sleb128 -32
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 144
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 144
 
 
  5221 05b0 94       		.byte	0x94
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5275 062e 2C000000 		.4byte	.LVL134
  5276 0632 0100     		.2byte	0x1
  5277 0634 50       		.byte	0x50
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 145
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 145
 
 
  5278 0635 2E000000 		.4byte	.LVL135
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5332 06be 04000000 		.4byte	.LVL144
  5333 06c2 0C000000 		.4byte	.LFE68
  5334 06c6 0400     		.2byte	0x4
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 146
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 146
 
 
  5335 06c8 F3       		.byte	0xf3
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5389 0740 9F       		.byte	0x9f
  5390 0741 E8000000 		.4byte	.LVL172
  5391 0745 EC000000 		.4byte	.LVL173
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 147
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 147
 
 
  5392 0749 0100     		.2byte	0x1
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5446 07d3 00000000 		.4byte	0
  5447              	.LLST54:
  5448 07d7 52000000 		.4byte	.LVL156
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 148
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 148
 
 
  5449 07db 58000000 		.4byte	.LVL157
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5503              	.LLST58:
  5504 0869 0E000000 		.4byte	.LVL182
  5505 086d 14000000 		.4byte	.LVL183
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 149
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 149
 
 
  5506 0871 0100     		.2byte	0x1
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5560 08f7 68000000 		.4byte	.LVL210
  5561 08fb 0100     		.2byte	0x1
  5562 08fd 54       		.byte	0x54
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 150
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 150
 
 
  5563 08fe 68000000 		.4byte	.LVL210
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5617              	.LLST66:
  5618 0988 32000000 		.4byte	.LVL200
  5619 098c 57000000 		.4byte	.LVL206-1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 151
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 151
 
 
  5620 0990 0100     		.2byte	0x1
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5674 0a15 F3       		.byte	0xf3
  5675 0a16 01       		.uleb128 0x1
  5676 0a17 50       		.byte	0x50
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 152
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 152
 
 
  5677 0a18 9F       		.byte	0x9f
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5731 00bc 1C000000 		.4byte	.LFE61-.LFB61
  5732 00c0 00000000 		.4byte	.LFB62
  5733 00c4 1C000000 		.4byte	.LFE62-.LFB62
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 153
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 153
 
 
  5734 00c8 00000000 		.4byte	.LFB63
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5788 0050 00000000 		.4byte	.LFB50
  5789 0054 0C000000 		.4byte	.LFE50
  5790 0058 00000000 		.4byte	.LFB51
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 154
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 154
 
 
  5791 005c 0C000000 		.4byte	.LFE51
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5845 0134 00000000 		.4byte	0
  5846              		.section	.debug_line,"",%progbits
  5847              	.Ldebug_line0:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 155
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 155
 
 
  5848 0000 76040000 		.section	.debug_str,"MS",%progbits,1
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5867              	.LASF54:
  5868 00c0 69735365 		.ascii	"isSensorEnabled\000"
  5868      6E736F72 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 156
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 156
 
 
  5868      456E6162 
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5890      61626C65 
  5890      57696467 
  5891              	.LASF91:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 157
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 157
 
 
  5892 018c 63617073 		.ascii	"capsense_CalcCentroid\000"
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5912 0266 63617073 		.ascii	"capsense_GetNoiseThreshold\000"
  5912      656E7365 
  5912      5F476574 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 158
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 158
 
 
  5912      4E6F6973 
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5934      6720756E 
  5934      7369676E 
  5934      65642069 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 159
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 159
 
 
  5935              	.LASF149:
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5957              	.LASF25:
  5958 0410 6E6F6973 		.ascii	"noiseEnvelopeTbl\000"
  5958      65456E76 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 160
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 160
 
 
  5958      656C6F70 
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  5978      456E7665 
  5978      6C6F7065 
  5979              	.LASF51:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 161
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 161
 
 
  5980 04cf 73656E73 		.ascii	"sensor\000"
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  6002      69616E46 
  6002      696C7465 
  6003              	.LASF55:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 162
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 162
 
 
  6004 058e 63617073 		.ascii	"capsense_SetBaselineData\000"
@@ -9711,392 +9711,390 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 1
  6022 0645 70747250 		.ascii	"ptrPreScan\000"
  6022      72655363 
  6022      616E00
- 6023              	.LASF52:
- 6024 0650 63617073 		.ascii	"capsense_InitializeAllBaselines\000"
- 6024      656E7365 
- 6024      5F496E69 
- 6024      7469616C 
- 6024      697A6541 
- 6025              	.LASF151:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 163
+ 6023              	.LASF150:
+ 6024 0650 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\bleapp-master\\b"
+ 6024      73657273 
+ 6024      5C536172 
+ 6024      61685C44 
+ 6024      6F63756D 
+ 6025 067d 6C656170 		.ascii	"leapp-master\\PSoC_Creator\\capsenseled\\capsensele"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 163
 
 
- 6026 0670 63617073 		.ascii	"capsense_IsBusy\000"
- 6026      656E7365 
- 6026      5F497342 
- 6026      75737900 
- 6027              	.LASF36:
- 6028 0680 70747247 		.ascii	"ptrGetRaw\000"
- 6028      65745261 
- 6028      7700
- 6029              	.LASF28:
- 6030 068a 73616D70 		.ascii	"sampleMinTbl\000"
- 6030      6C654D69 
- 6030      6E54626C 
- 6030      00
- 6031              	.LASF72:
- 6032 0697 63617073 		.ascii	"capsense_CheckIsSensorActive\000"
- 6032      656E7365 
- 6032      5F436865 
- 6032      636B4973 
- 6032      53656E73 
- 6033              	.LASF122:
- 6034 06b4 63617073 		.ascii	"capsense_DisableRawDataFilters\000"
- 6034      656E7365 
- 6034      5F446973 
- 6034      61626C65 
- 6034      52617744 
- 6035              	.LASF11:
- 6036 06d3 75696E74 		.ascii	"uint32\000"
- 6036      333200
- 6037              	.LASF116:
- 6038 06da 66697273 		.ascii	"firstTimeIndex\000"
- 6038      7454696D 
- 6038      65496E64 
- 6038      657800
- 6039              	.LASF50:
- 6040 06e9 63617073 		.ascii	"capsense_InitializeSensorBaseline\000"
- 6040      656E7365 
- 6040      5F496E69 
- 6040      7469616C 
- 6040      697A6553 
- 6041              	.LASF90:
- 6042 070b 73746172 		.ascii	"startOfSlider\000"
- 6042      744F6653 
- 6042      6C696465 
- 6042      7200
- 6043              	.LASF135:
- 6044 0719 63617073 		.ascii	"capsense_fingerThreshold\000"
+ 6025      702D6D61 
+ 6025      73746572 
+ 6025      5C50536F 
+ 6025      435F4372 
+ 6026 06ad 642E6379 		.ascii	"d.cydsn\000"
+ 6026      64736E00 
+ 6027              	.LASF52:
+ 6028 06b5 63617073 		.ascii	"capsense_InitializeAllBaselines\000"
+ 6028      656E7365 
+ 6028      5F496E69 
+ 6028      7469616C 
+ 6028      697A6541 
+ 6029              	.LASF151:
+ 6030 06d5 63617073 		.ascii	"capsense_IsBusy\000"
+ 6030      656E7365 
+ 6030      5F497342 
+ 6030      75737900 
+ 6031              	.LASF36:
+ 6032 06e5 70747247 		.ascii	"ptrGetRaw\000"
+ 6032      65745261 
+ 6032      7700
+ 6033              	.LASF28:
+ 6034 06ef 73616D70 		.ascii	"sampleMinTbl\000"
+ 6034      6C654D69 
+ 6034      6E54626C 
+ 6034      00
+ 6035              	.LASF72:
+ 6036 06fc 63617073 		.ascii	"capsense_CheckIsSensorActive\000"
+ 6036      656E7365 
+ 6036      5F436865 
+ 6036      636B4973 
+ 6036      53656E73 
+ 6037              	.LASF122:
+ 6038 0719 63617073 		.ascii	"capsense_DisableRawDataFilters\000"
+ 6038      656E7365 
+ 6038      5F446973 
+ 6038      61626C65 
+ 6038      52617744 
+ 6039              	.LASF11:
+ 6040 0738 75696E74 		.ascii	"uint32\000"
+ 6040      333200
+ 6041              	.LASF116:
+ 6042 073f 66697273 		.ascii	"firstTimeIndex\000"
+ 6042      7454696D 
+ 6042      65496E64 
+ 6042      657800
+ 6043              	.LASF50:
+ 6044 074e 63617073 		.ascii	"capsense_InitializeSensorBaseline\000"
  6044      656E7365 
- 6044      5F66696E 
- 6044      67657254 
- 6044      68726573 
- 6045              	.LASF119:
- 6046 0732 63617073 		.ascii	"capsense_GetLowBaselineReset\000"
- 6046      656E7365 
- 6046      5F476574 
- 6046      4C6F7742 
- 6046      6173656C 
- 6047              	.LASF68:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 164
+ 6044      5F496E69 
+ 6044      7469616C 
+ 6044      697A6553 
+ 6045              	.LASF90:
+ 6046 0770 73746172 		.ascii	"startOfSlider\000"
+ 6046      744F6653 
+ 6046      6C696465 
+ 6046      7200
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 164
 
 
- 6048 074f 63617073 		.ascii	"capsense_SetFingerHysteresis\000"
+ 6047              	.LASF135:
+ 6048 077e 63617073 		.ascii	"capsense_fingerThreshold\000"
  6048      656E7365 
- 6048      5F536574 
- 6048      46696E67 
- 6048      65724879 
- 6049              	.LASF69:
- 6050 076c 63617073 		.ascii	"capsense_SetNegativeNoiseThreshold\000"
+ 6048      5F66696E 
+ 6048      67657254 
+ 6048      68726573 
+ 6049              	.LASF119:
+ 6050 0797 63617073 		.ascii	"capsense_GetLowBaselineReset\000"
  6050      656E7365 
- 6050      5F536574 
- 6050      4E656761 
- 6050      74697665 
- 6051              	.LASF113:
- 6052 078f 6C617374 		.ascii	"lastSensor\000"
- 6052      53656E73 
- 6052      6F7200
- 6053              	.LASF46:
- 6054 079a 6866636C 		.ascii	"hfclkFreq_MHz\000"
- 6054      6B467265 
- 6054      715F4D48 
- 6054      7A00
- 6055              	.LASF23:
- 6056 07a8 77696467 		.ascii	"widgetNubmersTbl\000"
- 6056      65744E75 
- 6056      626D6572 
- 6056      7354626C 
- 6056      00
- 6057              	.LASF141:
- 6058 07b9 63617073 		.ascii	"capsense_numberOfSensors\000"
- 6058      656E7365 
- 6058      5F6E756D 
- 6058      6265724F 
- 6058      6653656E 
- 6059              	.LASF19:
- 6060 07d2 69646163 		.ascii	"idac2LevelsTbl\000"
- 6060      324C6576 
- 6060      656C7354 
- 6060      626C00
- 6061              	.LASF2:
- 6062 07e1 73686F72 		.ascii	"short int\000"
- 6062      7420696E 
- 6062      7400
- 6063              	.LASF4:
- 6064 07eb 6C6F6E67 		.ascii	"long int\000"
- 6064      20696E74 
- 6064      00
- 6065              	.LASF142:
- 6066 07f4 63617073 		.ascii	"capsense_rawFilterData1\000"
- 6066      656E7365 
- 6066      5F726177 
- 6066      46696C74 
- 6066      65724461 
- 6067              	.LASF112:
- 6068 080c 66697273 		.ascii	"firstSensor\000"
- 6068      7453656E 
- 6068      736F7200 
- 6069              	.LASF131:
- 6070 0818 63617073 		.ascii	"capsense_sensorSignal\000"
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 165
+ 6050      5F476574 
+ 6050      4C6F7742 
+ 6050      6173656C 
+ 6051              	.LASF68:
+ 6052 07b4 63617073 		.ascii	"capsense_SetFingerHysteresis\000"
+ 6052      656E7365 
+ 6052      5F536574 
+ 6052      46696E67 
+ 6052      65724879 
+ 6053              	.LASF69:
+ 6054 07d1 63617073 		.ascii	"capsense_SetNegativeNoiseThreshold\000"
+ 6054      656E7365 
+ 6054      5F536574 
+ 6054      4E656761 
+ 6054      74697665 
+ 6055              	.LASF113:
+ 6056 07f4 6C617374 		.ascii	"lastSensor\000"
+ 6056      53656E73 
+ 6056      6F7200
+ 6057              	.LASF46:
+ 6058 07ff 6866636C 		.ascii	"hfclkFreq_MHz\000"
+ 6058      6B467265 
+ 6058      715F4D48 
+ 6058      7A00
+ 6059              	.LASF23:
+ 6060 080d 77696467 		.ascii	"widgetNubmersTbl\000"
+ 6060      65744E75 
+ 6060      626D6572 
+ 6060      7354626C 
+ 6060      00
+ 6061              	.LASF141:
+ 6062 081e 63617073 		.ascii	"capsense_numberOfSensors\000"
+ 6062      656E7365 
+ 6062      5F6E756D 
+ 6062      6265724F 
+ 6062      6653656E 
+ 6063              	.LASF19:
+ 6064 0837 69646163 		.ascii	"idac2LevelsTbl\000"
+ 6064      324C6576 
+ 6064      656C7354 
+ 6064      626C00
+ 6065              	.LASF2:
+ 6066 0846 73686F72 		.ascii	"short int\000"
+ 6066      7420696E 
+ 6066      7400
+ 6067              	.LASF4:
+ 6068 0850 6C6F6E67 		.ascii	"long int\000"
+ 6068      20696E74 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 165
 
 
+ 6068      00
+ 6069              	.LASF142:
+ 6070 0859 63617073 		.ascii	"capsense_rawFilterData1\000"
  6070      656E7365 
- 6070      5F73656E 
- 6070      736F7253 
- 6070      69676E61 
- 6071              	.LASF140:
- 6072 082e 63617073 		.ascii	"capsense_rawDataIndex\000"
- 6072      656E7365 
- 6072      5F726177 
- 6072      44617461 
- 6072      496E6465 
- 6073              	.LASF66:
- 6074 0844 63617073 		.ascii	"capsense_SetFingerThreshold\000"
+ 6070      5F726177 
+ 6070      46696C74 
+ 6070      65724461 
+ 6071              	.LASF112:
+ 6072 0871 66697273 		.ascii	"firstSensor\000"
+ 6072      7453656E 
+ 6072      736F7200 
+ 6073              	.LASF131:
+ 6074 087d 63617073 		.ascii	"capsense_sensorSignal\000"
  6074      656E7365 
- 6074      5F536574 
- 6074      46696E67 
- 6074      65725468 
- 6075              	.LASF89:
- 6076 0860 74656D70 		.ascii	"temp\000"
- 6076      00
- 6077              	.LASF148:
- 6078 0865 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 6078      4320342E 
- 6078      392E3320 
- 6078      32303135 
- 6078      30333033 
- 6079 0898 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 6079      20726576 
- 6079      6973696F 
- 6079      6E203232 
- 6079      31323230 
- 6080 08cb 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 6080      66756E63 
- 6080      74696F6E 
- 6080      2D736563 
- 6080      74696F6E 
- 6081              	.LASF139:
- 6082 08f3 63617073 		.ascii	"capsense_debounce\000"
- 6082      656E7365 
- 6082      5F646562 
- 6082      6F756E63 
- 6082      6500
- 6083              	.LASF99:
- 6084 0905 64656E6F 		.ascii	"denominator\000"
- 6084      6D696E61 
- 6084      746F7200 
- 6085              	.LASF31:
- 6086 0911 6B56616C 		.ascii	"kValueTbl\000"
- 6086      75655462 
- 6086      6C00
- 6087              	.LASF125:
- 6088 091b 63617073 		.ascii	"capsense_posFiltersData\000"
- 6088      656E7365 
- 6088      5F706F73 
- 6088      46696C74 
- 6088      65727344 
- 6089              	.LASF71:
- 6090 0933 63617073 		.ascii	"capsense_SetLowBaselineReset\000"
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 166
+ 6074      5F73656E 
+ 6074      736F7253 
+ 6074      69676E61 
+ 6075              	.LASF140:
+ 6076 0893 63617073 		.ascii	"capsense_rawDataIndex\000"
+ 6076      656E7365 
+ 6076      5F726177 
+ 6076      44617461 
+ 6076      496E6465 
+ 6077              	.LASF66:
+ 6078 08a9 63617073 		.ascii	"capsense_SetFingerThreshold\000"
+ 6078      656E7365 
+ 6078      5F536574 
+ 6078      46696E67 
+ 6078      65725468 
+ 6079              	.LASF89:
+ 6080 08c5 74656D70 		.ascii	"temp\000"
+ 6080      00
+ 6081              	.LASF148:
+ 6082 08ca 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 6082      4320342E 
+ 6082      392E3320 
+ 6082      32303135 
+ 6082      30333033 
+ 6083 08fd 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 6083      20726576 
+ 6083      6973696F 
+ 6083      6E203232 
+ 6083      31323230 
+ 6084 0930 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 6084      66756E63 
+ 6084      74696F6E 
+ 6084      2D736563 
+ 6084      74696F6E 
+ 6085              	.LASF139:
+ 6086 0958 63617073 		.ascii	"capsense_debounce\000"
+ 6086      656E7365 
+ 6086      5F646562 
+ 6086      6F756E63 
+ 6086      6500
+ 6087              	.LASF99:
+ 6088 096a 64656E6F 		.ascii	"denominator\000"
+ 6088      6D696E61 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 166
 
 
- 6090      656E7365 
- 6090      5F536574 
- 6090      4C6F7742 
- 6090      6173656C 
- 6091              	.LASF88:
- 6092 0950 6D617869 		.ascii	"maximum\000"
- 6092      6D756D00 
- 6093              	.LASF110:
- 6094 0958 63617073 		.ascii	"capsense_UpdateWidgetBaseline\000"
+ 6088      746F7200 
+ 6089              	.LASF31:
+ 6090 0976 6B56616C 		.ascii	"kValueTbl\000"
+ 6090      75655462 
+ 6090      6C00
+ 6091              	.LASF125:
+ 6092 0980 63617073 		.ascii	"capsense_posFiltersData\000"
+ 6092      656E7365 
+ 6092      5F706F73 
+ 6092      46696C74 
+ 6092      65727344 
+ 6093              	.LASF71:
+ 6094 0998 63617073 		.ascii	"capsense_SetLowBaselineReset\000"
  6094      656E7365 
- 6094      5F557064 
- 6094      61746557 
- 6094      69646765 
- 6095              	.LASF17:
- 6096 0976 73697A65 		.ascii	"sizetype\000"
- 6096      74797065 
- 6096      00
- 6097              	.LASF118:
- 6098 097f 63617073 		.ascii	"capsense_GetWidgetNumber\000"
+ 6094      5F536574 
+ 6094      4C6F7742 
+ 6094      6173656C 
+ 6095              	.LASF88:
+ 6096 09b5 6D617869 		.ascii	"maximum\000"
+ 6096      6D756D00 
+ 6097              	.LASF110:
+ 6098 09bd 63617073 		.ascii	"capsense_UpdateWidgetBaseline\000"
  6098      656E7365 
- 6098      5F476574 
- 6098      57696467 
- 6098      65744E75 
- 6099              	.LASF5:
- 6100 0998 6C6F6E67 		.ascii	"long unsigned int\000"
- 6100      20756E73 
- 6100      69676E65 
- 6100      6420696E 
- 6100      7400
- 6101              	.LASF47:
- 6102 09aa 706F696E 		.ascii	"pointers\000"
- 6102      74657273 
- 6102      00
- 6103              	.LASF93:
- 6104 09b3 6E6F6973 		.ascii	"noiseThreshold\000"
- 6104      65546872 
- 6104      6573686F 
- 6104      6C6400
- 6105              	.LASF128:
- 6106 09c2 63617073 		.ascii	"capsense_widgetNumber\000"
- 6106      656E7365 
- 6106      5F776964 
- 6106      6765744E 
- 6106      756D6265 
- 6107              	.LASF30:
- 6108 09d8 70726576 		.ascii	"previousSampleTbl\000"
- 6108      696F7573 
- 6108      53616D70 
- 6108      6C655462 
- 6108      6C00
- 6109              	.LASF75:
- 6110 09ea 66696E67 		.ascii	"fingerThreshold\000"
- 6110      65725468 
- 6110      72657368 
- 6110      6F6C6400 
- 6111              	.LASF21:
- 6112 09fa 63686172 		.ascii	"chargeDivTbl\000"
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 167
+ 6098      5F557064 
+ 6098      61746557 
+ 6098      69646765 
+ 6099              	.LASF17:
+ 6100 09db 73697A65 		.ascii	"sizetype\000"
+ 6100      74797065 
+ 6100      00
+ 6101              	.LASF118:
+ 6102 09e4 63617073 		.ascii	"capsense_GetWidgetNumber\000"
+ 6102      656E7365 
+ 6102      5F476574 
+ 6102      57696467 
+ 6102      65744E75 
+ 6103              	.LASF5:
+ 6104 09fd 6C6F6E67 		.ascii	"long unsigned int\000"
+ 6104      20756E73 
+ 6104      69676E65 
+ 6104      6420696E 
+ 6104      7400
+ 6105              	.LASF47:
+ 6106 0a0f 706F696E 		.ascii	"pointers\000"
+ 6106      74657273 
+ 6106      00
+ 6107              	.LASF93:
+ 6108 0a18 6E6F6973 		.ascii	"noiseThreshold\000"
+ 6108      65546872 
+ 6108      6573686F 
+ 6108      6C6400
+ 6109              	.LASF128:
+ 6110 0a27 63617073 		.ascii	"capsense_widgetNumber\000"
+ 6110      656E7365 
+ 6110      5F776964 
+ 6110      6765744E 
+ 6110      756D6265 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 167
 
 
- 6112      67654469 
- 6112      7654626C 
- 6112      00
- 6113              	.LASF83:
- 6114 0a07 63617073 		.ascii	"capsense_EnableWidget\000"
- 6114      656E7365 
- 6114      5F456E61 
- 6114      626C6557 
- 6114      69646765 
- 6115              	.LASF1:
- 6116 0a1d 756E7369 		.ascii	"unsigned char\000"
- 6116      676E6564 
- 6116      20636861 
- 6116      7200
- 6117              	.LASF74:
- 6118 0a2b 6465626F 		.ascii	"debounceIndex\000"
- 6118      756E6365 
- 6118      496E6465 
- 6118      7800
- 6119              	.LASF48:
- 6120 0a39 63617073 		.ascii	"capsense_CONFIG_TYPE_P4_v2_60\000"
- 6120      656E7365 
- 6120      5F434F4E 
- 6120      4649475F 
- 6120      54595045 
- 6121              	.LASF20:
- 6122 0a57 73656E73 		.ascii	"sensetivityTbl\000"
- 6122      65746976 
- 6122      69747954 
- 6122      626C00
- 6123              	.LASF59:
- 6124 0a66 63617073 		.ascii	"capsense_SetDiffCountData\000"
+ 6111              	.LASF30:
+ 6112 0a3d 70726576 		.ascii	"previousSampleTbl\000"
+ 6112      696F7573 
+ 6112      53616D70 
+ 6112      6C655462 
+ 6112      6C00
+ 6113              	.LASF75:
+ 6114 0a4f 66696E67 		.ascii	"fingerThreshold\000"
+ 6114      65725468 
+ 6114      72657368 
+ 6114      6F6C6400 
+ 6115              	.LASF21:
+ 6116 0a5f 63686172 		.ascii	"chargeDivTbl\000"
+ 6116      67654469 
+ 6116      7654626C 
+ 6116      00
+ 6117              	.LASF83:
+ 6118 0a6c 63617073 		.ascii	"capsense_EnableWidget\000"
+ 6118      656E7365 
+ 6118      5F456E61 
+ 6118      626C6557 
+ 6118      69646765 
+ 6119              	.LASF1:
+ 6120 0a82 756E7369 		.ascii	"unsigned char\000"
+ 6120      676E6564 
+ 6120      20636861 
+ 6120      7200
+ 6121              	.LASF74:
+ 6122 0a90 6465626F 		.ascii	"debounceIndex\000"
+ 6122      756E6365 
+ 6122      496E6465 
+ 6122      7800
+ 6123              	.LASF48:
+ 6124 0a9e 63617073 		.ascii	"capsense_CONFIG_TYPE_P4_v2_60\000"
  6124      656E7365 
- 6124      5F536574 
- 6124      44696666 
- 6124      436F756E 
- 6125              	.LASF81:
- 6126 0a80 73746174 		.ascii	"state\000"
- 6126      6500
- 6127              	.LASF58:
- 6128 0a86 63617073 		.ascii	"capsense_GetDiffCountData\000"
+ 6124      5F434F4E 
+ 6124      4649475F 
+ 6124      54595045 
+ 6125              	.LASF20:
+ 6126 0abc 73656E73 		.ascii	"sensetivityTbl\000"
+ 6126      65746976 
+ 6126      69747954 
+ 6126      626C00
+ 6127              	.LASF59:
+ 6128 0acb 63617073 		.ascii	"capsense_SetDiffCountData\000"
  6128      656E7365 
- 6128      5F476574 
+ 6128      5F536574 
  6128      44696666 
  6128      436F756E 
- 6129              	.LASF150:
- 6130 0aa0 433A5C55 		.ascii	"C:\\Users\\yunse\\Desktop\\ece445_project\\bleapp-m"
- 6130      73657273 
- 6130      5C79756E 
- 6130      73655C44 
- 6130      65736B74 
- 6131 0ace 61737465 		.ascii	"aster\\bleapp-master\\PSoC_Creator\\capsenseled\\ca"
- 6131      725C626C 
- 6131      65617070 
- 6131      2D6D6173 
- 6131      7465725C 
- 6132 0afd 7073656E 		.ascii	"psenseled.cydsn\000"
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 168
+ 6129              	.LASF81:
+ 6130 0ae5 73746174 		.ascii	"state\000"
+ 6130      6500
+ 6131              	.LASF58:
+ 6132 0aeb 63617073 		.ascii	"capsense_GetDiffCountData\000"
+ 6132      656E7365 
+ 6132      5F476574 
+ 6132      44696666 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 168
 
 
- 6132      73656C65 
- 6132      642E6379 
- 6132      64736E00 
+ 6132      436F756E 
  6133              	.LASF124:
- 6134 0b0d 63617073 		.ascii	"capsense_posFiltersMask\000"
+ 6134 0b05 63617073 		.ascii	"capsense_posFiltersMask\000"
  6134      656E7365 
  6134      5F706F73 
  6134      46696C74 
  6134      6572734D 
  6135              	.LASF152:
- 6136 0b25 63617073 		.ascii	"capsense_ScanEnabledWidgets\000"
+ 6136 0b1d 63617073 		.ascii	"capsense_ScanEnabledWidgets\000"
  6136      656E7365 
  6136      5F536361 
  6136      6E456E61 
  6136      626C6564 
  6137              	.LASF22:
- 6138 0b41 6D6F6444 		.ascii	"modDivTbl\000"
+ 6138 0b39 6D6F6444 		.ascii	"modDivTbl\000"
  6138      69765462 
  6138      6C00
  6139              	.LASF0:
- 6140 0b4b 7369676E 		.ascii	"signed char\000"
+ 6140 0b43 7369676E 		.ascii	"signed char\000"
  6140      65642063 
  6140      68617200 
  6141              	.LASF3:
- 6142 0b57 73686F72 		.ascii	"short unsigned int\000"
+ 6142 0b4f 73686F72 		.ascii	"short unsigned int\000"
  6142      7420756E 
  6142      7369676E 
  6142      65642069 
  6142      6E7400
  6143              	.LASF40:
- 6144 0b6a 70747253 		.ascii	"ptrSetBitValue\000"
+ 6144 0b62 70747253 		.ascii	"ptrSetBitValue\000"
  6144      65744269 
  6144      7456616C 
  6144      756500
  6145              	.LASF106:
- 6146 0b79 74656D70 		.ascii	"tempRaw\000"
+ 6146 0b71 74656D70 		.ascii	"tempRaw\000"
  6146      52617700 
  6147              	.LASF127:
- 6148 0b81 63617073 		.ascii	"capsense_sensorEnableMask\000"
+ 6148 0b79 63617073 		.ascii	"capsense_sensorEnableMask\000"
  6148      656E7365 
  6148      5F73656E 
  6148      736F7245 
  6148      6E61626C 
  6149              	.LASF9:
- 6150 0b9b 75696E74 		.ascii	"uint8\000"
+ 6150 0b93 75696E74 		.ascii	"uint8\000"
  6150      3800
  6151              	.LASF15:
- 6152 0ba1 646F7562 		.ascii	"double\000"
+ 6152 0b99 646F7562 		.ascii	"double\000"
  6152      6C6500
  6153              	.LASF130:
- 6154 0ba8 63617073 		.ascii	"capsense_sensorBaselineLow\000"
+ 6154 0ba0 63617073 		.ascii	"capsense_sensorBaselineLow\000"
  6154      656E7365 
  6154      5F73656E 
  6154      736F7242 
  6154      6173656C 
  6155              	.LASF85:
- 6156 0bc3 63617073 		.ascii	"capsense_FindMaximum\000"
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccaE1bPB.s 			page 169
-
-
+ 6156 0bbb 63617073 		.ascii	"capsense_FindMaximum\000"
  6156      656E7365 
  6156      5F46696E 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\cc8LIaWg.s 			page 169
+
+
  6156      644D6178 
  6156      696D756D 
  6157              	.LASF78:
- 6158 0bd8 63617073 		.ascii	"capsense_CheckIsWidgetActive\000"
+ 6158 0bd0 63617073 		.ascii	"capsense_CheckIsWidgetActive\000"
  6158      656E7365 
  6158      5F436865 
  6158      636B4973 
  6158      57696467 
  6159              	.LASF97:
- 6160 0bf5 706F7369 		.ascii	"position\000"
+ 6160 0bed 706F7369 		.ascii	"position\000"
  6160      74696F6E 
  6160      00
  6161              	.LASF49:
- 6162 0bfe 63617073 		.ascii	"capsense_BaseInit\000"
+ 6162 0bf6 63617073 		.ascii	"capsense_BaseInit\000"
  6162      656E7365 
  6162      5F426173 
  6162      65496E69 

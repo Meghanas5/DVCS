@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
   30:Generated_Source\PSoC4/capsense_PM.c **** *  Saves the customer configuration of CapSense.
   31:Generated_Source\PSoC4/capsense_PM.c **** *
   32:Generated_Source\PSoC4/capsense_PM.c **** * Parameters:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 2
 
 
   33:Generated_Source\PSoC4/capsense_PM.c **** *  None
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
   56:Generated_Source\PSoC4/capsense_PM.c **** * Function Name: capsense_Sleep
   57:Generated_Source\PSoC4/capsense_PM.c **** ********************************************************************************
   58:Generated_Source\PSoC4/capsense_PM.c **** *
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 3
 
 
   59:Generated_Source\PSoC4/capsense_PM.c **** * Summary:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
   82 001e FFF7FEFF 		bl	capsense_SenseClk_Stop
   83              	.LVL2:
   88:Generated_Source\PSoC4/capsense_PM.c ****     capsense_SampleClk_Stop();
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 4
 
 
   84              		.loc 1 88 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  109              		@ sp needed
  110 0000 7047     		bx	lr
  111              		.cfi_endproc
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 5
 
 
  112              	.LFE38:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  136              		.loc 1 147 0
  137 000e 034B     		ldr	r3, .L11
  138 0010 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 6
 
 
  139 0012 002B     		cmp	r3, #0
@@ -342,28 +342,28 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  173 0006 00000000 		.4byte	.Ldebug_abbrev0
  174 000a 04       		.byte	0x4
  175 000b 01       		.uleb128 0x1
- 176 000c 0A020000 		.4byte	.LASF27
+ 176 000c 02020000 		.4byte	.LASF27
  177 0010 01       		.byte	0x1
- 178 0011 B9010000 		.4byte	.LASF28
- 179 0015 A2000000 		.4byte	.LASF29
+ 178 0011 B1010000 		.4byte	.LASF28
+ 179 0015 0A010000 		.4byte	.LASF29
  180 0019 00000000 		.4byte	.Ldebug_ranges0+0
  181 001d 00000000 		.4byte	0
  182 0021 00000000 		.4byte	.Ldebug_line0
  183 0025 02       		.uleb128 0x2
  184 0026 01       		.byte	0x1
  185 0027 06       		.byte	0x6
- 186 0028 C4020000 		.4byte	.LASF0
+ 186 0028 BC020000 		.4byte	.LASF0
  187 002c 02       		.uleb128 0x2
  188 002d 01       		.byte	0x1
  189 002e 08       		.byte	0x8
- 190 002f 47010000 		.4byte	.LASF1
+ 190 002f A2000000 		.4byte	.LASF1
  191 0033 02       		.uleb128 0x2
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 7
 
 
  192 0034 02       		.byte	0x2
  193 0035 05       		.byte	0x5
- 194 0036 A5020000 		.4byte	.LASF2
+ 194 0036 9D020000 		.4byte	.LASF2
  195 003a 02       		.uleb128 0x2
  196 003b 02       		.byte	0x2
  197 003c 07       		.byte	0x7
@@ -371,19 +371,19 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  199 0041 02       		.uleb128 0x2
  200 0042 04       		.byte	0x4
  201 0043 05       		.byte	0x5
- 202 0044 AF020000 		.4byte	.LASF4
+ 202 0044 A7020000 		.4byte	.LASF4
  203 0048 02       		.uleb128 0x2
  204 0049 04       		.byte	0x4
  205 004a 07       		.byte	0x7
- 206 004b 2F010000 		.4byte	.LASF5
+ 206 004b D0000000 		.4byte	.LASF5
  207 004f 02       		.uleb128 0x2
  208 0050 08       		.byte	0x8
  209 0051 05       		.byte	0x5
- 210 0052 F7010000 		.4byte	.LASF6
+ 210 0052 EF010000 		.4byte	.LASF6
  211 0056 02       		.uleb128 0x2
  212 0057 08       		.byte	0x8
  213 0058 07       		.byte	0x7
- 214 0059 A2010000 		.4byte	.LASF7
+ 214 0059 9A010000 		.4byte	.LASF7
  215 005d 03       		.uleb128 0x3
  216 005e 04       		.byte	0x4
  217 005f 05       		.byte	0x5
@@ -391,14 +391,14 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  219 0064 02       		.uleb128 0x2
  220 0065 04       		.byte	0x4
  221 0066 07       		.byte	0x7
- 222 0067 95010000 		.4byte	.LASF8
+ 222 0067 8D010000 		.4byte	.LASF8
  223 006b 04       		.uleb128 0x4
- 224 006c 41010000 		.4byte	.LASF9
+ 224 006c E2000000 		.4byte	.LASF9
  225 0070 02       		.byte	0x2
  226 0071 B901     		.2byte	0x1b9
  227 0073 2C000000 		.4byte	0x2c
  228 0077 04       		.uleb128 0x4
- 229 0078 8E010000 		.4byte	.LASF10
+ 229 0078 86010000 		.4byte	.LASF10
  230 007c 02       		.byte	0x2
  231 007d BB01     		.2byte	0x1bb
  232 007f 48000000 		.4byte	0x48
@@ -409,16 +409,16 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  237 008a 02       		.uleb128 0x2
  238 008b 08       		.byte	0x8
  239 008c 04       		.byte	0x4
- 240 008d 70010000 		.4byte	.LASF12
+ 240 008d 03010000 		.4byte	.LASF12
  241 0091 02       		.uleb128 0x2
  242 0092 01       		.byte	0x1
  243 0093 08       		.byte	0x8
- 244 0094 05020000 		.4byte	.LASF13
+ 244 0094 FD010000 		.4byte	.LASF13
  245 0098 04       		.uleb128 0x4
  246 0099 32000000 		.4byte	.LASF14
  247 009d 02       		.byte	0x2
  248 009e 6502     		.2byte	0x265
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 8
 
 
  249 00a0 A4000000 		.4byte	0xa4
@@ -427,14 +427,14 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  252 00a9 02       		.uleb128 0x2
  253 00aa 04       		.byte	0x4
  254 00ab 07       		.byte	0x7
- 255 00ac EE010000 		.4byte	.LASF15
+ 255 00ac E6010000 		.4byte	.LASF15
  256 00b0 06       		.uleb128 0x6
  257 00b1 01       		.byte	0x1
  258 00b2 03       		.byte	0x3
  259 00b3 8D       		.byte	0x8d
  260 00b4 C5000000 		.4byte	0xc5
  261 00b8 07       		.uleb128 0x7
- 262 00b9 B8020000 		.4byte	.LASF30
+ 262 00b9 B0020000 		.4byte	.LASF30
  263 00bd 03       		.byte	0x3
  264 00be 8F       		.byte	0x8f
  265 00bf 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  303 0112 0B       		.uleb128 0xb
  304 0113 22000000 		.4byte	.LVL2
  305 0117 9F010000 		.4byte	0x19f
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 9
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 9
 
 
  306 011b 0B       		.uleb128 0xb
@@ -494,7 +494,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  316 0134 01       		.uleb128 0x1
  317 0135 9C       		.byte	0x9c
  318 0136 0A       		.uleb128 0xa
- 319 0137 0F010000 		.4byte	.LASF20
+ 319 0137 B0000000 		.4byte	.LASF20
  320 013b 01       		.byte	0x1
  321 013c 8C       		.byte	0x8c
  322 013d 00000000 		.4byte	.LFB39
@@ -529,7 +529,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  351 0178 CF010000 		.4byte	0x1cf
  352 017c 00       		.byte	0
  353 017d 0E       		.uleb128 0xe
- 354 017e DE010000 		.4byte	.LASF31
+ 354 017e D6010000 		.4byte	.LASF31
  355 0182 01       		.byte	0x1
  356 0183 13       		.byte	0x13
  357 0184 C5000000 		.4byte	0xc5
@@ -537,8 +537,8 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  359 0189 03       		.byte	0x3
  360 018a 00000000 		.4byte	capsense_backup
  361 018e 0F       		.uleb128 0xf
- 362 018f 98020000 		.4byte	.LASF23
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 10
+ 362 018f 90020000 		.4byte	.LASF23
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 10
 
 
  363 0193 06       		.byte	0x6
@@ -548,7 +548,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  367 019a 6B000000 		.4byte	0x6b
  368 019e 00       		.byte	0
  369 019f 11       		.uleb128 0x11
- 370 01a0 77010000 		.4byte	.LASF21
+ 370 01a0 6F010000 		.4byte	.LASF21
  371 01a4 04       		.byte	0x4
  372 01a5 27       		.byte	0x27
  373 01a6 11       		.uleb128 0x11
@@ -564,7 +564,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  383 01b9 77000000 		.4byte	0x77
  384 01bd 00       		.byte	0
  385 01be 0F       		.uleb128 0xf
- 386 01bf 55010000 		.4byte	.LASF25
+ 386 01bf E8000000 		.4byte	.LASF25
  387 01c3 05       		.byte	0x5
  388 01c4 1D       		.byte	0x1d
  389 01c5 CF010000 		.4byte	0x1cf
@@ -572,7 +572,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  391 01ca 77000000 		.4byte	0x77
  392 01ce 00       		.byte	0
  393 01cf 11       		.uleb128 0x11
- 394 01d0 1F010000 		.4byte	.LASF26
+ 394 01d0 C0000000 		.4byte	.LASF26
  395 01d4 03       		.byte	0x3
  396 01d5 98       		.byte	0x98
  397 01d6 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  417 0011 00       		.byte	0
  418 0012 00       		.byte	0
  419 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 11
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 11
 
 
  420 0014 24       		.uleb128 0x24
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  474 004a 07       		.uleb128 0x7
  475 004b 0D       		.uleb128 0xd
  476 004c 00       		.byte	0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 12
 
 
  477 004d 03       		.uleb128 0x3
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  531 0084 0E       		.uleb128 0xe
  532 0085 3A       		.uleb128 0x3a
  533 0086 0B       		.uleb128 0xb
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 13
 
 
  534 0087 3B       		.uleb128 0x3b
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  588 00c5 49       		.uleb128 0x49
  589 00c6 13       		.uleb128 0x13
  590 00c7 02       		.uleb128 0x2
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 14
 
 
  591 00c8 18       		.uleb128 0x18
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  645 000e 0000     		.2byte	0
  646 0010 00000000 		.4byte	.LFB36
  647 0014 18000000 		.4byte	.LFE36-.LFB36
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 15
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 15
 
 
  648 0018 00000000 		.4byte	.LFB37
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  681              	.LASF3:
  682 0063 73686F72 		.ascii	"short unsigned int\000"
  682      7420756E 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 16
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 16
 
 
  682      7369676E 
@@ -918,138 +918,136 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 1
  688      5F526573 
  688      746F7265 
  688      436F6E66 
- 689              	.LASF29:
- 690 00a2 433A5C55 		.ascii	"C:\\Users\\yunse\\Desktop\\ece445_project\\bleapp-m"
- 690      73657273 
- 690      5C79756E 
- 690      73655C44 
- 690      65736B74 
- 691 00d0 61737465 		.ascii	"aster\\bleapp-master\\PSoC_Creator\\capsenseled\\ca"
- 691      725C626C 
- 691      65617070 
- 691      2D6D6173 
- 691      7465725C 
- 692 00ff 7073656E 		.ascii	"psenseled.cydsn\000"
- 692      73656C65 
- 692      642E6379 
- 692      64736E00 
- 693              	.LASF20:
- 694 010f 63617073 		.ascii	"capsense_Wakeup\000"
+ 689              	.LASF1:
+ 690 00a2 756E7369 		.ascii	"unsigned char\000"
+ 690      676E6564 
+ 690      20636861 
+ 690      7200
+ 691              	.LASF20:
+ 692 00b0 63617073 		.ascii	"capsense_Wakeup\000"
+ 692      656E7365 
+ 692      5F57616B 
+ 692      65757000 
+ 693              	.LASF26:
+ 694 00c0 63617073 		.ascii	"capsense_Enable\000"
  694      656E7365 
- 694      5F57616B 
- 694      65757000 
- 695              	.LASF26:
- 696 011f 63617073 		.ascii	"capsense_Enable\000"
- 696      656E7365 
- 696      5F456E61 
- 696      626C6500 
- 697              	.LASF5:
- 698 012f 6C6F6E67 		.ascii	"long unsigned int\000"
- 698      20756E73 
- 698      69676E65 
- 698      6420696E 
- 698      7400
- 699              	.LASF9:
- 700 0141 75696E74 		.ascii	"uint8\000"
- 700      3800
- 701              	.LASF1:
- 702 0147 756E7369 		.ascii	"unsigned char\000"
- 702      676E6564 
- 702      20636861 
- 702      7200
- 703              	.LASF25:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 17
+ 694      5F456E61 
+ 694      626C6500 
+ 695              	.LASF5:
+ 696 00d0 6C6F6E67 		.ascii	"long unsigned int\000"
+ 696      20756E73 
+ 696      69676E65 
+ 696      6420696E 
+ 696      7400
+ 697              	.LASF9:
+ 698 00e2 75696E74 		.ascii	"uint8\000"
+ 698      3800
+ 699              	.LASF25:
+ 700 00e8 63617073 		.ascii	"capsense_SampleClk_StartEx\000"
+ 700      656E7365 
+ 700      5F53616D 
+ 700      706C6543 
+ 700      6C6B5F53 
+ 701              	.LASF12:
+ 702 0103 646F7562 		.ascii	"double\000"
+ 702      6C6500
+ 703              	.LASF29:
+ 704 010a 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\bleapp-master\\b"
+ 704      73657273 
+ 704      5C536172 
+ 704      61685C44 
+ 704      6F63756D 
+ 705 0137 6C656170 		.ascii	"leapp-master\\PSoC_Creator\\capsenseled\\capsensele"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 17
 
 
- 704 0155 63617073 		.ascii	"capsense_SampleClk_StartEx\000"
- 704      656E7365 
- 704      5F53616D 
- 704      706C6543 
- 704      6C6B5F53 
- 705              	.LASF12:
- 706 0170 646F7562 		.ascii	"double\000"
- 706      6C6500
+ 705      702D6D61 
+ 705      73746572 
+ 705      5C50536F 
+ 705      435F4372 
+ 706 0167 642E6379 		.ascii	"d.cydsn\000"
+ 706      64736E00 
  707              	.LASF21:
- 708 0177 63617073 		.ascii	"capsense_SenseClk_Stop\000"
+ 708 016f 63617073 		.ascii	"capsense_SenseClk_Stop\000"
  708      656E7365 
  708      5F53656E 
  708      7365436C 
  708      6B5F5374 
  709              	.LASF10:
- 710 018e 75696E74 		.ascii	"uint32\000"
+ 710 0186 75696E74 		.ascii	"uint32\000"
  710      333200
  711              	.LASF8:
- 712 0195 756E7369 		.ascii	"unsigned int\000"
+ 712 018d 756E7369 		.ascii	"unsigned int\000"
  712      676E6564 
  712      20696E74 
  712      00
  713              	.LASF7:
- 714 01a2 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 714 019a 6C6F6E67 		.ascii	"long long unsigned int\000"
  714      206C6F6E 
  714      6720756E 
  714      7369676E 
  714      65642069 
  715              	.LASF28:
- 716 01b9 47656E65 		.ascii	"Generated_Source\\PSoC4\\capsense_PM.c\000"
+ 716 01b1 47656E65 		.ascii	"Generated_Source\\PSoC4\\capsense_PM.c\000"
  716      72617465 
  716      645F536F 
  716      75726365 
  716      5C50536F 
  717              	.LASF31:
- 718 01de 63617073 		.ascii	"capsense_backup\000"
+ 718 01d6 63617073 		.ascii	"capsense_backup\000"
  718      656E7365 
  718      5F626163 
  718      6B757000 
  719              	.LASF15:
- 720 01ee 73697A65 		.ascii	"sizetype\000"
+ 720 01e6 73697A65 		.ascii	"sizetype\000"
  720      74797065 
  720      00
  721              	.LASF6:
- 722 01f7 6C6F6E67 		.ascii	"long long int\000"
+ 722 01ef 6C6F6E67 		.ascii	"long long int\000"
  722      206C6F6E 
  722      6720696E 
  722      7400
  723              	.LASF13:
- 724 0205 63686172 		.ascii	"char\000"
+ 724 01fd 63686172 		.ascii	"char\000"
  724      00
  725              	.LASF27:
- 726 020a 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 726 0202 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  726      4320342E 
  726      392E3320 
  726      32303135 
  726      30333033 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccghQA9u.s 			page 18
-
-
- 727 023d 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 727 0235 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  727      20726576 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccdDRxvf.s 			page 18
+
+
  727      6973696F 
  727      6E203232 
  727      31323230 
- 728 0270 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 728 0268 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  728      66756E63 
  728      74696F6E 
  728      2D736563 
  728      74696F6E 
  729              	.LASF23:
- 730 0298 4379496E 		.ascii	"CyIntDisable\000"
+ 730 0290 4379496E 		.ascii	"CyIntDisable\000"
  730      74446973 
  730      61626C65 
  730      00
  731              	.LASF2:
- 732 02a5 73686F72 		.ascii	"short int\000"
+ 732 029d 73686F72 		.ascii	"short int\000"
  732      7420696E 
  732      7400
  733              	.LASF4:
- 734 02af 6C6F6E67 		.ascii	"long int\000"
+ 734 02a7 6C6F6E67 		.ascii	"long int\000"
  734      20696E74 
  734      00
  735              	.LASF30:
- 736 02b8 656E6162 		.ascii	"enableState\000"
+ 736 02b0 656E6162 		.ascii	"enableState\000"
  736      6C655374 
  736      61746500 
  737              	.LASF0:
- 738 02c4 7369676E 		.ascii	"signed char\000"
+ 738 02bc 7369676E 		.ascii	"signed char\000"
  738      65642063 
  738      68617200 
  739              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

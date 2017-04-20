@@ -41,13 +41,13 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                 }, 
             },
 
-            /* capsense characteristic */
+            /* Temp characteristic */
             {
-                0x0011u, /* Handle of the capsense characteristic */ 
+                0x0011u, /* Handle of the Temp characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
-                    0x0012u, /* Handle of the capsensecccd descriptor */ 
+                    0x0012u, /* Handle of the Tempcccd descriptor */ 
                     0x0013u, /* Handle of the Characteristic User Description descriptor */ 
                 }, 
             },
@@ -60,6 +60,17 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                 {
                     0x0016u, /* Handle of the Characteristic User Description descriptor */ 
                     CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                }, 
+            },
+
+            /* capsense characteristic */
+            {
+                0x0018u, /* Handle of the capsense characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x0019u, /* Handle of the capsensecccd descriptor */ 
+                    0x001Au, /* Handle of the Characteristic User Description descriptor */ 
                 }, 
             },
         }, 

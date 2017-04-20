@@ -1,5 +1,6 @@
-C:\Users\yunse\Desktop\ece445_project\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\capsenseled.cyprj|f5cd142c-eb92-4f0b-8b4f-e718f9b09eb6
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|12a3aa73-1538-4d1d-99cb-9d71de3d9d09
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a59a1733-98be-40bd-9ca4-5e6c37a5611e
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|795de155-f7e5-489f-9b1f-ad5ee64f0820
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|0dc09e93-d270-44d4-a0dc-2764236d7f0f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|8af19ac8-49a5-41b9-95b4-d7504c091d49
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|84538582-4735-49b9-962e-99f0f26efaaf
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|03f8ca26-b93d-441a-bfea-89990234959b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|79466cbe-4693-4622-9d1d-fc602405f6ed
+C:\Users\Sarah\Documents\DVCS\Workspace01\TempSensor.cydsn\TempSensor.cyprj|ff9b6916-c339-4651-9669-441cef7c675b
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\capsenseled.cyprj|6ece4fbb-3ec6-484e-a374-94df36da0d60

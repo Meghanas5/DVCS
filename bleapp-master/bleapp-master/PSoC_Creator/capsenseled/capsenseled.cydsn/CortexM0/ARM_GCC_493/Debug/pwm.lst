@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
   30:Generated_Source\PSoC4/pwm.c **** #endif /* pwm_PWMUDB_genblk1_ctrlreg__REMOVED */
   31:Generated_Source\PSoC4/pwm.c **** 
   32:Generated_Source\PSoC4/pwm.c **** uint8 pwm_initVar = 0u;
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 2
 
 
   33:Generated_Source\PSoC4/pwm.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
   87:Generated_Source\PSoC4/pwm.c ****         uint8 ctrl;
   88:Generated_Source\PSoC4/pwm.c ****     #endif /* (pwm_UsingFixedFunction || pwm_UseControl) */
   89:Generated_Source\PSoC4/pwm.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 3
 
 
   90:Generated_Source\PSoC4/pwm.c ****     #if(!pwm_UsingFixedFunction)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  144:Generated_Source\PSoC4/pwm.c **** 
  145:Generated_Source\PSoC4/pwm.c ****         #if (pwm_KillModeMinTime)
  146:Generated_Source\PSoC4/pwm.c ****             pwm_WriteKillTime(pwm_MinimumKillTime);
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 4
 
 
  147:Generated_Source\PSoC4/pwm.c ****         #endif /* (pwm_KillModeMinTime) */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
   26              		.loc 1 200 0
   27              		.cfi_startproc
  201:Generated_Source\PSoC4/pwm.c ****     /* Globally Enable the Fixed Function Block chosen */
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 5
 
 
  202:Generated_Source\PSoC4/pwm.c ****     #if (pwm_UsingFixedFunction)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  232:Generated_Source\PSoC4/pwm.c **** *******************************************************************************/
  233:Generated_Source\PSoC4/pwm.c **** void pwm_Stop(void) 
  234:Generated_Source\PSoC4/pwm.c **** {
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 6
 
 
   52              		.loc 1 234 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  263:Generated_Source\PSoC4/pwm.c ****         *  None
  264:Generated_Source\PSoC4/pwm.c ****         *
  265:Generated_Source\PSoC4/pwm.c ****         *******************************************************************************/
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 7
 
 
  266:Generated_Source\PSoC4/pwm.c ****         void pwm_SetCompareMode(uint8 comparemode) 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  320:Generated_Source\PSoC4/pwm.c ****         *                defined in the H file as input arguments.
  321:Generated_Source\PSoC4/pwm.c ****         *
  322:Generated_Source\PSoC4/pwm.c ****         * Return:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 8
 
 
  323:Generated_Source\PSoC4/pwm.c ****         *  None
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  377:Generated_Source\PSoC4/pwm.c **** #endif /* UseOneCompareMode */
  378:Generated_Source\PSoC4/pwm.c **** 
  379:Generated_Source\PSoC4/pwm.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 9
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 9
 
 
  380:Generated_Source\PSoC4/pwm.c **** #if (!pwm_UsingFixedFunction)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  410:Generated_Source\PSoC4/pwm.c ****     /*******************************************************************************
  411:Generated_Source\PSoC4/pwm.c ****     * Function Name: pwm_ReadCounter
  412:Generated_Source\PSoC4/pwm.c ****     ********************************************************************************
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 10
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 10
 
 
  413:Generated_Source\PSoC4/pwm.c ****     *
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  439:Generated_Source\PSoC4/pwm.c ****         /*******************************************************************************
  440:Generated_Source\PSoC4/pwm.c ****         * Function Name: pwm_ClearFIFO
  441:Generated_Source\PSoC4/pwm.c ****         ********************************************************************************
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 11
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 11
 
 
  442:Generated_Source\PSoC4/pwm.c ****         *
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  136              		.loc 1 489 0
  137              		@ sp needed
  138 0004 7047     		bx	lr
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 12
 
 
  139              	.L15:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  523:Generated_Source\PSoC4/pwm.c ****         #endif /* (pwm_UsingFixedFunction) */
  524:Generated_Source\PSoC4/pwm.c **** 
  525:Generated_Source\PSoC4/pwm.c ****         #if (pwm_PWMMode == pwm__B_PWM__DITHER)
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 13
 
 
  526:Generated_Source\PSoC4/pwm.c ****             #if(pwm_UsingFixedFunction)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  562:Generated_Source\PSoC4/pwm.c ****         #endif /* (pwm_UsingFixedFunction) */
  563:Generated_Source\PSoC4/pwm.c ****     }
  564:Generated_Source\PSoC4/pwm.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 14
 
 
  565:Generated_Source\PSoC4/pwm.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  619:Generated_Source\PSoC4/pwm.c ****             /* Clear existing data */
  620:Generated_Source\PSoC4/pwm.c ****             pwm_DEADBAND_COUNT &= ((uint8)(~pwm_DEADBAND_COUNT_MASK));
  621:Generated_Source\PSoC4/pwm.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 15
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 15
 
 
  622:Generated_Source\PSoC4/pwm.c ****             /* Set new dead time */
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  676:Generated_Source\PSoC4/pwm.c ****     *
  677:Generated_Source\PSoC4/pwm.c ****     * Parameters:
  678:Generated_Source\PSoC4/pwm.c ****     *  uint8 interruptMode: Bit field containing the interrupt sources enabled
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 16
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 16
 
 
  679:Generated_Source\PSoC4/pwm.c ****     *
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  709:Generated_Source\PSoC4/pwm.c ****     *
  710:Generated_Source\PSoC4/pwm.c ****     *******************************************************************************/
  711:Generated_Source\PSoC4/pwm.c ****     uint8 pwm_ReadStatusRegister(void) 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 17
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 17
 
 
  712:Generated_Source\PSoC4/pwm.c ****     {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  740:Generated_Source\PSoC4/pwm.c **** 
  741:Generated_Source\PSoC4/pwm.c ****         result = CY_GET_REG8(pwm_CONTROL_PTR);
  228              		.loc 1 741 0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 18
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 18
 
 
  229 0000 014B     		ldr	r3, .L26
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  768:Generated_Source\PSoC4/pwm.c ****     }
  257              		.loc 1 768 0
  258              		@ sp needed
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 19
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 19
 
 
  259 0004 7047     		bx	lr
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  288              		.cfi_endproc
  289              	.LFE15:
  290              		.size	pwm_ReadCapture, .-pwm_ReadCapture
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 20
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 20
 
 
  291              		.section	.text.pwm_ClearFIFO,"ax",%progbits
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  338 0002 1149     		ldr	r1, .L38
  339 0004 0B78     		ldrb	r3, [r1]
  340 0006 3F22     		mov	r2, #63
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 21
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 21
 
 
  341 0008 9343     		bic	r3, r2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  384              		.loc 1 179 0
  385              		@ sp needed
  386 0046 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 22
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 22
 
 
  387              	.L39:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  435              		.section	.text.pwm_ReadCompare,"ax",%progbits
  436              		.align	2
  437              		.global	pwm_ReadCompare
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 23
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 23
 
 
  438              		.code	16
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  462              		.code	16
  463              		.thumb_func
  464              		.type	pwm_ReadPeriod, %function
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 24
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 24
 
 
  465              	pwm_ReadPeriod:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  876:Generated_Source\PSoC4/pwm.c **** *
  877:Generated_Source\PSoC4/pwm.c **** * Parameters:
  878:Generated_Source\PSoC4/pwm.c **** *  None
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 25
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 25
 
 
  879:Generated_Source\PSoC4/pwm.c **** *
@@ -1488,28 +1488,28 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  498 0006 00000000 		.4byte	.Ldebug_abbrev0
  499 000a 04       		.byte	0x4
  500 000b 01       		.uleb128 0x1
- 501 000c 3B020000 		.4byte	.LASF38
+ 501 000c 33020000 		.4byte	.LASF38
  502 0010 01       		.byte	0x1
- 503 0011 9D010000 		.4byte	.LASF39
- 504 0015 AD000000 		.4byte	.LASF40
+ 503 0011 95010000 		.4byte	.LASF39
+ 504 0015 67000000 		.4byte	.LASF40
  505 0019 00000000 		.4byte	.Ldebug_ranges0+0
  506 001d 00000000 		.4byte	0
  507 0021 00000000 		.4byte	.Ldebug_line0
  508 0025 02       		.uleb128 0x2
  509 0026 01       		.byte	0x1
  510 0027 06       		.byte	0x6
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 26
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 26
 
 
- 511 0028 23030000 		.4byte	.LASF0
+ 511 0028 1B030000 		.4byte	.LASF0
  512 002c 02       		.uleb128 0x2
  513 002d 01       		.byte	0x1
  514 002e 08       		.byte	0x8
- 515 002f 5B010000 		.4byte	.LASF1
+ 515 002f 12010000 		.4byte	.LASF1
  516 0033 02       		.uleb128 0x2
  517 0034 02       		.byte	0x2
  518 0035 05       		.byte	0x5
- 519 0036 D2020000 		.4byte	.LASF2
+ 519 0036 CA020000 		.4byte	.LASF2
  520 003a 02       		.uleb128 0x2
  521 003b 02       		.byte	0x2
  522 003c 07       		.byte	0x7
@@ -1517,19 +1517,19 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  524 0041 02       		.uleb128 0x2
  525 0042 04       		.byte	0x4
  526 0043 05       		.byte	0x5
- 527 0044 0B030000 		.4byte	.LASF4
+ 527 0044 03030000 		.4byte	.LASF4
  528 0048 02       		.uleb128 0x2
  529 0049 04       		.byte	0x4
  530 004a 07       		.byte	0x7
- 531 004b 1F010000 		.4byte	.LASF5
+ 531 004b 25010000 		.4byte	.LASF5
  532 004f 02       		.uleb128 0x2
  533 0050 08       		.byte	0x8
  534 0051 05       		.byte	0x5
- 535 0052 0F020000 		.4byte	.LASF6
+ 535 0052 07020000 		.4byte	.LASF6
  536 0056 02       		.uleb128 0x2
  537 0057 08       		.byte	0x8
  538 0058 07       		.byte	0x7
- 539 0059 85000000 		.4byte	.LASF7
+ 539 0059 EA000000 		.4byte	.LASF7
  540 005d 03       		.uleb128 0x3
  541 005e 04       		.byte	0x4
  542 005f 05       		.byte	0x5
@@ -1537,28 +1537,28 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  544 0064 02       		.uleb128 0x2
  545 0065 04       		.byte	0x4
  546 0066 07       		.byte	0x7
- 547 0067 90010000 		.4byte	.LASF8
+ 547 0067 88010000 		.4byte	.LASF8
  548 006b 04       		.uleb128 0x4
- 549 006c 3D010000 		.4byte	.LASF12
+ 549 006c 43010000 		.4byte	.LASF12
  550 0070 02       		.byte	0x2
  551 0071 B901     		.2byte	0x1b9
  552 0073 2C000000 		.4byte	0x2c
  553 0077 02       		.uleb128 0x2
  554 0078 04       		.byte	0x4
  555 0079 04       		.byte	0x4
- 556 007a 77000000 		.4byte	.LASF9
+ 556 007a DC000000 		.4byte	.LASF9
  557 007e 02       		.uleb128 0x2
  558 007f 08       		.byte	0x8
  559 0080 04       		.byte	0x4
- 560 0081 72010000 		.4byte	.LASF10
+ 560 0081 6A010000 		.4byte	.LASF10
  561 0085 02       		.uleb128 0x2
  562 0086 01       		.byte	0x1
  563 0087 08       		.byte	0x8
- 564 0088 14030000 		.4byte	.LASF11
+ 564 0088 0C030000 		.4byte	.LASF11
  565 008c 04       		.uleb128 0x4
- 566 008d 1A010000 		.4byte	.LASF13
+ 566 008d 20010000 		.4byte	.LASF13
  567 0091 02       		.byte	0x2
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 27
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 27
 
 
  568 0092 6302     		.2byte	0x263
@@ -1568,9 +1568,9 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  572 009d 02       		.uleb128 0x2
  573 009e 04       		.byte	0x4
  574 009f 07       		.byte	0x7
- 575 00a0 06020000 		.4byte	.LASF14
+ 575 00a0 FE010000 		.4byte	.LASF14
  576 00a4 06       		.uleb128 0x6
- 577 00a5 DC020000 		.4byte	.LASF15
+ 577 00a5 D4020000 		.4byte	.LASF15
  578 00a9 01       		.byte	0x1
  579 00aa C7       		.byte	0xc7
  580 00ab 00000000 		.4byte	.LFB4
@@ -1578,7 +1578,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  582 00b3 01       		.uleb128 0x1
  583 00b4 9C       		.byte	0x9c
  584 00b5 06       		.uleb128 0x6
- 585 00b6 C9020000 		.4byte	.LASF16
+ 585 00b6 C1020000 		.4byte	.LASF16
  586 00ba 01       		.byte	0x1
  587 00bb E9       		.byte	0xe9
  588 00bc 00000000 		.4byte	.LFB5
@@ -1586,7 +1586,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  590 00c4 01       		.uleb128 0x1
  591 00c5 9C       		.byte	0x9c
  592 00c6 07       		.uleb128 0x7
- 593 00c7 D7010000 		.4byte	.LASF17
+ 593 00c7 CF010000 		.4byte	.LASF17
  594 00cb 01       		.byte	0x1
  595 00cc 9301     		.2byte	0x193
  596 00ce 00000000 		.4byte	.LFB6
@@ -1595,7 +1595,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  599 00d7 9C       		.byte	0x9c
  600 00d8 EB000000 		.4byte	0xeb
  601 00dc 08       		.uleb128 0x8
- 602 00dd 7D000000 		.4byte	.LASF19
+ 602 00dd E2000000 		.4byte	.LASF19
  603 00e1 01       		.byte	0x1
  604 00e2 9301     		.2byte	0x193
  605 00e4 6B000000 		.4byte	0x6b
@@ -1603,7 +1603,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  607 00e9 50       		.byte	0x50
  608 00ea 00       		.byte	0
  609 00eb 09       		.uleb128 0x9
- 610 00ec 4B010000 		.4byte	.LASF25
+ 610 00ec 51010000 		.4byte	.LASF25
  611 00f0 01       		.byte	0x1
  612 00f1 A901     		.2byte	0x1a9
  613 00f3 6B000000 		.4byte	0x6b
@@ -1612,13 +1612,13 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  616 00ff 01       		.uleb128 0x1
  617 0100 9C       		.byte	0x9c
  618 0101 07       		.uleb128 0x7
- 619 0102 1D020000 		.4byte	.LASF18
+ 619 0102 15020000 		.4byte	.LASF18
  620 0106 01       		.byte	0x1
  621 0107 E201     		.2byte	0x1e2
  622 0109 00000000 		.4byte	.LFB9
  623 010d 0C000000 		.4byte	.LFE9-.LFB9
  624 0111 01       		.uleb128 0x1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 28
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 28
 
 
  625 0112 9C       		.byte	0x9c
@@ -1632,7 +1632,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  633 0124 50       		.byte	0x50
  634 0125 00       		.byte	0
  635 0126 07       		.uleb128 0x7
- 636 0127 9C000000 		.4byte	.LASF21
+ 636 0127 01010000 		.4byte	.LASF21
  637 012b 01       		.byte	0x1
  638 012c 0402     		.2byte	0x204
  639 012e 00000000 		.4byte	.LFB10
@@ -1641,7 +1641,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  642 0137 9C       		.byte	0x9c
  643 0138 4B010000 		.4byte	0x14b
  644 013c 08       		.uleb128 0x8
- 645 013d 2F030000 		.4byte	.LASF22
+ 645 013d 27030000 		.4byte	.LASF22
  646 0141 01       		.byte	0x1
  647 0142 0402     		.2byte	0x204
  648 0144 6B000000 		.4byte	0x6b
@@ -1649,7 +1649,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  650 0149 50       		.byte	0x50
  651 014a 00       		.byte	0
  652 014b 07       		.uleb128 0x7
- 653 014c F6020000 		.4byte	.LASF23
+ 653 014c EE020000 		.4byte	.LASF23
  654 0150 01       		.byte	0x1
  655 0151 AC02     		.2byte	0x2ac
  656 0153 00000000 		.4byte	.LFB11
@@ -1658,7 +1658,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  659 015c 9C       		.byte	0x9c
  660 015d 70010000 		.4byte	0x170
  661 0161 08       		.uleb128 0x8
- 662 0162 2D020000 		.4byte	.LASF24
+ 662 0162 25020000 		.4byte	.LASF24
  663 0166 01       		.byte	0x1
  664 0167 AC02     		.2byte	0x2ac
  665 0169 6B000000 		.4byte	0x6b
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  679 0187 4F000000 		.4byte	.LASF41
  680 018b 01       		.byte	0x1
  681 018c E102     		.2byte	0x2e1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 29
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 29
 
 
  682 018e 6B000000 		.4byte	0x6b
@@ -1688,7 +1688,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  686 019b 9C       		.byte	0x9c
  687 019c AF010000 		.4byte	0x1af
  688 01a0 0B       		.uleb128 0xb
- 689 01a1 D0010000 		.4byte	.LASF32
+ 689 01a1 C8010000 		.4byte	.LASF32
  690 01a5 01       		.byte	0x1
  691 01a6 E302     		.2byte	0x2e3
  692 01a8 6B000000 		.4byte	0x6b
@@ -1696,7 +1696,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  694 01ad 50       		.byte	0x50
  695 01ae 00       		.byte	0
  696 01af 07       		.uleb128 0x7
- 697 01b0 E8010000 		.4byte	.LASF27
+ 697 01b0 E0010000 		.4byte	.LASF27
  698 01b4 01       		.byte	0x1
  699 01b5 FD02     		.2byte	0x2fd
  700 01b7 00000000 		.4byte	.LFB14
@@ -1705,7 +1705,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  703 01c0 9C       		.byte	0x9c
  704 01c1 D4010000 		.4byte	0x1d4
  705 01c5 08       		.uleb128 0x8
- 706 01c6 43010000 		.4byte	.LASF28
+ 706 01c6 49010000 		.4byte	.LASF28
  707 01ca 01       		.byte	0x1
  708 01cb FD02     		.2byte	0x2fd
  709 01cd 6B000000 		.4byte	0x6b
@@ -1713,7 +1713,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  711 01d2 50       		.byte	0x50
  712 01d3 00       		.byte	0
  713 01d4 09       		.uleb128 0x9
- 714 01d5 67000000 		.4byte	.LASF29
+ 714 01d5 CC000000 		.4byte	.LASF29
  715 01d9 01       		.byte	0x1
  716 01da 1603     		.2byte	0x316
  717 01dc 6B000000 		.4byte	0x6b
@@ -1738,10 +1738,10 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  736 020e 70010000 		.4byte	0x170
  737 0212 00       		.byte	0
  738 0213 0D       		.uleb128 0xd
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 30
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 30
 
 
- 739 0214 69010000 		.4byte	.LASF31
+ 739 0214 61010000 		.4byte	.LASF31
  740 0218 01       		.byte	0x1
  741 0219 54       		.byte	0x54
  742 021a 00000000 		.4byte	.LFB3
@@ -1750,13 +1750,13 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  745 0223 9C       		.byte	0x9c
  746 0224 B1020000 		.4byte	0x2b1
  747 0228 0E       		.uleb128 0xe
- 748 0229 01020000 		.4byte	.LASF33
+ 748 0229 F9010000 		.4byte	.LASF33
  749 022d 01       		.byte	0x1
  750 022e 57       		.byte	0x57
  751 022f 6B000000 		.4byte	0x6b
  752 0233 00000000 		.4byte	.LLST0
  753 0237 0E       		.uleb128 0xe
- 754 0238 37030000 		.4byte	.LASF34
+ 754 0238 2F030000 		.4byte	.LASF34
  755 023c 01       		.byte	0x1
  756 023d 5D       		.byte	0x5d
  757 023e 6B000000 		.4byte	0x6b
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  793 0283 32000000 		.4byte	.LVL13
  794 0287 4B010000 		.4byte	0x14b
  795 028b 95020000 		.4byte	0x295
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 31
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 31
 
 
  796 028f 10       		.uleb128 0x10
@@ -1818,7 +1818,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  810 02ac EA010000 		.4byte	0x1ea
  811 02b0 00       		.byte	0
  812 02b1 0D       		.uleb128 0xd
- 813 02b2 19030000 		.4byte	.LASF35
+ 813 02b2 11030000 		.4byte	.LASF35
  814 02b6 01       		.byte	0x1
  815 02b7 37       		.byte	0x37
  816 02b8 00000000 		.4byte	.LFB2
@@ -1843,7 +1843,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  835 02ed 01       		.uleb128 0x1
  836 02ee 9C       		.byte	0x9c
  837 02ef 09       		.uleb128 0x9
- 838 02f0 E7020000 		.4byte	.LASF37
+ 838 02f0 DF020000 		.4byte	.LASF37
  839 02f4 01       		.byte	0x1
  840 02f5 7403     		.2byte	0x374
  841 02f7 6B000000 		.4byte	0x6b
@@ -1852,23 +1852,23 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  844 0303 01       		.uleb128 0x1
  845 0304 9C       		.byte	0x9c
  846 0305 11       		.uleb128 0x11
- 847 0306 31010000 		.4byte	.LASF42
+ 847 0306 37010000 		.4byte	.LASF42
  848 030a 01       		.byte	0x1
  849 030b 20       		.byte	0x20
  850 030c 6B000000 		.4byte	0x6b
  851 0310 05       		.uleb128 0x5
  852 0311 03       		.byte	0x3
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 32
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 32
 
 
  853 0312 00000000 		.4byte	pwm_initVar
  854 0316 12       		.uleb128 0x12
- 855 0317 79010000 		.4byte	.LASF43
+ 855 0317 71010000 		.4byte	.LASF43
  856 031b 03       		.byte	0x3
  857 031c E5       		.byte	0xe5
  858 031d 6B000000 		.4byte	0x6b
  859 0321 13       		.uleb128 0x13
- 860 0322 BA010000 		.4byte	.LASF44
+ 860 0322 B2010000 		.4byte	.LASF44
  861 0326 03       		.byte	0x3
  862 0327 E6       		.byte	0xe6
  863 0328 14       		.uleb128 0x14
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  907 0026 08       		.uleb128 0x8
  908 0027 00       		.byte	0
  909 0028 00       		.byte	0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 33
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 33
 
 
  910 0029 04       		.uleb128 0x4
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  964 0060 27       		.uleb128 0x27
  965 0061 19       		.uleb128 0x19
  966 0062 11       		.uleb128 0x11
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 34
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 34
 
 
  967 0063 01       		.uleb128 0x1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  1021 009b 3F       		.uleb128 0x3f
  1022 009c 19       		.uleb128 0x19
  1023 009d 03       		.uleb128 0x3
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 35
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 35
 
 
  1024 009e 0E       		.uleb128 0xe
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  1078 00d7 3B       		.uleb128 0x3b
  1079 00d8 0B       		.uleb128 0xb
  1080 00d9 27       		.uleb128 0x27
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 36
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 36
 
 
  1081 00da 19       		.uleb128 0x19
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  1135 0116 0B       		.uleb128 0xb
  1136 0117 3B       		.uleb128 0x3b
  1137 0118 0B       		.uleb128 0xb
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 37
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 37
 
 
  1138 0119 49       		.uleb128 0x49
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  1192              	.LLST0:
  1193 0000 0A000000 		.4byte	.LVL8
  1194 0004 0E000000 		.4byte	.LVL9
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 38
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 38
 
 
  1195 0008 0100     		.2byte	0x1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  1249              	.Ldebug_ranges0:
  1250 0000 00000000 		.4byte	.LFB4
  1251 0004 10000000 		.4byte	.LFE4
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 39
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 39
 
 
  1252 0008 00000000 		.4byte	.LFB5
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  1294 002a 70776D5F 		.ascii	"pwm_ClearFIFO\000"
  1294      436C6561 
  1294      72464946 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 40
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 40
 
 
  1294      4F00
@@ -2354,208 +2354,206 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 1
  1298      436F6E74 
  1298      726F6C52 
  1298      65676973 
- 1299              	.LASF29:
- 1300 0067 70776D5F 		.ascii	"pwm_ReadCapture\000"
- 1300      52656164 
- 1300      43617074 
- 1300      75726500 
- 1301              	.LASF9:
- 1302 0077 666C6F61 		.ascii	"float\000"
- 1302      7400
- 1303              	.LASF19:
- 1304 007d 636F756E 		.ascii	"counter\000"
- 1304      74657200 
- 1305              	.LASF7:
- 1306 0085 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1306      206C6F6E 
- 1306      6720756E 
- 1306      7369676E 
- 1306      65642069 
- 1307              	.LASF21:
- 1308 009c 70776D5F 		.ascii	"pwm_WriteCompare\000"
- 1308      57726974 
- 1308      65436F6D 
- 1308      70617265 
- 1308      00
- 1309              	.LASF40:
- 1310 00ad 433A5C55 		.ascii	"C:\\Users\\yunse\\Desktop\\ece445_project\\bleapp-m"
- 1310      73657273 
- 1310      5C79756E 
- 1310      73655C44 
- 1310      65736B74 
- 1311 00db 61737465 		.ascii	"aster\\bleapp-master\\PSoC_Creator\\capsenseled\\ca"
- 1311      725C626C 
- 1311      65617070 
- 1311      2D6D6173 
- 1311      7465725C 
- 1312 010a 7073656E 		.ascii	"psenseled.cydsn\000"
- 1312      73656C65 
- 1312      642E6379 
- 1312      64736E00 
- 1313              	.LASF13:
- 1314 011a 72656738 		.ascii	"reg8\000"
- 1314      00
- 1315              	.LASF5:
- 1316 011f 6C6F6E67 		.ascii	"long unsigned int\000"
- 1316      20756E73 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 41
+ 1299              	.LASF40:
+ 1300 0067 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\bleapp-master\\b"
+ 1300      73657273 
+ 1300      5C536172 
+ 1300      61685C44 
+ 1300      6F63756D 
+ 1301 0094 6C656170 		.ascii	"leapp-master\\PSoC_Creator\\capsenseled\\capsensele"
+ 1301      702D6D61 
+ 1301      73746572 
+ 1301      5C50536F 
+ 1301      435F4372 
+ 1302 00c4 642E6379 		.ascii	"d.cydsn\000"
+ 1302      64736E00 
+ 1303              	.LASF29:
+ 1304 00cc 70776D5F 		.ascii	"pwm_ReadCapture\000"
+ 1304      52656164 
+ 1304      43617074 
+ 1304      75726500 
+ 1305              	.LASF9:
+ 1306 00dc 666C6F61 		.ascii	"float\000"
+ 1306      7400
+ 1307              	.LASF19:
+ 1308 00e2 636F756E 		.ascii	"counter\000"
+ 1308      74657200 
+ 1309              	.LASF7:
+ 1310 00ea 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1310      206C6F6E 
+ 1310      6720756E 
+ 1310      7369676E 
+ 1310      65642069 
+ 1311              	.LASF21:
+ 1312 0101 70776D5F 		.ascii	"pwm_WriteCompare\000"
+ 1312      57726974 
+ 1312      65436F6D 
+ 1312      70617265 
+ 1312      00
+ 1313              	.LASF1:
+ 1314 0112 756E7369 		.ascii	"unsigned char\000"
+ 1314      676E6564 
+ 1314      20636861 
+ 1314      7200
+ 1315              	.LASF13:
+ 1316 0120 72656738 		.ascii	"reg8\000"
+ 1316      00
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 41
 
 
- 1316      69676E65 
- 1316      6420696E 
- 1316      7400
- 1317              	.LASF42:
- 1318 0131 70776D5F 		.ascii	"pwm_initVar\000"
- 1318      696E6974 
- 1318      56617200 
- 1319              	.LASF12:
- 1320 013d 75696E74 		.ascii	"uint8\000"
- 1320      3800
- 1321              	.LASF28:
- 1322 0143 636F6E74 		.ascii	"control\000"
- 1322      726F6C00 
- 1323              	.LASF25:
- 1324 014b 70776D5F 		.ascii	"pwm_ReadCounter\000"
- 1324      52656164 
- 1324      436F756E 
- 1324      74657200 
- 1325              	.LASF1:
- 1326 015b 756E7369 		.ascii	"unsigned char\000"
- 1326      676E6564 
- 1326      20636861 
- 1326      7200
+ 1317              	.LASF5:
+ 1318 0125 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1318      20756E73 
+ 1318      69676E65 
+ 1318      6420696E 
+ 1318      7400
+ 1319              	.LASF42:
+ 1320 0137 70776D5F 		.ascii	"pwm_initVar\000"
+ 1320      696E6974 
+ 1320      56617200 
+ 1321              	.LASF12:
+ 1322 0143 75696E74 		.ascii	"uint8\000"
+ 1322      3800
+ 1323              	.LASF28:
+ 1324 0149 636F6E74 		.ascii	"control\000"
+ 1324      726F6C00 
+ 1325              	.LASF25:
+ 1326 0151 70776D5F 		.ascii	"pwm_ReadCounter\000"
+ 1326      52656164 
+ 1326      436F756E 
+ 1326      74657200 
  1327              	.LASF31:
- 1328 0169 70776D5F 		.ascii	"pwm_Init\000"
+ 1328 0161 70776D5F 		.ascii	"pwm_Init\000"
  1328      496E6974 
  1328      00
  1329              	.LASF10:
- 1330 0172 646F7562 		.ascii	"double\000"
+ 1330 016a 646F7562 		.ascii	"double\000"
  1330      6C6500
  1331              	.LASF43:
- 1332 0179 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1332 0171 4379456E 		.ascii	"CyEnterCriticalSection\000"
  1332      74657243 
  1332      72697469 
  1332      63616C53 
  1332      65637469 
  1333              	.LASF8:
- 1334 0190 756E7369 		.ascii	"unsigned int\000"
+ 1334 0188 756E7369 		.ascii	"unsigned int\000"
  1334      676E6564 
  1334      20696E74 
  1334      00
  1335              	.LASF39:
- 1336 019d 47656E65 		.ascii	"Generated_Source\\PSoC4\\pwm.c\000"
+ 1336 0195 47656E65 		.ascii	"Generated_Source\\PSoC4\\pwm.c\000"
  1336      72617465 
  1336      645F536F 
  1336      75726365 
  1336      5C50536F 
  1337              	.LASF44:
- 1338 01ba 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1338 01b2 43794578 		.ascii	"CyExitCriticalSection\000"
  1338      69744372 
  1338      69746963 
  1338      616C5365 
  1338      6374696F 
  1339              	.LASF32:
- 1340 01d0 72657375 		.ascii	"result\000"
+ 1340 01c8 72657375 		.ascii	"result\000"
  1340      6C7400
  1341              	.LASF17:
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 42
-
-
- 1342 01d7 70776D5F 		.ascii	"pwm_WriteCounter\000"
+ 1342 01cf 70776D5F 		.ascii	"pwm_WriteCounter\000"
  1342      57726974 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 42
+
+
  1342      65436F75 
  1342      6E746572 
  1342      00
  1343              	.LASF27:
- 1344 01e8 70776D5F 		.ascii	"pwm_WriteControlRegister\000"
+ 1344 01e0 70776D5F 		.ascii	"pwm_WriteControlRegister\000"
  1344      57726974 
  1344      65436F6E 
  1344      74726F6C 
  1344      52656769 
  1345              	.LASF33:
- 1346 0201 6374726C 		.ascii	"ctrl\000"
+ 1346 01f9 6374726C 		.ascii	"ctrl\000"
  1346      00
  1347              	.LASF14:
- 1348 0206 73697A65 		.ascii	"sizetype\000"
+ 1348 01fe 73697A65 		.ascii	"sizetype\000"
  1348      74797065 
  1348      00
  1349              	.LASF6:
- 1350 020f 6C6F6E67 		.ascii	"long long int\000"
+ 1350 0207 6C6F6E67 		.ascii	"long long int\000"
  1350      206C6F6E 
  1350      6720696E 
  1350      7400
  1351              	.LASF18:
- 1352 021d 70776D5F 		.ascii	"pwm_WritePeriod\000"
+ 1352 0215 70776D5F 		.ascii	"pwm_WritePeriod\000"
  1352      57726974 
  1352      65506572 
  1352      696F6400 
  1353              	.LASF24:
- 1354 022d 696E7465 		.ascii	"interruptMode\000"
+ 1354 0225 696E7465 		.ascii	"interruptMode\000"
  1354      72727570 
  1354      744D6F64 
  1354      6500
  1355              	.LASF38:
- 1356 023b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1356 0233 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  1356      4320342E 
  1356      392E3320 
  1356      32303135 
  1356      30333033 
- 1357 026e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 1357 0266 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  1357      20726576 
  1357      6973696F 
  1357      6E203232 
  1357      31323230 
- 1358 02a1 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1358 0299 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  1358      66756E63 
  1358      74696F6E 
  1358      2D736563 
  1358      74696F6E 
  1359              	.LASF16:
- 1360 02c9 70776D5F 		.ascii	"pwm_Stop\000"
+ 1360 02c1 70776D5F 		.ascii	"pwm_Stop\000"
  1360      53746F70 
  1360      00
  1361              	.LASF2:
- 1362 02d2 73686F72 		.ascii	"short int\000"
+ 1362 02ca 73686F72 		.ascii	"short int\000"
  1362      7420696E 
  1362      7400
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\ccsg1vJd.s 			page 43
-
-
  1363              	.LASF15:
- 1364 02dc 70776D5F 		.ascii	"pwm_Enable\000"
+ 1364 02d4 70776D5F 		.ascii	"pwm_Enable\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccEPV1Gj.s 			page 43
+
+
  1364      456E6162 
  1364      6C6500
  1365              	.LASF37:
- 1366 02e7 70776D5F 		.ascii	"pwm_ReadPeriod\000"
+ 1366 02df 70776D5F 		.ascii	"pwm_ReadPeriod\000"
  1366      52656164 
  1366      50657269 
  1366      6F6400
  1367              	.LASF23:
- 1368 02f6 70776D5F 		.ascii	"pwm_SetInterruptMode\000"
+ 1368 02ee 70776D5F 		.ascii	"pwm_SetInterruptMode\000"
  1368      53657449 
  1368      6E746572 
  1368      72757074 
  1368      4D6F6465 
  1369              	.LASF4:
- 1370 030b 6C6F6E67 		.ascii	"long int\000"
+ 1370 0303 6C6F6E67 		.ascii	"long int\000"
  1370      20696E74 
  1370      00
  1371              	.LASF11:
- 1372 0314 63686172 		.ascii	"char\000"
+ 1372 030c 63686172 		.ascii	"char\000"
  1372      00
  1373              	.LASF35:
- 1374 0319 70776D5F 		.ascii	"pwm_Start\000"
+ 1374 0311 70776D5F 		.ascii	"pwm_Start\000"
  1374      53746172 
  1374      7400
  1375              	.LASF0:
- 1376 0323 7369676E 		.ascii	"signed char\000"
+ 1376 031b 7369676E 		.ascii	"signed char\000"
  1376      65642063 
  1376      68617200 
  1377              	.LASF22:
- 1378 032f 636F6D70 		.ascii	"compare\000"
+ 1378 0327 636F6D70 		.ascii	"compare\000"
  1378      61726500 
  1379              	.LASF34:
- 1380 0337 70776D5F 		.ascii	"pwm_interruptState\000"
+ 1380 032f 70776D5F 		.ascii	"pwm_interruptState\000"
  1380      696E7465 
  1380      72727570 
  1380      74537461 

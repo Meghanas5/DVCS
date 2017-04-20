@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
   30:Generated_Source\PSoC4/Clock_2.c **** *
   31:Generated_Source\PSoC4/Clock_2.c **** * Parameters:
   32:Generated_Source\PSoC4/Clock_2.c **** *  alignClkDiv:  The divider to which phase alignment is performed when the
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 2
 
 
   33:Generated_Source\PSoC4/Clock_2.c **** *    clock is started.
@@ -105,7 +105,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
   47              		.align	2
   48              	.L3:
   49 0014 00000140 		.word	1073807360
-  50 0018 42000080 		.word	-2147483582
+  50 0018 40000080 		.word	-2147483584
   51              		.cfi_endproc
   52              	.LFE0:
   53              		.size	Clock_2_StartEx, .-Clock_2_StartEx
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
   60              	Clock_2_Stop:
   61              	.LFB1:
   52:Generated_Source\PSoC4/Clock_2.c **** 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 3
 
 
   53:Generated_Source\PSoC4/Clock_2.c **** #else
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
   68 0004 002B     		cmp	r3, #0
   69 0006 FBDB     		blt	.L6
  101:Generated_Source\PSoC4/Clock_2.c ****     {
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 4
 
 
  102:Generated_Source\PSoC4/Clock_2.c ****     }
@@ -206,7 +206,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
   78              		.align	2
   79              	.L7:
   80 0010 00000140 		.word	1073807360
-  81 0014 42000040 		.word	1073741890
+  81 0014 40000040 		.word	1073741888
   82              		.cfi_endproc
   83              	.LFE1:
   84              		.size	Clock_2_Stop, .-Clock_2_Stop
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  133:Generated_Source\PSoC4/Clock_2.c **** *******************************************************************************/
  134:Generated_Source\PSoC4/Clock_2.c **** void Clock_2_SetFractionalDividerRegister(uint16 clkDivider, uint8 clkFractional)
  135:Generated_Source\PSoC4/Clock_2.c **** {
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 5
 
 
   93              		.loc 1 135 0
@@ -298,13 +298,13 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  122              		.loc 1 158 0
  123              		@ sp needed
  124 0018 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 6
 
 
  125              	.L11:
  126 001a C046     		.align	2
  127              	.L10:
- 128 001c 08030140 		.word	1073808136
+ 128 001c 00030140 		.word	1073808128
  129              		.cfi_endproc
  130              	.LFE2:
  131              		.size	Clock_2_SetFractionalDividerRegister, .-Clock_2_SetFractionalDividerRegister
@@ -354,11 +354,11 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  152              	.L14:
  153 000a C046     		.align	2
  154              	.L13:
- 155 000c 08030140 		.word	1073808136
+ 155 000c 00030140 		.word	1073808128
  156              		.cfi_endproc
  157              	.LFE3:
  158              		.size	Clock_2_GetDividerRegister, .-Clock_2_GetDividerRegister
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 7
 
 
  159              		.section	.text.Clock_2_GetFractionalDividerRegister,"ax",%progbits
@@ -415,48 +415,48 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  183 0006 00000000 		.4byte	.Ldebug_abbrev0
  184 000a 04       		.byte	0x4
  185 000b 01       		.uleb128 0x1
- 186 000c B4010000 		.4byte	.LASF25
+ 186 000c AC010000 		.4byte	.LASF25
  187 0010 01       		.byte	0x1
- 188 0011 1B000000 		.4byte	.LASF26
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 8
+ 188 0011 80000000 		.4byte	.LASF26
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 8
 
 
- 189 0015 67000000 		.4byte	.LASF27
+ 189 0015 1B000000 		.4byte	.LASF27
  190 0019 00000000 		.4byte	.Ldebug_ranges0+0
  191 001d 00000000 		.4byte	0
  192 0021 00000000 		.4byte	.Ldebug_line0
  193 0025 02       		.uleb128 0x2
  194 0026 01       		.byte	0x1
  195 0027 06       		.byte	0x6
- 196 0028 5B020000 		.4byte	.LASF0
+ 196 0028 53020000 		.4byte	.LASF0
  197 002c 02       		.uleb128 0x2
  198 002d 01       		.byte	0x1
  199 002e 08       		.byte	0x8
- 200 002f F9000000 		.4byte	.LASF1
+ 200 002f CC000000 		.4byte	.LASF1
  201 0033 02       		.uleb128 0x2
  202 0034 02       		.byte	0x2
  203 0035 05       		.byte	0x5
- 204 0036 42020000 		.4byte	.LASF2
+ 204 0036 3A020000 		.4byte	.LASF2
  205 003a 02       		.uleb128 0x2
  206 003b 02       		.byte	0x2
  207 003c 07       		.byte	0x7
- 208 003d E6000000 		.4byte	.LASF3
+ 208 003d EC000000 		.4byte	.LASF3
  209 0041 02       		.uleb128 0x2
  210 0042 04       		.byte	0x4
  211 0043 05       		.byte	0x5
- 212 0044 52020000 		.4byte	.LASF4
+ 212 0044 4A020000 		.4byte	.LASF4
  213 0048 02       		.uleb128 0x2
  214 0049 04       		.byte	0x4
  215 004a 07       		.byte	0x7
- 216 004b D4000000 		.4byte	.LASF5
+ 216 004b DA000000 		.4byte	.LASF5
  217 004f 02       		.uleb128 0x2
  218 0050 08       		.byte	0x8
  219 0051 05       		.byte	0x5
- 220 0052 A1010000 		.4byte	.LASF6
+ 220 0052 99010000 		.4byte	.LASF6
  221 0056 02       		.uleb128 0x2
  222 0057 08       		.byte	0x8
  223 0058 07       		.byte	0x7
- 224 0059 7A010000 		.4byte	.LASF7
+ 224 0059 72010000 		.4byte	.LASF7
  225 005d 03       		.uleb128 0x3
  226 005e 04       		.byte	0x4
  227 005f 05       		.byte	0x5
@@ -464,21 +464,21 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  229 0064 02       		.uleb128 0x2
  230 0065 04       		.byte	0x4
  231 0066 07       		.byte	0x7
- 232 0067 48010000 		.4byte	.LASF8
+ 232 0067 40010000 		.4byte	.LASF8
  233 006b 04       		.uleb128 0x4
- 234 006c 4C020000 		.4byte	.LASF9
+ 234 006c 44020000 		.4byte	.LASF9
  235 0070 02       		.byte	0x2
  236 0071 B901     		.2byte	0x1b9
  237 0073 2C000000 		.4byte	0x2c
  238 0077 04       		.uleb128 0x4
- 239 0078 3A010000 		.4byte	.LASF10
+ 239 0078 32010000 		.4byte	.LASF10
  240 007c 02       		.byte	0x2
  241 007d BA01     		.2byte	0x1ba
  242 007f 3A000000 		.4byte	0x3a
  243 0083 04       		.uleb128 0x4
- 244 0084 41010000 		.4byte	.LASF11
+ 244 0084 39010000 		.4byte	.LASF11
  245 0088 02       		.byte	0x2
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 9
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 9
 
 
  246 0089 BB01     		.2byte	0x1bb
@@ -486,15 +486,15 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  248 008f 02       		.uleb128 0x2
  249 0090 04       		.byte	0x4
  250 0091 04       		.byte	0x4
- 251 0092 3C000000 		.4byte	.LASF12
+ 251 0092 A1000000 		.4byte	.LASF12
  252 0096 02       		.uleb128 0x2
  253 0097 08       		.byte	0x8
  254 0098 04       		.byte	0x4
- 255 0099 12010000 		.4byte	.LASF13
+ 255 0099 0A010000 		.4byte	.LASF13
  256 009d 02       		.uleb128 0x2
  257 009e 01       		.byte	0x1
  258 009f 08       		.byte	0x8
- 259 00a0 AF010000 		.4byte	.LASF14
+ 259 00a0 A7010000 		.4byte	.LASF14
  260 00a4 04       		.uleb128 0x4
  261 00a5 0D000000 		.4byte	.LASF15
  262 00a9 02       		.byte	0x2
@@ -503,7 +503,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  265 00b0 05       		.uleb128 0x5
  266 00b1 83000000 		.4byte	0x83
  267 00b5 06       		.uleb128 0x6
- 268 00b6 91010000 		.4byte	.LASF16
+ 268 00b6 89010000 		.4byte	.LASF16
  269 00ba 01       		.byte	0x1
  270 00bb 27       		.byte	0x27
  271 00bc 00000000 		.4byte	.LFB0
@@ -512,7 +512,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  274 00c5 9C       		.byte	0x9c
  275 00c6 DA000000 		.4byte	0xda
  276 00ca 07       		.uleb128 0x7
- 277 00cb 20010000 		.4byte	.LASF18
+ 277 00cb 18010000 		.4byte	.LASF18
  278 00cf 01       		.byte	0x1
  279 00d0 27       		.byte	0x27
  280 00d1 83000000 		.4byte	0x83
@@ -527,7 +527,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  289 00e9 01       		.uleb128 0x1
  290 00ea 9C       		.byte	0x9c
  291 00eb 06       		.uleb128 0x6
- 292 00ec 55010000 		.4byte	.LASF17
+ 292 00ec 4D010000 		.4byte	.LASF17
  293 00f0 01       		.byte	0x1
  294 00f1 86       		.byte	0x86
  295 00f2 00000000 		.4byte	.LFB2
@@ -536,16 +536,16 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  298 00fb 9C       		.byte	0x9c
  299 00fc 3B010000 		.4byte	0x13b
  300 0100 07       		.uleb128 0x7
- 301 0101 07010000 		.4byte	.LASF19
+ 301 0101 FF000000 		.4byte	.LASF19
  302 0105 01       		.byte	0x1
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 10
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 10
 
 
  303 0106 86       		.byte	0x86
  304 0107 77000000 		.4byte	0x77
  305 010b 21000000 		.4byte	.LLST1
  306 010f 07       		.uleb128 0x7
- 307 0110 2C010000 		.4byte	.LASF20
+ 307 0110 24010000 		.4byte	.LASF20
  308 0114 01       		.byte	0x1
  309 0115 86       		.byte	0x86
  310 0116 6B000000 		.4byte	0x6b
@@ -557,7 +557,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  316 0125 83000000 		.4byte	0x83
  317 0129 63000000 		.4byte	.LLST3
  318 012d 0A       		.uleb128 0xa
- 319 012e 19010000 		.4byte	.LASF22
+ 319 012e 11010000 		.4byte	.LASF22
  320 0132 01       		.byte	0x1
  321 0133 89       		.byte	0x89
  322 0134 83000000 		.4byte	0x83
@@ -565,7 +565,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  324 0139 51       		.byte	0x51
  325 013a 00       		.byte	0
  326 013b 0B       		.uleb128 0xb
- 327 013c 67020000 		.4byte	.LASF23
+ 327 013c 5F020000 		.4byte	.LASF23
  328 0140 01       		.byte	0x1
  329 0141 B0       		.byte	0xb0
  330 0142 77000000 		.4byte	0x77
@@ -574,7 +574,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  333 014e 01       		.uleb128 0x1
  334 014f 9C       		.byte	0x9c
  335 0150 0B       		.uleb128 0xb
- 336 0151 42000000 		.4byte	.LASF24
+ 336 0151 A7000000 		.4byte	.LASF24
  337 0155 01       		.byte	0x1
  338 0156 C6       		.byte	0xc6
  339 0157 6B000000 		.4byte	0x6b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  357 000a 0E       		.uleb128 0xe
  358 000b 55       		.uleb128 0x55
  359 000c 17       		.uleb128 0x17
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 11
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 11
 
 
  360 000d 11       		.uleb128 0x11
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  414 0043 0E       		.uleb128 0xe
  415 0044 3A       		.uleb128 0x3a
  416 0045 0B       		.uleb128 0xb
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 12
 
 
  417 0046 3B       		.uleb128 0x3b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  471 007e 09       		.uleb128 0x9
  472 007f 34       		.uleb128 0x34
  473 0080 00       		.byte	0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 13
 
 
  474 0081 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  528              	.Ldebug_loc0:
  529              	.LLST0:
  530 0000 00000000 		.4byte	.LVL0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 14
 
 
  531 0004 0A000000 		.4byte	.LVL1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  585 000e 0000     		.2byte	0
  586 0010 00000000 		.4byte	.LFB0
  587 0014 1C000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 15
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 15
 
 
  588 0018 00000000 		.4byte	.LFB1
@@ -883,150 +883,148 @@ ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 1
  619              	.LASF21:
  620 0013 6D61736B 		.ascii	"maskVal\000"
  620      56616C00 
- 621              	.LASF26:
- 622 001b 47656E65 		.ascii	"Generated_Source\\PSoC4\\Clock_2.c\000"
- 622      72617465 
- 622      645F536F 
- 622      75726365 
- 622      5C50536F 
- 623              	.LASF12:
- 624 003c 666C6F61 		.ascii	"float\000"
- 624      7400
- 625              	.LASF24:
- 626 0042 436C6F63 		.ascii	"Clock_2_GetFractionalDividerRegister\000"
- 626      6B5F325F 
- 626      47657446 
- 626      72616374 
- 626      696F6E61 
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 16
+ 621              	.LASF27:
+ 622 001b 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\bleapp-master\\b"
+ 622      73657273 
+ 622      5C536172 
+ 622      61685C44 
+ 622      6F63756D 
+ 623 0048 6C656170 		.ascii	"leapp-master\\PSoC_Creator\\capsenseled\\capsensele"
+ 623      702D6D61 
+ 623      73746572 
+ 623      5C50536F 
+ 623      435F4372 
+ 624 0078 642E6379 		.ascii	"d.cydsn\000"
+ 624      64736E00 
+ 625              	.LASF26:
+ 626 0080 47656E65 		.ascii	"Generated_Source\\PSoC4\\Clock_2.c\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 16
 
 
- 627              	.LASF27:
- 628 0067 433A5C55 		.ascii	"C:\\Users\\yunse\\Desktop\\ece445_project\\bleapp-m"
- 628      73657273 
- 628      5C79756E 
- 628      73655C44 
- 628      65736B74 
- 629 0095 61737465 		.ascii	"aster\\bleapp-master\\PSoC_Creator\\capsenseled\\ca"
- 629      725C626C 
- 629      65617070 
- 629      2D6D6173 
- 629      7465725C 
- 630 00c4 7073656E 		.ascii	"psenseled.cydsn\000"
- 630      73656C65 
- 630      642E6379 
- 630      64736E00 
- 631              	.LASF5:
- 632 00d4 6C6F6E67 		.ascii	"long unsigned int\000"
- 632      20756E73 
- 632      69676E65 
- 632      6420696E 
- 632      7400
- 633              	.LASF3:
- 634 00e6 73686F72 		.ascii	"short unsigned int\000"
- 634      7420756E 
- 634      7369676E 
- 634      65642069 
- 634      6E7400
- 635              	.LASF1:
- 636 00f9 756E7369 		.ascii	"unsigned char\000"
- 636      676E6564 
- 636      20636861 
- 636      7200
+ 626      72617465 
+ 626      645F536F 
+ 626      75726365 
+ 626      5C50536F 
+ 627              	.LASF12:
+ 628 00a1 666C6F61 		.ascii	"float\000"
+ 628      7400
+ 629              	.LASF24:
+ 630 00a7 436C6F63 		.ascii	"Clock_2_GetFractionalDividerRegister\000"
+ 630      6B5F325F 
+ 630      47657446 
+ 630      72616374 
+ 630      696F6E61 
+ 631              	.LASF1:
+ 632 00cc 756E7369 		.ascii	"unsigned char\000"
+ 632      676E6564 
+ 632      20636861 
+ 632      7200
+ 633              	.LASF5:
+ 634 00da 6C6F6E67 		.ascii	"long unsigned int\000"
+ 634      20756E73 
+ 634      69676E65 
+ 634      6420696E 
+ 634      7400
+ 635              	.LASF3:
+ 636 00ec 73686F72 		.ascii	"short unsigned int\000"
+ 636      7420756E 
+ 636      7369676E 
+ 636      65642069 
+ 636      6E7400
  637              	.LASF19:
- 638 0107 636C6B44 		.ascii	"clkDivider\000"
+ 638 00ff 636C6B44 		.ascii	"clkDivider\000"
  638      69766964 
  638      657200
  639              	.LASF13:
- 640 0112 646F7562 		.ascii	"double\000"
+ 640 010a 646F7562 		.ascii	"double\000"
  640      6C6500
  641              	.LASF22:
- 642 0119 72656756 		.ascii	"regVal\000"
+ 642 0111 72656756 		.ascii	"regVal\000"
  642      616C00
  643              	.LASF18:
- 644 0120 616C6967 		.ascii	"alignClkDiv\000"
+ 644 0118 616C6967 		.ascii	"alignClkDiv\000"
  644      6E436C6B 
  644      44697600 
  645              	.LASF20:
- 646 012c 636C6B46 		.ascii	"clkFractional\000"
+ 646 0124 636C6B46 		.ascii	"clkFractional\000"
  646      72616374 
  646      696F6E61 
  646      6C00
  647              	.LASF10:
- 648 013a 75696E74 		.ascii	"uint16\000"
+ 648 0132 75696E74 		.ascii	"uint16\000"
  648      313600
  649              	.LASF11:
- 650 0141 75696E74 		.ascii	"uint32\000"
+ 650 0139 75696E74 		.ascii	"uint32\000"
  650      333200
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 17
-
-
  651              	.LASF8:
- 652 0148 756E7369 		.ascii	"unsigned int\000"
+ 652 0140 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 17
+
+
  652      676E6564 
  652      20696E74 
  652      00
  653              	.LASF17:
- 654 0155 436C6F63 		.ascii	"Clock_2_SetFractionalDividerRegister\000"
+ 654 014d 436C6F63 		.ascii	"Clock_2_SetFractionalDividerRegister\000"
  654      6B5F325F 
  654      53657446 
  654      72616374 
  654      696F6E61 
  655              	.LASF7:
- 656 017a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 656 0172 6C6F6E67 		.ascii	"long long unsigned int\000"
  656      206C6F6E 
  656      6720756E 
  656      7369676E 
  656      65642069 
  657              	.LASF16:
- 658 0191 436C6F63 		.ascii	"Clock_2_StartEx\000"
+ 658 0189 436C6F63 		.ascii	"Clock_2_StartEx\000"
  658      6B5F325F 
  658      53746172 
  658      74457800 
  659              	.LASF6:
- 660 01a1 6C6F6E67 		.ascii	"long long int\000"
+ 660 0199 6C6F6E67 		.ascii	"long long int\000"
  660      206C6F6E 
  660      6720696E 
  660      7400
  661              	.LASF14:
- 662 01af 63686172 		.ascii	"char\000"
+ 662 01a7 63686172 		.ascii	"char\000"
  662      00
  663              	.LASF25:
- 664 01b4 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 664 01ac 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  664      4320342E 
  664      392E3320 
  664      32303135 
  664      30333033 
- 665 01e7 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 665 01df 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  665      20726576 
  665      6973696F 
  665      6E203232 
  665      31323230 
- 666 021a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 666 0212 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  666      66756E63 
  666      74696F6E 
  666      2D736563 
  666      74696F6E 
  667              	.LASF2:
- 668 0242 73686F72 		.ascii	"short int\000"
+ 668 023a 73686F72 		.ascii	"short int\000"
  668      7420696E 
  668      7400
  669              	.LASF9:
- 670 024c 75696E74 		.ascii	"uint8\000"
+ 670 0244 75696E74 		.ascii	"uint8\000"
  670      3800
  671              	.LASF4:
- 672 0252 6C6F6E67 		.ascii	"long int\000"
+ 672 024a 6C6F6E67 		.ascii	"long int\000"
  672      20696E74 
  672      00
-ARM GAS  C:\Users\yunse\AppData\Local\Temp\cciWE6kK.s 			page 18
-
-
  673              	.LASF0:
- 674 025b 7369676E 		.ascii	"signed char\000"
+ 674 0253 7369676E 		.ascii	"signed char\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccslu5bS.s 			page 18
+
+
  674      65642063 
  674      68617200 
  675              	.LASF23:
- 676 0267 436C6F63 		.ascii	"Clock_2_GetDividerRegister\000"
+ 676 025f 436C6F63 		.ascii	"Clock_2_GetDividerRegister\000"
  676      6B5F325F 
  676      47657444 
  676      69766964 

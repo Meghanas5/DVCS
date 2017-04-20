@@ -1,25 +1,26 @@
 #include <project.h>
+#include <stdio.h>
 
 uint16 fingerPos    = 0xFFFF;
 uint16 fingerPosOld = 0xFFFF;
 
-int capsenseNotify;
+int capsenseNotify, tempNotify;
+
+uint16 Temp, TempOld;
 
 
 /***************************************************************
- * Function to update the LED state in the GATT database
+ * Function to update the Servo state in the GATT database
  **************************************************************/
 void updateServo()
 {
     CYBLE_GATTS_HANDLE_VALUE_NTF_T 	tempHandle;
    
-    //uint8 red_State = !red_Read();
     
     if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
         return;
     
     tempHandle.attrHandle = CYBLE_LEDCAPSENSE_LED_CHAR_HANDLE;
-  	//tempHandle.value.val = (uint8 *) &red_State;
     tempHandle.value.len = 1;
     CyBle_GattsWriteAttributeValue(&tempHandle,0,&cyBle_connHandle,CYBLE_GATT_DB_LOCALLY_INITIATED);  
 }
@@ -64,6 +65,28 @@ void updateCapsense()
 }
 
 /***************************************************************
+ * Function to update the CapSesnse state in the GATT database
+ **************************************************************/
+void updateTemp()
+{
+    if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
+        return;
+    
+	CYBLE_GATTS_HANDLE_VALUE_NTF_T 	tempHandle;
+    
+    tempHandle.attrHandle = CYBLE_LEDCAPSENSE_TEMP_CHAR_HANDLE;
+  	//tempHandle.value.val = (uint8 *)&fingerPos;
+    tempHandle.value.val = (uint8 *)&Temp;
+    tempHandle.value.len = 2; 
+    CyBle_GattsWriteAttributeValue(&tempHandle,0,&cyBle_connHandle,CYBLE_GATT_DB_LOCALLY_INITIATED );  
+    
+    /* send notification to client if notifications are enabled and finger location has changed */
+    if (tempNotify && (Temp != TempOld) )
+        CyBle_GattsNotification(cyBle_connHandle,&tempHandle);
+        TempOld = Temp;
+}
+
+/***************************************************************
  * Function to handle the BLE stack
  **************************************************************/
 void BleCallBack(uint32 event, void* eventParam)
@@ -77,15 +100,18 @@ void BleCallBack(uint32 event, void* eventParam)
         case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:
             capsenseNotify = 0;
             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
-            pwm_Start();
+            blue_Write(0);
+            //pwm_Start();
         break;
         
         /* when a connection is made, update the LED and Capsense states in the GATT database and stop blinking the LED */    
         case CYBLE_EVT_GATT_CONNECT_IND:
             updateServo();
             updateLed();
-            updateCapsense();  
-            pwm_Stop();
+            updateTemp();
+            blue_Write(1);
+            //updateCapsense();  
+            //pwm_Stop();
 		break;
 
         /* handle a write request */
@@ -100,24 +126,24 @@ void BleCallBack(uint32 event, void* eventParam)
                 {
                     switch (wrReqParam->handleValPair.value.val[0]) {
                         case (0):
-                            PWM_Servo_WriteCompare(4700);
+                            PWM_Servo_WriteCompare(4340);
                             Timer_WritePeriod(1205);
                             Timer_Start();
                         break;
                         case (1):
-                            PWM_Servo_WriteCompare(4700);
+                            PWM_Servo_WriteCompare(4340);
                             Timer_WritePeriod(540);
                             Timer_Start();
                         break;
                         case (2):
-                            PWM_Servo_WriteCompare(4700);
+                            PWM_Servo_WriteCompare(4340);
                             Timer_WritePeriod(225);
                             Timer_Start();
                         break;
                     default:
                         break;
                     }
-                    red_Write(!wrReqParam->handleValPair.value.val[0]);
+                    //red_Write(!wrReqParam->handleValPair.value.val[0]);
                     CyBle_GattsWriteRsp(cyBle_connHandle);
                 }
             }
@@ -136,10 +162,19 @@ void BleCallBack(uint32 event, void* eventParam)
             /* request to update the CapSense notification */
             if(wrReqParam->handleValPair.attrHandle == CYBLE_LEDCAPSENSE_CAPSENSE_CAPSENSECCCD_DESC_HANDLE) 
             {
+                //CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle, CYBLE_GATT_DB_PEER_INITIATED);
+                //capsenseNotify = wrReqParam->handleValPair.value.val[0] & 0x01;
+                //CyBle_GattsWriteRsp(cyBle_connHandle);
+            }
+            
+            // request to update temp notification
+            if(wrReqParam->handleValPair.attrHandle == CYBLE_LEDCAPSENSE_TEMP_TEMPCCCD_DESC_HANDLE)
+            {
                 CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle, CYBLE_GATT_DB_PEER_INITIATED);
-                capsenseNotify = wrReqParam->handleValPair.value.val[0] & 0x01;
+                tempNotify = wrReqParam->handleValPair.value.val[0] & 0x01;
                 CyBle_GattsWriteRsp(cyBle_connHandle);
-            }		
+            }
+            
 			break;  
         
         default:
@@ -159,12 +194,15 @@ int main()
 {
     CyGlobalIntEnable; 
     
-    capsense_Start();
-    capsense_InitializeEnabledBaselines();
+    //capsense_Start();
+    //capsense_InitializeEnabledBaselines();
     
     timer_int_StartEx(Timer_Int_Handler);
     PWM_Servo_Start();
     
+    OneWire_Start();
+    int flag = 1;
+    Temp = 0;
     /* Start BLE stack and register the callback function */
     CyBle_Start(BleCallBack);
     
@@ -174,14 +212,26 @@ int main()
     for(;;)
     {        
         /* if Capsense scan is done, read the value and start another scan */
-        if(!capsense_IsBusy())
+        /*if(!capsense_IsBusy()
         {
             fingerPos=capsense_GetCentroidPos(capsense_LINEARSLIDER0__LS);
             capsense_UpdateEnabledBaselines();
             capsense_ScanEnabledWidgets();
             updateCapsense();
         }
-   
+        */
+        if (flag == 1)
+        {
+            flag = 0;
+            OneWire_SendTemperatureRequest();
+        }
+        if (OneWire_DataReady)
+        {
+            OneWire_ReadTemperature();
+            Temp = (uint16) OneWire_GetTemperatureAsInt100(0);
+            flag = 1;
+        }
+        
         CyBle_ProcessEvents();
         CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);    
     }

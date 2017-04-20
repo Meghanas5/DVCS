@@ -134,7 +134,7 @@ static void CyClockStartupError(uint8 errorCode)
 }
 #endif
 
-#define CY_CFG_BASE_ADDR_COUNT 7u
+#define CY_CFG_BASE_ADDR_COUNT 9u
 CYPACKED typedef struct
 {
 	uint8 offset;
@@ -227,16 +227,12 @@ static void ClockSetup(void)
 	CyDelayUs(1500u); /* Wait to stabalize */
 
 	/* Setup phase aligned clocks */
-	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL4, 0x00BB7F00u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF44u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL3, 0x00BB7F00u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF43u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL2, 0x00006300u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF42u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL0, 0x0000FE00u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF40u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL1, 0x0000FE00u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL1, 0x00BB7F00u);
 	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF41u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL2, 0x00BB7F00u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF42u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL0, 0x00006300u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF40u);
 
 	/* CYDEV_CLK_IMO_CONFIG Starting address: CYDEV_CLK_IMO_CONFIG */
 	CY_SET_XTND_REG32((void CYFAR *)(CYREG_CLK_IMO_CONFIG), 0x80000000u);
@@ -245,19 +241,13 @@ static void ClockSetup(void)
 	CY_SET_XTND_REG32((void CYFAR *)(CYREG_CLK_SELECT), 0x00040000u);
 
 	/* CYDEV_PERI_PCLK_CTL11 Starting address: CYDEV_PERI_PCLK_CTL11 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL11), 0x00000044u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL11), 0x00000041u);
 
 	/* CYDEV_PERI_PCLK_CTL8 Starting address: CYDEV_PERI_PCLK_CTL8 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL8), 0x00000043u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL8), 0x00000042u);
 
 	/* CYDEV_PERI_PCLK_CTL7 Starting address: CYDEV_PERI_PCLK_CTL7 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL7), 0x00000042u);
-
-	/* CYDEV_PERI_PCLK_CTL5 Starting address: CYDEV_PERI_PCLK_CTL5 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL5), 0x00000040u);
-
-	/* CYDEV_PERI_PCLK_CTL4 Starting address: CYDEV_PERI_PCLK_CTL4 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL4), 0x00000041u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL7), 0x00000040u);
 
 	(void)CyIntSetVector(8u, &CySysWdtIsr);
 	CyIntEnable(8u);
@@ -289,48 +279,6 @@ static void AnalogSetDefault(void)
 	CY_SET_XTND_REG32((void CYFAR *)CYREG_CTBM0_DFT_CTRL, 0x00000003u);
 	CY_SET_XTND_REG32((void CYFAR *)CYREG_CTBM1_DFT_CTRL, 0x00000003u);
 	CY_SET_XTND_REG32((void CYFAR *)CYREG_PASS_DSAB_DSAB_CTRL, 0x00000000u);
-	SetAnalogRoutingPumps(1);
-}
-
-
-/*******************************************************************************
-* Function Name: SetAnalogRoutingPumps
-********************************************************************************
-*
-* Summary:
-* Enables or disables the analog pumps feeding analog routing switches.
-* Intended to be called at startup, based on the Vdda system configuration;
-* may be called during operation when the user informs us that the Vdda voltage crossed the pump threshold.
-*
-* Parameters:
-*  enabled - 1 to enable the pumps, 0 to disable the pumps
-*
-* Return:
-*  void
-*
-*******************************************************************************/
-void SetAnalogRoutingPumps(uint8 enabled)
-{
-	uint32 regValue = CY_GET_XTND_REG32((void *)(CYREG_SAR_PUMP_CTRL));
-	if (enabled != 0u)
-	{
-		regValue |= 0x80000000u;
-	}
-	else
-	{
-		regValue &= ~0x80000000u;
-	}
-	CY_SET_XTND_REG32((void *)(CYREG_SAR_PUMP_CTRL), regValue);
-	regValue = CY_GET_XTND_REG32((void *)(CYREG_CLK_IMO_CONFIG));
-	if (enabled != 0u)
-	{
-		regValue |= 0x02000000u;
-	}
-	else
-	{
-		regValue &= ~0x02000000u;
-	}
-	CY_SET_XTND_REG32((void *)(CYREG_CLK_IMO_CONFIG), regValue);
 }
 
 #define CY_AMUX_UNUSED CYREG_CM0_ROM_DWT
@@ -360,107 +308,206 @@ void cyfitter_cfg(void)
 
 	CY_SET_XTND_REG32((void CYFAR *)(CYREG_BLE_BLESS_LL_DSM_CTRL), 0x00000000u);
 
+	/* Enable the clock in the interrupt controller for the routed interrupts */
+	CY_SET_REG8((void *)CYREG_UDB_UDBIF_INT_CLK_CTL, 0x01u);
 	{
 		static const uint32 CYCODE cy_cfg_addr_table[] = {
-			0x400F0001u, /* Base address: 0x400F0000 Count: 1 */
-			0x400F322Eu, /* Base address: 0x400F3200 Count: 46 */
-			0x400F331Du, /* Base address: 0x400F3300 Count: 29 */
-			0x400F4105u, /* Base address: 0x400F4100 Count: 5 */
-			0x400F4204u, /* Base address: 0x400F4200 Count: 4 */
-			0x400F4304u, /* Base address: 0x400F4300 Count: 4 */
+			0x400F0003u, /* Base address: 0x400F0000 Count: 3 */
+			0x400F300Du, /* Base address: 0x400F3000 Count: 13 */
+			0x400F3108u, /* Base address: 0x400F3100 Count: 8 */
+			0x400F3250u, /* Base address: 0x400F3200 Count: 80 */
+			0x400F333Bu, /* Base address: 0x400F3300 Count: 59 */
+			0x400F4104u, /* Base address: 0x400F4100 Count: 4 */
+			0x400F4206u, /* Base address: 0x400F4200 Count: 6 */
+			0x400F430Bu, /* Base address: 0x400F4300 Count: 11 */
 			0x400F6002u, /* Base address: 0x400F6000 Count: 2 */
 		};
 
 		static const cy_cfg_addrvalue_t CYCODE cy_cfg_data_table[] = {
+			{0x70u, 0x01u},
+			{0x73u, 0x01u},
 			{0x82u, 0x0Du},
-			{0x00u, 0x08u},
-			{0x03u, 0x01u},
-			{0x0Fu, 0x02u},
-			{0x13u, 0x02u},
-			{0x14u, 0x01u},
-			{0x1Au, 0x07u},
-			{0x2Eu, 0x04u},
-			{0x30u, 0x04u},
+			{0x38u, 0x02u},
+			{0x3Eu, 0x01u},
+			{0x58u, 0x04u},
+			{0x5Bu, 0x04u},
+			{0x5Fu, 0x01u},
+			{0x8Eu, 0x01u},
+			{0xB6u, 0x01u},
+			{0xD2u, 0x01u},
+			{0xD3u, 0x01u},
+			{0xD6u, 0x10u},
+			{0xD8u, 0x04u},
+			{0xDBu, 0x04u},
+			{0xDFu, 0x01u},
+			{0x07u, 0x01u},
+			{0x19u, 0x01u},
+			{0x1Bu, 0x01u},
+			{0x1Eu, 0x02u},
+			{0x68u, 0x01u},
+			{0x6Fu, 0x01u},
+			{0x88u, 0x01u},
+			{0xC0u, 0x80u},
+			{0x02u, 0x10u},
+			{0x03u, 0x0Eu},
+			{0x04u, 0x04u},
+			{0x06u, 0x40u},
+			{0x07u, 0x01u},
+			{0x0Cu, 0xFEu},
+			{0x0Fu, 0x0Du},
+			{0x10u, 0x0Eu},
+			{0x11u, 0x04u},
+			{0x12u, 0x80u},
+			{0x16u, 0x6Fu},
+			{0x17u, 0x08u},
+			{0x18u, 0x02u},
+			{0x1Au, 0x41u},
+			{0x1Bu, 0x01u},
+			{0x1Cu, 0x10u},
+			{0x1Du, 0x0Cu},
+			{0x22u, 0x3Eu},
+			{0x23u, 0x04u},
+			{0x24u, 0x08u},
+			{0x26u, 0x40u},
+			{0x2Eu, 0x7Fu},
+			{0x2Fu, 0x01u},
+			{0x30u, 0xC0u},
 			{0x31u, 0x01u},
-			{0x32u, 0x02u},
-			{0x34u, 0x08u},
-			{0x35u, 0x02u},
+			{0x32u, 0x30u},
+			{0x33u, 0x02u},
+			{0x34u, 0x0Eu},
+			{0x35u, 0x0Cu},
 			{0x36u, 0x01u},
-			{0x3Eu, 0x10u},
-			{0x3Fu, 0x10u},
-			{0x40u, 0x10u},
-			{0x41u, 0x05u},
-			{0x45u, 0xD1u},
-			{0x46u, 0x02u},
-			{0x48u, 0x07u},
+			{0x37u, 0x01u},
+			{0x3Eu, 0x40u},
+			{0x3Fu, 0x40u},
+			{0x40u, 0x15u},
+			{0x41u, 0x04u},
 			{0x49u, 0xFFu},
 			{0x4Au, 0xFFu},
 			{0x4Bu, 0xFFu},
-			{0x4Du, 0xA0u},
-			{0x4Fu, 0x04u},
+			{0x4Fu, 0x01u},
 			{0x50u, 0x18u},
-			{0x52u, 0x80u},
-			{0x54u, 0x05u},
+			{0x52u, 0x90u},
+			{0x54u, 0x01u},
 			{0x58u, 0x04u},
 			{0x59u, 0x04u},
 			{0x5Au, 0x04u},
 			{0x5Bu, 0x04u},
-			{0x5Fu, 0x01u},
+			{0x5Fu, 0x05u},
 			{0x60u, 0x40u},
-			{0x62u, 0xC0u},
+			{0x62u, 0x40u},
 			{0x64u, 0x40u},
 			{0x65u, 0x40u},
-			{0x66u, 0xC0u},
-			{0x68u, 0xC0u},
-			{0x6Au, 0xC0u},
-			{0x6Cu, 0xC0u},
-			{0x6Eu, 0xC0u},
-			{0xB8u, 0x20u},
-			{0xBEu, 0x10u},
-			{0xD8u, 0x04u},
+			{0x66u, 0x80u},
+			{0x68u, 0x80u},
+			{0x6Au, 0x80u},
+			{0x6Cu, 0x80u},
+			{0x6Eu, 0x80u},
+			{0xC0u, 0x15u},
+			{0xC1u, 0x04u},
+			{0xC5u, 0xECu},
+			{0xC7u, 0x22u},
+			{0xC8u, 0x33u},
+			{0xC9u, 0xFFu},
+			{0xCAu, 0xFFu},
+			{0xCBu, 0xFFu},
+			{0xCDu, 0x83u},
+			{0xCEu, 0x03u},
+			{0xCFu, 0x01u},
+			{0xD0u, 0x18u},
+			{0xDAu, 0x04u},
+			{0xDBu, 0x04u},
 			{0xDFu, 0x01u},
-			{0x05u, 0x01u},
-			{0x0Eu, 0x20u},
-			{0x0Fu, 0x08u},
-			{0x17u, 0x40u},
-			{0x1Au, 0x04u},
-			{0x1Du, 0x11u},
-			{0x1Eu, 0x20u},
-			{0x1Fu, 0x40u},
-			{0x26u, 0x02u},
-			{0x27u, 0x48u},
-			{0x36u, 0x02u},
-			{0x3Cu, 0x02u},
-			{0x3Fu, 0x80u},
-			{0x47u, 0x40u},
-			{0x4Bu, 0xC0u},
-			{0x4Fu, 0x89u},
-			{0x57u, 0x40u},
-			{0x5Fu, 0x49u},
-			{0x74u, 0x01u},
-			{0x86u, 0x04u},
-			{0x8Du, 0x10u},
-			{0xC0u, 0x10u},
-			{0xC2u, 0x60u},
-			{0xC4u, 0x80u},
-			{0xCCu, 0x80u},
-			{0xCEu, 0x90u},
-			{0xD0u, 0x10u},
-			{0xD2u, 0x10u},
-			{0xD6u, 0xD0u},
-			{0x3Bu, 0x04u},
-			{0x3Fu, 0x04u},
-			{0x87u, 0x04u},
-			{0xCEu, 0xC0u},
+			{0xE0u, 0x40u},
 			{0xE2u, 0x40u},
+			{0xE4u, 0x40u},
+			{0xE5u, 0x40u},
+			{0xE6u, 0x80u},
+			{0xE8u, 0x80u},
+			{0xEAu, 0x80u},
+			{0xECu, 0x80u},
+			{0xEEu, 0x80u},
+			{0x04u, 0x80u},
+			{0x05u, 0x02u},
+			{0x07u, 0x20u},
+			{0x0Eu, 0x6Bu},
+			{0x15u, 0x08u},
+			{0x16u, 0x82u},
+			{0x1Du, 0x80u},
+			{0x1Eu, 0x68u},
+			{0x24u, 0x80u},
+			{0x25u, 0x07u},
+			{0x26u, 0x40u},
+			{0x27u, 0x68u},
+			{0x2Eu, 0x01u},
+			{0x2Fu, 0x02u},
+			{0x35u, 0x02u},
+			{0x36u, 0x10u},
+			{0x37u, 0x49u},
+			{0x3Cu, 0x82u},
+			{0x3Du, 0x08u},
+			{0x41u, 0x82u},
+			{0x45u, 0x82u},
+			{0x4Au, 0x02u},
+			{0x4Bu, 0x05u},
+			{0x4Eu, 0x02u},
+			{0x51u, 0x04u},
+			{0x52u, 0x02u},
+			{0x53u, 0x02u},
+			{0x58u, 0x40u},
+			{0x59u, 0x05u},
+			{0x5Bu, 0x10u},
+			{0x5Eu, 0x80u},
+			{0x5Fu, 0x05u},
+			{0x61u, 0x25u},
+			{0x62u, 0x08u},
+			{0x63u, 0x02u},
+			{0x69u, 0x80u},
+			{0x74u, 0x41u},
+			{0x76u, 0x82u},
+			{0x7Du, 0x02u},
+			{0x81u, 0x02u},
+			{0x88u, 0x40u},
+			{0x8Du, 0x61u},
+			{0x8Eu, 0x08u},
+			{0x8Fu, 0x10u},
+			{0x99u, 0x01u},
+			{0x9Bu, 0x01u},
+			{0xA2u, 0x01u},
+			{0xA3u, 0x01u},
+			{0xC0u, 0xB0u},
+			{0xC2u, 0xF0u},
+			{0xC4u, 0xB0u},
+			{0xCAu, 0x90u},
+			{0xCCu, 0xF0u},
+			{0xCEu, 0xD0u},
+			{0xD0u, 0x99u},
+			{0xD2u, 0x18u},
+			{0xD6u, 0xDFu},
+			{0xD8u, 0x0Fu},
+			{0xDEu, 0x80u},
+			{0x6Cu, 0x20u},
+			{0x80u, 0x20u},
+			{0xDAu, 0x80u},
+			{0xE2u, 0x80u},
 			{0x10u, 0x20u},
 			{0x54u, 0x20u},
+			{0x88u, 0x40u},
 			{0xC4u, 0x08u},
 			{0xD4u, 0x02u},
-			{0x60u, 0x20u},
-			{0x8Cu, 0x20u},
-			{0xD8u, 0x02u},
-			{0xE0u, 0x02u},
+			{0xE0u, 0x01u},
+			{0x00u, 0x02u},
+			{0x30u, 0x08u},
+			{0x58u, 0x40u},
+			{0x88u, 0x01u},
+			{0x8Cu, 0x08u},
+			{0x98u, 0x40u},
+			{0xC0u, 0x08u},
+			{0xCCu, 0x02u},
+			{0xD4u, 0x01u},
+			{0xE2u, 0x01u},
+			{0xE4u, 0x08u},
 			{0x01u, 0x01u},
 			{0x10u, 0x01u},
 		};
@@ -489,13 +536,10 @@ void cyfitter_cfg(void)
 
 		cfg_write_bytes32(cy_cfg_addr_table, cy_cfg_data_table);
 
-		/* PWR_BG_CONFIG Starting address: CYDEV_PWR_BG_CONFIG */
-		CY_SET_XTND_REG32((void CYFAR *)(CYREG_PWR_BG_CONFIG), 0x00040000u);
-
 		/* HSIOM Starting address: CYDEV_HSIOM_BASE */
 		CY_SET_XTND_REG32((void CYFAR *)(CYDEV_HSIOM_BASE), 0xEE000000u);
 		CY_SET_XTND_REG32((void CYFAR *)(CYREG_HSIOM_PORT_SEL2), 0x00000003u);
-		CY_SET_XTND_REG32((void CYFAR *)(CYREG_HSIOM_PORT_SEL3), 0x30000000u);
+		CY_SET_XTND_REG32((void CYFAR *)(CYREG_HSIOM_PORT_SEL3), 0x00000002u);
 
 		/* UDB_PA_0 Starting address: CYDEV_UDB_PA0_BASE */
 		CY_SET_XTND_REG32((void CYFAR *)(CYDEV_UDB_PA0_BASE), 0x00990000u);
@@ -506,7 +550,14 @@ void cyfitter_cfg(void)
 
 		/* UDB_PA_3 Starting address: CYDEV_UDB_PA3_BASE */
 		CY_SET_XTND_REG32((void CYFAR *)(CYDEV_UDB_PA3_BASE), 0x00990000u);
-		CY_SET_XTND_REG32((void CYFAR *)(CYREG_UDB_PA3_CFG8), 0x80000000u);
+		CY_SET_XTND_REG32((void CYFAR *)(CYREG_UDB_PA3_CFG8), 0x00020000u);
+		CY_SET_XTND_REG32((void CYFAR *)(CYREG_UDB_PA3_CFG12), 0x00000002u);
+
+		/* INT_SELECT Starting address: CYDEV_CPUSS_INT_SEL */
+		CY_SET_XTND_REG32((void CYFAR *)(CYREG_CPUSS_INT_SEL), 0x00000002u);
+
+		/* INT_CONFIG Starting address: CYDEV_UDB_INT_CFG */
+		CY_SET_XTND_REG32((void CYFAR *)(CYREG_UDB_INT_CFG), 0x00000002u);
 
 		/* Enable digital routing */
 		CY_SET_XTND_REG8((void *)CYREG_UDB_UDBIF_BANK_CTL, CY_GET_XTND_REG8((void *)CYREG_UDB_UDBIF_BANK_CTL) | 0x02u);
@@ -516,22 +567,19 @@ void cyfitter_cfg(void)
 		CY_SET_XTND_REG8((void *)CYREG_UDB_UDBIF_BANK_CTL, (uint8)(CY_GET_XTND_REG8((void *)CYREG_UDB_UDBIF_BANK_CTL) | 0x16u));
 	}
 
+
 	/* Perform second pass device configuration. These items must be configured in specific order after the regular configuration is done. */
+	CY_SET_XTND_REG8((void CYFAR *)(CYREG_UDB_P1_U0_CFG27), 0xC4u);
 	/* IOPINS0_0 Starting address: CYDEV_GPIO_PRT0_BASE */
 	CY_SET_XTND_REG32((void CYFAR *)(CYREG_GPIO_PRT0_PC), 0x00D80000u);
 
 	/* IOPINS0_2 Starting address: CYDEV_GPIO_PRT2_BASE */
-	CY_SET_XTND_REG32((void CYFAR *)(CYDEV_GPIO_PRT2_BASE), 0x0000007Fu);
+	CY_SET_XTND_REG32((void CYFAR *)(CYDEV_GPIO_PRT2_BASE), 0x00000041u);
 	CY_SET_XTND_REG32((void CYFAR *)(CYREG_GPIO_PRT2_PC), 0x00180006u);
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_GPIO_PRT2_PC2), 0x0000003Eu);
 
 	/* IOPINS0_3 Starting address: CYDEV_GPIO_PRT3_BASE */
-	CY_SET_XTND_REG32((void CYFAR *)(CYDEV_GPIO_PRT3_BASE), 0x00000080u);
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_GPIO_PRT3_PC), 0x00C00000u);
-
-	/* IOPINS0_4 Starting address: CYDEV_GPIO_PRT4_BASE */
-	CY_SET_XTND_REG32((void CYFAR *)(CYDEV_GPIO_PRT4_BASE), 0x00000001u);
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_GPIO_PRT4_PC2), 0x00000001u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYDEV_GPIO_PRT3_BASE), 0x00000001u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_GPIO_PRT3_PC), 0x00C00002u);
 
 
 	/* Setup clocks based on selections from Clock DWR */

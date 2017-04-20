@@ -11,6 +11,7 @@
   <Data key="DataVersionKey" value="2" />
   <Group key="DWRInstGuidMapping">
     <Group key="Pin">
+      <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="Pin_1" />
       <Data key="73d4c0eb-3188-4db1-a032-f9c04d84a3ab" value="Servo" />
       <Data key="94b2f552-a799-4a09-b1f3-f852891fc82b" value="blue" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="red" />
@@ -3552,6 +3553,11 @@
     </Group>
   </Group>
   <Group key="Pin2">
+    <Group key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba">
+      <Group key="0">
+        <Data key="Port Format" value="3,0" />
+      </Group>
+    </Group>
     <Group key="73d4c0eb-3188-4db1-a032-f9c04d84a3ab">
       <Group key="0">
         <Data key="Port Format" value="2,0" />
