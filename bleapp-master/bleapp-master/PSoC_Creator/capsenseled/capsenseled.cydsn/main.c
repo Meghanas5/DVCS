@@ -6,8 +6,9 @@ uint16 fingerPosOld = 0xFFFF;
 
 int capsenseNotify, tempNotify;
 
-uint16 Temp, TempOld;
+volatile uint16 Temp, TempOld;
 
+int flag;
 
 /***************************************************************
  * Function to update the Servo state in the GATT database
@@ -46,23 +47,23 @@ void updateLed()
 /***************************************************************
  * Function to update the CapSesnse state in the GATT database
  **************************************************************/
-void updateCapsense()
-{
-    if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
-        return;
-    
-	CYBLE_GATTS_HANDLE_VALUE_NTF_T 	tempHandle;
-    
-    tempHandle.attrHandle = CYBLE_LEDCAPSENSE_CAPSENSE_CHAR_HANDLE;
-  	tempHandle.value.val = (uint8 *)&fingerPos;
-    tempHandle.value.len = 2; 
-    CyBle_GattsWriteAttributeValue(&tempHandle,0,&cyBle_connHandle,CYBLE_GATT_DB_LOCALLY_INITIATED );  
-    
-    /* send notification to client if notifications are enabled and finger location has changed */
-    if (capsenseNotify && (fingerPos != fingerPosOld) )
-        CyBle_GattsNotification(cyBle_connHandle,&tempHandle);
-        fingerPosOld = fingerPos;
-}
+//void updateCapsense()
+//{
+//    if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
+//       return;
+//    
+//	CYBLE_GATTS_HANDLE_VALUE_NTF_T 	tempHandle;
+//    
+//    tempHandle.attrHandle = CYBLE_LEDCAPSENSE_CAPSENSE_CHAR_HANDLE;
+//  	tempHandle.value.val = (uint8 *)&fingerPos;
+//    tempHandle.value.len = 2; 
+//    CyBle_GattsWriteAttributeValue(&tempHandle,0,&cyBle_connHandle,CYBLE_GATT_DB_LOCALLY_INITIATED );  
+//    
+//     send notification to client if notifications are enabled and finger location has changed */
+//    if (capsenseNotify && (fingerPos != fingerPosOld) )
+//        CyBle_GattsNotification(cyBle_connHandle,&tempHandle);
+//        fingerPosOld = fingerPos;
+//}
 
 /***************************************************************
  * Function to update the CapSesnse state in the GATT database
@@ -98,6 +99,7 @@ void BleCallBack(uint32 event, void* eventParam)
         /* if there is a disconnect or the stack just turned on from a reset then start the advertising and turn on the LED blinking */
         case CYBLE_EVT_STACK_ON:
         case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:
+            tempNotify = 0;
             capsenseNotify = 0;
             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
             blue_Write(0);
@@ -126,19 +128,27 @@ void BleCallBack(uint32 event, void* eventParam)
                 {
                     switch (wrReqParam->handleValPair.value.val[0]) {
                         case (0):
-                            PWM_Servo_WriteCompare(4340);
-                            Timer_WritePeriod(1205);
-                            Timer_Start();
+                            PWM_Servo_WriteCompare(4250);
+                            //Timer_WritePeriod(1205);
+                            //Timer_Start();
                         break;
                         case (1):
-                            PWM_Servo_WriteCompare(4340);
-                            Timer_WritePeriod(540);
-                            Timer_Start();
+                            PWM_Servo_WriteCompare(4350);
+                            //Timer_WritePeriod(540);
+                            //Timer_Start();
                         break;
                         case (2):
-                            PWM_Servo_WriteCompare(4340);
-                            Timer_WritePeriod(225);
-                            Timer_Start();
+                            PWM_Servo_WriteCompare(4450);
+                            //Timer_WritePeriod(225);
+                            //Timer_Start();
+                        case (3):
+                            PWM_Servo_WriteCompare(4450);
+                        break;
+                        case (4):
+                            PWM_Servo_WriteCompare(4550);
+                        break;
+                        case (5):
+                            PWM_Servo_WriteCompare(4650);
                         break;
                     default:
                         break;
@@ -160,12 +170,12 @@ void BleCallBack(uint32 event, void* eventParam)
             }
             
             /* request to update the CapSense notification */
-            if(wrReqParam->handleValPair.attrHandle == CYBLE_LEDCAPSENSE_CAPSENSE_CAPSENSECCCD_DESC_HANDLE) 
-            {
+            //if(wrReqParam->handleValPair.attrHandle == CYBLE_LEDCAPSENSE_CAPSENSE_CAPSENSECCCD_DESC_HANDLE) 
+            //{
                 //CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle, CYBLE_GATT_DB_PEER_INITIATED);
                 //capsenseNotify = wrReqParam->handleValPair.value.val[0] & 0x01;
                 //CyBle_GattsWriteRsp(cyBle_connHandle);
-            }
+            //}
             
             // request to update temp notification
             if(wrReqParam->handleValPair.attrHandle == CYBLE_LEDCAPSENSE_TEMP_TEMPCCCD_DESC_HANDLE)
@@ -183,9 +193,11 @@ void BleCallBack(uint32 event, void* eventParam)
 } 
 
 CY_ISR(Timer_Int_Handler) {
-    PWM_Servo_WriteCompare(0);
+    flag = 1;
     Timer_ClearInterrupt(Timer_INTR_MASK_TC);
 }
+
+
 
 /***************************************************************
  * Main
@@ -199,9 +211,9 @@ int main()
     
     timer_int_StartEx(Timer_Int_Handler);
     PWM_Servo_Start();
-    
+    UART_Start();
     OneWire_Start();
-    int flag = 1;
+    flag = 1;
     Temp = 0;
     /* Start BLE stack and register the callback function */
     CyBle_Start(BleCallBack);
@@ -220,6 +232,7 @@ int main()
             updateCapsense();
         }
         */
+        
         if (flag == 1)
         {
             flag = 0;
@@ -229,7 +242,19 @@ int main()
         {
             OneWire_ReadTemperature();
             Temp = (uint16) OneWire_GetTemperatureAsInt100(0);
+            //char* strMsg;
+            char buf[6];
+            //strMsg = OneWire_GetTemperatureAsString(0);
+            sprintf(buf, "%d\r\n", Temp);
+            UART_UartPutString(buf);
+            updateTemp();
             flag = 1;
+            //Timer_WritePeriod(10000);
+            //Timer_Start();
+            //UART_UartPutString("!!!\r\n");
+            //UART_UartPutString(strMsg);
+            //UART_UartPutString("\r\n");
+           
         }
         
         CyBle_ProcessEvents();

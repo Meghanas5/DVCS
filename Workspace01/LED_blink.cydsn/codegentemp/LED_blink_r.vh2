@@ -1,5 +1,5 @@
 -- Project:   LED_blink
--- Generated: 04/16/2017 15:19:58
+-- Generated: 04/21/2017 15:19:21
 -- PSoC Creator  4.0 Update 1
 
 ENTITY LED_blink IS

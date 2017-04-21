@@ -539,7 +539,7 @@ function getElementsByClass(rootNode, elemName, className)
 <tr> <td class="prop"> Project :</td>
 <td class="proptext"> capsenseled</td></tr>
 <tr> <td class="prop"> Build Time :</td>
-<td class="proptext"> 04/18/17 13:02:34</td></tr>
+<td class="proptext"> 04/21/17 17:17:00</td></tr>
 <tr> <td class="prop"> Device :</td>
 <td class="proptext"> CY8C4248LQI-BL583</td></tr>
 <tr> <td class="prop"> Temperature :</td>
@@ -643,6 +643,14 @@ Clock Summary Section</span>
  <td class = "text_info"> </td>
 </tr>
 <tr> 
+ <td class = "text_info">UART_SCBCLK</td>
+ <td class = "text_info">CyHFCLK</td>
+ <td class = "number">115.108&nbsp;kHz</td>
+ <td class = "number">115.108&nbsp;kHz</td>
+ <td class = "number"> N/A </td>
+ <td class = "text_info"> </td>
+</tr>
+<tr> 
  <td class = "text_info">OneWire_clock_delay</td>
  <td class = "text_info">CyHFCLK</td>
  <td class = "number">1.000&nbsp;kHz</td>
@@ -703,6 +711,14 @@ Clock Summary Section</span>
  <td class = "text_info">CyWCO</td>
  <td class = "number">32.768&nbsp;kHz</td>
  <td class = "number">32.768&nbsp;kHz</td>
+ <td class = "number"> N/A </td>
+ <td class = "text_info"> </td>
+</tr>
+<tr> 
+ <td class = "text_info">UART_SCBCLK(FFB)</td>
+ <td class = "text_info">UART_SCBCLK(FFB)</td>
+ <td class = "number">115.108&nbsp;kHz</td>
+ <td class = "number">115.108&nbsp;kHz</td>
  <td class = "number"> N/A </td>
  <td class = "text_info"> </td>
 </tr>
@@ -1047,9 +1063,9 @@ Destination Clock : OneWire_clock_delay : Positive edge(Required Frequency 1&nbs
 <tr> 
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/ci</td>
- <td class = "number">43.337&nbsp;MHz</td>
- <td class = "number">23.075</td>
- <td class = "number">999976.925</td>
+ <td class = "number">42.841&nbsp;MHz</td>
+ <td class = "number">23.342</td>
+ <td class = "number">999976.658</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1101,7 +1117,7 @@ Destination Clock : OneWire_clock_delay : Positive edge(Required Frequency 1&nbs
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:per_zero\</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_0</td>
- <td class = "number">2.995</td>
+ <td class = "number">3.262</td>
 </tr>
 <tr> 
  <td class = "text_info">datapathcell1</td>
@@ -1308,9 +1324,9 @@ Destination Clock : OneWire_clock_delay : Positive edge(Required Frequency 1&nbs
 <tr> 
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/ci</td>
- <td class = "number">46.200&nbsp;MHz</td>
- <td class = "number">21.645</td>
- <td class = "number">999978.355</td>
+ <td class = "number">45.637&nbsp;MHz</td>
+ <td class = "number">21.912</td>
+ <td class = "number">999978.088</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1344,7 +1360,7 @@ Destination Clock : OneWire_clock_delay : Positive edge(Required Frequency 1&nbs
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:per_zero\</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_0</td>
- <td class = "number">2.995</td>
+ <td class = "number">3.262</td>
 </tr>
 <tr> 
  <td class = "text_info">datapathcell1</td>
@@ -1352,6 +1368,87 @@ Destination Clock : OneWire_clock_delay : Positive edge(Required Frequency 1&nbs
  <td class = "number">1</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_0</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/co_msb</td>
+ <td class = "number">9.710</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0.co_msb__sig\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/co_msb</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/ci</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">5.090</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">Net_586/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/ci</td>
+ <td class = "number">47.043&nbsp;MHz</td>
+ <td class = "number">21.257</td>
+ <td class = "number">999978.743</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">Net_586</td>
+ <td class = "text_info">Net_586/clock_0</td>
+ <td class = "text_info">Net_586/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">Net_586</td>
+ <td class = "text_info">Net_586/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_2</td>
+ <td class = "number">5.207</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_2</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/co_msb</td>
  <td class = "number">9.710</td>
 </tr>
@@ -1548,87 +1645,6 @@ Destination Clock : OneWire_clock_delay : Positive edge(Required Frequency 1&nbs
  </table> 
 </td>
 </tr>
-<tr> 
- <td class = "text_info">Net_586/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/ci</td>
- <td class = "number">47.201&nbsp;MHz</td>
- <td class = "number">21.186</td>
- <td class = "number">999978.814</td>
- <td class = "text_info"></td>
-</tr>
-<tr class="sta_path">
-<td class="sta_path"  colspan="6">
-<table class="sta_path">
- <thead> 
-<tr> 
-<th>Type</th>
-<th>Location</th>
-<th>Fanout</th>
-<th>Instance/Net</th>
-<th>Source</th>
-<th>Dest</th>
-<th>Delay (ns)</th>
-</tr>
-</thead> 
-<tbody>
-<tr> 
- <td class = "text_info">macrocell5</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">Net_586</td>
- <td class = "text_info">Net_586/clock_0</td>
- <td class = "text_info">Net_586/q</td>
- <td class = "number">1.250</td>
-</tr>
-<tr> 
- <td class = "text_info">Route</td>
- <td class = "text_info"> </td>
- <td class = "number">1</td>
- <td class = "text_info">Net_586</td>
- <td class = "text_info">Net_586/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_2</td>
- <td class = "number">5.136</td>
-</tr>
-<tr> 
- <td class = "text_info">datapathcell1</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_2</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/co_msb</td>
- <td class = "number">9.710</td>
-</tr>
-<tr> 
- <td class = "text_info">Route</td>
- <td class = "text_info"> </td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0.co_msb__sig\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/co_msb</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/ci</td>
- <td class = "number">0.000</td>
-</tr>
-<tr> 
- <td class = "text_info">datapathcell2</td>
- <td class = "text_info">U(0,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\</td>
- <td class = "text_info"></td>
- <td class = "text_info">SETUP</td>
- <td class = "number">5.090</td>
-</tr>
-<tr> 
- <td class = "text_info">Clock</td>
- <td class = "text_info"> </td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info">Skew</td>
- <td class = "number">0.000</td>
-</tr>
-</tbody>
- </table> 
-</td>
-</tr>
 </tbody>
  </table> 
 </div>
@@ -1727,9 +1743,253 @@ Destination Clock : OneWire_clock_delay : Positive edge</span>
 </td>
 </tr>
 <tr> 
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/main_6</td>
+ <td class = "number">3.479</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell7</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/clock_0</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/main_6</td>
+ <td class = "number">2.229</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/main_5</td>
+ <td class = "number">3.479</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell7</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/clock_0</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell7</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/main_5</td>
+ <td class = "number">2.229</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell7</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/main_2</td>
+ <td class = "number">3.483</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/clock_0</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/main_2</td>
+ <td class = "number">2.233</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/main_1</td>
+ <td class = "number">3.483</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/clock_0</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/main_1</td>
+ <td class = "number">2.233</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell7</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/q</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_5</td>
- <td class = "number">3.477</td>
+ <td class = "number">3.495</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1763,257 +2023,13 @@ Destination Clock : OneWire_clock_delay : Positive edge</span>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_fall_detected\</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/q</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_5</td>
- <td class = "number">2.227</td>
+ <td class = "number">2.245</td>
 </tr>
 <tr> 
  <td class = "text_info">macrocell10</td>
  <td class = "text_info">U(1,0)</td>
  <td class = "number">1</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_fall_detected\</td>
- <td class = "text_info"> </td>
- <td class = "text_info">HOLD</td>
- <td class = "number">0.000</td>
-</tr>
-<tr> 
- <td class = "text_info">Clock</td>
- <td class = "text_info"> </td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info">Skew</td>
- <td class = "number">0.000</td>
-</tr>
-</tbody>
- </table> 
-</td>
-</tr>
-<tr> 
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/main_6</td>
- <td class = "number">3.479</td>
- <td class = "text_info"></td>
-</tr>
-<tr class="sta_path">
-<td class="sta_path"  colspan="4">
-<table class="sta_path">
- <thead> 
-<tr> 
-<th>Type</th>
-<th>Location</th>
-<th>Fanout</th>
-<th>Instance/Net</th>
-<th>Source</th>
-<th>Dest</th>
-<th>Delay (ns)</th>
-</tr>
-</thead> 
-<tbody>
-<tr> 
- <td class = "text_info">macrocell7</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/clock_0</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
- <td class = "number">1.250</td>
-</tr>
-<tr> 
- <td class = "text_info">Route</td>
- <td class = "text_info"></td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/main_6</td>
- <td class = "number">2.229</td>
-</tr>
-<tr> 
- <td class = "text_info">macrocell6</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
- <td class = "text_info"> </td>
- <td class = "text_info">HOLD</td>
- <td class = "number">0.000</td>
-</tr>
-<tr> 
- <td class = "text_info">Clock</td>
- <td class = "text_info"> </td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info">Skew</td>
- <td class = "number">0.000</td>
-</tr>
-</tbody>
- </table> 
-</td>
-</tr>
-<tr> 
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/main_5</td>
- <td class = "number">3.479</td>
- <td class = "text_info"></td>
-</tr>
-<tr class="sta_path">
-<td class="sta_path"  colspan="4">
-<table class="sta_path">
- <thead> 
-<tr> 
-<th>Type</th>
-<th>Location</th>
-<th>Fanout</th>
-<th>Instance/Net</th>
-<th>Source</th>
-<th>Dest</th>
-<th>Delay (ns)</th>
-</tr>
-</thead> 
-<tbody>
-<tr> 
- <td class = "text_info">macrocell7</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/clock_0</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
- <td class = "number">1.250</td>
-</tr>
-<tr> 
- <td class = "text_info">macrocell7</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/main_5</td>
- <td class = "number">2.229</td>
-</tr>
-<tr> 
- <td class = "text_info">macrocell7</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
- <td class = "text_info"> </td>
- <td class = "text_info">HOLD</td>
- <td class = "number">0.000</td>
-</tr>
-<tr> 
- <td class = "text_info">Clock</td>
- <td class = "text_info"> </td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info">Skew</td>
- <td class = "number">0.000</td>
-</tr>
-</tbody>
- </table> 
-</td>
-</tr>
-<tr> 
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/main_2</td>
- <td class = "number">3.483</td>
- <td class = "text_info"></td>
-</tr>
-<tr class="sta_path">
-<td class="sta_path"  colspan="4">
-<table class="sta_path">
- <thead> 
-<tr> 
-<th>Type</th>
-<th>Location</th>
-<th>Fanout</th>
-<th>Instance/Net</th>
-<th>Source</th>
-<th>Dest</th>
-<th>Delay (ns)</th>
-</tr>
-</thead> 
-<tbody>
-<tr> 
- <td class = "text_info">macrocell6</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/clock_0</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
- <td class = "number">1.250</td>
-</tr>
-<tr> 
- <td class = "text_info">macrocell6</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/main_2</td>
- <td class = "number">2.233</td>
-</tr>
-<tr> 
- <td class = "text_info">macrocell6</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
- <td class = "text_info"> </td>
- <td class = "text_info">HOLD</td>
- <td class = "number">0.000</td>
-</tr>
-<tr> 
- <td class = "text_info">Clock</td>
- <td class = "text_info"> </td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info">Skew</td>
- <td class = "number">0.000</td>
-</tr>
-</tbody>
- </table> 
-</td>
-</tr>
-<tr> 
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/main_1</td>
- <td class = "number">3.483</td>
- <td class = "text_info"></td>
-</tr>
-<tr class="sta_path">
-<td class="sta_path"  colspan="4">
-<table class="sta_path">
- <thead> 
-<tr> 
-<th>Type</th>
-<th>Location</th>
-<th>Fanout</th>
-<th>Instance/Net</th>
-<th>Source</th>
-<th>Dest</th>
-<th>Delay (ns)</th>
-</tr>
-</thead> 
-<tbody>
-<tr> 
- <td class = "text_info">macrocell6</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/clock_0</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
- <td class = "number">1.250</td>
-</tr>
-<tr> 
- <td class = "text_info">Route</td>
- <td class = "text_info"></td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:timer_enable\/q</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\/main_1</td>
- <td class = "number">2.233</td>
-</tr>
-<tr> 
- <td class = "text_info">macrocell7</td>
- <td class = "text_info">U(1,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\OneWire:TimerDelay:TimerUDB:trig_disable\</td>
  <td class = "text_info"> </td>
  <td class = "text_info">HOLD</td>
  <td class = "number">0.000</td>
@@ -2345,7 +2361,7 @@ Clock_2(FFB)</span>
  <td class = "number">2.649</td>
 </tr>
 <tr> 
- <td class = "text_info">iocell3</td>
+ <td class = "text_info">iocell5</td>
  <td class = "text_info">P2[0]</td>
  <td class = "number">1</td>
  <td class = "text_info">Servo(0)</td>
@@ -2433,7 +2449,7 @@ CyHFCLK</span>
  <td class = "number">5.716</td>
 </tr>
 <tr> 
- <td class = "text_info">iocell4</td>
+ <td class = "text_info">iocell6</td>
  <td class = "text_info">P3[0]</td>
  <td class = "number">1</td>
  <td class = "text_info">Pin_1(0)</td>
@@ -2531,7 +2547,7 @@ CyHFCLK</span>
  <td class = "number">4.906</td>
 </tr>
 <tr> 
- <td class = "text_info">iocell4</td>
+ <td class = "text_info">iocell6</td>
  <td class = "text_info">P3[0]</td>
  <td class = "number">1</td>
  <td class = "text_info">Pin_1(0)</td>
@@ -2601,7 +2617,7 @@ CyHFCLK</span>
  <td class = "number">4.906</td>
 </tr>
 <tr> 
- <td class = "text_info">iocell4</td>
+ <td class = "text_info">iocell6</td>
  <td class = "text_info">P3[0]</td>
  <td class = "number">1</td>
  <td class = "text_info">Pin_1(0)</td>
@@ -2677,9 +2693,9 @@ Destination Clock : OneWire_clock_delay : Positive edge(Required Frequency 1&nbs
 <tr> 
  <td class = "text_info">Net_586/q</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/reset</td>
- <td class = "number">175.408&nbsp;MHz</td>
- <td class = "number">5.701</td>
- <td class = "number">999994.299</td>
+ <td class = "number">153.799&nbsp;MHz</td>
+ <td class = "number">6.502</td>
+ <td class = "number">999993.498</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -2713,7 +2729,7 @@ Destination Clock : OneWire_clock_delay : Positive edge(Required Frequency 1&nbs
  <td class = "text_info">Net_586</td>
  <td class = "text_info">Net_586/q</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/reset</td>
- <td class = "number">4.451</td>
+ <td class = "number">5.252</td>
 </tr>
 <tr> 
  <td class = "text_info">statusicell1</td>
@@ -2776,7 +2792,7 @@ Destination Clock : OneWire_clock_delay : Positive edge</span>
 <tr> 
  <td class = "text_info">Net_586/q</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/reset</td>
- <td class = "number">5.701</td>
+ <td class = "number">6.502</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -2810,7 +2826,7 @@ Destination Clock : OneWire_clock_delay : Positive edge</span>
  <td class = "text_info">Net_586</td>
  <td class = "text_info">Net_586/q</td>
  <td class = "text_info">\OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/reset</td>
- <td class = "number">4.451</td>
+ <td class = "number">5.252</td>
 </tr>
 <tr> 
  <td class = "text_info">statusicell1</td>

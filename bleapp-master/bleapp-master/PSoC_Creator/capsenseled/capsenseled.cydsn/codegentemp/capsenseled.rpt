@@ -1,12 +1,12 @@
-Loading plugins phase: Elapsed time ==> 0s.457ms
+Loading plugins phase: Elapsed time ==> 0s.474ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\capsenseled.cyprj -d CY8C4248LQI-BL583 -s C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 2s.678ms
+Elaboration phase: Elapsed time ==> 3s.043ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.109ms
+HDL generation phase: Elapsed time ==> 0s.138ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -40,7 +40,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Sarah
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Tue Apr 18 13:02:30 2017
+Fri Apr 21 17:16:54 2017
 
 
 ======================================================================
@@ -50,11 +50,12 @@ Options  :    -yv2 -q10 capsenseled.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Tue Apr 18 13:02:30 2017
+Fri Apr 21 17:16:54 2017
 
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'
-Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_70\CyControlReg_v1_70.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'
@@ -93,7 +94,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Sarah
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Tue Apr 18 13:02:30 2017
+Fri Apr 21 17:16:55 2017
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -105,10 +106,11 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
 Linking 'C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\capsenseled.ctl'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
-Linking 'C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\capsenseled.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\capsenseled.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_70\CyControlReg_v1_70.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
@@ -127,7 +129,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Sarah
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Tue Apr 18 13:02:30 2017
+Fri Apr 21 17:16:55 2017
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -139,10 +141,11 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
 Linking 'C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\capsenseled.ctl'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
-Linking 'C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\capsenseled.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\capsenseled.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_70\CyControlReg_v1_70.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
@@ -156,6 +159,19 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\l
 Detecting unused logic.
 ----------------------------------------------------------
     User names
+	\UART:Net_1257\
+	\UART:uncfg_rx_irq\
+	\UART:Net_1099\
+	\UART:Net_1258\
+	Net_591
+	Net_592
+	Net_601
+	Net_602
+	Net_603
+	Net_604
+	Net_605
+	Net_606
+	Net_607
 	Net_414
 	\ble:Net_55\
 	\OneWire:Net_901\
@@ -195,7 +211,7 @@ Detecting unused logic.
 	\OneWire:Net_986\
 
 
-Deleted 37 User equations/components.
+Deleted 50 User equations/components.
 Deleted 0 Synthesized equations/components.
 
 ------------------------------------------------------
@@ -203,6 +219,13 @@ Alias Detection
 ------------------------------------------------------
 Aliasing one to tmpOE__blue_net_0
 Aliasing tmpOE__red_net_0 to tmpOE__blue_net_0
+Aliasing \UART:select_s_wire\ to zero
+Aliasing \UART:sclk_s_wire\ to zero
+Aliasing \UART:mosi_s_wire\ to zero
+Aliasing \UART:miso_m_wire\ to zero
+Aliasing \UART:tmpOE__tx_net_0\ to tmpOE__blue_net_0
+Aliasing \UART:tmpOE__rx_net_0\ to tmpOE__blue_net_0
+Aliasing \UART:cts_wire\ to zero
 Aliasing \PWM_Servo:Net_75\ to zero
 Aliasing \PWM_Servo:Net_69\ to tmpOE__blue_net_0
 Aliasing \PWM_Servo:Net_66\ to zero
@@ -239,86 +262,95 @@ Aliasing \OneWire:TimerDelay:TimerUDB:capture_last\\D\ to zero
 Aliasing \OneWire:TimerDelay:TimerUDB:capture_out_reg_i\\D\ to \OneWire:TimerDelay:TimerUDB:capt_fifo_load_int\
 Removing Lhs of wire one[7] = tmpOE__blue_net_0[1]
 Removing Lhs of wire tmpOE__red_net_0[10] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \PWM_Servo:Net_81\[35] = Net_542[47]
-Removing Lhs of wire \PWM_Servo:Net_75\[36] = zero[2]
-Removing Lhs of wire \PWM_Servo:Net_69\[37] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \PWM_Servo:Net_66\[38] = zero[2]
-Removing Lhs of wire \PWM_Servo:Net_82\[39] = zero[2]
-Removing Lhs of wire \PWM_Servo:Net_72\[40] = zero[2]
-Removing Lhs of wire tmpOE__Servo_net_0[50] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \Timer:Net_81\[56] = Net_567[68]
-Removing Lhs of wire \Timer:Net_75\[57] = zero[2]
-Removing Lhs of wire \Timer:Net_69\[58] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \Timer:Net_66\[59] = zero[2]
-Removing Lhs of wire \Timer:Net_82\[60] = zero[2]
-Removing Lhs of wire \Timer:Net_72\[61] = zero[2]
-Removing Lhs of wire \OneWire:ControlReg_DRV:clk\[71] = zero[2]
-Removing Lhs of wire \OneWire:ControlReg_DRV:rst\[72] = zero[2]
-Removing Rhs of wire \OneWire:Net_1111\[73] = \OneWire:ControlReg_DRV:control_out_0\[74]
-Removing Rhs of wire \OneWire:Net_1111\[73] = \OneWire:ControlReg_DRV:control_0\[97]
-Removing Rhs of wire \OneWire:tmpOE__bufoe_1_net_0\[99] = \OneWire:Net_820_0\[102]
-Removing Rhs of wire \OneWire:tmpOE__bufoe_1_net_0\[99] = \OneWire:ControlReg_SEL:control_out_0\[277]
-Removing Rhs of wire \OneWire:tmpOE__bufoe_1_net_0\[99] = \OneWire:ControlReg_SEL:control_0\[286]
-Removing Lhs of wire \OneWire:StatusReg_BUS:status_7\[103] = \OneWire:Net_959_7\[104]
-Removing Lhs of wire \OneWire:Net_959_7\[104] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:StatusReg_BUS:status_6\[105] = \OneWire:Net_959_6\[106]
-Removing Lhs of wire \OneWire:Net_959_6\[106] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:StatusReg_BUS:status_5\[107] = \OneWire:Net_959_5\[108]
-Removing Lhs of wire \OneWire:Net_959_5\[108] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:StatusReg_BUS:status_4\[109] = \OneWire:Net_959_4\[110]
-Removing Lhs of wire \OneWire:Net_959_4\[110] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:StatusReg_BUS:status_3\[111] = \OneWire:Net_959_3\[112]
-Removing Lhs of wire \OneWire:Net_959_3\[112] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:StatusReg_BUS:status_2\[113] = \OneWire:Net_959_2\[114]
-Removing Lhs of wire \OneWire:Net_959_2\[114] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:StatusReg_BUS:status_1\[115] = \OneWire:Net_959_1\[116]
-Removing Lhs of wire \OneWire:Net_959_1\[116] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:StatusReg_BUS:status_0\[117] = \OneWire:Net_959_0\[118]
-Removing Lhs of wire \OneWire:Net_959_0\[118] = \OneWire:Net_807\[101]
-Removing Lhs of wire \OneWire:Net_280\[120] = zero[2]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_enable\[135] = \OneWire:TimerDelay:TimerUDB:control_7\[127]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_ten\[136] = \OneWire:TimerDelay:TimerUDB:control_4\[130]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_cmode_1\[137] = zero[2]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_tmode_1\[139] = zero[2]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_tmode_0\[140] = tmpOE__blue_net_0[1]
-Removing Rhs of wire \OneWire:TimerDelay:TimerUDB:timer_enable\[146] = \OneWire:TimerDelay:TimerUDB:runmode_enable\[159]
-Removing Rhs of wire \OneWire:TimerDelay:TimerUDB:run_mode\[147] = \OneWire:TimerDelay:TimerUDB:hwEnable_reg\[148]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:tc_i\[152] = \OneWire:TimerDelay:TimerUDB:status_tc\[149]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:hwEnable\[154] = \OneWire:TimerDelay:TimerUDB:control_7\[127]
-Removing Rhs of wire Net_586[155] = \OneWire:TimerDelay:TimerUDB:tc_reg_i\[153]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capt_fifo_load_int\[158] = \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[145]
-Removing Rhs of wire \OneWire:Net_527\[162] = \OneWire:Trigger:control_out_0\[290]
-Removing Rhs of wire \OneWire:Net_527\[162] = \OneWire:Trigger:control_0\[313]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_6\[167] = zero[2]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_5\[168] = zero[2]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_4\[169] = zero[2]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_0\[170] = \OneWire:TimerDelay:TimerUDB:status_tc\[149]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_1\[171] = \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[145]
-Removing Rhs of wire \OneWire:TimerDelay:TimerUDB:status_2\[172] = \OneWire:TimerDelay:TimerUDB:fifo_full\[173]
-Removing Rhs of wire \OneWire:TimerDelay:TimerUDB:status_3\[174] = \OneWire:TimerDelay:TimerUDB:fifo_nempty\[175]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:cs_addr_2\[178] = Net_586[155]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:cs_addr_1\[179] = \OneWire:TimerDelay:TimerUDB:trig_reg\[166]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:cs_addr_0\[180] = \OneWire:TimerDelay:TimerUDB:per_zero\[151]
-Removing Lhs of wire \OneWire:ControlReg_SEL:clk\[261] = zero[2]
-Removing Lhs of wire \OneWire:ControlReg_SEL:rst\[262] = zero[2]
-Removing Lhs of wire \OneWire:Trigger:clk\[288] = \OneWire:Net_522\[122]
-Removing Lhs of wire \OneWire:Trigger:rst\[289] = zero[2]
-Removing Lhs of wire \OneWire:Net_987\[315] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:Net_988\[316] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:Net_989\[317] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:Net_1072\[319] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:Net_1073\[320] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:Net_1074\[321] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:Net_1075\[322] = tmpOE__blue_net_0[1]
-Removing Lhs of wire tmpOE__Pin_1_net_0[324] = tmpOE__blue_net_0[1]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capture_last\\D\[329] = zero[2]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:hwEnable_reg\\D\[330] = \OneWire:TimerDelay:TimerUDB:control_7\[127]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:tc_reg_i\\D\[331] = \OneWire:TimerDelay:TimerUDB:status_tc\[149]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capture_out_reg_i\\D\[332] = \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[145]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:trig_last\\D\[335] = \OneWire:Net_527\[162]
+Removing Lhs of wire \UART:select_s_wire\[18] = zero[2]
+Removing Rhs of wire \UART:rx_wire\[19] = \UART:Net_1268\[20]
+Removing Lhs of wire \UART:Net_1170\[23] = \UART:Net_847\[17]
+Removing Lhs of wire \UART:sclk_s_wire\[24] = zero[2]
+Removing Lhs of wire \UART:mosi_s_wire\[25] = zero[2]
+Removing Lhs of wire \UART:miso_m_wire\[26] = zero[2]
+Removing Lhs of wire \UART:tmpOE__tx_net_0\[28] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \UART:tmpOE__rx_net_0\[37] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \UART:cts_wire\[41] = zero[2]
+Removing Lhs of wire \PWM_Servo:Net_81\[85] = Net_542[97]
+Removing Lhs of wire \PWM_Servo:Net_75\[86] = zero[2]
+Removing Lhs of wire \PWM_Servo:Net_69\[87] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \PWM_Servo:Net_66\[88] = zero[2]
+Removing Lhs of wire \PWM_Servo:Net_82\[89] = zero[2]
+Removing Lhs of wire \PWM_Servo:Net_72\[90] = zero[2]
+Removing Lhs of wire tmpOE__Servo_net_0[100] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \Timer:Net_81\[106] = Net_567[118]
+Removing Lhs of wire \Timer:Net_75\[107] = zero[2]
+Removing Lhs of wire \Timer:Net_69\[108] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \Timer:Net_66\[109] = zero[2]
+Removing Lhs of wire \Timer:Net_82\[110] = zero[2]
+Removing Lhs of wire \Timer:Net_72\[111] = zero[2]
+Removing Lhs of wire \OneWire:ControlReg_DRV:clk\[121] = zero[2]
+Removing Lhs of wire \OneWire:ControlReg_DRV:rst\[122] = zero[2]
+Removing Rhs of wire \OneWire:Net_1111\[123] = \OneWire:ControlReg_DRV:control_out_0\[124]
+Removing Rhs of wire \OneWire:Net_1111\[123] = \OneWire:ControlReg_DRV:control_0\[147]
+Removing Rhs of wire \OneWire:tmpOE__bufoe_1_net_0\[149] = \OneWire:Net_820_0\[152]
+Removing Rhs of wire \OneWire:tmpOE__bufoe_1_net_0\[149] = \OneWire:ControlReg_SEL:control_out_0\[327]
+Removing Rhs of wire \OneWire:tmpOE__bufoe_1_net_0\[149] = \OneWire:ControlReg_SEL:control_0\[336]
+Removing Lhs of wire \OneWire:StatusReg_BUS:status_7\[153] = \OneWire:Net_959_7\[154]
+Removing Lhs of wire \OneWire:Net_959_7\[154] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:StatusReg_BUS:status_6\[155] = \OneWire:Net_959_6\[156]
+Removing Lhs of wire \OneWire:Net_959_6\[156] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:StatusReg_BUS:status_5\[157] = \OneWire:Net_959_5\[158]
+Removing Lhs of wire \OneWire:Net_959_5\[158] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:StatusReg_BUS:status_4\[159] = \OneWire:Net_959_4\[160]
+Removing Lhs of wire \OneWire:Net_959_4\[160] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:StatusReg_BUS:status_3\[161] = \OneWire:Net_959_3\[162]
+Removing Lhs of wire \OneWire:Net_959_3\[162] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:StatusReg_BUS:status_2\[163] = \OneWire:Net_959_2\[164]
+Removing Lhs of wire \OneWire:Net_959_2\[164] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:StatusReg_BUS:status_1\[165] = \OneWire:Net_959_1\[166]
+Removing Lhs of wire \OneWire:Net_959_1\[166] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:StatusReg_BUS:status_0\[167] = \OneWire:Net_959_0\[168]
+Removing Lhs of wire \OneWire:Net_959_0\[168] = \OneWire:Net_807\[151]
+Removing Lhs of wire \OneWire:Net_280\[170] = zero[2]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_enable\[185] = \OneWire:TimerDelay:TimerUDB:control_7\[177]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_ten\[186] = \OneWire:TimerDelay:TimerUDB:control_4\[180]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_cmode_1\[187] = zero[2]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_tmode_1\[189] = zero[2]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:ctrl_tmode_0\[190] = tmpOE__blue_net_0[1]
+Removing Rhs of wire \OneWire:TimerDelay:TimerUDB:timer_enable\[196] = \OneWire:TimerDelay:TimerUDB:runmode_enable\[209]
+Removing Rhs of wire \OneWire:TimerDelay:TimerUDB:run_mode\[197] = \OneWire:TimerDelay:TimerUDB:hwEnable_reg\[198]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:tc_i\[202] = \OneWire:TimerDelay:TimerUDB:status_tc\[199]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:hwEnable\[204] = \OneWire:TimerDelay:TimerUDB:control_7\[177]
+Removing Rhs of wire Net_586[205] = \OneWire:TimerDelay:TimerUDB:tc_reg_i\[203]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capt_fifo_load_int\[208] = \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[195]
+Removing Rhs of wire \OneWire:Net_527\[212] = \OneWire:Trigger:control_out_0\[340]
+Removing Rhs of wire \OneWire:Net_527\[212] = \OneWire:Trigger:control_0\[363]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_6\[217] = zero[2]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_5\[218] = zero[2]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_4\[219] = zero[2]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_0\[220] = \OneWire:TimerDelay:TimerUDB:status_tc\[199]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:status_1\[221] = \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[195]
+Removing Rhs of wire \OneWire:TimerDelay:TimerUDB:status_2\[222] = \OneWire:TimerDelay:TimerUDB:fifo_full\[223]
+Removing Rhs of wire \OneWire:TimerDelay:TimerUDB:status_3\[224] = \OneWire:TimerDelay:TimerUDB:fifo_nempty\[225]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:cs_addr_2\[228] = Net_586[205]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:cs_addr_1\[229] = \OneWire:TimerDelay:TimerUDB:trig_reg\[216]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:cs_addr_0\[230] = \OneWire:TimerDelay:TimerUDB:per_zero\[201]
+Removing Lhs of wire \OneWire:ControlReg_SEL:clk\[311] = zero[2]
+Removing Lhs of wire \OneWire:ControlReg_SEL:rst\[312] = zero[2]
+Removing Lhs of wire \OneWire:Trigger:clk\[338] = \OneWire:Net_522\[172]
+Removing Lhs of wire \OneWire:Trigger:rst\[339] = zero[2]
+Removing Lhs of wire \OneWire:Net_987\[365] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:Net_988\[366] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:Net_989\[367] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:Net_1072\[369] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:Net_1073\[370] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:Net_1074\[371] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:Net_1075\[372] = tmpOE__blue_net_0[1]
+Removing Lhs of wire tmpOE__Pin_1_net_0[374] = tmpOE__blue_net_0[1]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capture_last\\D\[379] = zero[2]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:hwEnable_reg\\D\[380] = \OneWire:TimerDelay:TimerUDB:control_7\[177]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:tc_reg_i\\D\[381] = \OneWire:TimerDelay:TimerUDB:status_tc\[199]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capture_out_reg_i\\D\[382] = \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[195]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:trig_last\\D\[385] = \OneWire:Net_527\[212]
 
 ------------------------------------------------------
-Aliased 0 equations, 79 wires.
+Aliased 0 equations, 88 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -367,7 +399,7 @@ Circuit simplification results:
 Alias Detection
 ------------------------------------------------------
 Aliasing \OneWire:TimerDelay:TimerUDB:capt_fifo_load\ to zero
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[145] = zero[2]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[195] = zero[2]
 
 ------------------------------------------------------
 Aliased 0 equations, 1 wires.
@@ -400,14 +432,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\capsenseled.cyprj -dcpsoc3 capsenseled.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 1s.047ms
+Warp synthesis phase: Elapsed time ==> 1s.132ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.0.0.432, Family: PSoC3, Started at: Tuesday, 18 April 2017 13:02:31
+cyp3fit: V4.0.0.432, Family: PSoC3, Started at: Friday, 21 April 2017 17:16:55
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\capsenseled.cyprj -d CY8C4248LQI-BL583 capsenseled.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.013ms
+Design parsing phase: Elapsed time ==> 0s.018ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -419,6 +451,7 @@ Removing unused cells resulting from optimization
 Done removing unused cells.
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
     Fixed Function Clock 7: Automatic-assigning  clock 'Clock_2'. Signal=Net_542_ff7
+    Fixed Function Clock 1: Automatic-assigning  clock 'UART_SCBCLK'. Signal=\UART:Net_847_ff1\
     Digital Clock 0: Automatic-assigning  clock 'OneWire_clock_delay'. Fanout=3, Signal=\OneWire:Net_522_digital\
     Fixed Function Clock 8: Automatic-assigning  clock 'Clock_3'. Signal=Net_567_ff8
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
@@ -433,6 +466,8 @@ Done removing unused cells.
 </CYPRESSTAG>
 </CYPRESSTAG>
 Info: plm.M0038: The pin named Pin_1(0) at location P3[0] prevents usage of special purposes: TCPWM[0].line_out. (App=cydsfit)
+Info: plm.M0038: The pin named Pin_1(0) at location P3[0] prevents usage of special purposes: SCB[0].uart_rx. (App=cydsfit)
+Info: plm.M0038: The pin named Pin_1(0) at location P3[0] prevents usage of special purposes: SCB[0].i2c_sda. (App=cydsfit)
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -528,6 +563,86 @@ Design Equations
             pa_out => red(0)__PA ,
             annotation => Net_514 ,
             pad => red(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = \UART:tx(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \UART:tx(0)\__PA ,
+            input => \UART:tx_wire\ ,
+            pad => \UART:tx(0)_PAD\ );
+        Properties:
+        {
+        }
+
+    Pin : Name = \UART:rx(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \UART:rx(0)\__PA ,
+            fb => \UART:rx_wire\ ,
+            pad => \UART:rx(0)_PAD\ );
         Properties:
         {
         }
@@ -1035,11 +1150,11 @@ Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital Clocks                :    1 :    3 :    4 : 25.00 %
 Interrupts                    :    3 :   29 :   32 :  9.38 %
-IO                            :    8 :   30 :   38 : 21.05 %
+IO                            :   10 :   28 :   38 : 26.32 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
 CapSense                      :    0 :    1 :    1 :  0.00 %
 Die Temp                      :    0 :    1 :    1 :  0.00 %
-Serial Communication (SCB)    :    0 :    2 :    2 :  0.00 %
+Serial Communication (SCB)    :    1 :    1 :    2 : 50.00 %
 BLE                           :    1 :    0 :    1 : 100.00 %
 DMA Channels                  :    0 :    8 :    8 :  0.00 %
 Timer/Counter/PWM             :    2 :    2 :    4 : 50.00 %
@@ -1060,18 +1175,18 @@ DAC                           :      :      :      :
   7-bit IDAC                  :    0 :    1 :    1 :  0.00 %
   8-bit IDAC                  :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.049ms
-Tech Mapping phase: Elapsed time ==> 0s.108ms
+Technology Mapping: Elapsed time ==> 0s.059ms
+Tech Mapping phase: Elapsed time ==> 0s.095ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="Analog Placement">
-Elapsed time ==> 0.1888022s
+Elapsed time ==> 0.1740782s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.489ms
+Analog Placement phase: Elapsed time ==> 0s.433ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0016105 secs
+Route success=True, Iterations=1 Elapsed=0.0014721 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.002ms
 </CYPRESSTAG>
@@ -1084,7 +1199,7 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.037ms
+Analog Code Generation phase: Elapsed time ==> 0s.028ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
@@ -1099,20 +1214,20 @@ PLD Packing Summary
 ------------------------------------------------------------
             Resource Type : Used : Free :  Max :  % Used
     ====================================================
-                     PLDs :    4 :    4 :    8 :  50.00%
+                     PLDs :    3 :    5 :    8 :  37.50%
 
 <CYPRESSTAG name="PLD Statistics">
 
         PLD Resource Type :     Average/LAB
     =======================================
-                   Inputs :            5.00
-                   Pterms :            3.25
-               Macrocells :            2.50
+                   Inputs :            6.67
+                   Pterms :            4.33
+               Macrocells :            3.33
 </CYPRESSTAG>
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.001ms
+PLD Packing: Elapsed time ==> 0s.002ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
@@ -1213,25 +1328,6 @@ controlcell: Name =\OneWire:ControlReg_SEL:Sync:ctrl_reg\
     Clock Enable: True
 
 UDB [UDB=(0,1)] contents:
-LAB@[UDB=(0,1)][LB=0] #macrocells=1, #inputs=0, #pterms=0
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=3]
-        Total # of inputs        : 0
-        Total # of product terms : 0
-            Clock Enable: True
-        Main Equation            : 0 pterms
-        !(
-            0
-        );
-        Output = __ONE__ (fanout=7)
-        Properties               : 
-        {
-        }
-}
-
 controlcell: Name =\OneWire:ControlReg_DRV:Sync:ctrl_reg\
     PORT MAP (
         control_7 => \OneWire:ControlReg_DRV:control_7\ ,
@@ -1486,7 +1582,7 @@ controlcell: Name =\OneWire:TimerDelay:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
     Clock Enable: True
 
 UDB [UDB=(1,1)] contents:
-LAB@[UDB=(1,1)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+LAB@[UDB=(1,1)][LB=0] #macrocells=2, #inputs=1, #pterms=1
 {
     [McSlotId=0]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_last\, Mode=(D-Register) @ [UDB=(1,1)][LB=0][MC=0]
         Total # of inputs        : 1
@@ -1503,7 +1599,19 @@ LAB@[UDB=(1,1)][LB=0] #macrocells=1, #inputs=1, #pterms=1
         {
         }
 
-    [McSlotId=1]: (empty)
+    [McSlotId=1]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(1,1)][LB=0][MC=1]
+        Total # of inputs        : 0
+        Total # of product terms : 0
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = __ONE__ (fanout=7)
+        Properties               : 
+        {
+        }
+
     [McSlotId=2]: (empty)
     [McSlotId=3]: (empty)
 }
@@ -1560,7 +1668,89 @@ Intr container @ [IntrContainer=(0)]:
         }
 Drq container @ [DrqContainer=(0)]: empty
 Port 0 is empty
-Port 1 is empty
+Port 1 contains the following IO cells:
+[IoId=4]: 
+Pin : Name = \UART:rx(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \UART:rx(0)\__PA ,
+        fb => \UART:rx_wire\ ,
+        pad => \UART:rx(0)_PAD\ );
+    Properties:
+    {
+    }
+
+[IoId=5]: 
+Pin : Name = \UART:tx(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \UART:tx(0)\__PA ,
+        input => \UART:tx_wire\ ,
+        pad => \UART:tx(0)_PAD\ );
+    Properties:
+    {
+    }
+
 Port 2 contains the following IO cells:
 [IoId=0]: 
 Pin : Name = Servo(0)
@@ -1747,6 +1937,7 @@ Clock group 0:
             wco => ClockBlock_WCO ,
             dsi_in_0 => ClockBlock_Routed1 ,
             ff_div_7 => Net_542_ff7 ,
+            ff_div_1 => \UART:Net_847_ff1\ ,
             udb_div_0 => dclk_to_genclk ,
             ff_div_8 => Net_567_ff8 );
         Properties:
@@ -1757,7 +1948,29 @@ SPC group 0: empty
 WDT group 0: empty
 FSS group 0: empty
 LP Comparator group 0: empty
-Serial Communication (SCB) group 0: empty
+Serial Communication (SCB) group 0: 
+    SCB Block @ F(SCB,0): 
+    m0s8scbcell: Name =\UART:SCB\
+        PORT MAP (
+            clock => \UART:Net_847_ff1\ ,
+            interrupt => Net_593 ,
+            rx => \UART:rx_wire\ ,
+            tx => \UART:tx_wire\ ,
+            rts => \UART:rts_wire\ ,
+            mosi_m => \UART:mosi_m_wire\ ,
+            select_m_3 => \UART:select_m_wire_3\ ,
+            select_m_2 => \UART:select_m_wire_2\ ,
+            select_m_1 => \UART:select_m_wire_1\ ,
+            select_m_0 => \UART:select_m_wire_0\ ,
+            sclk_m => \UART:sclk_m_wire\ ,
+            miso_s => \UART:miso_s_wire\ ,
+            tx_req => Net_596 ,
+            rx_req => Net_595 );
+        Properties:
+        {
+            cy_registers = ""
+            scb_mode = 2
+        }
 CapSense group 0: empty
 8-bit IDAC group 0: empty
 7-bit IDAC group 0: empty
@@ -1835,44 +2048,47 @@ M0S8DMAC group 0: empty
 ------------------------------------------------------------
 Port Configuration report
 ------------------------------------------------------------
-     |     |       | Interrupt |                  |          | 
-Port | Pin | Fixed |      Type |       Drive Mode |     Name | Connections
------+-----+-------+-----------+------------------+----------+----------------------------------------------------------------------------------
-   2 |   0 |     * |      NONE |         CMOS_OUT | Servo(0) | In(Net_540)
-     |   6 |     * |      NONE |         CMOS_OUT |   red(0) | 
------+-----+-------+-----------+------------------+----------+----------------------------------------------------------------------------------
-   3 |   0 |     * |      NONE |      RES_PULL_UP | Pin_1(0) | FB(\OneWire:Net_807\), In(\OneWire:Net_1111\), OE(\OneWire:tmpOE__bufoe_1_net_0\)
-     |   7 |     * |      NONE |         CMOS_OUT |  blue(0) | 
-------------------------------------------------------------------------------------------------------------------------------------------------
+     |     |       | Interrupt |                  |              | 
+Port | Pin | Fixed |      Type |       Drive Mode |         Name | Connections
+-----+-----+-------+-----------+------------------+--------------+----------------------------------------------------------------------------------
+   1 |   4 |     * |      NONE |     HI_Z_DIGITAL | \UART:rx(0)\ | FB(\UART:rx_wire\)
+     |   5 |     * |      NONE |         CMOS_OUT | \UART:tx(0)\ | In(\UART:tx_wire\)
+-----+-----+-------+-----------+------------------+--------------+----------------------------------------------------------------------------------
+   2 |   0 |     * |      NONE |         CMOS_OUT |     Servo(0) | In(Net_540)
+     |   6 |     * |      NONE |         CMOS_OUT |       red(0) | 
+-----+-----+-------+-----------+------------------+--------------+----------------------------------------------------------------------------------
+   3 |   0 |     * |      NONE |      RES_PULL_UP |     Pin_1(0) | FB(\OneWire:Net_807\), In(\OneWire:Net_1111\), OE(\OneWire:tmpOE__bufoe_1_net_0\)
+     |   7 |     * |      NONE |         CMOS_OUT |      blue(0) | 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.002ms
-Digital Placement phase: Elapsed time ==> 1s.079ms
+Digital component placer commit/Report: Elapsed time ==> 0s.001ms
+Digital Placement phase: Elapsed time ==> 1s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.121ms
+Digital Routing phase: Elapsed time ==> 1s.362ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.427ms
+Bitstream Generation phase: Elapsed time ==> 0s.590ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.050ms
+Bitstream Verification phase: Elapsed time ==> 0s.077ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in capsenseled_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.419ms
+Static timing analysis phase: Elapsed time ==> 0s.634ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.265ms
+Design database save phase: Elapsed time ==> 0s.243ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 4s.081ms
+cydsfit: Elapsed time ==> 4s.566ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 4s.082ms
-API generation phase: Elapsed time ==> 2s.691ms
-Dependency generation phase: Elapsed time ==> 0s.063ms
-Cleanup phase: Elapsed time ==> 0s.002ms
+Fitter phase: Elapsed time ==> 4s.567ms
+API generation phase: Elapsed time ==> 3s.966ms
+Dependency generation phase: Elapsed time ==> 0s.067ms
+Cleanup phase: Elapsed time ==> 0s.004ms

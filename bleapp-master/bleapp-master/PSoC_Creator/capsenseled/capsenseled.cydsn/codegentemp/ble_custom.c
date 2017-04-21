@@ -62,17 +62,6 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                     CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
                 }, 
             },
-
-            /* capsense characteristic */
-            {
-                0x0018u, /* Handle of the capsense characteristic */ 
-                
-                /* Array of Descriptors handles */
-                {
-                    0x0019u, /* Handle of the capsensecccd descriptor */ 
-                    0x001Au, /* Handle of the Characteristic User Description descriptor */ 
-                }, 
-            },
         }, 
     },
 };

@@ -22,6 +22,19 @@
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\red.h" value="HEADER;;;;;red" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\red_aliases.h" value="HEADER;;;;;red" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\red_PM.c" value="SOURCE_C;CortexM0;;;;red" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART.c" value="SOURCE_C;CortexM0;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART.h" value="HEADER;;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_SPI_UART.h" value="HEADER;;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_SPI_UART.c" value="SOURCE_C;CortexM0;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_SPI_UART_INT.c" value="SOURCE_C;CortexM0;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_PM.c" value="SOURCE_C;CortexM0;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_UART.c" value="SOURCE_C;CortexM0;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_BOOT.c" value="SOURCE_C;CortexM0;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_UART_BOOT.c" value="SOURCE_C;CortexM0;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_PINS.h" value="HEADER;;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_SPI_UART_PVT.h" value="HEADER;;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_PVT.h" value="HEADER;;;;;UART" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_BOOT.h" value="HEADER;;;;;UART" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\ble_gatt.h" value="HEADER;;;;;ble" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\ble.h" value="HEADER;;;;;ble" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\ble.c" value="SOURCE_C;CortexM0;;;;ble" />
@@ -64,6 +77,16 @@
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\Pin_1.h" value="HEADER;;;;;Pin_1" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\Pin_1_aliases.h" value="HEADER;;;;;Pin_1" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\Pin_1_PM.c" value="SOURCE_C;CortexM0;;;;Pin_1" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_SCBCLK.c" value="SOURCE_C;CortexM0;;;;UART_SCBCLK" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_SCBCLK.h" value="HEADER;;;;;UART_SCBCLK" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_tx.c" value="SOURCE_C;CortexM0;;;;UART_tx" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_tx.h" value="HEADER;;;;;UART_tx" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_tx_aliases.h" value="HEADER;;;;;UART_tx" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_tx_PM.c" value="SOURCE_C;CortexM0;;;;UART_tx" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_rx.c" value="SOURCE_C;CortexM0;;;;UART_rx" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_rx.h" value="HEADER;;;;;UART_rx" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_rx_aliases.h" value="HEADER;;;;;UART_rx" />
+  <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\UART_rx_PM.c" value="SOURCE_C;CortexM0;;;;UART_rx" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\ble_bless_isr.c" value="SOURCE_C;CortexM0;;;;ble_bless_isr" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\ble_bless_isr.h" value="HEADER;;;;;ble_bless_isr" />
   <file name="C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\codegentemp\OneWire_ControlReg_DRV.c" value="SOURCE_C;CortexM0;;;;OneWire_ControlReg_DRV" />

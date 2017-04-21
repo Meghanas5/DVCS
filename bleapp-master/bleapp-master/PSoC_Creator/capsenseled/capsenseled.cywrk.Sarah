@@ -13,9 +13,10 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="capsenseled\TempSensor\TempSensor.cydwr\Pins">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>capsenseled</v>
+<v>capsenseled\capsenseled</v>
 <v>capsenseled\capsenseled\TopDesign</v>
 <v>capsenseled\capsenseled\capsenseled.cydwr</v>
 <v>capsenseled\capsenseled\capsenseled.cydwr\Pins</v>
@@ -146,6 +147,33 @@
 <v>capsenseled\capsenseled\Generated_Source\PSoC4\timer_int</v>
 <v>capsenseled\capsenseled\Generated_Source\PSoC4\timer_int\timer_int.c</v>
 <v>capsenseled\capsenseled\Generated_Source\PSoC4\timer_int\timer_int.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_BOOT.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_BOOT.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_PINS.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_PVT.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_SPI_UART.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_SPI_UART.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_SPI_UART_INT.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_SPI_UART_PVT.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_UART.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART\UART_UART_BOOT.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_rx</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_rx\UART_rx.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_rx\UART_rx.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_rx\UART_rx_aliases.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_rx\UART_rx_PM.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_SCBCLK</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_SCBCLK\UART_SCBCLK.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_SCBCLK\UART_SCBCLK.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_tx</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_tx\UART_tx.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_tx\UART_tx.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_tx\UART_tx_aliases.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\UART_tx\UART_tx_PM.c</v>
 <v>capsenseled\capsenseled\Generated_Source\PSoC4\cycodeshareexport.ld</v>
 <v>capsenseled\capsenseled\Generated_Source\PSoC4\cycodeshareimport.ld</v>
 <v>capsenseled\capsenseled\Generated_Source\PSoC4\cycodeshareimport.scat</v>
@@ -323,22 +351,36 @@
 <VisibleNodeIds>
 <v>capsenseled</v>
 <v>capsenseled\capsenseled</v>
-<v>capsenseled\TempSensor</v>
-<v>capsenseled\TempSensor\TopDesign</v>
-<v>capsenseled\TempSensor\TempSensor.cydwr</v>
-<v>capsenseled\TempSensor\TempSensor.cydwr\Pins</v>
-<v>capsenseled\TempSensor\TempSensor.cydwr\Analog</v>
-<v>capsenseled\TempSensor\TempSensor.cydwr\DMA</v>
-<v>capsenseled\TempSensor\TempSensor.cydwr\Clocks</v>
-<v>capsenseled\TempSensor\TempSensor.cydwr\Interrupts</v>
-<v>capsenseled\TempSensor\TempSensor.cydwr\System</v>
-<v>capsenseled\TempSensor\TempSensor.cydwr\Directives</v>
-<v>capsenseled\TempSensor\TempSensor.cydwr\Flash Security</v>
-<v>capsenseled\TempSensor\Header Files</v>
-<v>capsenseled\TempSensor\Header Files\cyapicallbacks.h</v>
-<v>capsenseled\TempSensor\Source Files</v>
-<v>capsenseled\TempSensor\Source Files\main.c</v>
-<v>capsenseled\TempSensor\Generated_Source</v>
+<v>capsenseled\capsenseled\TopDesign</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Pins</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Analog</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\DMA</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Clocks</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Interrupts</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\System</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Directives</v>
+<v>capsenseled\capsenseled\capsenseled.cydwr\Flash Security</v>
+<v>capsenseled\capsenseled\Header Files</v>
+<v>capsenseled\capsenseled\Source Files</v>
+<v>capsenseled\capsenseled\Source Files\main.c</v>
+<v>capsenseled\capsenseled\Generated_Source</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_custom.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_custom.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_eventHandler.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_eventHandler.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_gatt.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_gatt.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_HAL_INT.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_HAL_PVT.c</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_HAL_PVT.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_Stack.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_STACK_PVT.h</v>
+<v>capsenseled\capsenseled\Generated_Source\PSoC4\ble\ble_StackGap.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="capsenseled\capsenseled">
@@ -441,6 +483,18 @@
 <v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Timer.lst</v>
 <v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\timer_int.lst</v>
 <v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\Timer_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_BOOT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_rx.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_rx_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_SCBCLK.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_SPI_UART.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_tx.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_tx_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_UART.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\Listing Files\UART_UART_BOOT.lst</v>
 <v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\capsenseled.elf</v>
 <v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\capsenseled.hex</v>
 <v>capsenseled\capsenseled\CortexM0\ARM_GCC_493\Debug\capsenseled.map</v>
@@ -572,6 +626,7 @@
 <v>capsenseled\capsenseled\Power_v1_0\Power_v1_0.pdf</v>
 <v>capsenseled\capsenseled\Resistor_v1_0</v>
 <v>capsenseled\capsenseled\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>capsenseled\capsenseled\SCB_P4_v3_20.pdf</v>
 <v>capsenseled\capsenseled\TCPWM_P4_v2_10</v>
 <v>capsenseled\capsenseled\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
 <v>capsenseled\TempSensor</v>
@@ -608,6 +663,7 @@
 <v>capsenseled\capsenseled\Power_v1_0\Power_v1_0.pdf</v>
 <v>capsenseled\capsenseled\Resistor_v1_0</v>
 <v>capsenseled\capsenseled\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>capsenseled\capsenseled\SCB_P4_v3_20.pdf</v>
 <v>capsenseled\capsenseled\TCPWM_P4_v2_10</v>
 <v>capsenseled\capsenseled\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
 <v>capsenseled\TempSensor</v>
@@ -618,7 +674,6 @@
 <v>capsenseled\TempSensor\System Reference Guides\cy_dmac_v1_10</v>
 <v>capsenseled\TempSensor\System Reference Guides\cy_lfclk_v1_10</v>
 <v>capsenseled\TempSensor\cy_pins_v2_20</v>
-<v>capsenseled\TempSensor\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -635,6 +690,13 @@
 <OpenDocs>
 <name v=".\capsenseled.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\capsenseled.cydsn\main.c" />
+<name v="..\..\..\..\Workspace01\TempSensor.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\capsenseled.cydsn\capsenseled.cydwr" />
+<name v="..\..\..\..\Workspace01\TempSensor.cydsn\main.c" />
+<name v="..\..\..\..\Workspace01\TempSensor.cydsn\Generated_Source\PSoC4\OneWire.c" />
+<name v=".\capsenseled.cydsn\Generated_Source\PSoC4\OneWire.c" />
+<name v=".\capsenseled.cydsn\Generated_Source\PSoC4\ble_HAL_INT.c" />
+<name v="..\..\..\..\Workspace01\TempSensor.cydsn\TempSensor.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -642,7 +704,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="799, 431" SelectedTabbedMdiWindow="1ff70661-9f54-432e-8408-0aab0fc1052f"><DocumentWindow Key="31f1f914-36e7-4a24-9ec0-88e570906943" Guid="6f495a1a-2fa8-476b-b066-f9ac139d7e5d" /><DocumentWindow Key="ddad1d98-33ce-46ca-9243-d9830d176c58" Guid="1ff70661-9f54-432e-8408-0aab0fc1052f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="799, 431" SelectedTabbedMdiWindow="aad89922-132a-464f-8d81-1edb88743a54"><DocumentWindow Key="cd67c7a3-9b25-4dca-b16e-9d5ad60abb6c" Guid="68947e89-0ae5-45b7-a82b-4c5239eb56a4" /><DocumentWindow Key="15a2e774-a4aa-40a5-877e-79758476f211" Guid="aad89922-132a-464f-8d81-1edb88743a54" /><DocumentWindow Key="83f7351c-3fba-45b3-8547-21105988bfed" Guid="010b4ce2-2396-4606-a200-a07e01474b14" /><DocumentWindow Key="7a196b69-1135-4806-ba17-67b2bb3b20ff" Guid="7588c8d8-f014-4daf-a09b-2e89bd3a317c" /><DocumentWindow Key="7a695d07-e416-46c5-b520-dfd809110b26" Guid="3a6c463b-c6a7-44b5-b418-d78d3e1365e5" /><DocumentWindow Key="2876031c-23e5-45e1-8106-e0b0f558b7af" Guid="dfd7e614-e247-4693-9d27-6f53c559d14b" /><DocumentWindow Key="d8fe09b5-ddc5-4399-b8ca-59335ecce24d" Guid="7d29d082-e5fa-4f19-a0bb-9caa3859787a" /><DocumentWindow Key="f6d72556-6c8b-4c9b-93fa-2615bb70a060" Guid="6733e970-e27c-4d32-bc2c-7a6ac9a86cd8" /><DocumentWindow Key="f35b0b34-027a-4098-b099-8d4f3e6a5b98" Guid="fc2f687a-903c-4795-9417-ecebbebb198b" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
   30:Generated_Source\PSoC4/Cm0Start.c **** #if (CY_IP_CPUSS_CM0)
   31:Generated_Source\PSoC4/Cm0Start.c ****     /* CPUSS Configuration register */
   32:Generated_Source\PSoC4/Cm0Start.c ****     #define CY_CPUSS_CONFIG_REG         (*(reg32 *) CYREG_CPUSS_CONFIG)
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 2
 
 
   33:Generated_Source\PSoC4/Cm0Start.c ****     #define CY_CPUSS_CONFIG_PTR         ( (reg32 *) CYREG_CPUSS_CONFIG)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
   87:Generated_Source\PSoC4/Cm0Start.c ****     *******************************************************************************/
   88:Generated_Source\PSoC4/Cm0Start.c ****     #if (__ARMCC_VERSION)
   89:Generated_Source\PSoC4/Cm0Start.c ****         __attribute__ ((section(".bootloaderruntype"), zero_init))
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 3
 
 
   90:Generated_Source\PSoC4/Cm0Start.c ****     #elif defined (__GNUC__)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
   41              	.L2:
  129:Generated_Source\PSoC4/Cm0Start.c ****         }
  130:Generated_Source\PSoC4/Cm0Start.c ****         else
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 4
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 4
 
 
  131:Generated_Source\PSoC4/Cm0Start.c ****     #endif
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  172:Generated_Source\PSoC4/Cm0Start.c ****         * So, the stack pointer needs to be reset to be sure that
  173:Generated_Source\PSoC4/Cm0Start.c ****         * there is no garbage in the stack.
  174:Generated_Source\PSoC4/Cm0Start.c ****         */
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 5
 
 
  175:Generated_Source\PSoC4/Cm0Start.c ****         register uint32_t msp __asm("msp");
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  229:Generated_Source\PSoC4/Cm0Start.c ****     size_t zero_size;       /* Additional size to be zeroed.  */
  230:Generated_Source\PSoC4/Cm0Start.c **** };
  231:Generated_Source\PSoC4/Cm0Start.c **** 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 6
 
 
  232:Generated_Source\PSoC4/Cm0Start.c **** extern const struct __cy_region __cy_regions[];
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
   79              	_sbrk:
   80              	.LFB4:
  262:Generated_Source\PSoC4/Cm0Start.c **** }
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 7
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 7
 
 
  263:Generated_Source\PSoC4/Cm0Start.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  292:Generated_Source\PSoC4/Cm0Start.c ****     }
  293:Generated_Source\PSoC4/Cm0Start.c ****     else
  294:Generated_Source\PSoC4/Cm0Start.c ****     {
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 8
 
 
  295:Generated_Source\PSoC4/Cm0Start.c ****         errno = ENOMEM;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  140              		.cfi_offset 4, -16
  141              		.cfi_offset 5, -12
  142              		.cfi_offset 6, -8
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 9
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 9
 
 
  143              		.cfi_offset 14, -4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  329:Generated_Source\PSoC4/Cm0Start.c ****             {
  178              		.loc 1 329 0 is_stmt 0 discriminator 1
  179 0018 A242     		cmp	r2, r4
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 10
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 10
 
 
  180 001a FAD1     		bne	.L14
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  214              		.loc 1 347 0
  215 0038 FFF7FEFF 		bl	main
  216              	.LVL29:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 11
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 11
 
 
  217              	.L18:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  377:Generated_Source\PSoC4/Cm0Start.c **** 
  378:Generated_Source\PSoC4/Cm0Start.c ****     #if(CY_IP_SRSSLT)
  379:Generated_Source\PSoC4/Cm0Start.c ****         CySysWdtDisable();
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 12
 
 
  380:Generated_Source\PSoC4/Cm0Start.c ****     #endif  /* (CY_IP_SRSSLT) */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  420:Generated_Source\PSoC4/Cm0Start.c **** 
  421:Generated_Source\PSoC4/Cm0Start.c ****     return 0;
  422:Generated_Source\PSoC4/Cm0Start.c **** }
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 13
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 13
 
 
  423:Generated_Source\PSoC4/Cm0Start.c **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  477:Generated_Source\PSoC4/Cm0Start.c **** #if defined(__ARMCC_VERSION)
  478:Generated_Source\PSoC4/Cm0Start.c ****     #pragma diag_default 1296
  479:Generated_Source\PSoC4/Cm0Start.c **** #endif  /* defined(__ARMCC_VERSION) */
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 14
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 14
 
 
  480:Generated_Source\PSoC4/Cm0Start.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  274              		.loc 1 515 0
  275 0010 032B     		cmp	r3, #3
  276 0012 03D8     		bhi	.L26
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 15
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 15
 
 
  277              		.loc 1 515 0 is_stmt 0 discriminator 1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  304              		.loc 1 539 0
  305 0034 024A     		ldr	r2, .L27
  306 0036 1168     		ldr	r1, [r2]
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 16
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 16
 
 
  307 0038 0123     		mov	r3, #1
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  357              		.size	CyRamVectors, 192
  358              	CyRamVectors:
  359 0000 00000000 		.space	192
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 17
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 17
 
 
  359      00000000 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  410 0056 02       		.uleb128 0x2
  411 0057 08       		.byte	0x8
  412 0058 07       		.byte	0x7
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 18
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 18
 
 
  413 0059 DA010000 		.4byte	.LASF7
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  467 00c9 07       		.byte	0x7
  468 00ca 1F020000 		.4byte	.LASF17
  469 00ce 09       		.uleb128 0x9
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 19
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 19
 
 
  470 00cf 04       		.byte	0x4
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  524 0141 00       		.byte	0
  525 0142 0D       		.uleb128 0xd
  526 0143 53010000 		.4byte	.LASF24
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 20
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 20
 
 
  527 0147 01       		.byte	0x1
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  581 01c3 01       		.byte	0x1
  582 01c4 1E01     		.2byte	0x11e
  583 01c6 CE000000 		.4byte	0xce
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 21
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 21
 
 
  584 01ca 05       		.uleb128 0x5
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  638 0255 64000000 		.4byte	0x64
  639 0259 FA000000 		.4byte	.LLST8
  640 025d 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 22
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 22
 
 
  641 025e 0E       		.uleb128 0xe
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  695 02df 00000000 		.4byte	cySysNoInitDataValid
  696 02e3 14       		.uleb128 0x14
  697 02e4 656E6400 		.ascii	"end\000"
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 23
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 23
 
 
  698 02e8 01       		.byte	0x1
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  752 0363 04       		.byte	0x4
  753 0364 0F       		.byte	0xf
  754 0365 69030000 		.4byte	0x369
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 24
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 24
 
 
  755 0369 06       		.uleb128 0x6
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  809 001b 0E       		.uleb128 0xe
  810 001c 00       		.byte	0
  811 001d 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 25
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 25
 
 
  812 001e 03       		.uleb128 0x3
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  866 0054 3B       		.uleb128 0x3b
  867 0055 0B       		.uleb128 0xb
  868 0056 49       		.uleb128 0x49
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 26
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 26
 
 
  869 0057 13       		.uleb128 0x13
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  923 008d 3A       		.uleb128 0x3a
  924 008e 0B       		.uleb128 0xb
  925 008f 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 27
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 27
 
 
  926 0090 0B       		.uleb128 0xb
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  980 00ce 18       		.uleb128 0x18
  981 00cf 00       		.byte	0
  982 00d0 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 28
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 28
 
 
  983 00d1 12       		.uleb128 0x12
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1037 0108 19       		.uleb128 0x19
  1038 0109 3C       		.uleb128 0x3c
  1039 010a 19       		.uleb128 0x19
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 29
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 29
 
 
  1040 010b 00       		.byte	0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1094 0142 13       		.uleb128 0x13
  1095 0143 00       		.byte	0
  1096 0144 00       		.byte	0
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 30
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 30
 
 
  1097 0145 18       		.uleb128 0x18
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1151 017b 00       		.byte	0
  1152 017c 1D       		.uleb128 0x1d
  1153 017d 34       		.uleb128 0x34
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 31
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 31
 
 
  1154 017e 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1208 01b4 49       		.uleb128 0x49
  1209 01b5 13       		.uleb128 0x13
  1210 01b6 3C       		.uleb128 0x3c
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 32
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 32
 
 
  1211 01b7 19       		.uleb128 0x19
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1265 000b 04000000 		.4byte	.LVL2
  1266 000f 0A000000 		.4byte	.LFE3
  1267 0013 0400     		.2byte	0x4
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 33
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 33
 
 
  1268 0015 F3       		.byte	0xf3
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1322 009a 00000000 		.4byte	0
  1323              	.LLST5:
  1324 009e 0A000000 		.4byte	.LVL15
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 34
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 34
 
 
  1325 00a2 14000000 		.4byte	.LVL19
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1379              	.LLST9:
  1380 0130 0C000000 		.4byte	.LVL31
  1381 0134 10000000 		.4byte	.LVL32
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 35
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 35
 
 
  1382 0138 0200     		.2byte	0x2
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1432              	.LASF14:
  1433 0000 72656733 		.ascii	"reg32\000"
  1433      3200
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 36
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 36
 
 
  1434              	.LASF16:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1458              	.LASF25:
  1459 00da 73746174 		.ascii	"status\000"
  1459      757300
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 37
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 37
 
 
  1460              	.LASF22:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1487 016b 5F736272 		.ascii	"_sbrk\000"
  1487      6B00
  1488              	.LASF12:
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 38
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 38
 
 
  1489 0171 646F7562 		.ascii	"double\000"
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1513      655F616C 
  1513      69676E38 
  1513      00
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 39
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 39
 
 
  1514              	.LASF17:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 1
  1538              	.LASF49:
  1539 030c 5F5F6379 		.ascii	"__cy_region\000"
  1539      5F726567 
-ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNZI7z0.s 			page 40
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccke3Vho.s 			page 40
 
 
  1539      696F6E00 

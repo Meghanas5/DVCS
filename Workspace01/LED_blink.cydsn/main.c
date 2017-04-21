@@ -14,13 +14,16 @@
 #define TIME_INTERVAL_360 1325
 #define TIME_INTERVAL_90  250
 
+#define NEUTRAL 4450
+#define CW90 4250
+#define CCW90 4650
+
 volatile int flag = 1;
-volatile int x = 4520;
+volatile int x = NEUTRAL;
 
 
 CY_ISR( Timer_Int_Handler) {
-    PWM_WriteCompare(0);
-    CyDelay(3000);
+    CyDelay(1000);
     PWM_WriteCompare(x);
     flag = 1;
     Timer_ClearInterrupt(Timer_INTR_MASK_TC);
@@ -43,12 +46,12 @@ int main(void)
         //printf("values = %d\n", values);
         //CyDelay(1000);
         if (flag) {
-            /*
-            if (x == 4530)
-                x = 4350;
+            if (x == NEUTRAL)
+                x = CW90;
+            else if (x == CW90)
+                x = 4650;
             else
-                x = 4530;
-            */
+                x = NEUTRAL;
             Timer_WritePeriod(TIME_INTERVAL_360);
             Timer_Start();
             flag = 0;

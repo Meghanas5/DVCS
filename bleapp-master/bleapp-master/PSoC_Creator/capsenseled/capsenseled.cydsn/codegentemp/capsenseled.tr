@@ -18,7 +18,7 @@
 ##################################################################### 
                     1::Clock Frequency Summary
 ===================================================================== 
-Number of clocks: 13
+Number of clocks: 15
 Clock: Clock_2              | N/A                   | Target: 0.48 MHz   | 
 Clock: Clock_2(FFB)         | N/A                   | Target: 0.48 MHz   | 
 Clock: Clock_3              | N/A                   | Target: 0.00 MHz   | 
@@ -32,6 +32,8 @@ Clock: CyRouted1            | N/A                   | Target: 48.00 MHz  |
 Clock: CySYSCLK             | N/A                   | Target: 48.00 MHz  | 
 Clock: CyWCO                | N/A                   | Target: 0.03 MHz   | 
 Clock: OneWire_clock_delay  | Frequency: 38.46 MHz  | Target: 0.00 MHz   | 
+Clock: UART_SCBCLK          | N/A                   | Target: 0.12 MHz   | 
+Clock: UART_SCBCLK(FFB)     | N/A                   | Target: 0.12 MHz   | 
 
  =====================================================================
                     End of Clock Frequency Summary
@@ -349,9 +351,9 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0
-Path End       : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/cs_addr_0
-Capture Clock  : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/clock
-Path slack     : 999980199p
+Path End       : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_0
+Capture Clock  : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock
+Path slack     : 999979933p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -362,9 +364,9 @@ End-of-path required time (ps)                                          99998848
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       8281
++ Data path delay                       8547
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           8281
+End-of-path arrival time (ps)           8547
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -377,10 +379,10 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                                 model name     delay     AT      slack  edge  Fanout
 -------------------------------------------------------  -------------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0         datapathcell1   2320   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i        datapathcell2      0   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb    datapathcell2   2960   5280  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/cs_addr_0  datapathcell2   3001   8281  999980199  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0         datapathcell1   2320   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i        datapathcell2      0   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb    datapathcell2   2960   5280  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_0  datapathcell1   3267   8547  999979933  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -388,106 +390,16 @@ pin name                                                  model name            
 ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
 ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
 ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/clock       datapathcell2              0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock       datapathcell1              0      0  RISE       1
 
 
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0
-Path End       : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_0
-Capture Clock  : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock
-Path slack     : 999980200p
-
-Capture Clock Arrival Time                                                      0
-+ Clock path delay                                                              0
-+ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
-- Setup time                                                               -11520
---------------------------------------------------------------------   ---------- 
-End-of-path required time (ps)                                          999988480
-
-Launch Clock Arrival Time                      0
-+ Clock path delay                         0
-+ Data path delay                       8280
--------------------------------------   ---- 
-End-of-path arrival time (ps)           8280
- 
-Launch Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock       datapathcell1              0      0  RISE       1
-
-Data path
-pin name                                                 model name     delay     AT      slack  edge  Fanout
--------------------------------------------------------  -------------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0         datapathcell1   2320   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i        datapathcell2      0   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb    datapathcell2   2960   5280  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_0  datapathcell1   3000   8280  999980200  RISE       1
-
-Capture Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock       datapathcell1              0      0  RISE       1
-
-
-
-++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin     : Net_586/q
-Path End       : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_2
-Capture Clock  : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock
-Path slack     : 999982084p
-
-Capture Clock Arrival Time                                                      0
-+ Clock path delay                                                              0
-+ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
-- Setup time                                                               -11520
---------------------------------------------------------------------   ---------- 
-End-of-path required time (ps)                                          999988480
-
-Launch Clock Arrival Time                      0
-+ Clock path delay                         0
-+ Data path delay                       6396
--------------------------------------   ---- 
-End-of-path arrival time (ps)           6396
- 
-Launch Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-Net_586/clock_0                                           macrocell5                 0      0  RISE       1
-
-Data path
-pin name                                                 model name     delay     AT      slack  edge  Fanout
--------------------------------------------------------  -------------  -----  -----  ---------  ----  ------
-Net_586/q                                                macrocell5      1250   1250  999978804  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_2  datapathcell1   5146   6396  999982084  RISE       1
-
-Capture Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock       datapathcell1              0      0  RISE       1
-
-
-
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin     : Net_586/q
-Path End       : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/cs_addr_2
+Path End       : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/cs_addr_0
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/clock
-Path slack     : 999982087p
+Path slack     : 999979936p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -498,9 +410,9 @@ End-of-path required time (ps)                                          99998848
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       6393
++ Data path delay                       8544
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           6393
+End-of-path arrival time (ps)           8544
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -508,13 +420,15 @@ pin name                                                  model name            
 ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
 ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
 ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-Net_586/clock_0                                           macrocell5                 0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock       datapathcell1              0      0  RISE       1
 
 Data path
 pin name                                                 model name     delay     AT      slack  edge  Fanout
 -------------------------------------------------------  -------------  -----  -----  ---------  ----  ------
-Net_586/q                                                macrocell5      1250   1250  999978804  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/cs_addr_2  datapathcell2   5143   6393  999982087  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0         datapathcell1   2320   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i        datapathcell2      0   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb    datapathcell2   2960   5280  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/cs_addr_0  datapathcell2   3264   8544  999979936  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -523,6 +437,94 @@ ClockBlock/udb_div_0                                      m0s8clockblockcell    
 ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
 ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
 \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/clock       datapathcell2              0      0  RISE       1
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Net_586/q
+Path End       : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/cs_addr_2
+Capture Clock  : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/clock
+Path slack     : 999981497p
+
+Capture Clock Arrival Time                                                      0
++ Clock path delay                                                              0
++ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
+- Setup time                                                               -11520
+--------------------------------------------------------------------   ---------- 
+End-of-path required time (ps)                                          999988480
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       6983
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           6983
+ 
+Launch Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+Net_586/clock_0                                           macrocell5                 0      0  RISE       1
+
+Data path
+pin name                                                 model name     delay     AT      slack  edge  Fanout
+-------------------------------------------------------  -------------  -----  -----  ---------  ----  ------
+Net_586/q                                                macrocell5      1250   1250  999978735  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/cs_addr_2  datapathcell2   5733   6983  999981497  RISE       1
+
+Capture Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/clock       datapathcell2              0      0  RISE       1
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Net_586/q
+Path End       : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_2
+Capture Clock  : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock
+Path slack     : 999982015p
+
+Capture Clock Arrival Time                                                      0
++ Clock path delay                                                              0
++ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
+- Setup time                                                               -11520
+--------------------------------------------------------------------   ---------- 
+End-of-path required time (ps)                                          999988480
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       6465
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           6465
+ 
+Launch Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+Net_586/clock_0                                           macrocell5                 0      0  RISE       1
+
+Data path
+pin name                                                 model name     delay     AT      slack  edge  Fanout
+-------------------------------------------------------  -------------  -----  -----  ---------  ----  ------
+Net_586/q                                                macrocell5      1250   1250  999978735  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/cs_addr_2  datapathcell1   5215   6465  999982015  RISE       1
+
+Capture Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/clock       datapathcell1              0      0  RISE       1
 
 
 
@@ -531,7 +533,7 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0
 Path End       : \OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/status_0
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/clock
-Path slack     : 999984674p
+Path slack     : 999984276p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -542,9 +544,9 @@ End-of-path required time (ps)                                          99999843
 
 Launch Clock Arrival Time                       0
 + Clock path delay                          0
-+ Data path delay                       13756
++ Data path delay                       14154
 -------------------------------------   ----- 
-End-of-path arrival time (ps)           13756
+End-of-path arrival time (ps)           14154
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -557,12 +559,12 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                               model name     delay     AT      slack  edge  Fanout
 -----------------------------------------------------  -------------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0       datapathcell1   2320   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i      datapathcell2      0   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb  datapathcell2   2960   5280  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:status_tc\/main_2         macrocell1      2878   8158  999984674  RISE       1
-\OneWire:TimerDelay:TimerUDB:status_tc\/q              macrocell1      3350  11508  999984674  RISE       1
-\OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/status_0   statusicell1    2248  13756  999984674  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0       datapathcell1   2320   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i      datapathcell2      0   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb  datapathcell2   2960   5280  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:status_tc\/main_2         macrocell1      3276   8556  999984276  RISE       1
+\OneWire:TimerDelay:TimerUDB:status_tc\/q              macrocell1      3350  11906  999984276  RISE       1
+\OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/status_0   statusicell1    2248  14154  999984276  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -579,7 +581,7 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0
 Path End       : Net_586/main_2
 Capture Clock  : Net_586/clock_0
-Path slack     : 999988332p
+Path slack     : 999987934p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -590,9 +592,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       8158
++ Data path delay                       8556
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           8158
+End-of-path arrival time (ps)           8556
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -605,10 +607,10 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                               model name     delay     AT      slack  edge  Fanout
 -----------------------------------------------------  -------------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0       datapathcell1   2320   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i      datapathcell2      0   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb  datapathcell2   2960   5280  999976920  RISE       1
-Net_586/main_2                                         macrocell5      2878   8158  999988332  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0       datapathcell1   2320   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i      datapathcell2      0   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb  datapathcell2   2960   5280  999976653  RISE       1
+Net_586/main_2                                         macrocell5      3276   8556  999987934  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -625,7 +627,7 @@ Net_586/clock_0                                           macrocell5            
 Path Begin     : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0
 Path End       : \OneWire:TimerDelay:TimerUDB:timer_enable\/main_4
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:timer_enable\/clock_0
-Path slack     : 999988960p
+Path slack     : 999988195p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -636,9 +638,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       7530
++ Data path delay                       8295
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           7530
+End-of-path arrival time (ps)           8295
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -651,10 +653,10 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                               model name     delay     AT      slack  edge  Fanout
 -----------------------------------------------------  -------------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0       datapathcell1   2320   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i      datapathcell2      0   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb  datapathcell2   2960   5280  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:timer_enable\/main_4      macrocell6      2250   7530  999988960  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0       datapathcell1   2320   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i      datapathcell2      0   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb  datapathcell2   2960   5280  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:timer_enable\/main_4      macrocell6      3015   8295  999988195  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -671,7 +673,7 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0
 Path End       : \OneWire:TimerDelay:TimerUDB:trig_disable\/main_3
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_disable\/clock_0
-Path slack     : 999988960p
+Path slack     : 999988195p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -682,9 +684,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       7530
++ Data path delay                       8295
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           7530
+End-of-path arrival time (ps)           8295
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -697,10 +699,10 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                               model name     delay     AT      slack  edge  Fanout
 -----------------------------------------------------  -------------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0       datapathcell1   2320   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i      datapathcell2      0   2320  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb  datapathcell2   2960   5280  999976920  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_disable\/main_3      macrocell7      2250   7530  999988960  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\/z0       datapathcell1   2320   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0i      datapathcell2      0   2320  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\/z0_comb  datapathcell2   2960   5280  999976653  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_disable\/main_3      macrocell7      3015   8295  999988195  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -714,98 +716,10 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 ++++ Path 12 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin     : \OneWire:Trigger:Sync:ctrl_reg\/control_0
-Path End       : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_4
-Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/clock_0
-Path slack     : 999989299p
-
-Capture Clock Arrival Time                                                      0
-+ Clock path delay                                                              0
-+ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
-- Setup time                                                                -3510
---------------------------------------------------------------------   ---------- 
-End-of-path required time (ps)                                          999996490
-
-Launch Clock Arrival Time                      0
-+ Clock path delay                         0
-+ Data path delay                       7191
--------------------------------------   ---- 
-End-of-path arrival time (ps)           7191
- 
-Launch Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:Trigger:Sync:ctrl_reg\/clock                     controlcell4               0      0  RISE       1
-
-Data path
-pin name                                                 model name    delay     AT      slack  edge  Fanout
--------------------------------------------------------  ------------  -----  -----  ---------  ----  ------
-\OneWire:Trigger:Sync:ctrl_reg\/control_0                controlcell4   2580   2580  999989299  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_4  macrocell9     4611   7191  999989299  RISE       1
-
-Capture Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/clock_0  macrocell9                 0      0  RISE       1
-
-
-
-++++ Path 13 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin     : \OneWire:Trigger:Sync:ctrl_reg\/control_0
-Path End       : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_4
-Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0
-Path slack     : 999989844p
-
-Capture Clock Arrival Time                                                      0
-+ Clock path delay                                                              0
-+ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
-- Setup time                                                                -3510
---------------------------------------------------------------------   ---------- 
-End-of-path required time (ps)                                          999996490
-
-Launch Clock Arrival Time                      0
-+ Clock path delay                         0
-+ Data path delay                       6646
--------------------------------------   ---- 
-End-of-path arrival time (ps)           6646
- 
-Launch Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:Trigger:Sync:ctrl_reg\/clock                     controlcell4               0      0  RISE       1
-
-Data path
-pin name                                                 model name    delay     AT      slack  edge  Fanout
--------------------------------------------------------  ------------  -----  -----  ---------  ----  ------
-\OneWire:Trigger:Sync:ctrl_reg\/control_0                controlcell4   2580   2580  999989299  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_4  macrocell10    4066   6646  999989844  RISE       1
-
-Capture Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0  macrocell10                0      0  RISE       1
-
-
-
-++++ Path 14 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
 Path Begin     : Net_586/q
 Path End       : \OneWire:TimerDelay:TimerUDB:timer_enable\/main_5
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:timer_enable\/clock_0
-Path slack     : 999990797p
+Path slack     : 999988834p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -816,9 +730,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       5693
++ Data path delay                       7656
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           5693
+End-of-path arrival time (ps)           7656
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -831,8 +745,8 @@ Net_586/clock_0                                           macrocell5            
 Data path
 pin name                                           model name   delay     AT      slack  edge  Fanout
 -------------------------------------------------  -----------  -----  -----  ---------  ----  ------
-Net_586/q                                          macrocell5    1250   1250  999978804  RISE       1
-\OneWire:TimerDelay:TimerUDB:timer_enable\/main_5  macrocell6    4443   5693  999990797  RISE       1
+Net_586/q                                          macrocell5    1250   1250  999978735  RISE       1
+\OneWire:TimerDelay:TimerUDB:timer_enable\/main_5  macrocell6    6406   7656  999988834  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -844,12 +758,12 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 
 
-++++ Path 15 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 13 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : Net_586/q
 Path End       : \OneWire:TimerDelay:TimerUDB:trig_disable\/main_4
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_disable\/clock_0
-Path slack     : 999990797p
+Path slack     : 999988834p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -860,9 +774,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       5693
++ Data path delay                       7656
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           5693
+End-of-path arrival time (ps)           7656
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -875,8 +789,8 @@ Net_586/clock_0                                           macrocell5            
 Data path
 pin name                                           model name   delay     AT      slack  edge  Fanout
 -------------------------------------------------  -----------  -----  -----  ---------  ----  ------
-Net_586/q                                          macrocell5    1250   1250  999978804  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_disable\/main_4  macrocell7    4443   5693  999990797  RISE       1
+Net_586/q                                          macrocell5    1250   1250  999978735  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_disable\/main_4  macrocell7    6406   7656  999988834  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -888,12 +802,12 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 
 
-++++ Path 16 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 14 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : Net_586/q
 Path End       : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_2
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/clock_0
-Path slack     : 999990797p
+Path slack     : 999988834p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -904,9 +818,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       5693
++ Data path delay                       7656
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           5693
+End-of-path arrival time (ps)           7656
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -919,8 +833,8 @@ Net_586/clock_0                                           macrocell5            
 Data path
 pin name                                                 model name   delay     AT      slack  edge  Fanout
 -------------------------------------------------------  -----------  -----  -----  ---------  ----  ------
-Net_586/q                                                macrocell5    1250   1250  999978804  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_2  macrocell9    4443   5693  999990797  RISE       1
+Net_586/q                                                macrocell5    1250   1250  999978735  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_2  macrocell9    6406   7656  999988834  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -932,12 +846,12 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 
 
-++++ Path 17 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 15 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : Net_586/q
 Path End       : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_2
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0
-Path slack     : 999990888p
+Path slack     : 999988842p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -948,9 +862,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       5602
++ Data path delay                       7648
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           5602
+End-of-path arrival time (ps)           7648
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -963,8 +877,8 @@ Net_586/clock_0                                           macrocell5            
 Data path
 pin name                                                 model name   delay     AT      slack  edge  Fanout
 -------------------------------------------------------  -----------  -----  -----  ---------  ----  ------
-Net_586/q                                                macrocell5    1250   1250  999978804  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_2  macrocell10   4352   5602  999990888  RISE       1
+Net_586/q                                                macrocell5    1250   1250  999978735  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_2  macrocell10   6398   7648  999988842  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -976,12 +890,12 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 
 
-++++ Path 18 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 16 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin     : \OneWire:TimerDelay:TimerUDB:trig_last\/q
-Path End       : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_3
+Path Begin     : \OneWire:Trigger:Sync:ctrl_reg\/control_0
+Path End       : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_4
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0
-Path slack     : 999990933p
+Path slack     : 999989233p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -992,9 +906,97 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       5557
++ Data path delay                       7257
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           5557
+End-of-path arrival time (ps)           7257
+ 
+Launch Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\OneWire:Trigger:Sync:ctrl_reg\/clock                     controlcell4               0      0  RISE       1
+
+Data path
+pin name                                                 model name    delay     AT      slack  edge  Fanout
+-------------------------------------------------------  ------------  -----  -----  ---------  ----  ------
+\OneWire:Trigger:Sync:ctrl_reg\/control_0                controlcell4   2580   2580  999989233  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_4  macrocell10    4677   7257  999989233  RISE       1
+
+Capture Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0  macrocell10                0      0  RISE       1
+
+
+
+++++ Path 17 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \OneWire:Trigger:Sync:ctrl_reg\/control_0
+Path End       : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_4
+Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/clock_0
+Path slack     : 999989772p
+
+Capture Clock Arrival Time                                                      0
++ Clock path delay                                                              0
++ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
+- Setup time                                                                -3510
+--------------------------------------------------------------------   ---------- 
+End-of-path required time (ps)                                          999996490
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       6718
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           6718
+ 
+Launch Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\OneWire:Trigger:Sync:ctrl_reg\/clock                     controlcell4               0      0  RISE       1
+
+Data path
+pin name                                                 model name    delay     AT      slack  edge  Fanout
+-------------------------------------------------------  ------------  -----  -----  ---------  ----  ------
+\OneWire:Trigger:Sync:ctrl_reg\/control_0                controlcell4   2580   2580  999989233  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_4  macrocell9     4138   6718  999989772  RISE       1
+
+Capture Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/clock_0  macrocell9                 0      0  RISE       1
+
+
+
+++++ Path 18 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \OneWire:TimerDelay:TimerUDB:trig_last\/q
+Path End       : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_3
+Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/clock_0
+Path slack     : 999990967p
+
+Capture Clock Arrival Time                                                      0
++ Clock path delay                                                              0
++ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
+- Setup time                                                                -3510
+--------------------------------------------------------------------   ---------- 
+End-of-path required time (ps)                                          999996490
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       5523
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           5523
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1007,8 +1009,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                                 model name   delay     AT      slack  edge  Fanout
 -------------------------------------------------------  -----------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:trig_last\/q                macrocell8    1250   1250  999990933  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_3  macrocell10   4307   5557  999990933  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_last\/q                macrocell8    1250   1250  999990967  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_3  macrocell9    4273   5523  999990967  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1016,7 +1018,7 @@ pin name                                                  model name            
 ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
 ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
 ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0  macrocell10                0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/clock_0  macrocell9                 0      0  RISE       1
 
 
 
@@ -1419,9 +1421,9 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 ++++ Path 28 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:trig_last\/q
-Path End       : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_3
-Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_rise_detected\/clock_0
-Path slack     : 999991463p
+Path End       : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_3
+Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0
+Path slack     : 999991497p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -1432,9 +1434,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       5027
++ Data path delay                       4993
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           5027
+End-of-path arrival time (ps)           4993
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1447,8 +1449,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                                 model name   delay     AT      slack  edge  Fanout
 -------------------------------------------------------  -----------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:trig_last\/q                macrocell8    1250   1250  999990933  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/main_3  macrocell9    3777   5027  999991463  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_last\/q                macrocell8    1250   1250  999990967  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_3  macrocell10   3743   4993  999991497  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1456,7 +1458,7 @@ pin name                                                  model name            
 ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
 ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
 ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_rise_detected\/clock_0  macrocell9                 0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0  macrocell10                0      0  RISE       1
 
 
 
@@ -1465,7 +1467,7 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Path Begin     : \OneWire:Trigger:Sync:ctrl_reg\/control_0
 Path End       : \OneWire:TimerDelay:TimerUDB:trig_last\/main_0
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_last\/clock_0
-Path slack     : 999991592p
+Path slack     : 999991564p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -1476,9 +1478,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       4898
++ Data path delay                       4926
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           4898
+End-of-path arrival time (ps)           4926
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1491,8 +1493,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                        model name    delay     AT      slack  edge  Fanout
 ----------------------------------------------  ------------  -----  -----  ---------  ----  ------
-\OneWire:Trigger:Sync:ctrl_reg\/control_0       controlcell4   2580   2580  999989299  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_last\/main_0  macrocell8     2318   4898  999991592  RISE       1
+\OneWire:Trigger:Sync:ctrl_reg\/control_0       controlcell4   2580   2580  999989233  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_last\/main_0  macrocell8     2346   4926  999991564  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1509,7 +1511,7 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:run_mode\/q
 Path End       : Net_586/main_1
 Capture Clock  : Net_586/clock_0
-Path slack     : 999992543p
+Path slack     : 999992554p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -1520,9 +1522,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       3947
++ Data path delay                       3936
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           3947
+End-of-path arrival time (ps)           3936
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1535,8 +1537,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                  model name   delay     AT      slack  edge  Fanout
 ----------------------------------------  -----------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:run_mode\/q  macrocell4    1250   1250  999988885  RISE       1
-Net_586/main_1                            macrocell5    2697   3947  999992543  RISE       1
+\OneWire:TimerDelay:TimerUDB:run_mode\/q  macrocell4    1250   1250  999988896  RISE       1
+Net_586/main_1                            macrocell5    2686   3936  999992554  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1553,7 +1555,7 @@ Net_586/clock_0                                           macrocell5            
 Path Begin     : \OneWire:TimerDelay:TimerUDB:run_mode\/q
 Path End       : \OneWire:TimerDelay:TimerUDB:timer_enable\/main_3
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:timer_enable\/clock_0
-Path slack     : 999992565p
+Path slack     : 999992563p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -1564,9 +1566,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       3925
++ Data path delay                       3927
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           3925
+End-of-path arrival time (ps)           3927
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1579,8 +1581,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                           model name   delay     AT      slack  edge  Fanout
 -------------------------------------------------  -----------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:run_mode\/q           macrocell4    1250   1250  999988885  RISE       1
-\OneWire:TimerDelay:TimerUDB:timer_enable\/main_3  macrocell6    2675   3925  999992565  RISE       1
+\OneWire:TimerDelay:TimerUDB:run_mode\/q           macrocell4    1250   1250  999988896  RISE       1
+\OneWire:TimerDelay:TimerUDB:timer_enable\/main_3  macrocell6    2677   3927  999992563  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1597,7 +1599,7 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:run_mode\/q
 Path End       : \OneWire:TimerDelay:TimerUDB:trig_disable\/main_2
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_disable\/clock_0
-Path slack     : 999992565p
+Path slack     : 999992563p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -1608,9 +1610,9 @@ End-of-path required time (ps)                                          99999649
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       3925
++ Data path delay                       3927
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           3925
+End-of-path arrival time (ps)           3927
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1623,8 +1625,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                                           model name   delay     AT      slack  edge  Fanout
 -------------------------------------------------  -----------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:run_mode\/q           macrocell4    1250   1250  999988885  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_disable\/main_2  macrocell7    2675   3925  999992565  RISE       1
+\OneWire:TimerDelay:TimerUDB:run_mode\/q           macrocell4    1250   1250  999988896  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_disable\/main_2  macrocell7    2677   3927  999992563  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -1814,6 +1816,50 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 ++++ Path 37 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
+Path Begin     : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/q
+Path End       : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_5
+Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0
+Path slack     : 999992992p
+
+Capture Clock Arrival Time                                                      0
++ Clock path delay                                                              0
++ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
+- Setup time                                                                -3510
+--------------------------------------------------------------------   ---------- 
+End-of-path required time (ps)                                          999996490
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       3498
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           3498
+ 
+Launch Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0  macrocell10                0      0  RISE       1
+
+Data path
+pin name                                                 model name   delay     AT      slack  edge  Fanout
+-------------------------------------------------------  -----------  -----  -----  ---------  ----  ------
+\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/q       macrocell10   1250   1250  999992992  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_5  macrocell10   2248   3498  999992992  RISE       1
+
+Capture Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0  macrocell10                0      0  RISE       1
+
+
+
+++++ Path 38 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
 Path Begin     : \OneWire:TimerDelay:TimerUDB:timer_enable\/q
 Path End       : \OneWire:TimerDelay:TimerUDB:timer_enable\/main_2
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:timer_enable\/clock_0
@@ -1856,7 +1902,7 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 
 
-++++ Path 38 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 39 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:timer_enable\/q
 Path End       : \OneWire:TimerDelay:TimerUDB:trig_disable\/main_1
@@ -1900,7 +1946,7 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 
 
-++++ Path 39 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 40 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:trig_disable\/q
 Path End       : \OneWire:TimerDelay:TimerUDB:timer_enable\/main_6
@@ -1944,7 +1990,7 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 
 
-++++ Path 40 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 41 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \OneWire:TimerDelay:TimerUDB:trig_disable\/q
 Path End       : \OneWire:TimerDelay:TimerUDB:trig_disable\/main_5
@@ -1988,56 +2034,12 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 
 
-++++ Path 41 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin     : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/q
-Path End       : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_5
-Capture Clock  : \OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0
-Path slack     : 999993010p
-
-Capture Clock Arrival Time                                                      0
-+ Clock path delay                                                              0
-+ Cycle adjust (OneWire_clock_delay:R#1 vs. OneWire_clock_delay:R#2)   1000000000
-- Setup time                                                                -3510
---------------------------------------------------------------------   ---------- 
-End-of-path required time (ps)                                          999996490
-
-Launch Clock Arrival Time                      0
-+ Clock path delay                         0
-+ Data path delay                       3480
--------------------------------------   ---- 
-End-of-path arrival time (ps)           3480
- 
-Launch Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0  macrocell10                0      0  RISE       1
-
-Data path
-pin name                                                 model name   delay     AT      slack  edge  Fanout
--------------------------------------------------------  -----------  -----  -----  ---------  ----  ------
-\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/q       macrocell10   1250   1250  999993010  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/main_5  macrocell10   2230   3480  999993010  RISE       1
-
-Capture Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\OneWire:TimerDelay:TimerUDB:trig_fall_detected\/clock_0  macrocell10                0      0  RISE       1
-
-
-
 ++++ Path 42 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : Net_586/q
 Path End       : \OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/reset
 Capture Clock  : \OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/clock
-Path slack     : 999994289p
+Path slack     : 999993490p
 
 Capture Clock Arrival Time                                                      0
 + Clock path delay                                                              0
@@ -2048,9 +2050,9 @@ End-of-path required time (ps)                                         100000000
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       5711
++ Data path delay                       6510
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           5711
+End-of-path arrival time (ps)           6510
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -2063,8 +2065,8 @@ Net_586/clock_0                                           macrocell5            
 Data path
 pin name                                           model name    delay     AT      slack  edge  Fanout
 -------------------------------------------------  ------------  -----  -----  ---------  ----  ------
-Net_586/q                                          macrocell5     1250   1250  999978804  RISE       1
-\OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/reset  statusicell1   4461   5711  999994289  RISE       1
+Net_586/q                                          macrocell5     1250   1250  999978735  RISE       1
+\OneWire:TimerDelay:TimerUDB:rstSts:stsreg\/reset  statusicell1   5260   6510  999993490  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout

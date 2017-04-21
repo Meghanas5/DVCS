@@ -213,7 +213,7 @@
 #define CYBLE_GATT_MTU_PLUS_L2CAP_MEM_EXT   (CYBLE_ALIGN_TO_4(CYBLE_GATT_MTU + CYBLE_MEM_EXT_SZ + CYBLE_L2CAP_HDR_SZ))
 
 /* GATT Maximum attribute length */
-#define CYBLE_GATT_MAX_ATTR_LEN             ((0x000Fu == 0u) ? (1u) : (0x000Fu))
+#define CYBLE_GATT_MAX_ATTR_LEN             ((0x000Bu == 0u) ? (1u) : (0x000Bu))
 #define CYBLE_GATT_MAX_ATTR_LEN_PLUS_L2CAP_MEM_EXT \
                                     (CYBLE_ALIGN_TO_4(CYBLE_GATT_MAX_ATTR_LEN + CYBLE_MEM_EXT_SZ + CYBLE_L2CAP_HDR_SZ))
 
