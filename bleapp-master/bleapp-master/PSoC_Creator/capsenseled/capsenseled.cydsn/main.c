@@ -21,7 +21,7 @@ void updateServo()
     if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
         return;
     
-    tempHandle.attrHandle = CYBLE_LEDCAPSENSE_LED_CHAR_HANDLE;
+    tempHandle.attrHandle = CYBLE_LEDCAPSENSE_SERVO_CHAR_HANDLE;
     tempHandle.value.len = 1;
     CyBle_GattsWriteAttributeValue(&tempHandle,0,&cyBle_connHandle,CYBLE_GATT_DB_LOCALLY_INITIATED);  
 }
@@ -81,7 +81,7 @@ void updateTemp()
     tempHandle.value.len = 2; 
     CyBle_GattsWriteAttributeValue(&tempHandle,0,&cyBle_connHandle,CYBLE_GATT_DB_LOCALLY_INITIATED );  
     
-    /* send notification to client if notifications are enabled and finger location has changed */
+    /* send notification to client if notifications are enabled and temperature has changed */
     if (tempNotify && (Temp != TempOld) )
         CyBle_GattsNotification(cyBle_connHandle,&tempHandle);
         TempOld = Temp;
@@ -128,7 +128,7 @@ void BleCallBack(uint32 event, void* eventParam)
                 {
                     switch (wrReqParam->handleValPair.value.val[0]) {
                         case (0):
-                            PWM_Servo_WriteCompare(4250);
+                            PWM_Servo_WriteCompare(4315);
                             //Timer_WritePeriod(1205);
                             //Timer_Start();
                         break;
@@ -138,22 +138,21 @@ void BleCallBack(uint32 event, void* eventParam)
                             //Timer_Start();
                         break;
                         case (2):
-                            PWM_Servo_WriteCompare(4450);
+                            PWM_Servo_WriteCompare(4375);
                             //Timer_WritePeriod(225);
                             //Timer_Start();
                         case (3):
-                            PWM_Servo_WriteCompare(4450);
+                            PWM_Servo_WriteCompare(4425);
                         break;
                         case (4):
-                            PWM_Servo_WriteCompare(4550);
+                            PWM_Servo_WriteCompare(4450);
                         break;
                         case (5):
-                            PWM_Servo_WriteCompare(4650);
+                            PWM_Servo_WriteCompare(4475);
                         break;
                     default:
                         break;
                     }
-                    //red_Write(!wrReqParam->handleValPair.value.val[0]);
                     CyBle_GattsWriteRsp(cyBle_connHandle);
                 }
             }

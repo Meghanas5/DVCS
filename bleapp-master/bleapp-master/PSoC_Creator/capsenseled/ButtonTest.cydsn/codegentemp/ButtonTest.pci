@@ -1,0 +1,20 @@
+# ButtonTest
+# 2017-04-25 18:21:18Z
+
+# IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
+dont_use_io iocell 0 6
+# IO_7@[IOP=(0)][IoId=(7)] is reserved: SWDDebugEnabled
+dont_use_io iocell 0 7
+# IO_0@[IOP=(6)][IoId=(0)] is reserved: KhzXtalEnabled
+dont_use_io iocell 6 0
+# IO_1@[IOP=(6)][IoId=(1)] is reserved: KhzXtalEnabled
+dont_use_io iocell 6 1
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "Button_Left(0)" iocell 3 0
+set_io "LED_Red_2(0)" iocell 2 1
+set_io "LED_Red_1(0)" iocell 2 0
+set_io "Button_Right(0)" iocell 3 1
+set_io "LED_Yellow_2(0)" iocell 2 2
+set_io "LED_Yellow_1(0)" iocell 2 3
+set_io "LED_Green_2(0)" iocell 2 4
+set_io "LED_Green_1(0)" iocell 2 5

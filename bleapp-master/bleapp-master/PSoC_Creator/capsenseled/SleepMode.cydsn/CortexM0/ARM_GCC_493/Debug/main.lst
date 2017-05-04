@@ -1,0 +1,348 @@
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccxLPqUM.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.main,"ax",%progbits
+  18              		.align	2
+  19              		.global	main
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	main, %function
+  23              	main:
+  24              	.LFB37:
+  25              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include <project.h>
+  13:main.c        **** 
+  14:main.c        **** int main()
+  15:main.c        **** {
+  26              		.loc 1 15 0
+  27              		.cfi_startproc
+  28 0000 80B5     		push	{r7, lr}
+  29              		.cfi_def_cfa_offset 8
+  30              		.cfi_offset 7, -8
+  31              		.cfi_offset 14, -4
+  32 0002 00AF     		add	r7, sp, #0
+  33              		.cfi_def_cfa_register 7
+  34              	.L2:
+  16:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  17:main.c        **** 
+  18:main.c        ****     /* CyGlobalIntEnable; */ /* Uncomment this line to enable global interrupts. */
+  19:main.c        ****     for(;;)
+  20:main.c        ****     {
+  21:main.c        ****         //CySysPmDeepSleep();
+  22:main.c        ****         /* Place your application code here. */
+  23:main.c        ****     }
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccxLPqUM.s 			page 2
+
+
+  35              		.loc 1 23 0 discriminator 1
+  36 0004 FEE7     		b	.L2
+  37              		.cfi_endproc
+  38              	.LFE37:
+  39              		.size	main, .-main
+  40 0006 C046     		.text
+  41              	.Letext0:
+  42              		.section	.debug_info,"",%progbits
+  43              	.Ldebug_info0:
+  44 0000 99000000 		.4byte	0x99
+  45 0004 0400     		.2byte	0x4
+  46 0006 00000000 		.4byte	.Ldebug_abbrev0
+  47 000a 04       		.byte	0x4
+  48 000b 01       		.uleb128 0x1
+  49 000c 0E000000 		.4byte	.LASF13
+  50 0010 01       		.byte	0x1
+  51 0011 A9000000 		.4byte	.LASF14
+  52 0015 14010000 		.4byte	.LASF15
+  53 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  54 001d 00000000 		.4byte	0
+  55 0021 00000000 		.4byte	.Ldebug_line0
+  56 0025 02       		.uleb128 0x2
+  57 0026 01       		.byte	0x1
+  58 0027 06       		.byte	0x6
+  59 0028 77010000 		.4byte	.LASF0
+  60 002c 02       		.uleb128 0x2
+  61 002d 01       		.byte	0x1
+  62 002e 08       		.byte	0x8
+  63 002f F1000000 		.4byte	.LASF1
+  64 0033 02       		.uleb128 0x2
+  65 0034 02       		.byte	0x2
+  66 0035 05       		.byte	0x5
+  67 0036 89010000 		.4byte	.LASF2
+  68 003a 02       		.uleb128 0x2
+  69 003b 02       		.byte	0x2
+  70 003c 07       		.byte	0x7
+  71 003d D9000000 		.4byte	.LASF3
+  72 0041 02       		.uleb128 0x2
+  73 0042 04       		.byte	0x4
+  74 0043 05       		.byte	0x5
+  75 0044 04010000 		.4byte	.LASF4
+  76 0048 02       		.uleb128 0x2
+  77 0049 04       		.byte	0x4
+  78 004a 07       		.byte	0x7
+  79 004b B0000000 		.4byte	.LASF5
+  80 004f 02       		.uleb128 0x2
+  81 0050 08       		.byte	0x8
+  82 0051 05       		.byte	0x5
+  83 0052 00000000 		.4byte	.LASF6
+  84 0056 02       		.uleb128 0x2
+  85 0057 08       		.byte	0x8
+  86 0058 07       		.byte	0x7
+  87 0059 C2000000 		.4byte	.LASF7
+  88 005d 03       		.uleb128 0x3
+  89 005e 04       		.byte	0x4
+  90 005f 05       		.byte	0x5
+  91 0060 696E7400 		.ascii	"int\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccxLPqUM.s 			page 3
+
+
+  92 0064 02       		.uleb128 0x2
+  93 0065 04       		.byte	0x4
+  94 0066 07       		.byte	0x7
+  95 0067 9C000000 		.4byte	.LASF8
+  96 006b 02       		.uleb128 0x2
+  97 006c 04       		.byte	0x4
+  98 006d 04       		.byte	0x4
+  99 006e 83010000 		.4byte	.LASF9
+ 100 0072 02       		.uleb128 0x2
+ 101 0073 08       		.byte	0x8
+ 102 0074 04       		.byte	0x4
+ 103 0075 0D010000 		.4byte	.LASF10
+ 104 0079 02       		.uleb128 0x2
+ 105 007a 01       		.byte	0x1
+ 106 007b 08       		.byte	0x8
+ 107 007c EC000000 		.4byte	.LASF11
+ 108 0080 02       		.uleb128 0x2
+ 109 0081 04       		.byte	0x4
+ 110 0082 07       		.byte	0x7
+ 111 0083 93010000 		.4byte	.LASF12
+ 112 0087 04       		.uleb128 0x4
+ 113 0088 FF000000 		.4byte	.LASF16
+ 114 008c 01       		.byte	0x1
+ 115 008d 0E       		.byte	0xe
+ 116 008e 5D000000 		.4byte	0x5d
+ 117 0092 00000000 		.4byte	.LFB37
+ 118 0096 06000000 		.4byte	.LFE37-.LFB37
+ 119 009a 01       		.uleb128 0x1
+ 120 009b 9C       		.byte	0x9c
+ 121 009c 00       		.byte	0
+ 122              		.section	.debug_abbrev,"",%progbits
+ 123              	.Ldebug_abbrev0:
+ 124 0000 01       		.uleb128 0x1
+ 125 0001 11       		.uleb128 0x11
+ 126 0002 01       		.byte	0x1
+ 127 0003 25       		.uleb128 0x25
+ 128 0004 0E       		.uleb128 0xe
+ 129 0005 13       		.uleb128 0x13
+ 130 0006 0B       		.uleb128 0xb
+ 131 0007 03       		.uleb128 0x3
+ 132 0008 0E       		.uleb128 0xe
+ 133 0009 1B       		.uleb128 0x1b
+ 134 000a 0E       		.uleb128 0xe
+ 135 000b 55       		.uleb128 0x55
+ 136 000c 17       		.uleb128 0x17
+ 137 000d 11       		.uleb128 0x11
+ 138 000e 01       		.uleb128 0x1
+ 139 000f 10       		.uleb128 0x10
+ 140 0010 17       		.uleb128 0x17
+ 141 0011 00       		.byte	0
+ 142 0012 00       		.byte	0
+ 143 0013 02       		.uleb128 0x2
+ 144 0014 24       		.uleb128 0x24
+ 145 0015 00       		.byte	0
+ 146 0016 0B       		.uleb128 0xb
+ 147 0017 0B       		.uleb128 0xb
+ 148 0018 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccxLPqUM.s 			page 4
+
+
+ 149 0019 0B       		.uleb128 0xb
+ 150 001a 03       		.uleb128 0x3
+ 151 001b 0E       		.uleb128 0xe
+ 152 001c 00       		.byte	0
+ 153 001d 00       		.byte	0
+ 154 001e 03       		.uleb128 0x3
+ 155 001f 24       		.uleb128 0x24
+ 156 0020 00       		.byte	0
+ 157 0021 0B       		.uleb128 0xb
+ 158 0022 0B       		.uleb128 0xb
+ 159 0023 3E       		.uleb128 0x3e
+ 160 0024 0B       		.uleb128 0xb
+ 161 0025 03       		.uleb128 0x3
+ 162 0026 08       		.uleb128 0x8
+ 163 0027 00       		.byte	0
+ 164 0028 00       		.byte	0
+ 165 0029 04       		.uleb128 0x4
+ 166 002a 2E       		.uleb128 0x2e
+ 167 002b 00       		.byte	0
+ 168 002c 3F       		.uleb128 0x3f
+ 169 002d 19       		.uleb128 0x19
+ 170 002e 03       		.uleb128 0x3
+ 171 002f 0E       		.uleb128 0xe
+ 172 0030 3A       		.uleb128 0x3a
+ 173 0031 0B       		.uleb128 0xb
+ 174 0032 3B       		.uleb128 0x3b
+ 175 0033 0B       		.uleb128 0xb
+ 176 0034 49       		.uleb128 0x49
+ 177 0035 13       		.uleb128 0x13
+ 178 0036 11       		.uleb128 0x11
+ 179 0037 01       		.uleb128 0x1
+ 180 0038 12       		.uleb128 0x12
+ 181 0039 06       		.uleb128 0x6
+ 182 003a 40       		.uleb128 0x40
+ 183 003b 18       		.uleb128 0x18
+ 184 003c 9742     		.uleb128 0x2117
+ 185 003e 19       		.uleb128 0x19
+ 186 003f 00       		.byte	0
+ 187 0040 00       		.byte	0
+ 188 0041 00       		.byte	0
+ 189              		.section	.debug_aranges,"",%progbits
+ 190 0000 1C000000 		.4byte	0x1c
+ 191 0004 0200     		.2byte	0x2
+ 192 0006 00000000 		.4byte	.Ldebug_info0
+ 193 000a 04       		.byte	0x4
+ 194 000b 00       		.byte	0
+ 195 000c 0000     		.2byte	0
+ 196 000e 0000     		.2byte	0
+ 197 0010 00000000 		.4byte	.LFB37
+ 198 0014 06000000 		.4byte	.LFE37-.LFB37
+ 199 0018 00000000 		.4byte	0
+ 200 001c 00000000 		.4byte	0
+ 201              		.section	.debug_ranges,"",%progbits
+ 202              	.Ldebug_ranges0:
+ 203 0000 00000000 		.4byte	.LFB37
+ 204 0004 06000000 		.4byte	.LFE37
+ 205 0008 00000000 		.4byte	0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccxLPqUM.s 			page 5
+
+
+ 206 000c 00000000 		.4byte	0
+ 207              		.section	.debug_line,"",%progbits
+ 208              	.Ldebug_line0:
+ 209 0000 37000000 		.section	.debug_str,"MS",%progbits,1
+ 209      02001D00 
+ 209      00000201 
+ 209      FB0E0D00 
+ 209      01010101 
+ 210              	.LASF6:
+ 211 0000 6C6F6E67 		.ascii	"long long int\000"
+ 211      206C6F6E 
+ 211      6720696E 
+ 211      7400
+ 212              	.LASF13:
+ 213 000e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 213      4320342E 
+ 213      392E3320 
+ 213      32303135 
+ 213      30333033 
+ 214 0041 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 214      20726576 
+ 214      6973696F 
+ 214      6E203232 
+ 214      31323230 
+ 215 0074 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 215      66756E63 
+ 215      74696F6E 
+ 215      2D736563 
+ 215      74696F6E 
+ 216              	.LASF8:
+ 217 009c 756E7369 		.ascii	"unsigned int\000"
+ 217      676E6564 
+ 217      20696E74 
+ 217      00
+ 218              	.LASF14:
+ 219 00a9 6D61696E 		.ascii	"main.c\000"
+ 219      2E6300
+ 220              	.LASF5:
+ 221 00b0 6C6F6E67 		.ascii	"long unsigned int\000"
+ 221      20756E73 
+ 221      69676E65 
+ 221      6420696E 
+ 221      7400
+ 222              	.LASF7:
+ 223 00c2 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 223      206C6F6E 
+ 223      6720756E 
+ 223      7369676E 
+ 223      65642069 
+ 224              	.LASF3:
+ 225 00d9 73686F72 		.ascii	"short unsigned int\000"
+ 225      7420756E 
+ 225      7369676E 
+ 225      65642069 
+ 225      6E7400
+ 226              	.LASF11:
+ 227 00ec 63686172 		.ascii	"char\000"
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccxLPqUM.s 			page 6
+
+
+ 227      00
+ 228              	.LASF1:
+ 229 00f1 756E7369 		.ascii	"unsigned char\000"
+ 229      676E6564 
+ 229      20636861 
+ 229      7200
+ 230              	.LASF16:
+ 231 00ff 6D61696E 		.ascii	"main\000"
+ 231      00
+ 232              	.LASF4:
+ 233 0104 6C6F6E67 		.ascii	"long int\000"
+ 233      20696E74 
+ 233      00
+ 234              	.LASF10:
+ 235 010d 646F7562 		.ascii	"double\000"
+ 235      6C6500
+ 236              	.LASF15:
+ 237 0114 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\bleapp-master\\b"
+ 237      73657273 
+ 237      5C536172 
+ 237      61685C44 
+ 237      6F63756D 
+ 238 0141 6C656170 		.ascii	"leapp-master\\PSoC_Creator\\capsenseled\\SleepMode."
+ 238      702D6D61 
+ 238      73746572 
+ 238      5C50536F 
+ 238      435F4372 
+ 239 0171 63796473 		.ascii	"cydsn\000"
+ 239      6E00
+ 240              	.LASF0:
+ 241 0177 7369676E 		.ascii	"signed char\000"
+ 241      65642063 
+ 241      68617200 
+ 242              	.LASF9:
+ 243 0183 666C6F61 		.ascii	"float\000"
+ 243      7400
+ 244              	.LASF2:
+ 245 0189 73686F72 		.ascii	"short int\000"
+ 245      7420696E 
+ 245      7400
+ 246              	.LASF12:
+ 247 0193 73697A65 		.ascii	"sizetype\000"
+ 247      74797065 
+ 247      00
+ 248              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

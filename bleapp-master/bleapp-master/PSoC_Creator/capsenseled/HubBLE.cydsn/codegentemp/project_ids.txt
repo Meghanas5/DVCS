@@ -1,0 +1,9 @@
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\capsenseled.cyprj|234d47f3-7268-4218-9e44-a8340972b825
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e0ef4644-8431-463f-9868-22ac650228bc
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|7c37f0b1-84ef-4e69-8747-3c0794fb7adc
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|54a1cb96-d796-4272-8466-dc399fe14d8f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|179404dc-1003-4779-b08b-cde54b58cc56
+C:\Users\Sarah\Documents\DVCS\Workspace01\TempSensor.cydsn\TempSensor.cyprj|e5d52b35-9531-48ed-9c47-5359840c9288
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\BLE_4_2_Dongle_CySmart_256K01.cydsn\BLE_4_2_Dongle_CySmart_256K01.cyprj|71666451-a435-4320-a097-a02448477e88
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\VentBLE.cydsn\VentBLE.cyprj|c7d8e01c-f5e7-45a1-a737-85c573f11b50
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\HubBLE.cydsn\HubBLE.cyprj|89bfbad4-05ef-4ca8-9c12-441e0b39e834

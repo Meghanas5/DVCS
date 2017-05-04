@@ -3,12 +3,20 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="capsenseled" persistent="capsenseled.cywrk" platform="NOT_USED">
-<current_project name=".\capsenseled.cydsn\capsenseled.cyprj" />
+<current_project name=".\Proc_VentBLE.cydsn\Proc_VentBLE.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
 <v>.\capsenseled.cydsn\capsenseled.cyprj</v>
 <v>..\..\..\..\Workspace01\TempSensor.cydsn\TempSensor.cyprj</v>
+<v>.\BLE_4_2_Dongle_CySmart_256K01.cydsn\BLE_4_2_Dongle_CySmart_256K01.cyprj</v>
+<v>.\VentBLE.cydsn\VentBLE.cyprj</v>
+<v>.\HubBLE.cydsn\HubBLE.cyprj</v>
+<v>.\Proc_VentBLE.cydsn\Proc_VentBLE.cyprj</v>
+<v>.\Psoc_HubBle.cydsn\Psoc_HubBle.cyprj</v>
+<v>.\capsenseled_noTemp.cydsn\capsenseled_noTemp.cyprj</v>
+<v>.\ButtonTest.cydsn\ButtonTest.cyprj</v>
+<v>.\SleepMode.cydsn\SleepMode.cyprj</v>
 </projects>
 <workspace_id v="16282b18-2515-4fdf-890a-022a58413a5c" />
 <WriteAppVersionLastSavedWith v="4.0.0.432" />

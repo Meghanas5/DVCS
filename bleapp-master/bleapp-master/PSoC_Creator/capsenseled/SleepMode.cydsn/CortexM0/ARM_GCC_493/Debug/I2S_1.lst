@@ -1,0 +1,1564 @@
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"I2S_1.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.global	I2S_1_initVar
+  18              		.bss
+  19              		.type	I2S_1_initVar, %object
+  20              		.size	I2S_1_initVar, 1
+  21              	I2S_1_initVar:
+  22 0000 00       		.space	1
+  23              		.section	.text.I2S_1_Enable,"ax",%progbits
+  24              		.align	2
+  25              		.global	I2S_1_Enable
+  26              		.code	16
+  27              		.thumb_func
+  28              		.type	I2S_1_Enable, %function
+  29              	I2S_1_Enable:
+  30              	.LFB2:
+  31              		.file 1 "Generated_Source\\PSoC4\\I2S_1.c"
+   1:Generated_Source\PSoC4/I2S_1.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/I2S_1.c **** * File Name: I2S_1.c
+   3:Generated_Source\PSoC4/I2S_1.c **** * Version 2.70
+   4:Generated_Source\PSoC4/I2S_1.c **** *
+   5:Generated_Source\PSoC4/I2S_1.c **** * Description:
+   6:Generated_Source\PSoC4/I2S_1.c **** *  This file contains the setup, control and status commands for the I2S
+   7:Generated_Source\PSoC4/I2S_1.c **** *  component.
+   8:Generated_Source\PSoC4/I2S_1.c **** *
+   9:Generated_Source\PSoC4/I2S_1.c **** * Note:
+  10:Generated_Source\PSoC4/I2S_1.c **** *
+  11:Generated_Source\PSoC4/I2S_1.c **** ********************************************************************************
+  12:Generated_Source\PSoC4/I2S_1.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC4/I2S_1.c **** * You may use this file only in accordance with the license, terms, conditions,
+  14:Generated_Source\PSoC4/I2S_1.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  15:Generated_Source\PSoC4/I2S_1.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC4/I2S_1.c **** *******************************************************************************/
+  17:Generated_Source\PSoC4/I2S_1.c **** 
+  18:Generated_Source\PSoC4/I2S_1.c **** #include "CyLib.h"
+  19:Generated_Source\PSoC4/I2S_1.c **** #include "I2S_1.h"
+  20:Generated_Source\PSoC4/I2S_1.c **** 
+  21:Generated_Source\PSoC4/I2S_1.c **** uint8 I2S_1_initVar = 0u;
+  22:Generated_Source\PSoC4/I2S_1.c **** 
+  23:Generated_Source\PSoC4/I2S_1.c **** 
+  24:Generated_Source\PSoC4/I2S_1.c **** /*******************************************************************************
+  25:Generated_Source\PSoC4/I2S_1.c **** * Function Name: I2S_1_Enable
+  26:Generated_Source\PSoC4/I2S_1.c **** ********************************************************************************
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 2
+
+
+  27:Generated_Source\PSoC4/I2S_1.c **** *
+  28:Generated_Source\PSoC4/I2S_1.c **** * Summary:
+  29:Generated_Source\PSoC4/I2S_1.c **** *  Enables I2S interface. Starts the generation of the sck and ws outputs.
+  30:Generated_Source\PSoC4/I2S_1.c **** *  The Tx and Rx directions remain disabled. It is not necessary to call
+  31:Generated_Source\PSoC4/I2S_1.c **** *  I2S_Enable() because the I2S_Start() routine calls this function, which is
+  32:Generated_Source\PSoC4/I2S_1.c **** *  the preferred method to begin component operation.
+  33:Generated_Source\PSoC4/I2S_1.c **** *
+  34:Generated_Source\PSoC4/I2S_1.c **** * Parameters:
+  35:Generated_Source\PSoC4/I2S_1.c **** *  None.
+  36:Generated_Source\PSoC4/I2S_1.c **** *
+  37:Generated_Source\PSoC4/I2S_1.c **** * Return:
+  38:Generated_Source\PSoC4/I2S_1.c **** *  None.
+  39:Generated_Source\PSoC4/I2S_1.c **** *
+  40:Generated_Source\PSoC4/I2S_1.c **** *******************************************************************************/
+  41:Generated_Source\PSoC4/I2S_1.c **** void I2S_1_Enable(void) 
+  42:Generated_Source\PSoC4/I2S_1.c **** {
+  32              		.loc 1 42 0
+  33              		.cfi_startproc
+  34 0000 90B5     		push	{r4, r7, lr}
+  35              		.cfi_def_cfa_offset 12
+  36              		.cfi_offset 4, -12
+  37              		.cfi_offset 7, -8
+  38              		.cfi_offset 14, -4
+  39 0002 83B0     		sub	sp, sp, #12
+  40              		.cfi_def_cfa_offset 24
+  41 0004 00AF     		add	r7, sp, #0
+  42              		.cfi_def_cfa_register 7
+  43:Generated_Source\PSoC4/I2S_1.c ****     uint8 enableInterrupts;
+  44:Generated_Source\PSoC4/I2S_1.c **** 
+  45:Generated_Source\PSoC4/I2S_1.c ****     enableInterrupts = CyEnterCriticalSection();
+  43              		.loc 1 45 0
+  44 0006 FC1D     		add	r4, r7, #7
+  45 0008 FFF7FEFF 		bl	CyEnterCriticalSection
+  46 000c 031C     		mov	r3, r0
+  47 000e 2370     		strb	r3, [r4]
+  46:Generated_Source\PSoC4/I2S_1.c ****     I2S_1_AUX_CONTROL_REG |= I2S_1_CNT_START;
+  48              		.loc 1 46 0
+  49 0010 0B4A     		ldr	r2, .L2
+  50 0012 0B4B     		ldr	r3, .L2
+  51 0014 1B78     		ldrb	r3, [r3]
+  52 0016 DBB2     		uxtb	r3, r3
+  53 0018 2021     		mov	r1, #32
+  54 001a 0B43     		orr	r3, r1
+  55 001c DBB2     		uxtb	r3, r3
+  56 001e 1370     		strb	r3, [r2]
+  47:Generated_Source\PSoC4/I2S_1.c ****     CyExitCriticalSection(enableInterrupts);
+  57              		.loc 1 47 0
+  58 0020 FB1D     		add	r3, r7, #7
+  59 0022 1B78     		ldrb	r3, [r3]
+  60 0024 181C     		mov	r0, r3
+  61 0026 FFF7FEFF 		bl	CyExitCriticalSection
+  48:Generated_Source\PSoC4/I2S_1.c **** 
+  49:Generated_Source\PSoC4/I2S_1.c ****     I2S_1_CONTROL_REG |= I2S_1_EN;
+  62              		.loc 1 49 0
+  63 002a 064A     		ldr	r2, .L2+4
+  64 002c 054B     		ldr	r3, .L2+4
+  65 002e 1B78     		ldrb	r3, [r3]
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 3
+
+
+  66 0030 DBB2     		uxtb	r3, r3
+  67 0032 0421     		mov	r1, #4
+  68 0034 0B43     		orr	r3, r1
+  69 0036 DBB2     		uxtb	r3, r3
+  70 0038 1370     		strb	r3, [r2]
+  50:Generated_Source\PSoC4/I2S_1.c **** }
+  71              		.loc 1 50 0
+  72 003a BD46     		mov	sp, r7
+  73 003c 03B0     		add	sp, sp, #12
+  74              		@ sp needed
+  75 003e 90BD     		pop	{r4, r7, pc}
+  76              	.L3:
+  77              		.align	2
+  78              	.L2:
+  79 0040 90000F40 		.word	1074725008
+  80 0044 71000F40 		.word	1074724977
+  81              		.cfi_endproc
+  82              	.LFE2:
+  83              		.size	I2S_1_Enable, .-I2S_1_Enable
+  84              		.section	.text.I2S_1_Init,"ax",%progbits
+  85              		.align	2
+  86              		.global	I2S_1_Init
+  87              		.code	16
+  88              		.thumb_func
+  89              		.type	I2S_1_Init, %function
+  90              	I2S_1_Init:
+  91              	.LFB3:
+  51:Generated_Source\PSoC4/I2S_1.c **** 
+  52:Generated_Source\PSoC4/I2S_1.c **** 
+  53:Generated_Source\PSoC4/I2S_1.c **** /*******************************************************************************
+  54:Generated_Source\PSoC4/I2S_1.c **** * Function Name: I2S_1_Init
+  55:Generated_Source\PSoC4/I2S_1.c **** ********************************************************************************
+  56:Generated_Source\PSoC4/I2S_1.c **** *
+  57:Generated_Source\PSoC4/I2S_1.c **** * Summary:
+  58:Generated_Source\PSoC4/I2S_1.c **** *  Initializes or restores default I2S configuration provided with customizer.
+  59:Generated_Source\PSoC4/I2S_1.c **** *  It is not necessary to call I2S_Init() because the I2S_Start() routine calls
+  60:Generated_Source\PSoC4/I2S_1.c **** *  this function, which is the preferred method to begin component operation.
+  61:Generated_Source\PSoC4/I2S_1.c **** *
+  62:Generated_Source\PSoC4/I2S_1.c **** * Parameters:
+  63:Generated_Source\PSoC4/I2S_1.c **** *  None.
+  64:Generated_Source\PSoC4/I2S_1.c **** *
+  65:Generated_Source\PSoC4/I2S_1.c **** * Return:
+  66:Generated_Source\PSoC4/I2S_1.c **** *  None.
+  67:Generated_Source\PSoC4/I2S_1.c **** *
+  68:Generated_Source\PSoC4/I2S_1.c **** *******************************************************************************/
+  69:Generated_Source\PSoC4/I2S_1.c **** void I2S_1_Init(void) 
+  70:Generated_Source\PSoC4/I2S_1.c **** {
+  92              		.loc 1 70 0
+  93              		.cfi_startproc
+  94 0000 80B5     		push	{r7, lr}
+  95              		.cfi_def_cfa_offset 8
+  96              		.cfi_offset 7, -8
+  97              		.cfi_offset 14, -4
+  98 0002 00AF     		add	r7, sp, #0
+  99              		.cfi_def_cfa_register 7
+  71:Generated_Source\PSoC4/I2S_1.c ****     #if (I2S_1_CLIP_DETECT_ENABLE)
+  72:Generated_Source\PSoC4/I2S_1.c ****         static const uint8 CYCODE I2S_1_posThresholds[] = {0u};
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 4
+
+
+  73:Generated_Source\PSoC4/I2S_1.c ****         static const int8  CYCODE I2S_1_negThresholds[] = {-1};
+  74:Generated_Source\PSoC4/I2S_1.c ****     #endif /* I2S_1_CLIP_DETECT_ENABLE */
+  75:Generated_Source\PSoC4/I2S_1.c **** 
+  76:Generated_Source\PSoC4/I2S_1.c ****     #if (I2S_1_DYNAMIC_BIT_RESOLUTION)
+  77:Generated_Source\PSoC4/I2S_1.c ****         (void)I2S_1_SetDataBits(I2S_1_DATA_BITS);
+  78:Generated_Source\PSoC4/I2S_1.c ****     #endif /* I2S_1_DYNAMIC_BIT_RESOLUTION */
+  79:Generated_Source\PSoC4/I2S_1.c **** 
+  80:Generated_Source\PSoC4/I2S_1.c ****     /* Initialize Tx interrupt source selected in customizer */
+  81:Generated_Source\PSoC4/I2S_1.c ****     #if (I2S_1_TX_DIRECTION_ENABLE)
+  82:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_SET_TX_INT_MASK(CH0, I2S_1_TX_INT_SOURCE);
+  83:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_TX_STEREO_1_PRESENT)
+  84:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_TX_INT_MASK(CH1, I2S_1_TX_INT_SOURCE);
+  85:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STEREO_1_PRESENT */
+  86:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_TX_STEREO_2_PRESENT)
+  87:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_TX_INT_MASK(CH2, I2S_1_TX_INT_SOURCE);
+  88:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STEREO_2_PRESENT */
+  89:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_TX_STEREO_3_PRESENT)
+  90:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_TX_INT_MASK(CH3, I2S_1_TX_INT_SOURCE);
+  91:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STEREO_3_PRESENT */
+  92:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_TX_STEREO_4_PRESENT)
+  93:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_TX_INT_MASK(CH4, I2S_1_TX_INT_SOURCE);
+  94:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STEREO_4_PRESENT */
+  95:Generated_Source\PSoC4/I2S_1.c ****     #endif /* (I2S_1_TX_DIRECTION_ENABLE) */
+  96:Generated_Source\PSoC4/I2S_1.c ****     
+  97:Generated_Source\PSoC4/I2S_1.c ****     /* Initialize Rx interrupt source and clipping thresholds selected in customizer */
+  98:Generated_Source\PSoC4/I2S_1.c ****     #if (I2S_1_RX_DIRECTION_ENABLE)
+  99:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_SET_RX_INT_MASK(CH0, I2S_1_RX_INT_SOURCE);
+ 100              		.loc 1 99 0
+ 101 0004 074A     		ldr	r2, .L5
+ 102 0006 074B     		ldr	r3, .L5
+ 103 0008 1B78     		ldrb	r3, [r3]
+ 104 000a DBB2     		uxtb	r3, r3
+ 105 000c 0721     		mov	r1, #7
+ 106 000e 8B43     		bic	r3, r1
+ 107 0010 DBB2     		uxtb	r3, r3
+ 108 0012 1370     		strb	r3, [r2]
+ 109 0014 034B     		ldr	r3, .L5
+ 110 0016 034A     		ldr	r2, .L5
+ 111 0018 1278     		ldrb	r2, [r2]
+ 112 001a D2B2     		uxtb	r2, r2
+ 113 001c 1A70     		strb	r2, [r3]
+ 100:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_CLIP_DETECT_ENABLE)
+ 101:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_POS_THRESHOLD(CH0, I2S_1_posThresholds[I2S_1_STEREO_0]);
+ 102:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_NEG_THRESHOLD(CH0, I2S_1_negThresholds[I2S_1_STEREO_0]);
+ 103:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_CLIP_DETECT_ENABLE */
+ 104:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_RX_STEREO_1_PRESENT)
+ 105:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_RX_INT_MASK(CH1, I2S_1_RX_INT_SOURCE);
+ 106:Generated_Source\PSoC4/I2S_1.c ****             #if (I2S_1_CLIP_DETECT_ENABLE)
+ 107:Generated_Source\PSoC4/I2S_1.c ****                 I2S_1_SET_POS_THRESHOLD(CH1, I2S_1_posThresholds[I2S_1_STEREO_1]);
+ 108:Generated_Source\PSoC4/I2S_1.c ****                 I2S_1_SET_NEG_THRESHOLD(CH1, I2S_1_negThresholds[I2S_1_STEREO_1]);
+ 109:Generated_Source\PSoC4/I2S_1.c ****             #endif /* I2S_1_CLIP_DETECT_ENABLE */
+ 110:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STEREO_1_PRESENT */
+ 111:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_RX_STEREO_2_PRESENT)
+ 112:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_RX_INT_MASK(CH2, I2S_1_RX_INT_SOURCE);
+ 113:Generated_Source\PSoC4/I2S_1.c ****             #if (I2S_1_CLIP_DETECT_ENABLE)
+ 114:Generated_Source\PSoC4/I2S_1.c ****                 I2S_1_SET_POS_THRESHOLD(CH2, I2S_1_posThresholds[I2S_1_STEREO_2]);
+ 115:Generated_Source\PSoC4/I2S_1.c ****                 I2S_1_SET_NEG_THRESHOLD(CH2, I2S_1_negThresholds[I2S_1_STEREO_2]);
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 5
+
+
+ 116:Generated_Source\PSoC4/I2S_1.c ****             #endif /* I2S_1_CLIP_DETECT_ENABLE */
+ 117:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STEREO_2_PRESENT */
+ 118:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_RX_STEREO_3_PRESENT)
+ 119:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_RX_INT_MASK(CH3, I2S_1_RX_INT_SOURCE);
+ 120:Generated_Source\PSoC4/I2S_1.c ****             #if (I2S_1_CLIP_DETECT_ENABLE)
+ 121:Generated_Source\PSoC4/I2S_1.c ****                 I2S_1_SET_POS_THRESHOLD(CH3, I2S_1_posThresholds[I2S_1_STEREO_3]);
+ 122:Generated_Source\PSoC4/I2S_1.c ****                 I2S_1_SET_NEG_THRESHOLD(CH3, I2S_1_negThresholds[I2S_1_STEREO_3]);
+ 123:Generated_Source\PSoC4/I2S_1.c ****             #endif /* I2S_1_CLIP_DETECT_ENABLE */
+ 124:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STEREO_3_PRESENT */
+ 125:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_RX_STEREO_4_PRESENT)
+ 126:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_SET_RX_INT_MASK(CH4, I2S_1_RX_INT_SOURCE);
+ 127:Generated_Source\PSoC4/I2S_1.c ****             #if (I2S_1_CLIP_DETECT_ENABLE)
+ 128:Generated_Source\PSoC4/I2S_1.c ****                 I2S_1_SET_POS_THRESHOLD(CH4, I2S_1_posThresholds[I2S_1_STEREO_4]);
+ 129:Generated_Source\PSoC4/I2S_1.c ****                 I2S_1_SET_NEG_THRESHOLD(CH4, I2S_1_negThresholds[I2S_1_STEREO_4]);
+ 130:Generated_Source\PSoC4/I2S_1.c ****             #endif /* I2S_1_CLIP_DETECT_ENABLE */
+ 131:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STEREO_4_PRESENT */
+ 132:Generated_Source\PSoC4/I2S_1.c ****     #endif /* (I2S_1_RX_DIRECTION_ENABLE) */
+ 133:Generated_Source\PSoC4/I2S_1.c **** }
+ 114              		.loc 1 133 0
+ 115 001e BD46     		mov	sp, r7
+ 116              		@ sp needed
+ 117 0020 80BD     		pop	{r7, pc}
+ 118              	.L6:
+ 119 0022 C046     		.align	2
+ 120              	.L5:
+ 121 0024 81000F40 		.word	1074724993
+ 122              		.cfi_endproc
+ 123              	.LFE3:
+ 124              		.size	I2S_1_Init, .-I2S_1_Init
+ 125              		.section	.text.I2S_1_Start,"ax",%progbits
+ 126              		.align	2
+ 127              		.global	I2S_1_Start
+ 128              		.code	16
+ 129              		.thumb_func
+ 130              		.type	I2S_1_Start, %function
+ 131              	I2S_1_Start:
+ 132              	.LFB4:
+ 134:Generated_Source\PSoC4/I2S_1.c **** 
+ 135:Generated_Source\PSoC4/I2S_1.c **** 
+ 136:Generated_Source\PSoC4/I2S_1.c **** /*******************************************************************************
+ 137:Generated_Source\PSoC4/I2S_1.c **** * Function Name: I2S_1_Start
+ 138:Generated_Source\PSoC4/I2S_1.c **** ********************************************************************************
+ 139:Generated_Source\PSoC4/I2S_1.c **** *
+ 140:Generated_Source\PSoC4/I2S_1.c **** * Summary:
+ 141:Generated_Source\PSoC4/I2S_1.c **** *  Starts the I2S interface. Starts the generation of the sck and ws outputs.
+ 142:Generated_Source\PSoC4/I2S_1.c **** *  The Tx and Rx directions remain disabled.
+ 143:Generated_Source\PSoC4/I2S_1.c **** *
+ 144:Generated_Source\PSoC4/I2S_1.c **** * Parameters:
+ 145:Generated_Source\PSoC4/I2S_1.c **** *  None.
+ 146:Generated_Source\PSoC4/I2S_1.c **** *
+ 147:Generated_Source\PSoC4/I2S_1.c **** * Return:
+ 148:Generated_Source\PSoC4/I2S_1.c **** *  None.
+ 149:Generated_Source\PSoC4/I2S_1.c **** *
+ 150:Generated_Source\PSoC4/I2S_1.c **** * Global Variables:
+ 151:Generated_Source\PSoC4/I2S_1.c **** *  I2S_1_initVar - used to check initial configuration, modified on
+ 152:Generated_Source\PSoC4/I2S_1.c **** *  first function call.
+ 153:Generated_Source\PSoC4/I2S_1.c **** *
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 6
+
+
+ 154:Generated_Source\PSoC4/I2S_1.c **** * Reentrant:
+ 155:Generated_Source\PSoC4/I2S_1.c **** *  No.
+ 156:Generated_Source\PSoC4/I2S_1.c **** *
+ 157:Generated_Source\PSoC4/I2S_1.c **** *******************************************************************************/
+ 158:Generated_Source\PSoC4/I2S_1.c **** void I2S_1_Start(void) 
+ 159:Generated_Source\PSoC4/I2S_1.c **** {
+ 133              		.loc 1 159 0
+ 134              		.cfi_startproc
+ 135 0000 80B5     		push	{r7, lr}
+ 136              		.cfi_def_cfa_offset 8
+ 137              		.cfi_offset 7, -8
+ 138              		.cfi_offset 14, -4
+ 139 0002 00AF     		add	r7, sp, #0
+ 140              		.cfi_def_cfa_register 7
+ 160:Generated_Source\PSoC4/I2S_1.c ****     if(0u == I2S_1_initVar)
+ 141              		.loc 1 160 0
+ 142 0004 064B     		ldr	r3, .L9
+ 143 0006 1B78     		ldrb	r3, [r3]
+ 144 0008 002B     		cmp	r3, #0
+ 145 000a 04D1     		bne	.L8
+ 161:Generated_Source\PSoC4/I2S_1.c ****     {
+ 162:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_Init();
+ 146              		.loc 1 162 0
+ 147 000c FFF7FEFF 		bl	I2S_1_Init
+ 163:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_initVar = 1u;
+ 148              		.loc 1 163 0
+ 149 0010 034B     		ldr	r3, .L9
+ 150 0012 0122     		mov	r2, #1
+ 151 0014 1A70     		strb	r2, [r3]
+ 152              	.L8:
+ 164:Generated_Source\PSoC4/I2S_1.c ****     }
+ 165:Generated_Source\PSoC4/I2S_1.c **** 
+ 166:Generated_Source\PSoC4/I2S_1.c ****     I2S_1_Enable();
+ 153              		.loc 1 166 0
+ 154 0016 FFF7FEFF 		bl	I2S_1_Enable
+ 167:Generated_Source\PSoC4/I2S_1.c **** }
+ 155              		.loc 1 167 0
+ 156 001a BD46     		mov	sp, r7
+ 157              		@ sp needed
+ 158 001c 80BD     		pop	{r7, pc}
+ 159              	.L10:
+ 160 001e C046     		.align	2
+ 161              	.L9:
+ 162 0020 00000000 		.word	I2S_1_initVar
+ 163              		.cfi_endproc
+ 164              	.LFE4:
+ 165              		.size	I2S_1_Start, .-I2S_1_Start
+ 166              		.section	.text.I2S_1_Stop,"ax",%progbits
+ 167              		.align	2
+ 168              		.global	I2S_1_Stop
+ 169              		.code	16
+ 170              		.thumb_func
+ 171              		.type	I2S_1_Stop, %function
+ 172              	I2S_1_Stop:
+ 173              	.LFB5:
+ 168:Generated_Source\PSoC4/I2S_1.c **** 
+ 169:Generated_Source\PSoC4/I2S_1.c **** 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 7
+
+
+ 170:Generated_Source\PSoC4/I2S_1.c **** /*******************************************************************************
+ 171:Generated_Source\PSoC4/I2S_1.c **** * Function Name: I2S_1_Stop
+ 172:Generated_Source\PSoC4/I2S_1.c **** ********************************************************************************
+ 173:Generated_Source\PSoC4/I2S_1.c **** *
+ 174:Generated_Source\PSoC4/I2S_1.c **** * Summary:
+ 175:Generated_Source\PSoC4/I2S_1.c **** *  Disables the I2S interface. The sck and ws outputs are set to 0. The Tx and
+ 176:Generated_Source\PSoC4/I2S_1.c **** *  Rx directions are disabled and their FIFOs are cleared.
+ 177:Generated_Source\PSoC4/I2S_1.c **** *
+ 178:Generated_Source\PSoC4/I2S_1.c **** * Parameters:
+ 179:Generated_Source\PSoC4/I2S_1.c **** *  None.
+ 180:Generated_Source\PSoC4/I2S_1.c **** *
+ 181:Generated_Source\PSoC4/I2S_1.c **** * Return:
+ 182:Generated_Source\PSoC4/I2S_1.c **** *  None.
+ 183:Generated_Source\PSoC4/I2S_1.c **** *
+ 184:Generated_Source\PSoC4/I2S_1.c **** *******************************************************************************/
+ 185:Generated_Source\PSoC4/I2S_1.c **** void I2S_1_Stop(void) 
+ 186:Generated_Source\PSoC4/I2S_1.c **** {
+ 174              		.loc 1 186 0
+ 175              		.cfi_startproc
+ 176 0000 90B5     		push	{r4, r7, lr}
+ 177              		.cfi_def_cfa_offset 12
+ 178              		.cfi_offset 4, -12
+ 179              		.cfi_offset 7, -8
+ 180              		.cfi_offset 14, -4
+ 181 0002 83B0     		sub	sp, sp, #12
+ 182              		.cfi_def_cfa_offset 24
+ 183 0004 00AF     		add	r7, sp, #0
+ 184              		.cfi_def_cfa_register 7
+ 187:Generated_Source\PSoC4/I2S_1.c ****     uint8 enableInterrupts;
+ 188:Generated_Source\PSoC4/I2S_1.c **** 
+ 189:Generated_Source\PSoC4/I2S_1.c ****     I2S_1_CONTROL_REG &= (uint8)~I2S_1_EN;
+ 185              		.loc 1 189 0
+ 186 0006 124A     		ldr	r2, .L12
+ 187 0008 114B     		ldr	r3, .L12
+ 188 000a 1B78     		ldrb	r3, [r3]
+ 189 000c DBB2     		uxtb	r3, r3
+ 190 000e 0421     		mov	r1, #4
+ 191 0010 8B43     		bic	r3, r1
+ 192 0012 DBB2     		uxtb	r3, r3
+ 193 0014 1370     		strb	r3, [r2]
+ 190:Generated_Source\PSoC4/I2S_1.c **** 
+ 191:Generated_Source\PSoC4/I2S_1.c ****     enableInterrupts = CyEnterCriticalSection();
+ 194              		.loc 1 191 0
+ 195 0016 FC1D     		add	r4, r7, #7
+ 196 0018 FFF7FEFF 		bl	CyEnterCriticalSection
+ 197 001c 031C     		mov	r3, r0
+ 198 001e 2370     		strb	r3, [r4]
+ 192:Generated_Source\PSoC4/I2S_1.c ****     I2S_1_AUX_CONTROL_REG &= (uint8)~I2S_1_CNT_START;
+ 199              		.loc 1 192 0
+ 200 0020 0C4A     		ldr	r2, .L12+4
+ 201 0022 0C4B     		ldr	r3, .L12+4
+ 202 0024 1B78     		ldrb	r3, [r3]
+ 203 0026 DBB2     		uxtb	r3, r3
+ 204 0028 2021     		mov	r1, #32
+ 205 002a 8B43     		bic	r3, r1
+ 206 002c DBB2     		uxtb	r3, r3
+ 207 002e 1370     		strb	r3, [r2]
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 8
+
+
+ 193:Generated_Source\PSoC4/I2S_1.c ****     CyExitCriticalSection(enableInterrupts);
+ 208              		.loc 1 193 0
+ 209 0030 FB1D     		add	r3, r7, #7
+ 210 0032 1B78     		ldrb	r3, [r3]
+ 211 0034 181C     		mov	r0, r3
+ 212 0036 FFF7FEFF 		bl	CyExitCriticalSection
+ 194:Generated_Source\PSoC4/I2S_1.c **** 
+ 195:Generated_Source\PSoC4/I2S_1.c ****     /* Clear counter value to force reload when component is enabled */
+ 196:Generated_Source\PSoC4/I2S_1.c ****     I2S_1_CNT_COUNT_REG = 0u;
+ 213              		.loc 1 196 0
+ 214 003a 074B     		ldr	r3, .L12+8
+ 215 003c 0022     		mov	r2, #0
+ 216 003e 1A70     		strb	r2, [r3]
+ 197:Generated_Source\PSoC4/I2S_1.c **** 
+ 198:Generated_Source\PSoC4/I2S_1.c ****     #if (I2S_1_TX_DIRECTION_ENABLE)
+ 199:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_DisableTx();
+ 200:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_ClearTxFIFO();
+ 201:Generated_Source\PSoC4/I2S_1.c ****     #endif /* (I2S_1_TX_DIRECTION_ENABLE) */
+ 202:Generated_Source\PSoC4/I2S_1.c ****     
+ 203:Generated_Source\PSoC4/I2S_1.c ****     #if (I2S_1_RX_DIRECTION_ENABLE)
+ 204:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_DisableRx();
+ 217              		.loc 1 204 0
+ 218 0040 FFF7FEFF 		bl	I2S_1_DisableRx
+ 205:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_ClearRxFIFO();
+ 219              		.loc 1 205 0
+ 220 0044 FFF7FEFF 		bl	I2S_1_ClearRxFIFO
+ 206:Generated_Source\PSoC4/I2S_1.c ****     #endif /* (I2S_1_RX_DIRECTION_ENABLE) */
+ 207:Generated_Source\PSoC4/I2S_1.c **** }
+ 221              		.loc 1 207 0
+ 222 0048 BD46     		mov	sp, r7
+ 223 004a 03B0     		add	sp, sp, #12
+ 224              		@ sp needed
+ 225 004c 90BD     		pop	{r4, r7, pc}
+ 226              	.L13:
+ 227 004e C046     		.align	2
+ 228              	.L12:
+ 229 0050 71000F40 		.word	1074724977
+ 230 0054 90000F40 		.word	1074725008
+ 231 0058 70000F40 		.word	1074724976
+ 232              		.cfi_endproc
+ 233              	.LFE5:
+ 234              		.size	I2S_1_Stop, .-I2S_1_Stop
+ 235              		.section	.text.I2S_1_EnableRx,"ax",%progbits
+ 236              		.align	2
+ 237              		.global	I2S_1_EnableRx
+ 238              		.code	16
+ 239              		.thumb_func
+ 240              		.type	I2S_1_EnableRx, %function
+ 241              	I2S_1_EnableRx:
+ 242              	.LFB6:
+ 208:Generated_Source\PSoC4/I2S_1.c **** 
+ 209:Generated_Source\PSoC4/I2S_1.c **** #if (I2S_1_DYNAMIC_BIT_RESOLUTION)
+ 210:Generated_Source\PSoC4/I2S_1.c ****     /*******************************************************************************
+ 211:Generated_Source\PSoC4/I2S_1.c ****     * Function Name: I2S_1_SetDataBits
+ 212:Generated_Source\PSoC4/I2S_1.c ****     ********************************************************************************
+ 213:Generated_Source\PSoC4/I2S_1.c ****     *
+ 214:Generated_Source\PSoC4/I2S_1.c ****     * Summary:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 9
+
+
+ 215:Generated_Source\PSoC4/I2S_1.c ****     *  Sets the number of data bits for each sample. The component must be stopped
+ 216:Generated_Source\PSoC4/I2S_1.c ****     *  before calling this API.
+ 217:Generated_Source\PSoC4/I2S_1.c ****     *
+ 218:Generated_Source\PSoC4/I2S_1.c ****     * Parameters:
+ 219:Generated_Source\PSoC4/I2S_1.c ****     *  dataBits: the number of data bits for each sample. Valid values - 8/16/24/32.
+ 220:Generated_Source\PSoC4/I2S_1.c ****     *  If Tx or Rx byte swapping is enabled, valid values are 16 and 24.
+ 221:Generated_Source\PSoC4/I2S_1.c ****     *
+ 222:Generated_Source\PSoC4/I2S_1.c ****     * Return:
+ 223:Generated_Source\PSoC4/I2S_1.c ****     *  CYRET_SUCCESS  : Operation is successful
+ 224:Generated_Source\PSoC4/I2S_1.c ****     *  CYRET_BAD_PARAM: Invalid parameter value
+ 225:Generated_Source\PSoC4/I2S_1.c ****     *
+ 226:Generated_Source\PSoC4/I2S_1.c ****     * Side effects:
+ 227:Generated_Source\PSoC4/I2S_1.c ****     *  Calling this API while the component is operating may cause unexpected
+ 228:Generated_Source\PSoC4/I2S_1.c ****     *  behavior.
+ 229:Generated_Source\PSoC4/I2S_1.c ****     *
+ 230:Generated_Source\PSoC4/I2S_1.c ****     *******************************************************************************/
+ 231:Generated_Source\PSoC4/I2S_1.c ****     cystatus I2S_1_SetDataBits(uint8 dataBits)   
+ 232:Generated_Source\PSoC4/I2S_1.c ****     {
+ 233:Generated_Source\PSoC4/I2S_1.c ****         cystatus status;
+ 234:Generated_Source\PSoC4/I2S_1.c **** 
+ 235:Generated_Source\PSoC4/I2S_1.c ****         CYASSERT((dataBits >= I2S_1_MIN_DATA_BITS) && (dataBits <= I2S_1_MAX_DATA_BITS));
+ 236:Generated_Source\PSoC4/I2S_1.c **** 
+ 237:Generated_Source\PSoC4/I2S_1.c ****         status = CYRET_SUCCESS;
+ 238:Generated_Source\PSoC4/I2S_1.c ****         /* The component must be stopped prior calling this API. Therefore
+ 239:Generated_Source\PSoC4/I2S_1.c ****         * all the control bits except the bits modified are zeros.
+ 240:Generated_Source\PSoC4/I2S_1.c ****         */
+ 241:Generated_Source\PSoC4/I2S_1.c ****         switch(dataBits)
+ 242:Generated_Source\PSoC4/I2S_1.c ****         {
+ 243:Generated_Source\PSoC4/I2S_1.c ****         case I2S_1_8BIT_DATA:
+ 244:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CONTROL_REG = I2S_1_8BIT_MODE;
+ 245:Generated_Source\PSoC4/I2S_1.c ****             break;
+ 246:Generated_Source\PSoC4/I2S_1.c ****         case I2S_1_16BIT_DATA:
+ 247:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CONTROL_REG = I2S_1_16BIT_MODE;
+ 248:Generated_Source\PSoC4/I2S_1.c ****             break;
+ 249:Generated_Source\PSoC4/I2S_1.c ****         case I2S_1_24BIT_DATA:
+ 250:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CONTROL_REG = I2S_1_24BIT_MODE;
+ 251:Generated_Source\PSoC4/I2S_1.c ****             break;
+ 252:Generated_Source\PSoC4/I2S_1.c ****         case I2S_1_32BIT_DATA:
+ 253:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CONTROL_REG = I2S_1_32BIT_MODE;
+ 254:Generated_Source\PSoC4/I2S_1.c ****             break;
+ 255:Generated_Source\PSoC4/I2S_1.c ****         default: status = CYRET_BAD_PARAM;
+ 256:Generated_Source\PSoC4/I2S_1.c ****             break;
+ 257:Generated_Source\PSoC4/I2S_1.c ****         }
+ 258:Generated_Source\PSoC4/I2S_1.c **** 
+ 259:Generated_Source\PSoC4/I2S_1.c ****         return (status);
+ 260:Generated_Source\PSoC4/I2S_1.c ****     }
+ 261:Generated_Source\PSoC4/I2S_1.c **** 
+ 262:Generated_Source\PSoC4/I2S_1.c **** #endif /* I2S_1_DYNAMIC_BIT_RESOLUTION */
+ 263:Generated_Source\PSoC4/I2S_1.c **** 
+ 264:Generated_Source\PSoC4/I2S_1.c **** #if(I2S_1_TX_DIRECTION_ENABLE)
+ 265:Generated_Source\PSoC4/I2S_1.c ****     /*******************************************************************************
+ 266:Generated_Source\PSoC4/I2S_1.c ****     * Function Name: I2S_1_EnableTx
+ 267:Generated_Source\PSoC4/I2S_1.c ****     ********************************************************************************
+ 268:Generated_Source\PSoC4/I2S_1.c ****     *
+ 269:Generated_Source\PSoC4/I2S_1.c ****     * Summary:
+ 270:Generated_Source\PSoC4/I2S_1.c ****     *  Enables the Tx direction of the I2S interface.  At the next word
+ 271:Generated_Source\PSoC4/I2S_1.c ****     *  select falling edge transmission will begin.
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 10
+
+
+ 272:Generated_Source\PSoC4/I2S_1.c ****     *
+ 273:Generated_Source\PSoC4/I2S_1.c ****     * Parameters:
+ 274:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 275:Generated_Source\PSoC4/I2S_1.c ****     *
+ 276:Generated_Source\PSoC4/I2S_1.c ****     * Return:
+ 277:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 278:Generated_Source\PSoC4/I2S_1.c ****     *
+ 279:Generated_Source\PSoC4/I2S_1.c ****     *******************************************************************************/
+ 280:Generated_Source\PSoC4/I2S_1.c ****     void I2S_1_EnableTx(void) 
+ 281:Generated_Source\PSoC4/I2S_1.c ****     {
+ 282:Generated_Source\PSoC4/I2S_1.c ****         uint8 enableInterrupts;
+ 283:Generated_Source\PSoC4/I2S_1.c **** 
+ 284:Generated_Source\PSoC4/I2S_1.c ****         enableInterrupts = CyEnterCriticalSection();
+ 285:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_TX_STS0_1_ACTL_REG |= I2S_1_INT_EN;
+ 286:Generated_Source\PSoC4/I2S_1.c ****         #ifdef I2S_1_TX_STS2_3_ACTL_REG
+ 287:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_TX_STS2_3_ACTL_REG |= I2S_1_INT_EN;
+ 288:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STS2_3_ACTL_REG */
+ 289:Generated_Source\PSoC4/I2S_1.c ****         #ifdef I2S_1_TX_STS4_ACTL_REG
+ 290:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_TX_STS4_ACTL_REG |= I2S_1_INT_EN;
+ 291:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STS4_ACTL_REG */
+ 292:Generated_Source\PSoC4/I2S_1.c ****         CyExitCriticalSection(enableInterrupts);
+ 293:Generated_Source\PSoC4/I2S_1.c ****         
+ 294:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_CONTROL_REG |= I2S_1_TX_EN;
+ 295:Generated_Source\PSoC4/I2S_1.c ****     }
+ 296:Generated_Source\PSoC4/I2S_1.c **** 
+ 297:Generated_Source\PSoC4/I2S_1.c **** 
+ 298:Generated_Source\PSoC4/I2S_1.c ****     /*******************************************************************************
+ 299:Generated_Source\PSoC4/I2S_1.c ****     * Function Name: I2S_1_DisableTx
+ 300:Generated_Source\PSoC4/I2S_1.c ****     ********************************************************************************
+ 301:Generated_Source\PSoC4/I2S_1.c ****     *
+ 302:Generated_Source\PSoC4/I2S_1.c ****     * Summary:
+ 303:Generated_Source\PSoC4/I2S_1.c ****     *  Disables the Tx direction of the I2S interface.  At the next word
+ 304:Generated_Source\PSoC4/I2S_1.c ****     *  select falling edge transmission of data will stop and a constant 0 value
+ 305:Generated_Source\PSoC4/I2S_1.c ****     *  will be transmitted.
+ 306:Generated_Source\PSoC4/I2S_1.c ****     *
+ 307:Generated_Source\PSoC4/I2S_1.c ****     * Parameters:
+ 308:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 309:Generated_Source\PSoC4/I2S_1.c ****     *
+ 310:Generated_Source\PSoC4/I2S_1.c ****     * Return:
+ 311:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 312:Generated_Source\PSoC4/I2S_1.c ****     *
+ 313:Generated_Source\PSoC4/I2S_1.c ****     *******************************************************************************/
+ 314:Generated_Source\PSoC4/I2S_1.c ****     void I2S_1_DisableTx(void) 
+ 315:Generated_Source\PSoC4/I2S_1.c ****     {
+ 316:Generated_Source\PSoC4/I2S_1.c ****         uint8 enableInterrupts;
+ 317:Generated_Source\PSoC4/I2S_1.c **** 
+ 318:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_CONTROL_REG &= (uint8)~I2S_1_TX_EN;
+ 319:Generated_Source\PSoC4/I2S_1.c **** 
+ 320:Generated_Source\PSoC4/I2S_1.c ****         enableInterrupts = CyEnterCriticalSection();
+ 321:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_TX_STS0_1_ACTL_REG &= (uint8)~I2S_1_INT_EN;
+ 322:Generated_Source\PSoC4/I2S_1.c ****         #ifdef I2S_1_TX_STS2_3_ACTL_REG
+ 323:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_TX_STS2_3_ACTL_REG &= (uint8)~I2S_1_INT_EN;
+ 324:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STS2_3_ACTL_REG */
+ 325:Generated_Source\PSoC4/I2S_1.c ****         #ifdef I2S_1_TX_STS4_ACTL_REG
+ 326:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_TX_STS4_ACTL_REG &= (uint8)~I2S_1_INT_EN;
+ 327:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STS4_ACTL_REG */
+ 328:Generated_Source\PSoC4/I2S_1.c ****         CyExitCriticalSection(enableInterrupts);
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 11
+
+
+ 329:Generated_Source\PSoC4/I2S_1.c ****     }
+ 330:Generated_Source\PSoC4/I2S_1.c **** 
+ 331:Generated_Source\PSoC4/I2S_1.c **** 
+ 332:Generated_Source\PSoC4/I2S_1.c ****     /*******************************************************************************
+ 333:Generated_Source\PSoC4/I2S_1.c ****     * Function Name: I2S_1_ClearTxFIFO
+ 334:Generated_Source\PSoC4/I2S_1.c ****     ********************************************************************************
+ 335:Generated_Source\PSoC4/I2S_1.c ****     *
+ 336:Generated_Source\PSoC4/I2S_1.c ****     * Summary:
+ 337:Generated_Source\PSoC4/I2S_1.c ****     *  Clears out the FIFOs for all Tx channels. Any data present in the FIFO will
+ 338:Generated_Source\PSoC4/I2S_1.c ****     *  not be sent. This call should be made only when the Tx direction is disabled.
+ 339:Generated_Source\PSoC4/I2S_1.c ****     *
+ 340:Generated_Source\PSoC4/I2S_1.c ****     * Parameters:
+ 341:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 342:Generated_Source\PSoC4/I2S_1.c ****     *
+ 343:Generated_Source\PSoC4/I2S_1.c ****     * Return:
+ 344:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 345:Generated_Source\PSoC4/I2S_1.c ****     *
+ 346:Generated_Source\PSoC4/I2S_1.c ****     *******************************************************************************/
+ 347:Generated_Source\PSoC4/I2S_1.c ****     void I2S_1_ClearTxFIFO(void) 
+ 348:Generated_Source\PSoC4/I2S_1.c ****     {
+ 349:Generated_Source\PSoC4/I2S_1.c ****         uint8 enableInterrupts;
+ 350:Generated_Source\PSoC4/I2S_1.c **** 
+ 351:Generated_Source\PSoC4/I2S_1.c ****         enableInterrupts = CyEnterCriticalSection();
+ 352:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_CLEAR_TX_FIFO(CH0);
+ 353:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_TX_STEREO_1_PRESENT)
+ 354:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CLEAR_TX_FIFO(CH1);
+ 355:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STEREO_1_PRESENT */
+ 356:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_TX_STEREO_2_PRESENT)
+ 357:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CLEAR_TX_FIFO(CH2);
+ 358:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STEREO_2_PRESENT */
+ 359:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_TX_STEREO_3_PRESENT)
+ 360:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CLEAR_TX_FIFO(CH3);
+ 361:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STEREO_3_PRESENT */
+ 362:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_TX_STEREO_4_PRESENT)
+ 363:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CLEAR_TX_FIFO(CH4);
+ 364:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_TX_STEREO_4_PRESENT */
+ 365:Generated_Source\PSoC4/I2S_1.c ****         CyExitCriticalSection(enableInterrupts);
+ 366:Generated_Source\PSoC4/I2S_1.c ****     }
+ 367:Generated_Source\PSoC4/I2S_1.c **** 
+ 368:Generated_Source\PSoC4/I2S_1.c **** #endif /* (I2S_1_TX_DIRECTION_ENABLE) */
+ 369:Generated_Source\PSoC4/I2S_1.c **** 
+ 370:Generated_Source\PSoC4/I2S_1.c **** 
+ 371:Generated_Source\PSoC4/I2S_1.c **** #if(I2S_1_RX_DIRECTION_ENABLE)
+ 372:Generated_Source\PSoC4/I2S_1.c ****     /*******************************************************************************
+ 373:Generated_Source\PSoC4/I2S_1.c ****     * Function Name: I2S_1_EnableRx
+ 374:Generated_Source\PSoC4/I2S_1.c ****     ********************************************************************************
+ 375:Generated_Source\PSoC4/I2S_1.c ****     *
+ 376:Generated_Source\PSoC4/I2S_1.c ****     * Summary:
+ 377:Generated_Source\PSoC4/I2S_1.c ****     *  Enables the Rx direction of the I2S interface.  At the next word
+ 378:Generated_Source\PSoC4/I2S_1.c ****     *  select falling edge reception of data will begin.
+ 379:Generated_Source\PSoC4/I2S_1.c ****     *
+ 380:Generated_Source\PSoC4/I2S_1.c ****     * Parameters:
+ 381:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 382:Generated_Source\PSoC4/I2S_1.c ****     *
+ 383:Generated_Source\PSoC4/I2S_1.c ****     * Return:
+ 384:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 385:Generated_Source\PSoC4/I2S_1.c ****     *
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 12
+
+
+ 386:Generated_Source\PSoC4/I2S_1.c ****     *******************************************************************************/
+ 387:Generated_Source\PSoC4/I2S_1.c ****     void I2S_1_EnableRx(void) 
+ 388:Generated_Source\PSoC4/I2S_1.c ****     {
+ 243              		.loc 1 388 0
+ 244              		.cfi_startproc
+ 245 0000 90B5     		push	{r4, r7, lr}
+ 246              		.cfi_def_cfa_offset 12
+ 247              		.cfi_offset 4, -12
+ 248              		.cfi_offset 7, -8
+ 249              		.cfi_offset 14, -4
+ 250 0002 83B0     		sub	sp, sp, #12
+ 251              		.cfi_def_cfa_offset 24
+ 252 0004 00AF     		add	r7, sp, #0
+ 253              		.cfi_def_cfa_register 7
+ 389:Generated_Source\PSoC4/I2S_1.c ****         uint8 enableInterrupts;
+ 390:Generated_Source\PSoC4/I2S_1.c **** 
+ 391:Generated_Source\PSoC4/I2S_1.c ****         enableInterrupts = CyEnterCriticalSection();
+ 254              		.loc 1 391 0
+ 255 0006 FC1D     		add	r4, r7, #7
+ 256 0008 FFF7FEFF 		bl	CyEnterCriticalSection
+ 257 000c 031C     		mov	r3, r0
+ 258 000e 2370     		strb	r3, [r4]
+ 392:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_RX_STS0_1_ACTL_REG |= I2S_1_INT_EN;
+ 259              		.loc 1 392 0
+ 260 0010 0B4A     		ldr	r2, .L15
+ 261 0012 0B4B     		ldr	r3, .L15
+ 262 0014 1B78     		ldrb	r3, [r3]
+ 263 0016 DBB2     		uxtb	r3, r3
+ 264 0018 1021     		mov	r1, #16
+ 265 001a 0B43     		orr	r3, r1
+ 266 001c DBB2     		uxtb	r3, r3
+ 267 001e 1370     		strb	r3, [r2]
+ 393:Generated_Source\PSoC4/I2S_1.c ****         #ifdef I2S_1_RX_STS2_3_ACTL_REG
+ 394:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_RX_STS2_3_ACTL_REG |= I2S_1_INT_EN;
+ 395:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STS2_3_ACTL_REG */
+ 396:Generated_Source\PSoC4/I2S_1.c ****         #ifdef I2S_1_RX_STS4_ACTL_REG
+ 397:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_RX_STS4_ACTL_REG |= I2S_1_INT_EN;
+ 398:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STS4_ACTL_REG */
+ 399:Generated_Source\PSoC4/I2S_1.c ****         CyExitCriticalSection(enableInterrupts);
+ 268              		.loc 1 399 0
+ 269 0020 FB1D     		add	r3, r7, #7
+ 270 0022 1B78     		ldrb	r3, [r3]
+ 271 0024 181C     		mov	r0, r3
+ 272 0026 FFF7FEFF 		bl	CyExitCriticalSection
+ 400:Generated_Source\PSoC4/I2S_1.c ****         
+ 401:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_CONTROL_REG |= I2S_1_RX_EN;
+ 273              		.loc 1 401 0
+ 274 002a 064A     		ldr	r2, .L15+4
+ 275 002c 054B     		ldr	r3, .L15+4
+ 276 002e 1B78     		ldrb	r3, [r3]
+ 277 0030 DBB2     		uxtb	r3, r3
+ 278 0032 0221     		mov	r1, #2
+ 279 0034 0B43     		orr	r3, r1
+ 280 0036 DBB2     		uxtb	r3, r3
+ 281 0038 1370     		strb	r3, [r2]
+ 402:Generated_Source\PSoC4/I2S_1.c ****     }
+ 282              		.loc 1 402 0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 13
+
+
+ 283 003a BD46     		mov	sp, r7
+ 284 003c 03B0     		add	sp, sp, #12
+ 285              		@ sp needed
+ 286 003e 90BD     		pop	{r4, r7, pc}
+ 287              	.L16:
+ 288              		.align	2
+ 289              	.L15:
+ 290 0040 91000F40 		.word	1074725009
+ 291 0044 71000F40 		.word	1074724977
+ 292              		.cfi_endproc
+ 293              	.LFE6:
+ 294              		.size	I2S_1_EnableRx, .-I2S_1_EnableRx
+ 295              		.section	.text.I2S_1_DisableRx,"ax",%progbits
+ 296              		.align	2
+ 297              		.global	I2S_1_DisableRx
+ 298              		.code	16
+ 299              		.thumb_func
+ 300              		.type	I2S_1_DisableRx, %function
+ 301              	I2S_1_DisableRx:
+ 302              	.LFB7:
+ 403:Generated_Source\PSoC4/I2S_1.c **** 
+ 404:Generated_Source\PSoC4/I2S_1.c **** 
+ 405:Generated_Source\PSoC4/I2S_1.c ****     /*******************************************************************************
+ 406:Generated_Source\PSoC4/I2S_1.c ****     * Function Name: I2S_1_DisableRx
+ 407:Generated_Source\PSoC4/I2S_1.c ****     ********************************************************************************
+ 408:Generated_Source\PSoC4/I2S_1.c ****     *
+ 409:Generated_Source\PSoC4/I2S_1.c ****     * Summary:
+ 410:Generated_Source\PSoC4/I2S_1.c ****     *  Disables the Rx direction of the I2S interface.
+ 411:Generated_Source\PSoC4/I2S_1.c ****     *
+ 412:Generated_Source\PSoC4/I2S_1.c ****     * Parameters:
+ 413:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 414:Generated_Source\PSoC4/I2S_1.c ****     *
+ 415:Generated_Source\PSoC4/I2S_1.c ****     * Return:
+ 416:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 417:Generated_Source\PSoC4/I2S_1.c ****     *
+ 418:Generated_Source\PSoC4/I2S_1.c ****     *******************************************************************************/
+ 419:Generated_Source\PSoC4/I2S_1.c ****     void I2S_1_DisableRx(void) 
+ 420:Generated_Source\PSoC4/I2S_1.c ****     {
+ 303              		.loc 1 420 0
+ 304              		.cfi_startproc
+ 305 0000 90B5     		push	{r4, r7, lr}
+ 306              		.cfi_def_cfa_offset 12
+ 307              		.cfi_offset 4, -12
+ 308              		.cfi_offset 7, -8
+ 309              		.cfi_offset 14, -4
+ 310 0002 83B0     		sub	sp, sp, #12
+ 311              		.cfi_def_cfa_offset 24
+ 312 0004 00AF     		add	r7, sp, #0
+ 313              		.cfi_def_cfa_register 7
+ 421:Generated_Source\PSoC4/I2S_1.c ****         uint8 enableInterrupts;
+ 422:Generated_Source\PSoC4/I2S_1.c **** 
+ 423:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_CONTROL_REG &= (uint8)~I2S_1_RX_EN;
+ 314              		.loc 1 423 0
+ 315 0006 0E4A     		ldr	r2, .L18
+ 316 0008 0D4B     		ldr	r3, .L18
+ 317 000a 1B78     		ldrb	r3, [r3]
+ 318 000c DBB2     		uxtb	r3, r3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 14
+
+
+ 319 000e 0221     		mov	r1, #2
+ 320 0010 8B43     		bic	r3, r1
+ 321 0012 DBB2     		uxtb	r3, r3
+ 322 0014 1370     		strb	r3, [r2]
+ 424:Generated_Source\PSoC4/I2S_1.c **** 
+ 425:Generated_Source\PSoC4/I2S_1.c ****         enableInterrupts = CyEnterCriticalSection();
+ 323              		.loc 1 425 0
+ 324 0016 FC1D     		add	r4, r7, #7
+ 325 0018 FFF7FEFF 		bl	CyEnterCriticalSection
+ 326 001c 031C     		mov	r3, r0
+ 327 001e 2370     		strb	r3, [r4]
+ 426:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_RX_STS0_1_ACTL_REG &= (uint8)~I2S_1_INT_EN;
+ 328              		.loc 1 426 0
+ 329 0020 084A     		ldr	r2, .L18+4
+ 330 0022 084B     		ldr	r3, .L18+4
+ 331 0024 1B78     		ldrb	r3, [r3]
+ 332 0026 DBB2     		uxtb	r3, r3
+ 333 0028 1021     		mov	r1, #16
+ 334 002a 8B43     		bic	r3, r1
+ 335 002c DBB2     		uxtb	r3, r3
+ 336 002e 1370     		strb	r3, [r2]
+ 427:Generated_Source\PSoC4/I2S_1.c ****         #ifdef I2S_1_RX_STS2_3_ACTL_REG
+ 428:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_RX_STS2_3_ACTL_REG &= (uint8)~I2S_1_INT_EN;
+ 429:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STS2_3_ACTL_REG */
+ 430:Generated_Source\PSoC4/I2S_1.c ****         #ifdef I2S_1_RX_STS4_ACTL_REG
+ 431:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_RX_STS4_ACTL_REG &= (uint8)~I2S_1_INT_EN;
+ 432:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STS4_ACTL_REG */
+ 433:Generated_Source\PSoC4/I2S_1.c ****         CyExitCriticalSection(enableInterrupts);
+ 337              		.loc 1 433 0
+ 338 0030 FB1D     		add	r3, r7, #7
+ 339 0032 1B78     		ldrb	r3, [r3]
+ 340 0034 181C     		mov	r0, r3
+ 341 0036 FFF7FEFF 		bl	CyExitCriticalSection
+ 434:Generated_Source\PSoC4/I2S_1.c ****     }
+ 342              		.loc 1 434 0
+ 343 003a BD46     		mov	sp, r7
+ 344 003c 03B0     		add	sp, sp, #12
+ 345              		@ sp needed
+ 346 003e 90BD     		pop	{r4, r7, pc}
+ 347              	.L19:
+ 348              		.align	2
+ 349              	.L18:
+ 350 0040 71000F40 		.word	1074724977
+ 351 0044 91000F40 		.word	1074725009
+ 352              		.cfi_endproc
+ 353              	.LFE7:
+ 354              		.size	I2S_1_DisableRx, .-I2S_1_DisableRx
+ 355              		.section	.text.I2S_1_ClearRxFIFO,"ax",%progbits
+ 356              		.align	2
+ 357              		.global	I2S_1_ClearRxFIFO
+ 358              		.code	16
+ 359              		.thumb_func
+ 360              		.type	I2S_1_ClearRxFIFO, %function
+ 361              	I2S_1_ClearRxFIFO:
+ 362              	.LFB8:
+ 435:Generated_Source\PSoC4/I2S_1.c **** 
+ 436:Generated_Source\PSoC4/I2S_1.c **** 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 15
+
+
+ 437:Generated_Source\PSoC4/I2S_1.c ****     /*******************************************************************************
+ 438:Generated_Source\PSoC4/I2S_1.c ****     * Function Name: I2S_1_ClearRxFIFO
+ 439:Generated_Source\PSoC4/I2S_1.c ****     ********************************************************************************
+ 440:Generated_Source\PSoC4/I2S_1.c ****     *
+ 441:Generated_Source\PSoC4/I2S_1.c ****     * Summary:
+ 442:Generated_Source\PSoC4/I2S_1.c ****     *  Clears out the Rx FIFO.  Any data present in the FIFO will be lost.
+ 443:Generated_Source\PSoC4/I2S_1.c ****     *  This call should be made only when the Rx direction is disabled.
+ 444:Generated_Source\PSoC4/I2S_1.c ****     *
+ 445:Generated_Source\PSoC4/I2S_1.c ****     * Parameters:
+ 446:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 447:Generated_Source\PSoC4/I2S_1.c ****     *
+ 448:Generated_Source\PSoC4/I2S_1.c ****     * Return:
+ 449:Generated_Source\PSoC4/I2S_1.c ****     *  None.
+ 450:Generated_Source\PSoC4/I2S_1.c ****     *
+ 451:Generated_Source\PSoC4/I2S_1.c ****     *******************************************************************************/
+ 452:Generated_Source\PSoC4/I2S_1.c ****     void I2S_1_ClearRxFIFO(void) 
+ 453:Generated_Source\PSoC4/I2S_1.c ****     {
+ 363              		.loc 1 453 0
+ 364              		.cfi_startproc
+ 365 0000 90B5     		push	{r4, r7, lr}
+ 366              		.cfi_def_cfa_offset 12
+ 367              		.cfi_offset 4, -12
+ 368              		.cfi_offset 7, -8
+ 369              		.cfi_offset 14, -4
+ 370 0002 83B0     		sub	sp, sp, #12
+ 371              		.cfi_def_cfa_offset 24
+ 372 0004 00AF     		add	r7, sp, #0
+ 373              		.cfi_def_cfa_register 7
+ 454:Generated_Source\PSoC4/I2S_1.c ****         uint8 enableInterrupts;
+ 455:Generated_Source\PSoC4/I2S_1.c **** 
+ 456:Generated_Source\PSoC4/I2S_1.c ****         enableInterrupts = CyEnterCriticalSection();
+ 374              		.loc 1 456 0
+ 375 0006 FC1D     		add	r4, r7, #7
+ 376 0008 FFF7FEFF 		bl	CyEnterCriticalSection
+ 377 000c 031C     		mov	r3, r0
+ 378 000e 2370     		strb	r3, [r4]
+ 457:Generated_Source\PSoC4/I2S_1.c ****         I2S_1_CLEAR_RX_FIFO(CH0);
+ 379              		.loc 1 457 0
+ 380 0010 0B4A     		ldr	r2, .L21
+ 381 0012 0B4B     		ldr	r3, .L21
+ 382 0014 1B78     		ldrb	r3, [r3]
+ 383 0016 DBB2     		uxtb	r3, r3
+ 384 0018 0321     		mov	r1, #3
+ 385 001a 0B43     		orr	r3, r1
+ 386 001c DBB2     		uxtb	r3, r3
+ 387 001e 1370     		strb	r3, [r2]
+ 388 0020 074A     		ldr	r2, .L21
+ 389 0022 074B     		ldr	r3, .L21
+ 390 0024 1B78     		ldrb	r3, [r3]
+ 391 0026 DBB2     		uxtb	r3, r3
+ 392 0028 0321     		mov	r1, #3
+ 393 002a 8B43     		bic	r3, r1
+ 394 002c DBB2     		uxtb	r3, r3
+ 395 002e 1370     		strb	r3, [r2]
+ 458:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_RX_STEREO_1_PRESENT)
+ 459:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CLEAR_RX_FIFO(CH1);
+ 460:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STEREO_1_PRESENT */
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 16
+
+
+ 461:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_RX_STEREO_2_PRESENT)
+ 462:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CLEAR_RX_FIFO(CH2);
+ 463:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STEREO_2_PRESENT */
+ 464:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_RX_STEREO_3_PRESENT)
+ 465:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CLEAR_RX_FIFO(CH3);
+ 466:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STEREO_3_PRESENT */
+ 467:Generated_Source\PSoC4/I2S_1.c ****         #if (I2S_1_RX_STEREO_4_PRESENT)
+ 468:Generated_Source\PSoC4/I2S_1.c ****             I2S_1_CLEAR_RX_FIFO(CH4);
+ 469:Generated_Source\PSoC4/I2S_1.c ****         #endif /* I2S_1_RX_STEREO_4_PRESENT */
+ 470:Generated_Source\PSoC4/I2S_1.c ****         CyExitCriticalSection(enableInterrupts);
+ 396              		.loc 1 470 0
+ 397 0030 FB1D     		add	r3, r7, #7
+ 398 0032 1B78     		ldrb	r3, [r3]
+ 399 0034 181C     		mov	r0, r3
+ 400 0036 FFF7FEFF 		bl	CyExitCriticalSection
+ 471:Generated_Source\PSoC4/I2S_1.c ****     }
+ 401              		.loc 1 471 0
+ 402 003a BD46     		mov	sp, r7
+ 403 003c 03B0     		add	sp, sp, #12
+ 404              		@ sp needed
+ 405 003e 90BD     		pop	{r4, r7, pc}
+ 406              	.L22:
+ 407              		.align	2
+ 408              	.L21:
+ 409 0040 91000F40 		.word	1074725009
+ 410              		.cfi_endproc
+ 411              	.LFE8:
+ 412              		.size	I2S_1_ClearRxFIFO, .-I2S_1_ClearRxFIFO
+ 413              		.text
+ 414              	.Letext0:
+ 415              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 416              		.section	.debug_info,"",%progbits
+ 417              	.Ldebug_info0:
+ 418 0000 8E010000 		.4byte	0x18e
+ 419 0004 0400     		.2byte	0x4
+ 420 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 421 000a 04       		.byte	0x4
+ 422 000b 01       		.uleb128 0x1
+ 423 000c 0E000000 		.4byte	.LASF23
+ 424 0010 01       		.byte	0x1
+ 425 0011 F5000000 		.4byte	.LASF24
+ 426 0015 C2010000 		.4byte	.LASF25
+ 427 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 428 001d 00000000 		.4byte	0
+ 429 0021 00000000 		.4byte	.Ldebug_line0
+ 430 0025 02       		.uleb128 0x2
+ 431 0026 01       		.byte	0x1
+ 432 0027 06       		.byte	0x6
+ 433 0028 91010000 		.4byte	.LASF0
+ 434 002c 02       		.uleb128 0x2
+ 435 002d 01       		.byte	0x1
+ 436 002e 08       		.byte	0x8
+ 437 002f 3C010000 		.4byte	.LASF1
+ 438 0033 02       		.uleb128 0x2
+ 439 0034 02       		.byte	0x2
+ 440 0035 05       		.byte	0x5
+ 441 0036 B3010000 		.4byte	.LASF2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 17
+
+
+ 442 003a 02       		.uleb128 0x2
+ 443 003b 02       		.byte	0x2
+ 444 003c 07       		.byte	0x7
+ 445 003d 7E010000 		.4byte	.LASF3
+ 446 0041 02       		.uleb128 0x2
+ 447 0042 04       		.byte	0x4
+ 448 0043 05       		.byte	0x5
+ 449 0044 4F010000 		.4byte	.LASF4
+ 450 0048 02       		.uleb128 0x2
+ 451 0049 04       		.byte	0x4
+ 452 004a 07       		.byte	0x7
+ 453 004b CC000000 		.4byte	.LASF5
+ 454 004f 02       		.uleb128 0x2
+ 455 0050 08       		.byte	0x8
+ 456 0051 05       		.byte	0x5
+ 457 0052 00000000 		.4byte	.LASF6
+ 458 0056 02       		.uleb128 0x2
+ 459 0057 08       		.byte	0x8
+ 460 0058 07       		.byte	0x7
+ 461 0059 DE000000 		.4byte	.LASF7
+ 462 005d 03       		.uleb128 0x3
+ 463 005e 04       		.byte	0x4
+ 464 005f 05       		.byte	0x5
+ 465 0060 696E7400 		.ascii	"int\000"
+ 466 0064 02       		.uleb128 0x2
+ 467 0065 04       		.byte	0x4
+ 468 0066 07       		.byte	0x7
+ 469 0067 9C000000 		.4byte	.LASF8
+ 470 006b 04       		.uleb128 0x4
+ 471 006c C6000000 		.4byte	.LASF12
+ 472 0070 02       		.byte	0x2
+ 473 0071 B901     		.2byte	0x1b9
+ 474 0073 2C000000 		.4byte	0x2c
+ 475 0077 02       		.uleb128 0x2
+ 476 0078 04       		.byte	0x4
+ 477 0079 04       		.byte	0x4
+ 478 007a AD010000 		.4byte	.LASF9
+ 479 007e 02       		.uleb128 0x2
+ 480 007f 08       		.byte	0x8
+ 481 0080 04       		.byte	0x4
+ 482 0081 58010000 		.4byte	.LASF10
+ 483 0085 02       		.uleb128 0x2
+ 484 0086 01       		.byte	0x1
+ 485 0087 08       		.byte	0x8
+ 486 0088 4A010000 		.4byte	.LASF11
+ 487 008c 04       		.uleb128 0x4
+ 488 008d BD010000 		.4byte	.LASF13
+ 489 0091 02       		.byte	0x2
+ 490 0092 6302     		.2byte	0x263
+ 491 0094 98000000 		.4byte	0x98
+ 492 0098 05       		.uleb128 0x5
+ 493 0099 6B000000 		.4byte	0x6b
+ 494 009d 02       		.uleb128 0x2
+ 495 009e 04       		.byte	0x4
+ 496 009f 07       		.byte	0x7
+ 497 00a0 25020000 		.4byte	.LASF14
+ 498 00a4 06       		.uleb128 0x6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 18
+
+
+ 499 00a5 71010000 		.4byte	.LASF17
+ 500 00a9 01       		.byte	0x1
+ 501 00aa 29       		.byte	0x29
+ 502 00ab 00000000 		.4byte	.LFB2
+ 503 00af 48000000 		.4byte	.LFE2-.LFB2
+ 504 00b3 01       		.uleb128 0x1
+ 505 00b4 9C       		.byte	0x9c
+ 506 00b5 C8000000 		.4byte	0xc8
+ 507 00b9 07       		.uleb128 0x7
+ 508 00ba A9000000 		.4byte	.LASF19
+ 509 00be 01       		.byte	0x1
+ 510 00bf 2B       		.byte	0x2b
+ 511 00c0 6B000000 		.4byte	0x6b
+ 512 00c4 02       		.uleb128 0x2
+ 513 00c5 91       		.byte	0x91
+ 514 00c6 6F       		.sleb128 -17
+ 515 00c7 00       		.byte	0
+ 516 00c8 08       		.uleb128 0x8
+ 517 00c9 2E020000 		.4byte	.LASF15
+ 518 00cd 01       		.byte	0x1
+ 519 00ce 45       		.byte	0x45
+ 520 00cf 00000000 		.4byte	.LFB3
+ 521 00d3 28000000 		.4byte	.LFE3-.LFB3
+ 522 00d7 01       		.uleb128 0x1
+ 523 00d8 9C       		.byte	0x9c
+ 524 00d9 09       		.uleb128 0x9
+ 525 00da BA000000 		.4byte	.LASF16
+ 526 00de 01       		.byte	0x1
+ 527 00df 9E       		.byte	0x9e
+ 528 00e0 00000000 		.4byte	.LFB4
+ 529 00e4 24000000 		.4byte	.LFE4-.LFB4
+ 530 00e8 01       		.uleb128 0x1
+ 531 00e9 9C       		.byte	0x9c
+ 532 00ea 06       		.uleb128 0x6
+ 533 00eb 31010000 		.4byte	.LASF18
+ 534 00ef 01       		.byte	0x1
+ 535 00f0 B9       		.byte	0xb9
+ 536 00f1 00000000 		.4byte	.LFB5
+ 537 00f5 5C000000 		.4byte	.LFE5-.LFB5
+ 538 00f9 01       		.uleb128 0x1
+ 539 00fa 9C       		.byte	0x9c
+ 540 00fb 0E010000 		.4byte	0x10e
+ 541 00ff 07       		.uleb128 0x7
+ 542 0100 A9000000 		.4byte	.LASF19
+ 543 0104 01       		.byte	0x1
+ 544 0105 BB       		.byte	0xbb
+ 545 0106 6B000000 		.4byte	0x6b
+ 546 010a 02       		.uleb128 0x2
+ 547 010b 91       		.byte	0x91
+ 548 010c 6F       		.sleb128 -17
+ 549 010d 00       		.byte	0
+ 550 010e 0A       		.uleb128 0xa
+ 551 010f 22010000 		.4byte	.LASF20
+ 552 0113 01       		.byte	0x1
+ 553 0114 8301     		.2byte	0x183
+ 554 0116 00000000 		.4byte	.LFB6
+ 555 011a 48000000 		.4byte	.LFE6-.LFB6
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 19
+
+
+ 556 011e 01       		.uleb128 0x1
+ 557 011f 9C       		.byte	0x9c
+ 558 0120 34010000 		.4byte	0x134
+ 559 0124 0B       		.uleb128 0xb
+ 560 0125 A9000000 		.4byte	.LASF19
+ 561 0129 01       		.byte	0x1
+ 562 012a 8501     		.2byte	0x185
+ 563 012c 6B000000 		.4byte	0x6b
+ 564 0130 02       		.uleb128 0x2
+ 565 0131 91       		.byte	0x91
+ 566 0132 6F       		.sleb128 -17
+ 567 0133 00       		.byte	0
+ 568 0134 0A       		.uleb128 0xa
+ 569 0135 9D010000 		.4byte	.LASF21
+ 570 0139 01       		.byte	0x1
+ 571 013a A301     		.2byte	0x1a3
+ 572 013c 00000000 		.4byte	.LFB7
+ 573 0140 48000000 		.4byte	.LFE7-.LFB7
+ 574 0144 01       		.uleb128 0x1
+ 575 0145 9C       		.byte	0x9c
+ 576 0146 5A010000 		.4byte	0x15a
+ 577 014a 0B       		.uleb128 0xb
+ 578 014b A9000000 		.4byte	.LASF19
+ 579 014f 01       		.byte	0x1
+ 580 0150 A501     		.2byte	0x1a5
+ 581 0152 6B000000 		.4byte	0x6b
+ 582 0156 02       		.uleb128 0x2
+ 583 0157 91       		.byte	0x91
+ 584 0158 6F       		.sleb128 -17
+ 585 0159 00       		.byte	0
+ 586 015a 0A       		.uleb128 0xa
+ 587 015b 5F010000 		.4byte	.LASF22
+ 588 015f 01       		.byte	0x1
+ 589 0160 C401     		.2byte	0x1c4
+ 590 0162 00000000 		.4byte	.LFB8
+ 591 0166 44000000 		.4byte	.LFE8-.LFB8
+ 592 016a 01       		.uleb128 0x1
+ 593 016b 9C       		.byte	0x9c
+ 594 016c 80010000 		.4byte	0x180
+ 595 0170 0B       		.uleb128 0xb
+ 596 0171 A9000000 		.4byte	.LASF19
+ 597 0175 01       		.byte	0x1
+ 598 0176 C601     		.2byte	0x1c6
+ 599 0178 6B000000 		.4byte	0x6b
+ 600 017c 02       		.uleb128 0x2
+ 601 017d 91       		.byte	0x91
+ 602 017e 6F       		.sleb128 -17
+ 603 017f 00       		.byte	0
+ 604 0180 0C       		.uleb128 0xc
+ 605 0181 14010000 		.4byte	.LASF26
+ 606 0185 01       		.byte	0x1
+ 607 0186 15       		.byte	0x15
+ 608 0187 6B000000 		.4byte	0x6b
+ 609 018b 05       		.uleb128 0x5
+ 610 018c 03       		.byte	0x3
+ 611 018d 00000000 		.4byte	I2S_1_initVar
+ 612 0191 00       		.byte	0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 20
+
+
+ 613              		.section	.debug_abbrev,"",%progbits
+ 614              	.Ldebug_abbrev0:
+ 615 0000 01       		.uleb128 0x1
+ 616 0001 11       		.uleb128 0x11
+ 617 0002 01       		.byte	0x1
+ 618 0003 25       		.uleb128 0x25
+ 619 0004 0E       		.uleb128 0xe
+ 620 0005 13       		.uleb128 0x13
+ 621 0006 0B       		.uleb128 0xb
+ 622 0007 03       		.uleb128 0x3
+ 623 0008 0E       		.uleb128 0xe
+ 624 0009 1B       		.uleb128 0x1b
+ 625 000a 0E       		.uleb128 0xe
+ 626 000b 55       		.uleb128 0x55
+ 627 000c 17       		.uleb128 0x17
+ 628 000d 11       		.uleb128 0x11
+ 629 000e 01       		.uleb128 0x1
+ 630 000f 10       		.uleb128 0x10
+ 631 0010 17       		.uleb128 0x17
+ 632 0011 00       		.byte	0
+ 633 0012 00       		.byte	0
+ 634 0013 02       		.uleb128 0x2
+ 635 0014 24       		.uleb128 0x24
+ 636 0015 00       		.byte	0
+ 637 0016 0B       		.uleb128 0xb
+ 638 0017 0B       		.uleb128 0xb
+ 639 0018 3E       		.uleb128 0x3e
+ 640 0019 0B       		.uleb128 0xb
+ 641 001a 03       		.uleb128 0x3
+ 642 001b 0E       		.uleb128 0xe
+ 643 001c 00       		.byte	0
+ 644 001d 00       		.byte	0
+ 645 001e 03       		.uleb128 0x3
+ 646 001f 24       		.uleb128 0x24
+ 647 0020 00       		.byte	0
+ 648 0021 0B       		.uleb128 0xb
+ 649 0022 0B       		.uleb128 0xb
+ 650 0023 3E       		.uleb128 0x3e
+ 651 0024 0B       		.uleb128 0xb
+ 652 0025 03       		.uleb128 0x3
+ 653 0026 08       		.uleb128 0x8
+ 654 0027 00       		.byte	0
+ 655 0028 00       		.byte	0
+ 656 0029 04       		.uleb128 0x4
+ 657 002a 16       		.uleb128 0x16
+ 658 002b 00       		.byte	0
+ 659 002c 03       		.uleb128 0x3
+ 660 002d 0E       		.uleb128 0xe
+ 661 002e 3A       		.uleb128 0x3a
+ 662 002f 0B       		.uleb128 0xb
+ 663 0030 3B       		.uleb128 0x3b
+ 664 0031 05       		.uleb128 0x5
+ 665 0032 49       		.uleb128 0x49
+ 666 0033 13       		.uleb128 0x13
+ 667 0034 00       		.byte	0
+ 668 0035 00       		.byte	0
+ 669 0036 05       		.uleb128 0x5
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 21
+
+
+ 670 0037 35       		.uleb128 0x35
+ 671 0038 00       		.byte	0
+ 672 0039 49       		.uleb128 0x49
+ 673 003a 13       		.uleb128 0x13
+ 674 003b 00       		.byte	0
+ 675 003c 00       		.byte	0
+ 676 003d 06       		.uleb128 0x6
+ 677 003e 2E       		.uleb128 0x2e
+ 678 003f 01       		.byte	0x1
+ 679 0040 3F       		.uleb128 0x3f
+ 680 0041 19       		.uleb128 0x19
+ 681 0042 03       		.uleb128 0x3
+ 682 0043 0E       		.uleb128 0xe
+ 683 0044 3A       		.uleb128 0x3a
+ 684 0045 0B       		.uleb128 0xb
+ 685 0046 3B       		.uleb128 0x3b
+ 686 0047 0B       		.uleb128 0xb
+ 687 0048 27       		.uleb128 0x27
+ 688 0049 19       		.uleb128 0x19
+ 689 004a 11       		.uleb128 0x11
+ 690 004b 01       		.uleb128 0x1
+ 691 004c 12       		.uleb128 0x12
+ 692 004d 06       		.uleb128 0x6
+ 693 004e 40       		.uleb128 0x40
+ 694 004f 18       		.uleb128 0x18
+ 695 0050 9642     		.uleb128 0x2116
+ 696 0052 19       		.uleb128 0x19
+ 697 0053 01       		.uleb128 0x1
+ 698 0054 13       		.uleb128 0x13
+ 699 0055 00       		.byte	0
+ 700 0056 00       		.byte	0
+ 701 0057 07       		.uleb128 0x7
+ 702 0058 34       		.uleb128 0x34
+ 703 0059 00       		.byte	0
+ 704 005a 03       		.uleb128 0x3
+ 705 005b 0E       		.uleb128 0xe
+ 706 005c 3A       		.uleb128 0x3a
+ 707 005d 0B       		.uleb128 0xb
+ 708 005e 3B       		.uleb128 0x3b
+ 709 005f 0B       		.uleb128 0xb
+ 710 0060 49       		.uleb128 0x49
+ 711 0061 13       		.uleb128 0x13
+ 712 0062 02       		.uleb128 0x2
+ 713 0063 18       		.uleb128 0x18
+ 714 0064 00       		.byte	0
+ 715 0065 00       		.byte	0
+ 716 0066 08       		.uleb128 0x8
+ 717 0067 2E       		.uleb128 0x2e
+ 718 0068 00       		.byte	0
+ 719 0069 3F       		.uleb128 0x3f
+ 720 006a 19       		.uleb128 0x19
+ 721 006b 03       		.uleb128 0x3
+ 722 006c 0E       		.uleb128 0xe
+ 723 006d 3A       		.uleb128 0x3a
+ 724 006e 0B       		.uleb128 0xb
+ 725 006f 3B       		.uleb128 0x3b
+ 726 0070 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 22
+
+
+ 727 0071 27       		.uleb128 0x27
+ 728 0072 19       		.uleb128 0x19
+ 729 0073 11       		.uleb128 0x11
+ 730 0074 01       		.uleb128 0x1
+ 731 0075 12       		.uleb128 0x12
+ 732 0076 06       		.uleb128 0x6
+ 733 0077 40       		.uleb128 0x40
+ 734 0078 18       		.uleb128 0x18
+ 735 0079 9742     		.uleb128 0x2117
+ 736 007b 19       		.uleb128 0x19
+ 737 007c 00       		.byte	0
+ 738 007d 00       		.byte	0
+ 739 007e 09       		.uleb128 0x9
+ 740 007f 2E       		.uleb128 0x2e
+ 741 0080 00       		.byte	0
+ 742 0081 3F       		.uleb128 0x3f
+ 743 0082 19       		.uleb128 0x19
+ 744 0083 03       		.uleb128 0x3
+ 745 0084 0E       		.uleb128 0xe
+ 746 0085 3A       		.uleb128 0x3a
+ 747 0086 0B       		.uleb128 0xb
+ 748 0087 3B       		.uleb128 0x3b
+ 749 0088 0B       		.uleb128 0xb
+ 750 0089 27       		.uleb128 0x27
+ 751 008a 19       		.uleb128 0x19
+ 752 008b 11       		.uleb128 0x11
+ 753 008c 01       		.uleb128 0x1
+ 754 008d 12       		.uleb128 0x12
+ 755 008e 06       		.uleb128 0x6
+ 756 008f 40       		.uleb128 0x40
+ 757 0090 18       		.uleb128 0x18
+ 758 0091 9642     		.uleb128 0x2116
+ 759 0093 19       		.uleb128 0x19
+ 760 0094 00       		.byte	0
+ 761 0095 00       		.byte	0
+ 762 0096 0A       		.uleb128 0xa
+ 763 0097 2E       		.uleb128 0x2e
+ 764 0098 01       		.byte	0x1
+ 765 0099 3F       		.uleb128 0x3f
+ 766 009a 19       		.uleb128 0x19
+ 767 009b 03       		.uleb128 0x3
+ 768 009c 0E       		.uleb128 0xe
+ 769 009d 3A       		.uleb128 0x3a
+ 770 009e 0B       		.uleb128 0xb
+ 771 009f 3B       		.uleb128 0x3b
+ 772 00a0 05       		.uleb128 0x5
+ 773 00a1 27       		.uleb128 0x27
+ 774 00a2 19       		.uleb128 0x19
+ 775 00a3 11       		.uleb128 0x11
+ 776 00a4 01       		.uleb128 0x1
+ 777 00a5 12       		.uleb128 0x12
+ 778 00a6 06       		.uleb128 0x6
+ 779 00a7 40       		.uleb128 0x40
+ 780 00a8 18       		.uleb128 0x18
+ 781 00a9 9642     		.uleb128 0x2116
+ 782 00ab 19       		.uleb128 0x19
+ 783 00ac 01       		.uleb128 0x1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 23
+
+
+ 784 00ad 13       		.uleb128 0x13
+ 785 00ae 00       		.byte	0
+ 786 00af 00       		.byte	0
+ 787 00b0 0B       		.uleb128 0xb
+ 788 00b1 34       		.uleb128 0x34
+ 789 00b2 00       		.byte	0
+ 790 00b3 03       		.uleb128 0x3
+ 791 00b4 0E       		.uleb128 0xe
+ 792 00b5 3A       		.uleb128 0x3a
+ 793 00b6 0B       		.uleb128 0xb
+ 794 00b7 3B       		.uleb128 0x3b
+ 795 00b8 05       		.uleb128 0x5
+ 796 00b9 49       		.uleb128 0x49
+ 797 00ba 13       		.uleb128 0x13
+ 798 00bb 02       		.uleb128 0x2
+ 799 00bc 18       		.uleb128 0x18
+ 800 00bd 00       		.byte	0
+ 801 00be 00       		.byte	0
+ 802 00bf 0C       		.uleb128 0xc
+ 803 00c0 34       		.uleb128 0x34
+ 804 00c1 00       		.byte	0
+ 805 00c2 03       		.uleb128 0x3
+ 806 00c3 0E       		.uleb128 0xe
+ 807 00c4 3A       		.uleb128 0x3a
+ 808 00c5 0B       		.uleb128 0xb
+ 809 00c6 3B       		.uleb128 0x3b
+ 810 00c7 0B       		.uleb128 0xb
+ 811 00c8 49       		.uleb128 0x49
+ 812 00c9 13       		.uleb128 0x13
+ 813 00ca 3F       		.uleb128 0x3f
+ 814 00cb 19       		.uleb128 0x19
+ 815 00cc 02       		.uleb128 0x2
+ 816 00cd 18       		.uleb128 0x18
+ 817 00ce 00       		.byte	0
+ 818 00cf 00       		.byte	0
+ 819 00d0 00       		.byte	0
+ 820              		.section	.debug_aranges,"",%progbits
+ 821 0000 4C000000 		.4byte	0x4c
+ 822 0004 0200     		.2byte	0x2
+ 823 0006 00000000 		.4byte	.Ldebug_info0
+ 824 000a 04       		.byte	0x4
+ 825 000b 00       		.byte	0
+ 826 000c 0000     		.2byte	0
+ 827 000e 0000     		.2byte	0
+ 828 0010 00000000 		.4byte	.LFB2
+ 829 0014 48000000 		.4byte	.LFE2-.LFB2
+ 830 0018 00000000 		.4byte	.LFB3
+ 831 001c 28000000 		.4byte	.LFE3-.LFB3
+ 832 0020 00000000 		.4byte	.LFB4
+ 833 0024 24000000 		.4byte	.LFE4-.LFB4
+ 834 0028 00000000 		.4byte	.LFB5
+ 835 002c 5C000000 		.4byte	.LFE5-.LFB5
+ 836 0030 00000000 		.4byte	.LFB6
+ 837 0034 48000000 		.4byte	.LFE6-.LFB6
+ 838 0038 00000000 		.4byte	.LFB7
+ 839 003c 48000000 		.4byte	.LFE7-.LFB7
+ 840 0040 00000000 		.4byte	.LFB8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 24
+
+
+ 841 0044 44000000 		.4byte	.LFE8-.LFB8
+ 842 0048 00000000 		.4byte	0
+ 843 004c 00000000 		.4byte	0
+ 844              		.section	.debug_ranges,"",%progbits
+ 845              	.Ldebug_ranges0:
+ 846 0000 00000000 		.4byte	.LFB2
+ 847 0004 48000000 		.4byte	.LFE2
+ 848 0008 00000000 		.4byte	.LFB3
+ 849 000c 28000000 		.4byte	.LFE3
+ 850 0010 00000000 		.4byte	.LFB4
+ 851 0014 24000000 		.4byte	.LFE4
+ 852 0018 00000000 		.4byte	.LFB5
+ 853 001c 5C000000 		.4byte	.LFE5
+ 854 0020 00000000 		.4byte	.LFB6
+ 855 0024 48000000 		.4byte	.LFE6
+ 856 0028 00000000 		.4byte	.LFB7
+ 857 002c 48000000 		.4byte	.LFE7
+ 858 0030 00000000 		.4byte	.LFB8
+ 859 0034 44000000 		.4byte	.LFE8
+ 860 0038 00000000 		.4byte	0
+ 861 003c 00000000 		.4byte	0
+ 862              		.section	.debug_line,"",%progbits
+ 863              	.Ldebug_line0:
+ 864 0000 DF000000 		.section	.debug_str,"MS",%progbits,1
+ 864      02004200 
+ 864      00000201 
+ 864      FB0E0D00 
+ 864      01010101 
+ 865              	.LASF6:
+ 866 0000 6C6F6E67 		.ascii	"long long int\000"
+ 866      206C6F6E 
+ 866      6720696E 
+ 866      7400
+ 867              	.LASF23:
+ 868 000e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 868      4320342E 
+ 868      392E3320 
+ 868      32303135 
+ 868      30333033 
+ 869 0041 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 869      20726576 
+ 869      6973696F 
+ 869      6E203232 
+ 869      31323230 
+ 870 0074 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 870      66756E63 
+ 870      74696F6E 
+ 870      2D736563 
+ 870      74696F6E 
+ 871              	.LASF8:
+ 872 009c 756E7369 		.ascii	"unsigned int\000"
+ 872      676E6564 
+ 872      20696E74 
+ 872      00
+ 873              	.LASF19:
+ 874 00a9 656E6162 		.ascii	"enableInterrupts\000"
+ 874      6C65496E 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 25
+
+
+ 874      74657272 
+ 874      75707473 
+ 874      00
+ 875              	.LASF16:
+ 876 00ba 4932535F 		.ascii	"I2S_1_Start\000"
+ 876      315F5374 
+ 876      61727400 
+ 877              	.LASF12:
+ 878 00c6 75696E74 		.ascii	"uint8\000"
+ 878      3800
+ 879              	.LASF5:
+ 880 00cc 6C6F6E67 		.ascii	"long unsigned int\000"
+ 880      20756E73 
+ 880      69676E65 
+ 880      6420696E 
+ 880      7400
+ 881              	.LASF7:
+ 882 00de 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 882      206C6F6E 
+ 882      6720756E 
+ 882      7369676E 
+ 882      65642069 
+ 883              	.LASF24:
+ 884 00f5 47656E65 		.ascii	"Generated_Source\\PSoC4\\I2S_1.c\000"
+ 884      72617465 
+ 884      645F536F 
+ 884      75726365 
+ 884      5C50536F 
+ 885              	.LASF26:
+ 886 0114 4932535F 		.ascii	"I2S_1_initVar\000"
+ 886      315F696E 
+ 886      69745661 
+ 886      7200
+ 887              	.LASF20:
+ 888 0122 4932535F 		.ascii	"I2S_1_EnableRx\000"
+ 888      315F456E 
+ 888      61626C65 
+ 888      527800
+ 889              	.LASF18:
+ 890 0131 4932535F 		.ascii	"I2S_1_Stop\000"
+ 890      315F5374 
+ 890      6F7000
+ 891              	.LASF1:
+ 892 013c 756E7369 		.ascii	"unsigned char\000"
+ 892      676E6564 
+ 892      20636861 
+ 892      7200
+ 893              	.LASF11:
+ 894 014a 63686172 		.ascii	"char\000"
+ 894      00
+ 895              	.LASF4:
+ 896 014f 6C6F6E67 		.ascii	"long int\000"
+ 896      20696E74 
+ 896      00
+ 897              	.LASF10:
+ 898 0158 646F7562 		.ascii	"double\000"
+ 898      6C6500
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 26
+
+
+ 899              	.LASF22:
+ 900 015f 4932535F 		.ascii	"I2S_1_ClearRxFIFO\000"
+ 900      315F436C 
+ 900      65617252 
+ 900      78464946 
+ 900      4F00
+ 901              	.LASF17:
+ 902 0171 4932535F 		.ascii	"I2S_1_Enable\000"
+ 902      315F456E 
+ 902      61626C65 
+ 902      00
+ 903              	.LASF3:
+ 904 017e 73686F72 		.ascii	"short unsigned int\000"
+ 904      7420756E 
+ 904      7369676E 
+ 904      65642069 
+ 904      6E7400
+ 905              	.LASF0:
+ 906 0191 7369676E 		.ascii	"signed char\000"
+ 906      65642063 
+ 906      68617200 
+ 907              	.LASF21:
+ 908 019d 4932535F 		.ascii	"I2S_1_DisableRx\000"
+ 908      315F4469 
+ 908      7361626C 
+ 908      65527800 
+ 909              	.LASF9:
+ 910 01ad 666C6F61 		.ascii	"float\000"
+ 910      7400
+ 911              	.LASF2:
+ 912 01b3 73686F72 		.ascii	"short int\000"
+ 912      7420696E 
+ 912      7400
+ 913              	.LASF13:
+ 914 01bd 72656738 		.ascii	"reg8\000"
+ 914      00
+ 915              	.LASF25:
+ 916 01c2 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\bleapp-master\\b"
+ 916      73657273 
+ 916      5C536172 
+ 916      61685C44 
+ 916      6F63756D 
+ 917 01ef 6C656170 		.ascii	"leapp-master\\PSoC_Creator\\capsenseled\\SleepMode."
+ 917      702D6D61 
+ 917      73746572 
+ 917      5C50536F 
+ 917      435F4372 
+ 918 021f 63796473 		.ascii	"cydsn\000"
+ 918      6E00
+ 919              	.LASF14:
+ 920 0225 73697A65 		.ascii	"sizetype\000"
+ 920      74797065 
+ 920      00
+ 921              	.LASF15:
+ 922 022e 4932535F 		.ascii	"I2S_1_Init\000"
+ 922      315F496E 
+ 922      697400
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccIRbAVi.s 			page 27
+
+
+ 923              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

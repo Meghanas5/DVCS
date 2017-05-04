@@ -1,0 +1,804 @@
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"I2S_1_PM.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.bss
+  18              		.align	2
+  19              	I2S_1_backup:
+  20 0000 00       		.space	1
+  21 0001 000000   		.section	.text.I2S_1_SaveConfig,"ax",%progbits
+  22              		.align	2
+  23              		.global	I2S_1_SaveConfig
+  24              		.code	16
+  25              		.thumb_func
+  26              		.type	I2S_1_SaveConfig, %function
+  27              	I2S_1_SaveConfig:
+  28              	.LFB0:
+  29              		.file 1 "Generated_Source\\PSoC4\\I2S_1_PM.c"
+   1:Generated_Source\PSoC4/I2S_1_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/I2S_1_PM.c **** * File Name: I2S_1_PM.c
+   3:Generated_Source\PSoC4/I2S_1_PM.c **** * Version 2.70
+   4:Generated_Source\PSoC4/I2S_1_PM.c **** *
+   5:Generated_Source\PSoC4/I2S_1_PM.c **** * Description:
+   6:Generated_Source\PSoC4/I2S_1_PM.c **** *  This file contains the setup, control and status commands to support
+   7:Generated_Source\PSoC4/I2S_1_PM.c **** *  component operations in low power mode.
+   8:Generated_Source\PSoC4/I2S_1_PM.c **** *
+   9:Generated_Source\PSoC4/I2S_1_PM.c **** * Note:
+  10:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  11:Generated_Source\PSoC4/I2S_1_PM.c **** ********************************************************************************
+  12:Generated_Source\PSoC4/I2S_1_PM.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC4/I2S_1_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  14:Generated_Source\PSoC4/I2S_1_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  15:Generated_Source\PSoC4/I2S_1_PM.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC4/I2S_1_PM.c **** *******************************************************************************/
+  17:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  18:Generated_Source\PSoC4/I2S_1_PM.c **** #include "I2S_1.h"
+  19:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  20:Generated_Source\PSoC4/I2S_1_PM.c **** static I2S_1_BACKUP_STRUCT  I2S_1_backup = {0u};
+  21:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  22:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  23:Generated_Source\PSoC4/I2S_1_PM.c **** /*******************************************************************************
+  24:Generated_Source\PSoC4/I2S_1_PM.c **** * Function Name: I2S_1_SaveConfig
+  25:Generated_Source\PSoC4/I2S_1_PM.c **** ********************************************************************************
+  26:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  27:Generated_Source\PSoC4/I2S_1_PM.c **** * Summary:
+  28:Generated_Source\PSoC4/I2S_1_PM.c **** *  Empty function. Left to preserve backward compatibility.
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 2
+
+
+  29:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  30:Generated_Source\PSoC4/I2S_1_PM.c **** * Parameters:
+  31:Generated_Source\PSoC4/I2S_1_PM.c **** *  None.
+  32:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  33:Generated_Source\PSoC4/I2S_1_PM.c **** * Return:
+  34:Generated_Source\PSoC4/I2S_1_PM.c **** *  None.
+  35:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  36:Generated_Source\PSoC4/I2S_1_PM.c **** *******************************************************************************/
+  37:Generated_Source\PSoC4/I2S_1_PM.c **** void I2S_1_SaveConfig(void) 
+  38:Generated_Source\PSoC4/I2S_1_PM.c **** {
+  30              		.loc 1 38 0
+  31              		.cfi_startproc
+  32 0000 80B5     		push	{r7, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 7, -8
+  35              		.cfi_offset 14, -4
+  36 0002 00AF     		add	r7, sp, #0
+  37              		.cfi_def_cfa_register 7
+  39:Generated_Source\PSoC4/I2S_1_PM.c ****     /* Nothing to save. All registers are retention. */
+  40:Generated_Source\PSoC4/I2S_1_PM.c **** }
+  38              		.loc 1 40 0
+  39 0004 BD46     		mov	sp, r7
+  40              		@ sp needed
+  41 0006 80BD     		pop	{r7, pc}
+  42              		.cfi_endproc
+  43              	.LFE0:
+  44              		.size	I2S_1_SaveConfig, .-I2S_1_SaveConfig
+  45              		.section	.text.I2S_1_RestoreConfig,"ax",%progbits
+  46              		.align	2
+  47              		.global	I2S_1_RestoreConfig
+  48              		.code	16
+  49              		.thumb_func
+  50              		.type	I2S_1_RestoreConfig, %function
+  51              	I2S_1_RestoreConfig:
+  52              	.LFB1:
+  41:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  42:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  43:Generated_Source\PSoC4/I2S_1_PM.c **** /*******************************************************************************
+  44:Generated_Source\PSoC4/I2S_1_PM.c **** * Function Name: I2S_1_RestoreConfig
+  45:Generated_Source\PSoC4/I2S_1_PM.c **** ********************************************************************************
+  46:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  47:Generated_Source\PSoC4/I2S_1_PM.c **** * Summary:
+  48:Generated_Source\PSoC4/I2S_1_PM.c **** *  Empty function. Left to preserve backward compatibility.
+  49:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  50:Generated_Source\PSoC4/I2S_1_PM.c **** * Parameters:
+  51:Generated_Source\PSoC4/I2S_1_PM.c **** *  None.
+  52:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  53:Generated_Source\PSoC4/I2S_1_PM.c **** * Return:
+  54:Generated_Source\PSoC4/I2S_1_PM.c **** *  None.
+  55:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  56:Generated_Source\PSoC4/I2S_1_PM.c **** *******************************************************************************/
+  57:Generated_Source\PSoC4/I2S_1_PM.c **** void I2S_1_RestoreConfig(void) 
+  58:Generated_Source\PSoC4/I2S_1_PM.c **** {
+  53              		.loc 1 58 0
+  54              		.cfi_startproc
+  55 0000 80B5     		push	{r7, lr}
+  56              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 3
+
+
+  57              		.cfi_offset 7, -8
+  58              		.cfi_offset 14, -4
+  59 0002 00AF     		add	r7, sp, #0
+  60              		.cfi_def_cfa_register 7
+  59:Generated_Source\PSoC4/I2S_1_PM.c ****     /* Nothing to restore. All registers are retention. */
+  60:Generated_Source\PSoC4/I2S_1_PM.c **** }
+  61              		.loc 1 60 0
+  62 0004 BD46     		mov	sp, r7
+  63              		@ sp needed
+  64 0006 80BD     		pop	{r7, pc}
+  65              		.cfi_endproc
+  66              	.LFE1:
+  67              		.size	I2S_1_RestoreConfig, .-I2S_1_RestoreConfig
+  68              		.section	.text.I2S_1_Sleep,"ax",%progbits
+  69              		.align	2
+  70              		.global	I2S_1_Sleep
+  71              		.code	16
+  72              		.thumb_func
+  73              		.type	I2S_1_Sleep, %function
+  74              	I2S_1_Sleep:
+  75              	.LFB2:
+  61:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  62:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  63:Generated_Source\PSoC4/I2S_1_PM.c **** /*******************************************************************************
+  64:Generated_Source\PSoC4/I2S_1_PM.c **** * Function Name: I2S_1_Sleep
+  65:Generated_Source\PSoC4/I2S_1_PM.c **** ********************************************************************************
+  66:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  67:Generated_Source\PSoC4/I2S_1_PM.c **** * Summary:
+  68:Generated_Source\PSoC4/I2S_1_PM.c **** *  Prepares I2S for entering sleep mode.
+  69:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  70:Generated_Source\PSoC4/I2S_1_PM.c **** * Parameters:
+  71:Generated_Source\PSoC4/I2S_1_PM.c **** *  None.
+  72:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  73:Generated_Source\PSoC4/I2S_1_PM.c **** * Return:
+  74:Generated_Source\PSoC4/I2S_1_PM.c **** *  None.
+  75:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  76:Generated_Source\PSoC4/I2S_1_PM.c **** * Global Variables:
+  77:Generated_Source\PSoC4/I2S_1_PM.c **** *  I2S_1_backup - used to store component state prior entering 
+  78:Generated_Source\PSoC4/I2S_1_PM.c **** *    sleep mode.
+  79:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  80:Generated_Source\PSoC4/I2S_1_PM.c **** * Reentrant:
+  81:Generated_Source\PSoC4/I2S_1_PM.c **** *  No.
+  82:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  83:Generated_Source\PSoC4/I2S_1_PM.c **** *******************************************************************************/
+  84:Generated_Source\PSoC4/I2S_1_PM.c **** void I2S_1_Sleep(void) 
+  85:Generated_Source\PSoC4/I2S_1_PM.c **** {
+  76              		.loc 1 85 0
+  77              		.cfi_startproc
+  78 0000 80B5     		push	{r7, lr}
+  79              		.cfi_def_cfa_offset 8
+  80              		.cfi_offset 7, -8
+  81              		.cfi_offset 14, -4
+  82 0002 00AF     		add	r7, sp, #0
+  83              		.cfi_def_cfa_register 7
+  86:Generated_Source\PSoC4/I2S_1_PM.c ****     /* Get component state */
+  87:Generated_Source\PSoC4/I2S_1_PM.c ****     I2S_1_backup.enableState = I2S_1_CONTROL_REG;
+  84              		.loc 1 87 0
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 4
+
+
+  85 0004 044B     		ldr	r3, .L4
+  86 0006 1B78     		ldrb	r3, [r3]
+  87 0008 DAB2     		uxtb	r2, r3
+  88 000a 044B     		ldr	r3, .L4+4
+  89 000c 1A70     		strb	r2, [r3]
+  88:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  89:Generated_Source\PSoC4/I2S_1_PM.c ****     /* Stop component */
+  90:Generated_Source\PSoC4/I2S_1_PM.c ****     I2S_1_Stop();
+  90              		.loc 1 90 0
+  91 000e FFF7FEFF 		bl	I2S_1_Stop
+  91:Generated_Source\PSoC4/I2S_1_PM.c **** }
+  92              		.loc 1 91 0
+  93 0012 BD46     		mov	sp, r7
+  94              		@ sp needed
+  95 0014 80BD     		pop	{r7, pc}
+  96              	.L5:
+  97 0016 C046     		.align	2
+  98              	.L4:
+  99 0018 71000F40 		.word	1074724977
+ 100 001c 00000000 		.word	I2S_1_backup
+ 101              		.cfi_endproc
+ 102              	.LFE2:
+ 103              		.size	I2S_1_Sleep, .-I2S_1_Sleep
+ 104              		.section	.text.I2S_1_Wakeup,"ax",%progbits
+ 105              		.align	2
+ 106              		.global	I2S_1_Wakeup
+ 107              		.code	16
+ 108              		.thumb_func
+ 109              		.type	I2S_1_Wakeup, %function
+ 110              	I2S_1_Wakeup:
+ 111              	.LFB3:
+  92:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  93:Generated_Source\PSoC4/I2S_1_PM.c **** 
+  94:Generated_Source\PSoC4/I2S_1_PM.c **** /*******************************************************************************
+  95:Generated_Source\PSoC4/I2S_1_PM.c **** * Function Name: I2S_1_Wakeup
+  96:Generated_Source\PSoC4/I2S_1_PM.c **** ********************************************************************************
+  97:Generated_Source\PSoC4/I2S_1_PM.c **** *
+  98:Generated_Source\PSoC4/I2S_1_PM.c **** * Summary:
+  99:Generated_Source\PSoC4/I2S_1_PM.c **** *  Prepares I2S for exit from sleep mode.
+ 100:Generated_Source\PSoC4/I2S_1_PM.c **** *
+ 101:Generated_Source\PSoC4/I2S_1_PM.c **** * Parameters:
+ 102:Generated_Source\PSoC4/I2S_1_PM.c **** *  None.
+ 103:Generated_Source\PSoC4/I2S_1_PM.c **** *
+ 104:Generated_Source\PSoC4/I2S_1_PM.c **** * Return:
+ 105:Generated_Source\PSoC4/I2S_1_PM.c **** *  None.
+ 106:Generated_Source\PSoC4/I2S_1_PM.c **** *
+ 107:Generated_Source\PSoC4/I2S_1_PM.c **** * Global Variables:
+ 108:Generated_Source\PSoC4/I2S_1_PM.c **** *  I2S_1_backup - used to restore component state after exit from
+ 109:Generated_Source\PSoC4/I2S_1_PM.c **** *    sleep mode.
+ 110:Generated_Source\PSoC4/I2S_1_PM.c **** *
+ 111:Generated_Source\PSoC4/I2S_1_PM.c **** *******************************************************************************/
+ 112:Generated_Source\PSoC4/I2S_1_PM.c **** void I2S_1_Wakeup(void) 
+ 113:Generated_Source\PSoC4/I2S_1_PM.c **** {
+ 112              		.loc 1 113 0
+ 113              		.cfi_startproc
+ 114 0000 80B5     		push	{r7, lr}
+ 115              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 5
+
+
+ 116              		.cfi_offset 7, -8
+ 117              		.cfi_offset 14, -4
+ 118 0002 00AF     		add	r7, sp, #0
+ 119              		.cfi_def_cfa_register 7
+ 114:Generated_Source\PSoC4/I2S_1_PM.c ****     #if (I2S_1_DYNAMIC_BIT_RESOLUTION)
+ 115:Generated_Source\PSoC4/I2S_1_PM.c ****         I2S_1_CONTROL_REG = I2S_1_backup.enableState & I2S_1_BIT_RESOLUTION_MODE_MASK;
+ 116:Generated_Source\PSoC4/I2S_1_PM.c ****     #endif /* I2S_1_DYNAMIC_BIT_RESOLUTION */
+ 117:Generated_Source\PSoC4/I2S_1_PM.c **** 
+ 118:Generated_Source\PSoC4/I2S_1_PM.c ****     if(0u != (I2S_1_backup.enableState & I2S_1_EN))
+ 120              		.loc 1 118 0
+ 121 0004 084B     		ldr	r3, .L8
+ 122 0006 1B78     		ldrb	r3, [r3]
+ 123 0008 1A1C     		mov	r2, r3
+ 124 000a 0423     		mov	r3, #4
+ 125 000c 1340     		and	r3, r2
+ 126 000e 09D0     		beq	.L6
+ 119:Generated_Source\PSoC4/I2S_1_PM.c ****     {
+ 120:Generated_Source\PSoC4/I2S_1_PM.c ****         /* Enable component's operation */
+ 121:Generated_Source\PSoC4/I2S_1_PM.c ****         I2S_1_Enable();
+ 127              		.loc 1 121 0
+ 128 0010 FFF7FEFF 		bl	I2S_1_Enable
+ 122:Generated_Source\PSoC4/I2S_1_PM.c **** 
+ 123:Generated_Source\PSoC4/I2S_1_PM.c ****         /* Enable Tx/Rx direction if they were enabled before sleep */
+ 124:Generated_Source\PSoC4/I2S_1_PM.c ****         #if(I2S_1_TX_DIRECTION_ENABLE)
+ 125:Generated_Source\PSoC4/I2S_1_PM.c ****             if(0u != (I2S_1_backup.enableState & I2S_1_TX_EN))
+ 126:Generated_Source\PSoC4/I2S_1_PM.c ****             {
+ 127:Generated_Source\PSoC4/I2S_1_PM.c ****                 I2S_1_EnableTx();
+ 128:Generated_Source\PSoC4/I2S_1_PM.c ****             }
+ 129:Generated_Source\PSoC4/I2S_1_PM.c ****         #endif /* (I2S_1_TX_DIRECTION_ENABLE) */
+ 130:Generated_Source\PSoC4/I2S_1_PM.c ****         
+ 131:Generated_Source\PSoC4/I2S_1_PM.c ****         #if(I2S_1_RX_DIRECTION_ENABLE)
+ 132:Generated_Source\PSoC4/I2S_1_PM.c ****             if(0u != (I2S_1_backup.enableState & I2S_1_RX_EN))
+ 129              		.loc 1 132 0
+ 130 0014 044B     		ldr	r3, .L8
+ 131 0016 1B78     		ldrb	r3, [r3]
+ 132 0018 1A1C     		mov	r2, r3
+ 133 001a 0223     		mov	r3, #2
+ 134 001c 1340     		and	r3, r2
+ 135 001e 01D0     		beq	.L6
+ 133:Generated_Source\PSoC4/I2S_1_PM.c ****             {
+ 134:Generated_Source\PSoC4/I2S_1_PM.c ****                 I2S_1_EnableRx();
+ 136              		.loc 1 134 0
+ 137 0020 FFF7FEFF 		bl	I2S_1_EnableRx
+ 138              	.L6:
+ 135:Generated_Source\PSoC4/I2S_1_PM.c ****             }
+ 136:Generated_Source\PSoC4/I2S_1_PM.c ****         #endif /* (I2S_1_RX_DIRECTION_ENABLE) */
+ 137:Generated_Source\PSoC4/I2S_1_PM.c ****     }
+ 138:Generated_Source\PSoC4/I2S_1_PM.c **** }
+ 139              		.loc 1 138 0
+ 140 0024 BD46     		mov	sp, r7
+ 141              		@ sp needed
+ 142 0026 80BD     		pop	{r7, pc}
+ 143              	.L9:
+ 144              		.align	2
+ 145              	.L8:
+ 146 0028 00000000 		.word	I2S_1_backup
+ 147              		.cfi_endproc
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 6
+
+
+ 148              	.LFE3:
+ 149              		.size	I2S_1_Wakeup, .-I2S_1_Wakeup
+ 150              		.text
+ 151              	.Letext0:
+ 152              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 153              		.file 3 "Generated_Source\\PSoC4\\I2S_1.h"
+ 154              		.section	.debug_info,"",%progbits
+ 155              	.Ldebug_info0:
+ 156 0000 0F010000 		.4byte	0x10f
+ 157 0004 0400     		.2byte	0x4
+ 158 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 159 000a 04       		.byte	0x4
+ 160 000b 01       		.uleb128 0x1
+ 161 000c 74000000 		.4byte	.LASF19
+ 162 0010 01       		.byte	0x1
+ 163 0011 0D000000 		.4byte	.LASF20
+ 164 0015 3A010000 		.4byte	.LASF21
+ 165 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 166 001d 00000000 		.4byte	0
+ 167 0021 00000000 		.4byte	.Ldebug_line0
+ 168 0025 02       		.uleb128 0x2
+ 169 0026 01       		.byte	0x1
+ 170 0027 06       		.byte	0x6
+ 171 0028 06020000 		.4byte	.LASF0
+ 172 002c 02       		.uleb128 0x2
+ 173 002d 01       		.byte	0x1
+ 174 002e 08       		.byte	0x8
+ 175 002f 35000000 		.4byte	.LASF1
+ 176 0033 02       		.uleb128 0x2
+ 177 0034 02       		.byte	0x2
+ 178 0035 05       		.byte	0x5
+ 179 0036 E1010000 		.4byte	.LASF2
+ 180 003a 02       		.uleb128 0x2
+ 181 003b 02       		.byte	0x2
+ 182 003c 07       		.byte	0x7
+ 183 003d 5A000000 		.4byte	.LASF3
+ 184 0041 02       		.uleb128 0x2
+ 185 0042 04       		.byte	0x4
+ 186 0043 05       		.byte	0x5
+ 187 0044 F1010000 		.4byte	.LASF4
+ 188 0048 02       		.uleb128 0x2
+ 189 0049 04       		.byte	0x4
+ 190 004a 07       		.byte	0x7
+ 191 004b 48000000 		.4byte	.LASF5
+ 192 004f 02       		.uleb128 0x2
+ 193 0050 08       		.byte	0x8
+ 194 0051 05       		.byte	0x5
+ 195 0052 AE010000 		.4byte	.LASF6
+ 196 0056 02       		.uleb128 0x2
+ 197 0057 08       		.byte	0x8
+ 198 0058 07       		.byte	0x7
+ 199 0059 0F010000 		.4byte	.LASF7
+ 200 005d 03       		.uleb128 0x3
+ 201 005e 04       		.byte	0x4
+ 202 005f 05       		.byte	0x5
+ 203 0060 696E7400 		.ascii	"int\000"
+ 204 0064 02       		.uleb128 0x2
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 7
+
+
+ 205 0065 04       		.byte	0x4
+ 206 0066 07       		.byte	0x7
+ 207 0067 02010000 		.4byte	.LASF8
+ 208 006b 04       		.uleb128 0x4
+ 209 006c EB010000 		.4byte	.LASF12
+ 210 0070 02       		.byte	0x2
+ 211 0071 B901     		.2byte	0x1b9
+ 212 0073 2C000000 		.4byte	0x2c
+ 213 0077 02       		.uleb128 0x2
+ 214 0078 04       		.byte	0x4
+ 215 0079 04       		.byte	0x4
+ 216 007a 2F000000 		.4byte	.LASF9
+ 217 007e 02       		.uleb128 0x2
+ 218 007f 08       		.byte	0x8
+ 219 0080 04       		.byte	0x4
+ 220 0081 6D000000 		.4byte	.LASF10
+ 221 0085 02       		.uleb128 0x2
+ 222 0086 01       		.byte	0x1
+ 223 0087 08       		.byte	0x8
+ 224 0088 BC010000 		.4byte	.LASF11
+ 225 008c 04       		.uleb128 0x4
+ 226 008d 43000000 		.4byte	.LASF13
+ 227 0091 02       		.byte	0x2
+ 228 0092 6302     		.2byte	0x263
+ 229 0094 98000000 		.4byte	0x98
+ 230 0098 05       		.uleb128 0x5
+ 231 0099 6B000000 		.4byte	0x6b
+ 232 009d 06       		.uleb128 0x6
+ 233 009e 01       		.byte	0x1
+ 234 009f 03       		.byte	0x3
+ 235 00a0 1D       		.byte	0x1d
+ 236 00a1 B2000000 		.4byte	0xb2
+ 237 00a5 07       		.uleb128 0x7
+ 238 00a6 FA010000 		.4byte	.LASF22
+ 239 00aa 03       		.byte	0x3
+ 240 00ab 1F       		.byte	0x1f
+ 241 00ac 6B000000 		.4byte	0x6b
+ 242 00b0 00       		.byte	0
+ 243 00b1 00       		.byte	0
+ 244 00b2 08       		.uleb128 0x8
+ 245 00b3 26010000 		.4byte	.LASF14
+ 246 00b7 03       		.byte	0x3
+ 247 00b8 21       		.byte	0x21
+ 248 00b9 9D000000 		.4byte	0x9d
+ 249 00bd 09       		.uleb128 0x9
+ 250 00be 9D010000 		.4byte	.LASF15
+ 251 00c2 01       		.byte	0x1
+ 252 00c3 25       		.byte	0x25
+ 253 00c4 00000000 		.4byte	.LFB0
+ 254 00c8 08000000 		.4byte	.LFE0-.LFB0
+ 255 00cc 01       		.uleb128 0x1
+ 256 00cd 9C       		.byte	0x9c
+ 257 00ce 09       		.uleb128 0x9
+ 258 00cf CD010000 		.4byte	.LASF16
+ 259 00d3 01       		.byte	0x1
+ 260 00d4 39       		.byte	0x39
+ 261 00d5 00000000 		.4byte	.LFB1
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 8
+
+
+ 262 00d9 08000000 		.4byte	.LFE1-.LFB1
+ 263 00dd 01       		.uleb128 0x1
+ 264 00de 9C       		.byte	0x9c
+ 265 00df 0A       		.uleb128 0xa
+ 266 00e0 C1010000 		.4byte	.LASF17
+ 267 00e4 01       		.byte	0x1
+ 268 00e5 54       		.byte	0x54
+ 269 00e6 00000000 		.4byte	.LFB2
+ 270 00ea 20000000 		.4byte	.LFE2-.LFB2
+ 271 00ee 01       		.uleb128 0x1
+ 272 00ef 9C       		.byte	0x9c
+ 273 00f0 0A       		.uleb128 0xa
+ 274 00f1 12020000 		.4byte	.LASF18
+ 275 00f5 01       		.byte	0x1
+ 276 00f6 70       		.byte	0x70
+ 277 00f7 00000000 		.4byte	.LFB3
+ 278 00fb 2C000000 		.4byte	.LFE3-.LFB3
+ 279 00ff 01       		.uleb128 0x1
+ 280 0100 9C       		.byte	0x9c
+ 281 0101 0B       		.uleb128 0xb
+ 282 0102 00000000 		.4byte	.LASF23
+ 283 0106 01       		.byte	0x1
+ 284 0107 14       		.byte	0x14
+ 285 0108 B2000000 		.4byte	0xb2
+ 286 010c 05       		.uleb128 0x5
+ 287 010d 03       		.byte	0x3
+ 288 010e 00000000 		.4byte	I2S_1_backup
+ 289 0112 00       		.byte	0
+ 290              		.section	.debug_abbrev,"",%progbits
+ 291              	.Ldebug_abbrev0:
+ 292 0000 01       		.uleb128 0x1
+ 293 0001 11       		.uleb128 0x11
+ 294 0002 01       		.byte	0x1
+ 295 0003 25       		.uleb128 0x25
+ 296 0004 0E       		.uleb128 0xe
+ 297 0005 13       		.uleb128 0x13
+ 298 0006 0B       		.uleb128 0xb
+ 299 0007 03       		.uleb128 0x3
+ 300 0008 0E       		.uleb128 0xe
+ 301 0009 1B       		.uleb128 0x1b
+ 302 000a 0E       		.uleb128 0xe
+ 303 000b 55       		.uleb128 0x55
+ 304 000c 17       		.uleb128 0x17
+ 305 000d 11       		.uleb128 0x11
+ 306 000e 01       		.uleb128 0x1
+ 307 000f 10       		.uleb128 0x10
+ 308 0010 17       		.uleb128 0x17
+ 309 0011 00       		.byte	0
+ 310 0012 00       		.byte	0
+ 311 0013 02       		.uleb128 0x2
+ 312 0014 24       		.uleb128 0x24
+ 313 0015 00       		.byte	0
+ 314 0016 0B       		.uleb128 0xb
+ 315 0017 0B       		.uleb128 0xb
+ 316 0018 3E       		.uleb128 0x3e
+ 317 0019 0B       		.uleb128 0xb
+ 318 001a 03       		.uleb128 0x3
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 9
+
+
+ 319 001b 0E       		.uleb128 0xe
+ 320 001c 00       		.byte	0
+ 321 001d 00       		.byte	0
+ 322 001e 03       		.uleb128 0x3
+ 323 001f 24       		.uleb128 0x24
+ 324 0020 00       		.byte	0
+ 325 0021 0B       		.uleb128 0xb
+ 326 0022 0B       		.uleb128 0xb
+ 327 0023 3E       		.uleb128 0x3e
+ 328 0024 0B       		.uleb128 0xb
+ 329 0025 03       		.uleb128 0x3
+ 330 0026 08       		.uleb128 0x8
+ 331 0027 00       		.byte	0
+ 332 0028 00       		.byte	0
+ 333 0029 04       		.uleb128 0x4
+ 334 002a 16       		.uleb128 0x16
+ 335 002b 00       		.byte	0
+ 336 002c 03       		.uleb128 0x3
+ 337 002d 0E       		.uleb128 0xe
+ 338 002e 3A       		.uleb128 0x3a
+ 339 002f 0B       		.uleb128 0xb
+ 340 0030 3B       		.uleb128 0x3b
+ 341 0031 05       		.uleb128 0x5
+ 342 0032 49       		.uleb128 0x49
+ 343 0033 13       		.uleb128 0x13
+ 344 0034 00       		.byte	0
+ 345 0035 00       		.byte	0
+ 346 0036 05       		.uleb128 0x5
+ 347 0037 35       		.uleb128 0x35
+ 348 0038 00       		.byte	0
+ 349 0039 49       		.uleb128 0x49
+ 350 003a 13       		.uleb128 0x13
+ 351 003b 00       		.byte	0
+ 352 003c 00       		.byte	0
+ 353 003d 06       		.uleb128 0x6
+ 354 003e 13       		.uleb128 0x13
+ 355 003f 01       		.byte	0x1
+ 356 0040 0B       		.uleb128 0xb
+ 357 0041 0B       		.uleb128 0xb
+ 358 0042 3A       		.uleb128 0x3a
+ 359 0043 0B       		.uleb128 0xb
+ 360 0044 3B       		.uleb128 0x3b
+ 361 0045 0B       		.uleb128 0xb
+ 362 0046 01       		.uleb128 0x1
+ 363 0047 13       		.uleb128 0x13
+ 364 0048 00       		.byte	0
+ 365 0049 00       		.byte	0
+ 366 004a 07       		.uleb128 0x7
+ 367 004b 0D       		.uleb128 0xd
+ 368 004c 00       		.byte	0
+ 369 004d 03       		.uleb128 0x3
+ 370 004e 0E       		.uleb128 0xe
+ 371 004f 3A       		.uleb128 0x3a
+ 372 0050 0B       		.uleb128 0xb
+ 373 0051 3B       		.uleb128 0x3b
+ 374 0052 0B       		.uleb128 0xb
+ 375 0053 49       		.uleb128 0x49
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 10
+
+
+ 376 0054 13       		.uleb128 0x13
+ 377 0055 38       		.uleb128 0x38
+ 378 0056 0B       		.uleb128 0xb
+ 379 0057 00       		.byte	0
+ 380 0058 00       		.byte	0
+ 381 0059 08       		.uleb128 0x8
+ 382 005a 16       		.uleb128 0x16
+ 383 005b 00       		.byte	0
+ 384 005c 03       		.uleb128 0x3
+ 385 005d 0E       		.uleb128 0xe
+ 386 005e 3A       		.uleb128 0x3a
+ 387 005f 0B       		.uleb128 0xb
+ 388 0060 3B       		.uleb128 0x3b
+ 389 0061 0B       		.uleb128 0xb
+ 390 0062 49       		.uleb128 0x49
+ 391 0063 13       		.uleb128 0x13
+ 392 0064 00       		.byte	0
+ 393 0065 00       		.byte	0
+ 394 0066 09       		.uleb128 0x9
+ 395 0067 2E       		.uleb128 0x2e
+ 396 0068 00       		.byte	0
+ 397 0069 3F       		.uleb128 0x3f
+ 398 006a 19       		.uleb128 0x19
+ 399 006b 03       		.uleb128 0x3
+ 400 006c 0E       		.uleb128 0xe
+ 401 006d 3A       		.uleb128 0x3a
+ 402 006e 0B       		.uleb128 0xb
+ 403 006f 3B       		.uleb128 0x3b
+ 404 0070 0B       		.uleb128 0xb
+ 405 0071 27       		.uleb128 0x27
+ 406 0072 19       		.uleb128 0x19
+ 407 0073 11       		.uleb128 0x11
+ 408 0074 01       		.uleb128 0x1
+ 409 0075 12       		.uleb128 0x12
+ 410 0076 06       		.uleb128 0x6
+ 411 0077 40       		.uleb128 0x40
+ 412 0078 18       		.uleb128 0x18
+ 413 0079 9742     		.uleb128 0x2117
+ 414 007b 19       		.uleb128 0x19
+ 415 007c 00       		.byte	0
+ 416 007d 00       		.byte	0
+ 417 007e 0A       		.uleb128 0xa
+ 418 007f 2E       		.uleb128 0x2e
+ 419 0080 00       		.byte	0
+ 420 0081 3F       		.uleb128 0x3f
+ 421 0082 19       		.uleb128 0x19
+ 422 0083 03       		.uleb128 0x3
+ 423 0084 0E       		.uleb128 0xe
+ 424 0085 3A       		.uleb128 0x3a
+ 425 0086 0B       		.uleb128 0xb
+ 426 0087 3B       		.uleb128 0x3b
+ 427 0088 0B       		.uleb128 0xb
+ 428 0089 27       		.uleb128 0x27
+ 429 008a 19       		.uleb128 0x19
+ 430 008b 11       		.uleb128 0x11
+ 431 008c 01       		.uleb128 0x1
+ 432 008d 12       		.uleb128 0x12
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 11
+
+
+ 433 008e 06       		.uleb128 0x6
+ 434 008f 40       		.uleb128 0x40
+ 435 0090 18       		.uleb128 0x18
+ 436 0091 9642     		.uleb128 0x2116
+ 437 0093 19       		.uleb128 0x19
+ 438 0094 00       		.byte	0
+ 439 0095 00       		.byte	0
+ 440 0096 0B       		.uleb128 0xb
+ 441 0097 34       		.uleb128 0x34
+ 442 0098 00       		.byte	0
+ 443 0099 03       		.uleb128 0x3
+ 444 009a 0E       		.uleb128 0xe
+ 445 009b 3A       		.uleb128 0x3a
+ 446 009c 0B       		.uleb128 0xb
+ 447 009d 3B       		.uleb128 0x3b
+ 448 009e 0B       		.uleb128 0xb
+ 449 009f 49       		.uleb128 0x49
+ 450 00a0 13       		.uleb128 0x13
+ 451 00a1 02       		.uleb128 0x2
+ 452 00a2 18       		.uleb128 0x18
+ 453 00a3 00       		.byte	0
+ 454 00a4 00       		.byte	0
+ 455 00a5 00       		.byte	0
+ 456              		.section	.debug_aranges,"",%progbits
+ 457 0000 34000000 		.4byte	0x34
+ 458 0004 0200     		.2byte	0x2
+ 459 0006 00000000 		.4byte	.Ldebug_info0
+ 460 000a 04       		.byte	0x4
+ 461 000b 00       		.byte	0
+ 462 000c 0000     		.2byte	0
+ 463 000e 0000     		.2byte	0
+ 464 0010 00000000 		.4byte	.LFB0
+ 465 0014 08000000 		.4byte	.LFE0-.LFB0
+ 466 0018 00000000 		.4byte	.LFB1
+ 467 001c 08000000 		.4byte	.LFE1-.LFB1
+ 468 0020 00000000 		.4byte	.LFB2
+ 469 0024 20000000 		.4byte	.LFE2-.LFB2
+ 470 0028 00000000 		.4byte	.LFB3
+ 471 002c 2C000000 		.4byte	.LFE3-.LFB3
+ 472 0030 00000000 		.4byte	0
+ 473 0034 00000000 		.4byte	0
+ 474              		.section	.debug_ranges,"",%progbits
+ 475              	.Ldebug_ranges0:
+ 476 0000 00000000 		.4byte	.LFB0
+ 477 0004 08000000 		.4byte	.LFE0
+ 478 0008 00000000 		.4byte	.LFB1
+ 479 000c 08000000 		.4byte	.LFE1
+ 480 0010 00000000 		.4byte	.LFB2
+ 481 0014 20000000 		.4byte	.LFE2
+ 482 0018 00000000 		.4byte	.LFB3
+ 483 001c 2C000000 		.4byte	.LFE3
+ 484 0020 00000000 		.4byte	0
+ 485 0024 00000000 		.4byte	0
+ 486              		.section	.debug_line,"",%progbits
+ 487              	.Ldebug_line0:
+ 488 0000 A0000000 		.section	.debug_str,"MS",%progbits,1
+ 488      02005000 
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 12
+
+
+ 488      00000201 
+ 488      FB0E0D00 
+ 488      01010101 
+ 489              	.LASF23:
+ 490 0000 4932535F 		.ascii	"I2S_1_backup\000"
+ 490      315F6261 
+ 490      636B7570 
+ 490      00
+ 491              	.LASF20:
+ 492 000d 47656E65 		.ascii	"Generated_Source\\PSoC4\\I2S_1_PM.c\000"
+ 492      72617465 
+ 492      645F536F 
+ 492      75726365 
+ 492      5C50536F 
+ 493              	.LASF9:
+ 494 002f 666C6F61 		.ascii	"float\000"
+ 494      7400
+ 495              	.LASF1:
+ 496 0035 756E7369 		.ascii	"unsigned char\000"
+ 496      676E6564 
+ 496      20636861 
+ 496      7200
+ 497              	.LASF13:
+ 498 0043 72656738 		.ascii	"reg8\000"
+ 498      00
+ 499              	.LASF5:
+ 500 0048 6C6F6E67 		.ascii	"long unsigned int\000"
+ 500      20756E73 
+ 500      69676E65 
+ 500      6420696E 
+ 500      7400
+ 501              	.LASF3:
+ 502 005a 73686F72 		.ascii	"short unsigned int\000"
+ 502      7420756E 
+ 502      7369676E 
+ 502      65642069 
+ 502      6E7400
+ 503              	.LASF10:
+ 504 006d 646F7562 		.ascii	"double\000"
+ 504      6C6500
+ 505              	.LASF19:
+ 506 0074 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 506      4320342E 
+ 506      392E3320 
+ 506      32303135 
+ 506      30333033 
+ 507 00a7 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 507      20726576 
+ 507      6973696F 
+ 507      6E203232 
+ 507      31323230 
+ 508 00da 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 508      66756E63 
+ 508      74696F6E 
+ 508      2D736563 
+ 508      74696F6E 
+ 509              	.LASF8:
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 13
+
+
+ 510 0102 756E7369 		.ascii	"unsigned int\000"
+ 510      676E6564 
+ 510      20696E74 
+ 510      00
+ 511              	.LASF7:
+ 512 010f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 512      206C6F6E 
+ 512      6720756E 
+ 512      7369676E 
+ 512      65642069 
+ 513              	.LASF14:
+ 514 0126 4932535F 		.ascii	"I2S_1_BACKUP_STRUCT\000"
+ 514      315F4241 
+ 514      434B5550 
+ 514      5F535452 
+ 514      55435400 
+ 515              	.LASF21:
+ 516 013a 433A5C55 		.ascii	"C:\\Users\\Sarah\\Documents\\DVCS\\bleapp-master\\b"
+ 516      73657273 
+ 516      5C536172 
+ 516      61685C44 
+ 516      6F63756D 
+ 517 0167 6C656170 		.ascii	"leapp-master\\PSoC_Creator\\capsenseled\\SleepMode."
+ 517      702D6D61 
+ 517      73746572 
+ 517      5C50536F 
+ 517      435F4372 
+ 518 0197 63796473 		.ascii	"cydsn\000"
+ 518      6E00
+ 519              	.LASF15:
+ 520 019d 4932535F 		.ascii	"I2S_1_SaveConfig\000"
+ 520      315F5361 
+ 520      7665436F 
+ 520      6E666967 
+ 520      00
+ 521              	.LASF6:
+ 522 01ae 6C6F6E67 		.ascii	"long long int\000"
+ 522      206C6F6E 
+ 522      6720696E 
+ 522      7400
+ 523              	.LASF11:
+ 524 01bc 63686172 		.ascii	"char\000"
+ 524      00
+ 525              	.LASF17:
+ 526 01c1 4932535F 		.ascii	"I2S_1_Sleep\000"
+ 526      315F536C 
+ 526      65657000 
+ 527              	.LASF16:
+ 528 01cd 4932535F 		.ascii	"I2S_1_RestoreConfig\000"
+ 528      315F5265 
+ 528      73746F72 
+ 528      65436F6E 
+ 528      66696700 
+ 529              	.LASF2:
+ 530 01e1 73686F72 		.ascii	"short int\000"
+ 530      7420696E 
+ 530      7400
+ARM GAS  C:\Users\Sarah\AppData\Local\Temp\ccNbK5Kl.s 			page 14
+
+
+ 531              	.LASF12:
+ 532 01eb 75696E74 		.ascii	"uint8\000"
+ 532      3800
+ 533              	.LASF4:
+ 534 01f1 6C6F6E67 		.ascii	"long int\000"
+ 534      20696E74 
+ 534      00
+ 535              	.LASF22:
+ 536 01fa 656E6162 		.ascii	"enableState\000"
+ 536      6C655374 
+ 536      61746500 
+ 537              	.LASF0:
+ 538 0206 7369676E 		.ascii	"signed char\000"
+ 538      65642063 
+ 538      68617200 
+ 539              	.LASF18:
+ 540 0212 4932535F 		.ascii	"I2S_1_Wakeup\000"
+ 540      315F5761 
+ 540      6B657570 
+ 540      00
+ 541              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

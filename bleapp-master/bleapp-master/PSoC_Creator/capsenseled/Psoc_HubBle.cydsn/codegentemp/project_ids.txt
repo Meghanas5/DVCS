@@ -1,0 +1,13 @@
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled.cydsn\capsenseled.cyprj|8ba2611d-07d0-47a5-a0c3-64250d37989c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|056a0fa9-ba7f-4cfc-8246-08a67c051b5c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e6541dea-d7f4-43b7-8fe7-c944fa887145
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|cfaea1a5-59dd-412e-aa1d-dfc45d00cec0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f1f07c29-eaf3-4615-b9ef-dd7be16c4103
+C:\Users\Sarah\Documents\DVCS\Workspace01\TempSensor.cydsn\TempSensor.cyprj|bd112462-b7ee-420a-be06-abafe1ee5138
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\BLE_4_2_Dongle_CySmart_256K01.cydsn\BLE_4_2_Dongle_CySmart_256K01.cyprj|95809397-b309-42bb-8c9d-39db4f5d1106
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\VentBLE.cydsn\VentBLE.cyprj|37db1637-62eb-4810-aa87-f3e9a65d0190
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\HubBLE.cydsn\HubBLE.cyprj|d2af0baf-0e27-415b-896c-ba68d0627bce
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\Proc_VentBLE.cydsn\Proc_VentBLE.cyprj|930b2507-7e5e-4e01-abd4-c20f2d8d9c3e
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\Psoc_HubBle.cydsn\Psoc_HubBle.cyprj|99adef73-a14e-4559-937c-98729abac57d
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\capsenseled_noTemp.cydsn\capsenseled_noTemp.cyprj|349d01d7-8e51-448c-b0e6-e43875047f7a
+C:\Users\Sarah\Documents\DVCS\bleapp-master\bleapp-master\PSoC_Creator\capsenseled\ButtonTest.cydsn\ButtonTest.cyprj|941624a9-715b-4a13-b08f-c1f8d0c42226
